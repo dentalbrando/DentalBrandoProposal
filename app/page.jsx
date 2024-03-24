@@ -81,8 +81,10 @@ const Home = () => {
     };
     storeTokenToDb();
   }, [tokenVerifierTrigger]);
+  
   return (
     <StoreProvider>
+
       {/* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */}
       {isVerified ? (
         <>
