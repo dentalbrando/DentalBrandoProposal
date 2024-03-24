@@ -1,5 +1,4 @@
 import '../app/globals.css'
-// import '@styles/globals.css'
 import StoreProvider from "./store/StoreProvider";
 export const metadata = {
   title: "Proposal Manager",
