@@ -221,17 +221,58 @@ function Proposal() {
                 </div>
               </div>
               <div>
-                <h1 className="text-4xl font-bold text-blue-500">popup</h1>
-              </div>
+                <h1 className="text-4xl font-bold text-blue-500">
+                  proposed Sitemap
+                </h1>
+                <div>
+                  <div>
+                    <h2 className="text-3xl font-medium text-blue-800">
+                      Root name
+                    </h2>
+                    <h3 className="text-2xl font-normal text-purple-900">
+                      {item.proposedSitemap.rootName}
+                    </h3>
+                  </div>
+                  <div>
+                    <h2 className="text-3xl font-medium text-blue-800">
+                      Site map
+                    </h2>
+                    <ol>
+                      {item.proposedSitemap
+                        ? item.proposedSitemap.sitemap.map((item2) => (
+                            <li>{item2}</li>
+                          ))
+                        : null}
+                    </ol>
+                  </div>
+                </div>
+              </div>{" "}
               <div>
                 <h1 className="text-4xl font-bold text-blue-500">
-                  proposedSitemap
+                  proposed Sitemap 2
                 </h1>
-              </div>
-              <div>
-                <h1 className="text-4xl font-bold text-blue-500">
-                  proposedSitemap2
-                </h1>
+                <div>
+                  <div>
+                    <h2 className="text-3xl font-medium text-blue-800">
+                      Root name
+                    </h2>
+                    <h3 className="text-2xl font-normal text-purple-900">
+                      {item.proposedSitemap2.rootName2}
+                    </h3>
+                  </div>
+                  <div>
+                    <h2 className="text-3xl font-medium text-blue-800">
+                      Site map
+                    </h2>
+                    <ol>
+                      {item.proposedSitemap2
+                        ? item.proposedSitemap2.sitemap2.map((item2) => (
+                            <li>{item2}</li>
+                          ))
+                        : null}
+                    </ol>
+                  </div>
+                </div>
               </div>
             </div>
           ))
