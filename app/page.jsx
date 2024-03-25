@@ -68,7 +68,7 @@ const Home = () => {
 
   useEffect(() => {
     const storeTokenToDb = async () => {
-      try {
+      // try {
         setLoading(true);
         let tokenFromCookie = getCookies();
         setIsVerified(verifyToken(tokenFromCookie));
@@ -82,9 +82,11 @@ const Home = () => {
         if (tokenFromCookie) {
           postToken();
         }
-      } finally {
-        setLoading(false);
-      }
+      // } catch (err) {
+      //   setLoading(false);
+      // } finally {
+      //   setLoading(false);
+      // }
       storeTokenToDb();
     };
   }, [tokenVerifierTrigger]);
@@ -94,9 +96,7 @@ const Home = () => {
 
   return (
     <StoreProvider>
-      {loading ? (
-        <h1>Loading....</h1>
-      ) : isVerified ? (
+      {isVerified ? (
         <>
           {pageNo != 100 ? (
             <>
