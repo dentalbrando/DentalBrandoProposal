@@ -26,12 +26,18 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
 import { setPage, updatePage } from "@app/store/pageSclice";
+import { getCookies, verifyToken } from "@app/registration/auth";
 function Proposal() {
   let router = useRouter();
   let dispatch = useDispatch();
   let [proposalData, setProposalData] = useState();
+  let tokenFromCookie = getCookies();
+
   useEffect(() => {
     async function getData() {
+      if (verifyToken(tokenFromCookie) === false) {
+        router.push("/");
+      }
       let { data } = await axios.get("/api/proposal");
       setProposalData(data.proposalData);
     }

@@ -106,12 +106,12 @@ const Home = () => {
               <Nav />
               <div className="flex justify-between items-start pt-10 gap-8 h-fit mb-10">
                 <div className="flex justify-between flex-col">
+                  <Link className="text-xl m-2 underline font-normal text-blue-600" href="/recent">Recent proposals</Link>
                   {userData ? (
                     userData.admin ? (
                       <Permission username={userData.username} />
                     ) : null
                   ) : null}
-                  <Link className="text-xl m-2 underline font-normal text-blue-600" href="/recent">Recent proposals</Link>
                   <Sidebar />
                 </div>
                 <div className="flex flex-col gap-5">
