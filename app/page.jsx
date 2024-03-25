@@ -54,7 +54,7 @@ const Home = () => {
   const [userId, setUserId] = useState(null);
   const [isVerified, setIsVerified] = useState();
   const [userData, setUserData] = useState();
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   const defaultFamilyTreeData = [
     { key: "root", name: "Root", marriage: "Spouse" },
     { key: "father", name: "Father", parent: "root" },
@@ -72,7 +72,7 @@ const Home = () => {
       setIsVerified(verifyToken(tokenFromCookie));
       async function postToken() {
         // try {
-          setLoading(true);
+          // setLoading(true);
           let result = await axios.post(`/api/storeTokenToDb`, {
             tokenFromCookie,
             userId,
@@ -90,15 +90,16 @@ const Home = () => {
     };
     storeTokenToDb();
   }, [tokenVerifierTrigger]);
-  console.log(loading);
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }
   return (
     <StoreProvider>
-      {loading ? (
-        <h1 className="p-10 text-5xl font-bold">Loading...</h1>
-      ) : isVerified ? (
+      {
+      //   loading ? (
+      //   <h1 className="p-10 text-5xl font-bold">Loading...</h1>
+      // ) :
+        isVerified ? (
         <>
           {pageNo != 100 ? (
             <>
