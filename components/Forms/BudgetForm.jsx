@@ -28,7 +28,7 @@ const BudgetForm = () => {
   };
   const handleAddTerm = () => {
     dispatch(appendTerm('')); // You can pass an initial value for the new term if needed
-  };
+  }; 
 
 
   return (

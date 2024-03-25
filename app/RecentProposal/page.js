@@ -1,8 +1,53 @@
 "use client";
+import {
+  setFunctionalities,
+  setOverviews,
+  setWebsiteCMSs,
+} from "@app/store/aboutYourProject";
+import {
+  setCurrency,
+  setDiscount,
+  setService,
+  setTerms,
+} from "@app/store/budget";
+import { setClientName, setLetterText } from "@app/store/coverLetterSlice";
+import {
+  setCompanyAddress,
+  setCompanyLogo,
+  setCompanyName,
+  setCompanyPhoneNumber,
+  setIssueDate,
+  setProjectTitle,
+  setSubHeading,
+  setValidDate,
+} from "@app/store/coverPageSlice";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 function Proposal() {
+  let dispatch = useDispatch();
+  let functionality = useSelector(
+    (state) => state.aboutYourProject.functionality
+  );
+  let overview = useSelector((state) => state.aboutYourProject.overview);
+  let websiteCMS = useSelector((state) => state.aboutYourProject.websiteCMS);
+  let service = useSelector((state) => state.budget.service);
+  let discount = useSelector((state) => state.budget.discount);
+  let currency = useSelector((state) => state.budget.currency);
+  let terms = useSelector((state) => state.budget.terms);
+  let letterText = useSelector((state) => state.cover_letter.letterText);
+  let clientName = useSelector((state) => state.cover_letter.clientName);
+  let subHeading = useSelector((state) => state.cover_page.subHeading);
+  let projectTitle = useSelector((state) => state.cover_page.projectTitle);
+  let companyPhoneNumber = useSelector(
+    (state) => state.cover_page.companyPhoneNumber
+  );
+  let companyAddress = useSelector((state) => state.cover_page.companyAddress);
+  let companyName = useSelector((state) => state.cover_page.companyName);
+  let issueDate = useSelector((state) => state.cover_page.issueDate);
+  let validDate = useSelector((state) => state.cover_page.validDate);
+  let companyLogo = useSelector((state) => state.cover_page.companyLogo);
   let [proposalData, setProposalData] = useState();
   useEffect(() => {
     async function getData() {
@@ -11,10 +56,83 @@ function Proposal() {
     }
     getData();
   }, []);
-  async function regenerate(key) {
-    console.log(proposalData[key]);
+  function regenerate(key) {
+    dispatch(
+      setFunctionalities(proposalData[0].aboutYourProject.functionality)
+    );
+    dispatch(setOverviews(proposalData[0].aboutYourProject.overview));
+    dispatch(setWebsiteCMSs(proposalData[0].aboutYourProject.websiteCMS));
+    dispatch(setService(proposalData[0].budget.service));
+    dispatch(setDiscount(proposalData[0].budget.discount));
+    dispatch(setCurrency(proposalData[0].budget.currency));
+    dispatch(setTerms(proposalData[0].budget.terms));
+    dispatch(setLetterText(proposalData[0].cover_letter.letterText));
+    dispatch(setClientName(proposalData[0].cover_letter.clientName));
+    dispatch(setSubHeading(proposalData[0].cover_page.subHeading));
+    dispatch(setProjectTitle(proposalData[0].cover_page.projectTitle));
+    dispatch(
+      setCompanyPhoneNumber(proposalData[0].cover_page.companyPhoneNumber)
+    );
+    dispatch(setCompanyAddress(proposalData[0].cover_page.companyAddress));
+    dispatch(setCompanyName(proposalData[0].cover_page.companyName));
+    dispatch(setIssueDate(proposalData[0].cover_page.issueDate));
+    dispatch(setValidDate(proposalData[0].cover_page.validDate));
+    dispatch(setCompanyLogo(proposalData[0].cover_page.companyLogo));
+    console.log(
+      "functionality: ",
+      functionality,
+      "__________________________________________________________________________",
+      "overview: ",
+      overview,
+      "__________________________________________________________________________",
+      "websiteCMS: ",
+      websiteCMS,
+      "__________________________________________________________________________",
+      "service: ",
+      service,
+      "__________________________________________________________________________",
+      "discount: ",
+      discount,
+      "__________________________________________________________________________",
+      "currency: ",
+      currency,
+      "__________________________________________________________________________",
+      "terms: ",
+      terms,
+      "__________________________________________________________________________",
+      "letterText: ",
+      letterText,
+      "__________________________________________________________________________",
+      "clientName: ",
+      clientName,
+      "__________________________________________________________________________",
+      "subHeading: ",
+      subHeading,
+      "__________________________________________________________________________",
+      "projectTitle: ",
+      projectTitle,
+      "__________________________________________________________________________",
+      "companyPhoneNumber: ",
+      companyPhoneNumber,
+      "__________________________________________________________________________",
+      "companyAddress: ",
+      companyAddress,
+      "__________________________________________________________________________",
+      "companyName: ",
+      companyName,
+      "__________________________________________________________________________",
+      "issueDate: ",
+      issueDate,
+      "__________________________________________________________________________",
+      "validDate: ",
+      validDate,
+      "__________________________________________________________________________",
+      "companyLogo: ",
+      companyLogo,
+      "__________________________________________________________________________"
+    );
   }
-  
+
   return (
     <>
       {proposalData
@@ -223,7 +341,7 @@ function Proposal() {
                   </h2>
                   <ol>
                     {item.pageSequence
-                      ? item.pageSequence.pageSequence.map((item2,key) =>
+                      ? item.pageSequence.pageSequence.map((item2, key) =>
                           item2.checked ? (
                             <li key={key}>{item2.content}</li>
                           ) : null
