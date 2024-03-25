@@ -33,7 +33,9 @@ export default function SaveProposaltoDb() {
   }
   return (
     <>
-      <button onClick={submit}>submit</button>
+      <button
+      className=""
+        onClick={submit}>save</button>
     </>
   );
 }

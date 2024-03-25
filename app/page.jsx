@@ -54,7 +54,7 @@ const Home = () => {
   const [userId, setUserId] = useState(null);
   const [isVerified, setIsVerified] = useState();
   const [userData, setUserData] = useState();
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const defaultFamilyTreeData = [
     { key: "root", name: "Root", marriage: "Spouse" },
     { key: "father", name: "Father", parent: "root" },
@@ -71,18 +71,18 @@ const Home = () => {
       let tokenFromCookie = getCookies();
       setIsVerified(verifyToken(tokenFromCookie));
       async function postToken() {
-        try {
+        // try {
           setLoading(true);
           let result = await axios.post(`/api/storeTokenToDb`, {
             tokenFromCookie,
             userId,
           });
           setUserData(result.data.userData);
-        } catch {
-          setLoading(false);
-        } finally {
-          setLoading(false);
-        }
+        // } catch(err) {
+        //   setLoading(false);
+        // } finally {
+        //   setLoading(false);
+        // }
       }
       if (tokenFromCookie) {
         postToken();
