@@ -50,11 +50,11 @@ function Login(prop) {
 
   return (
     // <div className="flex flex-col p-5 bg-blue-700 text-xl">
-    <div className="flex flex-col justify-center w-fit p-5 bg-blue-200 text-xl font-sans rounded-2xl w-fit">
-      <h1 className="text-4xl pb-5 font-normal">Login</h1>
+    <div className="flex flex-col justify-center w-fit p-10 bg-blue-300 text-xl font-sans rounded-2xl w-fit">
+      <h1 className="text-6xl pb-10 font-bold text-orange-500">Login</h1>
       {/* <label className="p-3">user name</label> */}
       <input
-        className="ps-6 pe-12 py-3 rounded-full"
+        className="ps-6 pe-12 py-3 rounded-full hover:outline-orange-500 focus:outline-orange-500"
         placeholder="enter user name"
         type="text"
         onChange={(e) => setName(e.target.value)}
@@ -62,11 +62,11 @@ function Login(prop) {
       />
       <p className="text-red-500 p-2 text-base">{usernameError}</p>
       {/* <label className="p-3">password</label> */}
-      <div className="flex w-fit justify-end items-center">
+      <div className="flex w-fit justify-end items-center hover:outline-orange-500 focus:outline-orange-500">
         <input
           name="showPass"
           placeholder="enter password"
-          className="ps-6 pe-12 py-3 w-full rounded-full"
+          className="ps-6 pe-12 py-3 w-full rounded-full hover:outline-orange-500 focus:outline-orange-500"
           type={showPassword ? "text" : "password"}
           onChange={(e) => setPassword(e.target.value)}
           onKeyUp={clickOnEnterPress}
@@ -83,8 +83,10 @@ function Login(prop) {
       </p>
       <button
         className={`mt-3 mx-0 p-2 ${
-          loading ? "bg-gray-500" : "bg-blue-600"
-        } text-white rounded-xl`}
+          loading
+            ? "bg-gray-500"
+            : "bg-orange-500 hover:bg-white hover:text-orange-500"
+        } text-white rounded-3xl`}
         onClick={loginSubmit}
       >
         submit
