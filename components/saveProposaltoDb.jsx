@@ -34,7 +34,7 @@ export default function SaveProposaltoDb() {
   return (
     <>
       <button
-        className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-bold rounded-lg text-md px-5 py-2.5 my-5 dark:focus:ring-yellow-900"
+        className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-bold rounded-lg text-lg px-5 py-3 my-5 dark:focus:ring-yellow-900"
         onClick={submit}
       >
         Save Proposal

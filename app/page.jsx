@@ -111,8 +111,7 @@ const Home = () => {
                       <Permission username={userData.username} />
                     ) : null
                   ) : null}
-                  <SaveProposaltoDb />
-                  <Link className="text-xl m-2 underline font-normal text-blue-600" href="/RecentProposal">Recent proposal</Link>
+                  <Link className="text-xl m-2 underline font-normal text-blue-600" href="/recent">Recent proposals</Link>
                   <Sidebar />
                 </div>
                 <div className="flex flex-col gap-5">
