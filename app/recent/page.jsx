@@ -31,15 +31,21 @@ function Proposal() {
   let router = useRouter();
   let dispatch = useDispatch();
   let [proposalData, setProposalData] = useState();
+  let [loading, setLoading] = useState(true);
   let tokenFromCookie = getCookies();
 
   useEffect(() => {
     async function getData() {
-      if (verifyToken(tokenFromCookie) === false) {
-        router.push("/");
+      try {
+        setLoading(true);
+        if (verifyToken(tokenFromCookie) === false) {
+          router.push("/");
+        }
+        let { data } = await axios.get("/api/proposal");
+        setProposalData(data.proposalData);
+      } finally {
+        setLoading(false)
       }
-      let { data } = await axios.get("/api/proposal");
-      setProposalData(data.proposalData);
     }
     getData();
   }, []);
