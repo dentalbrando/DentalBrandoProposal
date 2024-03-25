@@ -3,7 +3,7 @@ import Cookies from "js-cookie";
 
 export function createToken(userData) {
   let securityKey = "securityKey";
-  return jwt.sign(userData, securityKey, { expiresIn: "1h" });
+  return jwt.sign(userData, securityKey, { expiresIn: "1d" });
 }
 
 export function verifyToken(token) {
@@ -17,7 +17,7 @@ export function verifyToken(token) {
 }
 
 export function setCookies(token) {
-  Cookies.set("token", token, { expiresIn: "1" });
+  Cookies.set("token", token, { expiresIn: "1d" });
 }
 
 export function getCookies() {

@@ -24,30 +24,11 @@ import {
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
+import { useRouter } from "next/navigation";
+import { setPage, updatePage } from "@app/store/pageSclice";
 function Proposal() {
+  let router = useRouter();
   let dispatch = useDispatch();
-  let functionality = useSelector(
-    (state) => state.aboutYourProject.functionality
-  );
-  let overview = useSelector((state) => state.aboutYourProject.overview);
-  let websiteCMS = useSelector((state) => state.aboutYourProject.websiteCMS);
-  let service = useSelector((state) => state.budget.service);
-  let discount = useSelector((state) => state.budget.discount);
-  let currency = useSelector((state) => state.budget.currency);
-  let terms = useSelector((state) => state.budget.terms);
-  let letterText = useSelector((state) => state.cover_letter.letterText);
-  let clientName = useSelector((state) => state.cover_letter.clientName);
-  let subHeading = useSelector((state) => state.cover_page.subHeading);
-  let projectTitle = useSelector((state) => state.cover_page.projectTitle);
-  let companyPhoneNumber = useSelector(
-    (state) => state.cover_page.companyPhoneNumber
-  );
-  let companyAddress = useSelector((state) => state.cover_page.companyAddress);
-  let companyName = useSelector((state) => state.cover_page.companyName);
-  let issueDate = useSelector((state) => state.cover_page.issueDate);
-  let validDate = useSelector((state) => state.cover_page.validDate);
-  let companyLogo = useSelector((state) => state.cover_page.companyLogo);
   let [proposalData, setProposalData] = useState();
   useEffect(() => {
     async function getData() {
@@ -78,59 +59,8 @@ function Proposal() {
     dispatch(setIssueDate(proposalData[0].cover_page.issueDate));
     dispatch(setValidDate(proposalData[0].cover_page.validDate));
     dispatch(setCompanyLogo(proposalData[0].cover_page.companyLogo));
-    console.log(
-      "functionality: ",
-      functionality,
-      "__________________________________________________________________________",
-      "overview: ",
-      overview,
-      "__________________________________________________________________________",
-      "websiteCMS: ",
-      websiteCMS,
-      "__________________________________________________________________________",
-      "service: ",
-      service,
-      "__________________________________________________________________________",
-      "discount: ",
-      discount,
-      "__________________________________________________________________________",
-      "currency: ",
-      currency,
-      "__________________________________________________________________________",
-      "terms: ",
-      terms,
-      "__________________________________________________________________________",
-      "letterText: ",
-      letterText,
-      "__________________________________________________________________________",
-      "clientName: ",
-      clientName,
-      "__________________________________________________________________________",
-      "subHeading: ",
-      subHeading,
-      "__________________________________________________________________________",
-      "projectTitle: ",
-      projectTitle,
-      "__________________________________________________________________________",
-      "companyPhoneNumber: ",
-      companyPhoneNumber,
-      "__________________________________________________________________________",
-      "companyAddress: ",
-      companyAddress,
-      "__________________________________________________________________________",
-      "companyName: ",
-      companyName,
-      "__________________________________________________________________________",
-      "issueDate: ",
-      issueDate,
-      "__________________________________________________________________________",
-      "validDate: ",
-      validDate,
-      "__________________________________________________________________________",
-      "companyLogo: ",
-      companyLogo,
-      "__________________________________________________________________________"
-    );
+    dispatch(updatePage(100));
+    router.push("/");
   }
 
   return (
@@ -145,6 +75,12 @@ function Proposal() {
                 >
                   regenerate
                 </button>
+                {/* <button
+                  className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-bold rounded-lg text-xl px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
+                  onClick={() => display(key)}
+                >
+                  display
+                </button> */}
               </div>
               <div>
                 <h1 className="text-4xl font-bold text-blue-500">Date</h1>
@@ -411,3 +347,58 @@ function Proposal() {
   );
 }
 export default Proposal;
+function display() {
+  console.log(
+    "functionality: ",
+    functionality,
+    "__________________________________________________________________________",
+    "overview: ",
+    overview,
+    "__________________________________________________________________________",
+    "websiteCMS: ",
+    websiteCMS,
+    "__________________________________________________________________________",
+    "service: ",
+    service,
+    "__________________________________________________________________________",
+    "discount: ",
+    discount,
+    "__________________________________________________________________________",
+    "currency: ",
+    currency,
+    "__________________________________________________________________________",
+    "terms: ",
+    terms,
+    "__________________________________________________________________________",
+    "letterText: ",
+    letterText,
+    "__________________________________________________________________________",
+    "clientName: ",
+    clientName,
+    "__________________________________________________________________________",
+    "subHeading: ",
+    subHeading,
+    "__________________________________________________________________________",
+    "projectTitle: ",
+    projectTitle,
+    "__________________________________________________________________________",
+    "companyPhoneNumber: ",
+    companyPhoneNumber,
+    "__________________________________________________________________________",
+    "companyAddress: ",
+    companyAddress,
+    "__________________________________________________________________________",
+    "companyName: ",
+    companyName,
+    "__________________________________________________________________________",
+    "issueDate: ",
+    issueDate,
+    "__________________________________________________________________________",
+    "validDate: ",
+    proposalData[0].cover_page.validDate,
+    "__________________________________________________________________________",
+    "companyLogo: ",
+    companyLogo,
+    "__________________________________________________________________________"
+  );
+}

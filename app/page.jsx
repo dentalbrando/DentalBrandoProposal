@@ -54,6 +54,7 @@ const Home = () => {
   const [userId, setUserId] = useState(null);
   const [isVerified, setIsVerified] = useState();
   const [userData, setUserData] = useState();
+  const [loading, setLoading] = useState(true);
   const defaultFamilyTreeData = [
     { key: "root", name: "Root", marriage: "Spouse" },
     { key: "father", name: "Father", parent: "root" },
@@ -67,6 +68,11 @@ const Home = () => {
 
   useEffect(() => {
     const storeTokenToDb = async () => {
+      try {
+        
+      } finally {
+        
+      }
       let tokenFromCookie = getCookies();
       setIsVerified(verifyToken(tokenFromCookie));
       async function postToken() {
