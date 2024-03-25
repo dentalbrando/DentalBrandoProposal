@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-
+import axios from "axios";
 export default function SaveProposaltoDb() {
   let page = useSelector((state) => state.page);
   let aboutYourProject = useSelector((state) => state.aboutYourProject);
@@ -10,27 +10,18 @@ export default function SaveProposaltoDb() {
   let popup = useSelector((state) => state.cover_page);
   let proposedSitemap = useSelector((state) => state.proposedSitemap);
   let proposedSitemap2 = useSelector((state) => state.proposedSitemap2);
-  function submit() {
-    console.log(
-      "page: ",
+  async function submit() {
+    await axios.post("/api/proposal", {
       page,
-      "aboutYourProject: ",
       aboutYourProject,
-      "budget: ",
       budget,
-      "cover_letter: ",
       cover_letter,
-      "cover_page: ",
       cover_page,
-      "pageSequence: ",
       pageSequence,
-      "popup: ",
       popup,
-      "proposedSitemap: ",
       proposedSitemap,
-      "proposedSitemap2: ",
-      proposedSitemap2
-    );
+      proposedSitemap2,
+    });
   }
   return (
     <>

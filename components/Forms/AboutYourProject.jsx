@@ -8,7 +8,6 @@ const AboutYourProject = () => {
     const overviews = useSelector((state) => state.aboutYourProject.overview)
     const functionalities = useSelector((state) => state.aboutYourProject.functionality)
     const websiteCMSs = useSelector((state) => state.aboutYourProject.websiteCMS)
-    console.log(overviews)
     const [overview, setOverview] = useState(overviews == '' ? `Upon exploring your business is providing services of field marketing, trade/business development, investment platform providing unique information and exposure to business opportunities in Pakistan & the UK.
 
 They connect businesses and investments through a range of services and events, believing in the importance of a responsible and profitable private sector in Pakistan's development
