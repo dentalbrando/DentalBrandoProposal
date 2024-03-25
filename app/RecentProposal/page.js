@@ -92,27 +92,133 @@ function Proposal() {
                           </div>
                           <div>
                             <h3 className="text-2xl font-normal text-purple-900">
-                              description
+                              package Type
                             </h3>
-                            <h4>{item2.description}</h4>
+                            <h4>{item2.packageType}</h4>
                           </div>
                         </div>
                       ))
                     : null}
                 </div>
+                <div>
+                  <h2 className="text-3xl font-medium text-blue-800">
+                    services
+                  </h2>
+                  {item.budget.terms ? (
+                    <div>
+                      <ul>
+                        {item.budget.terms.map((item2, key) => (
+                          <li key={key}>{item2}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+                </div>
               </div>
               <div>
                 <h1 className="text-4xl font-bold text-blue-500">
-                  cover_letter
+                  Cover letter
                 </h1>
+                <div>
+                  <h2 className="text-3xl font-medium text-blue-800">
+                    clientName
+                  </h2>
+                  <h3 className="text-2xl font-normal text-purple-900">
+                    {item.cover_letter.clientName}
+                  </h3>
+                </div>
+                <div>
+                  <h2 className="text-3xl font-medium text-blue-800">
+                    letterText
+                  </h2>
+                  <h3 className="text-2xl font-normal text-purple-900">
+                    {item.cover_letter.letterText}
+                  </h3>
+                </div>
               </div>
               <div>
-                <h1 className="text-4xl font-bold text-blue-500">cover_page</h1>
+                <h1 className="text-4xl font-bold text-blue-500">Cover Page</h1>
+                <div>
+                  <h2 className="text-3xl font-medium text-blue-800">
+                    companyAddress
+                  </h2>
+                  <h3 className="text-2xl font-normal text-purple-900">
+                    {item.cover_page.companyAddress}
+                  </h3>
+                </div>
+                <div>
+                  <h2 className="text-3xl font-medium text-blue-800">
+                    companyLogo
+                  </h2>
+                  <h3 className="text-2xl font-normal text-purple-900">
+                    {item.cover_page.companyLogo}
+                  </h3>
+                </div>
+                <div>
+                  <h2 className="text-3xl font-medium text-blue-800">
+                    companyName
+                  </h2>
+                  <h3 className="text-2xl font-normal text-purple-900">
+                    {item.cover_page.companyName}
+                  </h3>
+                </div>
+                <div>
+                  <h2 className="text-3xl font-medium text-blue-800">
+                    companyPhoneNumber
+                  </h2>
+                  <h3 className="text-2xl font-normal text-purple-900">
+                    {item.cover_page.companyPhoneNumber}
+                  </h3>
+                </div>
+                <div>
+                  <h2 className="text-3xl font-medium text-blue-800">
+                    issueDate
+                  </h2>
+                  <h3 className="text-2xl font-normal text-purple-900">
+                    {item.cover_page.issueDate}
+                  </h3>
+                </div>
+                <div>
+                  <h2 className="text-3xl font-medium text-blue-800">
+                    projectTitle
+                  </h2>
+                  <h3 className="text-2xl font-normal text-purple-900">
+                    {item.cover_page.projectTitle}
+                  </h3>
+                </div>
+                <div>
+                  <h2 className="text-3xl font-medium text-blue-800">
+                    subHeading
+                  </h2>
+                  <h3 className="text-2xl font-normal text-purple-900">
+                    {item.cover_page.subHeading}
+                  </h3>
+                </div>
+                <div>
+                  <h2 className="text-3xl font-medium text-blue-800">
+                    validDate
+                  </h2>
+                  <h3 className="text-2xl font-normal text-purple-900">
+                    {item.cover_page.validDate}
+                  </h3>
+                </div>
               </div>
               <div>
                 <h1 className="text-4xl font-bold text-blue-500">
-                  pageSequence
+                  Page sequence
                 </h1>
+                <div>
+                  <h2 className="text-3xl font-medium text-blue-800">
+                    websiteCMS
+                  </h2>
+                  <ol>
+                    {item.pageSequence
+                      ? item.pageSequence.pageSequence.map((item2) =>
+                          item2.checked ? <li>{item2.content}</li> : null
+                        )
+                      : null}
+                  </ol>
+                </div>
               </div>
               <div>
                 <h1 className="text-4xl font-bold text-blue-500">popup</h1>
