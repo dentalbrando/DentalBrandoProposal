@@ -35,7 +35,7 @@ const FullProposal = () => {
       <button
         type="button"
         onClick={() => dispatch(updatePage("1"))}
-        className="print:hidden w-16 h-16 left-2 top-[48vh] bg-white border flex justify-center items-center rounded-full fixed"
+        className="print:hidden w-16 h-16 left-2 top-[48vh] bg-white border flex justify-center items-center rounded-full fixed z-50"
       >
         <svg
           width="30"
@@ -50,14 +50,7 @@ const FullProposal = () => {
         </svg>
       </button>
       <div className="print:bg-white flex justify-center items-center gap-3 print:gap-0 flex-col hideInPrint">
-        <div className="w-full flex justify-end px-10 items-center gap-5">
-          <Link
-            className="text-2xl mt-3 underline font-normal text-blue-600"
-            href="/recent"
-          >
-            Recent proposals
-          </Link>
-
+        <div className="fixed right-0 z-50 px-5" style={{ top: "50%" }}>
           <SaveProposaltoDb />
         </div>
         {pageSequence.map((page, index) => {

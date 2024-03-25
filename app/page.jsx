@@ -18,6 +18,7 @@ import axios from "axios";
 import Permission from "@components/Permission";
 import SaveProposaltoDb from "@components/saveProposaltoDb";
 import Link from "next/link";
+import RecentProposalLink from "@components/RecentProposalLink";
 const familyData = {
   name: "John",
   spouse: "Jane",
@@ -52,7 +53,7 @@ const Home = () => {
   const treeWidth = 800; // Set the desired width
   const [tokenVerifierTrigger, setTokenVerifierTrigger] = useState(0);
   const [userId, setUserId] = useState(null);
-  const [isVerified, setIsVerified] = useState();
+  const [isVerified, setIsVerified] = useState(true);
   const [userData, setUserData] = useState();
   // const [loading, setLoading] = useState(false);
   const defaultFamilyTreeData = [
@@ -66,73 +67,74 @@ const Home = () => {
     { key: "child4", name: "Child 4", parent: "mother" },
   ];
 
-  useEffect(() => {
-    const storeTokenToDb = async () => {
-      let tokenFromCookie = getCookies();
-      setIsVerified(verifyToken(tokenFromCookie));
-      async function postToken() {
-        // try {
-          // setLoading(true);
-          let result = await axios.post(`/api/storeTokenToDb`, {
-            tokenFromCookie,
-            userId,
-          });
-          setUserData(result.data.userData);
-        // } catch(err) {
-        //   setLoading(false);
-        // } finally {
-        //   setLoading(false);
-        // }
-      }
-      if (tokenFromCookie) {
-        postToken();
-      }
-    };
-    storeTokenToDb();
-  }, [tokenVerifierTrigger]);
+  // useEffect(() => {
+  //   const storeTokenToDb = async () => {
+  //     let tokenFromCookie = getCookies();
+  //     setIsVerified(verifyToken(tokenFromCookie));
+  //     async function postToken() {
+  //       // try {
+  //       // setLoading(true);
+  //       let result = await axios.post(`/api/storeTokenToDb`, {
+  //         tokenFromCookie,
+  //         userId,
+  //       });
+  //       setUserData(result.data.userData);
+  //       // } catch(err) {
+  //       //   setLoading(false);
+  //       // } finally {
+  //       //   setLoading(false);
+  //       // }
+  //     }
+  //     if (tokenFromCookie) {
+  //       postToken();
+  //     }
+  //   };
+  //   storeTokenToDb();
+  // }, [tokenVerifierTrigger]);
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }
   return (
     <StoreProvider>
       {
-      //   loading ? (
-      //   <h1 className="p-10 text-5xl font-bold">Loading...</h1>
-      // ) :
+        //   loading ? (
+        //   <h1 className="p-10 text-5xl font-bold">Loading...</h1>
+        // ) :
         isVerified ? (
-        <>
-          {pageNo != 100 ? (
-            <>
-              <Nav />
-              <div className="flex justify-between items-start pt-10 gap-8 h-fit mb-10">
-                <div className="flex justify-between flex-col">
-                  <Link className="text-xl m-2 underline font-normal text-blue-600" href="/recent">Recent proposals</Link>
-                  {userData ? (
-                    userData.admin ? (
-                      <Permission username={userData.username} />
-                    ) : null
-                  ) : null}
-                  <Sidebar />
+          <>
+            {pageNo != 100 ? (
+              <>
+                <Nav />
+                <div className="flex justify-between items-start pt-10 gap-8 h-fit mb-10">
+                  <div className="flex justify-between flex-col">
+                    {userData ? (
+                      userData.admin ? (
+                        <Permission username={userData.username} />
+                      ) : null
+                    ) : null}
+                    <Sidebar />
+                    <RecentProposalLink />
+                  </div>
+                  <div className="flex flex-col gap-5">
+                    <Form />
+                    <LivePreview />
+                  </div>
                 </div>
-                <div className="flex flex-col gap-5">
-                  <Form />
-                  <LivePreview />
-                </div>
-              </div>
-            </>
-          ) : (
-            <FullProposal />
-          )}
-        </>
-      ) : (
-        <div className="w-screen h-screen bg-gray-200">
-          <Registration
-            tokenVerifierTrigger={tokenVerifierTrigger}
-            setTokenVerifierTrigger={setTokenVerifierTrigger}
-            setUserId={setUserId}
-          />
-        </div>
-      )}
+              </>
+            ) : (
+              <FullProposal />
+            )}
+          </>
+        ) : (
+          <div className="w-screen h-screen bg-gray-200">
+            <Registration
+              tokenVerifierTrigger={tokenVerifierTrigger}
+              setTokenVerifierTrigger={setTokenVerifierTrigger}
+              setUserId={setUserId}
+            />
+          </div>
+        )
+      }
     </StoreProvider>
   );
 };
