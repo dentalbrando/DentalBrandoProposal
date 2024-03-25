@@ -15,6 +15,7 @@ function Login(prop) {
   const [loading, setLoading] = useState(false);
 
   const loginSubmit = async () => {
+    console.log("loginSubmit");
     const formData = {
       username,
       password,

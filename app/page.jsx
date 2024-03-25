@@ -68,35 +68,35 @@ const Home = () => {
 
   useEffect(() => {
     const storeTokenToDb = async () => {
-      // try {
-        setLoading(true);
-        let tokenFromCookie = getCookies();
-        setIsVerified(verifyToken(tokenFromCookie));
-        async function postToken() {
+      let tokenFromCookie = getCookies();
+      setIsVerified(verifyToken(tokenFromCookie));
+      async function postToken() {
+        try {
+          setLoading(true);
           let result = await axios.post(`/api/storeTokenToDb`, {
             tokenFromCookie,
             userId,
           });
           setUserData(result.data.userData);
+        } finally {
+          setLoading(false);
         }
-        if (tokenFromCookie) {
-          postToken();
-        }
-      // } catch (err) {
-      //   setLoading(false);
-      // } finally {
-      //   setLoading(false);
-      // }
-      storeTokenToDb();
+      }
+      if (tokenFromCookie) {
+        postToken();
+      }
     };
+    storeTokenToDb();
   }, [tokenVerifierTrigger]);
+  console.log(loading);
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }
-
   return (
     <StoreProvider>
-      {isVerified ? (
+      {loading ? (
+        <h1 className="p-10 text-5xl font-bold">Loading...</h1>
+      ) : isVerified ? (
         <>
           {pageNo != 100 ? (
             <>
