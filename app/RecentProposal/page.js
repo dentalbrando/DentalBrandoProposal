@@ -7,17 +7,27 @@ function Proposal() {
   useEffect(() => {
     async function getData() {
       let { data } = await axios.get("/api/proposal");
-      console.log(data.proposalData);
       setProposalData(data.proposalData);
     }
     getData();
   }, []);
-  if (proposalData) console.log(proposalData[0]);
+  async function regenerate(key) {
+    console.log(proposalData[key]);
+  }
+  
   return (
     <>
       {proposalData
         ? proposalData.map((item, key) => (
             <div key={key} className="m-5 p-5 bg-blue-200">
+              <div className="flex justify-end">
+                <button
+                  className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-bold rounded-lg text-xl px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
+                  onClick={() => regenerate(key)}
+                >
+                  regenerate
+                </button>
+              </div>
               <div>
                 <h1 className="text-4xl font-bold text-blue-500">Date</h1>
                 <h2 className="text-3xl font-medium text-blue-800">
@@ -73,7 +83,7 @@ function Proposal() {
                 </div>
                 <div>
                   <h2 className="text-3xl font-medium text-blue-800">
-                    services
+                    terms and conditions
                   </h2>
                   {item.budget.service
                     ? item.budget.service.map((item2, key) => (
@@ -102,7 +112,7 @@ function Proposal() {
                 </div>
                 <div>
                   <h2 className="text-3xl font-medium text-blue-800">
-                    services
+                    terms and conditions
                   </h2>
                   {item.budget.terms ? (
                     <div>
@@ -213,8 +223,10 @@ function Proposal() {
                   </h2>
                   <ol>
                     {item.pageSequence
-                      ? item.pageSequence.pageSequence.map((item2) =>
-                          item2.checked ? <li>{item2.content}</li> : null
+                      ? item.pageSequence.pageSequence.map((item2,key) =>
+                          item2.checked ? (
+                            <li key={key}>{item2.content}</li>
+                          ) : null
                         )
                       : null}
                   </ol>
