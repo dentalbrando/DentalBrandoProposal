@@ -112,7 +112,7 @@ const Home = () => {
                     ) : null
                   ) : null}
                   <SaveProposaltoDb />
-                  <Link href="/RecentProposal">recent proposal</Link>
+                  <Link className="text-xl m-2 underline font-normal text-blue-600" href="/RecentProposal">Recent proposal</Link>
                   <Sidebar />
                 </div>
                 <div className="flex flex-col gap-5">
