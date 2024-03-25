@@ -1,5 +1,7 @@
+'use client'
 import { useSelector } from "react-redux";
 import axios from "axios";
+import { useState } from "react";
 export default function SaveProposaltoDb() {
   let page = useSelector((state) => state.page);
   let aboutYourProject = useSelector((state) => state.aboutYourProject);
@@ -10,31 +12,42 @@ export default function SaveProposaltoDb() {
   let popup = useSelector((state) => state.cover_page);
   let proposedSitemap = useSelector((state) => state.proposedSitemap);
   let proposedSitemap2 = useSelector((state) => state.proposedSitemap2);
-  async function submit() {
-    let date =
-      new Date().getDate() +
-      "/" +
-      (new Date().getMonth() + 1) +
-      "/" +
-      new Date().getFullYear();
+  let [loading, setLoading] = useState(false);
 
-    await axios.post("/api/proposal", {
-      date,
-      page,
-      aboutYourProject,
-      budget,
-      cover_letter,
-      cover_page,
-      pageSequence,
-      popup,
-      proposedSitemap,
-      proposedSitemap2,
-    });
+  async function submit() {
+    try {
+      setLoading(true);
+      let date =
+        new Date().getDate() +
+        "/" +
+        (new Date().getMonth() + 1) +
+        "/" +
+        new Date().getFullYear();
+
+      await axios.post("/api/proposal", {
+        date,
+        page,
+        aboutYourProject,
+        budget,
+        cover_letter,
+        cover_page,
+        pageSequence,
+        popup,
+        proposedSitemap,
+        proposedSitemap2,
+      });
+    } finally {
+      setLoading(false);
+    }
   }
   return (
     <>
       <button
-        className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-bold rounded-lg text-lg px-5 py-3 my-5 dark:focus:ring-yellow-900"
+        className={`mt-3 mx-0 p-2 ${
+          loading
+            ? "bg-gray-500"
+            : "focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500"
+        } font-bold rounded-lg text-md px-3 py-2 m-2`}
         onClick={submit}
       >
         Save Proposal
