@@ -78,6 +78,8 @@ const Home = () => {
             userId,
           });
           setUserData(result.data.userData);
+        } catch {
+          setLoading(false);
         } finally {
           setLoading(false);
         }
