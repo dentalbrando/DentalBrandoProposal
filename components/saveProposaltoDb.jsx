@@ -11,7 +11,15 @@ export default function SaveProposaltoDb() {
   let proposedSitemap = useSelector((state) => state.proposedSitemap);
   let proposedSitemap2 = useSelector((state) => state.proposedSitemap2);
   async function submit() {
+    let date =
+      new Date().getDate() +
+      "/" +
+      (new Date().getMonth() + 1) +
+      "/" +
+      new Date().getFullYear();
+
     await axios.post("/api/proposal", {
+      date,
       page,
       aboutYourProject,
       budget,

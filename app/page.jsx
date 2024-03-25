@@ -17,6 +17,7 @@ import { getCookies, verifyToken } from "./registration/auth";
 import axios from "axios";
 import Permission from "@components/Permission";
 import SaveProposaltoDb from "@components/saveProposaltoDb";
+import Link from "next/link";
 const familyData = {
   name: "John",
   spouse: "Jane",
@@ -81,10 +82,9 @@ const Home = () => {
     };
     storeTokenToDb();
   }, [tokenVerifierTrigger]);
-  
+
   return (
     <StoreProvider>
-
       {/* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */}
       {isVerified ? (
         <>
@@ -99,6 +99,7 @@ const Home = () => {
                     ) : null
                   ) : null}
                   <SaveProposaltoDb />
+                  <Link href="/RecentProposal">recent proposal</Link>
                   <Sidebar />
                 </div>
                 <div className="flex flex-col gap-5">

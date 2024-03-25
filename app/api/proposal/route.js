@@ -6,3 +6,8 @@ export async function POST(req) {
   await ProposalModel(proposalData).save();
   return NextResponse.json({ proposalData });
 }
+
+export async function GET(req) {
+  let proposalData = await ProposalModel.find();
+  return NextResponse.json({ proposalData });
+}

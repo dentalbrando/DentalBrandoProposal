@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 const ProposalSchema = mongoose.Schema({
+  date: { type: String, required: true },
   aboutYourProject: { type: Object, required: true },
   budget: { type: Object, required: true },
   cover_letter: { type: Object, required: true },
