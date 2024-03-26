@@ -6,7 +6,7 @@ function Registration(prop) {
   return (
     <div className="w-screen h-screen custom-bg">
       <div className="flex justify-center items-center w-screen h-screen">
-        <div className="flex items-center w-[80%] h-[80%] rounded-2xl overflow-hidden custom-bg bg-white">
+        <div className="flex items-center w-[80%] h-[80%] rounded-2xl overflow-hidden custom-bg bg-white shadow-xl">
           <img
             src={loginSvg.src}
             alt=""

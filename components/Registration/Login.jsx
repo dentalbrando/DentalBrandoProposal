@@ -48,18 +48,10 @@ function Login(prop) {
     e.key === "Enter" ? loginSubmit() : null;
   }
 
-  console.log(
-    "usernameError: ",
-    usernameError,
-    "passwordError: ",
-    passwordError,
-    "loginError: ",
-    loginError
-  );
 
   return (
-    <div className=" w-5/12 h-full custom-bg*">
-      <div className="flex flex-col justify-center w-fit p-10 text-xl font-sans w-fit borderl-2 border-gray-500 w-full h-[90%] gap-1*">
+    <div className=" w-5/12 h-full custom-bg">
+      <div className="flex flex-col justify-center w-fit py-10 ps-8 pe-12 text-xl font-sans w-fit borderl-2 border-gray-500 w-full h-[90%] gap-1*">
         <h1
           className="
         // bg-gradient-to-r from-blue-400 via-blue-600 to-blue-500* bg-clip-text text-transparent
@@ -77,7 +69,7 @@ function Login(prop) {
             onChange={(e) => setName(e.target.value)}
             onKeyUp={clickOnEnterPress}
           />
-          <p className="text-lg text-red-500 p-2 px-5">{usernameError}</p>
+          <p className="text-lg text-red-500 p-2 px-3">{usernameError}</p>
           <div className="flex w-full justify-end items-center">
             <input
               name="showPass"
@@ -94,7 +86,7 @@ function Login(prop) {
               {showPassword ? <FaEye /> : <FaEyeSlash />}
             </div>
           </div>
-          <p className="text-red-500 p-2 px-5 text-lg">
+          <p className="text-red-500 p-2 px-3 text-lg">
             {passwordError ? passwordError : loginError}
           </p>
           <p className="text-blue-600 hover:underline px-3 text-xl">
@@ -105,7 +97,7 @@ function Login(prop) {
         <button
           className={`${
             loading
-              ? "custom-bg"
+              ? "bg-gray-600"
               : // : "button"
                 "bg-gradient-to-r from-blue-400 via-blue-600 to-blue-500 hover:opacity-[0.9]"
           } text-white mx-0 p-3`}
