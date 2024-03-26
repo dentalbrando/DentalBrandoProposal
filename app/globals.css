@@ -266,7 +266,7 @@ input[type="number"]::-webkit-inner-spin-button {
   grid-area: 1/1;
   border: 8px solid;
   border-radius: 50%;
-  border-color: #766df4 #766df4 #0000 #0000;
+  border-color: rgb(64 131 243) rgb(64 131 243) rgb(64 131 243) #0000;
   mix-blend-mode: darken;
   animation: s4 1s infinite linear;
 }
@@ -286,16 +286,16 @@ td {
   overflow: auto;
   min-width: 150px;
   max-width: 300px;
-  @apply px-3;
 }
 
-.tdInnerDivX {
+.tdInnerDiv {
   max-height: 100px;
   overflow: auto;
   max-width: 400px;
+  text-align: center;
 }
 
-.tdInnerDivX::-webkit-scrollbar {
+.tdInnerDiv::-webkit-scrollbar {
   height: 5px;
   width: 5px;
 }
