@@ -49,7 +49,7 @@ function ChangePassword(prop) {
   }
 
   return (
-    <div className="flex items-center w-5/12 h-full custom-bg">
+    // <div className="flex items-center w-5/12 h-full custom-bg">
       <div className="flex flex-col justify-evenly w-fit h-fit py-10* ps-8 pe-12 text-xl font-sans w-fit borderl-2 border-gray-500 w-full h-[90] gap-10">
         <h1
           className="
@@ -107,7 +107,7 @@ function ChangePassword(prop) {
           submit
         </button>
       </div>
-    </div>
+    // </div>
   );
 }
 
