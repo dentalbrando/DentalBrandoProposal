@@ -48,6 +48,15 @@ function Login(prop) {
     e.key === "Enter" ? loginSubmit() : null;
   }
 
+  console.log(
+    "usernameError: ",
+    usernameError,
+    "passwordError: ",
+    passwordError,
+    "loginError: ",
+    loginError
+  );
+
   return (
     <div className=" w-5/12 h-full custom-bg*">
       <div className="flex flex-col justify-center w-fit p-10 text-xl font-sans w-fit borderl-2 border-gray-500 w-full h-[90%] gap-1*">
@@ -68,7 +77,7 @@ function Login(prop) {
             onChange={(e) => setName(e.target.value)}
             onKeyUp={clickOnEnterPress}
           />
-          <p className="text-red-500 p-2 px-5 text-lg">{usernameError}</p>
+          <p className="text-lg text-red-500 p-2 px-5">{usernameError}</p>
           <div className="flex w-full justify-end items-center">
             <input
               name="showPass"
@@ -86,7 +95,7 @@ function Login(prop) {
             </div>
           </div>
           <p className="text-red-500 p-2 px-5 text-lg">
-            {!passwordError ? passwordError : loginError}
+            {passwordError ? passwordError : loginError}
           </p>
           <p className="text-blue-600 hover:underline px-3 text-xl">
             forgot password
