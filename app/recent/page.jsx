@@ -27,6 +27,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
 import { setPage, updatePage } from "@app/store/pageSclice";
 import { getCookies, verifyToken } from "@app/registration/auth";
+import Loader from "@components/Loader";
 function Proposal() {
   let router = useRouter();
   let dispatch = useDispatch();
@@ -78,10 +79,12 @@ function Proposal() {
   return (
     <>
       {loading ? (
-        <h1>Loading...</h1>
+        <div className="flex justify-center p-12">
+          <Loader />
+        </div>
       ) : (
         proposalData.map((item, key) => (
-          <div key={key} className="m-5 p-5 bg-blue-200">
+          <div key={key} className="p-5 bg-blue-200">
             <div className="flex justify-end">
               <button
                 className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-bold rounded-lg text-xl px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
