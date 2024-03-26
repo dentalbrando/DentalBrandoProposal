@@ -100,7 +100,7 @@ const Home = () => {
         //   loading ? (
         //   <h1 className="p-10 text-5xl font-bold">Loading...</h1>
         // ) :
-        !isVerified ? (
+        isVerified ? (
           <>
             {pageNo != 100 ? (
               <>
