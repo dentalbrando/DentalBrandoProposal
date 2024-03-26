@@ -79,7 +79,7 @@ const Sidebar = () => {
                 </button>
                 <button
                   type="button"
-                  className=" button border border-gray-200 p-3 rounded-3xl bg-white"
+                  className="button border border-gray-200 p-3 rounded-3xl bg-white"
                   onClick={() => {
                     dispatch(resetSquence());
                     setItems([

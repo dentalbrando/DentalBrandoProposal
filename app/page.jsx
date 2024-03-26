@@ -107,11 +107,11 @@ const Home = () => {
                 <Nav />
                 <div className="flex justify-between items-start pt-10 gap-8 h-fit mb-10 px-3">
                   <div className="flex justify-between flex-col">
-                    {userData ? (
+                    {/* {userData ? (
                       userData.admin ? (
                         <Permission username={userData.username} />
                       ) : null
-                    ) : null}
+                    ) : null} */}
                     <Sidebar />
                     <RecentProposalLink />
                   </div>
@@ -126,13 +126,11 @@ const Home = () => {
             )}
           </>
         ) : (
-          <div className="w-screen h-screen bg-gray-200">
-            <Registration
-              tokenVerifierTrigger={tokenVerifierTrigger}
-              setTokenVerifierTrigger={setTokenVerifierTrigger}
-              setUserId={setUserId}
-            />
-          </div>
+          <Registration
+            tokenVerifierTrigger={tokenVerifierTrigger}
+            setTokenVerifierTrigger={setTokenVerifierTrigger}
+            setUserId={setUserId}
+          />
         )
       }
     </StoreProvider>

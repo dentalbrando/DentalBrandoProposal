@@ -49,11 +49,16 @@ function Login(prop) {
 
   return (
     // <div className="flex flex-col p-5 bg-blue-700 text-xl">
-    <div className="flex flex-col justify-center w-fit p-10 bg-blue-300 text-xl font-sans rounded-2xl w-fit">
-      <h1 className="text-6xl pb-10 font-bold text-orange-500">Login</h1>
+    <div className="flex flex-col justify-center w-fit p-10 text-xl font-sans w-fit outline-l-2">
+      <h1
+        className="bg-gradient-to-r from-blue-400 via-blue-600 to-blue-500 bg-clip-text text-transparent m-3;
+      text-6xl pb-10 font-bold "
+      >
+        Login
+      </h1>
       {/* <label className="p-3">user name</label> */}
       <input
-        className="ps-6 pe-12 py-3 rounded-full hover:outline-orange-500 focus:outline-orange-500"
+        className="ps-8 pe-16 py-4 rounded-full"
         placeholder="enter user name"
         type="text"
         onChange={(e) => setName(e.target.value)}
@@ -61,11 +66,11 @@ function Login(prop) {
       />
       <p className="text-red-500 p-2 text-base">{usernameError}</p>
       {/* <label className="p-3">password</label> */}
-      <div className="flex w-fit justify-end items-center hover:outline-orange-500 focus:outline-orange-500">
+      <div className="flex w-fit justify-end items-center">
         <input
           name="showPass"
           placeholder="enter password"
-          className="ps-6 pe-12 py-3 w-full rounded-full hover:outline-orange-500 focus:outline-orange-500"
+          className="ps-8 pe-16 py-4 w-full rounded-full"
           type={showPassword ? "text" : "password"}
           onChange={(e) => setPassword(e.target.value)}
           onKeyUp={clickOnEnterPress}
@@ -81,11 +86,11 @@ function Login(prop) {
         {passwordError ? passwordError : loginError}
       </p>
       <button
-        className={`mt-3 mx-0 p-2 ${
+        className={`${
           loading
-            ? "bg-gray-500"
-            : "bg-orange-500 hover:bg-white hover:text-orange-500"
-        } text-white rounded-3xl`}
+            ? "custom-bg"
+            : "bg-gradient-to-r from-blue-400 via-blue-600 to-blue-500 hover:opacity-[0.9]"
+        } text-white rounded-3xl mt-3 mx-0 p-3`}
         onClick={loginSubmit}
       >
         submit
