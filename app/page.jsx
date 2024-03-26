@@ -110,11 +110,6 @@ const Home = () => {
               <Nav />
               <div className="flex justify-between items-start pt-10 gap-8 h-fit mb-10 px-3">
                 <div className="flex justify-between flex-col">
-                  {/* {userData ? (
-                      userData.admin ? (
-                        <Permission username={userData.username} />
-                      ) : null
-                    ) : null} */}
                   <Sidebar />
                   <RecentProposalLink />
                 </div>
