@@ -92,7 +92,7 @@ const Home = () => {
     };
     setTimeout(() => {
       storeTokenToDb();
-    }, 1000000);
+    }, 0);
   }, [tokenVerifierTrigger]);
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
@@ -100,7 +100,7 @@ const Home = () => {
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (
-        <div className="flex justify-center py-24">
+        <div className="w-fit m-auto py-24">
           <Loader />
         </div>
       ) : isVerified ? (

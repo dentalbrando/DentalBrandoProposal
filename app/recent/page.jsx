@@ -28,28 +28,33 @@ import { useRouter } from "next/navigation";
 import { setPage, updatePage } from "@app/store/pageSclice";
 import { getCookies, verifyToken } from "@app/registration/auth";
 import Loader from "@components/Loader";
+
 function Proposal() {
   let router = useRouter();
   let dispatch = useDispatch();
   let [proposalData, setProposalData] = useState();
   let [loading, setLoading] = useState(true);
+  const [isVerified, setIsVerified] = useState(undefined);
   let tokenFromCookie = getCookies();
 
   useEffect(() => {
+    setIsVerified(verifyToken(tokenFromCookie));
+    if (isVerified === false) {
+      router.push("/");
+    }
     async function getData() {
       try {
         setLoading(true);
-        if (verifyToken(tokenFromCookie) === false) {
-          router.push("/");
-        }
         let { data } = await axios.get("/api/proposal");
         setProposalData(data.proposalData);
       } finally {
         setLoading(false);
       }
     }
-    getData();
-  }, []);
+    if (isVerified === true) {
+      getData();
+    }
+  }, [isVerified]);
   function regenerate(key) {
     dispatch(
       setFunctionalities(proposalData[0].aboutYourProject.functionality)
@@ -78,16 +83,16 @@ function Proposal() {
 
   return (
     <>
-      {loading ? (
-        <div className="flex justify-center p-12">
+      {loading || isVerified === undefined ? (
+        <div className="w-fit m-auto py-24">
           <Loader />
         </div>
       ) : (
         proposalData.map((item, key) => (
-          <div key={key} className="p-5 bg-blue-200">
+          <div key={key} className="p-5 m-5 custom-bg">
             <div className="flex justify-end">
               <button
-                className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-bold rounded-lg text-xl px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
+                className="button py-3 px-5 rounded-3xl"
                 onClick={() => regenerate(key)}
               >
                 regenerate
@@ -141,9 +146,7 @@ function Proposal() {
                 </h3>
               </div>
               <div>
-                <h2 className="text-3xl font-medium text-blue-800">
-                  terms and conditions
-                </h2>
+                <h2 className="text-3xl font-medium text-blue-800">services</h2>
                 {item.budget.service
                   ? item.budget.service.map((item2, key) => (
                       <div key={key}>
