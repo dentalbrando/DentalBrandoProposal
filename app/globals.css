@@ -83,7 +83,7 @@
 }
 
 .black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center
+  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
 }
 
 .outline_btn {
@@ -122,9 +122,8 @@
   @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
 }
 
-
 /* Feed Component */
- .feed {
+.feed {
   @apply mt-16 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;
 }
 
@@ -255,7 +254,6 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-
 .custom-loader {
   width: 50px;
   height: 50px;
@@ -263,20 +261,44 @@ input[type="number"]::-webkit-inner-spin-button {
   animation: s4 4s infinite;
 }
 .custom-loader::before,
-.custom-loader::after {    
-  content:"";
+.custom-loader::after {
+  content: "";
   grid-area: 1/1;
-  border:8px solid;
+  border: 8px solid;
   border-radius: 50%;
-  border-color:#766DF4 #766DF4 #0000 #0000;
+  border-color: #766df4 #766df4 #0000 #0000;
   mix-blend-mode: darken;
   animation: s4 1s infinite linear;
 }
 .custom-loader::after {
-  border-color:#0000 #0000 #E4E4ED #E4E4ED;
+  border-color: #0000 #0000 #e4e4ed #e4e4ed;
   animation-direction: reverse;
 }
 
-@keyframes s4{ 
-  100%{transform: rotate(1turn)}
+@keyframes s4 {
+  100% {
+    transform: rotate(1turn);
+  }
 }
+
+td {
+  white-space: nowrap;
+  overflow: auto;
+  min-width: 150px;
+  max-width: 300px;
+  @apply px-3;
+}
+
+.tdInnerDivX {
+  max-height: 100px;
+  overflow: auto;
+  max-width: 400px;
+}
+
+.tdInnerDivX::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+/* .tdInnerDivX::-webkit-scrollbar-thumb {
+  background-color: slategrey;
+} */
