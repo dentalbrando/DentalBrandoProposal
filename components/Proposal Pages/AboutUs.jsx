@@ -98,7 +98,7 @@ const AboutUs = ({ pageNumber }) => {
             </div>
           </div>
         </div>
-        <div class="bg-[#00A2FF] flex justify-center items-center  px-[30px] w-[52%] h-[11.6876in] ">
+        <div class="bg-[#00A2FF] flex justify-center items-center px-[30px] w-[52%] h-[11.6745in]">
           <div class="w-[100%]   ">
             <div class="flex mt-8">
               <div>

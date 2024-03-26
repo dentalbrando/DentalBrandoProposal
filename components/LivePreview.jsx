@@ -16,7 +16,7 @@ const LivePreview = () => {
   const page = useSelector((state) => state.page);
 
   return (
-    <div className="flex items-center flex-col w-[calc(100vw-20vw)] float-right h-fit border rounded-3xl custom-bg p-5 mr-0 right-0 shadow-lg">
+    <div className="flex items-center flex-col w-[calc(100vw-25vw)] float-right h-fit border rounded-3xl custom-bg p-5 mr-0 right-0 shadow-lg">
       <h1 className="head_text !m-0 pb-3 whitespace-nowrap">Live preview</h1>
       <div className="flex-1 bg-white w-fit h-full rounded-3xl mt-3">
         {page.formId == "1" ? (

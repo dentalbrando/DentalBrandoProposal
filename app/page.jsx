@@ -53,7 +53,7 @@ const Home = () => {
   const treeWidth = 800; // Set the desired width
   const [tokenVerifierTrigger, setTokenVerifierTrigger] = useState(0);
   const [userId, setUserId] = useState(null);
-  const [isVerified, setIsVerified] = useState(true);
+  const [isVerified, setIsVerified] = useState();
   const [userData, setUserData] = useState();
   // const [loading, setLoading] = useState(false);
   const defaultFamilyTreeData = [
@@ -67,30 +67,30 @@ const Home = () => {
     { key: "child4", name: "Child 4", parent: "mother" },
   ];
 
-  // useEffect(() => {
-  //   const storeTokenToDb = async () => {
-  //     let tokenFromCookie = getCookies();
-  //     setIsVerified(verifyToken(tokenFromCookie));
-  //     async function postToken() {
-  //       // try {
-  //       // setLoading(true);
-  //       let result = await axios.post(`/api/storeTokenToDb`, {
-  //         tokenFromCookie,
-  //         userId,
-  //       });
-  //       setUserData(result.data.userData);
-  //       // } catch(err) {
-  //       //   setLoading(false);
-  //       // } finally {
-  //       //   setLoading(false);
-  //       // }
-  //     }
-  //     if (tokenFromCookie) {
-  //       postToken();
-  //     }
-  //   };
-  //   storeTokenToDb();
-  // }, [tokenVerifierTrigger]);
+  useEffect(() => {
+    const storeTokenToDb = async () => {
+      let tokenFromCookie = getCookies();
+      setIsVerified(verifyToken(tokenFromCookie));
+      async function postToken() {
+        // try {
+        // setLoading(true);
+        let result = await axios.post(`/api/storeTokenToDb`, {
+          tokenFromCookie,
+          userId,
+        });
+        setUserData(result.data.userData);
+        // } catch(err) {
+        //   setLoading(false);
+        // } finally {
+        //   setLoading(false);
+        // }
+      }
+      if (tokenFromCookie) {
+        postToken();
+      }
+    };
+    storeTokenToDb();
+  }, [tokenVerifierTrigger]);
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }
@@ -100,12 +100,12 @@ const Home = () => {
         //   loading ? (
         //   <h1 className="p-10 text-5xl font-bold">Loading...</h1>
         // ) :
-        isVerified ? (
+        !isVerified ? (
           <>
             {pageNo != 100 ? (
               <>
                 <Nav />
-                <div className="flex justify-between items-start pt-10 gap-8 h-fit mb-10">
+                <div className="flex justify-between items-start pt-10 gap-8 h-fit mb-10 px-3">
                   <div className="flex justify-between flex-col">
                     {userData ? (
                       userData.admin ? (
