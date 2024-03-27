@@ -28,6 +28,7 @@ import { useRouter } from "next/navigation";
 import { setPage, updatePage } from "@app/store/pageSclice";
 import { getCookies, verifyToken } from "@app/registration/auth";
 import Loader from "@components/Loader";
+import Nav from "@components/Nav";
 
 function Proposal() {
   let router = useRouter();
@@ -88,162 +89,165 @@ function Proposal() {
           <Loader />
         </div>
       ) : (
-        <div className="p-10 h-screen">
-          <h1 className="head_text">Proposal Table</h1>
-          <div style={{ overflow: "auto" }} className="custom-bg h-[80%]">
-            <table className="border-collapse border border-slate-500">
-              <thead>
-                <tr>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Client Name
-                  </th>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Project Title
-                  </th>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Company Name
-                  </th>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Company Address
-                  </th>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Company Phone
-                  </th>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Issue Date
-                  </th>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Valid Date
-                  </th>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Subheading
-                  </th>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Cover Letter
-                  </th>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Overview
-                  </th>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Functionality
-                  </th>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Website CMS
-                  </th>
-                  <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                    Terms & Conditions
-                  </th>
-                  <th
-                    className="border border-slate-600 text-gray-900 text-lg"
-                    custom-bg
-                  >
-                    Page Sequence
-                  </th>
-                  <th
-                    className="border border-slate-600 text-gray-900 text-lg"
-                    custom-bg
-                  >
-                    Date
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {proposalData
-                  ? proposalData.map((item) => (
-                      <tr key={item._id}>
-                        <td className="border border-slate-600 text-gray-900 text-lg custom-bg font-semibold">
-                          <div className="tdInnerDiv">
-                            {item.cover_letter.clientName}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.cover_page.projectTitle}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.cover_page.companyName}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.cover_page.companyAddress}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.cover_page.companyPhoneNumber}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.cover_page.issueDate}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.cover_page.validDate}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.cover_page.subHeading}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.cover_letter.letterText}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.aboutYourProject.overview}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.aboutYourProject.functionality}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.aboutYourProject.websiteCMS}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.budget &&
-                              item.budget.terms.map((item2, key) => (
-                                <li key={key} className="text-start">
-                                  {item2}
-                                </li>
-                              ))}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">
-                            {item.pageSequence &&
-                              item.pageSequence.pageSequence.map(
-                                (item2, key) => (
-                                  <li key={key} className="text-start">
-                                    {item2.content}
-                                  </li>
-                                )
-                              )}
-                          </div>
-                        </td>
-                        <td className="border border-slate-600 text-gray-900 text-lg">
-                          <div className="tdInnerDiv">{item.date}</div>
-                        </td>
-                      </tr>
-                    ))
-                  : null}
-              </tbody>
-            </table>
-          </div>
+        <div className="flex flex-col gap-9">
+          <Nav />
+          <div className="px-5 flex justify-center">
+            <div className="w-[100%] border rounded-3xl custom-bg shadow-2xl">
+              <h1 className="head_text p-2">Proposal Table</h1>
+              <div style={{ overflow: "auto" }} className="custom-bg h-[80%]*">
+                <table className="border-collapse border border-slate-500">
+                  <thead>
+                    <tr>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Client Name
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Project Title
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Company Name
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Company Address
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Company Phone
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Issue Date
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Valid Date
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Subheading
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Cover Letter
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Overview
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Functionality
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Website CMS
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        Terms & Conditions
+                      </th>
+                      <th
+                        className="border border-slate-600 text-gray-900 text-lg"
+                        custom-bg
+                      >
+                        Page Sequence
+                      </th>
+                      <th
+                        className="border border-slate-600 text-gray-900 text-lg"
+                        custom-bg
+                      >
+                        Date
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {proposalData
+                      ? proposalData.map((item) => (
+                          <tr key={item._id}>
+                            <td className="border border-slate-600 text-gray-900 text-lg custom-bg font-semibold">
+                              <div className="tdInnerDiv">
+                                {item.cover_letter.clientName}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.cover_page.projectTitle}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.cover_page.companyName}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.cover_page.companyAddress}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.cover_page.companyPhoneNumber}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.cover_page.issueDate}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.cover_page.validDate}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.cover_page.subHeading}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.cover_letter.letterText}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.aboutYourProject.overview}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.aboutYourProject.functionality}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.aboutYourProject.websiteCMS}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.budget &&
+                                  item.budget.terms.map((item2, key) => (
+                                    <li key={key} className="text-start">
+                                      {item2}
+                                    </li>
+                                  ))}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">
+                                {item.pageSequence &&
+                                  item.pageSequence.pageSequence.map(
+                                    (item2, key) => (
+                                      <li key={key} className="text-start">
+                                        {item2.content}
+                                      </li>
+                                    )
+                                  )}
+                              </div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">{item.date}</div>
+                            </td>
+                          </tr>
+                        ))
+                      : null}
+                  </tbody>
+                </table>
+              </div>
 
-          <div className="flex justify-center p-1 text-xl">
+              {/* <div className="flex justify-center p-1 text-xl">
             <div className="custom-bg flex justify-center items-center w-fit rounded-2xl">
               <button className="custom-bg bg-white* px-7 py-2 flex justify-center items-center">
                 back
@@ -260,6 +264,8 @@ function Proposal() {
               <button className="custom-bg bg-white* px-7 py-2 flex justify-center items-center">
                 next
               </button>
+            </div>
+          </div> */}
             </div>
           </div>
         </div>

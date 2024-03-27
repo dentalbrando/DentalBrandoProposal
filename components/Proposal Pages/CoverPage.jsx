@@ -7,7 +7,7 @@ const CoverPage = () => {
   console.log;
   return (
     <>
-      <div className=" full-proposal flex justify-center items-center full-proposal shadow-lg">
+      <div className="full-proposal flex justify-center items-center full-proposal shadow-lg">
         <div
           className=" relative w-[8.27in] min-h-[29.7cm] mx-auto bg-white"
           style={{ fontFamily: "'Montserrat'" }}

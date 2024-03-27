@@ -10,9 +10,6 @@ export default function RootLayout({ children }) {
     <StoreProvider>
       <html lang="en">
         <body>
-          {/* <div className="main">
-            <div className="gradient bg-white" />
-          </div> */}
           <main className="app">{children}</main>
         </body>
       </html>
