@@ -11,8 +11,6 @@ export async function POST(req) {
     if (loginData) {
       if (password !== loginData.password) {
         return NextResponse.json({ error: "wrong password" });
-      } else if (!loginData.permission) {
-        return NextResponse.json({ error: "permission not given" });
       } else {
         let token = createToken(userData);
         return NextResponse.json({ msg: token, userId: loginData._id });

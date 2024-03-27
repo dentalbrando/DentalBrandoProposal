@@ -1,67 +1,64 @@
 "use client";
 import axios from "axios";
 import { useState } from "react";
-import { changePasswordValidation, formValidation } from "@app/registration/formValidation";
+import {
+  changePasswordValidation,
+  formValidation,
+} from "@app/registration/formValidation";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { setCookies } from "@app/registration/auth";
 
-function ChangePassword(prop) {
+function ChangePassword() {
   const [username, setName] = useState("");
-  const [password, setPassword] = useState("");
+  const [oldPassword, setOldPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [adminPassword, setAdminPassword] = useState("");
-  const [usernameError, setUsernameError] = useState("");
-  const [passwordError, setPasswordError] = useState("");
+  const [oldPasswordError, setOldPasswordError] = useState("");
   const [newPasswordError, setNewPasswordError] = useState("");
   const [adminPasswordError, setAdminPasswordError] = useState("");
-  const [loginError, setLoginError] = useState(false);
+  const [changePasswordError, setChangePasswordError] = useState(false);
+  const [changePasswordMsg, setChangePasswordMsg] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const loginSubmit = async () => {
     console.log("login");
     const formData = {
       username,
-      password,
+      oldPassword,
       newPassword,
       adminPassword,
     };
     try {
       setLoading(true);
       await changePasswordValidation.validate(formData, { abortEarly: false });
-      let result = await axios.post(`/api/chagnePassword`, {
-        formData,
-      });
+      let result = await axios.post(`/api/chagnePassword`, formData);
       result.data.msg
-        ? (setCookies(result.data.msg),
-          prop.setTokenVerifierTrigger(prop.tokenVerifierTrigger + 1),
-          prop.setUserId(result.data.userId))
-        : setLoginError(result.data.error);
-      setPasswordError(""), setUsernameError("");
+        ? (setChangePasswordMsg(result.data.msg), setChangePasswordError(""))
+        : (setChangePasswordError(result.data.error),
+          setChangePasswordMsg(""),
+          setOldPasswordError(""),
+          setNewPasswordError(""),
+          adminPasswordError(""));
     } catch (error) {
       error.inner
-        ? error.inner[0].path === "username"
-          ? (setUsernameError(error.inner[0].message),
-            setPasswordError(""),
+        ? error.inner[0].path === "password"
+          ? (setOldPasswordError(error.inner[0].message),
             setNewPasswordError(""),
-            setAdminPasswordError(""))
-          : error.inner[0].path === "password"
-          ? (setPasswordError(error.inner[0].message),
-            setUsernameError(""),
-            setNewPasswordError(""),
-            setAdminPasswordError(""))
+            setAdminPasswordError(""),
+            setChangePasswordMsg(""))
           : error.inner[0].path === "newPassword"
           ? (setNewPasswordError(error.inner[0].message),
-            setUsernameError(""),
-            setPasswordError(""),
-            setAdminPasswordError(""))
+            setOldPasswordError(""),
+            setAdminPasswordError(""),
+            setChangePasswordMsg(""))
           : (setAdminPasswordError(error.inner[0].message),
-            setUsernameError(""),
-            setPasswordError(""),
-            setNewPasswordError(""))
-        : (setPasswordError(""),
-          setUsernameError(""),
+            setOldPasswordError(""),
+            setNewPasswordError(""),
+            setChangePasswordMsg(""))
+        : (setOldPasswordError(""),
           setNewPasswordError(""),
-          setAdminPasswordError(""));
+          setAdminPasswordError(""),
+          setChangePasswordMsg(""));
     } finally {
       setLoading(false);
     }
@@ -84,22 +81,22 @@ function ChangePassword(prop) {
       </h1>
 
       <div className="flex flex-col bg-blue-300* h-[50%] justify-center">
-        <input
+        {/* <input
           className="ps-6 pe-12 py-3"
           placeholder="enter username"
           type="text"
           onChange={(e) => setName(e.target.value)}
           onKeyUp={clickOnEnterPress}
         />
-        <p className="text-lg text-red-500 p-2 px-3">{usernameError}</p>
+        <p className="text-lg text-red-500 p-2 px-3">{usernameError}</p> */}
         <input
           className="ps-6 pe-12 py-3"
           placeholder="enter old password"
           type="text"
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setOldPassword(e.target.value)}
           onKeyUp={clickOnEnterPress}
         />
-        <p className="text-lg text-red-500 p-2 px-3">{passwordError}</p>
+        <p className="text-lg text-red-500 p-2 px-3">{oldPasswordError}</p>
         <input
           className="ps-6 pe-12 py-3"
           placeholder="enter new password"
@@ -116,6 +113,13 @@ function ChangePassword(prop) {
           onKeyUp={clickOnEnterPress}
         />
         <p className="text-lg text-red-500 p-2 px-3">{adminPasswordError}</p>
+        <p
+          className={`text-lg ${
+            changePasswordMsg ? "text-blue-500" : "text-red-500"
+          } p-2 px-3`}
+        >
+          {changePasswordMsg ? changePasswordMsg : changePasswordError}
+        </p>
       </div>
 
       <button
