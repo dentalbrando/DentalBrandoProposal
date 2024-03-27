@@ -1,7 +1,7 @@
 "use client";
 import axios from "axios";
 import { useState } from "react";
-import { formValidation } from "@app/registration/formValidation";
+import { changePasswordValidation, formValidation } from "@app/registration/formValidation";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { setCookies } from "@app/registration/auth";
 
@@ -27,8 +27,8 @@ function ChangePassword(prop) {
     };
     try {
       setLoading(true);
-      await formValidation.validate(formData, { abortEarly: false });
-      let result = await axios.post(`/api/login`, {
+      await changePasswordValidation.validate(formData, { abortEarly: false });
+      let result = await axios.post(`/api/chagnePassword`, {
         formData,
       });
       result.data.msg
@@ -96,26 +96,26 @@ function ChangePassword(prop) {
           className="ps-6 pe-12 py-3"
           placeholder="enter old password"
           type="text"
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => setPassword(e.target.value)}
           onKeyUp={clickOnEnterPress}
         />
-        <p className="text-lg text-red-500 p-2 px-3">{usernameError}</p>
+        <p className="text-lg text-red-500 p-2 px-3">{passwordError}</p>
         <input
           className="ps-6 pe-12 py-3"
           placeholder="enter new password"
           type="text"
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => setNewPassword(e.target.value)}
           onKeyUp={clickOnEnterPress}
         />
-        <p className="text-lg text-red-500 p-2 px-3">{usernameError}</p>
+        <p className="text-lg text-red-500 p-2 px-3">{newPasswordError}</p>
         <input
           className="ps-6 pe-12 py-3"
           placeholder="enter admin password"
           type="text"
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => setAdminPassword(e.target.value)}
           onKeyUp={clickOnEnterPress}
         />
-        <p className="text-lg text-red-500 p-2 px-3">{usernameError}</p>
+        <p className="text-lg text-red-500 p-2 px-3">{adminPasswordError}</p>
       </div>
 
       <button
