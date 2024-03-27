@@ -1,12 +1,7 @@
 "use client";
 import axios from "axios";
 import { useState } from "react";
-import {
-  changePasswordValidation,
-  formValidation,
-} from "@app/registration/formValidation";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { setCookies } from "@app/registration/auth";
+import { changePasswordValidation } from "@app/registration/formValidation";
 
 function ChangePassword() {
   const [username, setName] = useState("");

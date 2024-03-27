@@ -90,9 +90,7 @@ const Home = () => {
         postToken();
       }
     };
-    setTimeout(() => {
-      storeTokenToDb();
-    }, 0);
+    storeTokenToDb();
   }, [tokenVerifierTrigger]);
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
