@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 
 const CoverPage = () => {
   const cover_page = useSelector((state) => state.cover_page);
-  console.log;
   return (
     <>
       <div className="full-proposal flex justify-center items-center full-proposal shadow-lg">
@@ -85,12 +84,9 @@ const CoverPage = () => {
               <div className="text-[11pt] font-[700]">
                 <p>Proposal Valid to:</p>
                 <span className="" id="valid-date">
-                  {
-                    // console.log(cover_page.)
-                    cover_page.validDate
-                      ? cover_page.validDate
-                      : "{No Valid Date}"
-                  }
+                  {cover_page.validDate
+                    ? cover_page.validDate
+                    : "{No Valid Date}"}
                 </span>
               </div>
             </div>
