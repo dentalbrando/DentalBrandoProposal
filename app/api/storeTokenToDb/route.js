@@ -6,8 +6,41 @@ import { cookies } from "next/headers";
 
 export async function POST(req) {
   let token = cookies().get("authToken");
-  console.log(token);
-  // let { tokenFromCookie, userId } = await req.json();
+  let { userId } = await req.json();
+  connectDb();
+
+  if (token) {
+    let tokenAlreadyAvaible = await TokenModel.findOne({
+      token: tokenFromCookie,
+    });
+
+    await TokenModel.updateOne(
+      { userId: tokenAlreadyAvaible.userId },
+      { $set: { token: tokenFromCookie } }
+    );
+
+    let userData = await RegistrationModel.findOne({
+      _id: tokenAlreadyAvaible.userId,
+    });
+    return NextResponse.json({ userData });
+  } else if (userId) {
+    let userAlreadyAvaible = await TokenModel.findOne({
+      userId: userId,
+    });
+
+    if (!userAlreadyAvaible) {
+      await TokenModel({
+        token: tokenFromCookie,
+        userId: userId,
+      }).save();
+    }
+    let userData = await RegistrationModel.findOne({ _id: userId });
+    return NextResponse.json({ userData });
+  } else {
+    let userData = null;
+    return NextResponse.json({ userData });
+  }
+
   // connectDb();
   // let tokenAlreadyAvaible = await TokenModel.findOne({
   //   token: tokenFromCookie,
@@ -38,11 +71,16 @@ export async function POST(req) {
   //     _id: tokenAlreadyAvaible.userId,
   //   });
   //   return NextResponse.json({ userData });
-  // } else {
+  // } else if (token === undefined || token === null) {
   //   let userData = await RegistrationModel.findOne({ _id: userId });
   //   return NextResponse.json({ userData });
+  // } else {
+  //   let userData = null;
+  //   return NextResponse.json({ userData });
   // }
-  
+  console.log(
+    "ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok "
+  );
   let userData = {};
   return NextResponse.json({ userData });
 }
