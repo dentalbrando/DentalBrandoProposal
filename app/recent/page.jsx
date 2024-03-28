@@ -39,7 +39,6 @@ function Proposal() {
   let tokenFromCookie = getCookies();
 
   useEffect(() => {
-    setIsVerified(verifyToken(tokenFromCookie));
     if (isVerified === false) {
       router.push("/");
     }
@@ -55,6 +54,16 @@ function Proposal() {
     if (isVerified === true) {
       getData();
     }
+
+    async function verifyTokenApi() {
+      try {
+        await axios.get("/api/verifyToken");
+        setIsVerified(true);
+      } catch (err) {
+        setIsVerified(false);
+      }
+    }
+    verifyTokenApi();
   }, [isVerified]);
   function regenerate(key) {
     dispatch(

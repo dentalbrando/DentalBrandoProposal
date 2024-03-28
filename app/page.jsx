@@ -72,7 +72,7 @@ const Home = () => {
   useEffect(() => {
     const storeTokenToDb = async () => {
       let tokenFromCookie = getCookies();
-      setIsVerified(verifyToken(tokenFromCookie));
+      // setIsVerified(verifyToken(tokenFromCookie));
       async function postToken() {
         try {
           setLoading(true);
@@ -93,13 +93,10 @@ const Home = () => {
 
       async function verifyTokenApi() {
         try {
-          let { data } = await axios.get("/api/verifyToken");
-          console.log(data);
-          console.log("ok");
+          await axios.get("/api/verifyToken");
+          setIsVerified(true);
         } catch (err) {
-          console.log("not ok");
-        } finally {
-          setLoading(false);
+          setIsVerified(false);
         }
       }
       verifyTokenApi();
