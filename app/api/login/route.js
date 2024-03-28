@@ -2,6 +2,7 @@ import { createToken } from "@app/registration/auth";
 import connectDb from "@app/registration/connectDb";
 import RegistrationModel from "@app/models/registration";
 import { NextResponse } from "next/server";
+import { serialize } from "cookie";
 
 export async function POST(req) {
   try {
@@ -14,12 +15,26 @@ export async function POST(req) {
         return NextResponse.json({ error: "wrong password" });
       } else {
         let token = createToken(userData);
-        return NextResponse.json({ msg: token, userId: loginData._id });
+
+        const cookie = serialize("authToken", token, {
+          maxAge: 3600, // 1 hour in seconds
+          expires: new Date(Date.now() + 3600000),
+          httpOnly: true,
+          secure: process.env.NODE_ENV === "production", // Set secure for HTTPS only
+          sameSite: "lax",
+        });
+        let dataToSend = { msg: token, userId: loginData._id };
+        return new Response(JSON.stringify(dataToSend), {
+          headers: { "Set-Cookie": cookie },
+        });
       }
     } else {
       return NextResponse.json({ error: "user not found" });
     }
   } catch (err) {
-    return NextResponse.json({ error: "user not found" });
+    console.log("err: ", err);
+    return NextResponse.json({
+      error: "can't process you request at the moment",
+    });
   }
 }
