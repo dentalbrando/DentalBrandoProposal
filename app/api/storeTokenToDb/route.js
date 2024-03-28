@@ -11,12 +11,12 @@ export async function POST(req) {
 
   if (token) {
     let tokenAlreadyAvaible = await TokenModel.findOne({
-      token: tokenFromCookie,
+      token: token,
     });
 
     await TokenModel.updateOne(
       { userId: tokenAlreadyAvaible.userId },
-      { $set: { token: tokenFromCookie } }
+      { $set: { token: token } }
     );
 
     let userData = await RegistrationModel.findOne({
@@ -30,7 +30,7 @@ export async function POST(req) {
 
     if (!userAlreadyAvaible) {
       await TokenModel({
-        token: tokenFromCookie,
+        token: token,
         userId: userId,
       }).save();
     }
@@ -40,47 +40,4 @@ export async function POST(req) {
     let userData = null;
     return NextResponse.json({ userData });
   }
-
-  // connectDb();
-  // let tokenAlreadyAvaible = await TokenModel.findOne({
-  //   token: tokenFromCookie,
-  // });
-  // let userAlreadyAvaible = await TokenModel.findOne({
-  //   userId: userId,
-  // });
-  // if (userId !== null) {
-  //   if (!userAlreadyAvaible) {
-  //     await TokenModel({
-  //       token: tokenFromCookie,
-  //       userId: userId,
-  //     }).save();
-  //   } else {
-  //     await TokenModel.updateOne(
-  //       { userId: userId },
-  //       { $set: { token: tokenFromCookie } }
-  //     );
-  //   }
-  // } else {
-  //   await TokenModel.updateOne(
-  //     { userId: tokenAlreadyAvaible.userId },
-  //     { $set: { token: tokenFromCookie } }
-  //   );
-  // }
-  // if (userId === null) {
-  //   let userData = await RegistrationModel.findOne({
-  //     _id: tokenAlreadyAvaible.userId,
-  //   });
-  //   return NextResponse.json({ userData });
-  // } else if (token === undefined || token === null) {
-  //   let userData = await RegistrationModel.findOne({ _id: userId });
-  //   return NextResponse.json({ userData });
-  // } else {
-  //   let userData = null;
-  //   return NextResponse.json({ userData });
-  // }
-  console.log(
-    "ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok "
-  );
-  let userData = {};
-  return NextResponse.json({ userData });
 }
