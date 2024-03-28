@@ -20,6 +20,7 @@ import SaveProposaltoDb from "@components/saveProposaltoDb";
 import Link from "next/link";
 import RecentProposalLink from "@components/RecentProposalLink";
 import Loader from "@components/Loader";
+
 const familyData = {
   name: "John",
   spouse: "Jane",
@@ -89,12 +90,26 @@ const Home = () => {
       if (tokenFromCookie) {
         postToken();
       }
+
+      async function verifyTokenApi() {
+        try {
+          let { data } = await axios.get("/api/verifyToken");
+          console.log(data);
+          console.log("ok");
+        } catch (err) {
+          console.log("not ok");
+        } finally {
+          setLoading(false);
+        }
+      }
+      verifyTokenApi();
     };
     storeTokenToDb();
   }, [tokenVerifierTrigger]);
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }
+
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (

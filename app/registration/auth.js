@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
 import Cookies from "js-cookie";
+import { serialize, } from "cookie";
 
 export function createToken(userData) {
   try {
@@ -21,7 +22,14 @@ export function verifyToken(token) {
 }
 
 export function setCookies(token) {
-  Cookies.set("token", token, { expiresIn: "1" });
+  const cookie = serialize("authToken", token, {
+    maxAge: 3600, // 1 hour in seconds
+    expires: new Date(Date.now() + 3600000),
+    httpOnly: true,
+    secure:true, // Set secure for HTTPS only
+    sameSite: "lax",
+  });
+  return cookie;
 }
 
 export function getCookies() {

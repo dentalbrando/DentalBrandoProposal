@@ -2,7 +2,12 @@ import connectDb from "@app/registration/connectDb";
 import TokenModel from "@app/models/token";
 import { NextResponse } from "next/server";
 import RegistrationModel from "@app/models/registration";
+import { cookies } from "next/headers";
+
 export async function POST(req) {
+  let tokenCookie = cookies();
+  let token = tokenCookie.get("authToken");
+  console.log(token);
   let { tokenFromCookie, userId } = await req.json();
   connectDb();
   let tokenAlreadyAvaible = await TokenModel.findOne({
