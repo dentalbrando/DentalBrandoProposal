@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 const Budget = () => {
   const externalData = useSelector((state) => state.cover_page);
   const budgetData = useSelector((state) => state.budget);
-  console.log("externalData: ", externalData, "budgetData: ", budgetData);
   function addCommasToNumber(number) {
     // Convert the number to a string
     let numberString = number.toString();
@@ -24,7 +23,6 @@ const Budget = () => {
     });
     totalEstimate = subTotal - budgetData.discount;
   }
-  console.log(budgetData.service != "");
 
   return (
     <>

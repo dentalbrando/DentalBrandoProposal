@@ -10,12 +10,11 @@ const LastPage = () => {
     <>
       <div class="offer flex w-[8.27in] h-[11.6876in] bg-white shadow-lg print:shadow-none">
         <div class=" w-100vw">
-          <div class="w-[100%] print:h-[7.3rem] ">
+          <div class="w-[100%] print:h-[7.3rem]">
             <div class="">
               <img class="w-[200px] ml-10 " src={logo.src} alt="" />
               <img class="mt-[-70px]" src={bgImg.src} alt="" />
             </div>
-
             <div class=" mx-10 mt-[-70px] ">
               <h1
                 class="font-[700]  text-[25pt] text-[#00A2FF] leading-10"
@@ -26,7 +25,7 @@ const LastPage = () => {
               </h1>
               <div class=" mt-1 w-[95px]  h-2 bg-[#ffd600] "></div>
             </div>
-            <div class="flex justify-between w-[90%] mx-auto ">
+            <div class="flex justify-between w-[90%] mx-auto">
               <div class="w-fit">
                 <img class="w-[110px] mt-4 " src={svg1.src} alt="" />
               </div>
@@ -54,7 +53,7 @@ const LastPage = () => {
                   </p>
                 </div>
 
-                <div class=" mt-3 flex flex-col items-center justify-center">
+                {/* <div class=" mt-3 flex flex-col items-center justify-center">
                   <div class="w-8 h-8 bg-[#00A2FF] rounded-full flex items-center justify-center">
                     <img class="w-3" src={svg4.src} alt="" />
                   </div>
@@ -64,8 +63,21 @@ const LastPage = () => {
                   <p class=" font-[500] text-[6pt]">Block Near Eiﬀel Towel,</p>
 
                   <p class=" font-[500] text-[6pt]"> Bahria Town, Lahore</p>
-                </div>
+                </div> */}
               </div>
+            </div>
+
+            <div
+              class="mt-3 flex items-center justify-center bg-blue400 gap-2 px-11"
+              // style={{ float: "inline-start" }}
+            >
+              <div class="w-8 h-8 bg-[#00A2FF] rounded-full flex items-center justify-center">
+                <img class="w-3" src={svg4.src} alt="" />
+              </div>
+              <p class=" font-[500] text-[6pt]">
+                53 Hamza Heights, Quaid Block Near Eiﬀel Towel, Bahria Town,
+                Lahore
+              </p>
             </div>
           </div>
         </div>

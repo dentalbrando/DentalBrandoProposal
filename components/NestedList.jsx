@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import TextInput from './TextInput';
 
 const NestedList = ({ proposedSitemap, setSiteMap, shortcutKey }) => {
-    // const sitemap = useSelector((state) => console.log(state));
     const sitemap = useSelector((state) => proposedSitemap == 1 ? state.proposedSitemap.sitemap : state.proposedSitemap2.sitemap2);
     console.log(sitemap)
     const formId = useSelector((state) => state.page.formId);

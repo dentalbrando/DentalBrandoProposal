@@ -33,8 +33,6 @@ const renderFamilyTree = (data, level) => {
 
 export default function FamilyTree({ proposedSitemap }) {
     const familyData = transformData(useSelector((state) => proposedSitemap == 1 ? state.proposedSitemap.sitemap : state.proposedSitemap2?.sitemap2));
-    console.log(familyData)
-
 
     return (
         <div className="relative flex justify-center items-start h-fit w-full">

@@ -13,7 +13,7 @@ const ProposedSiteMapForm = () => {
   const dispatch = useDispatch();
   return (
     <>
-      <TextInput
+      {/* <TextInput
         label="Project Name"
         type='text'
         placeholder='Enter Project Name'
@@ -21,7 +21,7 @@ const ProposedSiteMapForm = () => {
         onChange={(event) => {
           dispatch(setRootName(event.target.value))
         }}
-      />
+      /> */}
       <NestedList proposedSitemap={1} setSiteMap={setSiteMap} shortcutKey={'a'} />
       <NestedListB proposedSitemap={2} setSiteMap={setSiteMap2} shortcutKey={'b'} />
     </>
