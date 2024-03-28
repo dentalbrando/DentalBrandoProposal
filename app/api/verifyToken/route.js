@@ -11,9 +11,6 @@ export async function GET(req) {
   } else {
     token = "";
   }
-  // console.log(
   jwt.verify(token, "securityKey");
-  // );
-  //   console.log(jwt.verify(token, securityKey));
   return NextResponse.json({ msg: "verified" });
 }

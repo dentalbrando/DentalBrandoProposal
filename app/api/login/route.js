@@ -1,10 +1,9 @@
-import { createToken, setCookies } from "@app/registration/auth";
+import { setTokenToCookies } from "@app/registration/auth";
 import connectDb from "@app/registration/connectDb";
 import RegistrationModel from "@app/models/registration";
 import { NextResponse } from "next/server";
 
 export async function POST(req) {
-
   try {
     let { username, password } = await req.json();
     let userData = { username, password };
@@ -12,12 +11,11 @@ export async function POST(req) {
     let loginData = await RegistrationModel.findOne({ username: username });
     if (loginData) {
       if (password !== loginData.password) {
-        return NextResponse.json({ error: "wrong password" }); 
+        return NextResponse.json({ error: "wrong password" });
       } else {
-        let token = createToken(userData);
-        let dataToSend = { msg: token, userId: loginData._id };
+        let dataToSend = { msg: "token", userId: loginData._id };
         return new Response(JSON.stringify(dataToSend), {
-          headers: { "Set-Cookie": setCookies(token) },
+          headers: { "Set-Cookie": setTokenToCookies(userData) },
         });
       }
     } else {

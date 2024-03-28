@@ -3,7 +3,6 @@ import axios from "axios";
 import { useState } from "react";
 import { formValidation } from "@app/registration/formValidation";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { setCookies } from "@app/registration/auth";
 
 function Login(prop) {
   const [username, setName] = useState("");
@@ -27,8 +26,7 @@ function Login(prop) {
         password,
       });
       result.data.msg
-        ? (setCookies(result.data.msg),
-          prop.setTokenVerifierTrigger(prop.tokenVerifierTrigger + 1),
+        ? (prop.setTokenVerifierTrigger(prop.tokenVerifierTrigger + 1),
           prop.setUserId(result.data.userId))
         : setLoginError(result.data.error);
       setPasswordError(""), setUsernameError("");

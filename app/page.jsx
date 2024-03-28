@@ -13,9 +13,7 @@ import MyFamilyTree from "@components/FamilyTree";
 import Nav from "@components/Nav";
 import Registration from "@components/Registration/page";
 import { create, local } from "d3";
-import { getCookies, verifyToken } from "./registration/auth";
 import axios from "axios";
-import Permission from "@components/Permission";
 import SaveProposaltoDb from "@components/saveProposaltoDb";
 import Link from "next/link";
 import RecentProposalLink from "@components/RecentProposalLink";
@@ -71,15 +69,10 @@ const Home = () => {
 
   useEffect(() => {
     const storeTokenToDb = async () => {
-      let tokenFromCookie = getCookies();
-      // setIsVerified(verifyToken(tokenFromCookie));
       async function postToken() {
         try {
           setLoading(true);
-          let result = await axios.post(`/api/storeTokenToDb`, {
-            tokenFromCookie,
-            userId,
-          });
+          let result = await axios.post(`/api/storeTokenToDb`, { userId });
           setUserData(result.data.userData);
         } catch (err) {
           setLoading(false);
@@ -87,9 +80,7 @@ const Home = () => {
           setLoading(false);
         }
       }
-      if (tokenFromCookie) {
-        postToken();
-      }
+      postToken();
 
       async function verifyTokenApi() {
         try {
@@ -100,6 +91,7 @@ const Home = () => {
         }
       }
       verifyTokenApi();
+      // verifyToken(setIsVerified);
     };
     storeTokenToDb();
   }, [tokenVerifierTrigger]);

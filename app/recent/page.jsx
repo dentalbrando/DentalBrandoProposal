@@ -26,7 +26,6 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
 import { setPage, updatePage } from "@app/store/pageSclice";
-import { getCookies, verifyToken } from "@app/registration/auth";
 import Loader from "@components/Loader";
 import Nav from "@components/Nav";
 
@@ -36,7 +35,6 @@ function Proposal() {
   let [proposalData, setProposalData] = useState();
   let [loading, setLoading] = useState(true);
   const [isVerified, setIsVerified] = useState(undefined);
-  let tokenFromCookie = getCookies();
 
   useEffect(() => {
     if (isVerified === false) {
@@ -64,6 +62,8 @@ function Proposal() {
       }
     }
     verifyTokenApi();
+
+    // verifyToken(setIsVerified);
   }, [isVerified]);
   function regenerate(key) {
     dispatch(
