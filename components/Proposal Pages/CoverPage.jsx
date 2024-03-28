@@ -85,9 +85,12 @@ const CoverPage = () => {
               <div className="text-[11pt] font-[700]">
                 <p>Proposal Valid to:</p>
                 <span className="" id="valid-date">
-                  {cover_page.validDate
-                    ? cover_page.validDate
-                    : "{No Valid Date}"}
+                  {
+                    // console.log(cover_page.)
+                    cover_page.validDate
+                      ? cover_page.validDate
+                      : "{No Valid Date}"
+                  }
                 </span>
               </div>
             </div>
