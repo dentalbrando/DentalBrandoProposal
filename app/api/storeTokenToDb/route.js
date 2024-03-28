@@ -5,42 +5,44 @@ import RegistrationModel from "@app/models/registration";
 import { cookies } from "next/headers";
 
 export async function POST(req) {
-  let tokenCookie = cookies();
-  let token = tokenCookie.get("authToken");
+  let token = cookies().get("authToken");
   console.log(token);
-  let { tokenFromCookie, userId } = await req.json();
-  connectDb();
-  let tokenAlreadyAvaible = await TokenModel.findOne({
-    token: tokenFromCookie,
-  });
-  let userAlreadyAvaible = await TokenModel.findOne({
-    userId: userId,
-  });
-  if (userId !== null) {
-    if (!userAlreadyAvaible) {
-      await TokenModel({
-        token: tokenFromCookie,
-        userId: userId,
-      }).save();
-    } else {
-      await TokenModel.updateOne(
-        { userId: userId },
-        { $set: { token: tokenFromCookie } }
-      );
-    }
-  } else {
-    await TokenModel.updateOne(
-      { userId: tokenAlreadyAvaible.userId },
-      { $set: { token: tokenFromCookie } }
-    );
-  }
-  if (userId === null) {
-    let userData = await RegistrationModel.findOne({
-      _id: tokenAlreadyAvaible.userId,
-    });
-    return NextResponse.json({ userData });
-  } else {
-    let userData = await RegistrationModel.findOne({ _id: userId });
-    return NextResponse.json({ userData });
-  }
+  // let { tokenFromCookie, userId } = await req.json();
+  // connectDb();
+  // let tokenAlreadyAvaible = await TokenModel.findOne({
+  //   token: tokenFromCookie,
+  // });
+  // let userAlreadyAvaible = await TokenModel.findOne({
+  //   userId: userId,
+  // });
+  // if (userId !== null) {
+  //   if (!userAlreadyAvaible) {
+  //     await TokenModel({
+  //       token: tokenFromCookie,
+  //       userId: userId,
+  //     }).save();
+  //   } else {
+  //     await TokenModel.updateOne(
+  //       { userId: userId },
+  //       { $set: { token: tokenFromCookie } }
+  //     );
+  //   }
+  // } else {
+  //   await TokenModel.updateOne(
+  //     { userId: tokenAlreadyAvaible.userId },
+  //     { $set: { token: tokenFromCookie } }
+  //   );
+  // }
+  // if (userId === null) {
+  //   let userData = await RegistrationModel.findOne({
+  //     _id: tokenAlreadyAvaible.userId,
+  //   });
+  //   return NextResponse.json({ userData });
+  // } else {
+  //   let userData = await RegistrationModel.findOne({ _id: userId });
+  //   return NextResponse.json({ userData });
+  // }
+  
+  let userData = {};
+  return NextResponse.json({ userData });
 }

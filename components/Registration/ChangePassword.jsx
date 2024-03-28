@@ -64,7 +64,6 @@ function ChangePassword() {
   }
 
   return (
-    // <div className="flex items-center w-5/12 h-full custom-bg">
     <div className="flex flex-col justify-evenly w-fit h-fit py-10* ps-8 pe-12 text-xl font-sans w-fit borderl-2 border-gray-500 w-full h-[90] gap-10">
       <h1
         className="
@@ -76,17 +75,9 @@ function ChangePassword() {
       </h1>
 
       <div className="flex flex-col bg-blue-300* h-[50%] justify-center">
-        {/* <input
-          className="ps-6 pe-12 py-3"
-          placeholder="enter username"
-          type="text"
-          onChange={(e) => setName(e.target.value)}
-          onKeyUp={clickOnEnterPress}
-        />
-        <p className="text-lg text-red-500 p-2 px-3">{usernameError}</p> */}
         <input
           className="ps-6 pe-12 py-3"
-          placeholder="enter old password"
+          placeholder="Old Password"
           type="text"
           onChange={(e) => setOldPassword(e.target.value)}
           onKeyUp={clickOnEnterPress}
@@ -94,7 +85,7 @@ function ChangePassword() {
         <p className="text-lg text-red-500 p-2 px-3">{oldPasswordError}</p>
         <input
           className="ps-6 pe-12 py-3"
-          placeholder="enter new password"
+          placeholder="New Password"
           type="text"
           onChange={(e) => setNewPassword(e.target.value)}
           onKeyUp={clickOnEnterPress}
@@ -102,7 +93,7 @@ function ChangePassword() {
         <p className="text-lg text-red-500 p-2 px-3">{newPasswordError}</p>
         <input
           className="ps-6 pe-12 py-3"
-          placeholder="enter admin password"
+          placeholder="Admin Password"
           type="text"
           onChange={(e) => setAdminPassword(e.target.value)}
           onKeyUp={clickOnEnterPress}
@@ -126,10 +117,9 @@ function ChangePassword() {
         } text-white mx-0 p-3`}
         onClick={loginSubmit}
       >
-        submit
+        SUBMIT
       </button>
     </div>
-    // </div>
   );
 }
 

@@ -25,7 +25,7 @@ function Registration(prop) {
               className="text-start text-blue-600 hover:underline px-3 text-xl py-5 mx-5 w-fit"
               onClick={() => setLoginToggle(!loginToggle)}
             >
-              {loginToggle ? "change password" : "go to login page"}
+              {loginToggle ? "Change Password" : "Go to Login Page"}
             </button>
           </div>
         </div>

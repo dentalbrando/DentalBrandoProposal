@@ -60,7 +60,7 @@ function Login(prop) {
       <div className="flex flex-col bg-blue-300* justify-center">
         <input
           className="ps-6 pe-12 py-3"
-          placeholder="enter user name"
+          placeholder="Username"
           type="text"
           onChange={(e) => setName(e.target.value)}
           onKeyUp={clickOnEnterPress}
@@ -69,7 +69,7 @@ function Login(prop) {
         <div className="flex w-full justify-end items-center">
           <input
             name="showPass"
-            placeholder="enter password"
+            placeholder="Password"
             className="ps-6 pe-12 py-3 w-full"
             type={showPassword ? "text" : "password"}
             onChange={(e) => setPassword(e.target.value)}
@@ -96,7 +96,7 @@ function Login(prop) {
         } text-white mx-0 p-3`}
         onClick={loginSubmit}
       >
-        submit
+        SUBMIT
       </button>
     </div>
     // </div>
