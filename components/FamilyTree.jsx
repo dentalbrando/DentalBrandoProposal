@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 
 const transformData = (inputData) => {
     const result = {
-        text: useSelector((state) => state.proposedSitemap.rootName),
+        // text: useSelector((state) => state.proposedSitemap.rootName),
         children: inputData
     }
     return result;

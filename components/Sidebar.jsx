@@ -9,7 +9,9 @@ import { resetSquence, setPageSequence } from "@app/store/pageSequence";
 const Sidebar = () => {
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
   const [items, setItems] = useState(pageSequence);
+  const [companyLogoError, setCompanyLogoError] = useState();
 
+  const { companyLogo } = useSelector((state) => state.cover_page);
   const dispatch = useDispatch();
   const onDragEnd = (result) => {
     if (!result.destination) return; // If dropped outside the list
@@ -20,7 +22,12 @@ const Sidebar = () => {
     dispatch(setPageSequence(reorderedItems));
   };
   const generate = () => {
-    dispatch(updatePage("100"));
+    if (companyLogo) {
+      dispatch(updatePage("100"));
+      setCompanyLogoError("");
+    } else {
+      setCompanyLogoError("company logo is required in cover page");
+    }
   };
 
   const handleChangeChecked = (e, itemId) => {
@@ -77,6 +84,9 @@ const Sidebar = () => {
                 >
                   Generate
                 </button>
+                <p className="text-red-500 px-2 font-semibold text-lg">
+                  {companyLogoError}
+                </p>
                 <button
                   type="button"
                   className="button border border-gray-200 p-3 rounded-3xl bg-white"

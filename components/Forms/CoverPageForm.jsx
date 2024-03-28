@@ -47,7 +47,7 @@ const CoverPageForm = () => {
     dispatch(setCompanyName(companyName));
     dispatch(setIssueDate(issueDate));
     dispatch(setValidDate(validDate.split("-").reverse().join("-")));
-    // dispatch(setCompanyLogo(companyLogo));
+    dispatch(setCompanyLogo(companyLogo));
   };
   useEffect(() => {
     handleSave();
@@ -59,6 +59,7 @@ const CoverPageForm = () => {
     companyName,
     issueDate,
     validDate,
+    companyLogo,
   ]);
   const handleLogoChange = (event) => {
     const file = event.target.files[0];

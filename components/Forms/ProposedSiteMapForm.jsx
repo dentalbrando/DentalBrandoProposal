@@ -8,9 +8,8 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 const ProposedSiteMapForm = () => {
-  const sitemapData = useSelector(state => state.proposedSitemap)
-
-  const dispatch = useDispatch();
+  // const sitemapData = useSelector(state => state.proposedSitemap)
+  // const dispatch = useDispatch();
   return (
     <>
       {/* <TextInput
