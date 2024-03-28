@@ -6,6 +6,12 @@ import { cookies } from "next/headers";
 
 export async function POST(req) {
   let token = cookies().get("authToken");
+  if (token) {
+    token = token.value;
+  } else {
+    token = "";
+  }
+
   let { userId } = await req.json();
   connectDb();
 
@@ -13,16 +19,20 @@ export async function POST(req) {
     let tokenAlreadyAvaible = await TokenModel.findOne({
       token: token,
     });
+    if (tokenAlreadyAvaible) {
+      await TokenModel.updateOne(
+        { userId: tokenAlreadyAvaible.userId },
+        { $set: { token: token } }
+      );
 
-    await TokenModel.updateOne(
-      { userId: tokenAlreadyAvaible.userId },
-      { $set: { token: token } }
-    );
-
-    let userData = await RegistrationModel.findOne({
-      _id: tokenAlreadyAvaible.userId,
-    });
-    return NextResponse.json({ userData });
+      let userData = await RegistrationModel.findOne({
+        _id: tokenAlreadyAvaible.userId,
+      });
+      return NextResponse.json({ userData });
+    } else {
+      let userData = null;
+      return NextResponse.json({ userData });
+    }
   } else if (userId) {
     let userAlreadyAvaible = await TokenModel.findOne({
       userId: userId,
