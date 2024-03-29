@@ -28,6 +28,7 @@ import { useRouter } from "next/navigation";
 import { setPage, updatePage } from "@app/store/pageSclice";
 import Loader from "@components/Loader";
 import Nav from "@components/Nav";
+import { FaSearch } from "react-icons/fa";
 
 function Proposal() {
   let router = useRouter();
@@ -98,109 +99,112 @@ function Proposal() {
           <Loader />
         </div>
       ) : (
-        <div className="flex flex-col gap-9">
-          <Nav />
-          <div className="px-5 flex justify-center">
-            <div className="w-[100%] rounded-3xl custom-bg shadow-2xl">
-              <h1 className="head_text p-2">Proposal Table</h1>
-              <div style={{ overflow: "auto" }} className="custom-bg h-[80%]*">
-                <table className="border-collapse border-slate-500">
-                  <thead>
-                    <tr>
-                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
-                        No.
-                      </th>
-                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
-                        Client Name
-                      </th>
-                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
-                        Project Title
-                      </th>
-                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
-                        Company Name
-                      </th>
-                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
-                        Issue Date
-                      </th>
-                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
-                        Valid Date
-                      </th>
-                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
-                        Action
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {proposalData
-                      ? proposalData.map((item, key) => (
-                          <tr key={key}>
-                            <td className="td-border text-gray-900 text-lg">
-                              <div className="tdInnerDiv">{key}</div>
-                            </td>
-                            <td className="td-border text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
-                                {item.cover_letter.clientName}
-                              </div>
-                            </td>
-                            <td className="td-border text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
-                                {item.cover_page.projectTitle}
-                              </div>
-                            </td>
-                            <td className="td-border text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
-                                {item.cover_page.companyName}
-                              </div>
-                            </td>
-                            <td className="td-border text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
-                                {item.cover_page.issueDate}
-                              </div>
-                            </td>
-                            <td className="td-border text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
-                                {item.cover_page.validDate}
-                              </div>
-                            </td>
-                            <td className="last-td-border text-gray-900 text-lg px-0 flex justify-center items-center">
-                              <div
-                                onClick={() => {
-                                  regenerate(key);
-                                }}
-                                className="text-white bg-tableBlueColor px-3 py-[0.25rem] rounded-lg mx-auto"
-                              >
-                                Regenerate PDF
-                              </div>
-                            </td>
-                          </tr>
-                        ))
-                      : null}
-                  </tbody>
-                </table>
-              </div>
+        // <div className="flex flex-col">
+        //   <Nav />
 
-              {/* <div className="flex justify-center p-1 text-xl">
-            <div className="custom-bg flex justify-center items-center w-fit rounded-2xl">
-              <button className="custom-bg bg-white* px-7 py-2 flex justify-center items-center">
-                back
-              </button>
-              <button className="custom-bg bg-white* px-7 py-2 flex justify-center items-center">
-                1
-              </button>
-              <button className="custom-bg bg-white* px-7 py-2 flex justify-center items-center">
-                2
-              </button>
-              <button className="custom-bg bg-white* px-7 py-2 flex justify-center items-center">
-                3
-              </button>
-              <button className="custom-bg bg-white* px-7 py-2 flex justify-center items-center">
-                next
-              </button>
+        <div className="p-10">
+          <h1 className="text-4xl font-bold text-tableBlueColor">
+            Proposal Table
+          </h1>
+          <div className="">
+            <div className="flex-end">
+              <div className="w-fit flex justify-end items-center py-5">
+                <input
+                  className="w-full ps-4 pe-11 py-2 search-placehoder table-border rounded-md text-md"
+                  placeholder="Search..."
+                />
+                <FaSearch className="absolute me-5" />
+              </div>
             </div>
-          </div> */}
+
+            <table className="table-border">
+              <thead className="thead">
+                <tr>
+                  <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
+                    No.
+                  </th>
+                  <th className="th-border text-center text-lg text-lg py-2 w-[180px]">
+                    Client Name
+                  </th>
+                  <th className="th-border text-center text-lg text-lg py-2 w-[200px]">
+                    Project Title
+                  </th>
+                  <th className="th-border text-center text-lg text-lg py-2 w-[220px]">
+                    Company Name
+                  </th>
+                  <th className="th-border text-center text-lg text-lg py-2 w-[170px]">
+                    Issue Date
+                  </th>
+                  <th className="th-border text-center text-lg text-lg py-2 w-[170px]">
+                    Valid Date
+                  </th>
+                  <th className="last-th-border text-center text-lg text-lg py-2 w-[170px]">
+                    Action
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {proposalData
+                  ? proposalData.map((item, key) => (
+                      <tr key={key} className="tr-border">
+                        <td className="td-border text-center text-lg">
+                          <div className="tdDiv">0{key + 1}</div>
+                        </td>
+                        <td className="td-border text-center text-lg">
+                          <div className="tdDiv">
+                            {item.cover_letter.clientName}
+                          </div>
+                        </td>
+                        <td className="td-border text-center text-lg">
+                          <div className="tdDiv">
+                            {item.cover_page.projectTitle}
+                          </div>
+                        </td>
+                        <td className="td-border text-center text-lg">
+                          <div className="tdDiv">
+                            {item.cover_page.companyName}
+                          </div>
+                        </td>
+                        <td className="td-border text-center text-lg">
+                          <div className="tdDiv">
+                            {item.cover_page.issueDate}
+                          </div>
+                        </td>
+                        <td className="td-border text-center text-lg">
+                          <div className="tdDiv">
+                            {item.cover_page.validDate}
+                          </div>
+                        </td>
+                        <td className="text-center text-lg px-0 flex justify-center items-center">
+                          <div
+                            onClick={() => {
+                              regenerate(key);
+                            }}
+                            className="text-white bg-tableBlueColor px-3 py-[0.25rem] rounded-lg mx-auto"
+                          >
+                            Regenerate PDF
+                          </div>
+                        </td>
+                      </tr>
+                    ))
+                  : null}
+              </tbody>
+            </table>
+            <div className="flex-end py-5">
+              <div className="ms-5">
+                <button className="px-2 text-lg">Prev</button>
+                <button className="px-2 text-lg text-tableBlueColor">01</button>
+                <button className="px-2 text-lg ">02</button>
+                <button className="px-2 text-lg ">..</button>
+                <button className="px-2 text-lg ">05</button>
+                <button className="px-2 text-lg text-tableBlueColor">
+                  Next
+                </button>
+              </div>
             </div>
           </div>
         </div>
+        // </div>
       )}
     </>
   );
