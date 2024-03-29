@@ -108,6 +108,9 @@ function Proposal() {
                   <thead>
                     <tr>
                       <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
+                        No.
+                      </th>
+                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
                         Client Name
                       </th>
                       <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
@@ -117,54 +120,24 @@ function Proposal() {
                         Company Name
                       </th>
                       <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                        Company Address
-                      </th>
-                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                        Company Phone
-                      </th>
-                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
                         Issue Date
                       </th>
                       <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
                         Valid Date
                       </th>
                       <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                        Subheading
-                      </th>
-                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                        Cover Letter
-                      </th>
-                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                        Overview
-                      </th>
-                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                        Functionality
-                      </th>
-                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                        Website CMS
-                      </th>
-                      <th className="border border-slate-600 text-gray-900 text-lg custom-bg text-lg py-2">
-                        Terms & Conditions
-                      </th>
-                      <th
-                        className="border border-slate-600 text-gray-900 text-lg"
-                        custom-bg
-                      >
-                        Page Sequence
-                      </th>
-                      <th
-                        className="border border-slate-600 text-gray-900 text-lg"
-                        custom-bg
-                      >
-                        Date
+                        Action
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     {proposalData
-                      ? proposalData.map((item) => (
-                          <tr key={item._id}>
-                            <td className="border border-slate-600 text-gray-900 text-lg custom-bg font-semibold">
+                      ? proposalData.map((item, key) => (
+                          <tr key={key}>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
+                              <div className="tdInnerDiv">{key}</div>
+                            </td>
+                            <td className="border border-slate-600 text-gray-900 text-lg">
                               <div className="tdInnerDiv">
                                 {item.cover_letter.clientName}
                               </div>
@@ -181,16 +154,6 @@ function Proposal() {
                             </td>
                             <td className="border border-slate-600 text-gray-900 text-lg">
                               <div className="tdInnerDiv">
-                                {item.cover_page.companyAddress}
-                              </div>
-                            </td>
-                            <td className="border border-slate-600 text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
-                                {item.cover_page.companyPhoneNumber}
-                              </div>
-                            </td>
-                            <td className="border border-slate-600 text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
                                 {item.cover_page.issueDate}
                               </div>
                             </td>
@@ -201,53 +164,8 @@ function Proposal() {
                             </td>
                             <td className="border border-slate-600 text-gray-900 text-lg">
                               <div className="tdInnerDiv">
-                                {item.cover_page.subHeading}
+                                <button>regenerate</button>
                               </div>
-                            </td>
-                            <td className="border border-slate-600 text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
-                                {item.cover_letter.letterText}
-                              </div>
-                            </td>
-                            <td className="border border-slate-600 text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
-                                {item.aboutYourProject.overview}
-                              </div>
-                            </td>
-                            <td className="border border-slate-600 text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
-                                {item.aboutYourProject.functionality}
-                              </div>
-                            </td>
-                            <td className="border border-slate-600 text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
-                                {item.aboutYourProject.websiteCMS}
-                              </div>
-                            </td>
-                            <td className="border border-slate-600 text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
-                                {item.budget &&
-                                  item.budget.terms.map((item2, key) => (
-                                    <li key={key} className="text-start">
-                                      {item2}
-                                    </li>
-                                  ))}
-                              </div>
-                            </td>
-                            <td className="border border-slate-600 text-gray-900 text-lg">
-                              <div className="tdInnerDiv">
-                                {item.pageSequence &&
-                                  item.pageSequence.pageSequence.map(
-                                    (item2, key) => (
-                                      <li key={key} className="text-start">
-                                        {item2.content}
-                                      </li>
-                                    )
-                                  )}
-                              </div>
-                            </td>
-                            <td className="border border-slate-600 text-gray-900 text-lg">
-                              <div className="tdInnerDiv">{item.date}</div>
                             </td>
                           </tr>
                         ))
