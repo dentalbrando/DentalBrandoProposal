@@ -106,7 +106,7 @@ function Proposal() {
           <h1 className="text-4xl font-bold text-tableBlueColor">
             Proposal Table
           </h1>
-          <div className="">
+          <div className="flex flex-col">
             <div className="flex-end">
               <div className="w-fit flex justify-end items-center py-5">
                 <input
@@ -117,9 +117,9 @@ function Proposal() {
               </div>
             </div>
 
-            <table className="table-border">
+            <table className="table-border w-fit mx-auto">
               <thead className="thead">
-                <tr>
+                <tr className="">
                   <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
                     No.
                   </th>
@@ -138,7 +138,7 @@ function Proposal() {
                   <th className="th-border text-center text-lg text-lg py-2 w-[170px]">
                     Valid Date
                   </th>
-                  <th className="last-th-border text-center text-lg text-lg py-2 w-[170px]">
+                  <th className="last-th-border text-center text-lg text-lg py-2 w-[200px] flex justify-center">
                     Action
                   </th>
                 </tr>
@@ -147,43 +147,44 @@ function Proposal() {
                 {proposalData
                   ? proposalData.map((item, key) => (
                       <tr key={key} className="tr-border">
-                        <td className="td-border text-center text-lg">
-                          <div className="tdDiv">0{key + 1}</div>
+                        <td className="td-border text-center py-4 text-lg w-[100px]">
+                          {key < 9 ? "0" : null}
+                          {key + 1}
                         </td>
-                        <td className="td-border text-center text-lg">
-                          <div className="tdDiv">
-                            {item.cover_letter.clientName}
-                          </div>
+                        <td className="td-border text-center py-4 text-lg w-[180px]">
+                          {/* <div className="tdDiv"> */}
+                          {item.cover_letter.clientName}
+                          {/* </div> */}
                         </td>
-                        <td className="td-border text-center text-lg">
-                          <div className="tdDiv">
-                            {item.cover_page.projectTitle}
-                          </div>
+                        <td className="td-border text-center py-4 text-lg w-[200px]">
+                          {/* <div className="tdDiv"> */}
+                          {item.cover_page.projectTitle}
+                          {/* </div> */}
                         </td>
-                        <td className="td-border text-center text-lg">
-                          <div className="tdDiv">
-                            {item.cover_page.companyName}
-                          </div>
+                        <td className="td-border text-center py-4 text-lg w-[220px]">
+                          {/* <div className="tdDiv"> */}
+                          {item.cover_page.companyName}
+                          {/* </div> */}
                         </td>
-                        <td className="td-border text-center text-lg">
-                          <div className="tdDiv">
-                            {item.cover_page.issueDate}
-                          </div>
+                        <td className="td-border text-center py-4 text-lg w-[170px]">
+                          {/* <div className="tdDiv"> */}
+                          {item.cover_page.issueDate}
+                          {/* </div> */}
                         </td>
-                        <td className="td-border text-center text-lg">
-                          <div className="tdDiv">
-                            {item.cover_page.validDate}
-                          </div>
+                        <td className="td-border text-center py-4 text-lg w-[170px]">
+                          {/* <div className="tdDiv"> */}
+                          {item.cover_page.validDate}
+                          {/* </div> */}
                         </td>
-                        <td className="text-center text-lg px-0 flex justify-center items-center">
-                          <div
+                        <td className="text-center text-lg px-0 w-[200px]">
+                          <button
                             onClick={() => {
                               regenerate(key);
                             }}
-                            className="text-white bg-tableBlueColor px-3 py-[0.25rem] rounded-lg mx-auto"
+                            className="text-white bg-tableBlueColor px-4 py-[0.25rem] my-0 mx-6 rounded-lg"
                           >
                             Regenerate PDF
-                          </div>
+                          </button>
                         </td>
                       </tr>
                     ))
