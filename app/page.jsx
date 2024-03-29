@@ -105,7 +105,7 @@ const Home = () => {
         <div className="w-fit m-auto py-24">
           <Loader />
         </div>
-      ) : isVerified ? (
+      ) : !isVerified ? (
         <>
           {pageNo != 100 ? (
             <>

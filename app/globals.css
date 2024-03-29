@@ -299,6 +299,15 @@ td {
   height: 5px;
   width: 5px;
 }
-/* .tdInnerDivX::-webkit-scrollbar-thumb {
-  background-color: slategrey;
-} */
+
+.bg-tableBlueColor {
+  background-color: rgb(1, 161, 255);
+}
+.text-tableBlueColor{
+  color: rgb(1, 161, 255);
+}
+
+.table-border{
+  border: solid rgb(217,217,217) 3px;
+  
+}
