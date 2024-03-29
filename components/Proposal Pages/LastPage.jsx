@@ -42,13 +42,17 @@ const LastPage = () => {
                   <div class="w-8 h-8 bg-[#00A2FF] rounded-full flex items-center justify-center">
                     <img class="w-4" src={svg3.src} alt="" />
                   </div>
+
                   <p class=" font-[500] text-[6pt] mt-2">
+                    <span>General Email: </span>
                     info@soft-enterprise.com
                   </p>
                   <p class=" font-[500] text-[6pt] ">
+                    <span>Project Email: </span>
                     project@soft-enterprise.com
                   </p>
                   <p class=" font-[500] text-[6pt] ">
+                    <span>Finance Email: </span>
                     ﬁnance@soft-enterprise.com
                   </p>
                 </div>

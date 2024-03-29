@@ -305,7 +305,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 table{
-  max-height: 50vh;
   overflow: auto;
 }
 

@@ -34,6 +34,8 @@ function Proposal() {
   let router = useRouter();
   let dispatch = useDispatch();
   let [proposalData, setProposalData] = useState();
+  let [tablepage, setTablePage] = useState(1);
+  let [multiplier, setMultiplier] = useState(1);
   let [loading, setLoading] = useState(true);
   const [isVerified, setIsVerified] = useState(undefined);
 
@@ -46,6 +48,8 @@ function Proposal() {
         setLoading(true);
         let { data } = await axios.get("/api/proposal");
         setProposalData(data.proposalData);
+      } catch (er) {
+        console.log(er);
       } finally {
         setLoading(false);
       }
@@ -63,8 +67,6 @@ function Proposal() {
       }
     }
     verifyTokenApi();
-
-    // verifyToken(setIsVerified);
   }, [isVerified]);
   function regenerate(key) {
     dispatch(
@@ -147,45 +149,55 @@ function Proposal() {
                 {proposalData
                   ? proposalData.map((item, key) => (
                       <tr key={key} className="tr-border">
-                        <td className="td-border text-center py-4 text-lg w-[100px]">
-                          {key < 9 ? "0" : null}
-                          {key + 1}
-                        </td>
-                        <td className="td-border text-center py-4 text-lg w-[180px]">
-                          {/* <div className="tdDiv"> */}
-                          {item.cover_letter.clientName}
-                          {/* </div> */}
-                        </td>
-                        <td className="td-border text-center py-4 text-lg w-[200px]">
-                          {/* <div className="tdDiv"> */}
-                          {item.cover_page.projectTitle}
-                          {/* </div> */}
-                        </td>
-                        <td className="td-border text-center py-4 text-lg w-[220px]">
-                          {/* <div className="tdDiv"> */}
-                          {item.cover_page.companyName}
-                          {/* </div> */}
-                        </td>
-                        <td className="td-border text-center py-4 text-lg w-[170px]">
-                          {/* <div className="tdDiv"> */}
-                          {item.cover_page.issueDate}
-                          {/* </div> */}
-                        </td>
-                        <td className="td-border text-center py-4 text-lg w-[170px]">
-                          {/* <div className="tdDiv"> */}
-                          {item.cover_page.validDate}
-                          {/* </div> */}
-                        </td>
-                        <td className="text-center text-lg px-0 w-[200px]">
-                          <button
-                            onClick={() => {
-                              regenerate(key);
-                            }}
-                            className="text-white bg-tableBlueColor px-4 py-[0.25rem] my-0 mx-6 rounded-lg"
-                          >
-                            Regenerate PDF
-                          </button>
-                        </td>
+                        {key < multiplier * 10 &&
+                        proposalData[key * multiplier] ? (
+                          <>
+                            <td className="td-border text-center py-4 text-lg w-[100px]">
+                              {key < 9 ? "0" : null}
+                              {key + 1 * multiplier}
+                            </td>
+                            <td className="td-border text-center py-4 text-lg w-[180px]">
+                              {
+                                proposalData[key * multiplier].cover_letter
+                                  .clientName
+                              }
+                            </td>
+                            <td className="td-border text-center py-4 text-lg w-[200px]">
+                              {
+                                proposalData[key * multiplier].cover_page
+                                  .projectTitle
+                              }
+                            </td>
+                            <td className="td-border text-center py-4 text-lg w-[220px]">
+                              {
+                                proposalData[key * multiplier].cover_page
+                                  .companyName
+                              }
+                            </td>
+                            <td className="td-border text-center py-4 text-lg w-[170px]">
+                              {
+                                proposalData[key * multiplier].cover_page
+                                  .issueDate
+                              }
+                            </td>
+                            <td className="td-border text-center py-4 text-lg w-[170px]">
+                              {
+                                proposalData[key * multiplier].cover_page
+                                  .validDate
+                              }
+                            </td>
+                            <td className="text-center text-lg px-0 w-[200px]">
+                              <button
+                                onClick={() => {
+                                  regenerate(key);
+                                }}
+                                className="text-white bg-tableBlueColor px-4 py-[0.25rem] my-0 mx-6 rounded-lg"
+                              >
+                                Regenerate PDF
+                              </button>
+                            </td>
+                          </>
+                        ) : null}
                       </tr>
                     ))
                   : null}
@@ -193,12 +205,35 @@ function Proposal() {
             </table>
             <div className="flex-end py-5">
               <div className="ms-5">
-                <button className="px-2 text-lg">Prev</button>
-                <button className="px-2 text-lg text-tableBlueColor">01</button>
-                <button className="px-2 text-lg ">02</button>
+                <button
+                  className="px-2 text-lg"
+                  onClick={() => setMultiplier(multiplier - 1)}
+                >
+                  Prev
+                </button>
+                <button
+                  className="px-2 text-lg text-tableBlueColor"
+                  onClick={() => setMultiplier(1)}
+                >
+                  01
+                </button>
+                <button
+                  className="px-2 text-lg "
+                  onClick={() => setMultiplier(2)}
+                >
+                  02
+                </button>
                 <button className="px-2 text-lg ">..</button>
-                <button className="px-2 text-lg ">05</button>
-                <button className="px-2 text-lg text-tableBlueColor">
+                <button
+                  className="px-2 text-lg "
+                  onClick={() => setMultiplier(5)}
+                >
+                  05
+                </button>
+                <button
+                  className="px-2 text-lg text-tableBlueColor"
+                  onClick={() => setMultiplier(multiplier + 1)}
+                >
                   Next
                 </button>
               </div>
