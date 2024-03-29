@@ -1,37 +1,45 @@
 import img from "@public/assets/table of content's image.png";
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 const TableOfContent = () => {
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
 
+  useEffect(() => {
+    console.log(pageSequence);
+  }, []);
+
   let number = 0;
 
   return (
     <>
-      <div class=" full-proposal flex justify-center items-center shadow-lg">
+      <div className=" full-proposal flex justify-center items-center shadow-lg">
         <div
           style={{ fontFamily: "Open sans" }}
-          class="flex justify-between w-[210mm] h-[297mm] mx-auto bg-white pl-14 "
+          className="flex justify-between w-[210mm] h-[297mm] mx-auto bg-white pl-14 "
         >
-          <section class="w-[calc(100%-59px)]">
-            <div class="text-[25pt] font-[700] text-[#00A2FF] mt-[131px] w-[305px] ">
+          <section className="w-[calc(100%-59px)]">
+            <div className="text-[25pt] font-[700] text-[#00A2FF] mt-[131px] w-[305px] ">
               <div>
                 <h1
                   style={{ lineHeight: "1", fontFamily: "Montserrat" }}
-                  class="pl-1 "
+                  className="pl-1 "
                 >
                   <p>TABLE OF CONTENT</p>
                 </h1>
               </div>
 
               <div>
-                <div class="w-[90px] bg-[#FED500] h-[6px]  "></div>
+                <div className="w-[90px] bg-[#FED500] h-[6px]"></div>
               </div>
             </div>
-            <div style={{ paddingRight: "44px" }} class="whitespace-nowrap">
+            <div style={{ paddingRight: "44px" }} className="whitespace-nowrap">
+
+
+
               {pageSequence.map((page, index) => {
                 const id = page.id;
-                if (id == "1") return;
+                // if (id == "1") return;
 
                 if (page.checked) {
                   number++;
@@ -40,26 +48,60 @@ const TableOfContent = () => {
                 }
 
                 switch (id) {
-                  case "2":
+                  case "1":
                     return (
                       page.checked && (
                         <div
-                          class={`${index == "0" ? "mt-[55px]" : "mt-[17px]"}`}
+                          className={`${
+                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                          }`}
                         >
-                          <div class="flex justify-between items-center text-[14pt] ">
-                            <div class="w-[10rem] font-[400]">
-                              <p>Cover Letter</p>
+                          <div className="flex justify-between items-center text-[14pt] ">
+                            <div className="w-[10rem] font-[400]">
+                              <p>{page.content}</p>
                             </div>
                             <div
-                              class="ml-[14px] text-gray-400"
+                              className="ml-[14px] text-gray-400"
                               style={{ fontFamily: "Open sans" }}
                             >
-                              <p class="flex items-center justify-center">
+                              <p className="flex items-center justify-center">
                                 ....................................................................................
                               </p>
                             </div>
                             <div
-                              class="ml-[20px] flex items-center font-[400]"
+                              className="ml-[20px] flex items-center font-[400]"
+                              style={{ fontFamily: "'Lato', sans-serif" }}
+                            >
+                              <p>{number < 10 ? "0" + number : number}</p>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    );
+
+                  case "2":
+                    return (
+                      page.checked && (
+                        <div
+                          className={`${
+                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                          }`}
+                          key={index}
+                        >
+                          <div className="flex justify-between items-center text-[14pt] ">
+                            <div className="w-[10rem] font-[400]">
+                              <p>{page.content}</p>
+                            </div>
+                            <div
+                              className="ml-[14px] text-gray-400"
+                              style={{ fontFamily: "Open sans" }}
+                            >
+                              <p className="flex items-center justify-center">
+                                ....................................................................................
+                              </p>
+                            </div>
+                            <div
+                              className="ml-[20px] flex items-center font-[400]"
                               style={{ fontFamily: "'Lato', sans-serif" }}
                             >
                               <p>{number < 10 ? "0" + number : number}</p>
@@ -72,22 +114,24 @@ const TableOfContent = () => {
                     return (
                       page.checked && (
                         <div
-                          class={`${index == "0" ? "mt-[55px]" : "mt-[17px]"}`}
+                          className={`${
+                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                          }`}
                         >
-                          <div class="flex justify-between items-center text-[14pt] ">
-                            <div class="w-[10rem] font-[400]">
-                              <p>About your Project</p>
+                          <div className="flex justify-between items-center text-[14pt] ">
+                            <div className="w-[10rem] font-[400]">
+                              <p>{page.content}</p>
                             </div>
                             <div
-                              class="ml-[14px] text-gray-400"
+                              className="ml-[14px] text-gray-400"
                               style={{ fontFamily: "Open sans" }}
                             >
-                              <p class="flex items-center justify-center">
+                              <p className="flex items-center justify-center">
                                 ....................................................................................
                               </p>
                             </div>
                             <div
-                              class="ml-[20px] flex items-center font-[400]"
+                              className="ml-[20px] flex items-center font-[400]"
                               style={{ fontFamily: "'Lato', sans-serif" }}
                             >
                               <p>{number < 10 ? "0" + number : number}</p>
@@ -100,22 +144,24 @@ const TableOfContent = () => {
                     return (
                       page.checked && (
                         <div
-                          class={`${index == "0" ? "mt-[55px]" : "mt-[17px]"}`}
+                          className={`${
+                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                          }`}
                         >
-                          <div class="flex justify-between items-center text-[14pt] ">
-                            <div class="w-[10rem] font-[400]">
-                              <p>Proposed Sitemap</p>
+                          <div className="flex justify-between items-center text-[14pt] ">
+                            <div className="w-[10rem] font-[400]">
+                              <p>{page.content}</p>
                             </div>
                             <div
-                              class="ml-[14px] text-gray-400"
+                              className="ml-[14px] text-gray-400"
                               style={{ fontFamily: "Open sans" }}
                             >
-                              <p class="flex items-center justify-center">
+                              <p className="flex items-center justify-center">
                                 ....................................................................................
                               </p>
                             </div>
                             <div
-                              class="ml-[20px] flex items-center font-[400]"
+                              className="ml-[20px] flex items-center font-[400]"
                               style={{ fontFamily: "'Lato', sans-serif" }}
                             >
                               <p>{number < 10 ? "0" + number : number}</p>
@@ -128,22 +174,24 @@ const TableOfContent = () => {
                     return (
                       page.checked && (
                         <div
-                          class={`${index == "0" ? "mt-[55px]" : "mt-[17px]"}`}
+                          className={`${
+                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                          }`}
                         >
-                          <div class="flex justify-between items-center text-[14pt] ">
-                            <div class="w-[10rem] font-[400]">
-                              <p>About Us</p>
+                          <div className="flex justify-between items-center text-[14pt] ">
+                            <div className="w-[10rem] font-[400]">
+                              <p>{page.content}</p>
                             </div>
                             <div
-                              class="ml-[14px] text-gray-400"
+                              className="ml-[14px] text-gray-400"
                               style={{ fontFamily: "Open sans" }}
                             >
-                              <p class="flex items-center justify-center">
+                              <p className="flex items-center justify-center">
                                 ....................................................................................
                               </p>
                             </div>
                             <div
-                              class="ml-[20px] flex items-center font-[400]"
+                              className="ml-[20px] flex items-center font-[400]"
                               style={{ fontFamily: "'Lato', sans-serif" }}
                             >
                               <p>{number < 10 ? "0" + number : number}</p>
@@ -156,22 +204,24 @@ const TableOfContent = () => {
                     return (
                       page.checked && (
                         <div
-                          class={`${index == "0" ? "mt-[55px]" : "mt-[17px]"}`}
+                          className={`${
+                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                          }`}
                         >
-                          <div class="flex justify-between items-center text-[14pt] ">
-                            <div class="w-[10rem] font-[400]">
-                              <p>Our Process</p>
+                          <div className="flex justify-between items-center text-[14pt] ">
+                            <div className="w-[10rem] font-[400]">
+                              <p>{page.content}</p>
                             </div>
                             <div
-                              class="ml-[14px] text-gray-400"
+                              className="ml-[14px] text-gray-400"
                               style={{ fontFamily: "Open sans" }}
                             >
-                              <p class="flex items-center justify-center">
+                              <p className="flex items-center justify-center">
                                 ....................................................................................
                               </p>
                             </div>
                             <div
-                              class="ml-[20px] flex items-center font-[400]"
+                              className="ml-[20px] flex items-center font-[400]"
                               style={{ fontFamily: "'Lato', sans-serif" }}
                             >
                               <p>{number < 10 ? "0" + number : number}</p>
@@ -184,22 +234,24 @@ const TableOfContent = () => {
                     return (
                       page.checked && (
                         <div
-                          class={`${index == "0" ? "mt-[55px]" : "mt-[17px]"}`}
+                          className={`${
+                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                          }`}
                         >
-                          <div class="flex justify-between items-center text-[14pt] ">
-                            <div class="w-[10rem] font-[400]">
-                              <p>Why Soft Enterprise</p>
+                          <div className="flex justify-between items-center text-[14pt] ">
+                            <div className="w-[10rem] font-[400]">
+                              <p>{page.content}</p>
                             </div>
                             <div
-                              class="ml-[14px] text-gray-400"
+                              className="ml-[14px] text-gray-400"
                               style={{ fontFamily: "Open sans" }}
                             >
-                              <p class="flex items-center justify-center">
+                              <p className="flex items-center justify-center">
                                 ....................................................................................
                               </p>
                             </div>
                             <div
-                              class="ml-[20px] flex items-center font-[400]"
+                              className="ml-[20px] flex items-center font-[400]"
                               style={{ fontFamily: "'Lato', sans-serif" }}
                             >
                               <p>{number < 10 ? "0" + number : number}</p>
@@ -212,22 +264,24 @@ const TableOfContent = () => {
                     return (
                       page.checked && (
                         <div
-                          class={`${index == "0" ? "mt-[55px]" : "mt-[17px]"}`}
+                          className={`${
+                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                          }`}
                         >
-                          <div class="flex justify-between items-center text-[14pt] ">
-                            <div class="w-[10rem] font-[400]">
-                              <p>Invoice</p>
+                          <div className="flex justify-between items-center text-[14pt] ">
+                            <div className="w-[10rem] font-[400]">
+                              <p>{page.content}</p>
                             </div>
                             <div
-                              class="ml-[14px] text-gray-400"
+                              className="ml-[14px] text-gray-400"
                               style={{ fontFamily: "Open sans" }}
                             >
-                              <p class="flex items-center justify-center">
+                              <p className="flex items-center justify-center">
                                 ....................................................................................
                               </p>
                             </div>
                             <div
-                              class="ml-[20px] flex items-center font-[400]"
+                              className="ml-[20px] flex items-center font-[400]"
                               style={{ fontFamily: "'Lato', sans-serif" }}
                             >
                               <p>{number < 10 ? "0" + number : number}</p>
@@ -240,22 +294,84 @@ const TableOfContent = () => {
                     return (
                       page.checked && (
                         <div
-                          class={`${index == "0" ? "mt-[55px]" : "mt-[17px]"}`}
+                          className={`${
+                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                          }`}
                         >
-                          <div class="flex justify-between items-center text-[14pt] ">
-                            <div class="w-[10rem] font-[400]">
-                              <p>Terms & conditions</p>
+                          <div className="flex justify-between items-center text-[14pt] ">
+                            <div className="w-[10rem] font-[400]">
+                              <p>{page.content}</p>
                             </div>
                             <div
-                              class="ml-[14px] text-gray-400"
+                              className="ml-[14px] text-gray-400"
                               style={{ fontFamily: "Open sans" }}
                             >
-                              <p class="flex items-center justify-center">
+                              <p className="flex items-center justify-center">
                                 ....................................................................................
                               </p>
                             </div>
                             <div
-                              class="ml-[20px] flex items-center font-[400]"
+                              className="ml-[20px] flex items-center font-[400]"
+                              style={{ fontFamily: "'Lato', sans-serif" }}
+                            >
+                              <p>{number < 10 ? "0" + number : number}</p>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    );
+                  case "10":
+                    return (
+                      page.checked && (
+                        <div
+                          className={`${
+                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                          }`}
+                        >
+                          <div className="flex justify-between items-center text-[14pt] ">
+                            <div className="w-[10rem] font-[400]">
+                              <p>{page.content}</p>
+                            </div>
+                            <div
+                              className="ml-[14px] text-gray-400"
+                              style={{ fontFamily: "Open sans" }}
+                            >
+                              <p className="flex items-center justify-center">
+                                ....................................................................................
+                              </p>
+                            </div>
+                            <div
+                              className="ml-[20px] flex items-center font-[400]"
+                              style={{ fontFamily: "'Lato', sans-serif" }}
+                            >
+                              <p>{number < 10 ? "0" + number : number}</p>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    );
+                  case "11":
+                    return (
+                      page.checked && (
+                        <div
+                          className={`${
+                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                          }`}
+                        >
+                          <div className="flex justify-between items-center text-[14pt] ">
+                            <div className="w-[10rem] font-[400]">
+                              <p>{page.content}</p>
+                            </div>
+                            <div
+                              className="ml-[14px] text-gray-400"
+                              style={{ fontFamily: "Open sans" }}
+                            >
+                              <p className="flex items-center justify-center">
+                                ....................................................................................
+                              </p>
+                            </div>
+                            <div
+                              className="ml-[20px] flex items-center font-[400]"
                               style={{ fontFamily: "'Lato', sans-serif" }}
                             >
                               <p>{number < 10 ? "0" + number : number}</p>
@@ -268,7 +384,7 @@ const TableOfContent = () => {
               })}
             </div>
 
-            <div class="mt-[3.5rem]">
+            <div className="mt-[3.5rem]">
               <div>
                 <img src={img.src} alt="" width=" 674px" />
               </div>
@@ -276,8 +392,8 @@ const TableOfContent = () => {
           </section>
 
           <section>
-            <div class="flex flex-col justify-end items-end ">
-              <div class="w-[59px] h-[297mm] bg-[#FED500]"></div>
+            <div className="flex flex-col justify-end items-end ">
+              <div className="w-[59px] h-[297mm] bg-[#FED500]"></div>
             </div>
           </section>
         </div>
