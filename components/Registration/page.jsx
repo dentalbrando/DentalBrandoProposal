@@ -1,5 +1,5 @@
 import Login from "@components/Registration/Login";
-import loginImage from "@public/assets/loginImage.png";
+import loginImage from "@public/assets/loginImage2.png";
 import ChangePassword from "./ChangePassword";
 import { useState } from "react";
 

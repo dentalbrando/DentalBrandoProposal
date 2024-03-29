@@ -101,31 +101,31 @@ function Proposal() {
         <div className="flex flex-col gap-9">
           <Nav />
           <div className="px-5 flex justify-center">
-            <div className="w-[100%] border-x-2 rounded-3xl custom-bg shadow-2xl">
+            <div className="w-[100%] rounded-3xl custom-bg shadow-2xl">
               <h1 className="head_text p-2">Proposal Table</h1>
               <div style={{ overflow: "auto" }} className="custom-bg h-[80%]*">
-                <table className="border-collapse border-x-2 border-slate-500">
+                <table className="border-collapse border-slate-500">
                   <thead>
                     <tr>
-                      <th className="table-border text-gray-900 text-lg custom-bg text-lg py-2">
+                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
                         No.
                       </th>
-                      <th className="table-border text-gray-900 text-lg custom-bg text-lg py-2">
+                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
                         Client Name
                       </th>
-                      <th className="table-border text-gray-900 text-lg custom-bg text-lg py-2">
+                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
                         Project Title
                       </th>
-                      <th className="table-border text-gray-900 text-lg custom-bg text-lg py-2">
+                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
                         Company Name
                       </th>
-                      <th className="table-border text-gray-900 text-lg custom-bg text-lg py-2">
+                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
                         Issue Date
                       </th>
-                      <th className="table-border text-gray-900 text-lg custom-bg text-lg py-2">
+                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
                         Valid Date
                       </th>
-                      <th className="table-border text-gray-900 text-lg custom-bg text-lg py-2">
+                      <th className="th-border text-gray-900 text-lg custom-bg text-lg py-2">
                         Action
                       </th>
                     </tr>
@@ -134,35 +134,35 @@ function Proposal() {
                     {proposalData
                       ? proposalData.map((item, key) => (
                           <tr key={key}>
-                            <td className="border-x-2 border-slate-600 text-gray-900 text-lg">
+                            <td className="td-border text-gray-900 text-lg">
                               <div className="tdInnerDiv">{key}</div>
                             </td>
-                            <td className="border-x-2 border-slate-600 text-gray-900 text-lg">
+                            <td className="td-border text-gray-900 text-lg">
                               <div className="tdInnerDiv">
                                 {item.cover_letter.clientName}
                               </div>
                             </td>
-                            <td className="border-x-2 border-slate-600 text-gray-900 text-lg">
+                            <td className="td-border text-gray-900 text-lg">
                               <div className="tdInnerDiv">
                                 {item.cover_page.projectTitle}
                               </div>
                             </td>
-                            <td className="border-x-2 border-slate-600 text-gray-900 text-lg">
+                            <td className="td-border text-gray-900 text-lg">
                               <div className="tdInnerDiv">
                                 {item.cover_page.companyName}
                               </div>
                             </td>
-                            <td className="border-x-2 border-slate-600 text-gray-900 text-lg">
+                            <td className="td-border text-gray-900 text-lg">
                               <div className="tdInnerDiv">
                                 {item.cover_page.issueDate}
                               </div>
                             </td>
-                            <td className="border-x-2 border-slate-600 text-gray-900 text-lg">
+                            <td className="td-border text-gray-900 text-lg">
                               <div className="tdInnerDiv">
                                 {item.cover_page.validDate}
                               </div>
                             </td>
-                            <td className="border-x-2 border-slate-500 text-gray-900 text-lg px-0 flex justify-center items-center">
+                            <td className="last-td-border text-gray-900 text-lg px-0 flex justify-center items-center">
                               <div
                                 onClick={() => {
                                   regenerate(key);

@@ -307,7 +307,14 @@ td {
   color: rgb(1, 161, 255);
 }
 
-.table-border{
+.th-border{
   border: solid rgb(217,217,217) 3px;
-  
+}
+.td-border{
+  border-right: solid rgb(217,217,217) 3px;
+  /* border-left: solid rgb(217,217,217) 3px; */
+}
+.last-td-border {
+  /* border-left: solid rgb(217,217,217) 3px; */
+  /* border-right: solid rgb(217,217,217) 3px; */
 }
