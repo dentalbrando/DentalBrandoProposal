@@ -34,40 +34,54 @@ function Proposal() {
   let router = useRouter();
   let dispatch = useDispatch();
   let [proposalData, setProposalData] = useState();
-  let [multiplier, setMultiplier] = useState(0);
   let [loading, setLoading] = useState(true);
   const [isVerified, setIsVerified] = useState(undefined);
+  let [multiplier, setMultiplier] = useState(0);
+  let [buttonArray, setButtonArray] = useState();
+  let [num, SetNum] = useState(0);
+  let limit = 5;
 
   useEffect(() => {
-    if (isVerified === false) {
-      router.push("/");
-    }
-    async function getData() {
-      try {
-        setLoading(true);
-        let { data } = await axios.get("/api/proposal");
-        setProposalData(data.proposalData);
-      } catch (er) {
-        console.log(er);
-      } finally {
-        setLoading(false);
-      }
-    }
-    if (isVerified === true) {
-      getData();
-    }
+    let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    setProposalData[array];
+  }, []);
 
-    async function verifyTokenApi() {
-      try {
-        await axios.get("/api/verifyToken");
-        setIsVerified(true);
-      } catch (err) {
-        setIsVerified(false);
-      }
-    }
-    verifyTokenApi();
-  }, [isVerified]);
+  // useEffect(() => {
+  //   if (isVerified === false) {
+  //     router.push("/");
+  //   }
+  //   async function getData() {
+  //     try {
+  //       setLoading(true);
+  //       let { data } = await axios.get("/api/proposal");
+  //       setProposalData(data.proposalData);
+  //     } catch (er) {
+  //       console.log(er);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   }
+  //   if (isVerified === true) {
+  //     getData();
+  //   }
 
+  //   async function verifyTokenApi() {
+  //     try {
+  //       await axios.get("/api/verifyToken");
+  //       setIsVerified(true);
+  //     } catch (err) {
+  //       setIsVerified(false);
+  //     }
+  //   }
+  //   verifyTokenApi();
+  // }, [isVerified]);
+
+  if (proposalData && !buttonArray) {
+    setButtonArray(Array(Math.ceil(proposalData.length / limit)));
+  }
+  if (buttonArray) {
+    console.log(buttonArray);
+  }
   function regenerate(key) {
     dispatch(
       setFunctionalities(proposalData[key].aboutYourProject.functionality)
@@ -93,7 +107,6 @@ function Proposal() {
     dispatch(updatePage(100));
     router.push("/");
   }
-  let limit = 5;
 
   return (
     <>
@@ -126,7 +139,7 @@ function Proposal() {
                   <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
                     No.
                   </th>
-                  <th className="th-border text-center text-lg text-lg py-2 w-[180px]">
+                  {/* <th className="th-border text-center text-lg text-lg py-2 w-[180px]">
                     Client Name
                   </th>
                   <th className="th-border text-center text-lg text-lg py-2 w-[200px]">
@@ -143,7 +156,7 @@ function Proposal() {
                   </th>
                   <th className="last-th-border text-center text-lg text-lg py-2 w-[200px] flex justify-center">
                     Action
-                  </th>
+                  </th> */}
                 </tr>
               </thead>
               <tbody>
@@ -158,7 +171,7 @@ function Proposal() {
                               {key < 9 ? "0" : null}
                               {key + 1}
                             </td>
-                            <td className="td-border text-center py-4 text-lg w-[180px]">
+                            {/* <td className="td-border text-center py-4 text-lg w-[180px]">
                               {item.cover_letter.clientName}
                             </td>
                             <td className="td-border text-center py-4 text-lg w-[200px]">
@@ -182,7 +195,7 @@ function Proposal() {
                               >
                                 Regenerate PDF
                               </button>
-                            </td>
+                            </td> */}
                           </>
                         ) : null}
                       </tr>
@@ -201,12 +214,17 @@ function Proposal() {
                 >
                   Prev
                 </button>
-                <button
-                  className="px-2 text-lg text-tableBlueColor"
-                  onClick={() => setMultiplier(0)}
-                >
-                  01
-                </button>
+
+                {buttonArray
+                  ? buttonArray.map((item, key) => (
+                      <button
+                        className="px-2 text-lg text-tableBlueColor"
+                        onClick={() => setMultiplier(key)}
+                      >
+                        {key + 1}
+                      </button>
+                    ))
+                  : null}
                 <button
                   className="px-2 text-lg "
                   onClick={() => setMultiplier(1)}
@@ -220,6 +238,7 @@ function Proposal() {
                 >
                   03
                 </button>
+
                 <button
                   className={`px-2 text-lg ${
                     multiplier >= proposalData.length / limit - 1
