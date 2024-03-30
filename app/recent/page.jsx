@@ -164,28 +164,28 @@ function Proposal() {
             </div>
 
             <div className="tableDiv">
-              <table className="table-border w-fit mx-auto">
+              <table className="table-border w-fit mx-auto w-full">
                 <thead className="thead">
                   <tr className="">
                     <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
                       No.
                     </th>
-                    <th className="th-border text-center text-lg text-lg py-2 w-[180px]">
+                    <th className="th-border text-center text-lg text-lg py-2 w-[185px">
                       Client Name
                     </th>
-                    <th className="th-border text-center text-lg text-lg py-2 w-[200px]">
+                    <th className="th-border text-center text-lg text-lg py-2 w-[205px">
                       Project Title
                     </th>
-                    <th className="th-border text-center text-lg text-lg py-2 w-[220px]">
+                    <th className="th-border text-center text-lg text-lg py-2 w-[225px">
                       Company Name
                     </th>
-                    <th className="th-border text-center text-lg text-lg py-2 w-[170px]">
+                    <th className="th-border text-center text-lg text-lg py-2 w-[175px">
                       Issue Date
                     </th>
-                    <th className="th-border text-center text-lg text-lg py-2 w-[170px]">
+                    <th className="th-border text-center text-lg text-lg py-2 w-[175px">
                       Valid Date
                     </th>
-                    <th className="last-th-border text-center text-lg text-lg py-2 w-[200px] flex justify-center">
+                    <th className="last-th-border text-center text-lg text-lg py-2 w-[205px]">
                       Action
                     </th>
                   </tr>
@@ -204,22 +204,22 @@ function Proposal() {
                                   {key < 9 ? "0" : null}
                                   {key + 1}
                                 </td>
-                                <td className="td-border text-center py-4 text-lg w-[180px]">
+                                <td className="td-border text-center py-4 text-lg w-[180px">
                                   {item.cover_letter.clientName}
                                 </td>
-                                <td className="td-border text-center py-4 text-lg w-[200px]">
+                                <td className="td-border text-center py-4 text-lg w-[200px">
                                   {item.cover_page.projectTitle}
                                 </td>
-                                <td className="td-border text-center py-4 text-lg w-[220px]">
+                                <td className="td-border text-center py-4 text-lg w-[220px">
                                   {item.cover_page.companyName}
                                 </td>
-                                <td className="td-border text-center py-4 text-lg w-[170px]">
+                                <td className="td-border text-center py-4 text-lg w-[170px">
                                   {item.cover_page.issueDate}
                                 </td>
-                                <td className="td-border text-center py-4 text-lg w-[170px]">
+                                <td className="td-border text-center py-4 text-lg w-[170px">
                                   {item.cover_page.validDate}
                                 </td>
-                                <td className="text-center text-lg px-0 w-[200px]">
+                                <td className="text-center text-lg px-0 w-[200px">
                                   <button
                                     onClick={() => {
                                       regenerate(key);

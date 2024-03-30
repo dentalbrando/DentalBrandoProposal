@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 const Budget = () => {
   const externalData = useSelector((state) => state.cover_page);
   const budgetData = useSelector((state) => state.budget);
+  const clientName = useSelector((state) => state.cover_letter.clientName);
   function addCommasToNumber(number) {
     // Convert the number to a string
     let numberString = number.toString();
@@ -30,7 +31,6 @@ const Budget = () => {
         style={{
           width: "8.27in",
           height: "11.6876in",
-          fontFamily: "Open Sans",
         }}
         className="relative overflow-hidden bg-white shadow-lg mb-5"
       >
@@ -86,7 +86,7 @@ const Budget = () => {
         </div>
         <div className="w-[85%] mx-auto mt-3">
           <div className="flex flex-col gap-2">
-            <p className="text-[8.72pt] ml-4">INVOICE TO :</p>
+            <p className="text-[8.72pt] ml-4">INVOICE TO : {clientName}</p>
             <span
               id="name"
               className="text-[16.72pt] font-[600] w-[14rem] leading-tight ml-4 capitalize"
