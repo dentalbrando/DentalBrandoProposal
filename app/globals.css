@@ -304,11 +304,15 @@ input[type="number"]::-webkit-inner-spin-button {
   color: black;
 }
 
-table{
+table {
   overflow: auto;
+  /* background-color: red; */
 }
-
-td,th {
+.tableDiv{
+  height: 65vh;
+}
+td,
+th {
   overflow: auto;
   width: fit-content;
   min-height: 40px !important;
@@ -317,4 +321,3 @@ td,th {
   max-width: 200px;
   min-width: 100px;
 }
-

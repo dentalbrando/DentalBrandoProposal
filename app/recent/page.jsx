@@ -163,123 +163,126 @@ function Proposal() {
               </div>
             </div>
 
-            <table className="table-border w-fit mx-auto">
-              <thead className="thead">
-                <tr className="">
-                  <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
-                    No.
-                  </th>
-                  <th className="th-border text-center text-lg text-lg py-2 w-[180px]">
-                    Client Name
-                  </th>
-                  <th className="th-border text-center text-lg text-lg py-2 w-[200px]">
-                    Project Title
-                  </th>
-                  <th className="th-border text-center text-lg text-lg py-2 w-[220px]">
-                    Company Name
-                  </th>
-                  <th className="th-border text-center text-lg text-lg py-2 w-[170px]">
-                    Issue Date
-                  </th>
-                  <th className="th-border text-center text-lg text-lg py-2 w-[170px]">
-                    Valid Date
-                  </th>
-                  <th className="last-th-border text-center text-lg text-lg py-2 w-[200px] flex justify-center">
-                    Action
-                  </th>
-                </tr>
-              </thead>
+            <div className="tableDiv">
+              <table className="table-border w-fit mx-auto">
+                <thead className="thead">
+                  <tr className="">
+                    <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
+                      No.
+                    </th>
+                    <th className="th-border text-center text-lg text-lg py-2 w-[180px]">
+                      Client Name
+                    </th>
+                    <th className="th-border text-center text-lg text-lg py-2 w-[200px]">
+                      Project Title
+                    </th>
+                    <th className="th-border text-center text-lg text-lg py-2 w-[220px]">
+                      Company Name
+                    </th>
+                    <th className="th-border text-center text-lg text-lg py-2 w-[170px]">
+                      Issue Date
+                    </th>
+                    <th className="th-border text-center text-lg text-lg py-2 w-[170px]">
+                      Valid Date
+                    </th>
+                    <th className="last-th-border text-center text-lg text-lg py-2 w-[200px] flex justify-center">
+                      Action
+                    </th>
+                  </tr>
+                </thead>
 
-              {searchData ? (
-                <tbody>
-                  {searchData
-                    ? searchData.map((item, key) => (
-                        <tr key={key} className="tr-border">
-                          {key >= multiplier * limit &&
-                          key < limit * (multiplier + 1) &&
-                          searchData[key] ? (
-                            <>
-                              <td className="td-border text-center py-4 text-lg w-[100px]">
-                                {key < 9 ? "0" : null}
-                                {key + 1}
-                              </td>
-                              <td className="td-border text-center py-4 text-lg w-[180px]">
-                                {item.cover_letter.clientName}
-                              </td>
-                              <td className="td-border text-center py-4 text-lg w-[200px]">
-                                {item.cover_page.projectTitle}
-                              </td>
-                              <td className="td-border text-center py-4 text-lg w-[220px]">
-                                {item.cover_page.companyName}
-                              </td>
-                              <td className="td-border text-center py-4 text-lg w-[170px]">
-                                {item.cover_page.issueDate}
-                              </td>
-                              <td className="td-border text-center py-4 text-lg w-[170px]">
-                                {item.cover_page.validDate}
-                              </td>
-                              <td className="text-center text-lg px-0 w-[200px]">
-                                <button
-                                  onClick={() => {
-                                    regenerate(key);
-                                  }}
-                                  className="text-white bg-tableBlueColor px-4 py-[0.25rem] my-0 mx-6 rounded-lg"
-                                >
-                                  Regenerate PDF
-                                </button>
-                              </td>
-                            </>
-                          ) : null}
-                        </tr>
-                      ))
-                    : null}
-                </tbody>
-              ) : (
-                <tbody>
-                  {proposalData
-                    ? proposalData.map((item, key) => (
-                        <tr key={key} className="tr-border">
-                          {key >= multiplier * limit &&
-                          key < limit * (multiplier + 1) &&
-                          proposalData[key] ? (
-                            <>
-                              <td className="td-border text-center py-4 text-lg w-[100px]">
-                                {key < 9 ? "0" : null}
-                                {key + 1}
-                              </td>
-                              <td className="td-border text-center py-4 text-lg w-[180px]">
-                                {item.cover_letter.clientName}
-                              </td>
-                              <td className="td-border text-center py-4 text-lg w-[200px]">
-                                {item.cover_page.projectTitle}
-                              </td>
-                              <td className="td-border text-center py-4 text-lg w-[220px]">
-                                {item.cover_page.companyName}
-                              </td>
-                              <td className="td-border text-center py-4 text-lg w-[170px]">
-                                {item.cover_page.issueDate}
-                              </td>
-                              <td className="td-border text-center py-4 text-lg w-[170px]">
-                                {item.cover_page.validDate}
-                              </td>
-                              <td className="text-center text-lg px-0 w-[200px]">
-                                <button
-                                  onClick={() => {
-                                    regenerate(key);
-                                  }}
-                                  className="text-white bg-tableBlueColor px-4 py-[0.25rem] my-0 mx-6 rounded-lg"
-                                >
-                                  Regenerate PDF
-                                </button>
-                              </td>
-                            </>
-                          ) : null}
-                        </tr>
-                      ))
-                    : null}
-                </tbody>
-              )}
-            </table>
+                {searchData ? (
+                  <tbody>
+                    {searchData
+                      ? searchData.map((item, key) => (
+                          <tr key={key} className="tr-border">
+                            {key >= multiplier * limit &&
+                            key < limit * (multiplier + 1) &&
+                            searchData[key] ? (
+                              <>
+                                <td className="td-border text-center py-4 text-lg w-[100px]">
+                                  {key < 9 ? "0" : null}
+                                  {key + 1}
+                                </td>
+                                <td className="td-border text-center py-4 text-lg w-[180px]">
+                                  {item.cover_letter.clientName}
+                                </td>
+                                <td className="td-border text-center py-4 text-lg w-[200px]">
+                                  {item.cover_page.projectTitle}
+                                </td>
+                                <td className="td-border text-center py-4 text-lg w-[220px]">
+                                  {item.cover_page.companyName}
+                                </td>
+                                <td className="td-border text-center py-4 text-lg w-[170px]">
+                                  {item.cover_page.issueDate}
+                                </td>
+                                <td className="td-border text-center py-4 text-lg w-[170px]">
+                                  {item.cover_page.validDate}
+                                </td>
+                                <td className="text-center text-lg px-0 w-[200px]">
+                                  <button
+                                    onClick={() => {
+                                      regenerate(key);
+                                    }}
+                                    className="text-white bg-tableBlueColor px-4 py-[0.25rem] my-0 mx-6 rounded-lg"
+                                  >
+                                    Regenerate PDF
+                                  </button>
+                                </td>
+                              </>
+                            ) : null}
+                          </tr>
+                        ))
+                      : null}
+                  </tbody>
+                ) : (
+                  <tbody>
+                    {proposalData
+                      ? proposalData.map((item, key) => (
+                          <tr key={key} className="tr-border">
+                            {key >= multiplier * limit &&
+                            key < limit * (multiplier + 1) &&
+                            proposalData[key] ? (
+                              <>
+                                <td className="td-border text-center py-4 text-lg w-[100px]">
+                                  {key < 9 ? "0" : null}
+                                  {key + 1}
+                                </td>
+                                <td className="td-border text-center py-4 text-lg w-[180px]">
+                                  {item.cover_letter.clientName}
+                                </td>
+                                <td className="td-border text-center py-4 text-lg w-[200px]">
+                                  {item.cover_page.projectTitle}
+                                </td>
+                                <td className="td-border text-center py-4 text-lg w-[220px]">
+                                  {item.cover_page.companyName}
+                                </td>
+                                <td className="td-border text-center py-4 text-lg w-[170px]">
+                                  {item.cover_page.issueDate}
+                                </td>
+                                <td className="td-border text-center py-4 text-lg w-[170px]">
+                                  {item.cover_page.validDate}
+                                </td>
+                                <td className="text-center text-lg px-0 w-[200px]">
+                                  <button
+                                    onClick={() => {
+                                      regenerate(key);
+                                    }}
+                                    className="text-white bg-tableBlueColor px-4 py-[0.25rem] my-0 mx-6 rounded-lg"
+                                  >
+                                    Regenerate PDF
+                                  </button>
+                                </td>
+                              </>
+                            ) : null}
+                          </tr>
+                        ))
+                      : null}
+                  </tbody>
+                )}
+              </table>
+            </div>
+
             {proposalData ? (
               <div className="flex-end py-5">
                 <div className="ms-5">
