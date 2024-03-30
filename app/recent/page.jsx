@@ -40,7 +40,7 @@ function Proposal() {
   let [buttonArray, setButtonArray] = useState();
   let [firstButton, SetFirstButton] = useState(0);
   let [secondButton, SetSecondButton] = useState(1);
-  let [dotButton, SetdotButton] = useState(2);
+  let [dotButton, SetdotButton] = useState(null);
   let [searchQuery, SetSearchQuery] = useState("");
   let [searchData, setSearchData] = useState();
   let limit = 8;
