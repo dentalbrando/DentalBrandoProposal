@@ -136,7 +136,7 @@ function Proposal() {
   }
 
   return (
-    <>
+    <div className="recent-page-font">
       {loading || isVerified === undefined ? (
         <div className="w-fit m-auto py-24">
           <Loader />
@@ -153,7 +153,7 @@ function Proposal() {
             <div className="flex-end mb-4">
               <div className="w-fit flex justify-end items-center py-5">
                 <input
-                  className="w-full ps-4 pe-11 py-2 search-placehoder table-border rounded-md text-md"
+                  className="w-full ps-4 pe-11 py-2 search-placehoder table-border rounded-md text-bold"
                   placeholder="Search..."
                   onChange={(e) => {
                     searchFunction(e);
@@ -224,7 +224,7 @@ function Proposal() {
                                     onClick={() => {
                                       regenerate(key);
                                     }}
-                                    className="text-whit bg-tableBlueColr w-3/4 py-[0.25rem] my-0 mx-6 rounded-lg"
+                                    className="text-white bg-tableBlueColor px-5 py-[0.25rem] my-0 mx-6 rounded-lg"
                                   >
                                     Regenerate PDF
                                   </button>
@@ -248,27 +248,27 @@ function Proposal() {
                                   {key < 9 ? "0" : null}
                                   {key + 1}
                                 </td>
-                                <td className="td-border text-center py-4 text-lg w-[180px]">
+                                <td className="td-border text-center py-4 text-lg w-[180px">
                                   {item.cover_letter.clientName}
                                 </td>
-                                <td className="td-border text-center py-4 text-lg w-[200px]">
+                                <td className="td-border text-center py-4 text-lg w-[200px">
                                   {item.cover_page.projectTitle}
                                 </td>
-                                <td className="td-border text-center py-4 text-lg w-[220px]">
+                                <td className="td-border text-center py-4 text-lg w-[220px">
                                   {item.cover_page.companyName}
                                 </td>
-                                <td className="td-border text-center py-4 text-lg w-[170px]">
+                                <td className="td-border text-center py-4 text-lg w-[170px">
                                   {item.cover_page.issueDate}
                                 </td>
-                                <td className="td-border text-center py-4 text-lg w-[170px]">
+                                <td className="td-border text-center py-4 text-lg w-[170px">
                                   {item.cover_page.validDate}
                                 </td>
-                                <td className="text-center text-lg px-0 w-[200px]">
+                                <td className="text-center text-lg px-0 w-[200px">
                                   <button
                                     onClick={() => {
                                       regenerate(key);
                                     }}
-                                    className="text-white bg-tableBlueColor px-4 py-[0.25rem] my-0 mx-6 rounded-lg"
+                                    className="text-white bg-tableBlueColor px-5 py-[0.25rem] my-0 mx-6 rounded-lg"
                                   >
                                     Regenerate PDF
                                   </button>
@@ -292,11 +292,11 @@ function Proposal() {
                     }`}
                     onClick={() => {
                       setMultiplier(multiplier - 1);
-                      SetFirstButton(firstButton - 1);
-                      SetSecondButton(secondButton - 1);
-                      if (dotButton !== buttonArray.length - 2) {
-                        SetdotButton(dotButton - 1);
-                      }
+                      // SetFirstButton(firstButton - 1);
+                      // SetSecondButton(secondButton - 1);
+                      // if (dotButton !== buttonArray.length - 2) {
+                      //   SetdotButton(dotButton - 1);
+                      // }
                     }}
                     disabled={multiplier <= 0 ? true : false}
                   >
@@ -345,9 +345,9 @@ function Proposal() {
                             }`}
                             onClick={() => {
                               setMultiplier(key);
-                              SetFirstButton(firstButton + 2);
-                              SetSecondButton(secondButton + 2);
-                              SetdotButton(dotButton + 2);
+                              // SetFirstButton(firstButton + 2);
+                              // SetSecondButton(secondButton + 2);
+                              // SetdotButton(dotButton + 2);
                             }}
                           >
                             ...
@@ -379,11 +379,11 @@ function Proposal() {
                     }`}
                     onClick={() => {
                       setMultiplier(multiplier + 1);
-                      SetFirstButton(firstButton + 1);
-                      SetSecondButton(secondButton + 1);
-                      if (dotButton !== buttonArray.length - 2) {
-                        SetdotButton(dotButton + 1);
-                      }
+                      // SetFirstButton(firstButton + 1);
+                      // SetSecondButton(secondButton + 1);
+                      // if (dotButton !== buttonArray.length - 2) {
+                      //   SetdotButton(dotButton + 1);
+                      // }
                     }}
                     disabled={
                       multiplier >= proposalData.length / limit - 1
@@ -400,7 +400,7 @@ function Proposal() {
         </div>
         // </div>
       )}
-    </>
+    </div>
   );
 }
 export default Proposal;
