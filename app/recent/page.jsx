@@ -34,53 +34,49 @@ function Proposal() {
   let router = useRouter();
   let dispatch = useDispatch();
   let [proposalData, setProposalData] = useState();
-  let [loading, setLoading] = useState(true);
-  const [isVerified, setIsVerified] = useState(undefined);
+  let [loading, setLoading] = useState(false);
+  let [isVerified, setIsVerified] = useState(true);
   let [multiplier, setMultiplier] = useState(0);
   let [buttonArray, setButtonArray] = useState();
-  let [num, SetNum] = useState(0);
-  let limit = 5;
+  let [firstButton, SetFirstButton] = useState(0);
+  let [secondButton, SetSecondButton] = useState(1);
+  let [dotButton, SetdotButton] = useState(2);
+  let [searchQuery, SetSearchQuery] = useState("");
+  let [searchData, setSearchData] = useState();
+  let limit = 8;
 
   useEffect(() => {
-    let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-    setProposalData[array];
-  }, []);
+    if (isVerified === false) {
+      router.push("/");
+    }
+    async function getData() {
+      try {
+        setLoading(true);
+        let { data } = await axios.get("/api/proposal");
+        setProposalData(data.proposalData);
+      } catch (er) {
+        console.log(er);
+      } finally {
+        setLoading(false);
+      }
+    }
+    if (isVerified === true) {
+      getData();
+    }
 
-  // useEffect(() => {
-  //   if (isVerified === false) {
-  //     router.push("/");
-  //   }
-  //   async function getData() {
-  //     try {
-  //       setLoading(true);
-  //       let { data } = await axios.get("/api/proposal");
-  //       setProposalData(data.proposalData);
-  //     } catch (er) {
-  //       console.log(er);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   }
-  //   if (isVerified === true) {
-  //     getData();
-  //   }
-
-  //   async function verifyTokenApi() {
-  //     try {
-  //       await axios.get("/api/verifyToken");
-  //       setIsVerified(true);
-  //     } catch (err) {
-  //       setIsVerified(false);
-  //     }
-  //   }
-  //   verifyTokenApi();
-  // }, [isVerified]);
+    async function verifyTokenApi() {
+      try {
+        await axios.get("/api/verifyToken");
+        setIsVerified(true);
+      } catch (err) {
+        setIsVerified(false);
+      }
+    }
+    verifyTokenApi();
+  }, [isVerified]);
 
   if (proposalData && !buttonArray) {
-    setButtonArray(Array(Math.ceil(proposalData.length / limit)));
-  }
-  if (buttonArray) {
-    console.log(buttonArray);
+    setButtonArray(Array(Math.ceil(proposalData.length / limit)).fill(null));
   }
   function regenerate(key) {
     dispatch(
@@ -107,6 +103,37 @@ function Proposal() {
     dispatch(updatePage(100));
     router.push("/");
   }
+  function searchFunction(e) {
+    if (e.target.value) {
+      let searchResult = proposalData.filter((item) => {
+        return (
+          item.cover_letter.clientName
+            .toLowerCase()
+            .includes(e.target.value.toLowerCase()) ||
+          item.cover_page.projectTitle
+            .toLowerCase()
+            .includes(e.target.value.toLowerCase()) ||
+          item.cover_page.companyName
+            .toLowerCase()
+            .includes(e.target.value.toLowerCase()) ||
+          item.cover_page.issueDate
+            .toLowerCase()
+            .includes(e.target.value.toLowerCase()) ||
+          item.cover_page.validDate
+            .toLowerCase()
+            .includes(e.target.value.toLowerCase())
+        );
+      });
+      if (!e.target.value.trim()) {
+        setSearchData(null);
+      } else {
+        setSearchData(searchResult);
+      }
+      console.log(searchData);
+    } else {
+      setSearchData(null);
+    }
+  }
 
   return (
     <>
@@ -128,6 +155,9 @@ function Proposal() {
                 <input
                   className="w-full ps-4 pe-11 py-2 search-placehoder table-border rounded-md text-md"
                   placeholder="Search..."
+                  onChange={(e) => {
+                    searchFunction(e);
+                  }}
                 />
                 <FaSearch className="absolute me-5" />
               </div>
@@ -139,7 +169,7 @@ function Proposal() {
                   <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
                     No.
                   </th>
-                  {/* <th className="th-border text-center text-lg text-lg py-2 w-[180px]">
+                  <th className="th-border text-center text-lg text-lg py-2 w-[180px]">
                     Client Name
                   </th>
                   <th className="th-border text-center text-lg text-lg py-2 w-[200px]">
@@ -156,104 +186,213 @@ function Proposal() {
                   </th>
                   <th className="last-th-border text-center text-lg text-lg py-2 w-[200px] flex justify-center">
                     Action
-                  </th> */}
+                  </th>
                 </tr>
               </thead>
-              <tbody>
-                {proposalData
-                  ? proposalData.map((item, key) => (
-                      <tr key={key} className="tr-border">
-                        {key >= multiplier * limit &&
-                        key < limit * (multiplier + 1) &&
-                        proposalData[key] ? (
-                          <>
-                            <td className="td-border text-center py-4 text-lg w-[100px]">
-                              {key < 9 ? "0" : null}
-                              {key + 1}
-                            </td>
-                            {/* <td className="td-border text-center py-4 text-lg w-[180px]">
-                              {item.cover_letter.clientName}
-                            </td>
-                            <td className="td-border text-center py-4 text-lg w-[200px]">
-                              {item.cover_page.projectTitle}
-                            </td>
-                            <td className="td-border text-center py-4 text-lg w-[220px]">
-                              {item.cover_page.companyName}
-                            </td>
-                            <td className="td-border text-center py-4 text-lg w-[170px]">
-                              {item.cover_page.issueDate}
-                            </td>
-                            <td className="td-border text-center py-4 text-lg w-[170px]">
-                              {item.cover_page.validDate}
-                            </td>
-                            <td className="text-center text-lg px-0 w-[200px]">
-                              <button
-                                onClick={() => {
-                                  regenerate(key);
-                                }}
-                                className="text-white bg-tableBlueColor px-4 py-[0.25rem] my-0 mx-6 rounded-lg"
-                              >
-                                Regenerate PDF
-                              </button>
-                            </td> */}
-                          </>
-                        ) : null}
-                      </tr>
-                    ))
-                  : null}
-              </tbody>
+
+              {searchData ? (
+                <tbody>
+                  {searchData
+                    ? searchData.map((item, key) => (
+                        <tr key={key} className="tr-border">
+                          {key >= multiplier * limit &&
+                          key < limit * (multiplier + 1) &&
+                          searchData[key] ? (
+                            <>
+                              <td className="td-border text-center py-4 text-lg w-[100px]">
+                                {key < 9 ? "0" : null}
+                                {key + 1}
+                              </td>
+                              <td className="td-border text-center py-4 text-lg w-[180px]">
+                                {item.cover_letter.clientName}
+                              </td>
+                              <td className="td-border text-center py-4 text-lg w-[200px]">
+                                {item.cover_page.projectTitle}
+                              </td>
+                              <td className="td-border text-center py-4 text-lg w-[220px]">
+                                {item.cover_page.companyName}
+                              </td>
+                              <td className="td-border text-center py-4 text-lg w-[170px]">
+                                {item.cover_page.issueDate}
+                              </td>
+                              <td className="td-border text-center py-4 text-lg w-[170px]">
+                                {item.cover_page.validDate}
+                              </td>
+                              <td className="text-center text-lg px-0 w-[200px]">
+                                <button
+                                  onClick={() => {
+                                    regenerate(key);
+                                  }}
+                                  className="text-white bg-tableBlueColor px-4 py-[0.25rem] my-0 mx-6 rounded-lg"
+                                >
+                                  Regenerate PDF
+                                </button>
+                              </td>
+                            </>
+                          ) : null}
+                        </tr>
+                      ))
+                    : null}
+                </tbody>
+              ) : (
+                <tbody>
+                  {proposalData
+                    ? proposalData.map((item, key) => (
+                        <tr key={key} className="tr-border">
+                          {key >= multiplier * limit &&
+                          key < limit * (multiplier + 1) &&
+                          proposalData[key] ? (
+                            <>
+                              <td className="td-border text-center py-4 text-lg w-[100px]">
+                                {key < 9 ? "0" : null}
+                                {key + 1}
+                              </td>
+                              <td className="td-border text-center py-4 text-lg w-[180px]">
+                                {item.cover_letter.clientName}
+                              </td>
+                              <td className="td-border text-center py-4 text-lg w-[200px]">
+                                {item.cover_page.projectTitle}
+                              </td>
+                              <td className="td-border text-center py-4 text-lg w-[220px]">
+                                {item.cover_page.companyName}
+                              </td>
+                              <td className="td-border text-center py-4 text-lg w-[170px]">
+                                {item.cover_page.issueDate}
+                              </td>
+                              <td className="td-border text-center py-4 text-lg w-[170px]">
+                                {item.cover_page.validDate}
+                              </td>
+                              <td className="text-center text-lg px-0 w-[200px]">
+                                <button
+                                  onClick={() => {
+                                    regenerate(key);
+                                  }}
+                                  className="text-white bg-tableBlueColor px-4 py-[0.25rem] my-0 mx-6 rounded-lg"
+                                >
+                                  Regenerate PDF
+                                </button>
+                              </td>
+                            </>
+                          ) : null}
+                        </tr>
+                      ))
+                    : null}
+                </tbody>
+              )}
             </table>
-            <div className="flex-end py-5">
-              <div className="ms-5">
-                <button
-                  className={`px-2 text-lg ${
-                    multiplier <= 0 ? "text-gray-400" : "text-tableBlueColor"
-                  }`}
-                  onClick={() => setMultiplier(multiplier - 1)}
-                  disabled={multiplier <= 0 ? true : false}
-                >
-                  Prev
-                </button>
+            {proposalData ? (
+              <div className="flex-end py-5">
+                <div className="ms-5">
+                  <button
+                    className={`px-2 text-lg ${
+                      multiplier <= 0 ? "text-gray-400" : "text-tableBlueColor"
+                    }`}
+                    onClick={() => {
+                      setMultiplier(multiplier - 1);
+                      SetFirstButton(firstButton - 1);
+                      SetSecondButton(secondButton - 1);
+                      if (dotButton !== buttonArray.length - 2) {
+                        SetdotButton(dotButton - 1);
+                      }
+                    }}
+                    disabled={multiplier <= 0 ? true : false}
+                  >
+                    Prev
+                  </button>
 
-                {buttonArray
-                  ? buttonArray.map((item, key) => (
-                      <button
-                        className="px-2 text-lg text-tableBlueColor"
-                        onClick={() => setMultiplier(key)}
-                      >
-                        {key + 1}
-                      </button>
-                    ))
-                  : null}
-                <button
-                  className="px-2 text-lg "
-                  onClick={() => setMultiplier(1)}
-                >
-                  02
-                </button>
-                <button className="px-2 text-lg ">..</button>
-                <button
-                  className="px-2 text-lg "
-                  onClick={() => setMultiplier(2)}
-                >
-                  03
-                </button>
+                  {buttonArray
+                    ? buttonArray.map((item, key) =>
+                        key === firstButton ? (
+                          <button
+                            key={key}
+                            className={`px-2 text-lg ${
+                              multiplier === key
+                                ? "text-tableBlueColor"
+                                : "text-black"
+                            }`}
+                            onClick={() => {
+                              setMultiplier(key);
+                              console.log(key);
+                            }}
+                          >
+                            {firstButton + 1}
+                          </button>
+                        ) : key === secondButton ? (
+                          <button
+                            key={key}
+                            className={`px-2 text-lg ${
+                              multiplier === key
+                                ? "text-tableBlueColor"
+                                : "text-black"
+                            }`}
+                            onClick={() => {
+                              setMultiplier(key);
+                              console.log(key);
+                            }}
+                          >
+                            {secondButton + 1}
+                          </button>
+                        ) : key === dotButton ? (
+                          <button
+                            key={key}
+                            className={`px-2 text-lg ${
+                              multiplier === key
+                                ? "text-tableBlueColor"
+                                : "text-black"
+                            }`}
+                            onClick={() => {
+                              setMultiplier(key);
+                              SetFirstButton(firstButton + 2);
+                              SetSecondButton(secondButton + 2);
+                              SetdotButton(dotButton + 2);
+                            }}
+                          >
+                            ...
+                          </button>
+                        ) : key === buttonArray.length - 1 ? (
+                          <button
+                            key={key}
+                            className={`px-2 text-lg ${
+                              multiplier === key
+                                ? "text-tableBlueColor"
+                                : "text-black"
+                            }`}
+                            onClick={() => {
+                              setMultiplier(key);
+                              console.log(key);
+                            }}
+                          >
+                            {key + 1}
+                          </button>
+                        ) : null
+                      )
+                    : null}
 
-                <button
-                  className={`px-2 text-lg ${
-                    multiplier >= proposalData.length / limit - 1
-                      ? "text-gray-400"
-                      : "text-tableBlueColor"
-                  }`}
-                  onClick={() => setMultiplier(multiplier + 1)}
-                  disabled={
-                    multiplier >= proposalData.length / limit - 1 ? true : false
-                  }
-                >
-                  Next
-                </button>
+                  <button
+                    className={`px-2 text-lg ${
+                      multiplier >= proposalData.length / limit - 1
+                        ? "text-gray-400"
+                        : "text-tableBlueColor"
+                    }`}
+                    onClick={() => {
+                      setMultiplier(multiplier + 1);
+                      SetFirstButton(firstButton + 1);
+                      SetSecondButton(secondButton + 1);
+                      if (dotButton !== buttonArray.length - 2) {
+                        SetdotButton(dotButton + 1);
+                      }
+                    }}
+                    disabled={
+                      multiplier >= proposalData.length / limit - 1
+                        ? true
+                        : false
+                    }
+                  >
+                    Next
+                  </button>
+                </div>
               </div>
-            </div>
+            ) : null}
           </div>
         </div>
         // </div>
