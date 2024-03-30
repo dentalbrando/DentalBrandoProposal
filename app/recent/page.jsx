@@ -67,6 +67,7 @@ function Proposal() {
     }
     verifyTokenApi();
   }, [isVerified]);
+
   function regenerate(key) {
     dispatch(
       setFunctionalities(proposalData[key].aboutYourProject.functionality)
@@ -192,7 +193,9 @@ function Proposal() {
             <div className="flex-end py-5">
               <div className="ms-5">
                 <button
-                  className="px-2 text-lg"
+                  className={`px-2 text-lg ${
+                    multiplier <= 0 ? "text-gray-400" : "text-tableBlueColor"
+                  }`}
                   onClick={() => setMultiplier(multiplier - 1)}
                   disabled={multiplier <= 0 ? true : false}
                 >
@@ -218,9 +221,15 @@ function Proposal() {
                   03
                 </button>
                 <button
-                  className="px-2 text-lg text-tableBlueColor"
+                  className={`px-2 text-lg ${
+                    multiplier >= proposalData.length / limit - 1
+                      ? "text-gray-400"
+                      : "text-tableBlueColor"
+                  }`}
                   onClick={() => setMultiplier(multiplier + 1)}
-                  disabled={multiplier > proposalData.length ? true : false}
+                  disabled={
+                    multiplier >= proposalData.length / limit - 1 ? true : false
+                  }
                 >
                   Next
                 </button>
