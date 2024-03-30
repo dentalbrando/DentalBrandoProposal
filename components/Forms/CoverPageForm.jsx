@@ -45,7 +45,7 @@ const CoverPageForm = () => {
     dispatch(setCompanyPhoneNumber(companyPhoneNumber));
     dispatch(setCompanyAddress(companyAddress));
     dispatch(setCompanyName(companyName));
-    dispatch(setIssueDate(issueDate));
+    dispatch(setIssueDate(issueDate.split("-").reverse().join("-")));
     dispatch(setValidDate(validDate.split("-").reverse().join("-")));
     dispatch(setCompanyLogo(companyLogo));
   };
