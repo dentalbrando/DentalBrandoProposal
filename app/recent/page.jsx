@@ -150,7 +150,7 @@ function Proposal() {
             Proposal Table
           </h1>
           <div className="flex flex-col">
-            <div className="flex-end">
+            <div className="flex-end mb-4">
               <div className="w-fit flex justify-end items-center py-5">
                 <input
                   className="w-full ps-4 pe-11 py-2 search-placehoder table-border rounded-md text-md"
@@ -219,12 +219,12 @@ function Proposal() {
                                 <td className="td-border text-center py-4 text-lg w-[170px">
                                   {item.cover_page.validDate}
                                 </td>
-                                <td className="text-center text-lg px-0 w-[200px">
+                                <td className="text-center text-lg">
                                   <button
                                     onClick={() => {
                                       regenerate(key);
                                     }}
-                                    className="text-white bg-tableBlueColor px-4 py-[0.25rem] my-0 mx-6 rounded-lg"
+                                    className="text-whit bg-tableBlueColr w-3/4 py-[0.25rem] my-0 mx-6 rounded-lg"
                                   >
                                     Regenerate PDF
                                   </button>

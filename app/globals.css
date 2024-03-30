@@ -306,7 +306,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 table {
   overflow: auto;
-  /* background-color: red; */
 } 
 .tableDiv{
   height: 65vh;
