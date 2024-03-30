@@ -34,8 +34,7 @@ function Proposal() {
   let router = useRouter();
   let dispatch = useDispatch();
   let [proposalData, setProposalData] = useState();
-  let [tablepage, setTablePage] = useState(1);
-  let [multiplier, setMultiplier] = useState(1);
+  let [multiplier, setMultiplier] = useState(0);
   let [loading, setLoading] = useState(true);
   const [isVerified, setIsVerified] = useState(undefined);
 
@@ -93,6 +92,7 @@ function Proposal() {
     dispatch(updatePage(100));
     router.push("/");
   }
+  let limit = 5;
 
   return (
     <>
@@ -149,42 +149,28 @@ function Proposal() {
                 {proposalData
                   ? proposalData.map((item, key) => (
                       <tr key={key} className="tr-border">
-                        {key < multiplier * 10 &&
-                        proposalData[key * multiplier] ? (
+                        {key >= multiplier * limit &&
+                        key < limit * (multiplier + 1) &&
+                        proposalData[key] ? (
                           <>
                             <td className="td-border text-center py-4 text-lg w-[100px]">
                               {key < 9 ? "0" : null}
-                              {key + 1 * multiplier}
+                              {key + 1}
                             </td>
                             <td className="td-border text-center py-4 text-lg w-[180px]">
-                              {
-                                proposalData[key * multiplier].cover_letter
-                                  .clientName
-                              }
+                              {item.cover_letter.clientName}
                             </td>
                             <td className="td-border text-center py-4 text-lg w-[200px]">
-                              {
-                                proposalData[key * multiplier].cover_page
-                                  .projectTitle
-                              }
+                              {item.cover_page.projectTitle}
                             </td>
                             <td className="td-border text-center py-4 text-lg w-[220px]">
-                              {
-                                proposalData[key * multiplier].cover_page
-                                  .companyName
-                              }
+                              {item.cover_page.companyName}
                             </td>
                             <td className="td-border text-center py-4 text-lg w-[170px]">
-                              {
-                                proposalData[key * multiplier].cover_page
-                                  .issueDate
-                              }
+                              {item.cover_page.issueDate}
                             </td>
                             <td className="td-border text-center py-4 text-lg w-[170px]">
-                              {
-                                proposalData[key * multiplier].cover_page
-                                  .validDate
-                              }
+                              {item.cover_page.validDate}
                             </td>
                             <td className="text-center text-lg px-0 w-[200px]">
                               <button
@@ -208,31 +194,33 @@ function Proposal() {
                 <button
                   className="px-2 text-lg"
                   onClick={() => setMultiplier(multiplier - 1)}
+                  disabled={multiplier <= 0 ? true : false}
                 >
                   Prev
                 </button>
                 <button
                   className="px-2 text-lg text-tableBlueColor"
-                  onClick={() => setMultiplier(1)}
+                  onClick={() => setMultiplier(0)}
                 >
                   01
                 </button>
                 <button
                   className="px-2 text-lg "
-                  onClick={() => setMultiplier(2)}
+                  onClick={() => setMultiplier(1)}
                 >
                   02
                 </button>
                 <button className="px-2 text-lg ">..</button>
                 <button
                   className="px-2 text-lg "
-                  onClick={() => setMultiplier(5)}
+                  onClick={() => setMultiplier(2)}
                 >
-                  05
+                  03
                 </button>
                 <button
                   className="px-2 text-lg text-tableBlueColor"
                   onClick={() => setMultiplier(multiplier + 1)}
+                  disabled={multiplier > proposalData.length ? true : false}
                 >
                   Next
                 </button>
