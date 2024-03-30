@@ -56,29 +56,14 @@ const LastPage = () => {
                     ﬁnance@soft-enterprise.com
                   </p>
                 </div>
-
-                {/* <div class=" mt-3 flex flex-col items-center justify-center">
-                  <div class="w-8 h-8 bg-[#00A2FF] rounded-full flex items-center justify-center">
-                    <img class="w-3" src={svg4.src} alt="" />
-                  </div>
-                  <p class=" font-[500] text-[6pt] mt-2">
-                    53 Hamza Heights, Quaid
-                  </p>
-                  <p class=" font-[500] text-[6pt]">Block Near Eiﬀel Towel,</p>
-
-                  <p class=" font-[500] text-[6pt]"> Bahria Town, Lahore</p>
-                </div> */}
               </div>
             </div>
 
-            <div
-              class="mt-3 flex items-center justify-center bg-blue400 gap-2 px-11"
-              // style={{ float: "inline-start" }}
-            >
+            <div class="mt-3 flex items-center justify-center bg-blue400 gap-2 px-11">
               {/* <div class="w-8 h-8 bg-[#00A2FF] rounded-full flex items-center justify-center">
                 <img class="w-3" src={svg4.src} alt="" />
               </div> */}
-              <p class=" font-[500] text-[8pt] pt-1">
+              <p class=" font-[500] text-[8pt] pt-3">
                 53 Hamza Heights, Quaid Block Near Eiﬀel Towel, Bahria Town,
                 Lahore
               </p>
