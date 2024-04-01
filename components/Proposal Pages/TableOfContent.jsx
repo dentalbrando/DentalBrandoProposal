@@ -4,11 +4,6 @@ import { useSelector } from "react-redux";
 
 const TableOfContent = () => {
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
-
-  useEffect(() => {
-    console.log(pageSequence);
-  }, []);
-
   let number = 0;
 
   return (

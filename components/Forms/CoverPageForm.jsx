@@ -77,6 +77,7 @@ const CoverPageForm = () => {
   return (
     <>
       <TextInput
+        length="full"
         label="Sub Heading"
         placeholder="Enter Sub Heading"
         value={subHeading}
@@ -86,6 +87,7 @@ const CoverPageForm = () => {
       />
 
       <TextInput
+        length="full"
         label="Project Title"
         placeholder="Enter Project Title"
         value={projectTitle}
@@ -96,16 +98,18 @@ const CoverPageForm = () => {
 
       <div className="flex gap-5 justify-center items-center">
         <TextInput
-          label="Company Phone Number"
-          placeholder="Enter Company Phone Number"
+          length="half"
+          label="Company Number"
+          placeholder="000 000 0000"
           value={companyPhoneNumber}
           onChange={(event) => {
             setCompanyPhoneNumberLocal(event.target.value);
           }}
         />
         <TextInput
-          label="Company Address"
-          placeholder="Enter Company Address"
+          length="half"
+          label="Address"
+          placeholder="Company Address Here"
           value={companyAddress}
           onChange={(event) => {
             setCompanyAddressLocal(event.target.value);
@@ -115,14 +119,16 @@ const CoverPageForm = () => {
 
       <div className="flex gap-5 justify-center items-center">
         <TextInput
+          length="half"
           label="Company Name"
-          placeholder="Enter Company Name"
+          placeholder="Company Name Here"
           value={companyName}
           onChange={(event) => {
             setCompanyNameLocal(event.target.value);
           }}
         />
         <TextInput
+          length="half"
           label="Issue Date"
           type="date"
           value={issueDate}
@@ -133,6 +139,7 @@ const CoverPageForm = () => {
       </div>
 
       <TextInput
+        length="full"
         label="Valid Date"
         type="date"
         value={validDate}
@@ -141,46 +148,47 @@ const CoverPageForm = () => {
         }}
       />
 
-      <TextInput
-        label="Upload Company Logo"
-        type="file"
-        accept="image/*"
-        onChange={handleLogoChange}
-        border="opacity-0 absolute mt-[44px] w-20 h-20 cursor-pointer"
-      />
-
-      {coverPage.companyLogo?.name || companyLogo?.name ? (
-        <>
-          <img
-            className="w-20 h-20 "
-            src={
-              !companyLogo.string
-                ? coverPage.companyLogo.string
-                : companyLogo.string
-            }
-            alt=""
-          />
-          <p>
-            Selected File:{" "}
-            {!companyLogo.name ? coverPage.companyLogo.name : companyLogo.name}
-          </p>
-        </>
-      ) : (
-        <div className="w-20 h-20 flex justify-center items-center text-center border border-black">
-          No file is Selected
+      <div className="flex flex-start">
+        <label className="text-gray-900 3xl:text-2xl text-[16px] font-medium my-2 w-[25%]">
+          Upload Logo
+        </label>
+        <div className="flex flex-start items-cetner w-[75]">
+          <div className="w-[70px] h-[70px] absolute overflow-hidden opacity-0">
+            <input
+              type="file"
+              onChange={handleLogoChange}
+              className="w-[100px] h-[100px]"
+            />
+          </div>
+          <div className="w-[70px] h-[70px] bg-white rounded-xl text-main-blue text-[16px] font-medium flex items-center justify-center border-2 border-color">
+            {coverPage.companyLogo?.name || companyLogo?.name ? (
+              <div className="bg-yellow-200">
+                <img
+                  className="w-[100%] h-[100%]"
+                  src={
+                    !companyLogo.string
+                      ? coverPage.companyLogo.string
+                      : companyLogo.string
+                  }
+                  alt=""
+                />
+              </div>
+            ) : (
+              "Logo"
+            )}
+          </div>
         </div>
-      )}
-
-      <button
-        type="button"
-        className="py-2 px-2 bg-red-600 rounded-3xl text-white mt-4"
-        onClick={() => {
-          dispatch(setCompanyLogo(null));
-          setCompanyLogoLocal(null);
-        }}
-      >
-        Remove images
-      </button>
+        <button
+          type="button"
+          className="py-2 px-4 rounded-xl text-white mx-4 bg-main-blue font-medium text-[12px]"
+          onClick={() => {
+            dispatch(setCompanyLogo(null));
+            setCompanyLogoLocal(null);
+          }}
+        >
+          Remove
+        </button>
+      </div>
       {/* <div className="flex-center m-6">
                 <button onClick={handleSave} className="button w-32 h-10 text-center  rounded-2xl">
                     Save
@@ -189,5 +197,15 @@ const CoverPageForm = () => {
     </>
   );
 };
+{
+  /* <TextInput
+                    length="full"
+                    label=""
+                    type="file"
+                    accept="image/*"
+                    border="absolute w-[50px] h-20 cursor-pointer"
+                    className="bg-pink-200"
+                  /> */
+}
 
 export default CoverPageForm;

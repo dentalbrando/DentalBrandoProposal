@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updatePage } from "@app/store/pageSclice";
 import { resetSquence, setPageSequence } from "@app/store/pageSequence";
-
+import { FaCheck } from "react-icons/fa";
 const Sidebar = () => {
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
   const [items, setItems] = useState(pageSequence);
@@ -42,8 +42,10 @@ const Sidebar = () => {
   }, [items]);
 
   return (
-    <div className="w-[20vw] h-fit custom-bg shadow-lg top-[20vh] rounded-r-3xl p-3">
-      <h1 className="head_text whitespace-nowrap">Proposal Pages</h1>
+    <div className="w-[20vw] h-fit border-r-2 border-b-2 border-color px-7 py-4 custom-bg">
+      <h1 className="text-main-blue text-[28px] px-6 font-semibold my-1">
+        Proposal Pages
+      </h1>
       <DragDropContext onDragEnd={onDragEnd}>
         <Droppable droppableId="item_list">
           {(provided) => (
@@ -61,15 +63,29 @@ const Sidebar = () => {
                       {...provided.draggableProps}
                       onClick={() => dispatch(updatePage(item.id))}
                     >
-                      <div className="desc mt-2 flex-start p-3 bg-white rounded-2xl border select-none gap-2 whitespace-nowrap">
-                        <input
-                          type="checkbox"
-                          checked={item.checked}
-                          id={item.id}
-                          onChange={(e) => handleChangeChecked(e, item.id)}
-                          onClick={(e) => e.stopPropagation()}
-                        />
-                        {item.content}
+                      <div className="desc mt-2 flex-start p-4 bg-hover-blue rounded-xl select-none gap-2 inputDiv gap-4">
+                        <div className="checkBoxDiv">
+                          <input
+                            type="checkbox"
+                            checked={item.checked}
+                            id={item.id}
+                            onChange={(e) => handleChangeChecked(e, item.id)}
+                            onClick={(e) => e.stopPropagation()}
+                            className="inputBox"
+                          />
+                        </div>
+                        <div
+                          className={`demyBox rounded-md ${
+                            item.checked
+                              ? "bg-main-blue"
+                              : "bg-white border-2 border-[#D9D9D9]"
+                          }`}
+                        >
+                          {item.checked ? <FaCheck /> : null}
+                        </div>
+                        <p className="font-medium text-[18px] font-medium text-black">
+                          {item.content}
+                        </p>
                       </div>
                     </div>
                   )}
