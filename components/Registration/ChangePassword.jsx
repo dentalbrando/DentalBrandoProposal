@@ -68,7 +68,7 @@ function ChangePassword() {
       <h1
         className="
         // bg-gradient-to-r from-blue-400 via-blue-600 to-blue-500* bg-clip-text text-transparent
-        orange_gradient* 
+        orange_gradient 
         text-5xl pb-5 font-bold "
       >
         Change Password
@@ -112,8 +112,8 @@ function ChangePassword() {
         className={`${
           loading
             ? "bg-gray-600"
-            : // : "button"
-              "bg-gradient-to-r from-blue-400 via-blue-600 to-blue-500 hover:opacity-[0.9]"
+            :  "button"
+              // "bg-gradient-to-r from-blue-400 via-blue-600 to-blue-500 hover:opacity-[0.9]"
         } text-white mx-0 p-3`}
         onClick={loginSubmit}
       >

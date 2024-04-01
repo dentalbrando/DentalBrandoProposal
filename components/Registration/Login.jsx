@@ -48,14 +48,7 @@ function Login(prop) {
   return (
     // <div className="flex items-center w-5/12 h-full custom-bg">
     <div className="flex flex-col justify-evenly w-fit h-fit py-10* ps-8 pe-12 text-xl font-sans w-fit borderl-2 border-gray-500 w-full h-[90] gap-10">
-      <h1
-        className="
-        // bg-gradient-to-r from-blue-400 via-blue-600 to-blue-500* bg-clip-text text-transparent
-        orange_gradient* 
-        text-5xl pb-5 font-bold"
-      >
-        Login
-      </h1>
+      <h1 className="orange_gradient text-5xl pb-5 font-bold">Login</h1>
 
       <div className="flex flex-col bg-blue-300* justify-center">
         <input
@@ -89,10 +82,8 @@ function Login(prop) {
 
       <button
         className={`${
-          loading
-            ? "bg-gray-600"
-            : // : "button"
-              "bg-gradient-to-r from-blue-400 via-blue-600 to-blue-500 hover:opacity-[0.9]"
+          loading ? "bg-gray-600" : "button"
+          // "bg-gradient-to-r from-blue-400 via-blue-600 to-blue-500 hover:opacity-[0.9]"
         } text-white mx-0 p-3`}
         onClick={loginSubmit}
       >
