@@ -92,16 +92,6 @@ const AboutYourProjects = ({ pageNumber }) => {
                   }}
                 ></p>
               </div>
-              {/* 
-
-                                <p class="py-3 text-[12pt]">They connect businesses and investments through a range of
-                                    services and events, believing in
-                                    the importance of a responsible and profitable private sector in Pakistan's development
-                                </p>
-
-                                <p class="text-[12pt]">The purpose of Client Coverage team serves as a single point of
-                                    contact, understanding your
-                                    company's unique trade promotion needs and sector requirements.</p> */}
             </section>
             <section>
               <div class="flex pt-10">
@@ -119,24 +109,26 @@ const AboutYourProjects = ({ pageNumber }) => {
                 ></p>
               </div>
             </section>
-            <section>
-              <div class="flex pt-10">
-                <div class="text-[16pt] text-[#00A2FF] font-[700]">
-                  <p>3.</p>
+            {aboutYourProject.websiteCMS ? (
+              <section>
+                <div class="flex pt-10">
+                  <div class="text-[16pt] text-[#00A2FF] font-[700]">
+                    <p>3.</p>
+                  </div>
+                  <div class="text-[16pt] text-[#00A2FF] px-3 font-[700]">
+                    <p>Website CMS</p>
+                  </div>
                 </div>
-                <div class="text-[16pt] text-[#00A2FF] px-3 font-[700]">
-                  <p>Website CMS</p>
+                <div>
+                  <p
+                    class="pt-2 text-[12pt]"
+                    dangerouslySetInnerHTML={{
+                      __html: aboutYourProject.websiteCMS,
+                    }}
+                  ></p>
                 </div>
-              </div>
-              <div>
-                <p
-                  class="pt-2 text-[12pt]"
-                  dangerouslySetInnerHTML={{
-                    __html: aboutYourProject.websiteCMS,
-                  }}
-                ></p>
-              </div>
-            </section>
+              </section>
+            ) : null}
           </div>
         </div>
       </div>

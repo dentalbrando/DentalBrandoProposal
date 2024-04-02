@@ -135,10 +135,6 @@ The purpose of Client Coverage team serves as a single point of contact, underst
                 .replace(/<\/p>/g, "")}
             </textarea>
           </div>
-          {/* <div className=" flex-center m-6">
-
-                <input type="submit" value="Save" onClick={handleSaveAboutYourProject} className="button w-32 h-10 text-center  rounded-2xl" />
-            </div> */}
         </div>
       </div>
     );
