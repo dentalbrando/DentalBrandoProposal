@@ -75,28 +75,32 @@ const CoverPageForm = () => {
   };
 
   return (
-    <>
-      <TextInput
-        length="full"
-        label="Sub Heading"
-        placeholder="Enter Sub Heading"
-        value={subHeading}
-        onChange={(event) => {
-          setSubHeadingLocal(event.target.value);
-        }}
-      />
+    <div className="flex flex-col justify-between">
+      <div className="my-5 flex justify-center items-center">
+        <TextInput
+          length="full"
+          label="Sub Heading"
+          placeholder="Enter Sub Heading"
+          value={subHeading}
+          onChange={(event) => {
+            setSubHeadingLocal(event.target.value);
+          }}
+        />
+      </div>
 
-      <TextInput
-        length="full"
-        label="Project Title"
-        placeholder="Enter Project Title"
-        value={projectTitle}
-        onChange={(event) => {
-          setProjectTitleLocal(event.target.value);
-        }}
-      />
+      <div className="my-5 flex justify-center items-center">
+        <TextInput
+          length="full"
+          label="Project Title"
+          placeholder="Enter Project Title"
+          value={projectTitle}
+          onChange={(event) => {
+            setProjectTitleLocal(event.target.value);
+          }}
+        />
+      </div>
 
-      <div className="flex gap-5 justify-center items-center">
+      <div className="my-5 flex justify-center items-center">
         <TextInput
           length="half"
           label="Company Number"
@@ -106,8 +110,10 @@ const CoverPageForm = () => {
             setCompanyPhoneNumberLocal(event.target.value);
           }}
         />
+
         <TextInput
           length="half"
+          secondInput={true}
           label="Address"
           placeholder="Company Address Here"
           value={companyAddress}
@@ -116,10 +122,9 @@ const CoverPageForm = () => {
           }}
         />
       </div>
-
-      <div className="flex gap-5 justify-center items-center">
+      <div className="my-5 flex justify-center items-center">
         <TextInput
-          length="half"
+          length="full"
           label="Company Name"
           placeholder="Company Name Here"
           value={companyName}
@@ -127,6 +132,8 @@ const CoverPageForm = () => {
             setCompanyNameLocal(event.target.value);
           }}
         />
+      </div>
+      <div className="my-5 flex justify-center items-center">
         <TextInput
           length="half"
           label="Issue Date"
@@ -136,20 +143,20 @@ const CoverPageForm = () => {
             setIssueDateLocal(event.target.value);
           }}
         />
+
+        <TextInput
+          length="half"
+          secondInput={true}
+          label="Valid Date"
+          type="date"
+          value={validDate}
+          onChange={(event) => {
+            setValidDateLocal(event.target.value);
+          }}
+        />
       </div>
-
-      <TextInput
-        length="full"
-        label="Valid Date"
-        type="date"
-        value={validDate}
-        onChange={(event) => {
-          setValidDateLocal(event.target.value);
-        }}
-      />
-
-      <div className="flex flex-start">
-        <label className="text-gray-900 3xl:text-2xl text-[16px] font-medium my-2 w-[25%]">
+      <div className="flex flex-start my-5 w-[100%]">
+        <label className="text-gray-900 3xl:text-2xl text-[16px] font-medium my-2 w-[20%]">
           Upload Logo
         </label>
         <div className="flex flex-start items-cetner w-[75]">
@@ -194,7 +201,7 @@ const CoverPageForm = () => {
                     Save
                 </button>
             </div> */}
-    </>
+    </div>
   );
 };
 {

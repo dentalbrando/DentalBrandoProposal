@@ -65,10 +65,12 @@ const TextInput = (props) => {
     }
   };
 
-  return (
-    <div className={`flex justify-between ${props.customClass}' w-full py-5`}>
+  return props.length === "full" ? (
+    <div
+      className={`flex justify-between ${props.customClass}' w-[100%]`}
+    >
       {!props.noLabel && (
-        <label className="text-gray-900 3xl:text-2xl text-[16px] font-medium my-2 w-[12vw]">
+        <label className="text-gray-900 3xl:text-2xl text-[16px] font-medium my-2 w-[20%]">
           {props.label}
           {props.isImportant ? (
             <span className="text-red-500 text-lg font-semibold">*</span>
@@ -81,11 +83,36 @@ const TextInput = (props) => {
         {...props}
         autoFocus
         value={formattedValue}
-        className={` text-gray-900 3xl:text-2xl text-lg p-2 ${
-          props.border
-        } rounded-md font-normal border-2 border-color outline-none ${
-          props.length === "full" ? "w-[40vw]" : "w-[13vw]"
-        }`}
+        className={` text-gray-900 3xl:text-2xl text-lg p-2 ${props.border} rounded-md font-normal border-2 border-color outline-none w-[80%]`}
+        onChange={handleChange}
+      />
+      {props.error && (
+        <p className="text-red-500 text-sm">{props.errormessage}</p>
+      )}
+    </div>
+  ) : (
+    <div
+      className={`flex justify-between ${props.customClass}' w-[50%]`}
+    >
+      {!props.noLabel && (
+        <label
+          className={`text-gray-900 3xl:text-2xl text-[16px] font-medium my-2 w-[40%] ${
+            props.secondInput ? "flex-end pe-10" : ""
+          }`}
+        >
+          {props.label}
+          {props.isImportant ? (
+            <span className="text-red-500 text-lg font-semibold">*</span>
+          ) : (
+            ""
+          )}
+        </label>
+      )}
+      <input
+        {...props}
+        autoFocus
+        value={formattedValue}
+        className={` text-gray-900 3xl:text-2xl text-lg p-2 ${props.border} rounded-md font-normal border-2 border-color outline-none w-[60%]`}
         onChange={handleChange}
       />
       {props.error && (
