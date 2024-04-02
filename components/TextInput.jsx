@@ -67,7 +67,7 @@ const TextInput = (props) => {
 
   return props.length === "full" ? (
     <div
-      className={`flex justify-between ${props.customClass}' w-[100%]`}
+      className={`flex justify-between items-center ${props.customClass}' w-[100%]`}
     >
       {!props.noLabel && (
         <label className="text-gray-900 3xl:text-2xl text-[16px] font-medium my-2 w-[20%]">
@@ -92,11 +92,11 @@ const TextInput = (props) => {
     </div>
   ) : (
     <div
-      className={`flex justify-between ${props.customClass}' w-[50%]`}
+      className={`flex justify-between items-center ${props.customClass}' w-[50%]`}
     >
       {!props.noLabel && (
         <label
-          className={`text-gray-900 3xl:text-2xl text-[16px] font-medium my-2 w-[40%] ${
+          className={`text-gray-900 text-[16px] font-medium my-2 w-[40%] ${
             props.secondInput ? "flex-end pe-10" : ""
           }`}
         >
@@ -112,7 +112,7 @@ const TextInput = (props) => {
         {...props}
         autoFocus
         value={formattedValue}
-        className={` text-gray-900 3xl:text-2xl text-lg p-2 ${props.border} rounded-md font-normal border-2 border-color outline-none w-[60%]`}
+        className={` text-gray-900 text-2xl text-lg p-2 ${props.border} rounded-md font-normal border-2 border-color outline-none w-[60%]`}
         onChange={handleChange}
       />
       {props.error && (
