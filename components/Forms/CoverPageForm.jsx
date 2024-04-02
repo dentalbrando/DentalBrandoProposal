@@ -75,132 +75,134 @@ const CoverPageForm = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between">
-      <div className="my-5 flex justify-center items-center">
-        <TextInput
-          length="full"
-          label="Sub Heading"
-          placeholder="Enter Sub Heading"
-          value={subHeading}
-          onChange={(event) => {
-            setSubHeadingLocal(event.target.value);
-          }}
-        />
-      </div>
-
-      <div className="my-5 flex justify-center items-center">
-        <TextInput
-          length="full"
-          label="Project Title"
-          placeholder="Enter Project Title"
-          value={projectTitle}
-          onChange={(event) => {
-            setProjectTitleLocal(event.target.value);
-          }}
-        />
-      </div>
-
-      <div className="my-5 flex justify-center items-center">
-        <TextInput
-          length="half"
-          label="Company Number"
-          placeholder="000 000 0000"
-          value={companyPhoneNumber}
-          onChange={(event) => {
-            setCompanyPhoneNumberLocal(event.target.value);
-          }}
-        />
-
-        <TextInput
-          length="half"
-          secondInput={true}
-          label="Address"
-          placeholder="Company Address Here"
-          value={companyAddress}
-          onChange={(event) => {
-            setCompanyAddressLocal(event.target.value);
-          }}
-        />
-      </div>
-      <div className="my-5 flex justify-center items-center">
-        <TextInput
-          length="full"
-          label="Company Name"
-          placeholder="Company Name Here"
-          value={companyName}
-          onChange={(event) => {
-            setCompanyNameLocal(event.target.value);
-          }}
-        />
-      </div>
-      <div className="my-5 flex justify-center items-center">
-        <TextInput
-          length="half"
-          label="Issue Date"
-          type="date"
-          value={issueDate}
-          onChange={(event) => {
-            setIssueDateLocal(event.target.value);
-          }}
-        />
-
-        <TextInput
-          length="half"
-          secondInput={true}
-          label="Valid Date"
-          type="date"
-          value={validDate}
-          onChange={(event) => {
-            setValidDateLocal(event.target.value);
-          }}
-        />
-      </div>
-      <div className="flex flex-start my-5 w-[100%]">
-        <label className="text-gray-900 3xl:text-2xl text-[16px] font-medium my-2 w-[20%]">
-          Upload Logo
-        </label>
-        <div className="flex flex-start items-cetner w-[75]">
-          <div className="w-[70px] h-[70px] absolute overflow-hidden opacity-0">
-            <input
-              type="file"
-              onChange={handleLogoChange}
-              className="w-[100px] h-[100px] text-[14px] font-normal"
-            />
-          </div>
-          <div className="w-[70px] h-[70px] bg-white rounded-xl text-main-blue text-[16px] font-medium flex items-center justify-center border-2 border-color">
-            {coverPage.companyLogo?.name || companyLogo?.name ? (
-              <div className="bg-yellow-200">
-                <img
-                  className="w-[100%] h-[100%]"
-                  src={
-                    !companyLogo.string
-                      ? coverPage.companyLogo.string
-                      : companyLogo.string
-                  }
-                  alt=""
-                />
-              </div>
-            ) : (
-              "Logo"
-            )}
-          </div>
+    <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
+      <div className="flex flex-col justify-between">
+        <div className="my-5 flex justify-center items-center">
+          <TextInput
+            length="full"
+            label="Sub Heading"
+            placeholder="Enter Sub Heading"
+            value={subHeading}
+            onChange={(event) => {
+              setSubHeadingLocal(event.target.value);
+            }}
+          />
         </div>
-        <button
-          type="button"
-          className="py-2 px-4 rounded-xl text-white mx-4 bg-main-blue font-medium text-[12px]"
-          onClick={() => {
-            dispatch(setCompanyLogo(null));
-            setCompanyLogoLocal(null);
-          }}
-        >
-          Remove
-        </button>
-      </div>
-      {/* <div className="flex-center m-6">
+
+        <div className="my-5 flex justify-center items-center">
+          <TextInput
+            length="full"
+            label="Project Title"
+            placeholder="Enter Project Title"
+            value={projectTitle}
+            onChange={(event) => {
+              setProjectTitleLocal(event.target.value);
+            }}
+          />
+        </div>
+
+        <div className="my-5 flex justify-center items-center">
+          <TextInput
+            length="half"
+            label="Company Number"
+            placeholder="000 000 0000"
+            value={companyPhoneNumber}
+            onChange={(event) => {
+              setCompanyPhoneNumberLocal(event.target.value);
+            }}
+          />
+
+          <TextInput
+            length="half"
+            secondInput={true}
+            label="Address"
+            placeholder="Company Address Here"
+            value={companyAddress}
+            onChange={(event) => {
+              setCompanyAddressLocal(event.target.value);
+            }}
+          />
+        </div>
+        <div className="my-5 flex justify-center items-center">
+          <TextInput
+            length="full"
+            label="Company Name"
+            placeholder="Company Name Here"
+            value={companyName}
+            onChange={(event) => {
+              setCompanyNameLocal(event.target.value);
+            }}
+          />
+        </div>
+        <div className="my-5 flex justify-center items-center">
+          <TextInput
+            length="half"
+            label="Issue Date"
+            type="date"
+            value={issueDate}
+            onChange={(event) => {
+              setIssueDateLocal(event.target.value);
+            }}
+          />
+
+          <TextInput
+            length="half"
+            secondInput={true}
+            label="Valid Date"
+            type="date"
+            value={validDate}
+            onChange={(event) => {
+              setValidDateLocal(event.target.value);
+            }}
+          />
+        </div>
+        <div className="flex flex-start my-5 w-[100%]">
+          <label className="text-gray-900 3xl:text-2xl text-[16px] font-medium my-2 w-[20%]">
+            Upload Logo
+          </label>
+          <div className="flex flex-start items-cetner w-[75]">
+            <div className="w-[70px] h-[70px] absolute overflow-hidden opacity-0">
+              <input
+                type="file"
+                onChange={handleLogoChange}
+                className="w-[100px] h-[100px] text-[14px] font-normal"
+              />
+            </div>
+            <div className="w-[70px] h-[70px] bg-white rounded-xl text-main-blue text-[16px] font-medium flex items-center justify-center border-2 border-color">
+              {coverPage.companyLogo?.name || companyLogo?.name ? (
+                <div className="bg-yellow-200">
+                  <img
+                    className="w-[100%] h-[100%]"
+                    src={
+                      !companyLogo.string
+                        ? coverPage.companyLogo.string
+                        : companyLogo.string
+                    }
+                    alt=""
+                  />
+                </div>
+              ) : (
+                "Logo"
+              )}
+            </div>
+          </div>
+          <button
+            type="button"
+            className="py-2 px-4 rounded-xl text-white mx-4 bg-main-blue font-medium text-[12px]"
+            onClick={() => {
+              dispatch(setCompanyLogo(null));
+              setCompanyLogoLocal(null);
+            }}
+          >
+            Remove
+          </button>
+        </div>
+        {/* <div className="flex-center m-6">
                 <button onClick={handleSave} className="button w-32 h-10 text-center  rounded-2xl">
                     Save
                 </button>
             </div> */}
+      </div>
     </div>
   );
 };

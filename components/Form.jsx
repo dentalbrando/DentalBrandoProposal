@@ -25,19 +25,19 @@ const Form = () => {
           ? "Estimate Budget"
           : "No Form Available"}
       </h1>
-      <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
-        {page.formId == "1" ? (
-          <CoverPageForm />
-        ) : page.formId == "3" ? (
-          <ConverLetterForm />
-        ) : page.formId == "4" ? (
-          <AboutYourProject />
-        ) : page.formId == "5" ? (
-          <ProposedSiteMapForm />
-        ) : page.formId == "9" ? (
-          <BudgetForm />
-        ) : null}
-      </div>
+      {/* <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color"> */}
+      {page.formId == "1" ? (
+        <CoverPageForm />
+      ) : page.formId == "3" ? (
+        <ConverLetterForm />
+      ) : page.formId == "4" ? (
+        <AboutYourProject />
+      ) : page.formId == "5" ? (
+        <ProposedSiteMapForm />
+      ) : page.formId == "9" ? (
+        <BudgetForm />
+      ) : null}
+      {/* </div> */}
     </div>
   );
 };
