@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { updatePage } from "@app/store/pageSclice";
 import { resetSquence, setPageSequence } from "@app/store/pageSequence";
 import { FaCheck } from "react-icons/fa";
+import Link from "next/link";
 const Sidebar = () => {
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
   const [items, setItems] = useState(pageSequence);
@@ -95,7 +96,7 @@ const Sidebar = () => {
               <div className="flex flex-col gap-3">
                 <button
                   type="button"
-                  className="mt-8 button border border-gray-200 p-3 rounded-3xl bg-white"
+                  className="mt-8 button border border-gray-200 p-3 rounded-2xl bg-white"
                   onClick={() => generate()}
                 >
                   Generate
@@ -105,7 +106,7 @@ const Sidebar = () => {
                 </p>
                 <button
                   type="button"
-                  className="button border border-gray-200 p-3 rounded-3xl bg-white"
+                  className="button border border-gray-200 p-3 rounded-2xl bg-white"
                   onClick={() => {
                     dispatch(resetSquence());
                     setItems([
@@ -133,6 +134,14 @@ const Sidebar = () => {
                 >
                   Reset all
                 </button>
+                {/* <button> */}
+                  <Link 
+                  className="text-center mt-3 button border border-gray-200 p-3 rounded-2xl bg-white"
+                    href="/recent"
+                  >
+                    Recent proposals
+                  </Link>
+                {/* </button> */}
               </div>
             </div>
           )}

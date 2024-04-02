@@ -16,7 +16,6 @@ import { create, local } from "d3";
 import axios from "axios";
 import SaveProposaltoDb from "@components/saveProposaltoDb";
 import Link from "next/link";
-import RecentProposalLink from "@components/RecentProposalLink";
 import Loader from "@components/Loader";
 
 const familyData = {
@@ -53,7 +52,7 @@ const Home = () => {
   const treeWidth = 800; // Set the desired width
   const [tokenVerifierTrigger, setTokenVerifierTrigger] = useState(0);
   const [userId, setUserId] = useState(null);
-  const [isVerified, setIsVerified] = useState(true);
+  const [isVerified, setIsVerified] = useState(undefined);
   const [userData, setUserData] = useState();
   const [loading, setLoading] = useState(false);
   const defaultFamilyTreeData = [
@@ -67,34 +66,34 @@ const Home = () => {
     { key: "child4", name: "Child 4", parent: "mother" },
   ];
 
-  // useEffect(() => {
-  //   const storeTokenToDb = async () => {
-  //     async function postToken() {
-  //       try {
-  //         setLoading(true);
-  //         let result = await axios.post(`/api/storeTokenToDb`, { userId });
-  //         setUserData(result.data.userData);
-  //       } catch (err) {
-  //         setLoading(false);
-  //       } finally {
-  //         setLoading(false);
-  //       }
-  //     }
-  //     postToken();
+  useEffect(() => {
+    const storeTokenToDb = async () => {
+      async function postToken() {
+        try {
+          setLoading(true);
+          let result = await axios.post(`/api/storeTokenToDb`, { userId });
+          setUserData(result.data.userData);
+        } catch (err) {
+          setLoading(false);
+        } finally {
+          setLoading(false);
+        }
+      }
+      postToken();
 
-  //     async function verifyTokenApi() {
-  //       try {
-  //         await axios.get("/api/verifyToken");
-  //         setIsVerified(true);
-  //       } catch (err) {
-  //         setIsVerified(false);
-  //       }
-  //     }
-  //     verifyTokenApi();
-  //     // verifyToken(setIsVerified);
-  //   };
-  //   storeTokenToDb();
-  // }, [tokenVerifierTrigger]);
+      async function verifyTokenApi() {
+        try {
+          await axios.get("/api/verifyToken");
+          setIsVerified(true);
+        } catch (err) {
+          setIsVerified(false);
+        }
+      }
+      verifyTokenApi();
+      // verifyToken(setIsVerified);
+    };
+    storeTokenToDb();
+  }, [tokenVerifierTrigger]);
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }
@@ -113,7 +112,7 @@ const Home = () => {
               <div className="flex justify-start items-start h-fit">
                 <div className="flex justify-between flex-col">
                   <Sidebar />
-                  <RecentProposalLink />
+                  {/* <RecentProposalLink /> */}
                 </div>
                 <div className="flex flex-col gap-5">
                   <Form />
