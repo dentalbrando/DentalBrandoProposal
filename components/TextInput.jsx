@@ -112,7 +112,7 @@ const TextInput = (props) => {
         {...props}
         autoFocus
         value={formattedValue}
-        className={` text-gray-900 text-2xl text-lg p-2 ${props.border} rounded-md font-normal border-2 border-color outline-none w-[60%]`}
+        className={` text-gray-900 text-[14px] p-2 ${props.border} rounded-md font-normal border-2 border-color outline-none w-[60%]`}
         onChange={handleChange}
       />
       {props.error && (

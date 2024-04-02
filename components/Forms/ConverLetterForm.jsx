@@ -98,7 +98,7 @@ Sincerely,`;
           />
         </div>
 
-        <div className="  w-[50%]">
+        <div className="w-[50%]">
           <div className={`flex justify-between items-center w-[100%]`}>
             <label
               className={`text-gray-900 text-[16px] font-medium my-2 w-[40%] `}
@@ -107,7 +107,7 @@ Sincerely,`;
             </label>
             <input
               autoFocus
-              className={`text-gray-900 text-2xl text-lg p-2 rounded-md font-normal border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[60%]`}
+              className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[60%]`}
               onChange={(event) => {
                 setclientName(event.target.value);
               }}

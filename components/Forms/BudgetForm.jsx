@@ -40,19 +40,29 @@ const BudgetForm = () => {
   return (
     <>
       {services.map((service, index) => (
-        <div key={index} className="flex justify-evenly items-end gap-3">
-          <TextInput
-            label="Service Description"
-            type="text"
-            placeholder="Enter Service Description"
-            value={service.description || ""}
-            onChange={(e) => handleChange(index, "description", e.target.value)}
-          />
-          <div className="w-[20%] flex flex-col">
-            <label className="text-gray-900 3xl:text-2xl text-lg my-2">
+        <div>
+          <div className=" my-5">
+            <TextInput
+              label="Service Description"
+              type="text"
+              length="full"
+              placeholder="Enter Service Description"
+              value={service.description || ""}
+              onChange={(e) =>
+                handleChange(index, "description", e.target.value)
+              }
+            />
+          </div>
+          <div
+            key={index}
+            className="flex justify-between items-end  my-10 w-[100%]  my-5"
+          >
+            {/* <div className="w-[20%] flex flex-col"> */}
+            <label className="text-gray-900 w-[20%] text-[16px] font-medium my-2">
               Package Type
             </label>
             <select
+              className="w-[80%] rounded-md  text-[14px] font-normal border-2 border-color outline-none"
               value={service.packageType || ""}
               onChange={(e) =>
                 handleChange(index, "packageType", e.target.value)
@@ -64,37 +74,44 @@ const BudgetForm = () => {
               <option value="standard">Standard</option>
             </select>
           </div>
-          <TextInput
-            label="Service Charges"
-            type="text"
-            placeholder="Enter Service Charges"
-            value={service.charges || ""}
-            onChange={(e) => handleChange(index, "charges", e.target.value)}
-          />
-          {index === services.length - 1 && (
-            <button
-              className="flex justify-center items-center text-2xl p-3 rounded-full bg-white border w-[2.9rem] h-[2.9rem]"
-              onClick={handleAddService}
-            >
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
+          <div className="flex  w-[100%]  my-5">
+            <label className="text-gray-900 w-[20%] text-[16px] my-2 font-medium">
+              Service Charges
+            </label>
+            <input
+              className={`text-gray-900 text-[14px] p-2 rounded-md font-normal border-2 border-color outline-none w-[50%]`}
+              type="text"
+              length="full"
+              placeholder="Enter Service Charges"
+              value={service.charges || ""}
+              onChange={(e) => handleChange(index, "charges", e.target.value)}
+            />
+            {index === services.length - 1 && (
+              <button
+                className="flex justify-center items-center text-2xl p-3 rounded-full w-[2.9rem] h-[2.9rem] ms-5 bg-main-blue"
+                onClick={handleAddService}
               >
-                <path
-                  fill="#000000"
-                  d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"
-                />
-              </svg>
-            </button>
-          )}
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#000000"
+                    d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"
+                  />
+                </svg>
+              </button>
+            )}
+          </div>
         </div>
       ))}
-      <div className="flex justify-center items-center gap-3 mb-2">
+      <div className="flex justify-center items-center my-10 w-[100%]  my-5">
         <TextInput
           label="Currency"
           type="text"
+          length="half"
           placeholder="Enter Currency"
           onChange={(e) => {
             dispatch(setCurrency(e.target.value));
@@ -103,19 +120,22 @@ const BudgetForm = () => {
         <TextInput
           label="Discount"
           type="text"
+          length="half"
+          secondInput={true}
           placeholder="Enter Discount"
           onChange={(e) => {
             dispatch(setDiscount(e.target.value));
           }}
         />
       </div>
-      <div>
-        <label className="text-gray-900 3xl:text-2xl text-lg ">
-          Terms and Conditions
+      <div className=" flex justify-between  my-5">
+        <label className="text-gray-900 text-[16px] font-medium w-[20%]">
+          Terms
         </label>
-        <div className="flex flex-col gap-3 mt-2">
+        <div className="flex flex-col gap-5  w-[80%]">
           {budget.terms.map((term, index) => (
-            <TextInput
+            <input
+              className=" text-lg p-2 rounded-md text-[14px] font-normal border-2 border-color outline-none w-[100%]"
               key={index}
               noLabel
               type="text"
@@ -127,7 +147,7 @@ const BudgetForm = () => {
             />
           ))}
           <button
-            className="border bg-blue-400 rounded-xl p-3 py-3 text-white"
+            className="rounded-xl p-3 py-3 bg-main-blue text-white"
             onClick={handleAddTerm}
           >
             Add Term

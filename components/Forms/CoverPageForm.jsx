@@ -164,7 +164,7 @@ const CoverPageForm = () => {
             <input
               type="file"
               onChange={handleLogoChange}
-              className="w-[100px] h-[100px]"
+              className="w-[100px] h-[100px] text-[14px] font-normal"
             />
           </div>
           <div className="w-[70px] h-[70px] bg-white rounded-xl text-main-blue text-[16px] font-medium flex items-center justify-center border-2 border-color">
