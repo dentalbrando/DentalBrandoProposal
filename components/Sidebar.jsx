@@ -43,7 +43,7 @@ const Sidebar = () => {
   }, [items]);
 
   return (
-    <div className="w-[20vw] h-fit border-r-2 border-b-2 border-color px-7 py-4 custom-bg">
+    <div className="w-[20vw] h-fit border-r-2 border-b-2 border-color px-7 pt-4 pb-10 custom-bg">
       <h1 className="text-main-blue text-[28px] px-6 font-semibold mt-1 mb-2">
         Proposal Pages
       </h1>
