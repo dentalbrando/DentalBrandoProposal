@@ -19,12 +19,12 @@ export async function POST(req) {
         });
       }
     } else {
-      return NextResponse.json({ error: "user not found" });
+      return NextResponse.json({ error: "User not found" });
     }
   } catch (err) {
     console.log("err: ", err);
     return NextResponse.json({
-      error: "can't process you request at the moment",
+      error: "can't process your request at the moment",
     });
   }
 }

@@ -147,7 +147,10 @@ const Budget = () => {
                 })}
             </table>
           </div>
+
           {(totalEstimate = subTotal - budgetData.discount) && true}
+          {/* {totalEstimate} */}
+
           <div className="mt-[13.8rem]">
             <div className="bg-[#ffd600] w-full h-14 text-[11pt] font-[700] flex items-center justify-end pr-[62px]">
               <div>
@@ -157,7 +160,7 @@ const Budget = () => {
                     {budgetData.currency} {addCommasToNumber(subTotal)}/-
                   </span>
                 </div>
-                {budgetData.discount && (
+                {budgetData.discount ? (
                   <>
                     <div className="flex items-center gap-[41px]">
                       <p>Discount :</p>
@@ -167,7 +170,7 @@ const Budget = () => {
                       </span>
                     </div>
                   </>
-                )}
+                ) : null}
               </div>
             </div>
             <div className="bg-[#00a2ff] w-full h-14 text-[13.77pt] font-[700] text-white flex items-center justify-end pr-[43px] gap-12">

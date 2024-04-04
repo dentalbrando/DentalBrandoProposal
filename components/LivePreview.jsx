@@ -17,7 +17,7 @@ const LivePreview = () => {
 
   return (
     <div className="flex items-center flex-col bg-white pb-16 w-[78vw] bg-white">
-      <h1 className="text-main-blue text-[36px] font-semibold">Live preview</h1>
+      <h1 className="text-main-blue text-[36px] font-semibold">Live Preview</h1>
       <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
         {
           page.formId == "1" ? (
@@ -45,7 +45,7 @@ const LivePreview = () => {
         ) : (
           <div className="offer flex w-[8.27in] h-[11.6876in] bg-white shadow-lg justify-center items-center text-4xl text-red-400 font-semibold">
             {" "}
-            Nothing to preview
+            Nothing to Preview
           </div>
         )}
       </div>

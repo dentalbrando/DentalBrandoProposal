@@ -116,7 +116,7 @@ function Proposal() {
     dispatch(setValidDate(proposalData[key].cover_page.validDate));
     dispatch(setCompanyLogo(proposalData[key].cover_page.companyLogo));
     dispatch(updatePage(100));
-    router.push("/");
+    router.push("/development");
   }
 
   function searchFunction(e) {

@@ -98,6 +98,7 @@ const CoverPageForm = () => {
             onChange={(event) => {
               setProjectTitleLocal(event.target.value);
             }}
+            // type="num"
           />
         </div>
 
@@ -110,6 +111,7 @@ const CoverPageForm = () => {
             onChange={(event) => {
               setCompanyPhoneNumberLocal(event.target.value);
             }}
+            type="number"
           />
 
           <TextInput

@@ -109,6 +109,7 @@ const TextInput = (props) => {
         </label>
       )}
       <input
+        type={props.type ? props.type : "text"}
         {...props}
         autoFocus
         value={formattedValue}

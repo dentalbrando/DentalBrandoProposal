@@ -2,14 +2,14 @@ import { object, string } from "yup";
 import zxcvbn from "zxcvbn";
 
 export const formValidation = object({
-  username: string().trim().required("user name is required").min(6),
-  password: string().trim().required("password is required").min(6),
+  username: string().trim().required("Username is required").min(6),
+  password: string().trim().required("Password is required").min(6),
 });
 
 export const changePasswordValidation = object({
-  oldPassword: string().trim().required("old password is required").min(6),
-  newPassword: string().trim().required("new password is required").min(6),
-  adminPassword: string().trim().required("admin password is required").min(6),
+  oldPassword: string().trim().required("Old password is required").min(6),
+  newPassword: string().trim().required("New password is required").min(6),
+  adminPassword: string().trim().required("Admin password is required").min(6),
 });
 
 export function strength(password, setPasswordError, setPasswordErrorColor) {
