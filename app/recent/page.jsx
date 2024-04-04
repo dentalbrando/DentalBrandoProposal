@@ -170,12 +170,13 @@ function Proposal() {
         </div>
       ) : (
         <div className="flex flex-col">
-          <Nav />
-          <div className="p-10">
-            <h1 className="text-4xl font-bold text-tableBlueColor">
+          <Nav navText={"Recent Proposal"}/>
+          <div className="px-10 py-4">
+            {/* <h1 className="text-4xl font-bold text-tableBlueColor">
               Proposal Table
-            </h1>
-            <div className="flex flex-col">
+            </h1> */}
+              <div className="flex flex-col">
+                
               <div className="flex-end mb-4">
                 <div className="w-fit flex justify-end items-center py-5">
                   <input
@@ -332,7 +333,7 @@ function Proposal() {
               </div>
 
               {proposalData ? (
-                <div className="flex-end py-5">
+                <div className="flex-end py-2">
                   <div className="ms-5">
                     <button
                       className={`px-2 text-lg ${
@@ -448,7 +449,6 @@ function Proposal() {
               ) : null}
             </div>
           </div>
-          //{" "}
         </div>
       )}
     </div>
