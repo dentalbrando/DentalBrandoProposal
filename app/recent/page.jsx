@@ -43,6 +43,8 @@ function Proposal() {
   let [dotButton, SetdotButton] = useState(null);
   let [searchQuery, SetSearchQuery] = useState("");
   let [searchData, setSearchData] = useState();
+  let [userData, setUserData] = useState();
+
   let limit = 8;
 
   useEffect(() => {
@@ -60,7 +62,20 @@ function Proposal() {
         setLoading(false);
       }
     }
+    async function getUserData() {
+      try {
+        setLoading(true);
+        let data = await axios.get("/api/userData");
+        setUserData(data);
+      } catch (er) {
+        console.log(er);
+      } finally {
+        setLoading(false);
+      }
+    }
+
     if (isVerified === true) {
+      getUserData();
       getData();
     }
 
@@ -103,6 +118,7 @@ function Proposal() {
     dispatch(updatePage(100));
     router.push("/");
   }
+
   function searchFunction(e) {
     if (e.target.value) {
       let searchResult = proposalData.filter((item) => {
@@ -135,6 +151,17 @@ function Proposal() {
     }
   }
 
+  async function deleteProposal(_id) {
+    let { data } = await axios.post("/api/deleteProposal", { _id: _id });
+    let { acknowledged } = data;
+    if (acknowledged) {
+      let deletedProposals = proposalData.filter(
+        (item) => !item._id.includes(_id)
+      );
+      setProposalData(deletedProposals);
+    }
+  }
+
   return (
     <div className="recent-page-font">
       {loading || isVerified === undefined ? (
@@ -142,8 +169,8 @@ function Proposal() {
           <Loader />
         </div>
       ) : (
-        // <div className="flex flex-col">
-        //   <Nav />
+        <div className="flex flex-col">
+          <Nav />
 
         <div className="p-10">
           <h1 className="text-4xl font-bold text-tableBlueColor">
@@ -222,11 +249,19 @@ function Proposal() {
                                 <td className="text-center text-lg">
                                   <button
                                     onClick={() => {
+                                      deleteProposal(item._id);
+                                    }}
+                                    className="text-red-400 leading-3 underline mx-auto"
+                                  >
+                                    Delete
+                                  </button>
+                                  <button
+                                    onClick={() => {
                                       regenerate(key);
                                     }}
-                                    className="text-white bg-tableBlueColor px-5 py-[0.25rem] my-0 mx-6 rounded-lg"
+                                    className="text-main-blue leading-3 underline mx-auto"
                                   >
-                                    Regenerate PDF
+                                    Regenerate
                                   </button>
                                 </td>
                               </>
@@ -264,14 +299,24 @@ function Proposal() {
                                   {item.cover_page.validDate}
                                 </td>
                                 <td className="text-center text-lg px-0 w-[200px">
-                                  <button
-                                    onClick={() => {
-                                      regenerate(key);
-                                    }}
-                                    className="text-white bg-tableBlueColor px-5 py-[0.25rem] my-0 mx-6 rounded-lg"
-                                  >
-                                    Regenerate PDF
-                                  </button>
+                                  <div className="flex justify-evenly items-center w-full">
+                                    <button
+                                      onClick={() => {
+                                        deleteProposal(item._id);
+                                      }}
+                                      className="text-red-400 leading-3 underline"
+                                    >
+                                      Delete
+                                    </button>
+                                    <button
+                                      onClick={() => {
+                                        regenerate(key);
+                                      }}
+                                      className="text-main-blue leading-3 underline"
+                                    >
+                                      Regenerate
+                                    </button>
+                                  </div>
                                 </td>
                               </>
                             ) : null}

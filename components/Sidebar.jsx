@@ -7,6 +7,7 @@ import { updatePage } from "@app/store/pageSclice";
 import { resetSquence, setPageSequence } from "@app/store/pageSequence";
 import { FaCheck } from "react-icons/fa";
 import Link from "next/link";
+import axios from "axios";
 const Sidebar = () => {
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
   const [items, setItems] = useState(pageSequence);
@@ -23,12 +24,12 @@ const Sidebar = () => {
     dispatch(setPageSequence(reorderedItems));
   };
   const generate = () => {
-    if (companyLogo) {
-      dispatch(updatePage("100"));
-      setCompanyLogoError("");
-    } else {
-      setCompanyLogoError("company logo is required in cover page");
-    }
+    // if (companyLogo) {
+    dispatch(updatePage("100"));
+    //   setCompanyLogoError("");
+    // } else {
+    //   setCompanyLogoError("company logo is required in cover page");
+    // }
   };
 
   const handleChangeChecked = (e, itemId) => {
@@ -41,6 +42,14 @@ const Sidebar = () => {
   useEffect(() => {
     dispatch(setPageSequence(items));
   }, [items]);
+
+  async function logout() {
+    try {
+      await axios.get("/api/logOut");
+    } finally {
+      window.location.href = "/";
+    }
+  }
 
   return (
     <div className="w-[20vw] h-fit border-r-2 border-b-2 border-color px-7 pt-4 pb-10 custom-bg">
@@ -134,14 +143,18 @@ const Sidebar = () => {
                 >
                   Reset all
                 </button>
-                {/* <button> */}
-                  <Link 
+                <Link
                   className="text-center mt-3 button border border-gray-200 p-3 rounded-2xl bg-white"
-                    href="/recent"
-                  >
-                    Recent proposals
-                  </Link>
-                {/* </button> */}
+                  href="/recent"
+                >
+                  Recent proposals
+                </Link>
+                <button
+                  className="text-center mt-3 button border border-gray-200 p-3 rounded-2xl bg-white"
+                  onClick={logout}
+                >
+                  Log Out
+                </button>
               </div>
             </div>
           )}

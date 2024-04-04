@@ -19,7 +19,8 @@ const LivePreview = () => {
     <div className="flex items-center flex-col bg-white pb-16 w-[78vw] bg-white">
       <h1 className="text-main-blue text-[36px] font-semibold">Live preview</h1>
       <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
-        {page.formId == "1" ? (
+        {
+          page.formId == "1" ? (
           <ConverPage />
         ) : page.formId == "3" ? (
           <CoverLetter />

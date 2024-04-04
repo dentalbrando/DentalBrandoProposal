@@ -11,7 +11,7 @@ export async function POST(req) {
     let loginData = await RegistrationModel.findOne({ username: username });
     if (loginData) {
       if (password !== loginData.password) {
-        return NextResponse.json({ error: "wrong password" });
+        return NextResponse.json({ error: "Incorrect Password" });
       } else {
         let dataToSend = { msg: "token", userId: loginData._id };
         return new Response(JSON.stringify(dataToSend), {

@@ -44,11 +44,15 @@ const CoverPage = () => {
           >
             <p>Prepared for :</p>
             <div id="logo" className="mt-4 w-20 h-20">
-              <img
-                className="w-full h-full"
-                src={cover_page.companyLogo?.string}
-                alt="No company logo"
-              />
+              {cover_page.companyLogo ? (
+                <img
+                  className="w-full h-full"
+                  src={cover_page.companyLogo?.string}
+                  alt="No company logo"
+                />
+              ) : (
+                <div className="w-full h-full bg-gray-100"></div>
+              )}
             </div>
             <div className="flex  relative bottom-[-2rem] items-end justify-between mt-4">
               <div className="flex flex-col">

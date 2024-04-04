@@ -5,17 +5,18 @@ import RegistrationModel from "@app/models/registration";
 import { cookies } from "next/headers";
 
 export async function POST(req) {
+  let userData = null;
   let token = cookies().get("authToken");
   if (token) {
     token = token.value;
   } else {
-    token = "";
+    token = null;
   }
 
   let { userId } = await req.json();
   connectDb();
 
-  if (token) {
+  if (!userId) {
     let tokenAlreadyAvaible = await TokenModel.findOne({
       token: token,
     });
@@ -25,12 +26,12 @@ export async function POST(req) {
         { $set: { token: token } }
       );
 
-      let userData = await RegistrationModel.findOne({
+      userData = await RegistrationModel.findOne({
         _id: tokenAlreadyAvaible.userId,
       });
       return NextResponse.json({ userData });
     } else {
-      let userData = null;
+      userData = null;
       return NextResponse.json({ userData });
     }
   } else if (userId) {
@@ -44,10 +45,10 @@ export async function POST(req) {
         userId: userId,
       }).save();
     }
-    let userData = await RegistrationModel.findOne({ _id: userId });
+    userData = await RegistrationModel.findOne({ _id: userId });
     return NextResponse.json({ userData });
   } else {
-    let userData = null;
+    userData = null;
     return NextResponse.json({ userData });
   }
 }

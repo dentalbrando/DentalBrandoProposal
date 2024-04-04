@@ -6,6 +6,8 @@ const TableOfContent = () => {
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
   let number = 0;
 
+  // console.log(pageSequence);
+
   return (
     <>
       <div className=" full-proposal flex justify-center items-center shadow-lg">
@@ -29,14 +31,15 @@ const TableOfContent = () => {
               </div>
             </div>
             <div style={{ paddingRight: "44px" }} className="whitespace-nowrap">
-
-
-
               {pageSequence.map((page, index) => {
                 const id = page.id;
                 // if (id == "1") return;
 
-                if (page.checked) {
+                if (
+                  page.checked &&
+                  page.content !== "Cover Page" &&
+                  page.content !== "Table of Contents"
+                ) {
                   number++;
                 } else {
                   return;
@@ -45,7 +48,9 @@ const TableOfContent = () => {
                 switch (id) {
                   case "1":
                     return (
-                      page.checked && (
+                      page.checked &&
+                      page.content !== "Cover Page" &&
+                      page.content !== "Table of Contents" && (
                         <div
                           className={`${
                             index == "0" ? "mt-[55px]" : "mt-[17px]"
@@ -76,7 +81,9 @@ const TableOfContent = () => {
 
                   case "2":
                     return (
-                      page.checked && (
+                      page.checked &&
+                      page.content !== "Cover Page" &&
+                      page.content !== "Table of Contents" && (
                         <div
                           className={`${
                             index == "0" ? "mt-[55px]" : "mt-[17px]"
@@ -107,7 +114,9 @@ const TableOfContent = () => {
                     );
                   case "3":
                     return (
-                      page.checked && (
+                      page.checked &&
+                      page.content !== "Cover Page" &&
+                      page.content !== "Table of Contents" && (
                         <div
                           className={`${
                             index == "0" ? "mt-[55px]" : "mt-[17px]"
@@ -137,7 +146,9 @@ const TableOfContent = () => {
                     );
                   case "4":
                     return (
-                      page.checked && (
+                      page.checked &&
+                      page.content !== "Cover Page" &&
+                      page.content !== "Table of Contents" && (
                         <div
                           className={`${
                             index == "0" ? "mt-[55px]" : "mt-[17px]"
@@ -167,7 +178,9 @@ const TableOfContent = () => {
                     );
                   case "5":
                     return (
-                      page.checked && (
+                      page.checked &&
+                      page.content !== "Cover Page" &&
+                      page.content !== "Table of Contents" && (
                         <div
                           className={`${
                             index == "0" ? "mt-[55px]" : "mt-[17px]"
@@ -197,7 +210,9 @@ const TableOfContent = () => {
                     );
                   case "6":
                     return (
-                      page.checked && (
+                      page.checked &&
+                      page.content !== "Cover Page" &&
+                      page.content !== "Table of Contents" && (
                         <div
                           className={`${
                             index == "0" ? "mt-[55px]" : "mt-[17px]"
@@ -227,7 +242,9 @@ const TableOfContent = () => {
                     );
                   case "7":
                     return (
-                      page.checked && (
+                      page.checked &&
+                      page.content !== "Cover Page" &&
+                      page.content !== "Table of Contents" && (
                         <div
                           className={`${
                             index == "0" ? "mt-[55px]" : "mt-[17px]"
@@ -257,7 +274,9 @@ const TableOfContent = () => {
                     );
                   case "8":
                     return (
-                      page.checked && (
+                      page.checked &&
+                      page.content !== "Cover Page" &&
+                      page.content !== "Table of Contents" && (
                         <div
                           className={`${
                             index == "0" ? "mt-[55px]" : "mt-[17px]"
@@ -287,7 +306,9 @@ const TableOfContent = () => {
                     );
                   case "9":
                     return (
-                      page.checked && (
+                      page.checked &&
+                      page.content !== "Cover Page" &&
+                      page.content !== "Table of Contents" && (
                         <div
                           className={`${
                             index == "0" ? "mt-[55px]" : "mt-[17px]"
@@ -317,7 +338,9 @@ const TableOfContent = () => {
                     );
                   case "10":
                     return (
-                      page.checked && (
+                      page.checked &&
+                      page.content !== "Cover Page" &&
+                      page.content !== "Table of Contents" && (
                         <div
                           className={`${
                             index == "0" ? "mt-[55px]" : "mt-[17px]"
@@ -347,7 +370,9 @@ const TableOfContent = () => {
                     );
                   case "11":
                     return (
-                      page.checked && (
+                      page.checked &&
+                      page.content !== "Cover Page" &&
+                      page.content !== "Table of Contents" && (
                         <div
                           className={`${
                             index == "0" ? "mt-[55px]" : "mt-[17px]"

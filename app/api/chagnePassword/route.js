@@ -19,14 +19,14 @@ export async function POST(req) {
           { password: oldPassword },
           { $set: { password: newPassword } }
         );
-        return NextResponse.json({ msg: "undated" });
+        return NextResponse.json({ msg: "Password Updated" });
       } else {
-        return NextResponse.json({ error: "wrong password" });
+        return NextResponse.json({ error: "Wrong Password" });
       }
     } else {
-      return NextResponse.json({ error: "wrong admin password" });
+      return NextResponse.json({ error: "Wrong Admin Password" });
     }
   } else {
-    return NextResponse.json({ error: "wrong admin password" });
+    return NextResponse.json({ error: "Wrong Admin Password" });
   }
 }

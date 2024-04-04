@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import { useState } from "react";
@@ -13,8 +13,12 @@ export default function SaveProposaltoDb() {
   let proposedSitemap = useSelector((state) => state.proposedSitemap);
   let proposedSitemap2 = useSelector((state) => state.proposedSitemap2);
   let [loading, setLoading] = useState(false);
+  let [saveButtonText, setSaveButtonText] = useState("Save Proposal");
 
   async function submit() {
+    if (saveButtonText === "Saved") {
+      return;
+    }
     try {
       setLoading(true);
       let date =
@@ -38,6 +42,8 @@ export default function SaveProposaltoDb() {
       });
     } finally {
       setLoading(false);
+      setSaveButtonText("Saved");
+      alert("Your Proposal has been saved!");
     }
   }
   return (
@@ -50,7 +56,7 @@ export default function SaveProposaltoDb() {
         } font-bold rounded-lg text-md px-3 py-2 m-2`}
         onClick={submit}
       >
-        Save Proposal
+        {saveButtonText}
       </button>
     </>
   );
