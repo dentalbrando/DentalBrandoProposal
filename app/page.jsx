@@ -17,7 +17,12 @@ import axios from "axios";
 import SaveProposaltoDb from "@components/saveProposaltoDb";
 import Link from "next/link";
 import Loader from "@components/Loader";
-
+import layer3 from "@public/assets/Layer_1 (1).png";
+import layer2 from "@public/assets/Layer_1 (2).png";
+import layer1 from "@public/assets/Layer_1.png";
+import frame1 from "@public/assets/Frame 4.png";
+import frame2 from "@public/assets/Frame 5.png";
+import frame3 from "@public/assets/Frame 6.png";
 const familyData = {
   name: "John",
   spouse: "Jane",
@@ -105,25 +110,43 @@ const Home = () => {
           <Loader />
         </div>
       ) : isVerified ? (
-        <>
-          {pageNo != 100 ? (
-            <>
-              <Nav />
-              <div className="flex justify-start items-start h-fit">
-                <div className="flex justify-between flex-col">
-                  <Sidebar />
-                  {/* <RecentProposalLink /> */}
-                </div>
-                <div className="flex flex-col gap-5">
-                  <Form />
-                  <LivePreview />
-                </div>
+      <>
+        <Nav />
+        <div className="flex gap-24 justify-center items-center h-[88vh] w-[100%]">
+          <Link href={'/development'}>
+            <div className="w-[100%] h-[100%] p5 relative">
+              <div className="w-[100%] h-[100%]">
+                <img src={frame3.src} className="w-[100%] h-[100%]" />
               </div>
-            </>
-          ) : (
-            <FullProposal />
-          )}
-        </>
+              <div className="w-fit h-[50%] absolute bottom-0 right-0">
+                <img src={layer3.src} />
+              </div>
+            </div>
+          </Link>
+
+          <Link href={'/seo'}>
+        
+            <div className="w-[100%] h-[100%] p5 relative">
+              <div className="w-[100%] h-[100%]">
+                <img src={frame1.src} className="w-[100%] h-[100%]" />
+              </div>
+              <div className="w-fit h-[50%] absolute bottom-0 right-0">
+                <img src={layer1.src} />
+              </div>
+            </div>
+          </Link>
+          <Link href={'/designing'}>
+            <div className="w-[100%] h-[100%] p5 relative">
+              <div className="w-[100%] h-[100%]">
+                <img src={frame2.src} className="w-[100%] h-[100%]" />
+              </div>
+              <div className="w-fit h-[50%] absolute bottom-0 right-0">
+                <img src={layer2.src} />
+              </div>
+            </div>
+          </Link>
+        </div>
+      </>
       ) : (
         <Registration
           tokenVerifierTrigger={tokenVerifierTrigger}

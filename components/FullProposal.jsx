@@ -31,7 +31,7 @@ const FullProposal = () => {
   let pageNumber = 1;
 
   return (
-    <div className="w-screen h-full">
+    <div className="w-full h-full">
       <button
         type="button"
         onClick={() => dispatch(updatePage("1"))}

@@ -2,6 +2,7 @@ import connectDb from "@app/registration/connectDb";
 import { NextResponse } from "next/server";
 import TokenModel from "@app/models/token";
 import { cookies } from "next/headers";
+import RegistrationModel from "@app/models/registration";
 
 export async function GET(req) {
   let token = cookies().get("authToken");
@@ -12,15 +13,15 @@ export async function GET(req) {
   }
   try {
     connectDb();
-    let userData = await TokenModel.findOne({ _id: _id });
-    console.log(userData);
+    let { userId } = await TokenModel.findOne({ token: token });
+    let { admin } = await RegistrationModel.findOne({ _id: userId });
+    console.log(admin);
     return NextResponse.json({
-      userData: "userData",
+      admin,
     });
   } catch (e) {
-      console.log("err");
     return NextResponse.json({
-      userData: "user not found",
+      admin: false,
     });
   }
 }

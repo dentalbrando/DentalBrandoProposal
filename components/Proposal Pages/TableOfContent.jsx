@@ -8,9 +8,9 @@ const TableOfContent = () => {
 
   // console.log(pageSequence);
 
-  return (
+  return ( 
     <>
-      <div className=" full-proposal flex justify-center items-center shadow-lg">
+      <div className="full-proposal flex justify-center items-center shadow-lg">
         <div
           style={{ fontFamily: "Open sans" }}
           className="flex justify-between w-[210mm] h-[297mm] mx-auto bg-white pl-14 "
@@ -404,7 +404,7 @@ const TableOfContent = () => {
               })}
             </div>
 
-            <div className="mt-[3.5rem]">
+            <div className="mt-[2rem]">
               <div>
                 <img src={img.src} alt="" width=" 674px" />
               </div>

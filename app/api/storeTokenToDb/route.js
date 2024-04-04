@@ -44,6 +44,11 @@ export async function POST(req) {
         token: token,
         userId: userId,
       }).save();
+    } else {
+      await TokenModel.updateOne(
+        { userId: userId },
+        { $set: { token: token } }
+      );
     }
     userData = await RegistrationModel.findOne({ _id: userId });
     return NextResponse.json({ userData });
