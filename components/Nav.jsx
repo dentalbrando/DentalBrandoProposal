@@ -8,11 +8,11 @@ const Nav = (props) => {
   return (
     pageNo != 100 && (
       <>
-        <div className="flex justify-between items-center w-full h-[12vh] px-24 border-b-2 border-color custom-bg">
-          <Link href={"/"}>
+        <div className="flex justify-start items-center w-full h-[12vh] border-b-2 border-color custom-bg relative">
+          <Link href={"/"} className="w-[20vw] ps-7">
             <img src={logo.src} alt="" className="w-[18vw]" />
           </Link>
-          <h1 className="text-main-blue text-[30px] p-5 font-medium">
+          <h1 className="text-main-blue text-[30px] font-medium w-[78vw] flex justify-center">
             {props.navText ? props.navText : "Proposal Manager"}
           </h1>
         </div>
