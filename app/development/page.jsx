@@ -18,45 +18,54 @@ function Development() {
   let [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (isVerified === false) {
-      router.push("/");
-    }
     async function verifyTokenApi() {
       try {
         setLoading(true);
         await axios.get("/api/verifyToken");
         setIsVerified(true);
       } catch (err) {
-        console.log(err);
+        router.push("/");
         setIsVerified(false);
       } finally {
         setLoading(false);
       }
     }
     verifyTokenApi();
+    if (isVerified === false) {
+      console.log("pushed");
+      // router.push("/");
+    }
   }, [isVerified]);
+  console.log("verifed", isVerified);
+  console.log("loadig", loading);
 
   return (
     <>
-      {loading || isVerified === undefined ? (
+      {loading || isVerified === undefined || isVerified === false ? (
         <div className="w-fit m-auto py-24">
+          {console.log("loading")}
           <Loader />
         </div>
-      ) : pageNo != 100 ? (
-        <>
-          <Nav />
-          <div className="flex justify-start items-start h-fit">
-            <div className="flex justify-between flex-col">
-              <Sidebar />
-            </div>
-            <div className="flex flex-col gap-5">
-              <Form />
-              <LivePreview />
-            </div>
-          </div>
-        </>
       ) : (
-        <FullProposal />
+        <>
+          {pageNo != 100 ? (
+            <>
+              {console.log("development")}
+              <Nav />
+              <div className="flex justify-start items-start h-fit">
+                <div className="flex justify-between flex-col">
+                  <Sidebar />
+                </div>
+                <div className="flex flex-col gap-5">
+                  <Form />
+                  <LivePreview />
+                </div>
+              </div>
+            </>
+          ) : (
+            <FullProposal />
+          )}
+        </>
       )}
     </>
   );

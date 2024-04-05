@@ -50,6 +50,7 @@ function Proposal() {
 
   useEffect(() => {
     if (isVerified === false) {
+      console.log("pushed");
       router.push("/");
     }
     async function getData() {
@@ -74,7 +75,7 @@ function Proposal() {
         setLoading(false);
       }
     }
-    
+
     if (isVerified === true) {
       getUserData();
       getData();
@@ -90,7 +91,7 @@ function Proposal() {
     }
     verifyTokenApi();
   }, [isVerified]);
-  
+
   if (proposalData && !buttonArray) {
     setButtonArray(Array(Math.ceil(proposalData.length / limit)).fill(null));
   }
@@ -119,8 +120,6 @@ function Proposal() {
     dispatch(updatePage(100));
     router.push("/development");
   }
-console.log("verifed",isVerified);
-console.log("loadig",loading);
   function searchFunction(e) {
     if (e.target.value) {
       let searchResult = proposalData.filter((item) => {
@@ -162,18 +161,24 @@ console.log("loadig",loading);
       setProposalData(deletedProposals);
     }
   }
+  console.log("verifed", isVerified);
+  console.log("loadig", loading);
+
   return (
     <div className="recent-page-font">
       {loading || isVerified === undefined ? (
         <div className="w-fit m-auto py-24">
+          {console.log("loading")}
           <Loader />
         </div>
       ) : tableLoading ? (
         <div className="w-fit mx-auto py-24">
+          {console.log("tabel")}
           <Loader />
         </div>
       ) : (
         <div className="flex flex-col">
+          {console.log("recent")}
           <Nav navText={"Recent Proposal"} />
           <div className="px-10 py-4">
             <div className="flex flex-col">
