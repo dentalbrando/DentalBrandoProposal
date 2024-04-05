@@ -58,7 +58,11 @@ function Login(prop) {
           onChange={(e) => setName(e.target.value)}
           onKeyUp={clickOnEnterPress}
         />
-        <p className="text-lg text-red-500 p-2 px-3">{usernameError}</p>
+        <p className="text-lg text-red-500 p-2 px-3">
+          {usernameError.includes("username")
+            ? usernameError.replace("username", "Username")
+            : usernameError}
+        </p>
         <div className="flex w-full justify-end items-center">
           <input
             name="showPass"
@@ -76,7 +80,11 @@ function Login(prop) {
           </div>
         </div>
         <p className="text-red-500 p-2 px-3 text-lg">
-          {passwordError ? passwordError : loginError}
+          {passwordError
+            ? passwordError.includes("password")
+              ? passwordError.replace("password", "Password")
+              : passwordError
+            : loginError}
         </p>
       </div>
 

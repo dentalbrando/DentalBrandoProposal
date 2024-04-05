@@ -312,7 +312,7 @@ table {
   overflow: auto;
 }
 .tableDiv {
-  height: 65vh;
+  height: fit-content;
 }
 td,
 th {

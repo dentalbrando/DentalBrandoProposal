@@ -404,7 +404,7 @@ const TableOfContent = () => {
               })}
             </div>
 
-            <div className="mt-[2rem]">
+            <div className="mt-[3rem]">
               <div>
                 <img src={img.src} alt="" width=" 674px" />
               </div>

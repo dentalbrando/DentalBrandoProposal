@@ -307,7 +307,7 @@ function Proposal() {
                                           onClick={() => {
                                             deleteProposal(item._id);
                                           }}
-                                          className="text-red-400 leading-3 underline mx-auto"
+                                          className="text-red-400 leading-3 underline"
                                         >
                                           Delete
                                         </button>

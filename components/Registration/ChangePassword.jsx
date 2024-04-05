@@ -5,7 +5,7 @@ import { changePasswordValidation } from "@app/registration/formValidation";
 
 function ChangePassword() {
   const [username, setName] = useState("");
-  const [oldPassword, setOldPassword] = useState("");
+  const [OldPassword, setOldPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [adminPassword, setAdminPassword] = useState("");
   const [oldPasswordError, setOldPasswordError] = useState("");
@@ -16,10 +16,9 @@ function ChangePassword() {
   const [loading, setLoading] = useState(false);
 
   const loginSubmit = async () => {
-    console.log("login");
     const formData = {
       username,
-      oldPassword,
+      OldPassword,
       newPassword,
       adminPassword,
     };
@@ -36,17 +35,23 @@ function ChangePassword() {
           adminPasswordError(""));
     } catch (error) {
       error.inner
-        ? error.inner[0].path === "password"
-          ? (setOldPasswordError(error.inner[0].message),
+        ? error.inner[0].path === "OldPassword"
+          ? (setOldPasswordError(
+              error.inner[0].message.replace("OldPassword", "Old Password")
+            ),
             setNewPasswordError(""),
             setAdminPasswordError(""),
             setChangePasswordMsg(""))
           : error.inner[0].path === "newPassword"
-          ? (setNewPasswordError(error.inner[0].message),
+          ? (setNewPasswordError(
+              error.inner[0].message.replace("newPassword", "New Password")
+            ),
             setOldPasswordError(""),
             setAdminPasswordError(""),
             setChangePasswordMsg(""))
-          : (setAdminPasswordError(error.inner[0].message),
+          : (setAdminPasswordError(
+              error.inner[0].message.replace("adminPassword", "Admin Password")
+            ),
             setOldPasswordError(""),
             setNewPasswordError(""),
             setChangePasswordMsg(""))
@@ -110,10 +115,8 @@ function ChangePassword() {
 
       <button
         className={`${
-          loading
-            ? "bg-gray-600"
-            :  "button"
-              // "bg-gradient-to-r from-blue-400 via-blue-600 to-blue-500 hover:opacity-[0.9]"
+          loading ? "bg-gray-600" : "button"
+          // "bg-gradient-to-r from-blue-400 via-blue-600 to-blue-500 hover:opacity-[0.9]"
         } text-white mx-0 p-3`}
         onClick={loginSubmit}
       >

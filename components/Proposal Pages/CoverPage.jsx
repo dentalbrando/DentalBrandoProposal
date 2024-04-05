@@ -43,18 +43,18 @@ const CoverPage = () => {
             style={{ fontFamily: "'Open Sans'" }}
           >
             <p>Prepared for :</p>
-            <div id="logo" className="mt-4 w-20 h-20">
-              {cover_page.companyLogo ? (
+            {cover_page.companyLogo ? (
+              <div id="logo" className="mt-4 w-20 h-20">
                 <img
                   className="w-full h-full"
                   src={cover_page.companyLogo?.string}
                   alt="No company logo"
                 />
-              ) : (
-                <div className="w-full h-full bg-gray-100"></div>
-              )}
-            </div>
-            <div className="flex  relative bottom-[-2rem] items-end justify-between mt-4">
+              </div>
+            ) : null
+            // <div className="w-full h-full bg-gray-100"></div>
+            }
+            <div className="flex relative bottom-[-2rem items-end justify-between mt-8">
               <div className="flex flex-col">
                 <span
                   id="name"

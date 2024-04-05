@@ -116,7 +116,10 @@ const Budget = () => {
               >
                 <h3>PACKAGE</h3>
                 <h3 className="capitalize">
-                  SUB TOTAL ({budgetData.currency})
+                  SUB TOTAL{" "}
+                  {totalEstimate
+                    ? "(" + budgetData.currency + totalEstimate + ")"
+                    : null}
                 </h3>
               </div>
             </div>
@@ -148,13 +151,13 @@ const Budget = () => {
             </table>
           </div>
 
-          {(totalEstimate = subTotal - budgetData.discount) && true}
-          {/* {totalEstimate} */}
+          {/* {(totalEstimate = subTotal - budgetData.discount) && true} */}
+          {totalEstimate === 0 ? null : totalEstimate}
 
           <div className="mt-[13.8rem]">
-            <div className="bg-[#ffd600] w-full h-14 text-[11pt] font-[700] flex items-center justify-end pr-[62px]">
-              <div>
-                <div className="flex items-center gap-12">
+            <div className="bg-[#ffd600] w-full h-14 text-[11pt] font-[700] flex items-center justify-end ">
+              <div className="w-[25%]">
+                <div className="flex items-center gap-2">
                   <p>Subtotal :</p>
                   <span className="capitalize">
                     {budgetData.currency} {addCommasToNumber(subTotal)}/-
@@ -173,11 +176,13 @@ const Budget = () => {
                 ) : null}
               </div>
             </div>
-            <div className="bg-[#00a2ff] w-full h-14 text-[13.77pt] font-[700] text-white flex items-center justify-end pr-[43px] gap-12">
-              <p>TOTAL |</p>
-              <span className="capitalize">
-                {budgetData.currency} {addCommasToNumber(totalEstimate)}/-
-              </span>
+            <div className="bg-[#00a2ff] w-full h-14 text-[13.77pt] font-[700] text-white flex items-center justify-end  gap-12">
+              <div className="flex w-[25%]">
+                <p>TOTAL |</p>
+                <span className="capitalize">
+                  {budgetData.currency} {addCommasToNumber(totalEstimate)}/-
+                </span>
+              </div>
             </div>
           </div>
           <div className="text-[8pt] mt-4 mb-[50px]">

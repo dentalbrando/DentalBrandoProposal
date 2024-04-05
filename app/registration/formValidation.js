@@ -7,8 +7,8 @@ export const formValidation = object({
 });
 
 export const changePasswordValidation = object({
-  oldPassword: string().trim().required("Old password is required").min(6),
-  newPassword: string().trim().required("New password is required").min(6),
+  OldPassword: string().trim().required("Old Password is required").min(6),
+  newPassword: string().trim().required("New Password is required").min(6),
   adminPassword: string().trim().required("Admin password is required").min(6),
 });
 
