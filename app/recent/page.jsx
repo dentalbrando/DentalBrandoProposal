@@ -35,7 +35,7 @@ function Proposal() {
   let dispatch = useDispatch();
   let [proposalData, setProposalData] = useState();
   let [loading, setLoading] = useState(true);
-  let [isVerified, setIsVerified] = useState(true);
+  let [isVerified, setIsVerified] = useState(undefined);
   let [multiplier, setMultiplier] = useState(0);
   let [buttonArray, setButtonArray] = useState();
   let [firstButton, SetFirstButton] = useState(0);
@@ -91,7 +91,6 @@ function Proposal() {
     verifyTokenApi();
   }, [isVerified]);
   
-  console.log(userData);
   if (proposalData && !buttonArray) {
     setButtonArray(Array(Math.ceil(proposalData.length / limit)).fill(null));
   }
@@ -120,7 +119,8 @@ function Proposal() {
     dispatch(updatePage(100));
     router.push("/development");
   }
-
+console.log("verifed",isVerified);
+console.log("loadig",loading);
   function searchFunction(e) {
     if (e.target.value) {
       let searchResult = proposalData.filter((item) => {

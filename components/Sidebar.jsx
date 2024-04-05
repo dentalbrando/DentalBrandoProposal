@@ -15,7 +15,6 @@ const Sidebar = () => {
   const page = useSelector((state) => state.page);
   const [focusedItem, setFocusedItem] = useState(1);
 
-  console.log(items, page);
   const { companyLogo } = useSelector((state) => state.cover_page);
   const dispatch = useDispatch();
   const onDragEnd = (result) => {
