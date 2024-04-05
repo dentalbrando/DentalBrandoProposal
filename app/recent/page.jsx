@@ -34,7 +34,7 @@ function Proposal() {
   let router = useRouter();
   let dispatch = useDispatch();
   let [proposalData, setProposalData] = useState();
-  let [loading, setLoading] = useState(false);
+  let [loading, setLoading] = useState(true);
   let [isVerified, setIsVerified] = useState(true);
   let [multiplier, setMultiplier] = useState(0);
   let [buttonArray, setButtonArray] = useState();
@@ -44,6 +44,7 @@ function Proposal() {
   let [searchQuery, SetSearchQuery] = useState("");
   let [searchData, setSearchData] = useState();
   let [userData, setUserData] = useState();
+  let [tableLoading, setTableLoading] = useState(true);
 
   let limit = 8;
 
@@ -53,13 +54,13 @@ function Proposal() {
     }
     async function getData() {
       try {
-        setLoading(true);
+        setTableLoading(true);
         let { data } = await axios.get("/api/proposal");
         setProposalData(data.proposalData);
       } catch (er) {
         console.log(er);
       } finally {
-        setLoading(false);
+        setTableLoading(false);
       }
     }
     async function getUserData() {
@@ -73,7 +74,7 @@ function Proposal() {
         setLoading(false);
       }
     }
-
+    
     if (isVerified === true) {
       getUserData();
       getData();
@@ -89,7 +90,8 @@ function Proposal() {
     }
     verifyTokenApi();
   }, [isVerified]);
-
+  
+  console.log(userData);
   if (proposalData && !buttonArray) {
     setButtonArray(Array(Math.ceil(proposalData.length / limit)).fill(null));
   }
@@ -145,7 +147,6 @@ function Proposal() {
       } else {
         setSearchData(searchResult);
       }
-      console.log(searchData);
     } else {
       setSearchData(null);
     }
@@ -161,22 +162,21 @@ function Proposal() {
       setProposalData(deletedProposals);
     }
   }
-  console.log(userData);
   return (
     <div className="recent-page-font">
       {loading || isVerified === undefined ? (
         <div className="w-fit m-auto py-24">
           <Loader />
         </div>
+      ) : tableLoading ? (
+        <div className="w-fit mx-auto py-24">
+          <Loader />
+        </div>
       ) : (
         <div className="flex flex-col">
-          <Nav navText={"Recent Proposal"}/>
+          <Nav navText={"Recent Proposal"} />
           <div className="px-10 py-4">
-            {/* <h1 className="text-4xl font-bold text-tableBlueColor">
-              Proposal Table
-            </h1> */}
-              <div className="flex flex-col">
-                
+            <div className="flex flex-col">
               <div className="flex-end mb-4">
                 <div className="w-fit flex justify-end items-center py-5">
                   <input
@@ -366,7 +366,6 @@ function Proposal() {
                               }`}
                               onClick={() => {
                                 setMultiplier(key);
-                                console.log(key);
                               }}
                             >
                               {firstButton + 1}
@@ -381,7 +380,6 @@ function Proposal() {
                               }`}
                               onClick={() => {
                                 setMultiplier(key);
-                                console.log(key);
                               }}
                             >
                               {secondButton + 1}
@@ -413,7 +411,6 @@ function Proposal() {
                               }`}
                               onClick={() => {
                                 setMultiplier(key);
-                                console.log(key);
                               }}
                             >
                               {key + 1}

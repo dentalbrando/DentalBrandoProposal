@@ -12,7 +12,10 @@ const Sidebar = () => {
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
   const [items, setItems] = useState(pageSequence);
   const [companyLogoError, setCompanyLogoError] = useState();
+  const page = useSelector((state) => state.page);
+  const [focusedItem, setFocusedItem] = useState(1);
 
+  console.log(items, page);
   const { companyLogo } = useSelector((state) => state.cover_page);
   const dispatch = useDispatch();
   const onDragEnd = (result) => {
@@ -73,7 +76,14 @@ const Sidebar = () => {
                       {...provided.draggableProps}
                       onClick={() => dispatch(updatePage(item.id))}
                     >
-                      <div className="desc flex-start p-4 bg-hover-blue rounded-xl select-none inputDiv gap-4">
+                      <div
+                        className={`desc flex-start p-4 rounded-xl select-none inputDiv gap-4 ${
+                          page.formId === item.id ||
+                          page.formId + "" === item.id
+                            ? "bg-main-blue"
+                            : "bg-hover-blue"
+                        }`}
+                      >
                         <div className="checkBoxDiv">
                           <input
                             type="checkbox"
@@ -105,17 +115,14 @@ const Sidebar = () => {
               <div className="flex flex-col gap-3">
                 <button
                   type="button"
-                  className="mt-8 button border border-gray-200 p-3 rounded-2xl bg-white"
+                  className="mt-8 border border-gray-200 p-3 rounded-2xl bg-main-blue text-white font-[500] font-[24px]"
                   onClick={() => generate()}
                 >
-                  Generate
+                  Generate All
                 </button>
-                <p className="text-red-500 px-2 font-semibold text-lg">
-                  {companyLogoError}
-                </p>
                 <button
                   type="button"
-                  className="button border border-gray-200 p-3 rounded-2xl bg-white"
+                  className="p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
                   onClick={() => {
                     dispatch(resetSquence());
                     setItems([
@@ -141,16 +148,16 @@ const Sidebar = () => {
                     ]);
                   }}
                 >
-                  Reset all
+                  Reset All
                 </button>
                 <Link
-                  className="text-center mt-3 button border border-gray-200 p-3 rounded-2xl bg-white"
+                  className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
                   href="/recent"
                 >
-                  Recent proposals
+                  Recent Proposals
                 </Link>
                 <button
-                  className="text-center mt-3 button border border-gray-200 p-3 rounded-2xl bg-white"
+                  className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
                   onClick={logout}
                 >
                   Log Out

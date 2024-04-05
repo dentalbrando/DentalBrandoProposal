@@ -9,12 +9,13 @@ import Nav from "@components/Nav";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
+import Loader from "@components/Loader";
 
 function Development() {
   let router = useRouter();
   const pageNo = useSelector((state) => state.page.formId);
-  let [isVerified, setIsVerified] = useState(true);
-  let [loading, setLoading] = useState(false);
+  let [isVerified, setIsVerified] = useState(undefined);
+  let [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (isVerified === false) {
@@ -22,11 +23,14 @@ function Development() {
     }
     async function verifyTokenApi() {
       try {
+        setLoading(true);
         await axios.get("/api/verifyToken");
         setIsVerified(true);
       } catch (err) {
-          console.log(err);
+        console.log(err);
         setIsVerified(false);
+      } finally {
+        setLoading(false);
       }
     }
     verifyTokenApi();
@@ -44,7 +48,6 @@ function Development() {
           <div className="flex justify-start items-start h-fit">
             <div className="flex justify-between flex-col">
               <Sidebar />
-              {/* <RecentProposalLink /> */}
             </div>
             <div className="flex flex-col gap-5">
               <Form />

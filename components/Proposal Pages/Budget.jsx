@@ -130,29 +130,25 @@ const Budget = () => {
                     return null;
                   }
                   return (
-                    <>
-                      <tr>
-                        <td className="text-[8.85pt] font-[700]">
-                          {index + 1}.
-                        </td>
-                        <td className="w-1/2 text-[10pt] pl-[0] font-[700] capitalize">
-                          {service.description}
-                        </td>
-                        <td className="text-[10pt] pl-[0] font-[600] text-center capitalize">
-                          {service.packageType}
-                        </td>
-                        <td className="text-[10pt] w-[117px]  font-[600]">
-                          = {addCommasToNumber(service.charges)}/-
-                        </td>
-                      </tr>
-                    </>
+                    <tr>
+                      <td className="text-[8.85pt] font-[700]">{index + 1}.</td>
+                      <td className="w-1/2 text-[10pt] pl-[0] font-[700] capitalize">
+                        {service.description}
+                      </td>
+                      <td className="text-[10pt] pl-[0] font-[600] text-center capitalize">
+                        {service.packageType}
+                      </td>
+                      <td className="text-[10pt] w-[117px] font-[600]">
+                        = {addCommasToNumber(service.charges)}/-
+                      </td>
+                    </tr>
                   );
                 })}
             </table>
           </div>
 
           {/* {(totalEstimate = subTotal - budgetData.discount) && true} */}
-          {totalEstimate === 0 ? null : totalEstimate}
+          {/* {totalEstimate === 0 ? null : totalEstimate} */}
 
           <div className="mt-[13.8rem]">
             <div className="bg-[#ffd600] w-full h-14 text-[11pt] font-[700] flex items-center justify-end ">
@@ -165,7 +161,7 @@ const Budget = () => {
                 </div>
                 {budgetData.discount ? (
                   <>
-                    <div className="flex items-center gap-[41px]">
+                    <div className="flex items-center gap-2">
                       <p>Discount :</p>
                       <span className="capitalize">
                         -{budgetData.currency}{" "}
@@ -177,7 +173,7 @@ const Budget = () => {
               </div>
             </div>
             <div className="bg-[#00a2ff] w-full h-14 text-[13.77pt] font-[700] text-white flex items-center justify-end  gap-12">
-              <div className="flex w-[25%]">
+              <div className="flex w-[25%] gap-1">
                 <p>TOTAL |</p>
                 <span className="capitalize">
                   {budgetData.currency} {addCommasToNumber(totalEstimate)}/-
