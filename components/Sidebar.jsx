@@ -80,7 +80,7 @@ const Sidebar = () => {
                         className={`desc flex-start p-4 rounded-xl select-none inputDiv gap-4 ${
                           page.formId === item.id ||
                           page.formId + "" === item.id
-                            ? "bg-main-blue"
+                            ? "bg-main-blue text-white"
                             : "bg-hover-blue"
                         }`}
                       >
@@ -103,7 +103,14 @@ const Sidebar = () => {
                         >
                           {item.checked ? <FaCheck /> : null}
                         </div>
-                        <p className="font-medium text-[18px] font-medium text-black">
+                        <p
+                          className={`font-medium text-[18px] font-medium text-black ${
+                            page.formId === item.id ||
+                            page.formId + "" === item.id
+                              ? "text-white"
+                              : "text-black"
+                          }`}
+                        >
                           {item.content}
                         </p>
                       </div>
