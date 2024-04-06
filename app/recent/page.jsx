@@ -30,7 +30,7 @@ import { setPage, updatePage } from "@app/store/pageSclice";
 import Loader from "@components/Loader";
 import Nav from "@components/Nav";
 import { FaSearch } from "react-icons/fa";
-
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 function Proposal() {
   let router = useRouter();
   let dispatch = useDispatch();
@@ -38,6 +38,7 @@ function Proposal() {
   let [loading, setLoading] = useState(true);
   let [isVerified, setIsVerified] = useState(undefined);
   let [multiplier, setMultiplier] = useState(0);
+  let [multiplierForSearch, setMultiplierForSearch] = useState(0);
   let [buttonArray, setButtonArray] = useState();
   let [firstButton, SetFirstButton] = useState(0);
   let [secondButton, SetSecondButton] = useState(1);
@@ -165,6 +166,7 @@ function Proposal() {
       setProposalData(deletedProposals);
     }
   }
+  console.log(searchData);
   return (
     <div className="recent-page-font">
       {loading || isVerified === undefined ? (
@@ -292,10 +294,10 @@ function Proposal() {
                                     {key < 9 ? "0" : null}
                                     {key + 1}
                                   </td>
-                                  <td className="td-border text-center py-4 text-lg w-[180px">
+                                  <td className="td-border text-center py-4 text-lg">
                                     {item.cover_letter.clientName}
                                   </td>
-                                  <td className="td-border text-center py-4 text-lg w-[200px">
+                                  <td className="td-border text-center py-4 text-lg">
                                     {item.cover_page.projectTitle}
                                   </td>
                                   <td className="td-border text-center py-4 text-lg w-[220px">
@@ -341,114 +343,109 @@ function Proposal() {
 
               {proposalData ? (
                 <div className="flex-end py-2 absolute right-10 top-[100%]">
-                  <div className="ms-5">
-                    <button
-                      className={`px-2 text-lg ${
-                        multiplier <= 0
-                          ? "text-gray-400"
-                          : "text-tableBlueColor"
-                      }`}
-                      onClick={() => {
-                        setMultiplier(multiplier - 1);
-                        // SetFirstButton(firstButton - 1);
-                        // SetSecondButton(secondButton - 1);
-                        // if (dotButton !== buttonArray.length - 2) {
-                        //   SetdotButton(dotButton - 1);
-                        // }
-                      }}
-                      disabled={multiplier <= 0 ? true : false}
-                    >
-                      Prev
-                    </button>
+                  {searchData === undefined || searchData === null ? (
+                    <div className="ms-5 flex gap-2 items-center">
+                      <button
+                        className={`px-2 text-lg ${
+                          multiplier <= 0 ? "text-gray-400" : "text-main-blue"
+                        }`}
+                        onClick={() => {
+                          setMultiplier(multiplier - 1);
+                        }}
+                        disabled={multiplier <= 0 ? true : false}
+                      >
+                        <FaChevronLeft />
+                      </button>
 
-                    {buttonArray
-                      ? buttonArray.map((item, key) =>
-                          key === firstButton ? (
-                            <button
-                              key={key}
-                              className={`px-2 text-lg ${
-                                multiplier === key
-                                  ? "text-tableBlueColor"
-                                  : "text-black"
-                              }`}
-                              onClick={() => {
-                                setMultiplier(key);
-                              }}
-                            >
-                              {firstButton + 1}
-                            </button>
-                          ) : key === secondButton ? (
-                            <button
-                              key={key}
-                              className={`px-2 text-lg ${
-                                multiplier === key
-                                  ? "text-tableBlueColor"
-                                  : "text-black"
-                              }`}
-                              onClick={() => {
-                                setMultiplier(key);
-                              }}
-                            >
-                              {secondButton + 1}
-                            </button>
-                          ) : key === dotButton ? (
-                            <button
-                              key={key}
-                              className={`px-2 text-lg ${
-                                multiplier === key
-                                  ? "text-tableBlueColor"
-                                  : "text-black"
-                              }`}
-                              onClick={() => {
-                                setMultiplier(key);
-                                // SetFirstButton(firstButton + 2);
-                                // SetSecondButton(secondButton + 2);
-                                // SetdotButton(dotButton + 2);
-                              }}
-                            >
-                              ...
-                            </button>
-                          ) : key === buttonArray.length - 1 ? (
-                            <button
-                              key={key}
-                              className={`px-2 text-lg ${
-                                multiplier === key
-                                  ? "text-tableBlueColor"
-                                  : "text-black"
-                              }`}
-                              onClick={() => {
-                                setMultiplier(key);
-                              }}
-                            >
-                              {key + 1}
-                            </button>
-                          ) : null
-                        )
-                      : null}
+                      <div className="flex-between gap-2">
+                        <span>
+                          {multiplier * 8 + 1 <= 9 ? "0" : null}
+                          <span>
+                            {proposalData.length > 0 ? multiplier * 8 + 1 : 0}
+                          </span>
+                          -
+                          <span>
+                            {multiplier * 8 + 8 <= 9 ? "0" : null}
+                            {multiplier * 8 + 8 >= proposalData.length
+                              ? proposalData.length
+                              : multiplier * 8 + 8}
+                          </span>
+                        </span>
+                        <span> of </span>
+                        <span>{proposalData.length}</span>
+                      </div>
 
-                    <button
-                      className={`px-2 text-lg ${
-                        multiplier >= proposalData.length / limit - 1
-                          ? "text-gray-400"
-                          : "text-tableBlueColor"
-                      }`}
-                      onClick={() => {
-                        setMultiplier(multiplier + 1);
-                        // SetFirstButton(firstButton + 1);
-                        // SetSecondButton(secondButton + 1);
-                        // if (dotButton !== buttonArray.length - 2) {
-                        //   SetdotButton(dotButton + 1);
-                        // }
-                      }}
-                      disabled={
-                        multiplier >= proposalData.length / limit - 1
-                          ? true
-                          : false
-                      }
-                    >
-                      Next
-                    </button>
-                  </div>
+                      <button
+                        className={`px-2 text-lg ${
+                          multiplier * 8 + 8 >= proposalData.length
+                            ? "text-gray-400"
+                            : "text-main-blue"
+                        }`}
+                        onClick={() => {
+                          setMultiplier(multiplier + 1);
+                        }}
+                        disabled={
+                          multiplier * 8 + 8 >= proposalData.length
+                            ? true
+                            : false
+                        }
+                      >
+                        <FaChevronRight />
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="ms-5 flex gap-2">
+                      <button
+                        className={`px-2 text-lg ${
+                          multiplierForSearch <= 0
+                            ? "text-gray-400"
+                            : "text-main-blue"
+                        }`}
+                        onClick={() => {
+                          setMultiplierForSearch(multiplierForSearch - 1);
+                        }}
+                        disabled={multiplierForSearch <= 0 ? true : false}
+                      >
+                        <FaChevronLeft />
+                      </button>
+
+                      <div className="flex-between gap-2">
+                        <span>
+                          <span>
+                            {searchData.length > 0
+                              ? multiplierForSearch * 8 + 1
+                              : 0}
+                          </span>
+                          -
+                          <span>
+                            {multiplierForSearch * 8 + 8 >= searchData.length
+                              ? searchData.length
+                              : multiplierForSearch * 8 + 8}
+                          </span>
+                        </span>
+                        <span> of </span>
+                        <span>{searchData.length}</span>
+                      </div>
+
+                      <button
+                        className={`px-2 text-lg ${
+                          multiplierForSearch * 8 + 8 >= proposalData.length
+                            ? "text-gray-400"
+                            : "text-main-blue"
+                        }`}
+                        onClick={() => {
+                          setMultiplierForSearch(multiplierForSearch + 1);
+                        }}
+                        disabled={
+                          multiplierForSearch * 8 + 8 >= proposalData.length
+                            ? true
+                            : false
+                        }
+                      >
+                        <FaChevronRight />
+                      </button>
+                    </div>
+                  )}
                 </div>
               ) : null}
             </div>
