@@ -31,26 +31,18 @@ function Development() {
       }
     }
     verifyTokenApi();
-    if (isVerified === false) {
-      console.log("pushed");
-      // router.push("/");
-    }
   }, [isVerified]);
-  console.log("verifed", isVerified);
-  console.log("loadig", loading);
 
   return (
     <>
       {loading || isVerified === undefined || isVerified === false ? (
         <div className="w-fit m-auto py-24">
-          {console.log("loading")}
           <Loader />
         </div>
       ) : (
         <>
           {pageNo != 100 ? (
             <>
-              {console.log("development")}
               <Nav />
               <div className="flex justify-start items-start h-fit">
                 <div className="flex justify-between flex-col">

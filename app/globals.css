@@ -268,7 +268,7 @@ input[type="number"]::-webkit-inner-spin-button {
   grid-area: 1/1;
   border: 8px solid;
   border-radius: 50%;
-  border-color: rgb(64 131 243) rgb(64 131 243) rgb(64 131 243) #0000;
+  border-color: rgb(1, 161, 255) rgb(1, 161, 255) rgb(1, 161, 255) #0000;
   mix-blend-mode: darken;
   animation: s4 1s infinite linear;
 }
@@ -289,7 +289,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .text-tableBlueColor {
   color: rgb(1, 161, 255);
 }
-
 .th-border {
   border: solid rgb(217, 217, 217) 3px;
 }
@@ -308,9 +307,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 table {
   overflow: auto;
-}
-.tableDiv {
-  height: fit-content;
 }
 td,
 th {

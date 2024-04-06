@@ -50,7 +50,6 @@ function Proposal() {
 
   useEffect(() => {
     if (isVerified === false) {
-      console.log("pushed");
       router.push("/");
     }
     async function getData() {
@@ -161,28 +160,26 @@ function Proposal() {
       setProposalData(deletedProposals);
     }
   }
-  console.log("verifed", isVerified);
-  console.log("loadig", loading);
-
   return (
     <div className="recent-page-font">
       {loading || isVerified === undefined ? (
         <div className="w-fit m-auto py-24">
-          {console.log("loading")}
           <Loader />
         </div>
       ) : tableLoading ? (
         <div className="w-fit mx-auto py-24">
-          {console.log("tabel")}
           <Loader />
         </div>
       ) : (
         <div className="flex flex-col">
-          {console.log("recent")}
           <Nav navText={"Recent Proposal"} />
-          <div className="px-10 py-4">
-            <div className="flex flex-col">
-              <div className="flex-end mb-4">
+          <div className="px-10 py-4 relative max-h-fit min-h-[80vh]">
+            <div className="flex flex-col items-between">
+              <div className="flex justify-between items-end mb-4">
+                <div className="flex gap-2 font-[500] text-[24px] text-main-blue">
+                  <h1>Total Proposals:</h1>
+                  <span>{proposalData.length}</span>
+                </div>
                 <div className="w-fit flex justify-end items-center py-5">
                   <input
                     className="w-full ps-4 pe-11 py-2 search-placehoder table-border rounded-md text-bold"
@@ -195,7 +192,7 @@ function Proposal() {
                 </div>
               </div>
 
-              <div className="tableDiv">
+              <div className="tableDiv h-fit">
                 <table className="table-border w-fit mx-auto w-full">
                   <thead className="thead">
                     <tr className="">
@@ -338,7 +335,7 @@ function Proposal() {
               </div>
 
               {proposalData ? (
-                <div className="flex-end py-2">
+                <div className="flex-end py-2 absolute right-10 top-[100%]">
                   <div className="ms-5">
                     <button
                       className={`px-2 text-lg ${
