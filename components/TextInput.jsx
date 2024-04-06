@@ -81,7 +81,7 @@ const TextInput = (props) => {
       )}
       <input
         {...props}
-        autoFocus
+        // autoFocus
         value={formattedValue}
         className={` text-gray-900 3xl:text-2xl text-lg p-2 ${props.border} rounded-md font-normal border-2 border-color outline-none w-[80%]`}
         onChange={handleChange}
@@ -111,7 +111,7 @@ const TextInput = (props) => {
       <input
         type={props.type ? props.type : "text"}
         {...props}
-        autoFocus
+        // autoFocus
         value={formattedValue}
         className={` text-gray-900 text-[14px] p-2 ${props.border} rounded-md font-normal border-2 border-color outline-none w-[60%]`}
         onChange={handleChange}
