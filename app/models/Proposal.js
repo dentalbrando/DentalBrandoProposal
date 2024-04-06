@@ -9,6 +9,7 @@ const ProposalSchema = mongoose.Schema({
   popup: { type: Object, required: true },
   proposedSitemap: { type: Object, required: true },
   proposedSitemap2: { type: Object, required: true },
+  proposedSitemapOverview: { type: Object, required: true },
 });
 const ProposalModel =
   mongoose.models.Proposal || mongoose.model("Proposal", ProposalSchema);

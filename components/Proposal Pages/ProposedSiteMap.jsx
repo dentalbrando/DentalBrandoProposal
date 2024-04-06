@@ -58,7 +58,11 @@ const ProposedSiteMap = ({ pageNumber }) => {
 
               <div className=" relative z-10  mt-2 mb-4 font-[400] text-[12pt]">
                 <div className="Part-one " style={{ wordWrap: "4px" }}>
-                  <p>{sitemapDataoverview.overview}</p>
+                  <p>
+                    {sitemapDataoverview.overview === ""
+                      ? "The website's sitemap, consisting of its pages, is provided below. Should you wish to make any modifications, kindly contact the project department to request amendments to the sitemap prior to the commencement of the project. Please note that the addition of any new page beyond those outlined below will incur an additional cost, determined based on the functions and layout requirements of the requested pages."
+                      : sitemapDataoverview.overview}
+                  </p>
                 </div>
               </div>
               <div>

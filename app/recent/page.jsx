@@ -21,6 +21,7 @@ import {
   setSubHeading,
   setValidDate,
 } from "@app/store/coverPageSlice";
+import { setSiteMapOverview } from "@app/store/proposedSitemapOverview";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -116,8 +117,12 @@ function Proposal() {
     dispatch(setIssueDate(proposalData[key].cover_page.issueDate));
     dispatch(setValidDate(proposalData[key].cover_page.validDate));
     dispatch(setCompanyLogo(proposalData[key].cover_page.companyLogo));
+    dispatch(
+      setSiteMapOverview(proposalData[key].proposedSitemapOverview.overview)
+    );
     dispatch(updatePage(100));
     router.push("/development");
+    // console.log(proposalData[key]);
   }
   function searchFunction(e) {
     if (e.target.value) {

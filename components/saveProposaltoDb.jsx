@@ -14,11 +14,13 @@ export default function SaveProposaltoDb() {
   let proposedSitemap2 = useSelector((state) => state.proposedSitemap2);
   let [loading, setLoading] = useState(false);
   let [saveButtonText, setSaveButtonText] = useState("Save Proposal");
-
+  let proposedSitemapOverview = useSelector(
+    (state) => state.proposedSitemapOverview
+  );
   async function submit() {
-    if (saveButtonText === "Saved") {
-      return;
-    }
+    // if (saveButtonText === "Saved") {
+    //   return;
+    // }
     try {
       setLoading(true);
       let date =
@@ -39,6 +41,7 @@ export default function SaveProposaltoDb() {
         popup,
         proposedSitemap,
         proposedSitemap2,
+        proposedSitemapOverview,
       });
     } finally {
       setLoading(false);
