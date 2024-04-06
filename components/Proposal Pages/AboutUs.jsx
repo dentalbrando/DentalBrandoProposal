@@ -185,7 +185,7 @@ const AboutUs = ({ pageNumber }) => {
                   style={{ wordSpacing: "3px" }}
                 >
                   We Provide tailored services to your business unique needs,
-                  from SEO to social media market-ing, our team will help you
+                  from SEO to social media marketing, our team will help you
                   establish a strong online presence that drives traffic.
                 </p>
               </div>

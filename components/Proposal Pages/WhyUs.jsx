@@ -168,7 +168,7 @@ const WhyUs = ({ pageNumber }) => {
                                         quality.
                                         We believe that every company, regardless of size or budget, deserves a high-quality
                                         website or
-                                        web application. We also offer amonthly payment option plan for your ease.
+                                        web application. We also offer a monthly payment option plan for your ease.
                                     </p>
                                 </div>
 
