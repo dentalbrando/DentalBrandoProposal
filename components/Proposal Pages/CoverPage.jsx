@@ -8,7 +8,7 @@ const CoverPage = () => {
     <>
       <div className="full-proposal flex justify-center items-center full-proposal shadow-lg">
         <div
-          className=" relative w-[8.27in] min-h-[29.7cm] mx-auto bg-white"
+          className="relative w-[8.27in] min-h-[29.7cm] mx-auto bg-white"
           style={{ fontFamily: "'Montserrat'" }}
         >
           <div className="mt-4 flex items-center">
@@ -43,16 +43,17 @@ const CoverPage = () => {
             style={{ fontFamily: "'Open Sans'" }}
           >
             <p>Prepared for :</p>
-            {cover_page.companyLogo ? (
-              <div id="logo" className="mt-4 w-20 h-20">
-                <img
-                  className="w-full h-full"
-                  src={cover_page.companyLogo?.string}
-                  alt="No company logo"
-                />
-              </div>
-            ) : null
-            // <div className="w-full h-full bg-gray-100"></div>
+            {
+              cover_page.companyLogo ? (
+                <div id="logo" className="mt-4 w-20 h-20">
+                  <img
+                    className="w-full h-full"
+                    src={cover_page.companyLogo?.string}
+                    alt="No company logo"
+                  />
+                </div>
+              ) : null
+              // <div className="w-full h-full bg-gray-100"></div>
             }
             <div className="flex relative bottom-[-2rem items-end justify-between mt-8">
               <div className="flex flex-col">
