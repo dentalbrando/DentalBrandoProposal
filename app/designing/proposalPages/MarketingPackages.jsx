@@ -136,7 +136,7 @@ function MarketingPackages() {
               Social Media Marketing Proposal
             </span>
             <span className="text-gray-700 text-[15px] font-[500]">
-              Page 10
+              Page 11
             </span>
           </div>
           <div className="w-[200%] h-[350%]  absolute top-[5%] right-[15%] rounded-[40%] z-[5] bg-blue-100"></div>

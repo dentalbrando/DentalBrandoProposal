@@ -34,7 +34,7 @@ function MonthlyCalender() {
                 marketing efforts across platforms
               </p>
             </div>
-            <img src={calender.src} className="w-[50%]" />
+            <img src={calender.src} className="w-[345px] h-[317px]" />
           </div>
           <div className="flex justify-between items-start w-[100%] h-[50%] bg-purple-20">
             <div>
@@ -58,7 +58,7 @@ function MonthlyCalender() {
                 business visibility on social media.
               </p>
             </div>
-            <img src={ProfileCreation.src} className="w-[50%]" />
+            <img src={ProfileCreation.src} className="w-[345px] h-[317px]" />
           </div>
         </div>
 

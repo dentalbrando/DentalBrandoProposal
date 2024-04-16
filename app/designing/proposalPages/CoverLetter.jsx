@@ -40,7 +40,7 @@ function CoverLetter() {
               audiences with our expertise.
             </p>
             <p className="text-[15px] font-[500] mt-5 leading-normal">
-              SWe will work closely with you to understand your Social Media
+              We will work closely with you to understand your Social Media
               Marketing goals. Then we will craft comprehensive strategies by
               ensuring that they align with your project goals, your brand
               identity, and how they provide value to your target audience. We

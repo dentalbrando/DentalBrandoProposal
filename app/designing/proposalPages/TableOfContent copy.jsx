@@ -18,51 +18,51 @@ function TableOfContent() {
             </span>
           </div>
           <div className="w-[80%] h-[80%] bg-red-40 flex flex-col justify-between items-center leading-none">
-            <div className="w-[100%] h-[8%] bg-blue-400 rounded-xl bg-[rgb(239,239,240)] flex justify-between items-center px-10">
+            <div className="w-[100%] h-[8%] rounded-xl bg-[rgb(239,239,240)] flex justify-between items-center px-10">
               <span className="text-[20px] font-[600]">Cover Letter</span>
               <span className="text-[20px] font-[600]">01</span>
             </div>
-            <div className="w-[100%] h-[8%] bg-blue-400 rounded-xl bg-[rgb(0,162,255)] flex justify-between items-center px-10">
+            <div className="w-[100%] h-[8%] rounded-xl bg-[rgb(0,162,255)] flex justify-between items-center px-10">
               <span className="text-[20px] font-[600]">About Us</span>
               <span className="text-[20px] font-[600]">02</span>
             </div>
-            <div className="w-[100%] h-[8%] bg-blue-400 rounded-xl bg-[rgb(239,239,240)] flex justify-between items-center px-10">
+            <div className="w-[100%] h-[8%] rounded-xl bg-[rgb(239,239,240)] flex justify-between items-center px-10">
               <span className="text-[20px] font-[600]">Project Objective</span>
               <span className="text-[20px] font-[600]">03</span>
             </div>
-            <div className="w-[100%] h-[8%] bg-blue-400 rounded-xl bg-[rgb(0,162,255)] flex justify-between items-center px-10">
+            <div className="w-[100%] h-[8%] rounded-xl bg-[rgb(0,162,255)] flex justify-between items-center px-10">
               <span className="text-[20px] font-[600]">
                 Marketing Activities
               </span>
               <span className="text-[20px] font-[600]">04</span>
             </div>
-            <div className="w-[100%] h-[8%] bg-blue-400 rounded-xl bg-[rgb(239,239,240)] flex justify-between items-center px-10">
+            <div className="w-[100%] h-[8%] rounded-xl bg-[rgb(239,239,240)] flex justify-between items-center px-10">
               <span className="text-[20px] font-[600]">Our Valued Clients</span>
               <span className="text-[20px] font-[600]">05</span>
             </div>
-            <div className="w-[100%] h-[8%] bg-blue-400 rounded-xl bg-[rgb(0,162,255)] flex justify-between items-center px-10">
+            <div className="w-[100%] h-[8%] rounded-xl bg-[rgb(0,162,255)] flex justify-between items-center px-10">
               <span className="text-[20px] font-[600]">
                 Social Media Advertisement Packages
               </span>
               <span className="text-[20px] font-[600]">06</span>
             </div>
-            <div className="w-[100%] h-[8%] bg-blue-400 rounded-xl bg-[rgb(239,239,240)] flex justify-between items-center px-10">
+            <div className="w-[100%] h-[8%] rounded-xl bg-[rgb(239,239,240)] flex justify-between items-center px-10">
               <span className="text-[20px] font-[600]">
                 Social Media Post Design Packages
               </span>
               <span className="text-[20px] font-[600]">07</span>
             </div>
-            <div className="w-[100%] h-[8%] bg-blue-400 rounded-xl bg-[rgb(0,162,255)] flex justify-between items-center px-10">
+            <div className="w-[100%] h-[8%] rounded-xl bg-[rgb(0,162,255)] flex justify-between items-center px-10">
               <span className="text-[20px] font-[600]">
                 Social Media Marketing Packages
               </span>
               <span className="text-[20px] font-[600]">08</span>
             </div>
-            <div className="w-[100%] h-[8%] bg-blue-400 rounded-xl bg-[rgb(239,239,240)] flex justify-between items-center px-10">
+            <div className="w-[100%] h-[8%] rounded-xl bg-[rgb(239,239,240)] flex justify-between items-center px-10">
               <span className="text-[20px] font-[600]">Invoice</span>
               <span className="text-[20px] font-[600]">09</span>
             </div>
-            <div className="w-[100%] h-[8%] bg-blue-400 rounded-xl bg-[rgb(0,162,255)] flex justify-between items-center px-10">
+            <div className="w-[100%] h-[8%] rounded-xl bg-[rgb(0,162,255)] flex justify-between items-center px-10">
               <span className="text-[20px] font-[600]">Terms & Conditions</span>
               <span className="text-[20px] font-[600]">10</span>
             </div>

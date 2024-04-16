@@ -7,8 +7,9 @@ import Marketing from "./proposalPages/Marketing";
 import MarketingPackages from "./proposalPages/MarketingPackages";
 import MonthlyCalender from "./proposalPages/MonthlyCalender";
 import PostDesignPackages from "./proposalPages/PostDesignPackages";
-import TableOfContent from "./proposalPages/TableOfContent";
+import TableOfContent from "./proposalPages/AboutUs";
 import CoverPage from "./proposalPages/coverPage";
+import AboutUs from "./proposalPages/AboutUs";
 
 function Designing() {
   return (
@@ -16,6 +17,7 @@ function Designing() {
       <CoverPage />
       <TableOfContent />
       <CoverLetter />
+      <AboutUs />
       <MonthlyCalender />
       <ContentCreation />
       <Marketing />
