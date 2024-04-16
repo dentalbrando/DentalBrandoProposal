@@ -10,11 +10,30 @@ function AboutUs() {
     <div className="bg-green-20 w-[8.27in] minh-[29.7cm] h-[29.7cm] bg-white">
       <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">
         <div className="flex w-full h-[50%] absolute top-0 overflow-hidden">
-          <div className="w-[150%] h-[100%] rounded-br-[55%] rounded-bl-[40%] absolute top-[0%] right-[-10%] z-[50] bg-[#00A2FF] flex justify-center items-center">
+          <div className="w-[150%] h-[100%] rounded-br-[55%] rounded-bl-[40%] absolute top-[0%] right-[-10%] z-[50] bg-[#00A2FF] flex justify-center items-center"></div>
+          <div className="absolute w-[87%] h-[50%] right-[6.5%] top-[25%] z-[200] bg-red-90">
+            <div className="flex flex-col justify-center w-full leading-none">
+              <span className="text-[white] text-[44px] font-[600]">About</span>
+              <span className="text-[white] text-[44px] font-[600]">Us</span>
+              <div className="w-[70px] h-[5px] bg-yellow-400 my-3"></div>
+            </div>
+            <div className="flex flex-col justify-center w-full leading-snug">
+              <span className="text-[white] text-[16px] font-[200]">
+                Soft Enterprise is an esteemed Web Development, Mobile Apps,
+                Custom Software Development and Digital Marketing company. We
+                provide exceptional Social Media Marketing Services to clients
+                belonging to various industries, from interior design to tech
+                companies. Whatever category your product or service falls into,
+                we have amazing Social Media Marketing strategies for you. With
+                our extensive experience in Social Media Marketing and expertise
+                in a wide range of technologies, we have successfully delivered
+                numerous projects for clients across various industries.
+              </span>
+            </div>
           </div>
-            <div className="bg-gray-100 absolute w-[87%] h-[50%] right-[10%] z-200"></div>
           <div className="w-[60%] h-[120%] rounded-[50%] bottom-[15%] right-[-25%] z-[10] bg-[#ffd600] absolute"></div>
         </div>
+
         <div className="absolute top-0 left-[7%] z-[100] w-[50px] bg-pink-900 flex">
           <div className="w-[50%] h-[100px] bg-white"></div>
           <div className="w-[50%] h-[100px] bg-[#ffd600]"></div>
