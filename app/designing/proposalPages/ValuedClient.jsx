@@ -1,6 +1,14 @@
 "use client";
 import horse from "@public/assets/socialMedia/our clients logo-07.png";
 import commas from "@public/assets/socialMedia/comma-16.png";
+import client1 from "@public/assets/socialMedia/our clients logo-08.png";
+import client2 from "@public/assets/socialMedia/our clients logo-08.png";
+import client3 from "@public/assets/socialMedia/our clients logo-08.png";
+import client4 from "@public/assets/socialMedia/our clients logo-08.png";
+import client5 from "@public/assets/socialMedia/our clients logo-08.png";
+import client6 from "@public/assets/socialMedia/our clients logo-08.png";
+import client7 from "@public/assets/socialMedia/our clients logo-08.png";
+import client8 from "@public/assets/socialMedia/our clients logo-08.png";
 
 function ValuedClient() {
   return (
@@ -33,19 +41,19 @@ function ValuedClient() {
           <div className="w-[60%] h-[120%] rounded-[50%] bottom-[25%] right-[-25%] z-[10] bg-[#ffd600] absolute"></div>
         </div>
 
-        <div className="absolute top-0 left-[7%] z-[100] w-[50px] bg-pink-900 flex">
+        <div className="absolute top-0 left-[7%] z-[100] w-[50px] flex">
           <div className="w-[50%] h-[100px] bg-white"></div>
           <div className="w-[50%] h-[100px] bg-[#ffd600]"></div>
         </div>
 
-        <div className="w-[87%] h-[45%] z-[100] absolute bottom-[13.5%] flex justify-between items-start bg-purple-60">
-          <div className="w-[100%] h-[35%] flex justify-between items-center bg-red-60">
+        <div className="w-[87%] h-[45%] z-[100] absolute bottom-[13.5%] flex flex-col justify-between items-start bg-purple-60">
+          <div className="w-[100%] h-[35%] flex justify-between items-center bg-red-00">
             <div className="w-[18%] h-[100%] flex justify-center items-center bg-yellow-5">
               <img src={commas.src} className="w-[80%]" />
             </div>
             <div className="w-[60%] h-[100%] flex justify-center items-center bg-yellow-5">
               <div className="w-[100%] h-fit leading-tight text-justify">
-                <h3 className="text-[#00A2FF] text-[24px] font-[600] text-center pb-1">
+                <h3 className="text-[#00A2FF] text-[22px] font-[700] text-start pb-1">
                   Ma Ka Ching | Chief Executive Officer
                 </h3>
                 <span className="text-[16px] font-[400]">
@@ -59,6 +67,72 @@ function ValuedClient() {
             <div className="w-[18%] h-[100%] flex justify-center items-center bg-yellow-5">
               <div className="w-[100%] h-[80%] flex justify-center items-center bg-[rgb(214,240,255)] rounded-[40px]">
                 <img src={horse.src} className="" />
+              </div>
+            </div>
+          </div>
+          <div className="w-[100%] h-[60%] flex justify-center items-start bg-[rgb(255,247,204)] flex-wrap gap-x-[3.7%] rounded-[50px]">
+            <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client1.src} className="w-[100%]" />
+                </div>
+                <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
+              </div>
+            </div>
+            <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client1.src} className="w-[100%]" />
+                </div>
+                <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
+              </div>
+            </div>
+            <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client1.src} className="w-[100%]" />
+                </div>
+                <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
+              </div>
+            </div>
+            <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client1.src} className="w-[100%]" />
+                </div>
+                <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
+              </div>
+            </div>
+            <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client1.src} className="w-[100%]" />
+                </div>
+                <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
+              </div>
+            </div>
+            <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client1.src} className="w-[100%]" />
+                </div>
+                <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
+              </div>
+            </div>
+            <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client1.src} className="w-[100%]" />
+                </div>
+                <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
+              </div>
+            </div>
+            <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client1.src} className="w-[100%]" />
+                </div>
+                <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
               </div>
             </div>
           </div>
