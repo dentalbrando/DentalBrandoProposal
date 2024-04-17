@@ -11,6 +11,8 @@ import TableOfContent from "./proposalPages/TableOfContent";
 import CoverPage from "./proposalPages/coverPage";
 import AboutUs from "./proposalPages/AboutUs";
 import ProjectObjective from "./proposalPages/ProjectObjective";
+import Activities from "./proposalPages/Activities";
+import ValuedClient from "./proposalPages/ValuedClient";
 
 function Designing() {
   return (
@@ -19,13 +21,16 @@ function Designing() {
       <TableOfContent />
       <CoverLetter />
       <AboutUs />
-      <ProjectObjective/>
+      <ProjectObjective />
+      <Activities />
       <MonthlyCalender />
       <ContentCreation />
       <Marketing />
+      <ValuedClient />
       <AdvertisementPackages />
       <PostDesignPackages />
       <MarketingPackages />
+      <PostDesignPackages />
     </div>
   );
 }
