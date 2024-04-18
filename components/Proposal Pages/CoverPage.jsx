@@ -8,7 +8,7 @@ const CoverPage = () => {
     <>
       <div className="full-proposal flex justify-center items-center full-proposal shadow-lg">
         <div
-          className="relative w-[8.27in] h-[29.7cm] mx-auto bg-white"
+          className="relative w-[8.27in] h-[11.6876in] mx-auto"
           style={{ fontFamily: "'Montserrat'" }}
         >
           <div className="mt-4 flex items-center">
