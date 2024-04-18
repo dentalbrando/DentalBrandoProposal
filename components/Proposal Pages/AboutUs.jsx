@@ -7,7 +7,7 @@ const AboutUs = ({ pageNumber }) => {
   return (
     <div class="offer flex w-[8.27in] h-[11.6876in] bg-white shadow-lg print:shadow-none">
       <div class="flex w-100vw">
-        <div class="w-[48%]  ">
+        <div class="w-[48%]">
           <div class="w-[80%] p-1 mx-auto">
             <div class="flex   ">
               <div class="mt-[50px]  flex relative">
@@ -98,8 +98,9 @@ const AboutUs = ({ pageNumber }) => {
             </div>
           </div>
         </div>
-        <div class="bg-[#00A2FF] flex justify-center items-center px-[30px] w-[52%] h-[11.6745in]">
-          <div class="w-[100%]   ">
+
+        <div class="bg-[#00A2FF] flex justify-center items-center px-[30px] w-[52%] h-[11.6876in]">
+          <div class="w-[100%]">
             <div class="flex mt-8">
               <div>
                 <img
@@ -108,7 +109,7 @@ const AboutUs = ({ pageNumber }) => {
                   alt=""
                 />
               </div>
-              <div class="mt-[45px] ml-3  ">
+              <div class="mt-[45px] ml-3">
                 <h6 class="text-[18.43pt] text-white font-[400] ">
                   Web Development{" "}
                 </h6>

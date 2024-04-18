@@ -50,7 +50,10 @@ const FullProposal = () => {
         </svg>
       </button>
       <div className="print:bg-white flex justify-center items-center gap-3 print:gap-0 flex-col hideInPrint">
-        <div className="fixed right-0 z-50 px-5" style={{ top: "50%" }}>
+        <div
+          className="print:hidden fixed z-50 right-2"
+          style={{ top: "50vh" }}
+        >
           <SaveProposaltoDb />
         </div>
         {pageSequence.map((page, index) => {

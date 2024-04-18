@@ -8,9 +8,9 @@ const TableOfContent = () => {
 
   // console.log(pageSequence);
 
-  return ( 
+  return (
     <>
-      <div className="full-proposal flex justify-center items-center shadow-lg">
+      <div className="full-proposal flex justify-center items-center shadow-lg bg-white">
         <div
           style={{ fontFamily: "Open sans" }}
           className="flex justify-between w-[210mm] h-[297mm] mx-auto bg-white pl-14 "

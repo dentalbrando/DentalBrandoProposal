@@ -6,7 +6,7 @@ const CoverPage = () => {
   const cover_page = useSelector((state) => state.cover_page);
   return (
     <>
-      <div className="full-proposal flex justify-center items-center full-proposal shadow-lg ">
+      <div className="full-proposal flex justify-center items-center full-proposal shadow-lg">
         <div
           className="relative w-[8.27in] h-[29.7cm] mx-auto bg-white"
           style={{ fontFamily: "'Montserrat'" }}
@@ -55,8 +55,8 @@ const CoverPage = () => {
               ) : null
               // <div className="w-full h-full bg-gray-100"></div>
             }
-            <div className="flex relative bottom-[-2rem items-end justify-between mt-8">
-              <div className="flex flex-col">
+            <div className="flex relative items-end justify-between mt-8 bg-green-40">
+              <div className="flex flex-col w-[50%]">
                 <span
                   id="name"
                   style={{ fontFamily: "'Montserrat'" }}
@@ -66,7 +66,10 @@ const CoverPage = () => {
                     ? cover_page.companyName
                     : "{No Company Name}"}
                 </span>
-                <span id="address" className="text-[11pt] font-[400] mt-2">
+                <span
+                  id="address"
+                  className="text-[11pt] font-[400] mt-2 bg-red-30 w-[]"
+                >
                   {cover_page.companyAddress
                     ? cover_page.companyAddress
                     : "{No Company Address}"}

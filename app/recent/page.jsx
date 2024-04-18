@@ -123,7 +123,6 @@ function Proposal() {
     );
     dispatch(updatePage(100));
     router.push("/development");
-    // console.log(proposalData[key]);
   }
   function searchFunction(e) {
     if (e.target.value) {
@@ -166,7 +165,6 @@ function Proposal() {
       setProposalData(deletedProposals);
     }
   }
-  console.log(searchData);
   return (
     <div className="recent-page-font">
       {loading || isVerified === undefined ? (
