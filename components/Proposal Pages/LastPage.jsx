@@ -13,7 +13,7 @@ const LastPage = () => {
           <div class="w-[100%] print:h-[7.3rem]">
             <div class="">
               <img class="w-[200px] ml-10 " src={logo.src} alt="" />
-              <img class="mt-[-60px]" src={bgImg.src} alt="" className="w-[90%]"/>
+              <img class="mt-[-50px]" src={bgImg.src} alt="" className="w-[90%]"/>
             </div>
             <div class=" mx-10 mt-[-70px] ">
               <h1
@@ -23,11 +23,11 @@ const LastPage = () => {
                 CONTACT <br />
                 US{" "}
               </h1>
-              <div class=" mt-1 w-[95px]  h-2 bg-[#ffd600] "></div>
+              <div class="mt-1 w-[95px]  h-2 bg-[#ffd600] "></div>
             </div>
             <div class="flex justify-between w-[90%] mx-auto">
               <div class="w-fit">
-                <img class="w-[110px] mt-4" src={svg1.src} alt="" />
+                <img class="w-[110px] mt-3" src={svg1.src} alt="" />
               </div>
               <div class="flex gap-16  mt-7 ">
                 <div class="  flex flex-col items-center justify-center">
@@ -59,7 +59,7 @@ const LastPage = () => {
               </div>
             </div>
 
-            <div class="mt-2 flex items-center justify-center bg-blue400 gap-2 px-11">
+            <div class="mt-1 flex items-center justify-center bg-blue400 gap-2 px-11">
               {/* <div class="w-8 h-8 bg-[#00A2FF] rounded-full flex items-center justify-center">
                 <img class="w-3" src={svg4.src} alt="" />
               </div> */}
