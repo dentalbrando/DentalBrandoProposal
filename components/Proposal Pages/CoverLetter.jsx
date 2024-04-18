@@ -56,7 +56,7 @@ const CoverLetter = ({ pageNumber }) => {
           </div>
         </div>
 
-        <div className=" w-[85%] ">
+        <div className=" w-[85%]">
           <h3 className="mt-[60px] font-[700] text-[9pt] text-[#00A2FF]">
             Soft Enterprise
           </h3>

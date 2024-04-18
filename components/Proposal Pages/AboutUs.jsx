@@ -9,8 +9,8 @@ const AboutUs = ({ pageNumber }) => {
       <div class="flex w-100vw">
         <div class="w-[48%]">
           <div class="w-[80%] p-1 mx-auto">
-            <div class="flex   ">
-              <div class="mt-[50px]  flex relative">
+            <div class="flex   print:h-[7.3rem] ">
+              <div class="mt-[50px]  flex relative pb-0">
                 <svg
                   class="transform rotate-90 relative ml-[-5px]  top-0 "
                   width="64"

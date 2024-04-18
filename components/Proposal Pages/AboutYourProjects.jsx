@@ -34,8 +34,8 @@ const AboutYourProjects = ({ pageNumber }) => {
       <div class="offer w-[8.27in] h-[11.6876in] bg-white shadow-lg">
         <div class="w-100%">
           <div class="w-[90%] mx-auto">
-            <div class="flex">
-              <div class="mt-[50px]  flex relative  ">
+            <div class="flex  print:h-[7.3rem]">
+              <div class="mt-[50px] flex relative  pb-0">
                 <svg
                   class="transform rotate-90 relative ml-[-5px]  top-0 "
                   width="64"
@@ -61,7 +61,7 @@ const AboutYourProjects = ({ pageNumber }) => {
                   Business Proposal
                 </h3>
 
-                <div class=" mt-1  w-[6.8in] h-0.5 bg-[#00A2FF] "></div>
+                <div class=" mt-1  w-[6.5in] h-0.5 bg-[#00A2FF] "></div>
               </div>
             </div>
 
