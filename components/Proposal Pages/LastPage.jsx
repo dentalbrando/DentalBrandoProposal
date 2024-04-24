@@ -9,7 +9,7 @@ const LastPage = () => {
   return (
     <>
       <div class="offer flex w-[8.27in] h-[11.6876in] bg-white shadow-lg print:shadow-none">
-        <div class=" w-100vw">
+        <div class=" w-full">
           <div class="w-[100%] print:h-[7.3rem]">
             <div class="">
               <img class="w-[200px] ml-10 " src={logo.src} alt="" />

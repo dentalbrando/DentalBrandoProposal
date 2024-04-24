@@ -2,13 +2,13 @@
 import horse from "@public/assets/socialMedia/our clients logo-07.png";
 import commas from "@public/assets/socialMedia/comma-16.png";
 import client1 from "@public/assets/socialMedia/our clients logo-08.png";
-import client2 from "@public/assets/socialMedia/our clients logo-08.png";
-import client3 from "@public/assets/socialMedia/our clients logo-08.png";
-import client4 from "@public/assets/socialMedia/our clients logo-08.png";
-import client5 from "@public/assets/socialMedia/our clients logo-08.png";
-import client6 from "@public/assets/socialMedia/our clients logo-08.png";
-import client7 from "@public/assets/socialMedia/our clients logo-08.png";
-import client8 from "@public/assets/socialMedia/our clients logo-08.png";
+import client2 from "@public/assets/socialMedia/our clients logo-09.png";
+import client3 from "@public/assets/socialMedia/our clients logo-10.png";
+import client4 from "@public/assets/socialMedia/our clients logo-11.png";
+import client5 from "@public/assets/socialMedia/our clients logo-12.png";
+import client6 from "@public/assets/socialMedia/our clients logo-13.png";
+import client7 from "@public/assets/socialMedia/our clients logo-14.png";
+import client8 from "@public/assets/socialMedia/our clients logo-15.png";
 
 function ValuedClient() {
   return (
@@ -82,7 +82,7 @@ function ValuedClient() {
             <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
               <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
                 <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
-                  <img src={client1.src} className="w-[100%]" />
+                  <img src={client2.src} className="w-[100%]" />
                 </div>
                 <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
               </div>
@@ -90,7 +90,7 @@ function ValuedClient() {
             <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
               <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
                 <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
-                  <img src={client1.src} className="w-[100%]" />
+                  <img src={client3.src} className="w-[100%]" />
                 </div>
                 <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
               </div>
@@ -98,7 +98,7 @@ function ValuedClient() {
             <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
               <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
                 <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
-                  <img src={client1.src} className="w-[100%]" />
+                  <img src={client4.src} className="w-[100%]" />
                 </div>
                 <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
               </div>
@@ -106,7 +106,7 @@ function ValuedClient() {
             <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
               <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
                 <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
-                  <img src={client1.src} className="w-[100%]" />
+                  <img src={client5.src} className="w-[100%]" />
                 </div>
                 <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
               </div>
@@ -114,7 +114,7 @@ function ValuedClient() {
             <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
               <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
                 <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
-                  <img src={client1.src} className="w-[100%]" />
+                  <img src={client6.src} className="w-[100%]" />
                 </div>
                 <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
               </div>
@@ -122,7 +122,7 @@ function ValuedClient() {
             <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
               <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
                 <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
-                  <img src={client1.src} className="w-[100%]" />
+                  <img src={client7.src} className="w-[100%]" />
                 </div>
                 <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
               </div>
@@ -130,7 +130,7 @@ function ValuedClient() {
             <div className="w-[19%] h-[50%] flex justify-center items-end bg-red-10 ">
               <div className="w-[100%] h-[80%] flex flex-col justify-center items-end bg-green-70">
                 <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
-                  <img src={client1.src} className="w-[100%]" />
+                  <img src={client8.src} className="w-[100%]" />
                 </div>
                 <div className="w-[100%] h-[6px] flex justify-between items-center bg-[#ffd600]"></div>
               </div>

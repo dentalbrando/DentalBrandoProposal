@@ -1,7 +1,6 @@
 "use client";
 function TableOfContent() {
   return (
-    <div className="bg-green-20 w-[8.27in] minh-[29.7cm] h-[29.7cm] bg-white">
       <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">
         <div className="flex w-full h-[40%] absolute top-0 overflow-hidden">
           <div className="w-[120%] h-[75%] rounded-br-[300%] rounded-bl-[80%] absolute top-[-30%] right-[-10%] z-[50] bg-[#00A2FF]"></div>
@@ -74,7 +73,6 @@ function TableOfContent() {
           <div className="w-[200%] h-[350%] bg-blue-100 absolute top-[5%] right-[15%] rounded-[40%]"></div>
         </div>
       </div>
-    </div>
   );
 }
 export default TableOfContent;

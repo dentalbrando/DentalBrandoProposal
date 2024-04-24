@@ -4,7 +4,6 @@ import clock from "@public/assets/socialMedia/clock icon-15.png";
 
 function MarketingPackages() {
   return (
-    <div className="bg-white w-[8.27in] h-[29.7cm]">
       <div className="flex flex-col justify-start items-center h-[100%] relative">
         <div className="absolute top-0 left-[7%]">
           <img src={strips.src} className="w-[50px]" />
@@ -144,7 +143,6 @@ function MarketingPackages() {
 
         <div className="absolute bottom-0 h-[35%] w-full overflow-hidden bg-yellow-100 z-[0]"></div>
       </div>
-    </div>
   );
 }
 export default MarketingPackages;
