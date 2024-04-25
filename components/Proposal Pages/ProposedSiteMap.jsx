@@ -9,7 +9,7 @@ const ProposedSiteMap = ({ pageNumber }) => {
 
   return (
     <>
-      <div className="offer flex w-[8.27in] h-[11.6876in] bg-white shadow-lg">
+      <div className="offer flex w-[8.27in] h-[1127px] shadow-lg">
         <div className="flex w-full">
           <div className="w-[90%]  mx-auto ">
             <div className="h-fit">

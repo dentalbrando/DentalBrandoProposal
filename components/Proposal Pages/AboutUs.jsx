@@ -5,11 +5,11 @@ import svg4 from "@public/assets/icons-04.svg";
 import svg5 from "@public/assets/icons-05.svg";
 const AboutUs = ({ pageNumber }) => {
   return (
-    <div class="offer flex w-[8.27in] h-[11.6876in] bg-white shadow-lg print:shadow-none">
-      <div class="flex w-100vw">
-        <div class="w-[48%]">
+    <div class="offer flex w-[8.27in] h-[1122.9px] shadow-lg print:shadow-none">
+      <div class="flex w-100vw bg-red-20 items-end">
+        <div class="w-[48%] bg-green-80 h-full">
           <div class="w-[80%] p-1 mx-auto">
-            <div class="flex   print:h-[7.3rem] ">
+            <div class="flex  print:h-[7.3rem] ">
               <div class="mt-[50px]  flex relative pb-0">
                 <svg
                   class="transform rotate-90 relative ml-[-5px]  top-0 "
@@ -99,7 +99,7 @@ const AboutUs = ({ pageNumber }) => {
           </div>
         </div>
 
-        <div class="bg-[#00A2FF] flex justify-center items-center px-[30px] w-[52%] h-[11.6876in]">
+        <div class="bg-[#00A2FF] h-full flex justify-center items-center px-[30px] w-[52%]">
           <div class="w-[100%]">
             <div class="flex mt-8">
               <div className=" ">

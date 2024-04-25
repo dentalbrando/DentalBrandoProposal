@@ -8,7 +8,7 @@ import svg6 from "@public/assets/our process-06.svg";
 const OurProcess = ({ pageNumber }) => {
   return (
     <>
-      <div class="offer w-[8.27in] h-[11.6876in] bg-white shadow-lg print:shadow-none">
+      <div class="offer w-[8.27in] h-[1122.9px] shadow-lg print:shadow-none">
         <div class="w-100%">
           <div class="w-[90%] mx-auto">
             <div class="flex  print:h-[7.3rem]">

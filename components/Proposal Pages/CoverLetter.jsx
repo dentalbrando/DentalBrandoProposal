@@ -32,7 +32,7 @@ const CoverLetter = ({ pageNumber }) => {
     .join("");
 
   return (
-    <div className="offer flex w-[8.27in] min-h-[11.6876in] bg-white shadow-lg ">
+    <div className="offer flex w-[8.27in] h-[1122.9px] shadow-lg ">
       <div className=" flex w-full">
         <div className="flex">
           <div className="ml-3 w-[3px] h-full bg-[#00A2FF] "></div>

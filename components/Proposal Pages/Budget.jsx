@@ -32,7 +32,7 @@ const Budget = () => {
           width: "8.27in",
           height: "11.6876in",
         }}
-        className="relative overflow-hidden bg-white shadow-lg mb-5"
+        className="relative overflow-hidden shadow-lg mb-5"
       >
         <div>
           <div className="flex justify-between items-center">
@@ -152,7 +152,7 @@ const Budget = () => {
 
           <div className="mt-[13.8rem]">
             <div className="bg-[#ffd600] w-full h-14 text-[11pt] font-[700] flex items-center justify-end ">
-              <div className="w-[25%]">
+              <div className="w-[30%]">
                 <div className="flex items-center gap-2">
                   <p>Subtotal :</p>
                   <span className="capitalize">
@@ -173,7 +173,7 @@ const Budget = () => {
               </div>
             </div>
             <div className="bg-[#00a2ff] w-full h-14 text-[13.77pt] font-[700] text-white flex items-center justify-end  gap-12">
-              <div className="flex w-[25%] gap-1">
+              <div className="flex w-[30%] gap-1 bg-red-40">
                 <p>TOTAL |</p>
                 <span className="capitalize">
                   {budgetData.currency} {addCommasToNumber(totalEstimate)}/-
