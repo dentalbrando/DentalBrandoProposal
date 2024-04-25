@@ -29,7 +29,7 @@ function Estimate() {
 
         <div className="w-full h-[60%] absolute bottom-[10%] flex flex-col items-center gap-3">
           <div className="flex flex-col justify-center w-[87%] leading-[1.2]">
-            <span className="text-[20px] font-[400]">Estimated To</span>
+            <span className="text-[20px] font-[400]">Invoice To</span>
             <span className="text-[30px] font-[600]">VISTA Conard Tower-1</span>
           </div>
           <div className="flex flex-col justify-center w-[87%] gap-1">
