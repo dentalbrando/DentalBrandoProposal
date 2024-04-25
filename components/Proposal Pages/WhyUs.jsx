@@ -12,7 +12,7 @@ import svg10 from "@public/assets/whySoftImgs/icons-10.svg";
 const WhyUs = ({ pageNumber }) => {
   return (
     <>
-      <div class="offer flex w-[8.27in] h-[11.6876in] bg-white shadow-lg print:shadow-none">
+      <div class="offer flex w-[8.27in] h-[1122.9px] bg-white shadow-lg print:shadow-none bg-blue-20">
         <div class="flex w-full ">
           <div class="w-[90%]  mx-auto">
             <div class="flex print:h-[7.3rem] ">

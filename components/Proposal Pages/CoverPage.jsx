@@ -6,9 +6,9 @@ const CoverPage = () => {
   const cover_page = useSelector((state) => state.cover_page);
   return (
     <>
-      <div className="full-proposal flex justify-center items-center full-proposal shadow-lg">
+      <div className="full-proposal flex justify-center items-center full-proposal shadow-lg ">
         <div
-          className="relative w-[8.27in] h-[1122.9px] mx-auto"
+          className="relative w-[8.27in] h-[1120.9px] mx-auto bg-yellow-20"
           style={{ fontFamily: "'Montserrat'" }}
         >
           <div className="mt-4 flex items-center">

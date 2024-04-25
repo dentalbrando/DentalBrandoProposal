@@ -28,11 +28,7 @@ const Budget = () => {
   return (
     <>
       <div
-        style={{
-          width: "8.27in",
-          height: "11.6876in",
-        }}
-        className="relative overflow-hidden shadow-lg mb-5"
+        className="relative overflow-hidden shadow-lg bg-green-30 w-[8.27in] h-[1122.9px]"
       >
         <div>
           <div className="flex justify-between items-center">

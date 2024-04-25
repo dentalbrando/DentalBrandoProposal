@@ -18,9 +18,9 @@ export default function SaveProposaltoDb() {
     (state) => state.proposedSitemapOverview
   );
   async function submit() {
-    if (saveButtonText === "Saved") {
-      return;
-    }
+    // if (saveButtonText === "Saved") {
+    //   return;
+    // }
     try {
       setLoading(true);
       let date =

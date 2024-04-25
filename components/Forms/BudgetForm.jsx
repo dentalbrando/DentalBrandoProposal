@@ -13,6 +13,7 @@ const BudgetForm = () => {
   const dispatch = useDispatch();
   const storedServices = useSelector((state) => state.budget.service);
   const budget = useSelector((state) => state.budget);
+  console.log(budget);
   const [services, setServices] = useState(
     storedServices ? storedServices : [{}]
   ); // An array of service objects
@@ -38,7 +39,7 @@ const BudgetForm = () => {
   };
 
   return (
-      <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
+    <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
       {services.map((service, index) => (
         <div>
           <div className=" my-5">
@@ -74,7 +75,7 @@ const BudgetForm = () => {
               <option value="standard">Standard</option>
             </select>
           </div>
-          <div className="flex  w-[100%]  my-5">
+          <div className="flex  w-[100%] py-5 border-b-2 border-[rgb(217,217,217)]">
             <label className="text-gray-900 w-[20%] text-[16px] my-2 font-medium">
               Service Charges
             </label>
@@ -116,6 +117,7 @@ const BudgetForm = () => {
           onChange={(e) => {
             dispatch(setCurrency(e.target.value));
           }}
+          value={budget.currency}
         />
         <TextInput
           label="Discount"
@@ -126,6 +128,7 @@ const BudgetForm = () => {
           onChange={(e) => {
             dispatch(setDiscount(e.target.value));
           }}
+          value={budget.discount}
         />
       </div>
       <div className=" flex justify-between  my-5">

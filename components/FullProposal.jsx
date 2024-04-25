@@ -49,7 +49,7 @@ const FullProposal = () => {
           />
         </svg>
       </button>
-      <div className="print:bg-white flex justify-center items-center gap-3 print:gap-0 flex-col hideInPrint">
+      <div className="print:bg-white flex justify-center items-center  flex-col hideInPrint">
         <div
           className="print:hidden fixed z-50 right-2"
           style={{ top: "50vh" }}

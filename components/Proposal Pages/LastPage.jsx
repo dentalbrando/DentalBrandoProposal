@@ -8,12 +8,17 @@ import logo from "@public/assets/LastPageImgs/logo.png";
 const LastPage = () => {
   return (
     <>
-      <div class="offer flex w-[8.27in] h-[11.5in] shadow-lg print:shadow-none">
+      <div class="offer flex w-[8.27in] h-[1122.9px] shadow-lg print:shadow-none bg-orange-30">
         <div class=" w-full">
           <div class="w-[100%] print:h-[7.3rem]">
             <div class="">
               <img class="w-[200px] ml-10 " src={logo.src} alt="" />
-              <img class="mt-[-50px]" src={bgImg.src} alt="" className="w-[90%]"/>
+              <img
+                class="mt-[-50px]"
+                src={bgImg.src}
+                alt=""
+                className="w-[90%]"
+              />
             </div>
             <div class=" mx-10 mt-[-70px] ">
               <h1

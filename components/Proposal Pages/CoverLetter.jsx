@@ -7,7 +7,6 @@ const CoverLetter = ({ pageNumber }) => {
   const content = cover_letter.letterText
     .split("<p class = 'py-1'></p>")
     .map((line) => {
-      console.log(line);
 
       if (line.trim().startsWith(">")) {
         const ticked = `<div class="flex">
@@ -25,14 +24,14 @@ const CoverLetter = ({ pageNumber }) => {
 
         return ticked;
       }
-      console.log(line);
+
       line = line + "<p class = 'py-1'></p>";
       return line;
     })
     .join("");
 
   return (
-    <div className="offer flex w-[8.27in] h-[1122.9px] shadow-lg ">
+    <div className="offer flex w-[8.27in] h-[1122.9px] shadow-lg bg-green-20">
       <div className=" flex w-full">
         <div className="flex">
           <div className="ml-3 w-[3px] h-full bg-[#00A2FF] "></div>

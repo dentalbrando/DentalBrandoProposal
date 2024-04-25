@@ -32,7 +32,7 @@ const ConverLetterForm = () => {
     dispatch(setClientName(clientName));
   };
 
-  useEffect(() => {
+  useEffect(() => { 
     handleSave();
   }, [letterText, clientName]);
 
@@ -42,6 +42,8 @@ const ConverLetterForm = () => {
   //             )
   //     }
   // }, [letterType])
+  console.log(letterType)
+
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
       <div className="">
@@ -53,6 +55,8 @@ const ConverLetterForm = () => {
             <Select
               className="w-[60%] rounded-md font-normal border-2 border-color outline-none"
               options={selectOptions}
+              placeholder={letterType==="web_dev"? "Web Development": "Web Design" }
+              value={letterType}
               onChange={(event) => {
                 setLetterType(event.value);
                 if (event.value == "web_dev") {
@@ -73,7 +77,6 @@ Sincerely,`;
                 }
                 setletterText(textareaRef.current.value);
               }}
-              // value={letterType}
               styles={{
                 container: (base) => ({
                   ...base,
@@ -112,6 +115,7 @@ Sincerely,`;
                 onChange={(event) => {
                   setclientName(event.target.value);
                 }}
+                value={clientName}
               />
               <p className="text-red-500 text-sm">{}</p>
             </div>

@@ -22,6 +22,8 @@ import {
   setValidDate,
 } from "@app/store/coverPageSlice";
 import { setSiteMapOverview } from "@app/store/proposedSitemapOverview";
+import { setSiteMap } from "@app/store/proposedSitemap";
+import { setSiteMap2 } from "@app/store/proposedSitemap2";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -121,6 +123,8 @@ function Proposal() {
     dispatch(
       setSiteMapOverview(proposalData[key].proposedSitemapOverview.overview)
     );
+    dispatch(setSiteMap(proposalData[key].proposedSitemap.sitemap));
+    dispatch(setSiteMap2(proposalData[key].proposedSitemap2.sitemap2));
     dispatch(updatePage(100));
     router.push("/development");
   }

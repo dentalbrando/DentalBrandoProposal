@@ -31,7 +31,7 @@ const AboutYourProjects = ({ pageNumber }) => {
 
   return (
     <>
-      <div class="offer w-[8.27in] h-[1122.9px] shadow-lg">
+      <div class="offer w-[8.27in] h-[1122.9px] shadow-lg bg-blue-5">
         <div class="w-100%">
           <div class="w-[90%] mx-auto">
             <div class="flex  print:h-[7.3rem]">
