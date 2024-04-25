@@ -44,7 +44,7 @@ function Designing() {
       <div className="w-[8.27in] h-[29.7cm]">
         <ContentCreation />
       </div>
-      <div className="w-[8.27in] h-[29.7cm] mb-2">
+      <div className="w-[8.27in] h-[29.7cm]">
         <Marketing />
       </div>
       <div className="w-[8.27in] h-[29.7cm]">
