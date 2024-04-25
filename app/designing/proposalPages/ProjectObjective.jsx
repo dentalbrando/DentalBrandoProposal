@@ -7,8 +7,8 @@ function ProjectObjective() {
     <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">
       <div className="flex w-full h-[40%] absolute top-0 overflow-hidden">
         <div className="w-[150%] h-[100%] rounded-br-[45%] rounded-bl-[40%] absolute top-[0%] right-[-10%] z-[50] bg-[#00A2FF] flex justify-center items-center"></div>
-        <div className="absolute w-[87%] h-[50%] right-[6.5%] top-[25%] z-[200] bg-red-90">
-          <div className="flex flex-col justify-center w-full leading-tight">
+        <div className="absolute w-[87%] right-[6.5%] top-[120px] z-[200]">
+          <div className="flex flex-col justify-center w-full leading-[53px]">
             <span className="text-[white] text-[44px] font-[600]">Project</span>
             <span className="text-[white] text-[44px] font-[600]">
               Objective
@@ -16,7 +16,7 @@ function ProjectObjective() {
             <div className="w-[70px] h-[5px] bg-yellow-400 my-3"></div>
           </div>
           <div className="flex flex-col justify-center w-full leading-snug">
-            <span className="text-[white] text-[16px] font-[200]">
+            <span className="text-[white] text-[15px] font-[400]">
               Our specialized expertise in Social Media Marketing will enhance
               your brand’s social media presence. We aim to bring you business
               by targeting your sophisticated audience interested in the
@@ -47,18 +47,18 @@ function ProjectObjective() {
         </div>
         <div className="absolute w-[100%] h-[60%] z-[100] bg-green-40 flex flex-col justify-between items-center">
           <div className="w-[90%] h-[30%] z-[100] bg-blue-40 flex justify-between items-center text-center leading-tight">
-            <span className="w-[30%] text-[15px] font-[500]">
+            <span className="w-[30%] text-[15px] font-[400]">
               Spread Brand Awareness in entire Pakistan.
             </span>
-            <span className="w-[30%] text-[15px] font-[500]">
+            <span className="w-[30%] text-[15px] font-[400]">
               Posting high-quality Posts for Facebook, Instagram.
             </span>
           </div>
           <div className="w-[90%] h-[30%] z-[100] bg-blue-40 flex justify-between items-center text-center leading-tight">
-            <span className="w-[30%] text-[15px] font-[500]">
+            <span className="w-[30%] text-[15px] font-[400]">
               Posting & Sharing the Content on Social Media profiles & Groups.
             </span>
-            <span className="w-[30%] text-[15px] font-[500]">
+            <span className="w-[30%] text-[15px] font-[400]">
               Generating engagement on all the posts in different Social Media
               platforms.
             </span>
@@ -66,14 +66,14 @@ function ProjectObjective() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 h-[8%] w-full bg-green-30 overflow-hidden">
-        <div className="flex justify-between items-center w-full px-16 h-full bg-blue-40 absolute top-0 left-0 z-[50]">
+      <div className="absolute bottom-0 h-[100px] w-[100%] overflow-hidden">
+        <div className="flex justify-between items-center w-full px-16 h-full absolute top-[15%] left-0 z-[50]">
           <span className="text-gray-700 text-[15px] font-[500]">
             Social Media Marketing Proposal
           </span>
           <span className="text-gray-700 text-[15px] font-[500]">Page 03</span>
         </div>
-        <div className="w-[200%] h-[350%] bg-blue-100 absolute top-[5%] right-[15%] rounded-[40%]"></div>
+        <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
       </div>
     </div>
   );

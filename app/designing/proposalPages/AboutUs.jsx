@@ -10,14 +10,15 @@ function AboutUs() {
     <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">
       <div className="flex w-full h-[50%] absolute top-0 overflow-hidden">
         <div className="w-[150%] h-[100%] rounded-br-[55%] rounded-bl-[40%] absolute top-[0%] right-[-10%] z-[50] bg-[#00A2FF] flex justify-center items-center"></div>
-        <div className="absolute w-[87%] h-[50%] right-[6.5%] top-[25%] z-[200] bg-red-90">
+
+        <div className="absolute w-[87%] right-[6.5%] top-[120px] z-[200]">
           <div className="flex flex-col justify-center w-full leading-none">
             <span className="text-[white] text-[44px] font-[600]">About</span>
             <span className="text-[white] text-[44px] font-[600]">Us</span>
             <div className="w-[70px] h-[5px] bg-yellow-400 my-3"></div>
           </div>
-          <div className="flex flex-col justify-center w-full leading-snug">
-            <span className="text-[white] text-[16px] font-[200]">
+          <div className="flex flex-col justify-center w-full leading-snug text-justify">
+            <span className="text-[white] text-[15px] font-[400]">
               Soft Enterprise is an esteemed Web Development, Mobile Apps,
               Custom Software Development and Digital Marketing company. We
               provide exceptional Social Media Marketing Services to clients
@@ -30,6 +31,7 @@ function AboutUs() {
             </span>
           </div>
         </div>
+
         <div className="w-[60%] h-[120%] rounded-[50%] bottom-[15%] right-[-25%] z-[10] bg-[#ffd600] absolute"></div>
       </div>
 
@@ -59,7 +61,7 @@ function AboutUs() {
             <h3 className="text-[#00A2FF] text-[24px] font-[600]">
               Our Mission
             </h3>
-            <span className="text-[16px] font-[500]">
+            <span className="text-[15px] font-[400]">
               Enhancing and ensuring the online success and presence of
               businesses.
             </span>
@@ -68,13 +70,13 @@ function AboutUs() {
             <h3 className="text-[#00A2FF] text-[24px] font-[600]">
               Our Vision
             </h3>
-            <span className="text-[16px] font-[500]">
+            <span className="text-[15px] font-[400]">
               Become a world leader helping to establish online businesses.
             </span>
           </div>
           <div className="w-[100%] h-fit leading-tight">
             <h3 className="text-[#00A2FF] text-[24px] font-[600]">Our Goals</h3>
-            <span className="text-[16px] font-[500]">
+            <span className="text-[15px] font-[400]">
               Helping every business to grow in unique ways to shine over the
               globe
             </span>
@@ -82,14 +84,14 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 h-[8%] w-full bg-green-30 overflow-hidden">
-        <div className="flex justify-between items-center w-full px-16 h-full bg-blue-40 absolute top-0 left-0 z-[50]">
+      <div className="absolute bottom-0 h-[100px] w-[100%] overflow-hidden">
+        <div className="flex justify-between items-center w-full px-16 h-full absolute top-[15%] left-0 z-[50]">
           <span className="text-gray-700 text-[15px] font-[500]">
             Social Media Marketing Proposal
           </span>
           <span className="text-gray-700 text-[15px] font-[500]">Page 02</span>
         </div>
-        <div className="w-[200%] h-[350%] bg-blue-100 absolute top-[5%] right-[15%] rounded-[40%]"></div>
+        <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
       </div>
     </div>
   );

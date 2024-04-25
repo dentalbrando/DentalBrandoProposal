@@ -6,7 +6,7 @@ function Terms() {
   return (
     <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">
       <div className="flex w-full h-[50%] absolute top-0 overflow-hidden">
-        <div className="absolute w-[87%] h-[50%] right-[6.5%] top-[25%] z-[200] bg-red-90">
+        <div className="absolute w-[87%] h-[50%] right-[6.5%] top-[120px] z-[200] bg-red-90">
           <div className="flex flex-col justify-center w-full leading-none">
             <span className="text-[#00A2FF] text-[44px] font-[600]">Terms</span>
             <span className="text-[#00A2FF] text-[44px] font-[600]">
@@ -15,7 +15,7 @@ function Terms() {
             <div className="w-[70px] h-[5px] bg-yellow-400 my-3"></div>
           </div>
           <div className="flex flex-col justify-center w-full leading-snug">
-            <span className="text-[white text-[16px] font-[400]">
+            <span className="text-[white text-[15px] font-[400]">
               Social Media Marketing services encompass the right promotion of
               the right content at the right time. At Soft Enterprise, we are
               confident that we are your best partners for your Social Media
@@ -182,15 +182,14 @@ function Terms() {
           <div className="bg-[#FFD600] w-[2px] h-[70%] absolute top-[22%] left-[7%]"></div>
         </div>
       </div>
-
-      <div className="absolute bottom-0 h-[8%] w-full bg-green-30 overflow-hidden">
-        <div className="flex justify-between items-center w-full px-16 h-full bg-blue-40 absolute top-0 left-0 z-[50]">
+      <div className="absolute bottom-0 h-[100px] w-[100%] overflow-hidden z-[200]">
+        <div className="flex justify-between items-center w-full px-16 h-full absolute top-[15%] left-0 z-[50]">
           <span className="text-gray-700 text-[15px] font-[500]">
             Social Media Marketing Proposal
           </span>
           <span className="text-gray-700 text-[15px] font-[500]">Page 13</span>
         </div>
-        <div className="w-[200%] h-[350%] bg-blue-100 absolute top-[5%] right-[15%] rounded-[40%]"></div>
+        <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
       </div>
     </div>
   );

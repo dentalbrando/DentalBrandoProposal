@@ -30,7 +30,7 @@ function MonthlyCalender() {
               content calendar with the unique needs of your target audience. We
               will create your overall content theme to facilitate an organized
               social media presence with consistent and cohesive marketing
-              efforts across platforms
+              efforts across platforms.
             </p>
           </div>
           <img src={calender.src} className="w-[345px] h-[317px]" />
@@ -61,14 +61,14 @@ function MonthlyCalender() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 h-[8%] w-full bg-green-30 overflow-hidden">
-        <div className="flex justify-between items-center w-full px-16 h-full bg-blue-40 absolute top-0 left-0 z-[50]">
+      <div className="absolute bottom-0 h-[100px] w-[100%] overflow-hidden">
+        <div className="flex justify-between items-center w-full px-16 h-full absolute top-[15%] left-0 z-[50]">
           <span className="text-gray-700 text-[15px] font-[500]">
             Social Media Marketing Proposal
           </span>
           <span className="text-gray-700 text-[15px] font-[500]">Page 05</span>
         </div>
-        <div className="w-[200%] h-[350%] bg-blue-100 absolute top-[5%] right-[15%] rounded-[40%]"></div>
+        <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
       </div>
     </div>
   );

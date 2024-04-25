@@ -5,15 +5,15 @@ import ProfileCreation from "@public/assets/socialMedia/Monthly Report.png";
 
 function Marketing() {
   return (
-    <div className="flex flex-col justify-center items-center h-[100%] bg-red-20 relative">
+    <div className="flex flex-col justify-center items-center h-[100%] relative">
       <div className="absolute top-0 left-[7%]">
         <img src={strips.src} className="w-[50px]" />
       </div>
 
-      <div className="flex flex-col w-[87%] h-[62%] bg-red-70 gap-20">
-        <div className="flex justify-between items-start w-[100%] h-[50%] bg-purple-20">
+      <div className="flex flex-col w-[87%] h-[62%] gap-20">
+        <div className="flex justify-between items-start w-[100%] h-[50%]">
           <div>
-            <div className="flex flex-col justify-center w-full bg-red50 leading-none">
+            <div className="flex flex-col justify-center w-full leading-none">
               <span className="text-[#00A2FF] text-[32px] font-[600]">
                 Marketing
               </span>
@@ -31,7 +31,7 @@ function Marketing() {
           </div>
           <img src={calender.src} className="w-[345px] h-[317px]" />
         </div>
-        <div className="flex justify-between items-start w-[100%] h-[50%] bg-purple-20">
+        <div className="flex justify-between items-start w-[100%] h-[50%]">
           <div>
             <div className="flex flex-col justify-center w-full bg-red50 leading-none">
               <span className="text-[#00A2FF] text-[32px] font-[600]">
@@ -49,21 +49,21 @@ function Marketing() {
               brand on individual social media platforms. We deliver solid
               results. We discuss the successes and improvement areas in the
               social media marketing efforts. Our monthly reports also predict
-              future trends which will be beneficial for your business
+              future trends which will be beneficial for your business.
             </p>
           </div>
           <img src={ProfileCreation.src} className="w-[345px] h-[317px]" />
         </div>
       </div>
 
-      <div className="absolute bottom-0 h-[8%] w-full bg-green-30 overflow-hidden">
-        <div className="flex justify-between items-center w-full px-16 h-full bg-blue-40 absolute top-0 left-0 z-[50]">
+      <div className="absolute bottom-0 h-[100px] w-[100%] overflow-hidden">
+        <div className="flex justify-between items-center w-full px-16 h-full absolute top-[15%] left-0 z-[50]">
           <span className="text-gray-700 text-[15px] font-[500]">
             Social Media Marketing Proposal
           </span>
           <span className="text-gray-700 text-[15px] font-[500]">Page 07</span>
         </div>
-        <div className="w-[200%] h-[350%] bg-blue-100 absolute top-[5%] right-[15%] rounded-[40%]"></div>
+        <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
       </div>
     </div>
   );

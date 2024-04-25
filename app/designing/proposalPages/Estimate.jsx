@@ -118,7 +118,7 @@ function Estimate() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-end items-end w-full pt-5 border-black leading-[1.1]">
+            <div className="flex flex-col justify-end items-end w-full pt-5 border-black leading-[1.2]">
               <span className="text-[18px] font-[700] w-full text-justify pb-1">
                 TERMS & CONDITIONS
               </span>
@@ -147,8 +147,9 @@ function Estimate() {
           <div className="w-[50%] h-[100px] bg-white"></div>
           <div className="w-[50%] h-[100px] bg-[#ffd600]"></div>
         </div>
-        <div className="absolute bottom-0 h-[8%] w-full bg-green-30 overflow-hidden">
-          <div className="flex justify-between items-center w-full px-16 h-full bg-blue-40 absolute top-0 left-0 z-[50]">
+
+        <div className="absolute bottom-0 h-[100px] w-[100%] overflow-hidden z-[200]">
+          <div className="flex justify-between items-center w-full px-16 h-full absolute top-[15%] left-0 z-[50]">
             <span className="text-gray-700 text-[15px] font-[500]">
               Social Media Marketing Proposal
             </span>
@@ -156,7 +157,7 @@ function Estimate() {
               Page 12
             </span>
           </div>
-          <div className="w-[200%] h-[350%] bg-blue-100 absolute top-[5%] right-[15%] rounded-[40%]"></div>
+          <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
         </div>
       </div>
     </div>

@@ -27,16 +27,13 @@ function Designing() {
         <TableOfContent />
       </div>
       <div className="w-[8.27in] h-[29.7cm]">
-        <CoverLetter />
-      </div>
-      <div className="w-[8.27in] h-[29.7cm]">
         <AboutUs />
       </div>
       <div className="w-[8.27in] h-[29.7cm]">
         <ProjectObjective />
       </div>
       <div className="w-[8.27in] h-[29.7cm]">
-        <Activities />
+        <ValuedClient />
       </div>
       <div className="w-[8.27in] h-[29.7cm]">
         <MonthlyCalender />
@@ -45,10 +42,22 @@ function Designing() {
         <ContentCreation />
       </div>
       <div className="w-[8.27in] h-[29.7cm]">
+        <Estimate />
+      </div>
+      <div className="w-[8.27in] h-[29.7cm]">
+        <Contact />
+      </div>
+      <div className="w-[8.27in] h-[29.7cm]">
         <Marketing />
       </div>
       <div className="w-[8.27in] h-[29.7cm]">
-        <ValuedClient />
+        <CoverLetter />
+      </div>
+      <div className="w-[8.27in] h-[29.7cm]">
+        <Activities />
+      </div>
+      <div className="w-[8.27in] h-[29.7cm]">
+        <Terms />
       </div>
       <div className="w-[8.27in] h-[29.7cm]">
         <AdvertisementPackages />
@@ -58,15 +67,6 @@ function Designing() {
       </div>
       <div className="w-[8.27in] h-[29.7cm]">
         <MarketingPackages />
-      </div>
-      <div className="w-[8.27in] h-[29.7cm]">
-        <Estimate />
-      </div>
-      <div className="w-[8.27in] h-[29.7cm]">
-        <Terms />
-      </div>
-      <div className="w-[8.27in] h-[29.7cm]">
-        <Contact />
       </div>
     </div>
   );

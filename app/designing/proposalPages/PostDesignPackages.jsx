@@ -9,7 +9,7 @@ function PostDesignPackages() {
         <img src={strips.src} className="w-[50px]" />
       </div>
 
-      <div className="flex flex-col justify-center w-[87%] leading-none mt-24 pt-24">
+      <div className="flex flex-col justify-center w-[87%] leading-none mt-20 pt-20">
         <span className="text-[#00A2FF] text-[44px] font-[600]">
           Social Media
         </span>
@@ -17,7 +17,7 @@ function PostDesignPackages() {
           Post Design Packages
         </span>
         <div className="w-[100px] h-[5px] my-3"></div>
-        <p className="text-[15px] font-[500] mt-1 leading-normal">
+        <p className="text-[15px] font-[400] leading-normal">
           Stand out from the crowd with eye-catching social media post designs.
           Our team of professional designers will transform your social media
           feed into a visual delight.
@@ -115,14 +115,14 @@ function PostDesignPackages() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 h-[8%] w-full overflow-hidden">
-        <div className="flex justify-between items-center w-full px-16 h-full absolute top-0 left-0 z-[10]">
+      <div className="absolute bottom-0 h-[100px] w-[100%] overflow-hidden z-[200]">
+        <div className="flex justify-between items-center w-full px-16 h-full absolute top-[15%] left-0 z-[50]">
           <span className="text-gray-700 text-[15px] font-[500]">
             Social Media Marketing Proposal
           </span>
           <span className="text-gray-700 text-[15px] font-[500]">Page 10</span>
         </div>
-        <div className="w-[200%] h-[350%] absolute top-[5%] right-[15%] rounded-[40%] z-[5] bg-blue-100"></div>
+        <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
       </div>
 
       <div className="absolute bottom-0 h-[35%] w-full overflow-hidden bg-yellow-100 z-[0]"></div>
