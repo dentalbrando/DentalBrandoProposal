@@ -6,7 +6,7 @@ const CoverPage = () => {
   const cover_page = useSelector((state) => state.cover_page);
   return (
     <>
-      <div className="full-proposal flex justify-center items-center full-proposal shadow-lg bg-white">
+      <div className=" flex justify-center items-center full-proposal shadow-lg bg-white">
         <div
           className="relative w-[8.27in] h-[1123.9px] mx-auto bg-white"
           style={{ fontFamily: "'Montserrat'" }}
