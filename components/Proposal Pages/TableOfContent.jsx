@@ -10,7 +10,7 @@ const TableOfContent = () => {
 
   return (
     <>
-      <div className="full-proposal flex  w-[8.27in] h-[297mm] justify-center items-center shadow-lg bg-green-60">
+      <div className="full-proposal flex  w-[8.27in] h-[1126.9px] justify-center items-center shadow-lg bg-white">
         <div
           style={{ fontFamily: "Open sans" }}
           className="flex justify-between mx-auto pl-14 bg-pink-20 w-full h-full"
