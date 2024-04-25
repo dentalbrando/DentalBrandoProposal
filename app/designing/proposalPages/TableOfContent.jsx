@@ -68,7 +68,7 @@ function TableOfContent() {
           </div>
         </div>
 
-        <div className="absolute bottom-0 h-[8%] w-full bg-green-30 overflow-hidde">
+        <div className="absolute bottom-0 h-[8%] w-full bg-green-30 overflow-hidden">
           <div className="flex justify-between items-center w-full px-16 h-full bg-blue-40 absolute top-0 left-0 z-[50]"></div>
           <div className="w-[200%] h-[350%] bg-blue-100 absolute top-[5%] right-[15%] rounded-[40%]"></div>
         </div>
