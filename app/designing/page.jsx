@@ -15,6 +15,7 @@ import Activities from "./proposalPages/Activities";
 import ValuedClient from "./proposalPages/ValuedClient";
 import Estimate from "./proposalPages/Estimate";
 import Terms from "./proposalPages/Terms";
+import Contact from "./proposalPages/Contact";
 
 function Designing() {
   return (
@@ -62,7 +63,10 @@ function Designing() {
         <Estimate />
       </div>
       <div className="w-[8.27in] h-[29.7cm]">
-        <Terms/>
+        <Terms />
+      </div>
+      <div className="w-[8.27in] h-[29.7cm]">
+        <Contact />
       </div>
     </div>
   );
