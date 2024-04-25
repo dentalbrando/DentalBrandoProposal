@@ -102,9 +102,9 @@ const AboutUs = ({ pageNumber }) => {
         <div class="bg-[#00A2FF] flex justify-center items-center px-[30px] w-[52%] h-[11.6876in]">
           <div class="w-[100%]">
             <div class="flex mt-8">
-              <div>
+              <div className=" ">
                 <img
-                  style={{ height: "157px", width: "200px" }}
+                  style={{ height: "157px", width: "230px" }}
                   src={svg1.src}
                   alt=""
                 />
@@ -124,10 +124,10 @@ const AboutUs = ({ pageNumber }) => {
                 </p>
               </div>
             </div>
-            <div class="flex  ">
-              <div>
+            <div class="flex ">
+              <div className=" ">
                 <img
-                  style={{ height: "143px", width: "200px" }}
+                  style={{ height: "143px", width: "220px" }}
                   src={svg2.src}
                   alt=""
                 />
@@ -147,9 +147,9 @@ const AboutUs = ({ pageNumber }) => {
               </div>
             </div>
             <div class="flex ">
-              <div>
+              <div className="">
                 <img
-                  style={{ height: "150px", width: "200px" }}
+                  style={{ height: "150px", width: "210px" }}
                   src={svg3.src}
                   alt=""
                 />
@@ -169,10 +169,10 @@ const AboutUs = ({ pageNumber }) => {
                 </p>
               </div>
             </div>
-            <div class="flex">
-              <div>
+            <div class="flex  bg-red-90">
+              <div className="">
                 <img
-                  style={{ height: "145px", width: "200px" }}
+                  style={{ height: "150px", width: "200px" }}
                   src={svg4.src}
                   alt=""
                 />
@@ -192,14 +192,14 @@ const AboutUs = ({ pageNumber }) => {
               </div>
             </div>
             <div class="flex ">
-              <div>
+              <div className="">
                 <img
-                  style={{ height: "134px", width: "200px" }}
+                  style={{ height: "150px", width: "255px" }}
                   src={svg5.src}
                   alt=""
                 />
               </div>
-              <div class="mt-[35px] ml-3 ">
+              <div class="mt-[35px] ml-3">
                 <h6 class="text-[18.43pt] text-white font-[400] ">
                   Graphic Designing
                 </h6>
