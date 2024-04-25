@@ -5,7 +5,7 @@ import svg4 from "@public/assets/icons-04.svg";
 import svg5 from "@public/assets/icons-05.svg";
 const AboutUs = ({ pageNumber }) => {
   return (
-    <div class="offer flex w-[8.27in] h-[1123.9px] shadow-lg print:shadow-none bg-white">
+    <div class="offer flex w-[8.27in] h-[1123px] shadow-lg print:shadow-none bg-white">
       <div class="flex w-100vw bg-red-20 items-end">
         <div class="w-[48%] bg-green-80 h-full">
           <div class="w-[80%] p-1 mx-auto">
