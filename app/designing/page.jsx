@@ -20,7 +20,7 @@ import Contact from "./proposalPages/Contact";
 function Designing() {
   return (
     <div className="w-full h-fit flex flex-col items-center gap-0">
-      <div className="w-[8.27in] h-[29.7cm]">
+      <div className="w-[21cm] h-[1122.519685px]">
         <CoverPage />
       </div>
       <div className="w-[8.27in] h-[29.7cm]">

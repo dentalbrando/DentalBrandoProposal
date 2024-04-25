@@ -32,6 +32,7 @@ function Estimate() {
             <span className="text-[20px] font-[400]">Invoice To</span>
             <span className="text-[30px] font-[600]">VISTA Conard Tower-1</span>
           </div>
+
           <div className="flex flex-col justify-center w-[87%] gap-1">
             <span className="text-[15.5px] font-[400] text-justify">
               The Estimate has been generated for the following services
@@ -72,19 +73,19 @@ function Estimate() {
                 <div className=" w-[24%] text-center py-1">192300</div>
               </div>
               <div className="flex justify-between w-full text-[16px] font-[400]">
-                <div className=" w-[12%] text-center py-1">2</div>
+                <div className=" w-[12%] text-center py-1">4</div>
                 <div className=" w-[46%] py-1 ps-4">Service description </div>
                 <div className=" w-[16%] text-center py-1">Premium</div>
                 <div className=" w-[24%] text-center py-1">192300</div>
               </div>
               <div className="flex justify-between w-full text-[16px] font-[400]">
-                <div className=" w-[12%] text-center py-1">2</div>
+                <div className=" w-[12%] text-center py-1">5</div>
                 <div className=" w-[46%] py-1 ps-4">Service description </div>
                 <div className=" w-[16%] text-center py-1">Premium</div>
                 <div className=" w-[24%] text-center py-1">192300</div>
               </div>
               <div className="flex justify-between w-full text-[16px] font-[400] pb-5 border-b-[1px] border-black">
-                <div className=" w-[12%] text-center py-1">2</div>
+                <div className=" w-[12%] text-center py-1">6</div>
                 <div className=" w-[46%] py-1 ps-4">Service description </div>
                 <div className=" w-[16%] text-center py-1">Premium</div>
                 <div className=" w-[24%] text-center py-1">192300</div>
@@ -92,27 +93,27 @@ function Estimate() {
             </div>
 
             <div className="flex flex-col justify-end items-end w-full pt-10 pb-7 border-b-[1px] border-black">
-              <div className="flex justify-between items-center w-[30%] px-3 py-1">
-                <span className="text-[17px] font-[700] text-justify">
+              <div className="flex justify-between items-center w-[40%] px-3 py-1">
+                <span className="text-[17px] font-[700] text-justify w-[40%]">
                   SUBTOTAL
                 </span>
-                <span className="text-[17px] font-[600] text-justify">
-                  192300
+                <span className="text-[17px] font-[600] text-center w-[56%]">
+                  192
                 </span>
               </div>
-              <div className="flex justify-between items-center w-[30%] px-3 py-1">
-                <span className="text-[17px] font-[700] text-justify">
+              <div className="flex justify-between items-center w-[40%] px-3 py-1">
+                <span className="text-[17px] font-[700] text-justify w-[40%]">
                   DISCOUNT
                 </span>
-                <span className="text-[17px] font-[600] text-justify">
+                <span className="text-[17px] font-[600] text-center w-[56%]">
                   -54230
                 </span>
               </div>
-              <div className="flex justify-between items-center w-[30%] px-3 py-2 bg-[rgb(255,214,0)]">
-                <span className="text-[17px] font-[700] text-justify">
+              <div className="flex justify-between items-center w-[40%] px-3 py-2 bg-[rgb(255,214,0)]">
+                <span className="text-[17px] font-[700] text-justify w-[40%]">
                   TOTAL
                 </span>
-                <span className="text-[17px] font-[600] text-justify">
+                <span className="text-[17px] font-[600] text-center w-[56%]">
                   982000
                 </span>
               </div>
@@ -123,8 +124,8 @@ function Estimate() {
                 TERMS & CONDITIONS
               </span>
               <span className="text-[15.5px] font-[400] w-full text-justify">
-                1.The Estimate has been generated for the following services
-                provided on terms agreed beforehand.
+                1. This is an estimate only, and will be provided an invoice
+                after acceptance of this estimate.
               </span>
               <span className="text-[15.5px] font-[400] w-full text-justify">
                 2. Estimate can be revise if change in work requirements
