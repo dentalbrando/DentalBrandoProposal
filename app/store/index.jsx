@@ -9,6 +9,7 @@ import proposedSitemap2 from "./proposedSitemap2";
 import budget from "./budget";
 import pageSequence from "./pageSequence";
 import proposedSitemapOverview from "./proposedSitemapOverview"
+import out from "./out";
 const store = configureStore({
   reducer: {
     page,
@@ -21,6 +22,7 @@ const store = configureStore({
     pageSequence,
     proposedSitemap2,
     proposedSitemapOverview,
+    out
   },
 });
 export default store;

@@ -104,15 +104,16 @@ const Home = () => {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }
   // let out =
+  const pageout = useSelector((state) => state.page.formId2);
+  console.log(pageout);
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (
         <div className="w-fit m-auto py-24">
           <Loader />
         </div>
-      ) : isVerified || !out ? (
-          <>
-            
+      ) : isVerified (
+        <>
           <Nav />
           <div className="flex gap-24 justify-center items-center h-[88vh] w-[100%]">
             <Link href={"/development"}>
