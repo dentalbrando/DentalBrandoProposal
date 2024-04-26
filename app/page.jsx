@@ -88,7 +88,7 @@ const Home = () => {
         }
       }
       postToken();
-
+ 
       async function verifyTokenApi() {
         try {
           await axios.get("/api/verifyToken");
