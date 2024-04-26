@@ -51,7 +51,6 @@ const Sidebar = () => {
   async function logout() {
     try {
       await axios.get("/api/logOut");
-      localStorage.setItem("setOut", true);
       // Cookies.remove("authToken");
     } catch (error) {
       console.error("Error logging out:", error);

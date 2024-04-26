@@ -27,7 +27,6 @@ function Login(prop) {
       });
       result.data.msg
         ? (prop.setTokenVerifierTrigger(prop.tokenVerifierTrigger + 1),
-          localStorage.setItem("setOut", false),
           prop.setUserId(result.data.userId))
         : setLoginError(result.data.error);
       setPasswordError(""), setUsernameError("");

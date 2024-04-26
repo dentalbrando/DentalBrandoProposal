@@ -103,7 +103,7 @@ const Home = () => {
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }
-  let out = localStorage.getItem("setOut");
+  // let out =
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (
