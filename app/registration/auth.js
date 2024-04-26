@@ -8,7 +8,7 @@ export function setTokenToCookies(userData) {
   const cookie = serialize("authToken", token, {
     maxAge: 3600,
     expires: new Date(Date.now() + 3600),
-    httpOnly: true,
+    httpOnly: false,
     secure: true,
     sameSite: "lax",
   });
@@ -21,7 +21,7 @@ export function removeTokenFromCookies() {
   const cookie = serialize("authToken", "", {
     maxAge: -1, // Set maxAge to -1 to expire the cookie immediately
     expires: new Date(0), // Set expires to Unix epoch (past date)
-    httpOnly: true, // Ensure cookie is only accessible via HTTP requests
+    httpOnly: false, // Ensure cookie is only accessible via HTTP requests
     secure: true, // Only send the cookie over HTTPS connections (if applicable)
     sameSite: "lax", // Restrict cookie access for cross-site requests
   });
