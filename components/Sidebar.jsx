@@ -8,7 +8,8 @@ import { resetSquence, setPageSequence } from "@app/store/pageSequence";
 import { FaCheck } from "react-icons/fa";
 import Link from "next/link";
 import axios from "axios";
-import { remove } from "react-cookie";
+// import { remove } from "react-cookie";
+import Cookies from "js-cookie";
 
 const Sidebar = () => {
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
@@ -47,15 +48,17 @@ const Sidebar = () => {
     dispatch(setPageSequence(items));
   }, [items]);
 
- async function logout() {
-   try {
-     await axios.get("/api/logOut");
-   } catch (error) {
-     console.error("Error logging out:", error);
-   } finally {
-     window.location.href = "/"; // Redirect regardless of success or failure
-   }
- }
+  async function logout() {
+    try {
+      await axios.get("/api/logOut");
+      localStorage.setItem("setOut", true);
+      // Cookies.remove("authToken");
+    } catch (error) {
+      console.error("Error logging out:", error);
+    } finally {
+      window.location.href = "/"; // Redirect regardless of success or failure
+    }
+  }
 
   return (
     <div className="w-[20vw] h-fit border-r-2 border-b-2 border-color px-7 pt-4 pb-10 custom-bg">
