@@ -48,6 +48,8 @@ const Sidebar = () => {
   async function logout() {
     try {
       await axios.get("/api/logOut");
+    } catch {
+      console.log("error");
     } finally {
       window.location.href = "/";
     }
