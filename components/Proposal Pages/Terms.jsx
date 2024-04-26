@@ -3,7 +3,7 @@ import React from "react";
 const Terms = ({ pageNumber }) => {
   return (
     <>
-      <div class="offer w-[8.27in] h-[1122.9px] print:shadow-none shadow-lg bg-white">
+      <div class="offer w-[8.27in] h-[1122.7px] print:shadow-none shadow-lg bg-white">
         <div class="w-full h-full">
           <div class="w-[90%] mx-auto">
             <div class="flex  h-[7.3rem] ">

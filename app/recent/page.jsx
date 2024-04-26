@@ -242,19 +242,19 @@ function Proposal() {
                                     {key < 9 ? "0" : null}
                                     {key + 1}
                                   </td>
-                                  <td className="td-border text-center py-4 text-lg w-[180px">
+                                  <td className="td-border text-center py-4 text-lg w-[180px]">
                                     {item.cover_letter.clientName}
                                   </td>
-                                  <td className="td-border text-center py-4 text-lg w-[200px">
+                                  <td className="td-border text-center py-4 text-lg w-[200px]">
                                     {item.cover_page.projectTitle}
                                   </td>
-                                  <td className="td-border text-center py-4 text-lg w-[220px">
+                                  <td className="td-border text-center py-4 text-lg w-[220px]">
                                     {item.cover_page.companyName}
                                   </td>
-                                  <td className="td-border text-center py-4 text-lg w-[170px">
+                                  <td className="td-border text-center py-4 text-lg w-[170px]">
                                     {item.cover_page.issueDate}
                                   </td>
-                                  <td className="td-border text-center py-4 text-lg w-[170px">
+                                  <td className="td-border text-center py-4 text-lg w-[170px]">
                                     {item.cover_page.validDate}
                                   </td>
                                   <td className="text-center text-lg px-0 bg-red-200">
@@ -264,7 +264,7 @@ function Proposal() {
                                           onClick={() => {
                                             deleteProposal(item._id);
                                           }}
-                                          className="text-red-400 leading-3 underline mx-auto"
+                                          className="text-red-400 leading-3 underline"
                                         >
                                           Delete
                                         </button>
@@ -273,7 +273,7 @@ function Proposal() {
                                         onClick={() => {
                                           regenerate(key);
                                         }}
-                                        className="text-main-blue leading-3 underline mx-auto"
+                                        className="text-main-blue leading-3 underline"
                                       >
                                         Regenerate
                                       </button>
