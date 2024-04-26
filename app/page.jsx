@@ -98,7 +98,8 @@ const Home = () => {
       // verifyToken(setIsVerified);
     };
     storeTokenToDb();
-  }, [tokenVerifierTrigger]);
+  }, []);
+  // }, [tokenVerifierTrigger]);
   console.log(isVerified);
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
