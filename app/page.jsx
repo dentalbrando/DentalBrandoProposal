@@ -99,6 +99,7 @@ const Home = () => {
     };
     storeTokenToDb();
   }, [tokenVerifierTrigger]);
+  console.log(isVerified);
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }

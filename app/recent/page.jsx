@@ -88,21 +88,7 @@ function Proposal() {
       }
     }
     verifyTokenApi();
-    // const storeTokenToDb = async () => {
-    //   async function postToken() {
-    //     try {
-    //       setLoading(true);
-    //       let result = await axios.post(`/api/storeTokenToDb`, { userId });
-    //       setUserData(result.data.userData);
-    //     } catch (err) {
-    //       setLoading(false);
-    //     } finally {
-    //       setLoading(false);
-    //     }
-    //   }
-    // postToken();
-    // };
-    // storeTokenToDb()
+
   }, [isVerified]);
   console.log(userData);
   if (proposalData && !buttonArray) {

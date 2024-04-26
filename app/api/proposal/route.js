@@ -8,7 +8,6 @@ export async function POST(req) {
 }
  
 export async function GET(req) {
-  console.log("ehllo");
   let proposalData = await ProposalModel.find();
   return NextResponse.json({ proposalData });
 }
