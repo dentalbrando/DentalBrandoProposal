@@ -97,7 +97,7 @@ const Home = () => {
       verifyTokenApi();
       // verifyToken(setIsVerified);
     };
-    storeTokenToDb();
+    // storeTokenToDb();
   }, [tokenVerifierTrigger]);
   console.log(isVerified);
   {

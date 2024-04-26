@@ -25,7 +25,7 @@ export async function POST(req) {
         { userId: tokenAlreadyAvaible.userId },
         { $set: { token: token } }
       );
-
+     
       userData = await RegistrationModel.findOne({
         _id: tokenAlreadyAvaible.userId,
       });
