@@ -111,7 +111,8 @@ const Home = () => {
           <Loader />
         </div>
       ) : isVerified || !out ? (
-        <>
+          <>
+            
           <Nav />
           <div className="flex gap-24 justify-center items-center h-[88vh] w-[100%]">
             <Link href={"/development"}>
