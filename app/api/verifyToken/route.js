@@ -11,6 +11,6 @@ export async function GET(req) {
   }
   let securityKey = process.env.SECURITY_KEY;
 
-  jwt.verify(token, securityKey);
+  jwt.verify(token, "securityKey");
   return NextResponse.json({ msg: "verified" });
 }
