@@ -84,7 +84,7 @@ const Home = () => {
           setLoading(false);
         }
       }
-      postToken();
+      // postToken();
 
       async function verifyTokenApi() {
         try {
@@ -97,7 +97,7 @@ const Home = () => {
       verifyTokenApi();
       // verifyToken(setIsVerified);
     };
-    // storeTokenToDb();
+    storeTokenToDb();
   }, [tokenVerifierTrigger]);
   console.log(isVerified);
   {
