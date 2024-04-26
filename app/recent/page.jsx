@@ -78,7 +78,6 @@ function Proposal() {
         setLoading(false);
       }
     }
-    console.log(userData);
 
     if (isVerified === true) {
       getUserData();
