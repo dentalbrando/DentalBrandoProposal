@@ -257,7 +257,7 @@ function Proposal() {
                                   <td className="td-border text-center py-4 text-lg w-[170px]">
                                     {item.cover_page.validDate}
                                   </td>
-                                  <td className="text-center text-lg px-0 bg-red-200">
+                                  <td className="text-center text-lg px-0 ">
                                     <div className="flex justify-evenly items-center w-full">
                                       {userData ? (
                                         <button
