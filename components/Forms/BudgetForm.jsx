@@ -13,7 +13,6 @@ const BudgetForm = () => {
   const dispatch = useDispatch();
   const storedServices = useSelector((state) => state.budget.service);
   const budget = useSelector((state) => state.budget);
-  console.log(budget);
   const [services, setServices] = useState(
     storedServices ? storedServices : [{}]
   ); // An array of service objects
