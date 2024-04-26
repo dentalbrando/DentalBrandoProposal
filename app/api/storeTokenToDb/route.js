@@ -48,7 +48,7 @@ export async function POST(req) {
       await TokenModel.updateOne(
         { userId: userId },
         { $set: { token: token } }
-      );
+      ); 
     }
     userData = await RegistrationModel.findOne({ _id: userId });
     return NextResponse.json({ userData });

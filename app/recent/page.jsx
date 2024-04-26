@@ -45,7 +45,6 @@ function Proposal() {
   let [searchData, setSearchData] = useState();
   let [userData, setUserData] = useState();
   let [tableLoading, setTableLoading] = useState(true);
-  let [timer, setTimer] = useState(0);
 
   let limit = 8;
 
@@ -89,12 +88,33 @@ function Proposal() {
       }
     }
     verifyTokenApi();
-  }, [isVerified, timer]);
-  setInterval(() => {
-    setTimer(timer + 1);
-  }, 3600000);
-  console.log(userData);
+    // const storeTokenToDb = async () => {
+    //   async function postToken() {
+    //     try {
+    //       setLoading(true);
+    //       let result = await axios.post(`/api/storeTokenToDb`, { userId });
+    //       setUserData(result.data.userData);
+    //     } catch (err) {
+    //       setLoading(false);
+    //     } finally {
+    //       setLoading(false);
+    //     }
+    //   }
+    //   postToken();
 
+    //   async function verifyTokenApi() {
+    //     try {
+    //       await axios.get("/api/verifyToken");
+    //       setIsVerified(true);
+    //     } catch (err) {
+    //       setIsVerified(false);
+    //     }
+    //   }
+    //   verifyTokenApi();
+    //   // verifyToken(setIsVerified);
+    // };
+  }, [isVerified]);
+  console.log(userData);
   if (proposalData && !buttonArray) {
     setButtonArray(Array(Math.ceil(proposalData.length / limit)).fill(null));
   }
@@ -323,14 +343,27 @@ function Proposal() {
     }
   }
 
-  async function deleteProposal(_id) {
+  async function deleteProposal(_id, inSearch) {
+    console.log(_id);
     let { data } = await axios.post("/api/deleteProposal", { _id: _id });
     let { acknowledged } = data;
     if (acknowledged) {
-      let deletedProposals = proposalData.filter(
-        (item) => !item._id.includes(_id)
-      );
-      setProposalData(deletedProposals);
+      if (inSearch) {
+        let searchDeletedProposals = searchData.filter(
+          (item) => !item._id.includes(_id)
+        );
+        setSearchData(searchDeletedProposals);
+
+        let ProposalDeletedProposals = proposalData.filter(
+          (item) => !item._id.includes(_id)
+        );
+        setProposalData(ProposalDeletedProposals);
+      } else {
+        let ProposalDeletedProposals = proposalData.filter(
+          (item) => !item._id.includes(_id)
+        );
+        setProposalData(ProposalDeletedProposals);
+      }
     }
   }
   return (
@@ -429,7 +462,7 @@ function Proposal() {
                                         {userData === true ? (
                                           <button
                                             onClick={() => {
-                                              deleteProposal(item._id);
+                                              deleteProposal(item._id, true);
                                             }}
                                             className="text-red-400 leading-3 underline"
                                           >
@@ -488,7 +521,7 @@ function Proposal() {
                                         {userData === true ? (
                                           <button
                                             onClick={() => {
-                                              deleteProposal(item._id);
+                                              deleteProposal(item._id, false);
                                             }}
                                             className="text-red-400 leading-3 underline"
                                           >

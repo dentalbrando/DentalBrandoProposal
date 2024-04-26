@@ -74,7 +74,7 @@ const Home = () => {
   useEffect(() => {
     const storeTokenToDb = async () => {
       async function postToken() {
-        try {
+        try { 
           setLoading(true);
           let result = await axios.post(`/api/storeTokenToDb`, { userId });
           setUserData(result.data.userData);
