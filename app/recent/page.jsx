@@ -78,6 +78,7 @@ function Proposal() {
         setLoading(false);
       }
     }
+    console.log(userData);
 
     if (isVerified === true) {
       getUserData();
@@ -202,8 +203,8 @@ function Proposal() {
               </div>
 
               <div className="tableDiv h-fit">
-                <table className="table-border w-fit mx-auto w-full">
-                  <thead className="thead">
+                <table className="table-border w-fit mx-auto w-[90vw]">
+                  <thead className="w-full">
                     <tr className="">
                       <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
                         No.
@@ -230,12 +231,12 @@ function Proposal() {
                   </thead>
 
                   {searchData ? (
-                    <tbody>
+                    <tbody className="w-full">
                       {searchData
                         ? searchData.map((item, key) => (
-                            <tr key={key} className="tr-border">
-                              {key >= multiplier * limit &&
-                              key < limit * (multiplier + 1) &&
+                            <tr key={key} className="tr-border w-full">
+                              {key >= multiplierForSearch * limit &&
+                              key < limit * (multiplierForSearch + 1) &&
                               searchData[key] ? (
                                 <>
                                   <td className="td-border text-center py-4 text-lg w-[100px]">
@@ -257,7 +258,7 @@ function Proposal() {
                                   <td className="td-border text-center py-4 text-lg w-[170px]">
                                     {item.cover_page.validDate}
                                   </td>
-                                  <td className="text-center text-lg px-0 ">
+                                  <td className="text-center text-lg px-0 w-[190px]">
                                     <div className="flex justify-evenly items-center w-full">
                                       {userData ? (
                                         <button
@@ -313,8 +314,8 @@ function Proposal() {
                                   <td className="td-border text-center py-4 text-lg w-[170px]">
                                     {item.cover_page.validDate}
                                   </td>
-                                  <td className="text-center text-lg px-0 ">
-                                    <div className="flex justify-evenly items-center w-full">
+                                  <td className="text-center text-lg px-0 w-[190px]">
+                                    <div className="flex justify-evenly items-center">
                                       {userData ? (
                                         <button
                                           onClick={() => {
@@ -348,7 +349,7 @@ function Proposal() {
               {proposalData ? (
                 <div className="flex-end py-2 absolute right-10 top-[100%]">
                   {searchData === undefined || searchData === null ? (
-                    <div className="ms-5 flex gap-2 items-center">
+                    <div className="ms-5 flex gap-2 items-center ">
                       <button
                         className={`px-2 text-lg ${
                           multiplier <= 0 ? "text-gray-400" : "text-main-blue"
@@ -398,7 +399,7 @@ function Proposal() {
                       </button>
                     </div>
                   ) : (
-                    <div className="ms-5 flex gap-2">
+                    <div className="ms-5 flex gap-2 items-center ">
                       <button
                         className={`px-2 text-lg ${
                           multiplierForSearch <= 0
@@ -415,6 +416,7 @@ function Proposal() {
 
                       <div className="flex-between gap-2">
                         <span>
+                          {multiplierForSearch * 8 + 1 <= 9 ? "0" : null}
                           <span>
                             {searchData.length > 0
                               ? multiplierForSearch * 8 + 1
@@ -422,6 +424,7 @@ function Proposal() {
                           </span>
                           -
                           <span>
+                            {multiplierForSearch * 8 + 8 <= 9 ? "0" : null}
                             {multiplierForSearch * 8 + 8 >= searchData.length
                               ? searchData.length
                               : multiplierForSearch * 8 + 8}
@@ -433,7 +436,7 @@ function Proposal() {
 
                       <button
                         className={`px-2 text-lg ${
-                          multiplierForSearch * 8 + 8 >= proposalData.length
+                          multiplierForSearch * 8 + 8 >= searchData.length
                             ? "text-gray-400"
                             : "text-main-blue"
                         }`}
@@ -441,7 +444,7 @@ function Proposal() {
                           setMultiplierForSearch(multiplierForSearch + 1);
                         }}
                         disabled={
-                          multiplierForSearch * 8 + 8 >= proposalData.length
+                          multiplierForSearch * 8 + 8 >= searchData.length
                             ? true
                             : false
                         }
