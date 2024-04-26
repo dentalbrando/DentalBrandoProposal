@@ -10,7 +10,7 @@ export async function GET(req) {
     token = "";
   }
   let securityKey = process.env.SECURITY_KEY;
-  console.log(securityKey);
+
   jwt.verify(token, securityKey);
   return NextResponse.json({ msg: "verified" });
 }

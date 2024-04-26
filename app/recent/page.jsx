@@ -79,10 +79,11 @@ function Proposal() {
       }
     }
 
-    if (isVerified === true) {
+    if (isVerified !== false) {
       getUserData();
       getData();
     }
+    console.log(userData);
     async function verifyTokenApi() {
       try {
         await axios.get("/api/verifyToken");
@@ -425,7 +426,7 @@ function Proposal() {
                                     </td>
                                     <td className="text-center text-lg px-0 w-[190px]">
                                       <div className="flex justify-evenly items-center w-full">
-                                        {userData ? (
+                                        {userData === true ? (
                                           <button
                                             onClick={() => {
                                               deleteProposal(item._id);
@@ -484,7 +485,7 @@ function Proposal() {
                                     </td>
                                     <td className="text-center text-lg px-0 w-[190px]">
                                       <div className="flex justify-evenly items-center">
-                                        {userData ? (
+                                        {userData === true ? (
                                           <button
                                             onClick={() => {
                                               deleteProposal(item._id);

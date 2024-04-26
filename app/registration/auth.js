@@ -2,8 +2,8 @@ import jwt from "jsonwebtoken";
 import { serialize } from "cookie";
 
 export function setTokenToCookies(userData) {
-  // let securityKey = "securityKey";
-  let token = jwt.sign(userData, "securityKey", { expiresIn: "1h" });
+  let securityKey = process.env.SECURITY_KEY;
+  let token = jwt.sign(userData, securityKey, { expiresIn: "1h" });
 
   const cookie = serialize("authToken", token, {
     maxAge: 3600,
