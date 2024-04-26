@@ -110,43 +110,42 @@ const Home = () => {
           <Loader />
         </div>
       ) : isVerified ? (
-      <>
-        <Nav />
-        <div className="flex gap-24 justify-center items-center h-[88vh] w-[100%]">
-          <Link href={'/development'}>
-            <div className="w-[100%] h-[100%] p5 relative">
-              <div className="w-[100%] h-[100%]">
-                <img src={frame3.src} className="w-[100%] h-[100%]" />
+        <>
+          <Nav />
+          <div className="flex gap-24 justify-center items-center h-[88vh] w-[100%]">
+            <Link href={"/development"}>
+              <div className="w-[100%] h-[100%] p5 relative">
+                <div className="w-[100%] h-[100%]">
+                  <img src={frame3.src} className="w-[100%] h-[100%]" />
+                </div>
+                <div className="w-fit h-[50%] absolute bottom-0 right-0">
+                  <img src={layer3.src} />
+                </div>
               </div>
-              <div className="w-fit h-[50%] absolute bottom-0 right-0">
-                <img src={layer3.src} />
-              </div>
-            </div>
-          </Link>
+            </Link>
 
-          <Link href={'/seo'}>
-        
-            <div className="w-[100%] h-[100%] p5 relative">
-              <div className="w-[100%] h-[100%]">
-                <img src={frame1.src} className="w-[100%] h-[100%]" />
+            <Link href={"/seo"}>
+              <div className="w-[100%] h-[100%] p5 relative">
+                <div className="w-[100%] h-[100%]">
+                  <img src={frame1.src} className="w-[100%] h-[100%]" />
+                </div>
+                <div className="w-fit h-[50%] absolute bottom-0 right-0">
+                  <img src={layer1.src} />
+                </div>
               </div>
-              <div className="w-fit h-[50%] absolute bottom-0 right-0">
-                <img src={layer1.src} />
+            </Link>
+            <Link href={"/social-media"}>
+              <div className="w-[100%] h-[100%] p5 relative">
+                <div className="w-[100%] h-[100%]">
+                  <img src={frame2.src} className="w-[100%] h-[100%]" />
+                </div>
+                <div className="w-fit h-[50%] absolute bottom-0 right-0">
+                  <img src={layer2.src} />
+                </div>
               </div>
-            </div>
-          </Link>
-          <Link href={'/designing'}>
-            <div className="w-[100%] h-[100%] p5 relative">
-              <div className="w-[100%] h-[100%]">
-                <img src={frame2.src} className="w-[100%] h-[100%]" />
-              </div>
-              <div className="w-fit h-[50%] absolute bottom-0 right-0">
-                <img src={layer2.src} />
-              </div>
-            </div>
-          </Link>
-        </div>
-      </>
+            </Link>
+          </div>
+        </>
       ) : (
         <Registration
           tokenVerifierTrigger={tokenVerifierTrigger}

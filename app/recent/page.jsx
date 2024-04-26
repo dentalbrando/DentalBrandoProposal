@@ -100,19 +100,9 @@ function Proposal() {
     //       setLoading(false);
     //     }
     //   }
-    //   postToken();
-
-    //   async function verifyTokenApi() {
-    //     try {
-    //       await axios.get("/api/verifyToken");
-    //       setIsVerified(true);
-    //     } catch (err) {
-    //       setIsVerified(false);
-    //     }
-    //   }
-    //   verifyTokenApi();
-    //   // verifyToken(setIsVerified);
+    // postToken();
     // };
+    // storeTokenToDb()
   }, [isVerified]);
   console.log(userData);
   if (proposalData && !buttonArray) {

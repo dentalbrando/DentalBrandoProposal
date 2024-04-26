@@ -89,6 +89,8 @@ const CoverPage = () => {
                     : "{No Issue Date}"}
                 </span>
               </div>
+
+              
               <div className="text-[11pt] font-[700]">
                 <p>Proposal Valid to:</p>
                 <span className="" id="valid-date">
