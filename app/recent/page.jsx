@@ -82,8 +82,7 @@ function Proposal() {
     if (isVerified === true) {
       getUserData();
       getData();
-    }
-
+    } 
     async function verifyTokenApi() {
       try {
         await axios.get("/api/verifyToken");
@@ -100,47 +99,194 @@ function Proposal() {
   }
   function regenerate(key, inSearch) {
     if (inSearch) {
-      dispatch(setFunctionalities(searchData[searchData.length - 1 - key].aboutYourProject.functionality));
-      dispatch(setOverviews(searchData[searchData.length - 1 - key].aboutYourProject.overview));
-      dispatch(setWebsiteCMSs(searchData[searchData.length - 1 - key].aboutYourProject.websiteCMS));
-      dispatch(setService(searchData[searchData.length - 1 - key].budget.service));
-      dispatch(setDiscount(searchData[searchData.length - 1 - key].budget.discount));
-      dispatch(setCurrency(searchData[searchData.length - 1 - key].budget.currency));
+      dispatch(
+        setFunctionalities(
+          searchData[searchData.length - 1 - key].aboutYourProject.functionality
+        )
+      );
+      dispatch(
+        setOverviews(
+          searchData[searchData.length - 1 - key].aboutYourProject.overview
+        )
+      );
+      dispatch(
+        setWebsiteCMSs(
+          searchData[searchData.length - 1 - key].aboutYourProject.websiteCMS
+        )
+      );
+      dispatch(
+        setService(searchData[searchData.length - 1 - key].budget.service)
+      );
+      dispatch(
+        setDiscount(searchData[searchData.length - 1 - key].budget.discount)
+      );
+      dispatch(
+        setCurrency(searchData[searchData.length - 1 - key].budget.currency)
+      );
       dispatch(setTerms(searchData[searchData.length - 1 - key].budget.terms));
-      dispatch(setLetterText(searchData[searchData.length - 1 - key].cover_letter.letterText));
-      dispatch(setClientName(searchData[searchData.length - 1 - key].cover_letter.clientName));
-      dispatch(setSubHeading(searchData[searchData.length - 1 - key].cover_page.subHeading));
-      dispatch(setProjectTitle(searchData[searchData.length - 1 - key].cover_page.projectTitle));
-      dispatch(setCompanyPhoneNumber(searchData[searchData.length - 1 - key].cover_page.companyPhoneNumber));
-      dispatch(setCompanyAddress(searchData[searchData.length - 1 - key].cover_page.companyAddress));
-      dispatch(setCompanyName(searchData[searchData.length - 1 - key].cover_page.companyName));
-      dispatch(setIssueDate(searchData[searchData.length - 1 - key].cover_page.issueDate));
-      dispatch(setValidDate(searchData[searchData.length - 1 - key].cover_page.validDate));
-      dispatch(setCompanyLogo(searchData[searchData.length - 1 - key].cover_page.companyLogo));
-      dispatch(setSiteMapOverview(searchData[searchData.length - 1 - key].proposedSitemapOverview.overview));
-      dispatch(setSiteMap(searchData[searchData.length - 1 - key].proposedSitemap.sitemap));
-      dispatch(setSiteMap2(searchData[searchData.length - 1 - key].proposedSitemap2.sitemap2));
+      dispatch(
+        setLetterText(
+          searchData[searchData.length - 1 - key].cover_letter.letterText
+        )
+      );
+      dispatch(
+        setClientName(
+          searchData[searchData.length - 1 - key].cover_letter.clientName
+        )
+      );
+      dispatch(
+        setSubHeading(
+          searchData[searchData.length - 1 - key].cover_page.subHeading
+        )
+      );
+      dispatch(
+        setProjectTitle(
+          searchData[searchData.length - 1 - key].cover_page.projectTitle
+        )
+      );
+      dispatch(
+        setCompanyPhoneNumber(
+          searchData[searchData.length - 1 - key].cover_page.companyPhoneNumber
+        )
+      );
+      dispatch(
+        setCompanyAddress(
+          searchData[searchData.length - 1 - key].cover_page.companyAddress
+        )
+      );
+      dispatch(
+        setCompanyName(
+          searchData[searchData.length - 1 - key].cover_page.companyName
+        )
+      );
+      dispatch(
+        setIssueDate(
+          searchData[searchData.length - 1 - key].cover_page.issueDate
+        )
+      );
+      dispatch(
+        setValidDate(
+          searchData[searchData.length - 1 - key].cover_page.validDate
+        )
+      );
+      dispatch(
+        setCompanyLogo(
+          searchData[searchData.length - 1 - key].cover_page.companyLogo
+        )
+      );
+      dispatch(
+        setSiteMapOverview(
+          searchData[searchData.length - 1 - key].proposedSitemapOverview
+            .overview
+        )
+      );
+      dispatch(
+        setSiteMap(
+          searchData[searchData.length - 1 - key].proposedSitemap.sitemap
+        )
+      );
+      dispatch(
+        setSiteMap2(
+          searchData[searchData.length - 1 - key].proposedSitemap2.sitemap2
+        )
+      );
     } else {
-      dispatch(setFunctionalities(proposalData[proposalData.length - 1 - key].aboutYourProject.functionality));
-      dispatch(setOverviews(proposalData[proposalData.length - 1 - key].aboutYourProject.overview));
-      dispatch(setWebsiteCMSs(proposalData[proposalData.length - 1 - key].aboutYourProject.websiteCMS));
-      dispatch(setService(proposalData[proposalData.length - 1 - key].budget.service));
-      dispatch(setDiscount(proposalData[proposalData.length - 1 - key].budget.discount));
-      dispatch(setCurrency(proposalData[proposalData.length - 1 - key].budget.currency));
-      dispatch(setTerms(proposalData[proposalData.length - 1 - key].budget.terms));
-      dispatch(setLetterText(proposalData[proposalData.length - 1 - key].cover_letter.letterText));
-      dispatch(setClientName(proposalData[proposalData.length - 1 - key].cover_letter.clientName));
-      dispatch(setSubHeading(proposalData[proposalData.length - 1 - key].cover_page.subHeading));
-      dispatch(setProjectTitle(proposalData[proposalData.length - 1 - key].cover_page.projectTitle));
-      dispatch(setCompanyPhoneNumber(proposalData[proposalData.length - 1 - key].cover_page.companyPhoneNumber));
-      dispatch(setCompanyAddress(proposalData[proposalData.length - 1 - key].cover_page.companyAddress));
-      dispatch(setCompanyName(proposalData[proposalData.length - 1 - key].cover_page.companyName));
-      dispatch(setIssueDate(proposalData[proposalData.length - 1 - key].cover_page.issueDate));
-      dispatch(setValidDate(proposalData[proposalData.length - 1 - key].cover_page.validDate));
-      dispatch(setCompanyLogo(proposalData[proposalData.length - 1 - key].cover_page.companyLogo));
-      dispatch(setSiteMapOverview(proposalData[proposalData.length - 1 - key].proposedSitemapOverview.overview));
-      dispatch(setSiteMap(proposalData[proposalData.length - 1 - key].proposedSitemap.sitemap));
-      dispatch(setSiteMap2(proposalData[proposalData.length - 1 - key].proposedSitemap2.sitemap2));
+      dispatch(
+        setFunctionalities(
+          proposalData[proposalData.length - 1 - key].aboutYourProject
+            .functionality
+        )
+      );
+      dispatch(
+        setOverviews(
+          proposalData[proposalData.length - 1 - key].aboutYourProject.overview
+        )
+      );
+      dispatch(
+        setWebsiteCMSs(
+          proposalData[proposalData.length - 1 - key].aboutYourProject
+            .websiteCMS
+        )
+      );
+      dispatch(
+        setService(proposalData[proposalData.length - 1 - key].budget.service)
+      );
+      dispatch(
+        setDiscount(proposalData[proposalData.length - 1 - key].budget.discount)
+      );
+      dispatch(
+        setCurrency(proposalData[proposalData.length - 1 - key].budget.currency)
+      );
+      dispatch(
+        setTerms(proposalData[proposalData.length - 1 - key].budget.terms)
+      );
+      dispatch(
+        setLetterText(
+          proposalData[proposalData.length - 1 - key].cover_letter.letterText
+        )
+      );
+      dispatch(
+        setClientName(
+          proposalData[proposalData.length - 1 - key].cover_letter.clientName
+        )
+      );
+      dispatch(
+        setSubHeading(
+          proposalData[proposalData.length - 1 - key].cover_page.subHeading
+        )
+      );
+      dispatch(
+        setProjectTitle(
+          proposalData[proposalData.length - 1 - key].cover_page.projectTitle
+        )
+      );
+      dispatch(
+        setCompanyPhoneNumber(
+          proposalData[proposalData.length - 1 - key].cover_page
+            .companyPhoneNumber
+        )
+      );
+      dispatch(
+        setCompanyAddress(
+          proposalData[proposalData.length - 1 - key].cover_page.companyAddress
+        )
+      );
+      dispatch(
+        setCompanyName(
+          proposalData[proposalData.length - 1 - key].cover_page.companyName
+        )
+      );
+      dispatch(
+        setIssueDate(
+          proposalData[proposalData.length - 1 - key].cover_page.issueDate
+        )
+      );
+      dispatch(
+        setValidDate(
+          proposalData[proposalData.length - 1 - key].cover_page.validDate
+        )
+      );
+      dispatch(
+        setCompanyLogo(
+          proposalData[proposalData.length - 1 - key].cover_page.companyLogo
+        )
+      );
+      dispatch(
+        setSiteMapOverview(
+          proposalData[proposalData.length - 1 - key].proposedSitemapOverview
+            .overview
+        )
+      );
+      dispatch(
+        setSiteMap(
+          proposalData[proposalData.length - 1 - key].proposedSitemap.sitemap
+        )
+      );
+      dispatch(
+        setSiteMap2(
+          proposalData[proposalData.length - 1 - key].proposedSitemap2.sitemap2
+        )
+      );
     }
     dispatch(updatePage(100));
     router.push("/development");
@@ -219,7 +365,7 @@ function Proposal() {
               </div>
 
               <div className="tableDiv h-fit">
-                <table className="table-border w-fit mx-auto w-[90vw]">
+                <table className="table-border w-fit mx-auto w-[100%]">
                   <thead className="w-full">
                     <tr className="">
                       <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
