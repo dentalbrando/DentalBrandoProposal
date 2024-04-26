@@ -4,8 +4,6 @@ import { NextResponse } from "next/server";
 export async function POST(req) {
   let proposalData = await req.json();
   await ProposalModel(proposalData).save();
-  console.log(proposalData.cover_page.companyLogo);
-console.log(proposalData);  
   return NextResponse.json({ proposalData });
 }
  

@@ -126,7 +126,7 @@ const Budget = () => {
                     return null;
                   }
                   return (
-                    <tr>
+                    <tr key={index}>
                       <td className="text-[8.85pt] font-[700]">{index + 1}.</td>
                       <td className="w-1/2 text-[10pt] pl-[0] font-[700] capitalize">
                         {service.description}
