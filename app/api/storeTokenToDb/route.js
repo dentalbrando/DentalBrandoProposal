@@ -5,6 +5,7 @@ import RegistrationModel from "@app/models/registration";
 import { cookies } from "next/headers";
 
 export async function POST(req) {
+  console.log("storeing");
   let userData = null;
   let token = cookies().get("authToken");
   if (token) {
@@ -25,7 +26,7 @@ export async function POST(req) {
         { userId: tokenAlreadyAvaible.userId },
         { $set: { token: token } }
       );
-     
+
       userData = await RegistrationModel.findOne({
         _id: tokenAlreadyAvaible.userId,
       });
@@ -48,7 +49,7 @@ export async function POST(req) {
       await TokenModel.updateOne(
         { userId: userId },
         { $set: { token: token } }
-      ); 
+      );
     }
     userData = await RegistrationModel.findOne({ _id: userId });
     return NextResponse.json({ userData });
