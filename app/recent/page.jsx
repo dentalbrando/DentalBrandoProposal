@@ -43,8 +43,9 @@ function Proposal() {
   let [multiplierForSearch, setMultiplierForSearch] = useState(0);
   let [buttonArray, setButtonArray] = useState();
   let [searchData, setSearchData] = useState();
-  let [userData, setUserData] = useState(true); 
+  let [userData, setUserData] = useState();
   let [tableLoading, setTableLoading] = useState(true);
+  let [timer, setTimer] = useState(0);
 
   let limit = 8;
 
@@ -88,7 +89,10 @@ function Proposal() {
       }
     }
     verifyTokenApi();
-  }, [isVerified]);
+  }, [isVerified, timer]);
+  setInterval(() => {
+    setTimer(timer + 1);
+  }, 3600000);
   console.log(userData);
 
   if (proposalData && !buttonArray) {
