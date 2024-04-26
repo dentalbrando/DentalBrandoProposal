@@ -82,7 +82,7 @@ function Proposal() {
     if (isVerified === true) {
       getUserData();
       getData();
-    } 
+    }
     async function verifyTokenApi() {
       try {
         await axios.get("/api/verifyToken");
@@ -350,7 +350,7 @@ function Proposal() {
               <div className="flex justify-between items-end mb-4">
                 <div className="flex gap-2 font-[500] text-[24px] text-main-blue">
                   <h1>Total Proposals:</h1>
-                  <span>{proposalData.length}</span>
+                  <span>{proposalData ? proposalData.length : null}</span>
                 </div>
                 <div className="w-fit flex justify-end items-center py-5">
                   <input
