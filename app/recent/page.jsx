@@ -42,12 +42,8 @@ function Proposal() {
   let [multiplier, setMultiplier] = useState(0);
   let [multiplierForSearch, setMultiplierForSearch] = useState(0);
   let [buttonArray, setButtonArray] = useState();
-  let [firstButton, SetFirstButton] = useState(0);
-  let [secondButton, SetSecondButton] = useState(1);
-  let [dotButton, SetdotButton] = useState(null);
-  let [searchQuery, SetSearchQuery] = useState("");
   let [searchData, setSearchData] = useState();
-  let [userData, setUserData] = useState();
+  let [userData, setUserData] = useState(true); 
   let [tableLoading, setTableLoading] = useState(true);
 
   let limit = 8;
@@ -83,7 +79,6 @@ function Proposal() {
       getUserData();
       getData();
     }
-    console.log(userData);
     async function verifyTokenApi() {
       try {
         await axios.get("/api/verifyToken");
@@ -94,6 +89,7 @@ function Proposal() {
     }
     verifyTokenApi();
   }, [isVerified]);
+  console.log(userData);
 
   if (proposalData && !buttonArray) {
     setButtonArray(Array(Math.ceil(proposalData.length / limit)).fill(null));
