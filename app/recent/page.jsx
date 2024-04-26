@@ -99,33 +99,50 @@ function Proposal() {
   if (proposalData && !buttonArray) {
     setButtonArray(Array(Math.ceil(proposalData.length / limit)).fill(null));
   }
-  function regenerate(key) {
-    dispatch(
-      setFunctionalities(proposalData[key].aboutYourProject.functionality)
-    );
-    dispatch(setOverviews(proposalData[key].aboutYourProject.overview));
-    dispatch(setWebsiteCMSs(proposalData[key].aboutYourProject.websiteCMS));
-    dispatch(setService(proposalData[key].budget.service));
-    dispatch(setDiscount(proposalData[key].budget.discount));
-    dispatch(setCurrency(proposalData[key].budget.currency));
-    dispatch(setTerms(proposalData[key].budget.terms));
-    dispatch(setLetterText(proposalData[key].cover_letter.letterText));
-    dispatch(setClientName(proposalData[key].cover_letter.clientName));
-    dispatch(setSubHeading(proposalData[key].cover_page.subHeading));
-    dispatch(setProjectTitle(proposalData[key].cover_page.projectTitle));
-    dispatch(
-      setCompanyPhoneNumber(proposalData[key].cover_page.companyPhoneNumber)
-    );
-    dispatch(setCompanyAddress(proposalData[key].cover_page.companyAddress));
-    dispatch(setCompanyName(proposalData[key].cover_page.companyName));
-    dispatch(setIssueDate(proposalData[key].cover_page.issueDate));
-    dispatch(setValidDate(proposalData[key].cover_page.validDate));
-    dispatch(setCompanyLogo(proposalData[key].cover_page.companyLogo));
-    dispatch(
-      setSiteMapOverview(proposalData[key].proposedSitemapOverview.overview)
-    );
-    dispatch(setSiteMap(proposalData[key].proposedSitemap.sitemap));
-    dispatch(setSiteMap2(proposalData[key].proposedSitemap2.sitemap2));
+  function regenerate(key, inSearch) {
+    if (inSearch) {
+      dispatch(setFunctionalities(searchData[searchData.length - 1 - key].aboutYourProject.functionality));
+      dispatch(setOverviews(searchData[searchData.length - 1 - key].aboutYourProject.overview));
+      dispatch(setWebsiteCMSs(searchData[searchData.length - 1 - key].aboutYourProject.websiteCMS));
+      dispatch(setService(searchData[searchData.length - 1 - key].budget.service));
+      dispatch(setDiscount(searchData[searchData.length - 1 - key].budget.discount));
+      dispatch(setCurrency(searchData[searchData.length - 1 - key].budget.currency));
+      dispatch(setTerms(searchData[searchData.length - 1 - key].budget.terms));
+      dispatch(setLetterText(searchData[searchData.length - 1 - key].cover_letter.letterText));
+      dispatch(setClientName(searchData[searchData.length - 1 - key].cover_letter.clientName));
+      dispatch(setSubHeading(searchData[searchData.length - 1 - key].cover_page.subHeading));
+      dispatch(setProjectTitle(searchData[searchData.length - 1 - key].cover_page.projectTitle));
+      dispatch(setCompanyPhoneNumber(searchData[searchData.length - 1 - key].cover_page.companyPhoneNumber));
+      dispatch(setCompanyAddress(searchData[searchData.length - 1 - key].cover_page.companyAddress));
+      dispatch(setCompanyName(searchData[searchData.length - 1 - key].cover_page.companyName));
+      dispatch(setIssueDate(searchData[searchData.length - 1 - key].cover_page.issueDate));
+      dispatch(setValidDate(searchData[searchData.length - 1 - key].cover_page.validDate));
+      dispatch(setCompanyLogo(searchData[searchData.length - 1 - key].cover_page.companyLogo));
+      dispatch(setSiteMapOverview(searchData[searchData.length - 1 - key].proposedSitemapOverview.overview));
+      dispatch(setSiteMap(searchData[searchData.length - 1 - key].proposedSitemap.sitemap));
+      dispatch(setSiteMap2(searchData[searchData.length - 1 - key].proposedSitemap2.sitemap2));
+    } else {
+      dispatch(setFunctionalities(proposalData[proposalData.length - 1 - key].aboutYourProject.functionality));
+      dispatch(setOverviews(proposalData[proposalData.length - 1 - key].aboutYourProject.overview));
+      dispatch(setWebsiteCMSs(proposalData[proposalData.length - 1 - key].aboutYourProject.websiteCMS));
+      dispatch(setService(proposalData[proposalData.length - 1 - key].budget.service));
+      dispatch(setDiscount(proposalData[proposalData.length - 1 - key].budget.discount));
+      dispatch(setCurrency(proposalData[proposalData.length - 1 - key].budget.currency));
+      dispatch(setTerms(proposalData[proposalData.length - 1 - key].budget.terms));
+      dispatch(setLetterText(proposalData[proposalData.length - 1 - key].cover_letter.letterText));
+      dispatch(setClientName(proposalData[proposalData.length - 1 - key].cover_letter.clientName));
+      dispatch(setSubHeading(proposalData[proposalData.length - 1 - key].cover_page.subHeading));
+      dispatch(setProjectTitle(proposalData[proposalData.length - 1 - key].cover_page.projectTitle));
+      dispatch(setCompanyPhoneNumber(proposalData[proposalData.length - 1 - key].cover_page.companyPhoneNumber));
+      dispatch(setCompanyAddress(proposalData[proposalData.length - 1 - key].cover_page.companyAddress));
+      dispatch(setCompanyName(proposalData[proposalData.length - 1 - key].cover_page.companyName));
+      dispatch(setIssueDate(proposalData[proposalData.length - 1 - key].cover_page.issueDate));
+      dispatch(setValidDate(proposalData[proposalData.length - 1 - key].cover_page.validDate));
+      dispatch(setCompanyLogo(proposalData[proposalData.length - 1 - key].cover_page.companyLogo));
+      dispatch(setSiteMapOverview(proposalData[proposalData.length - 1 - key].proposedSitemapOverview.overview));
+      dispatch(setSiteMap(proposalData[proposalData.length - 1 - key].proposedSitemap.sitemap));
+      dispatch(setSiteMap2(proposalData[proposalData.length - 1 - key].proposedSitemap2.sitemap2));
+    }
     dispatch(updatePage(100));
     router.push("/development");
   }
@@ -275,7 +292,7 @@ function Proposal() {
                                         ) : null}
                                         <button
                                           onClick={() => {
-                                            regenerate(key);
+                                            regenerate(key, true);
                                           }}
                                           className="text-main-blue leading-3 underline"
                                         >
@@ -334,7 +351,7 @@ function Proposal() {
                                         ) : null}
                                         <button
                                           onClick={() => {
-                                            regenerate(key);
+                                            regenerate(key, false);
                                           }}
                                           className="text-main-blue leading-3 underline"
                                         >
