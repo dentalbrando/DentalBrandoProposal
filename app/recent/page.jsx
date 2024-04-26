@@ -365,7 +365,7 @@ function Proposal() {
               </div>
 
               <div className="tableDiv h-fit">
-                <table className="table-border w-fit mx-auto w-[100%]">
+                <table className="table-border mx-auto">
                   <thead className="w-full">
                     <tr className="">
                       <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
