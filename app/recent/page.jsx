@@ -233,113 +233,119 @@ function Proposal() {
                   {searchData ? (
                     <tbody className="w-full">
                       {searchData
-                        ? searchData.map((item, key) => (
-                            <tr key={key} className="tr-border w-full">
-                              {key >= multiplierForSearch * limit &&
-                              key < limit * (multiplierForSearch + 1) &&
-                              searchData[key] ? (
-                                <>
-                                  <td className="td-border text-center py-4 text-lg w-[100px]">
-                                    {key < 9 ? "0" : null}
-                                    {key + 1}
-                                  </td>
-                                  <td className="td-border text-center py-4 text-lg w-[180px]">
-                                    {item.cover_letter.clientName}
-                                  </td>
-                                  <td className="td-border text-center py-4 text-lg w-[200px]">
-                                    {item.cover_page.projectTitle}
-                                  </td>
-                                  <td className="td-border text-center py-4 text-lg w-[220px]">
-                                    {item.cover_page.companyName}
-                                  </td>
-                                  <td className="td-border text-center py-4 text-lg w-[170px]">
-                                    {item.cover_page.issueDate}
-                                  </td>
-                                  <td className="td-border text-center py-4 text-lg w-[170px]">
-                                    {item.cover_page.validDate}
-                                  </td>
-                                  <td className="text-center text-lg px-0 w-[190px]">
-                                    <div className="flex justify-evenly items-center w-full">
-                                      {userData ? (
+                        ? searchData
+                            .slice()
+                            .reverse()
+                            .map((item, key) => (
+                              <tr key={key} className="tr-border w-full">
+                                {key >= multiplierForSearch * limit &&
+                                key < limit * (multiplierForSearch + 1) &&
+                                searchData[key] ? (
+                                  <>
+                                    <td className="td-border text-center py-4 text-lg w-[100px]">
+                                      {key < 9 ? "0" : null}
+                                      {key + 1}
+                                    </td>
+                                    <td className="td-border text-center py-4 text-lg w-[180px]">
+                                      {item.cover_letter.clientName}
+                                    </td>
+                                    <td className="td-border text-center py-4 text-lg w-[200px]">
+                                      {item.cover_page.projectTitle}
+                                    </td>
+                                    <td className="td-border text-center py-4 text-lg w-[220px]">
+                                      {item.cover_page.companyName}
+                                    </td>
+                                    <td className="td-border text-center py-4 text-lg w-[170px]">
+                                      {item.cover_page.issueDate}
+                                    </td>
+                                    <td className="td-border text-center py-4 text-lg w-[170px]">
+                                      {item.cover_page.validDate}
+                                    </td>
+                                    <td className="text-center text-lg px-0 w-[190px]">
+                                      <div className="flex justify-evenly items-center w-full">
+                                        {userData ? (
+                                          <button
+                                            onClick={() => {
+                                              deleteProposal(item._id);
+                                            }}
+                                            className="text-red-400 leading-3 underline"
+                                          >
+                                            Delete
+                                          </button>
+                                        ) : null}
                                         <button
                                           onClick={() => {
-                                            deleteProposal(item._id);
+                                            regenerate(key);
                                           }}
-                                          className="text-red-400 leading-3 underline"
+                                          className="text-main-blue leading-3 underline"
                                         >
-                                          Delete
+                                          Regenerate
                                         </button>
-                                      ) : null}
-                                      <button
-                                        onClick={() => {
-                                          regenerate(key);
-                                        }}
-                                        className="text-main-blue leading-3 underline"
-                                      >
-                                        Regenerate
-                                      </button>
-                                    </div>
-                                  </td>
-                                </>
-                              ) : null}
-                            </tr>
-                          ))
+                                      </div>
+                                    </td>
+                                  </>
+                                ) : null}
+                              </tr>
+                            ))
                         : null}
                     </tbody>
                   ) : (
                     <tbody>
                       {proposalData
-                        ? proposalData.map((item, key) => (
-                            <tr key={key} className="tr-border">
-                              {key >= multiplier * limit &&
-                              key < limit * (multiplier + 1) &&
-                              proposalData[key] ? (
-                                <>
-                                  <td className="td-border text-center py-4 text-lg w-[100px]">
-                                    {key < 9 ? "0" : null}
-                                    {key + 1}
-                                  </td>
-                                  <td className="td-border text-center py-4 text-lg w-[180px]">
-                                    {item.cover_letter.clientName}
-                                  </td>
-                                  <td className="td-border text-center py-4 text-lg w-[200px]">
-                                    {item.cover_page.projectTitle}
-                                  </td>
-                                  <td className="td-border text-center py-4 text-lg w-[220px]">
-                                    {item.cover_page.companyName}
-                                  </td>
-                                  <td className="td-border text-center py-4 text-lg w-[170px]">
-                                    {item.cover_page.issueDate}
-                                  </td>
-                                  <td className="td-border text-center py-4 text-lg w-[170px]">
-                                    {item.cover_page.validDate}
-                                  </td>
-                                  <td className="text-center text-lg px-0 w-[190px]">
-                                    <div className="flex justify-evenly items-center">
-                                      {userData ? (
+                        ? proposalData
+                            .slice()
+                            .reverse()
+                            .map((item, key) => (
+                              <tr key={key} className="tr-border">
+                                {key >= multiplier * limit &&
+                                key < limit * (multiplier + 1) &&
+                                proposalData[key] ? (
+                                  <>
+                                    <td className="td-border text-center py-4 text-lg w-[100px]">
+                                      {key < 9 ? "0" : null}
+                                      {key + 1}
+                                    </td>
+                                    <td className="td-border text-center py-4 text-lg w-[180px]">
+                                      {item.cover_letter.clientName}
+                                    </td>
+                                    <td className="td-border text-center py-4 text-lg w-[200px]">
+                                      {item.cover_page.projectTitle}
+                                    </td>
+                                    <td className="td-border text-center py-4 text-lg w-[220px]">
+                                      {item.cover_page.companyName}
+                                    </td>
+                                    <td className="td-border text-center py-4 text-lg w-[170px]">
+                                      {item.cover_page.issueDate}
+                                    </td>
+                                    <td className="td-border text-center py-4 text-lg w-[170px]">
+                                      {item.cover_page.validDate}
+                                    </td>
+                                    <td className="text-center text-lg px-0 w-[190px]">
+                                      <div className="flex justify-evenly items-center">
+                                        {userData ? (
+                                          <button
+                                            onClick={() => {
+                                              deleteProposal(item._id);
+                                            }}
+                                            className="text-red-400 leading-3 underline"
+                                          >
+                                            Delete
+                                          </button>
+                                        ) : null}
                                         <button
                                           onClick={() => {
-                                            deleteProposal(item._id);
+                                            regenerate(key);
                                           }}
-                                          className="text-red-400 leading-3 underline"
+                                          className="text-main-blue leading-3 underline"
                                         >
-                                          Delete
+                                          Regenerate
                                         </button>
-                                      ) : null}
-                                      <button
-                                        onClick={() => {
-                                          regenerate(key);
-                                        }}
-                                        className="text-main-blue leading-3 underline"
-                                      >
-                                        Regenerate
-                                      </button>
-                                    </div>
-                                  </td>
-                                </>
-                              ) : null}
-                            </tr>
-                          ))
+                                      </div>
+                                    </td>
+                                  </>
+                                ) : null}
+                              </tr>
+                            ))
                         : null}
                     </tbody>
                   )}
