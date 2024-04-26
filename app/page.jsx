@@ -75,12 +75,15 @@ const Home = () => {
     const storeTokenToDb = async () => {
       async function postToken() {
         try {
+          console.log("post data try");
           setLoading(true);
           let result = await axios.post(`/api/storeTokenToDb`, { userId });
           setUserData(result.data.userData);
         } catch (err) {
+          console.log("err", err);
           setLoading(false);
         } finally {
+          console.log("finaly");
           setLoading(false);
         }
       }

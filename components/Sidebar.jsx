@@ -50,12 +50,14 @@ const Sidebar = () => {
 
   async function logout() {
     try {
+      console.log("logging out...");
       await axios.get("/api/logOut");
       // Cookies.remove("authToken");
     } catch (error) {
       console.error("Error logging out:", error);
     } finally {
       window.location.href = "/"; // Redirect regardless of success or failure
+      console.log("window.location.pathname");
     }
   }
 
