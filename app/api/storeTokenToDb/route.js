@@ -9,8 +9,11 @@ export async function POST(req) {
   let userData = null;
   let token = cookies().get("authToken");
   if (token) {
+    console.log("token true");
+
     token = token.value;
   } else {
+    console.log("token false");
     token = null;
   }
 
@@ -18,6 +21,7 @@ export async function POST(req) {
   connectDb();
 
   if (!userId) {
+    console.log("user id false");
     let tokenAlreadyAvaible = await TokenModel.findOne({
       token: token,
     });
@@ -36,6 +40,8 @@ export async function POST(req) {
       return NextResponse.json({ userData });
     }
   } else if (userId) {
+    console.log("user id true");
+
     let userAlreadyAvaible = await TokenModel.findOne({
       userId: userId,
     });
@@ -54,6 +60,7 @@ export async function POST(req) {
     userData = await RegistrationModel.findOne({ _id: userId });
     return NextResponse.json({ userData });
   } else {
+    console.log("user id true or false");
     userData = null;
     return NextResponse.json({ userData });
   }
