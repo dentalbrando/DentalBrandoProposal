@@ -112,7 +112,7 @@ const Home = () => {
         <div className="w-fit m-auto py-24">
           <Loader />
         </div>
-      ) : isVerified (
+      ) : isVerified? (
         <>
           <Nav />
           <div className="flex gap-24 justify-center items-center h-[88vh] w-[100%]">
