@@ -84,7 +84,7 @@ const Home = () => {
           setLoading(false);
         }
       }
-      // postToken();
+      postToken();
 
       async function verifyTokenApi() {
         try {
