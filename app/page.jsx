@@ -74,7 +74,7 @@ const Home = () => {
   useEffect(() => {
     const storeTokenToDb = async () => {
       async function postToken() {
-        try { 
+        try {
           setLoading(true);
           let result = await axios.post(`/api/storeTokenToDb`, { userId });
           setUserData(result.data.userData);
@@ -103,14 +103,14 @@ const Home = () => {
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }
-
+  let out = localStorage.getItem("setOut");
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (
         <div className="w-fit m-auto py-24">
           <Loader />
         </div>
-      ) : isVerified ? (
+      ) : isVerified || !out ? (
         <>
           <Nav />
           <div className="flex gap-24 justify-center items-center h-[88vh] w-[100%]">
