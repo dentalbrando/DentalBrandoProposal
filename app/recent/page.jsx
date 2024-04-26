@@ -257,25 +257,27 @@ function Proposal() {
                                   <td className="td-border text-center py-4 text-lg w-[170px">
                                     {item.cover_page.validDate}
                                   </td>
-                                  <td className="text-center text-lg">
-                                    {userData ? (
+                                  <td className="text-center text-lg px-0 bg-red-200">
+                                    <div className="flex justify-evenly items-center w-full">
+                                      {userData ? (
+                                        <button
+                                          onClick={() => {
+                                            deleteProposal(item._id);
+                                          }}
+                                          className="text-red-400 leading-3 underline mx-auto"
+                                        >
+                                          Delete
+                                        </button>
+                                      ) : null}
                                       <button
                                         onClick={() => {
-                                          deleteProposal(item._id);
+                                          regenerate(key);
                                         }}
-                                        className="text-red-400 leading-3 underline mx-auto"
+                                        className="text-main-blue leading-3 underline mx-auto"
                                       >
-                                        Delete
+                                        Regenerate
                                       </button>
-                                    ) : null}
-                                    <button
-                                      onClick={() => {
-                                        regenerate(key);
-                                      }}
-                                      className="text-main-blue leading-3 underline mx-auto"
-                                    >
-                                      Regenerate
-                                    </button>
+                                    </div>
                                   </td>
                                 </>
                               ) : null}
@@ -311,7 +313,7 @@ function Proposal() {
                                   <td className="td-border text-center py-4 text-lg w-[170px">
                                     {item.cover_page.validDate}
                                   </td>
-                                  <td className="text-center text-lg px-0 w-[200px">
+                                  <td className="text-center text-lg px-0 bg-red-200">
                                     <div className="flex justify-evenly items-center w-full">
                                       {userData ? (
                                         <button
