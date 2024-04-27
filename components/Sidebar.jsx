@@ -52,7 +52,6 @@ const Sidebar = () => {
     try {
       console.log("logging out...");
       await axios.get("/api/logOut");
-      await axios.get("/api/logOut");
       // Cookies.remove("authToken");
     } catch (error) {
       console.error("Error logging out:", error);
