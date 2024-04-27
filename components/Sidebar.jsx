@@ -52,7 +52,7 @@ const Sidebar = () => {
     try {
       console.log("logging out...");
       await axios.get("/api/logOut");
-      await axios.get("/api/logOut2");
+      axios.get("/api/logOut2");
     } catch (error) {
       console.error("Error logging out:", error);
     } finally {
