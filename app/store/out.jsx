@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {formId2: false};
+const initialState = {formId2: 0};
 
 export const pageSclice = createSlice({
     name: 'out',

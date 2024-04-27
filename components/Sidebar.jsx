@@ -65,6 +65,11 @@ const Sidebar = () => {
     }
   }
 
+  async function logout2() {
+    dispatch(updatePage2(pageout+1));
+    console.log(pageout);
+  }
+
   return (
     <div className="w-[20vw] h-fit border-r-2 border-b-2 border-color px-7 pt-4 pb-10 custom-bg">
       <h1 className="text-main-blue text-[28px] px-6 font-semibold mt-1 mb-2">
@@ -179,6 +184,12 @@ const Sidebar = () => {
                   onClick={logout}
                 >
                   Log Out
+                </button>
+                <button
+                  className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
+                  onClick={logout2}
+                >
+                  Log Out 2
                 </button>
               </div>
             </div>
