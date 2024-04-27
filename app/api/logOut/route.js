@@ -5,7 +5,6 @@ export async function GET(req) {
   let data = {
     name: "ahmad",
   }
-  alert("hello")
   return new Response(data, {
     headers: {
       "Set-Cookie": [
