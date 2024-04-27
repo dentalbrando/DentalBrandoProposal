@@ -96,14 +96,21 @@ const Home = () => {
         }
       }
       verifyTokenApi();
-      // verifyToken(setIsVerified);
     };
     storeTokenToDb();
+    async function logout() {
+      try {
+        await axios.get("/api/logOut");
+      } catch (error) {
+        console.error("Error logging out:", error);
+      } finally {
+        window.location.href = "/";
+        console.log("window.location.pathname");
+      }
+    }
+    logout();
   }, [tokenVerifierTrigger]);
-  {
-    /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
-  }
-  // let out =
+
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (
