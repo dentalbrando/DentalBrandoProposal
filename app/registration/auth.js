@@ -1,9 +1,8 @@
 import jwt from "jsonwebtoken";
 import { serialize } from "cookie";
+import Cookies from "universal-cookie";
 
 export function setTokenToCookies(userData) {
-  console.log("add func");
-
   const securityKey = process.env.SECURITY_KEY; // Assuming process.env.SECURITY_KEY is set properly
   const token = jwt.sign(userData, securityKey, { expiresIn: "1h" });
 
@@ -19,7 +18,6 @@ export function setTokenToCookies(userData) {
 }
 
 export function removeTokenFromCookies() {
-  console.log("remove func");
   const cookie = serialize("authToken", "", {
     maxAge: -1,
     expires: new Date(),
