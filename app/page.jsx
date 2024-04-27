@@ -104,8 +104,6 @@ const Home = () => {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }
   // let out =
-  const pageout = useSelector((state) => state.out.formId2);
-  console.log(pageout);
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (

@@ -52,19 +52,13 @@ const Sidebar = () => {
 
   async function logout() {
     try {
-      console.log("logging out...");
       await axios.get("/api/logOut");
-      // document.cookie =
-      //   "authToken=; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax; HttpOnly";
     } catch (error) {
       console.error("Error logging out:", error);
     } finally {
-      // window.location.href = "/"; // Redirect regardless of success or failure
+      window.location.href = "/";
       console.log("window.location.pathname");
     }
-  }
-  async function logout2() {
-    dispatch(updatePage2(true));
   }
 
   return (
@@ -181,12 +175,6 @@ const Sidebar = () => {
                   onClick={logout}
                 >
                   Log Out
-                </button>
-                <button
-                  className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
-                  onClick={logout2}
-                >
-                  Log Out 2
                 </button>
               </div>
             </div>
