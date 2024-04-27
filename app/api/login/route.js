@@ -18,7 +18,10 @@ export async function POST(req) {
         let dataToSend = { msg: "token", userId: loginData._id };
         return new Response(JSON.stringify(dataToSend), {
           headers: {
-            "Set-Cookie": [`authToken=${token}; HttpOnly`],
+            "Set-Cookie": [
+              `authToken=${token}; HttpOnly`,
+              `logOut=false; HttpOnly`,
+            ],
           },
         });
       }
