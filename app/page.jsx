@@ -98,17 +98,17 @@ const Home = () => {
       verifyTokenApi();
     };
     storeTokenToDb();
-    async function logout() {
-      try {
-        await axios.get("/api/logOut");
-      } catch (error) {
-        console.error("Error logging out:", error);
-      } finally {
-        window.location.href = "/";
-        console.log("window.location.pathname");
-      }
-    }
-    logout();
+    // async function logout() {
+    //   try {
+    //     await axios.get("/api/logOut");
+    //   } catch (error) {
+    //     console.error("Error logging out:", error);
+    //   } finally {
+    //     window.location.href = "/";
+    //     console.log("window.location.pathname");
+    //   }
+    // }
+    // logout();
   }, [tokenVerifierTrigger]);
 
   return (
