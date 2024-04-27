@@ -17,7 +17,12 @@ export async function POST(req) {
         const token = jwt.sign(userData, "securityKey", { expiresIn: "1h" });
         let dataToSend = { msg: "token", userId: loginData._id };
         return new Response(JSON.stringify(dataToSend), {
-          headers: { "Set-Cookie": `authToken=${token}; HttpOnly` },
+          headers: {
+            "Set-Cookie": [
+              `authToken=${token}; HttpOnly`,
+              `logOut=false; HttpOnly`,
+            ],
+          },
         });
       }
     } else {
