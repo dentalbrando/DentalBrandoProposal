@@ -103,24 +103,6 @@ const Home = () => {
   {
     /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }
-  const pageout = useSelector((state) => state.out.formId2);
-  useEffect(() => {
-    console.log("pageout:", pageout);
-  }, [pageout]);
-    async function logout() {
-      try {
-        console.log("logging out...");
-        await axios.get("/api/logOut");
-        // document.cookie =
-        //   "authToken=; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax; HttpOnly";
-      } catch (error) {
-        console.error("Error logging out:", error);
-      } finally {
-        window.location.href = "/"; // Redirect regardless of success or failure
-        console.log("window.location.pathname");
-      }
-    }
-
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (
@@ -162,12 +144,6 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-            <button
-              className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
-              onClick={logout}
-            >
-              Log Out
-            </button>
           </div>
         </>
       ) : (
