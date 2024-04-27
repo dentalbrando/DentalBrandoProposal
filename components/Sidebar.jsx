@@ -57,7 +57,7 @@ const Sidebar = () => {
     } catch (error) {
       console.error("Error logging out:", error);
     } finally {
-      window.location.href = "/"; // Redirect regardless of success or failure
+      // window.location.href = "/"; // Redirect regardless of success or failure
       console.log("window.location.pathname");
     }
   }
