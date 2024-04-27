@@ -17,7 +17,6 @@ const Sidebar = () => {
   const [items, setItems] = useState(pageSequence);
   const [companyLogoError, setCompanyLogoError] = useState();
   const page = useSelector((state) => state.page);
-  const pageout = useSelector((state) => state.out.formId2);
   const [focusedItem, setFocusedItem] = useState(1);
   const [counter, setCounter] = useState(1);
 
@@ -55,7 +54,6 @@ const Sidebar = () => {
     try {
       console.log("logging out...");
       await axios.get("/api/logOut");
-      await axios.get("/api/logOut2");
       // document.cookie =
       //   "authToken=; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax; HttpOnly";
     } catch (error) {
@@ -65,10 +63,8 @@ const Sidebar = () => {
       console.log("window.location.pathname");
     }
   }
-
   async function logout2() {
-    dispatch(updatePage2(pageout+1));
-    console.log(pageout);
+    dispatch(updatePage2(true));
   }
 
   return (

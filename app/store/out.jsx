@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {formId2: 0};
+const initialState = {formId2: false};
 
 export const pageSclice = createSlice({
     name: 'out',
@@ -22,6 +22,6 @@ export const pageSclice = createSlice({
     }
 });
 
-export const { setPage, deletePage, appendPage, resetPage, updatePage2 } = pageSclice.actions;
+export const { setPage, deletePage, appendPage, resetPage, updatePage } = pageSclice.actions;
 
 export default pageSclice.reducer;

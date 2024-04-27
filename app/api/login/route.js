@@ -17,12 +17,7 @@ export async function POST(req) {
         const token = jwt.sign(userData, "securityKey", { expiresIn: "1h" });
         let dataToSend = { msg: "token", userId: loginData._id };
         return new Response(JSON.stringify(dataToSend), {
-          headers: {
-            "Set-Cookie": [
-              `authToken=${token}; HttpOnly`,
-              `logOut=false; HttpOnly`,
-            ],
-          },
+          headers: { "Set-Cookie": setTokenToCookies(userData) },
         });
       }
     } else {
@@ -36,4 +31,9 @@ export async function POST(req) {
   }
 }
 
-// headers: { "Set-Cookie": setTokenToCookies(userData) },
+// headers: {
+//             "Set-Cookie": [
+//               `authToken=${token}; HttpOnly`,
+//               `logOut=false; HttpOnly`,
+//             ],
+//           },

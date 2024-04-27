@@ -23,7 +23,6 @@ import layer1 from "@public/assets/Layer_1.png";
 import frame1 from "@public/assets/Frame 4.png";
 import frame2 from "@public/assets/Frame 5.png";
 import frame3 from "@public/assets/Frame 6.png";
-import { updatePage2 } from "@app/store/out";
 const familyData = {
   name: "John",
   spouse: "Jane",
@@ -101,33 +100,12 @@ const Home = () => {
     };
     storeTokenToDb();
   }, [tokenVerifierTrigger]);
-
-  async function logout2() {
-    dispatch(updatePage2(pageout + 1));
-    console.log(pageout);
+  {
+    /* {message && <Popup message={message.message} type={'success'} onHide={hidePopup} />} */
   }
-
+  // let out =
   const pageout = useSelector((state) => state.out.formId2);
-  useEffect(() => {
-    console.log("pageout1:", pageout);
-    if (pageout > 0) {
-      async function logout() {
-        try {
-          console.log("logging out...");
-          await axios.get("/api/logOut");
-          // document.cookie =
-          //   "authToken=; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax; HttpOnly";
-        } catch (error) {
-          console.error("Error logging out:", error);
-        } finally {
-          window.location.href = "/"; // Redirect regardless of success or failure
-          console.log("window.location.pathname");
-        }
-      }
-      logout();
-      console.log("pageout2:", pageout);
-    }
-  }, [pageout]);
+  console.log(pageout);
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (
@@ -169,12 +147,6 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-            <button
-              className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
-              onClick={logout2}
-            >
-              Log Out 2
-            </button>
           </div>
         </>
       ) : (
