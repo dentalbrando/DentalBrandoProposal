@@ -4,6 +4,7 @@ import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updatePage } from "@app/store/pageSclice";
+import { updatePage2 } from "@app/store/out";
 import { resetSquence, setPageSequence } from "@app/store/pageSequence";
 import { FaCheck } from "react-icons/fa";
 import Link from "next/link";
@@ -16,7 +17,9 @@ const Sidebar = () => {
   const [items, setItems] = useState(pageSequence);
   const [companyLogoError, setCompanyLogoError] = useState();
   const page = useSelector((state) => state.page);
+  const pageout = useSelector((state) => state.out.formId2);
   const [focusedItem, setFocusedItem] = useState(1);
+  const [counter, setCounter] = useState(1);
 
   const { companyLogo } = useSelector((state) => state.cover_page);
   const dispatch = useDispatch();
@@ -61,15 +64,10 @@ const Sidebar = () => {
       console.log("window.location.pathname");
     }
   }
+
   async function logout2() {
-    try {
-      console.log("logging out 2...");
-      await axios.get("/api/logOut");
-    } catch (error) {
-      console.error("Error logging out 2:", error);
-    } finally {
-      console.log("window.location.pathname 2");
-    }
+    dispatch(updatePage2(true));
+    console.log(pageout);
   }
 
   return (
