@@ -51,10 +51,10 @@ const Sidebar = () => {
   async function logout() {
     try {
       console.log("logging out...");
-      // await axios.get("/api/logOut");
+      await axios.get("/api/logOut");
       // await axios.get("/api/logOut2");
       document.cookie =
-        "token=; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax";
+        "authToken=; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax; HttpOnly";
     } catch (error) {
       console.error("Error logging out:", error);
     } finally {

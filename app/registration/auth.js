@@ -19,7 +19,7 @@ export function setTokenToCookies(userData) {
 export function removeTokenFromCookies() {
   const cookie = serialize("authToken", "", {
     maxAge: -1,
-    expires: new Date(),
+    expires: new Date(0),
     httpOnly: true,
     secure: true,
     sameSite: "lax",
