@@ -6,8 +6,8 @@ export async function GET(req) {
   const cookie = removeTokenFromCookies();
   console.log("catch");
   return new Response(null, {
-    headers: { "Set-Cookie": cookie },
+    // headers: { "Set-Cookie": cookie },
+    headers: { "Set-Cookie": `authToken=null; HttpOnly` },
   });
 }
 
-// headers: { "Set-Cookie": `authToken=null; HttpOnly` },
