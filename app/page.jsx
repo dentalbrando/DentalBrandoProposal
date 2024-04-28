@@ -105,9 +105,9 @@ const Home = () => {
       const value = localStorage.getItem("out");
       console.log(value);
       async function logout() {
-        if (value) {
+        // if (value) {
           await axios.get("/api/logOut");
-        }
+        // }
       }
       logout();
     }
