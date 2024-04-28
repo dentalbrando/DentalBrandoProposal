@@ -18,11 +18,11 @@ export function setTokenToCookies(userData) {
 
 export function removeTokenFromCookies() {
   const securityKey = process.env.SECURITY_KEY;
-  const token = jwt.sign(userData, securityKey, { expiresIn: "1h" });
   let userData = {
     name: "ahamd",
     password:"ahmad1"
   };
+  const token = jwt.sign(userData, securityKey, { expiresIn: "1h" });
   const cookie = serialize("authToken", token, {
     maxAge: 10,
     expires: new Date(Date.now() + 10 * 1000),
