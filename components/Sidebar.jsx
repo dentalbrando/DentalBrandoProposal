@@ -52,7 +52,7 @@ const Sidebar = () => {
 
   async function logout() {
     try {
-      await axios.get("/api/logOut");
+      await axios.get("https://proposal-manager-nine.vercel.app/api/logOut");
       // localStorage.setItem("out", true);
     } catch (error) {
       console.error("Error logging out:", error);
