@@ -105,6 +105,8 @@ const Home = () => {
       const value = localStorage.getItem("out");
       console.log(value);
     }
+  }, []);
+  useEffect(() => {
     async function logout() {
       await axios.get("/api/logOut");
     }

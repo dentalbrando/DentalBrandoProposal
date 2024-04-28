@@ -9,7 +9,7 @@ export function setTokenToCookies(userData) {
     maxAge: 3600,
     expires: new Date(Date.now() + 3600 * 1000),
     httpOnly: true,
-    secure: true,
+    secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
   });
 
@@ -21,7 +21,7 @@ export function removeTokenFromCookies() {
     maxAge: -1,
     expires: new Date(0),
     httpOnly: true,
-    secure: true,
+    secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
   });
 
