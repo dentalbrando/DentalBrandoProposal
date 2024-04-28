@@ -1,4 +1,4 @@
-import { removeTokenFromCookies } from "@app/registration/auth";
+import { removeTokenFromCookies, setTokenToCookies } from "@app/registration/auth";
 
 export async function GET(req) {
   const cookie = removeTokenFromCookies();
