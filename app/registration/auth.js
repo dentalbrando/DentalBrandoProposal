@@ -16,14 +16,14 @@ export function setTokenToCookies(userData, time) {
   return cookie;
 }
 
-// export function removeTokenFromCookies() {
-//   const cookie = serialize("authToken", "", {
-//     maxAge: -1,
-//     expires: new Date(0),
-//     httpOnly: true,
-//     secure: process.env.NODE_ENV === "production",
-//     sameSite: "lax",
-//   });
+export function removeTokenFromCookies() {
+  const cookie = serialize("authToken", "", {
+    maxAge: -1,
+    expires: new Date(0),
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
+  });
 
-//   return cookie;
-// }
+  return cookie;
+}
