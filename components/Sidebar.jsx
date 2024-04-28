@@ -53,7 +53,7 @@ const Sidebar = () => {
   async function logout() {
     try {
       await axios.get("/api/logOut");
-      localStorage.setItem("out", true);
+      // localStorage.setItem("out", true);
     } catch (error) {
       console.error("Error logging out:", error);
     } finally {
