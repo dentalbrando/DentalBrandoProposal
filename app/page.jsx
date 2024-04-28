@@ -102,7 +102,7 @@ const Home = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const value = localStorage.getItem("myKey");
+      const value = localStorage.getItem("out");
       console.log(value);
     }
   }, []);
