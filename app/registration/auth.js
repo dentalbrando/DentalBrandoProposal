@@ -1,9 +1,9 @@
 import jwt from "jsonwebtoken";
 import { serialize } from "cookie";
 
-export function setTokenToCookies(userData) {
+export function setTokenToCookies(userData, time) {
   const securityKey = process.env.SECURITY_KEY;
-  const token = jwt.sign(userData, securityKey, { expiresIn: "1h" });
+  const token = jwt.sign(userData, securityKey, { expiresIn: time });
 
   const cookie = serialize("authToken", token, {
     maxAge: 3600,
@@ -16,20 +16,14 @@ export function setTokenToCookies(userData) {
   return cookie;
 }
 
-export function removeTokenFromCookies() {
-  const securityKey = process.env.SECURITY_KEY;
-  let userData = {
-    name: "ahamd",
-    password:"ahmad1"
-  };
-  const token = jwt.sign(userData, securityKey, { expiresIn: 10 });
-  const cookie = serialize("authToken", token, {
-    maxAge: 10,
-    expires: new Date(Date.now() + 10 ),
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "lax",
-  });
+// export function removeTokenFromCookies() {
+//   const cookie = serialize("authToken", "", {
+//     maxAge: -1,
+//     expires: new Date(0),
+//     httpOnly: true,
+//     secure: process.env.NODE_ENV === "production",
+//     sameSite: "lax",
+//   });
 
-  return cookie;
-}
+//   return cookie;
+// }
