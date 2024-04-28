@@ -100,15 +100,15 @@ const Home = () => {
     storeTokenToDb();
   }, [tokenVerifierTrigger]);
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const value = localStorage.getItem("out");
-      console.log(value);
-      if (value === true) {
-        setIsVerified(false)
-      }
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     const value = localStorage.getItem("out");
+  //     console.log(value);
+  //     if (value === true) {
+  //       setIsVerified(false)
+  //     }
+  //   }
+  // }, []);
   // useEffect(() => {
   //   async function logout() {
   //     await axios.get("/api/logOut");
