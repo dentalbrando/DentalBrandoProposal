@@ -100,6 +100,13 @@ const Home = () => {
     storeTokenToDb();
   }, [tokenVerifierTrigger]);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const value = localStorage.getItem("myKey");
+      console.log(value);
+    }
+  }, []);
+
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (
