@@ -100,18 +100,18 @@ const Home = () => {
     storeTokenToDb();
   }, [tokenVerifierTrigger]);
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const value = localStorage.getItem("out");
-      console.log(value);
-    }
-  }, []);
-  useEffect(() => {
-    async function logout() {
-      await axios.get("/api/logOut");
-    }
-    logout();
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     const value = localStorage.getItem("out");
+  //     console.log(value);
+  //   }
+  // }, []);
+  // useEffect(() => {
+  //   async function logout() {
+  //     await axios.get("/api/logOut");
+  //   }
+  //   logout();
+  // }, []);
 
   return (
     <StoreProvider>
