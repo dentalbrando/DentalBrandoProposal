@@ -8,6 +8,3 @@ export async function GET(req) {
     headers: { "Set-Cookie": cookie },
   });
 }
-// headers: {
-//   "Set-Cookie": [`authToken=null; HttpOnly`, `logOut=true; HttpOnly`],
-// },
