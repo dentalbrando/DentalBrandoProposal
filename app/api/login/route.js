@@ -14,6 +14,7 @@ export async function POST(req) {
       if (password !== loginData.password) {
         return NextResponse.json({ error: "Incorrect Password" });
       } else {
+        const token = jwt.sign(userData, "securityKey", { expiresIn: "1h" });
         let dataToSend = { msg: "token", userId: loginData._id };
         return new Response(JSON.stringify(dataToSend), {
           headers: { "Set-Cookie": setTokenToCookies(userData) },
