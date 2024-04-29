@@ -4,23 +4,28 @@ import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updatePage } from "@app/store/pageSclice";
-import { resetSquence, setPageSequence } from "@app/store/pageSequence";
+import {
+  resetSquenceSmm,
+  setPageSequenceSmm,
+} from "@app/store/pageSequenceSmm";
 import { FaCheck } from "react-icons/fa";
 import Link from "next/link";
 import axios from "axios";
 
-const Sidebar = () => {
-  const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
-  const [items, setItems] = useState(pageSequence);
+const SidebarSmm = () => {
+  const pageSequenceSmm = useSelector(
+    (state) => state.pageSequenceSmm
+  ).pageSequenceSmm;
+  const [items, setItems] = useState(pageSequenceSmm);
   const page = useSelector((state) => state.page);
   const dispatch = useDispatch();
   const onDragEnd = (result) => {
     if (!result.destination) return; 
-    const reorderedItems = Array.from(pageSequence);
+    const reorderedItems = Array.from(pageSequenceSmm);
     const [movedItem] = reorderedItems.splice(result.source.index, 1);
     reorderedItems.splice(result.destination.index, 0, movedItem);
     setItems(reorderedItems);
-    dispatch(setPageSequence(reorderedItems));
+    dispatch(setPageSequenceSmm(reorderedItems));
   };
   const generate = () => {
     dispatch(updatePage("100"));
@@ -34,8 +39,9 @@ const Sidebar = () => {
     );
   };
   useEffect(() => {
-    dispatch(setPageSequence(items));
-    console.log(pageSequence);
+    dispatch(setPageSequenceSmm(items));
+    console.log(pageSequenceSmm);
+
   }, [items]);
 
   async function logout() {
@@ -62,7 +68,7 @@ const Sidebar = () => {
               {...provided.droppableProps}
               className="flex flex-col"
             >
-              {pageSequence.map((item, index) => (
+              {pageSequenceSmm.map((item, index) => (
                 <Draggable key={item.id} draggableId={item.id} index={index}>
                   {(provided) => (
                     <div
@@ -126,27 +132,36 @@ const Sidebar = () => {
                   type="button"
                   className="p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
                   onClick={() => {
-                    dispatch(resetSquence());
+                    dispatch(resetSquenceSmm());
                     setItems([
                       { id: "1", content: "Cover Page", checked: true },
                       { id: "2", content: "Table of Contents", checked: true },
                       { id: "3", content: "Cover Letter", checked: true },
-                      { id: "4", content: "About your Project", checked: true },
-                      { id: "5", content: "Proposed Sitemap", checked: true },
-                      { id: "6", content: "About Us", checked: true },
-                      { id: "7", content: "Our Process", checked: true },
+                      { id: "4", content: "About Us", checked: true },
+                      { id: "5", content: "ProjectObjective", checked: true },
+                      { id: "6", content: "Activities", checked: true },
+                      { id: "7", content: "Monthly Calender", checked: true },
+                      { id: "8", content: "Content Creation", checked: true },
+                      { id: "9", content: "Marketing", checked: true },
+                      { id: "10", content: "Valued Client", checked: true },
                       {
-                        id: "8",
-                        content: "Why Soft Enterprise",
+                        id: "11",
+                        content: "Advertisement Packages",
                         checked: true,
                       },
-                      { id: "9", content: "Estimate Budget", checked: true },
-                      {
-                        id: "10",
-                        content: "Terms & conditions",
-                        checked: true,
-                      },
-                      { id: "11", content: "Last Page", checked: true },
+                      // {
+                      //   id: "12",
+                      //   content: "Post Design Packages",
+                      //   checked: true,
+                      // },
+                      // {
+                      //   id: "13",
+                      //   content: "Marketing Packages",
+                      //   checked: true,
+                      // },
+                      // { id: "14", content: "Estimate", checked: true },
+                      // { id: "15", content: "Terms", checked: true },
+                      // { id: "15", content: "Contact", checked: true },
                     ]);
                   }}
                 >
@@ -173,4 +188,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SidebarSmm;

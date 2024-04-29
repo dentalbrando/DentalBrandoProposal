@@ -4,6 +4,8 @@ import strips from "@public/assets/socialMedia/pic3.png";
 
 function Terms() {
   return (
+          <div className="w-[8.27in] h-[1124px]">
+
     <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">
       <div className="flex w-full h-[50%] absolute top-0 overflow-hidden">
         <div className="absolute w-[87%] h-[50%] right-[6.5%] top-[120px] z-[200] bg-red-90">
@@ -191,7 +193,8 @@ function Terms() {
         </div>
         <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 }
 export default Terms;

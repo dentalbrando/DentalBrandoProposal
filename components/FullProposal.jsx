@@ -1,9 +1,4 @@
 import React from "react";
-// import jsPDF from 'jspdf';
-// import html2canvas from 'html2canvas';
-// import html2pdf from 'html2pdf.js'
-// var wkhtmltopdf = require('wkhtmltopdf');
-
 import { useDispatch, useSelector } from "react-redux";
 import { updatePage } from "@app/store/pageSclice";
 import CoverPage from "./Proposal Pages/CoverPage";
@@ -18,16 +13,10 @@ import AboutYourProjects from "./Proposal Pages/AboutYourProjects";
 import ProposedSiteMap from "./Proposal Pages/ProposedSiteMap";
 import Budget from "./Proposal Pages/Budget";
 import SaveProposaltoDb from "./saveProposaltoDb";
-import Link from "next/link";
 
 const FullProposal = () => {
   const dispatch = useDispatch();
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
-
-  const generatePdf = () => {
-    // wkhtmltopdf('http://google.com/', { pageSize: 'letter' })
-    //   .pipe(fs.createWriteStream('out.pdf'));
-  };
   let pageNumber = 1;
 
   return (

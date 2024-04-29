@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import page from "./pageSclice";
+import pageSmm from "./pageScliceSmm";
 import cover_page from "./coverPageSlice";
 import popup from "./popup";
 import cover_letter from "./coverLetterSlice";
@@ -8,11 +9,13 @@ import proposedSitemap from "./proposedSitemap";
 import proposedSitemap2 from "./proposedSitemap2";
 import budget from "./budget";
 import pageSequence from "./pageSequence";
-import proposedSitemapOverview from "./proposedSitemapOverview"
+import proposedSitemapOverview from "./proposedSitemapOverview";
 import out from "./out";
+import pageSequenceSmm from "./pageSequenceSmm";
 const store = configureStore({
   reducer: {
     page,
+    pageSmm,
     cover_page,
     popup,
     cover_letter,
@@ -20,9 +23,10 @@ const store = configureStore({
     proposedSitemap,
     budget,
     pageSequence,
+    pageSequenceSmm,
     proposedSitemap2,
     proposedSitemapOverview,
-    out
+    out,
   },
 });
 export default store;

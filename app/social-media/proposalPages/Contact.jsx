@@ -8,6 +8,8 @@ import logo from "@public/assets/socialMedia/SE color logo-09.png";
 
 function Contact() {
   return (
+          <div className="w-[8.27in] h-[1124px]">
+
     <div className="flex flex-col justify-center items-center h-[100%] relative bg-red-10">
       <div className="absolute top-[50px] left-[10%]">
         <img src={logo.src} className="w-[65%]" />
@@ -64,7 +66,8 @@ function Contact() {
       <div className="absolute bottom-0 h-[100px] w-[100%] overflow-hidden z-[200]">
         <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 }
 export default Contact;

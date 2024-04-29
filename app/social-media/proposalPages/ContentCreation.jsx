@@ -5,6 +5,9 @@ import ProfileCreation from "@public/assets/socialMedia/posting.png";
 
 function ContentCreation() {
   return (
+
+          <div className="w-[8.27in] h-[1124px]">
+
     <div className="flex flex-col justify-center items-center h-[100%] relative">
       <div className="absolute top-0 left-[7%]">
         <img src={strips.src} className="w-[50px]" />
@@ -67,7 +70,8 @@ function ContentCreation() {
         </div>
         <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 }
 export default ContentCreation;

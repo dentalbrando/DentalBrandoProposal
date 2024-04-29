@@ -3,6 +3,8 @@ import strips from "@public/assets/socialMedia/pic3.png";
 import sign from "@public/assets/socialMedia/sign.fcbecd86.jpg";
 function CoverLetter() {
   return (
+          <div className="w-[8.27in] h-[1124px]">
+
     <div className="flex flex-col justify-center items-center h-[100%] bg-red-20 relative">
       <div className="absolute top-0 left-[7%]">
         <img src={strips.src} className="w-[50px]" />
@@ -79,7 +81,8 @@ function CoverLetter() {
         </div>
         <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 }
 export default CoverLetter;

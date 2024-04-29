@@ -3,11 +3,7 @@ import { useEffect, useState } from "react";
 import Sidebar from "@components/Sidebar";
 import Form from "@components/Form";
 import LivePreview from "@components/LivePreview";
-import StoreProvider from "./store/StoreProvider";
 import Popup from "@components/Popup";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { setPopup } from "./store/popup";
 import FullProposal from "@components/FullProposal";
 import MyFamilyTree from "@components/FamilyTree";
 import Nav from "@components/Nav";
@@ -23,6 +19,7 @@ import layer1 from "@public/assets/Layer_1.png";
 import frame1 from "@public/assets/Frame 4.png";
 import frame2 from "@public/assets/Frame 5.png";
 import frame3 from "@public/assets/Frame 6.png";
+import StoreProvider from "./store/StoreProvider";
 const familyData = {
   name: "John",
   spouse: "Jane",
@@ -48,13 +45,7 @@ const familyData = {
 };
 
 const Home = () => {
-  const dispatch = useDispatch();
-  const hidePopup = () => {
-    dispatch(setPopup(null));
-  };
-  const message = useSelector((state) => state.popup);
-  const pageNo = useSelector((state) => state.page.formId);
-  const treeWidth = 800; // Set the desired width
+  const treeWidth = 800; 
   const [tokenVerifierTrigger, setTokenVerifierTrigger] = useState(0);
   const [userId, setUserId] = useState(null);
   const [isVerified, setIsVerified] = useState(undefined);

@@ -4,6 +4,8 @@ import VistaGroup from "@public/assets/socialMedia/vista logo.png";
 import WhiteLogo1 from "@public/assets/socialMedia/SE Logo.png";
 function CoverPage() {
   return (
+          <div className="w-[8.27in] h-[1124px]">
+    
       <div className="flex flex-col justify-center items-center h-[100%] relative">
         <div className="flex w-full h-[40%] absolute top-0 overflow-hidden">
           <div className="w-[200%] h-[300%] rounded-[40%] absolute bottom-[0%] right-[20%] z-[50] bg-[#00A2FF]">
@@ -50,6 +52,7 @@ function CoverPage() {
             </div>
           </div>
         </div>
+      </div>
       </div>
   );
 }

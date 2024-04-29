@@ -3,6 +3,8 @@ import whiteLogo from "@public/assets/socialMedia/SE Logo.png";
 
 function Estimate() {
   return (
+          <div className="w-[8.27in] h-[1124px]">
+
     <div className="bg-green-20 w-[8.27in] minh-[29.7cm] h-[29.7cm] bg-white">
       <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">
         <div className="flex w-full h-[35%] absolute top-0 overflow-hidden">
@@ -161,7 +163,8 @@ function Estimate() {
           <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
         </div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 }
 export default Estimate;

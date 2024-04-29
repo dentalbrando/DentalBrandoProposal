@@ -2,7 +2,6 @@
 import Sidebar from "@components/Sidebar";
 import Form from "@components/Form";
 import LivePreview from "@components/LivePreview";
-import StoreProvider from "@app/store/StoreProvider";
 import { useSelector } from "react-redux";
 import FullProposal from "@components/FullProposal";
 import Nav from "@components/Nav";
@@ -13,9 +12,7 @@ import Loader from "@components/Loader";
 
 function Development() {
   let router = useRouter();
-  // const pageNo = 100;
   const pageNo = useSelector((state) => state.page.formId);
-  const pageNo2 = useSelector((state) => state.out.formId2);
   let [isVerified, setIsVerified] = useState(undefined);
   let [loading, setLoading] = useState(true);
 

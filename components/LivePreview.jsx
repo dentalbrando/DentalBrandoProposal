@@ -2,7 +2,6 @@ import CoverLetter from "./Proposal Pages/CoverLetter";
 import ConverPage from "./Proposal Pages/CoverPage";
 import { useSelector } from "react-redux";
 import AboutYourProjects from "./Proposal Pages/AboutYourProjects";
-import FamilyTree from "./FamilyTree";
 import ProposedSiteMap from "./Proposal Pages/ProposedSiteMap";
 import Budget from "./Proposal Pages/Budget";
 import TableOfContent from "./Proposal Pages/TableOfContent";
