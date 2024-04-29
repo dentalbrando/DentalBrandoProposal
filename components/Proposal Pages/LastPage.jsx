@@ -13,11 +13,12 @@ const LastPage = () => {
           <div class="w-[100%] print:h-[7.3rem]">
             <div class="">
               <img class="w-[200px] ml-10 " src={logo.src} alt="" />
+              {/* ___changes_____ */}
               <img
-                class="mt-[-50px]"
-                src={bgImg.src} 
+                class="mt-[-100px]"
+                src={bgImg.src}
                 alt=""
-                className="w-[90%]"
+                className="w-[100%]"
               />
             </div>
             <div class=" mx-10 mt-[-70px] ">
