@@ -15,7 +15,7 @@ const LastPage = () => {
               <img class="w-[200px] ml-10 " src={logo.src} alt="" />
               <img
                 class="mt-[-50px]"
-                src={bgImg.src}
+                src={bgImg.src} 
                 alt=""
                 className="w-[90%]"
               />

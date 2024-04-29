@@ -105,7 +105,7 @@ The purpose of Client Coverage team serves as a single point of contact, underst
               <button
                 className="py-2 px-4 rounded-xl text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
                 onClick={() => {
-                  textareaRef.current.value = `WordPress CMS has been selected for the development of this website due to its numerous benefits. WordPress is a widely recognized and highly versatile content management system that offers many advantages for website development. The key benefit of WordPress is its user-friendly interface, which allows even non-technical individuals to manage and update website content easily.  With its intuitive dashboard, users can effortlessly add, edit, and delete pages, blog posts, images, and other multimedia elements.`;
+                  textareaRef.current.value = `WordPress CMS has been selected for the development of this website due to its numerous benefits. WordPress is a widely recognized and highly versatile content  management system that offers a plethora of advantages for website development. the key benefits of WordPress is its user-friendly interface, which allows even non technical individuals to easily manage and update website content. With its intuitive dashboard, users can effortlessly add, edit, and delete pages, blog posts, images, and other multimedia elements.`;
                   setWebsiteCMS(textareaRef.current.value);
                 }}
               >
