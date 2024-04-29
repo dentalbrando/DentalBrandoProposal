@@ -50,7 +50,7 @@ const TableOfContent = () => {
                       page.content !== "Table of Contents" && (
                         <div
                           className={`${
-                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                            index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
@@ -83,7 +83,7 @@ const TableOfContent = () => {
                       page.content !== "Table of Contents" && (
                         <div
                           className={`${
-                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                            index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
                           key={index}
                         >
@@ -116,7 +116,7 @@ const TableOfContent = () => {
                       page.content !== "Table of Contents" && (
                         <div
                           className={`${
-                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                            index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
@@ -148,7 +148,7 @@ const TableOfContent = () => {
                       page.content !== "Table of Contents" && (
                         <div
                           className={`${
-                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                            index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
@@ -180,7 +180,7 @@ const TableOfContent = () => {
                       page.content !== "Table of Contents" && (
                         <div
                           className={`${
-                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                            index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
@@ -212,7 +212,7 @@ const TableOfContent = () => {
                       page.content !== "Table of Contents" && (
                         <div
                           className={`${
-                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                            index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
@@ -244,7 +244,7 @@ const TableOfContent = () => {
                       page.content !== "Table of Contents" && (
                         <div
                           className={`${
-                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                            index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
@@ -276,7 +276,7 @@ const TableOfContent = () => {
                       page.content !== "Table of Contents" && (
                         <div
                           className={`${
-                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                            index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
@@ -308,7 +308,7 @@ const TableOfContent = () => {
                       page.content !== "Table of Contents" && (
                         <div
                           className={`${
-                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                            index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
@@ -340,7 +340,7 @@ const TableOfContent = () => {
                       page.content !== "Table of Contents" && (
                         <div
                           className={`${
-                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                            index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
@@ -372,7 +372,7 @@ const TableOfContent = () => {
                       page.content !== "Table of Contents" && (
                         <div
                           className={`${
-                            index == "0" ? "mt-[55px]" : "mt-[17px]"
+                            index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">

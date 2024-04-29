@@ -20,7 +20,7 @@ const SidebarSmm = () => {
   const page = useSelector((state) => state.page);
   const dispatch = useDispatch();
   const onDragEnd = (result) => {
-    if (!result.destination) return; 
+    if (!result.destination) return;
     const reorderedItems = Array.from(pageSequenceSmm);
     const [movedItem] = reorderedItems.splice(result.source.index, 1);
     reorderedItems.splice(result.destination.index, 0, movedItem);
@@ -40,8 +40,6 @@ const SidebarSmm = () => {
   };
   useEffect(() => {
     dispatch(setPageSequenceSmm(items));
-    console.log(pageSequenceSmm);
-
   }, [items]);
 
   async function logout() {
@@ -138,7 +136,7 @@ const SidebarSmm = () => {
                       { id: "2", content: "Table of Contents", checked: true },
                       { id: "3", content: "Cover Letter", checked: true },
                       { id: "4", content: "About Us", checked: true },
-                      { id: "5", content: "ProjectObjective", checked: true },
+                      { id: "5", content: "Project Objective", checked: true },
                       { id: "6", content: "Activities", checked: true },
                       { id: "7", content: "Monthly Calender", checked: true },
                       { id: "8", content: "Content Creation", checked: true },
@@ -149,19 +147,19 @@ const SidebarSmm = () => {
                         content: "Advertisement Packages",
                         checked: true,
                       },
-                      // {
-                      //   id: "12",
-                      //   content: "Post Design Packages",
-                      //   checked: true,
-                      // },
-                      // {
-                      //   id: "13",
-                      //   content: "Marketing Packages",
-                      //   checked: true,
-                      // },
-                      // { id: "14", content: "Estimate", checked: true },
-                      // { id: "15", content: "Terms", checked: true },
-                      // { id: "15", content: "Contact", checked: true },
+                      {
+                        id: "12",
+                        content: "Post Design Packages",
+                        checked: true,
+                      },
+                      {
+                        id: "13",
+                        content: "Marketing Packages",
+                        checked: true,
+                      },
+                      { id: "14", content: "Estimate", checked: true },
+                      { id: "15", content: "Terms", checked: true },
+                      { id: "16", content: "Contact", checked: true },
                     ]);
                   }}
                 >
