@@ -91,19 +91,6 @@ const Home = () => {
     storeTokenToDb();
   }, [tokenVerifierTrigger]);
 
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     const value = localStorage.getItem("out");
-  //     console.log(value);
-  //   }
-  // }, []);
-  // useEffect(() => {
-  //   async function logout() {
-  //     await axios.get("/api/logOut");
-  //   }
-  //   logout();
-  // }, []);
-
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (
@@ -120,7 +107,7 @@ const Home = () => {
                   <img src={frame3.src} className="w-[100%] h-[100%]" />
                 </div>
                 <div className="w-fit h-[50%] absolute bottom-0 right-0">
-                  <img src={layer3.src} />
+                  <img src={layer2.src} />
                 </div>
               </div>
             </Link>
@@ -141,7 +128,7 @@ const Home = () => {
                   <img src={frame2.src} className="w-[100%] h-[100%]" />
                 </div>
                 <div className="w-fit h-[50%] absolute bottom-0 right-0">
-                  <img src={layer2.src} />
+                  <img src={layer3.src} />
                 </div>
               </div>
             </Link>
