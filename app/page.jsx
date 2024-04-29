@@ -45,7 +45,7 @@ const familyData = {
 };
 
 const Home = () => {
-  const treeWidth = 800; 
+  const treeWidth = 800;
   const [tokenVerifierTrigger, setTokenVerifierTrigger] = useState(0);
   const [userId, setUserId] = useState(null);
   const [isVerified, setIsVerified] = useState(undefined);
@@ -99,7 +99,7 @@ const Home = () => {
         </div>
       ) : isVerified ? (
         <>
-          <Nav />
+          <Nav main={true} />
           <div className="flex gap-24 justify-center items-center h-[88vh] w-[100%]">
             <Link href={"/development"}>
               <div className="w-[100%] h-[100%] p5 relative">
