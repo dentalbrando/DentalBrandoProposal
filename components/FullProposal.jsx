@@ -98,9 +98,6 @@ const FullProposal = () => {
               return page.checked && <LastPage key={index} />;
           }
         })}
-        {/* <button type="button" onClick={generatePdf}>
-          Download PDF
-        </button> */}
       </div>
     </div>
   );

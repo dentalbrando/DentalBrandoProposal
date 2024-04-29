@@ -10,7 +10,7 @@ import client6 from "@public/assets/socialMedia/our clients logo-13.png";
 import client7 from "@public/assets/socialMedia/our clients logo-14.png";
 import client8 from "@public/assets/socialMedia/our clients logo-15.png";
 
-function ValuedClient() {
+function ValuedClient(prop) {
   return (
     <div className="w-[8.27in] h-[1123px]">
       <div className="bg-green-20 w-[8.27in] minh-[29.7cm] h-[29.7cm] bg-white">
@@ -146,7 +146,7 @@ function ValuedClient() {
                 Social Media Marketing Proposal
               </span>
               <span className="text-gray-700 text-[15px] font-[500]">
-                Page 08
+                {prop.pageNumber < 10 ? "0" + prop.pageNumber : prop.pageNumber}
               </span>
             </div>
             <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>

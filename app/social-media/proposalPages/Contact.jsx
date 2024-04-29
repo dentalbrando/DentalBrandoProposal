@@ -6,7 +6,7 @@ import web from "@public/assets/socialMedia/Untitled-1-02.png";
 import mail from "@public/assets/socialMedia/Untitled-1-01.png";
 import logo from "@public/assets/socialMedia/SE color logo-09.png";
 
-function Contact() {
+function Contact(prop) {
   return (
           <div className="w-[8.27in] h-[1123px]">
 

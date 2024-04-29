@@ -2,7 +2,7 @@
 import coverPageImage from "@public/assets/socialMedia/cover page.png";
 import VistaGroup from "@public/assets/socialMedia/vista logo.png";
 import WhiteLogo1 from "@public/assets/socialMedia/SE Logo.png";
-function CoverPage() {
+function CoverPage(prop) {
   return (
           <div className="w-[8.27in] h-[1123px]">
     
