@@ -15,7 +15,7 @@ function TableOfContent() {
   }, [pageSequenceSmm]);
 
   return (
-    <div className="w-[8.27in] h-[1123px]">
+    <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-center items-center h-[100%] relative">
         <div className="flex w-full h-[40%] absolute top-0 overflow-hidden">
           <div className="w-[120%] h-[75%] rounded-br-[300%] rounded-bl-[80%] absolute top-[-30%] right-[-10%] z-[50] bg-[#00A2FF]"></div>
@@ -88,10 +88,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                         key={index}
                       >
@@ -120,10 +120,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -151,10 +151,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -182,10 +182,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -213,10 +213,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -244,10 +244,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -275,10 +275,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -306,10 +306,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -337,10 +337,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -368,10 +368,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -399,10 +399,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -430,10 +430,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -461,10 +461,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -492,10 +492,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
@@ -523,10 +523,10 @@ function TableOfContent() {
                     page.content !== "Table of Contents" && (
                       <div
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
-                                                  number % 2 === 0
-                                                    ? "bg-[rgb(239,239,240)]"
-                                                    : "bg-[rgb(0,162,255)]"
-                                                }
+                          number % 2 === 0
+                            ? "bg-[rgb(239,239,240)]"
+                            : "bg-[rgb(0,162,255)]"
+                        }
 `}
                       >
                         <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">

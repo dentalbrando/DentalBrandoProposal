@@ -4,7 +4,7 @@ import clock from "@public/assets/socialMedia/clock icon-15.png";
 
 function PostDesignPackages(prop) {
   return (
-    <div className="w-[8.27in] h-[1123px]">
+    <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-start items-center h-[100%] relative">
         <div className="absolute top-0 left-[7%]">
           <img src={strips.src} className="w-[50px]" />
@@ -127,7 +127,7 @@ function PostDesignPackages(prop) {
             </span>
             <span className="text-gray-700 text-[15px] font-[500]">
               {prop.pageNumber < 10 ? "0" + prop.pageNumber : prop.pageNumber}
-          </span>
+            </span>
           </div>
           <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
         </div>

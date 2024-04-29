@@ -4,7 +4,7 @@ import roundStripes from "@public/assets/socialMedia/Social Media Marketing Prop
 
 function ProjectObjective(prop) {
   return (
-    <div className="w-[8.27in] h-[1123px]">
+    <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">
         <div className="flex w-full h-[40%] absolute top-0 overflow-hidden">
           <div className="w-[150%] h-[100%] rounded-br-[45%] rounded-bl-[40%] absolute top-[0%] right-[-10%] z-[50] bg-[#00A2FF] flex justify-center items-center"></div>

@@ -4,7 +4,7 @@ import clock from "@public/assets/socialMedia/clock icon-15.png";
 
 function AdvertisementPackages(prop) {
   return (
-    <div className="w-[8.27in] h-[1123px]">
+    <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-start items-center h-[100%] relative">
         <div className="absolute top-0 left-[7%]">
           <img src={strips.src} className="w-[50px]" />

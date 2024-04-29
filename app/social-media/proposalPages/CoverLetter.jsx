@@ -3,7 +3,7 @@ import strips from "@public/assets/socialMedia/pic3.png";
 import sign from "@public/assets/socialMedia/sign.fcbecd86.jpg";
 function CoverLetter(prop) {
   return (
-    <div className="w-[8.27in] h-[1123px]">
+    <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-center items-center h-[100%] bg-red-20 relative">
         <div className="absolute top-0 left-[7%]">
           <img src={strips.src} className="w-[50px]" />

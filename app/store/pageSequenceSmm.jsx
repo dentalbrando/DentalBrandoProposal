@@ -16,7 +16,7 @@ const initialState = {
     { id: "12", content: "Post Design Packages", checked: true },
     { id: "13", content: "Marketing Packages", checked: true },
     { id: "14", content: "Estimate", checked: true },
-    { id: "15", content: "Terms", checked: true },
+    { id: "15", content: "Terms & Conditions", checked: true },
     { id: "16", content: "Contact", checked: true },
   ],
 };
