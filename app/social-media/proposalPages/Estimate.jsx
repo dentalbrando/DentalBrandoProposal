@@ -3,7 +3,7 @@ import whiteLogo from "@public/assets/socialMedia/SE Logo.png";
 
 function Estimate() {
   return (
-          <div className="w-[8.27in] h-[1124px]">
+          <div className="w-[8.27in] h-[1123px]">
 
     <div className="bg-green-20 w-[8.27in] minh-[29.7cm] h-[29.7cm] bg-white">
       <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">

@@ -3,7 +3,7 @@ import strips from "@public/assets/socialMedia/pic3.png";
 
 function MarketingPackages() {
   return (
-          <div className="w-[8.27in] h-[1124px]">
+          <div className="w-[8.27in] h-[1123px]">
 
     <div className="flex flex-col justify-start items-center h-[100%] relative">
       <div className="absolute top-0 left-[7%]">

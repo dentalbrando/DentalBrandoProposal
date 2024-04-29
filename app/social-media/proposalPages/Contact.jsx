@@ -8,7 +8,7 @@ import logo from "@public/assets/socialMedia/SE color logo-09.png";
 
 function Contact() {
   return (
-          <div className="w-[8.27in] h-[1124px]">
+          <div className="w-[8.27in] h-[1123px]">
 
     <div className="flex flex-col justify-center items-center h-[100%] relative bg-red-10">
       <div className="absolute top-[50px] left-[10%]">

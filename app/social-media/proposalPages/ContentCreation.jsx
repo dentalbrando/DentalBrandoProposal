@@ -6,7 +6,7 @@ import ProfileCreation from "@public/assets/socialMedia/posting.png";
 function ContentCreation() {
   return (
 
-          <div className="w-[8.27in] h-[1124px]">
+          <div className="w-[8.27in] h-[1123px]">
 
     <div className="flex flex-col justify-center items-center h-[100%] relative">
       <div className="absolute top-0 left-[7%]">

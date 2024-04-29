@@ -4,7 +4,7 @@ import strips from "@public/assets/socialMedia/pic3.png";
 
 function Activities() {
   return (
-          <div className="w-[8.27in] h-[1124px]">
+          <div className="w-[8.27in] h-[1123px]">
 
     <div className="flex flex-col justify-center items-center h-[100%] relative">
       <div className="flex w-full h-[50%] absolute top-0 overflow-hidden">

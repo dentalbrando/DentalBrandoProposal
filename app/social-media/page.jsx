@@ -49,7 +49,7 @@ function Development() {
                   <SidebarSmm />
                 </div>
                 <div className="flex flex-col gap-5">
-                  <Form />
+                  {/* <Form /> */}
                   <LivePreviewSmm />
                 </div>
               </div>
