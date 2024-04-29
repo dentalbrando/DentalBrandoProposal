@@ -1,6 +1,7 @@
 "use client";
 import map from "@public/assets/socialMedia/map-17.png";
 import roundStripes from "@public/assets/socialMedia/Social Media Marketing Proposal-16.png";
+import logo from "@public/assets/socialMedia/SE color logo-09.png";
 
 function ProjectObjective(prop) {
   return (
@@ -47,6 +48,9 @@ function ProjectObjective(prop) {
           </div>
           <div className="absolute w-[100%] h-[100%] z-[200] flex justify-center items-center">
             <img src={roundStripes.src} className="w-full" />
+          </div>
+          <div className="absolute w-[100%] h-[100%] z-[200] flex justify-center items-center mx-auto ">
+            <img src={logo.src} className="w-[13%]" />
           </div>
           <div className="absolute w-[100%] h-[60%] z-[100] bg-green-40 flex flex-col justify-between items-center">
             <div className="w-[90%] h-[30%] z-[100] bg-blue-40 flex justify-between items-center text-center leading-tight">
