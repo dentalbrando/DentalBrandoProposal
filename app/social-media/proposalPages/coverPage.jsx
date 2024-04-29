@@ -26,7 +26,7 @@ function CoverPage(prop) {
           <div className="w-[80%] h-[130%] rounded-[50%] absolute top-[-60%] right-[-40%] z-[10] bg-[#ffd600]"></div>
         </div>
         <img src={coverPageImage.src} className="z-[0]" />
-        <div className="flex w-full h-[20%] absolute bottom-0 overflow-hidden">
+        <div className="flex w-full h-[40%] absolute bottom-0 overflow-hidden">
           <div className="w-[200%] h-[250%] rounded-[50%] absolute top-[10%] left-[-50%] z-[10] bg-[#ffd600] z-[50]"></div>
           <div className="w-[200%] h-[250%] rounded-[50%] absolute top-[15%] left-[-45%] z-[10] bg-[#00A2FF] z-[50]">
             <div className=" w-[7.5in] h-[100px] flex justify-center absolute top-[10%] left-[25%]">
