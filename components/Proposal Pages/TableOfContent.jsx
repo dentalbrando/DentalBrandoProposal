@@ -6,8 +6,6 @@ const TableOfContent = () => {
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
   let number = 0;
 
-  // console.log(pageSequence);
-
   return (
     <>
       <div className="flex w-[8.27in] h-[1122.6px] justify-center items-center shadow-lg bg-white">
@@ -33,7 +31,6 @@ const TableOfContent = () => {
             <div style={{ paddingRight: "44px" }} className="whitespace-nowrap">
               {pageSequence.map((page, index) => {
                 const id = page.id;
-                // if (id == "1") return;
 
                 if (
                   page.checked &&
