@@ -14,7 +14,7 @@ const Nav = (props) => {
           </Link>
           <h1
             className={`text-main-blue text-[30px] font-medium 
-          ${props.main ? "w-full" : "w-[78vw]"}
+          ${props.main ? "w-full" : "w-[80vw]"}
           w-[78vw]
           flex justify-center absolute right-0`}
           >
