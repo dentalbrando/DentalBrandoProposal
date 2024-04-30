@@ -39,7 +39,7 @@ function CoverPage(prop) {
           <div className="w-[200%] h-[250%] rounded-[50%] absolute top-[10%] left-[-50%] z-[10] bg-[#ffd600] z-[50]"></div>
           <div className="w-[200%] h-[250%] rounded-[50%] absolute top-[15%] left-[-45%] z-[10] bg-[#00A2FF] z-[50]">
             <div className=" w-[7.5in] h-[100px] flex justify-evenly absolute top-[10%] left-[25%]">
-              <div className="w-[20%] relative h-[120px]">
+              <div className="w-[20%] relative h-[120px] ">
                 <h2 className="text-[#ffd600] font-bold text-xl h-[30px]">
                   Prepared for:
                 </h2>
@@ -58,24 +58,27 @@ function CoverPage(prop) {
                   ) : null}
                 </div>
               </div>
-              <div className="flex flex-col justify-start gap-[6px] w-[33%] relative g-red-400">
-                <h2 className="text-[#ffd600] font-bold text-xl">
-                  {cover_pageSmm.companyName !== ""
-                    ? cover_pageSmm.companyName
-                    : "Company Name"}
-                </h2>
-                <p className="text-white text-lg">
-                  {cover_pageSmm.companyPhoneNumber !== ""
-                    ? cover_pageSmm.companyPhoneNumber
-                    : "Company Phone Number"}
-                </p>
-                <p className="text-white text-lg">
-                  {cover_pageSmm.companyAddress !== ""
-                    ? cover_pageSmm.companyAddress
-                    : "Company Address"}
-                </p>
+
+              <div className="flex flex-col justify-en w-[33%] h-[120px] relative">
+                <div className="absolute top-[30px] flex flex-col justify-start gap-[6px] w-full relative">
+                  <h2 className="text-white text-lg">
+                    {cover_pageSmm.companyName !== ""
+                      ? cover_pageSmm.companyName
+                      : "Company Name"}
+                  </h2>
+                  <p className="text-white text-lg">
+                    {cover_pageSmm.companyPhoneNumber !== ""
+                      ? cover_pageSmm.companyPhoneNumber
+                      : "Company Phone Number"}
+                  </p>
+                  <p className="text-white text-lg">
+                    {cover_pageSmm.companyAddress !== ""
+                      ? cover_pageSmm.companyAddress
+                      : "Company Address"}
+                  </p>
+                </div>
               </div>
-              <div className="flex flex-col justify-start gap-[20px] w-[20%] relative g-red-300">
+              <div className="flex flex-col justify-start gap-[20px] w-[20%] relative">
                 <div className="w-[33% relative g-red-300">
                   <h2 className="text-[#ffd600] font-bold text-xl">
                     Proposal Issued:
