@@ -124,7 +124,7 @@ const FullProposal = () => {
             case "13":
               return (
                 page.checked && (
-                  <AdvertisementPackages
+                  <MarketingPackages
                     key={index}
                     pageNumber={pageNumber++}
                   />
