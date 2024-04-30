@@ -1,8 +1,11 @@
 "use client";
 import strips from "@public/assets/socialMedia/pic3.png";
 import clock from "@public/assets/socialMedia/clock icon-15.png";
+import { useSelector } from "react-redux";
 
 function PostDesignPackages(prop) {
+  let postPackages = useSelector((state) => state.post_package);
+
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-start items-center h-[100%] relative">
@@ -35,7 +38,8 @@ function PostDesignPackages(prop) {
                     Basic
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR</span> 7,999
+                    <span className="text-[14px] font-[300]">PKR</span>{" "}
+                    {postPackages.basic}
                   </h2>
                 </div>
                 <div className="h-[65%] w-full text-[14px] font-[500] text-center flex flex-col gap-3">
@@ -62,7 +66,8 @@ function PostDesignPackages(prop) {
                     Standard
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR</span> 12,999
+                    <span className="text-[14px] font-[300]">PKR</span>
+                    {postPackages.standard}
                   </h2>
                 </div>
                 <div className="h-[65%] w-full text-[14px] font-[500] text-center flex flex-col gap-3">
@@ -92,7 +97,8 @@ function PostDesignPackages(prop) {
                     Premium
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR</span> 19,999
+                    <span className="text-[14px] font-[300]">PKR</span>
+                    {postPackages.premium}
                   </h2>
                 </div>
                 <div className="h-[65%] w-full text-[14px] font-[500] text-center flex flex-col gap-3">

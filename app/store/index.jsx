@@ -14,6 +14,7 @@ import cover_letterSmm from "./CoverLetterSmm";
 import cover_pageSmm from "./coverPageSmm";
 import pageSequenceSmm from "./pageSequenceSmm";
 import ad_package from "./AdpackagesSliceSmm";
+import post_package from "./PostpackagesSliceSmm";
 const store = configureStore({
   reducer: {
     page,
@@ -31,6 +32,7 @@ const store = configureStore({
     cover_letterSmm,
     cover_pageSmm,
     ad_package,
+    post_package,
   },
 });
 export default store;
