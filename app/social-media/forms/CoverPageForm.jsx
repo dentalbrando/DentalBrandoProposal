@@ -47,7 +47,6 @@ const CoverPageForm = () => {
   };
   useEffect(() => {
     handleSave();
-    console.log(coverPage);
   }, [
     subHeading,
     companyPhoneNumber,

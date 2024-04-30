@@ -13,6 +13,7 @@ import proposedSitemapOverview from "./proposedSitemapOverview";
 import cover_letterSmm from "./CoverLetterSmm";
 import cover_pageSmm from "./coverPageSmm";
 import pageSequenceSmm from "./pageSequenceSmm";
+import ad_package from "./AdpackagesSliceSmm";
 const store = configureStore({
   reducer: {
     page,
@@ -29,6 +30,7 @@ const store = configureStore({
     proposedSitemapOverview,
     cover_letterSmm,
     cover_pageSmm,
+    ad_package,
   },
 });
 export default store;
