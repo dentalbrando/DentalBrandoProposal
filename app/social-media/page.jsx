@@ -1,5 +1,4 @@
 "use client";
-import Form from "@components/Form";
 import LivePreview from "@components/LivePreview";
 import { useSelector } from "react-redux";
 import FullProposalSmm from "./FullProposalSmm";
@@ -10,6 +9,7 @@ import axios from "axios";
 import Loader from "@components/Loader";
 import SidebarSmm from "./SidebarSmm";
 import LivePreviewSmm from "./LivePreviewSmm";
+import FormSmm from "./FormSmm";
 
 function Development() {
   let router = useRouter();
@@ -50,7 +50,7 @@ function Development() {
                   <SidebarSmm />
                 </div>
                 <div className="flex flex-col gap-5">
-                  {/* <Form /> */}
+                  <FormSmm />
                   <LivePreviewSmm />
                 </div>
               </div>
