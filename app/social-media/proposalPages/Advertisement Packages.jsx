@@ -66,7 +66,7 @@ function AdvertisementPackages(prop) {
                     Standard
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR</span>
+                    <span className="text-[14px] font-[300]">PKR </span>
                     {addpackages.standard}
                   </h2>
                 </div>
@@ -95,7 +95,7 @@ function AdvertisementPackages(prop) {
                     Premium
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR</span>
+                    <span className="text-[14px] font-[300]">PKR </span>
                     {addpackages.premium}
                   </h2>
                 </div>

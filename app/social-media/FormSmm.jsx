@@ -6,7 +6,6 @@ import CoverLetterForm from "./forms/CoverLetterForm";
 import AdPackageForm from "./forms/AdPackageForm";
 import MarketingPackageForm from "./forms/MarketingPackageForm";
 import PostPackageForm from "./forms/PostPackageForm";
-import ProjectObjectiveForm from "./forms/ProjectObjectiveForm";
 import EstimateForm from "./forms/EstimateForm";
 
 const FormSmm = () => {
@@ -34,8 +33,6 @@ const FormSmm = () => {
         <CoverPageForm />
       ) : page.formId == "3" ? (
         <CoverLetterForm />
-      ) : page.formId == "5" ? (
-        <ProjectObjectiveForm />
       ) : page.formId == "11" ? (
         <AdPackageForm />
       ) : page.formId == "12" ? (

@@ -30,7 +30,7 @@ function Estimate(prop) {
               </div>
               <div className="flex flex-col justify-center w-full leading-snug">
                 <span className="text-[rgb(255,214,0)] text-[20px] font-[700]">
-                  Total Estimate: PKR 340,000
+                  Total Estimate: {budgetData.currency} {totalEstimate}
                 </span>
               </div>
 
@@ -45,7 +45,9 @@ function Estimate(prop) {
           <div className="w-full h-[60%] absolute bottom-[10%] flex flex-col items-center gap-3">
             <div className="flex flex-col justify-center w-[87%] leading-[1.2]">
               <span className="text-[20px] font-[400]">Invoice To</span>
-              <span className="text-[30px] font-[600]">{cover_pageSmm?.companyName}</span>
+              <span className="text-[30px] font-[600]">
+                {cover_pageSmm?.companyName}
+              </span>
             </div>
 
             <div className="flex flex-col justify-center w-[87%] gap-1">
@@ -97,7 +99,7 @@ function Estimate(prop) {
                     SUBTOTAL
                   </span>
                   <span className="text-[17px] font-[600] text-center w-[56%]">
-                    {subTotal}
+                    {budgetData.currency} {subTotal}
                   </span>
                 </div>
                 <div className="flex justify-between items-center w-[40%] px-3 py-1">
@@ -105,7 +107,8 @@ function Estimate(prop) {
                     DISCOUNT
                   </span>
                   <span className="text-[17px] font-[600] text-center w-[56%]">
-                    -{budgetData.discount ? budgetData.discount : 0}
+                    - {budgetData.currency}{" "}
+                    {budgetData.discount ? budgetData.discount : 0}
                   </span>
                 </div>
                 <div className="flex justify-between items-center w-[40%] px-3 py-2 bg-[rgb(255,214,0)]">
@@ -113,7 +116,7 @@ function Estimate(prop) {
                     TOTAL
                   </span>
                   <span className="text-[17px] font-[600] text-center w-[56%]">
-                    {totalEstimate}
+                    {budgetData.currency} {totalEstimate}
                   </span>
                 </div>
               </div>

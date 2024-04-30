@@ -38,7 +38,7 @@ function PostDesignPackages(prop) {
                     Basic
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR</span>{" "}
+                    <span className="text-[14px] font-[300]">PKR </span>
                     {postPackages.basic}
                   </h2>
                 </div>
@@ -66,7 +66,7 @@ function PostDesignPackages(prop) {
                     Standard
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR</span>
+                    <span className="text-[14px] font-[300]">PKR </span>
                     {postPackages.standard}
                   </h2>
                 </div>
@@ -97,7 +97,7 @@ function PostDesignPackages(prop) {
                     Premium
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR</span>
+                    <span className="text-[14px] font-[300]">PKR </span>
                     {postPackages.premium}
                   </h2>
                 </div>
