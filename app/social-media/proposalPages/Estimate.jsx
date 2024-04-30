@@ -5,6 +5,8 @@ import { useSelector } from "react-redux";
 function Estimate(prop) {
   const storedServices = useSelector((state) => state.budget_smm.service);
   const budgetData = useSelector((state) => state.budget_smm);
+  const cover_pageSmm = useSelector((state) => state.cover_pageSmm);
+
   let subTotal = 0;
   let totalEstimate = 0;
   if (budgetData.service != "") {
@@ -43,9 +45,7 @@ function Estimate(prop) {
           <div className="w-full h-[60%] absolute bottom-[10%] flex flex-col items-center gap-3">
             <div className="flex flex-col justify-center w-[87%] leading-[1.2]">
               <span className="text-[20px] font-[400]">Invoice To</span>
-              <span className="text-[30px] font-[600]">
-                VISTA Conard Tower-1
-              </span>
+              <span className="text-[30px] font-[600]">{cover_pageSmm?.companyName}</span>
             </div>
 
             <div className="flex flex-col justify-center w-[87%] gap-1">
