@@ -2,8 +2,12 @@
 import map from "@public/assets/socialMedia/map-17.png";
 import roundStripes from "@public/assets/socialMedia/Social Media Marketing Proposal-16.png";
 import logo from "@public/assets/socialMedia/SE color logo-09.png";
+import whtieCircle from "@public/assets/socialMedia/whtieCircle.png";
+import { useSelector } from "react-redux";
 
 function ProjectObjective(prop) {
+  const cover_pageSmm = useSelector((state) => state.cover_pageSmm);
+
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">
@@ -49,8 +53,20 @@ function ProjectObjective(prop) {
           <div className="absolute w-[100%] h-[100%] z-[200] flex justify-center items-center">
             <img src={roundStripes.src} className="w-full" />
           </div>
-          <div className="absolute w-[100%] h-[100%] z-[200] flex justify-center items-center mx-auto ">
-            <img src={logo.src} className="w-[13%]" />
+          <div className="absolute w-[100%] h-[100%] z-[200] flex justify-center items-center mx-auto averflow-hidden bg-red-10">
+            <div className="relative w-[150px] h-[150px] bg-white rounded-full overflow-hidden">
+              {cover_pageSmm.companyLogo ? (
+                <img
+                  src={cover_pageSmm.companyLogo.string}
+                  className="absolute w-[100%] h-[100%]"
+                />
+              ) : (
+                <img
+                  src={whtieCircle.src}
+                  className="absolute w-[100%] h-[100%]"
+                />
+              )}
+            </div>
           </div>
           <div className="absolute w-[100%] h-[60%] z-[100] bg-green-40 flex flex-col justify-between items-center">
             <div className="w-[90%] h-[30%] z-[100] bg-blue-40 flex justify-between items-center text-center leading-tight">
