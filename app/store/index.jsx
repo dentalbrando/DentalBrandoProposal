@@ -8,6 +8,7 @@ import aboutYourProject from "./aboutYourProject";
 import proposedSitemap from "./proposedSitemap";
 import proposedSitemap2 from "./proposedSitemap2";
 import budget from "./budget";
+import budget_smm from "./budgetSmm";
 import pageSequence from "./pageSequence";
 import proposedSitemapOverview from "./proposedSitemapOverview";
 import cover_letterSmm from "./CoverLetterSmm";
@@ -35,6 +36,7 @@ const store = configureStore({
     ad_package,
     post_package,
     marketing_package,
+    budget_smm,
   },
 });
 export default store;

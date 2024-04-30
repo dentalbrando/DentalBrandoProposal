@@ -1,18 +1,19 @@
+import store from "@app/store";
 import {
   appendTerm,
   setCurrency,
   setDiscount,
   setService,
   setTerms,
-} from "@app/store/budget";
+} from "@app/store/budgetSmm";
 import TextInput from "@components/TextInput";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const EstimateForm = () => {
   const dispatch = useDispatch();
-  const storedServices = useSelector((state) => state.budget.service);
-  const budget = useSelector((state) => state.budget);
+  const storedServices = useSelector((state) => state.budget_smm.service);
+  const budget = useSelector((state) => state.budget_smm);
   const [services, setServices] = useState(
     storedServices ? storedServices : [{}]
   ); // An array of service objects
@@ -24,7 +25,7 @@ const EstimateForm = () => {
       [field]: value,
     };
     setServices(updatedServices);
-
+    
     // Dispatch to Redux for storing the updated service object
     dispatch(setService(updatedServices));
   };

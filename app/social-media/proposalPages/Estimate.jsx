@@ -1,7 +1,19 @@
 "use client";
 import whiteLogo from "@public/assets/socialMedia/SE Logo.png";
+import { useSelector } from "react-redux";
 
 function Estimate(prop) {
+  const storedServices = useSelector((state) => state.budget_smm.service);
+  const budgetData = useSelector((state) => state.budget_smm);
+  let subTotal = 0;
+  let totalEstimate = 0;
+  if (budgetData.service != "") {
+    budgetData.service?.map((service) => {
+      subTotal = subTotal + parseInt(service.charges ? service.charges : 0);
+    });
+    totalEstimate = subTotal - budgetData.discount;
+  }
+  console.log(subTotal, totalEstimate);
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="bg-green-20 w-[8.27in] minh-[29.7cm] h-[29.7cm] bg-white">
@@ -43,7 +55,7 @@ function Estimate(prop) {
               </span>
 
               <div className="flex flex-col justify-start w-full h-[fit-content]">
-                <div className="flex justify-between w-full text-[16px] font-[600]">
+                <div className="flex justify-between w-full text-[16px] font-[600] mb-5">
                   <div className=" w-[12%] bg-[#ffd600] text-center pb-1 pt-2 ">
                     No.
                   </div>
@@ -57,42 +69,26 @@ function Estimate(prop) {
                     SUB TOTAL (PKR)
                   </div>
                 </div>
-                <div className="flex justify-between w-full text-[16px] font-[400] pt-5">
-                  <div className=" w-[12%] text-center py-1">1</div>
-                  <div className=" w-[46%] py-1 ps-4">Service description </div>
-                  <div className=" w-[16%] text-center py-1">Basic</div>
-                  <div className=" w-[24%] text-center py-1">192300</div>
-                </div>
-                <div className="flex justify-between w-full text-[16px] font-[400]">
-                  <div className=" w-[12%] text-center py-1">2</div>
-                  <div className=" w-[46%] py-1 ps-4">Service description </div>
-                  <div className=" w-[16%] text-center py-1">Premium</div>
-                  <div className=" w-[24%] text-center py-1">192300</div>
-                </div>
-                <div className="flex justify-between w-full text-[16px] font-[400]">
-                  <div className=" w-[12%] text-center py-1">3</div>
-                  <div className=" w-[46%] py-1 ps-4">Service description </div>
-                  <div className=" w-[16%] text-center py-1">Premium</div>
-                  <div className=" w-[24%] text-center py-1">192300</div>
-                </div>
-                <div className="flex justify-between w-full text-[16px] font-[400]">
-                  <div className=" w-[12%] text-center py-1">4</div>
-                  <div className=" w-[46%] py-1 ps-4">Service description </div>
-                  <div className=" w-[16%] text-center py-1">Premium</div>
-                  <div className=" w-[24%] text-center py-1">192300</div>
-                </div>
-                <div className="flex justify-between w-full text-[16px] font-[400]">
-                  <div className=" w-[12%] text-center py-1">5</div>
-                  <div className=" w-[46%] py-1 ps-4">Service description </div>
-                  <div className=" w-[16%] text-center py-1">Premium</div>
-                  <div className=" w-[24%] text-center py-1">192300</div>
-                </div>
-                <div className="flex justify-between w-full text-[16px] font-[400] pb-5 border-b-[1px] border-black">
-                  <div className=" w-[12%] text-center py-1">6</div>
-                  <div className=" w-[46%] py-1 ps-4">Service description </div>
-                  <div className=" w-[16%] text-center py-1">Premium</div>
-                  <div className=" w-[24%] text-center py-1">192300</div>
-                </div>
+                {storedServices.length > 0
+                  ? storedServices.map((item, key) => (
+                      <>
+                        <div className="flex justify-between w-full text-[16px] font-[400]">
+                          <div className=" w-[12%] text-center py-1">
+                            {key + 1}
+                          </div>
+                          <div className=" w-[46%] py-1 ps-4">
+                            {item.description}
+                          </div>
+                          <div className=" w-[16%] text-center py-1">
+                            {item.packageType}
+                          </div>
+                          <div className=" w-[24%] text-center py-1">
+                            {item.charges}
+                          </div>
+                        </div>
+                      </>
+                    ))
+                  : null}
               </div>
 
               <div className="flex flex-col justify-end items-end w-full pt-10 pb-7 border-b-[1px] border-black">
@@ -101,7 +97,7 @@ function Estimate(prop) {
                     SUBTOTAL
                   </span>
                   <span className="text-[17px] font-[600] text-center w-[56%]">
-                    192
+                    {subTotal}
                   </span>
                 </div>
                 <div className="flex justify-between items-center w-[40%] px-3 py-1">
@@ -109,7 +105,7 @@ function Estimate(prop) {
                     DISCOUNT
                   </span>
                   <span className="text-[17px] font-[600] text-center w-[56%]">
-                    -54230
+                    -{budgetData.discount ? budgetData.discount : 0}
                   </span>
                 </div>
                 <div className="flex justify-between items-center w-[40%] px-3 py-2 bg-[rgb(255,214,0)]">
@@ -117,7 +113,7 @@ function Estimate(prop) {
                     TOTAL
                   </span>
                   <span className="text-[17px] font-[600] text-center w-[56%]">
-                    982000
+                    {totalEstimate}
                   </span>
                 </div>
               </div>
@@ -127,21 +123,9 @@ function Estimate(prop) {
                   TERMS & CONDITIONS
                 </span>
                 <span className="text-[15.5px] font-[400] w-full text-justify">
-                  1. This is an estimate only, and will be provided an invoice
-                  after acceptance of this estimate.
-                </span>
-                <span className="text-[15.5px] font-[400] w-full text-justify">
-                  2. Estimate can be revise if change in work requirements
-                </span>
-                <span className="text-[15.5px] font-[400] w-full text-justify">
-                  3. Estimate is valid for 7 days only.
-                </span>
-                <span className="text-[15.5px] font-[400] w-full text-justify">
-                  4. After delivering the website , 6 months of maintenance will
-                  be there with Premium Plan.
-                </span>
-                <span className="text-[15.5px] font-[400] w-full text-justify">
-                  5. 50% Payment will be in advance
+                  {budgetData.terms.map((item, index) =>
+                    item ? <li>{item}</li> : null
+                  )}
                 </span>
               </div>
             </div>
