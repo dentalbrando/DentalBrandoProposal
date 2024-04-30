@@ -1,8 +1,8 @@
 "use client";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { setClientName } from "@app/store/CoverLetterSmm";
-import { setLetterText } from "@app/store/coverLetterSmm";
+import { setClientName, setLetterText } from "@app/store/CoverLetterSmm";
+
 const CoverLetterForm = () => {
   const dispatch = useDispatch();
   let coverLetterSmm = useSelector((state) => state.cover_letterSmm);
