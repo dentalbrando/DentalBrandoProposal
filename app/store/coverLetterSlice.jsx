@@ -4,7 +4,6 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
     letterText: '',
     clientName: '',
-
 };
 
 const coverLetterSlice = createSlice({

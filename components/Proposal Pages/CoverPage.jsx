@@ -25,7 +25,7 @@ const CoverPage = () => {
             <div className="bg-[#00A2FF] z-[1] w-[68%] h-[26rem] custom-shape3 flex items-center pl-14">
               <div className="flex flex-col justify-center">
                 <span className="text-white w-[19rem] text-[24.85pt] leading-[2.5rem] font-[700] tracking-[0.5pt]">
-                  {cover_page.projectTitle == ""
+                  {cover_page.projectTitle == "" 
                     ? "{No Project title}"
                     : cover_page.projectTitle}
                 </span>

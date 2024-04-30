@@ -10,7 +10,8 @@ import proposedSitemap2 from "./proposedSitemap2";
 import budget from "./budget";
 import pageSequence from "./pageSequence";
 import proposedSitemapOverview from "./proposedSitemapOverview";
-import out from "./out";
+import cover_letterSmm from "./CoverLetterSmm";
+import cover_pageSmm from "./coverPageSmm";
 import pageSequenceSmm from "./pageSequenceSmm";
 const store = configureStore({
   reducer: {
@@ -26,7 +27,8 @@ const store = configureStore({
     pageSequenceSmm,
     proposedSitemap2,
     proposedSitemapOverview,
-    out,
+    cover_letterSmm,
+    cover_pageSmm,
   },
 });
 export default store;
