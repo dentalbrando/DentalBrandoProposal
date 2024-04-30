@@ -2,12 +2,13 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { setClientName, setLetterText } from "@app/store/CoverLetterSmm";
-
+import Select from "react-select";
 const CoverLetterForm = () => {
   const dispatch = useDispatch();
   let coverLetterSmm = useSelector((state) => state.cover_letterSmm);
   const [clientName, setclientName] = useState(coverLetterSmm.clientName);
   const [letterText, setletterText] = useState(coverLetterSmm.letterText);
+  const [letterType, setletterType] = useState("Social Media");
 
   const handleSave = () => {
     dispatch(setLetterText(letterText));
@@ -17,24 +18,45 @@ const CoverLetterForm = () => {
   useEffect(() => {
     handleSave();
   }, [clientName, letterText]);
+  const selectOptions = [
+    { value: "Socail Media", label: "Social Media" },
+    // ...
+  ];
 
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
       <div className="">
         <div className="flex justify-center items-start h-fit my-5">
           <div className="w-[100%]">
-            <div className={`flex justify-start items-center w-[100%]`}>
-              <label
-                className={`text-gray-900 text-[16px] font-medium pe-10 w-[20%]`}
-              >
-                Client Name
-              </label>
-              <input
-                className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[30%]`}
-                onChange={(e) => setclientName(e.target.value)}
-                value={coverLetterSmm.clientName}
-              />
+            <div className="w-full flex justify-between items-center">
+              <div className={`flex justify-start items-center w-[100%]`}>
+                <label
+                  className={`text-gray-900 text-[16px] font-medium pe-10 w-[40%]`}
+                >
+                  Client Name
+                </label>
+                <input
+                  className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[55%]`}
+                  onChange={(e) => setclientName(e.target.value)}
+                  value={coverLetterSmm.clientName}
+                />
+              </div>
+              <div className={`flex justify-end items-center w-[100%]`}>
+                <label
+                  className={`text-gray-900 text-[16px] font-medium pe-10 w-[35%]`}
+                >
+                  Letter Type
+                </label>
+                <Select
+                  className={`text-gray-900 text-[14px] font-normal rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[55%]`}
+                  value={letterType}
+                  onChange={(e) => setletterType(e.value)}
+                  placeholder={letterType}
+                  options={selectOptions}
+                ></Select>
+              </div>
             </div>
+
             <div className="flex justify-start my-10">
               <label className="text-gray-900 text-[16px] font-medium my-2 w-[20%]">
                 Letter Text
