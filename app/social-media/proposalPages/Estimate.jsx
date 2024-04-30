@@ -7,6 +7,15 @@ function Estimate(prop) {
   const budgetData = useSelector((state) => state.budget_smm);
   const cover_pageSmm = useSelector((state) => state.cover_pageSmm);
 
+  function addCommasToNumber(number) {
+    // Convert the number to a string
+    let numberString = number.toString();
+
+    // Use a regular expression to add commas
+    numberString = numberString.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+    return numberString;
+  }
   let subTotal = 0;
   let totalEstimate = 0;
   if (budgetData.service != "") {
@@ -30,7 +39,8 @@ function Estimate(prop) {
               </div>
               <div className="flex flex-col justify-center w-full leading-snug">
                 <span className="text-[rgb(255,214,0)] text-[20px] font-[700]">
-                  Total Estimate: {budgetData.currency} {totalEstimate}
+                  Total Estimate: {budgetData.currency}{" "}
+                  {addCommasToNumber(totalEstimate)}
                 </span>
               </div>
 
@@ -99,7 +109,8 @@ function Estimate(prop) {
                     SUBTOTAL
                   </span>
                   <span className="text-[17px] font-[600] text-center w-[56%]">
-                    {budgetData.currency} {subTotal}
+                    {budgetData.currency}
+                    {addCommasToNumber(subTotal)}
                   </span>
                 </div>
                 <div className="flex justify-between items-center w-[40%] px-3 py-1">
@@ -116,7 +127,8 @@ function Estimate(prop) {
                     TOTAL
                   </span>
                   <span className="text-[17px] font-[600] text-center w-[56%]">
-                    {budgetData.currency} {totalEstimate}
+                    {budgetData.currency}
+                    {addCommasToNumber(totalEstimate)}
                   </span>
                 </div>
               </div>

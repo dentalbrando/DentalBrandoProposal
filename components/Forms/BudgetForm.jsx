@@ -80,7 +80,7 @@ const BudgetForm = () => {
             </label>
             <input
               className={`text-gray-900 text-[14px] p-2 rounded-md font-normal border-2 border-color outline-none w-[50%]`}
-              type="text"
+              type="number"
               length="full"
               placeholder="Enter Service Charges"
               value={service.charges || ""}
@@ -120,7 +120,7 @@ const BudgetForm = () => {
         />
         <TextInput
           label="Discount"
-          type="text"
+          type="number"
           length="half"
           secondInput={true}
           placeholder="Enter Discount"
