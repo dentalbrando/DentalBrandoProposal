@@ -1,7 +1,10 @@
 "use client";
 import strips from "@public/assets/socialMedia/pic3.png";
+import { useSelector } from "react-redux";
 
 function MarketingPackages(prop) {
+  let marketingPackages = useSelector((state) => state.marketing_package);
+
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-start items-center h-[100%] relative">
@@ -34,7 +37,8 @@ function MarketingPackages(prop) {
                     Basic
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR</span> 19,999
+                    <span className="text-[14px] font-[300]">PKR</span>
+                    {marketingPackages.basic}
                   </h2>
                   <span className="text-[12px] font-[600] text-white">
                     Per Month
@@ -64,7 +68,8 @@ function MarketingPackages(prop) {
                     Standard
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR</span> 39,999
+                    <span className="text-[14px] font-[300]">PKR</span>
+                    {marketingPackages.standard}
                   </h2>
                   <span className="text-[12px] font-[600] text-white">
                     Per Month
@@ -96,7 +101,8 @@ function MarketingPackages(prop) {
                     Premium
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR</span> 59,999
+                    <span className="text-[14px] font-[300]">PKR</span>
+                    {marketingPackages.premium}
                   </h2>
                   <span className="text-[12px] font-[600] text-white">
                     Per Month

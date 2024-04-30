@@ -1,7 +1,25 @@
 "use client";
 import { useDispatch, useSelector } from "react-redux";
-
+import {
+  setBasic,
+  setStandard,
+  setPremium,
+} from "@app/store/MarketingpackagesSliceSmm";
+import { useEffect, useState } from "react";
 const MarketingPackageForm = () => {
+  let marketingPackages = useSelector((state) => state.marketing_package);
+  let dispatch = useDispatch();
+  let [basic, setbasic] = useState(      marketingPackages.basic);
+  let [standard, setstandard] = useState(marketingPackages.standard);
+  let [premium, setpremium] = useState(  marketingPackages.premium);
+
+  useEffect(() => {
+    dispatch(setBasic(basic));
+    dispatch(setStandard(standard));
+    dispatch(setPremium(premium));
+    console.log(marketingPackages);
+  }, [basic, standard, premium]);
+
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
       <div className="">
@@ -15,6 +33,8 @@ const MarketingPackageForm = () => {
               </label>
               <input
                 className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[40%]`}
+                value={basic}
+                onChange={(e) => setbasic(e.target.value)}
               />
               <p className="text-red-500 text-sm">{}</p>
             </div>
@@ -26,6 +46,8 @@ const MarketingPackageForm = () => {
               </label>
               <input
                 className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[40%]`}
+                value={standard}
+                onChange={(e) => setstandard(e.target.value)}
               />
               <p className="text-red-500 text-sm">{}</p>
             </div>
@@ -37,6 +59,8 @@ const MarketingPackageForm = () => {
               </label>
               <input
                 className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[40%]`}
+                value={premium}
+                onChange={(e) => setpremium(e.target.value)}
               />
               <p className="text-red-500 text-sm">{}</p>
             </div>
