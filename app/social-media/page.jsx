@@ -1,5 +1,4 @@
 "use client";
-import LivePreview from "@components/LivePreview";
 import { useSelector } from "react-redux";
 import FullProposalSmm from "./FullProposalSmm";
 import Nav from "@components/Nav";

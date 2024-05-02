@@ -18,6 +18,13 @@ import ad_package from "./AdpackagesSliceSmm";
 import post_package from "./PostpackagesSliceSmm";
 import marketing_package from "./MarketingpackagesSliceSmm";
 import about_projectSmm from "./aboutProjectSmm";
+import about_projectSeo from "./aboutProjectSeo";
+import budget_seo from "./budgetSeo";
+import cover_letterSeo from "./CoverLetterSeo";
+import cover_pageSeo from "./coverPageSeo";
+import package_seo from "./packagesSliceSeo";
+import pageSequenceSeo from "./pageSequenceSeo";
+import pageSeo from "./pageScliceSeo";
 
 const store = configureStore({
   reducer: {
@@ -40,6 +47,13 @@ const store = configureStore({
     marketing_package,
     budget_smm,
     about_projectSmm,
+    about_projectSeo,
+    budget_seo,
+    cover_letterSeo,
+    cover_pageSeo,
+    package_seo,
+    pageSequenceSeo,
+    pageSeo,
   },
 });
 export default store;
