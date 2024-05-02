@@ -1,5 +1,5 @@
 "use client";
-import coverPageImage from "@public/assets/socialMedia/cover page.png";
+import coverPageImage from "@public/assets/socialMedia/hands-holding-smartphone-social-media-concept.jpg";
 import VistaGroup from "@public/assets/socialMedia/vista logo.png";
 import WhiteLogo1 from "@public/assets/socialMedia/SE Logo.png";
 import { useSelector } from "react-redux";
@@ -34,34 +34,31 @@ function CoverPage(prop) {
           </div>
           <div className="w-[80%] h-[160%] rounded-[50%] absolute top-[-60%] right-[-40%] z-[10] bg-[#ffd600]"></div>
         </div>
-        <img src={coverPageImage.src} className="z-[0] absolute bottom-[18%]" />
+        <img src={coverPageImage.src} className="z-[0] absolute bottom-[22%]" />
         <div className="flex w-full h-[30%] absolute bottom-0 overflow-hidden">
-          <div className="w-[200%] h-[250%] rounded-[50%] absolute top-[10%] left-[-50%] z-[10] bg-[#ffd600] z-[50]"></div>
-          <div className="w-[200%] h-[250%] rounded-[50%] absolute top-[15%] left-[-45%] z-[10] bg-[#00A2FF] z-[50]">
-            <div className=" w-[7.5in] h-[100px] flex justify-evenly absolute top-[10%] left-[25%]">
-              <div className="w-[20%] relative h-[120px] ">
+          <div className="w-[200%] h-[250%] rounded-tl-[44%]  rounded-tr-[55%] absolute top-[3%] left-[-50%] z-[10] bg-[#ffd600] z-[50]"></div>
+          <div className="w-[200%] h-[250%] rounded-tl-[44%]  rounded-tr-[55%] absolute top-[8%] left-[-45%] z-[10] bg-[#00A2FF] z-[50]">
+            <div className=" w-[7.5in] h-fit flex justify-evenly items-end absolute bottom-[68%] left-[25%] bg-red-40">
+              <div className="w-[40%] relative h-[120px bg-green-60">
                 <h2 className="text-[#ffd600] font-bold text-xl h-[30px]">
                   Prepared for:
                 </h2>
-                <div
-                  className="w-[100px] h-[100px] flex justify-center items-start overflow-hidden"
-                  style={{
-                    backgroundPosition: "center",
-                  }}
-                >
-                  {cover_pageSmm.companyLogo ? (
+                {cover_pageSmm.companyLogo ? (
+                  <div
+                    className="w-[60px] h-[60px] mx-aut flex justify-center items-start overflow-hidden"
+                    style={{
+                      backgroundPosition: "center",
+                    }}
+                  >
                     <img
                       className="w-full h-full"
                       src={cover_pageSmm.companyLogo?.string}
                       alt="No company logo"
                     />
-                  ) : null}
-                </div>
-              </div>
-
-              <div className="flex flex-col justify-en w-[33%] h-[120px] relative">
-                <div className="absolute top-[30px] flex flex-col justify-start gap-[6px] w-full relative">
-                  <h2 className="text-white text-lg">
+                  </div>
+                ) : null}
+                <div className="mt-2 flex flex-col justify-start gap-[6px] w-full relative bg-purple-70">
+                  <h2 className="text-white text-lg font-[600]">
                     {cover_pageSmm.companyName !== ""
                       ? cover_pageSmm.companyName
                       : "Company Name"}
@@ -78,7 +75,27 @@ function CoverPage(prop) {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col justify-start gap-[20px] w-[20%] relative">
+
+              <div className="flex flex-col justify-end w-[20% h-[120px] relative bg-green-800">
+                {/* <div className="absolute top-[30px] flex flex-col justify-start gap-[6px] w-full relative">
+                  <h2 className="text-white text-lg">
+                    {cover_pageSmm.companyName !== ""
+                      ? cover_pageSmm.companyName
+                      : "Company Name"}
+                  </h2>
+                  <p className="text-white text-lg">
+                    {cover_pageSmm.companyPhoneNumber !== ""
+                      ? cover_pageSmm.companyPhoneNumber
+                      : "Company Phone Number"}
+                  </p>
+                  <p className="text-white text-lg">
+                    {cover_pageSmm.companyAddress !== ""
+                      ? cover_pageSmm.companyAddress
+                      : "Company Address"}
+                  </p>
+                </div> */}
+              </div>
+              <div className="flex flex-col justify-end gap-[20px] w-[20%] h-fit relative bg-orange-60 absolute bottom-[20px]">
                 <div className="w-[33% relative g-red-300">
                   <h2 className="text-[#ffd600] font-bold text-xl">
                     Proposal Issued:
@@ -89,6 +106,9 @@ function CoverPage(prop) {
                       : "dd/mm/yyyy"}
                   </p>
                 </div>
+              </div>
+
+              <div className="flex flex-col justify-center gap-[20px] w-[20%] h-fit relative bg-orange-60 absolute bottom-[20px]">
                 <div className="w-[33% relative g-red-300">
                   <h2 className="text-[#ffd600] font-bold text-xl">
                     Proposal Valid:

@@ -56,89 +56,89 @@ const FullProposal = () => {
           switch (id) {
             case "1":
               return page.checked && <CoverPage key={index} />;
-            case "2":
-              return page.checked && <TableOfContent key={index} />;
-            case "3":
-              return (
-                page.checked && (
-                  <CoverLetter key={index} pageNumber={pageNumber++} />
-                )
-              );
-            case "4":
-              return (
-                page.checked && (
-                  <AboutUs key={index} pageNumber={pageNumber++} />
-                )
-              );
-            case "5":
-              return (
-                page.checked && (
-                  <ProjectObjective key={index} pageNumber={pageNumber++} />
-                )
-              );
-            case "6":
-              return (
-                page.checked && (
-                  <Activities key={index} pageNumber={pageNumber++} />
-                )
-              );
-            case "7":
-              return (
-                page.checked && (
-                  <MonthlyCalender key={index} pageNumber={pageNumber++} />
-                )
-              );
-            case "8":
-              return (
-                page.checked && (
-                  <ContentCreation key={index} pageNumber={pageNumber++} />
-                )
-              );
-            case "9":
-              return (
-                page.checked && (
-                  <Marketing key={index} pageNumber={pageNumber++} />
-                )
-              );
-            case "10":
-              return (
-                page.checked && (
-                  <ValuedClient key={index} pageNumber={pageNumber++} />
-                )
-              );
-            case "11":
-              return (
-                page.checked && (
-                  <AdvertisementPackages
-                    key={index}
-                    pageNumber={pageNumber++}
-                  />
-                )
-              );
-            case "12":
-              return (
-                page.checked && (
-                  <PostDesignPackages key={index} pageNumber={pageNumber++} />
-                )
-              );
-            case "13":
-              return (
-                page.checked && (
-                  <MarketingPackages key={index} pageNumber={pageNumber++} />
-                )
-              );
-            case "14":
-              return (
-                page.checked && (
-                  <Estimate key={index} pageNumber={pageNumber++} />
-                )
-              );
-            case "15":
-              return (
-                page.checked && <Terms key={index} pageNumber={pageNumber++} />
-              );
-            case "16":
-              return page.checked && <Contact key={index} />;
+            // case "2":
+            //   return page.checked && <TableOfContent key={index} />;
+            // case "3":
+            //   return (
+            //     page.checked && (
+            //       <CoverLetter key={index} pageNumber={pageNumber++} />
+            //     )
+            //   );
+            // case "4":
+            //   return (
+            //     page.checked && (
+            //       <AboutUs key={index} pageNumber={pageNumber++} />
+            //     )
+            //   );
+            // case "5":
+            //   return (
+            //     page.checked && (
+            //       <ProjectObjective key={index} pageNumber={pageNumber++} />
+            //     )
+            //   );
+            // case "6":
+            //   return (
+            //     page.checked && (
+            //       <Activities key={index} pageNumber={pageNumber++} />
+            //     )
+            //   );
+            // case "7":
+            //   return (
+            //     page.checked && (
+            //       <MonthlyCalender key={index} pageNumber={pageNumber++} />
+            //     )
+            //   );
+            // case "8":
+            //   return (
+            //     page.checked && (
+            //       <ContentCreation key={index} pageNumber={pageNumber++} />
+            //     )
+            //   );
+            // case "9":
+            //   return (
+            //     page.checked && (
+            //       <Marketing key={index} pageNumber={pageNumber++} />
+            //     )
+            //   );
+            // case "10":
+            //   return (
+            //     page.checked && (
+            //       <ValuedClient key={index} pageNumber={pageNumber++} />
+            //     )
+            //   );
+            // case "11":
+            //   return (
+            //     page.checked && (
+            //       <AdvertisementPackages
+            //         key={index}
+            //         pageNumber={pageNumber++}
+            //       />
+            //     )
+            //   );
+            // case "12":
+            //   return (
+            //     page.checked && (
+            //       <PostDesignPackages key={index} pageNumber={pageNumber++} />
+            //     )
+            //   );
+            // case "13":
+            //   return (
+            //     page.checked && (
+            //       <MarketingPackages key={index} pageNumber={pageNumber++} />
+            //     )
+            //   );
+            // case "14":
+            //   return (
+            //     page.checked && (
+            //       <Estimate key={index} pageNumber={pageNumber++} />
+            //     )
+            //   );
+            // case "15":
+            //   return (
+            //     page.checked && <Terms key={index} pageNumber={pageNumber++} />
+            //   );
+            // case "16":
+            //   return page.checked && <Contact key={index} />;
           }
         })}
       </div>
