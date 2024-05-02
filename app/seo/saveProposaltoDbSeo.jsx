@@ -5,26 +5,24 @@ import axios from "axios";
 export default function SaveProposaltoDbSeo() {
   let cover_page = useSelector((state) => state.cover_pageSeo);
   let cover_letter = useSelector((state) => state.cover_letterSeo);
-  let adPackage = useSelector((state) => state.ad_package);
-  let postPackage = useSelector((state) => state.post_package);
-  let marketingPackage = useSelector((state) => state.marketing_package);
-  let budget = useSelector((state) => state.budget_Seo);
-  let aboutProject = useSelector((state) => state.about_projectSeo.aboutProject);
+  let packages = useSelector((state) => state.package_seo);
+  let budget = useSelector((state) => state.budget_seo);
+  let aboutProject = useSelector(
+    (state) => state.about_projectSeo.aboutProject
+  );
   let [loading, setLoading] = useState(false);
   let [saveButtonText, setSaveButtonText] = useState("Save Proposal");
 
   async function submit() {
-    if (saveButtonText === "Saved") {
-      return;
-    }
+    // if (saveButtonText === "Saved") {
+    //   return;
+    // }
     try {
       setLoading(true);
-      await axios.post("/api/proposalSeo", {
+      await axios.post("/api/proposalseo", {
         cover_page,
         cover_letter,
-        adPackage,
-        postPackage,
-        marketingPackage,
+        packages,
         budget,
         aboutProject,
       });

@@ -157,7 +157,7 @@ const SidebarSeo = () => {
                 </button>
                 <Link
                   className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
-                  href="/social-media-recent"
+                  href="/seo-recent"
                 >
                   Recent Proposals
                 </Link>
