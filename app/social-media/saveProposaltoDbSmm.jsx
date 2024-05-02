@@ -9,7 +9,7 @@ export default function SaveProposaltoDbSmm() {
   let postPackage = useSelector((state) => state.post_package);
   let marketingPackage = useSelector((state) => state.marketing_package);
   let budget = useSelector((state) => state.budget_smm);
-
+  let aboutProject = useSelector((state) => state.about_projectSmm);
   let [loading, setLoading] = useState(false);
   let [saveButtonText, setSaveButtonText] = useState("Save Proposal");
 
@@ -26,6 +26,7 @@ export default function SaveProposaltoDbSmm() {
         postPackage,
         marketingPackage,
         budget,
+        aboutProject,
       });
     } catch (err) {
       console.log(err);

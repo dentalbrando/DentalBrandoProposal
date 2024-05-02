@@ -17,6 +17,8 @@ import pageSequenceSmm from "./pageSequenceSmm";
 import ad_package from "./AdpackagesSliceSmm";
 import post_package from "./PostpackagesSliceSmm";
 import marketing_package from "./MarketingpackagesSliceSmm";
+import about_projectSmm from "./aboutProjectSmm";
+
 const store = configureStore({
   reducer: {
     page,
@@ -37,6 +39,7 @@ const store = configureStore({
     post_package,
     marketing_package,
     budget_smm,
+    about_projectSmm,
   },
 });
 export default store;

@@ -7,6 +7,7 @@ const ProposalSmmSchema = mongoose.Schema({
   postPackage: { type: Object, required: true },
   marketingPackage: { type: Object, required: true },
   budget: { type: Object, required: true },
+  aboutProject: { type: String, required: true },
 });
 
 const ProposalSmmModel =

@@ -7,6 +7,7 @@ import AdPackageForm from "./forms/AdPackageForm";
 import MarketingPackageForm from "./forms/MarketingPackageForm";
 import PostPackageForm from "./forms/PostPackageForm";
 import EstimateForm from "./forms/EstimateForm";
+import ProjectObjectiveForm from "./forms/ProjectObjectiveForms";
 
 const FormSmm = () => {
   const page = useSelector((state) => state.page);
@@ -33,6 +34,8 @@ const FormSmm = () => {
         <CoverPageForm />
       ) : page.formId == "3" ? (
         <CoverLetterForm />
+      ) : page.formId == "5" ? (
+        <ProjectObjectiveForm />
       ) : page.formId == "11" ? (
         <AdPackageForm />
       ) : page.formId == "12" ? (

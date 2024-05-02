@@ -32,6 +32,8 @@ import {
   setPremium as setMarketingPremium,
 } from "@app/store/MarketingpackagesSliceSmm";
 
+import { setAboutProject } from "@app/store/aboutProjectSmm";
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -53,15 +55,12 @@ function Proposal() {
   let [searchData, setSearchData] = useState();
   let [userData, setUserData] = useState();
   let [tableLoading, setTableLoading] = useState(true);
-
-  let cover_page = useSelector((state) => state.cover_pageSmm);
-  let cover_letter = useSelector((state) => state.cover_letterSmm);
-  let adPackage = useSelector((state) => state.ad_package);
-  let postPackage = useSelector((state) => state.post_package);
-  let marketingPackage = useSelector((state) => state.marketing_package);
-  let budget = useSelector((state) => state.budget_smm);
-
-
+  // let cover_page = useSelector((state) => state.cover_pageSmm);
+  // let cover_letter = useSelector((state) => state.cover_letterSmm);
+  // let adPackage = useSelector((state) => state.ad_package);
+  // let postPackage = useSelector((state) => state.post_package);
+  // let marketingPackage = useSelector((state) => state.marketing_package);
+  // let budget = useSelector((state) => state.budget_smm);
 
   let limit = 8;
 
@@ -206,6 +205,9 @@ function Proposal() {
           searchData[searchData.length - 1 - key].marketingPackage.premium
         )
       );
+      dispatch(
+        setAboutProject(searchData[searchData.length - 1 - key].aboutProject)
+      );
     } else {
       dispatch(
         setService(proposalData[proposalData.length - 1 - key].budget.service)
@@ -265,19 +267,57 @@ function Proposal() {
           proposalData[proposalData.length - 1 - key].cover_page.companyLogo
         )
       );
-      dispatch(setAdBasic(proposalData[proposalData.length - 1 - key].adPackage.basic));
-      dispatch(setAdStandard(proposalData[proposalData.length - 1 - key].adPackage.standard));
-      dispatch(setAdPremium(proposalData[proposalData.length - 1 - key].adPackage.premium));
-      dispatch(setPostBasic(proposalData[proposalData.length - 1 - key].postPackage.basic));
-      dispatch(setPostStandard(proposalData[proposalData.length - 1 - key].postPackage.standard));
-      dispatch(setPostPremium(proposalData[proposalData.length - 1 - key].postPackage.premium));
-      dispatch(setMarketingBasic(proposalData[proposalData.length - 1 - key].marketingPackage.basic));
-      dispatch(setMarketingStandard(proposalData[proposalData.length - 1 - key].marketingPackage.standard));
-      dispatch(setMarketingPremium(proposalData[proposalData.length - 1 - key].marketingPackage.premium));
+      dispatch(
+        setAdBasic(proposalData[proposalData.length - 1 - key].adPackage.basic)
+      );
+      dispatch(
+        setAdStandard(
+          proposalData[proposalData.length - 1 - key].adPackage.standard
+        )
+      );
+      dispatch(
+        setAdPremium(
+          proposalData[proposalData.length - 1 - key].adPackage.premium
+        )
+      );
+      dispatch(
+        setPostBasic(
+          proposalData[proposalData.length - 1 - key].postPackage.basic
+        )
+      );
+      dispatch(
+        setPostStandard(
+          proposalData[proposalData.length - 1 - key].postPackage.standard
+        )
+      );
+      dispatch(
+        setPostPremium(
+          proposalData[proposalData.length - 1 - key].postPackage.premium
+        )
+      );
+      dispatch(
+        setMarketingBasic(
+          proposalData[proposalData.length - 1 - key].marketingPackage.basic
+        )
+      );
+      dispatch(
+        setMarketingStandard(
+          proposalData[proposalData.length - 1 - key].marketingPackage.standard
+        )
+      );
+      dispatch(
+        setMarketingPremium(
+          proposalData[proposalData.length - 1 - key].marketingPackage.premium
+        )
+      );
+      dispatch(
+        setAboutProject(
+          proposalData[proposalData.length - 1 - key].aboutProject
+        )
+      );
     }
     dispatch(updatePage(100));
     router.push("/social-media");
-
   }
   function searchFunction(e) {
     if (e.target.value) {
