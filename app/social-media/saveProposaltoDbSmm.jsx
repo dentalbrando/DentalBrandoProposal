@@ -9,7 +9,7 @@ export default function SaveProposaltoDbSmm() {
   let postPackage = useSelector((state) => state.post_package);
   let marketingPackage = useSelector((state) => state.marketing_package);
   let budget = useSelector((state) => state.budget_smm);
-  let aboutProject = useSelector((state) => state.about_projectSmm);
+  let aboutProject = useSelector((state) => state.about_projectSmm.aboutProject);
   let [loading, setLoading] = useState(false);
   let [saveButtonText, setSaveButtonText] = useState("Save Proposal");
 
@@ -17,6 +17,7 @@ export default function SaveProposaltoDbSmm() {
     // if (saveButtonText === "Saved") {
     //   return;
     // }
+    console.log(aboutProject);
     try {
       setLoading(true);
       await axios.post("/api/proposalsmm", {

@@ -5,12 +5,14 @@ import { setAboutProject } from "@app/store/aboutProjectSmm";
 
 const ProjectObjectiveForm = () => {
   const dispatch = useDispatch();
-  let aboutProjectSmm = useSelector((state) => state.about_projectSmm);
-  const [aboutProject, setaboutProject] = useState(aboutProjectSmm.aboutProject);
+  let aboutProjectSmm = useSelector((state) => state.about_projectSmm).aboutProject;
+  const [aboutProject, setaboutProject] = useState(aboutProjectSmm);
 
   const handleSave = () => {
     dispatch(setAboutProject(aboutProject));
   };
+
+  console.log(aboutProjectSmm);
 
   useEffect(() => {
     handleSave();
@@ -34,7 +36,7 @@ const ProjectObjectiveForm = () => {
                 rows="5"
                 className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[80%]`}
                 onChange={(e) => setaboutProject(e.target.value)}
-                value={aboutProjectSmm.aboutProject.aboutProject}
+                value={aboutProjectSmm}
               ></textarea>
             </div>
           </div>

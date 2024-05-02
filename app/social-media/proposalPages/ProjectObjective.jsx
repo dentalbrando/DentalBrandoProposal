@@ -7,7 +7,8 @@ import { useSelector } from "react-redux";
 
 function ProjectObjective(prop) {
   const cover_pageSmm = useSelector((state) => state.cover_pageSmm);
-  const aboutProjectSmm = useSelector((state) => state.about_projectSmm);
+  const aboutProjectSmm = useSelector((state) => state.about_projectSmm.aboutProject);
+  console.log(aboutProjectSmm);
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">
@@ -25,7 +26,7 @@ function ProjectObjective(prop) {
             </div>
             <div className="flex flex-col justify-center w-full leading-snug">
               <span className="text-[white] text-[15px] font-[400]">
-                {aboutProjectSmm.aboutProject.aboutProject}
+                {aboutProjectSmm}
               </span>
             </div>
           </div>
