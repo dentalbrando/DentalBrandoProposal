@@ -414,9 +414,9 @@ function Proposal() {
                       <th className="th-border text-center text-lg text-lg py-2 w-[185px">
                         Client Name
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[205px">
+                      {/* <th className="th-border text-center text-lg text-lg py-2 w-[205px">
                         Project Title
-                      </th>
+                      </th> */}
                       <th className="th-border text-center text-lg text-lg py-2 w-[225px">
                         Company Name
                       </th>
@@ -451,9 +451,9 @@ function Proposal() {
                                     <td className="td-border text-center py-4 text-lg w-[180px]">
                                       {item.cover_letter.clientName}
                                     </td>
-                                    <td className="td-border text-center py-4 text-lg w-[200px]">
-                                      {/* {item.cover_page.projectTitle} */}
-                                    </td>
+                                    {/* <td className="td-border text-center py-4 text-lg w-[200px]">
+                                      {item.cover_page.projectTitle}
+                                    </td> */}
                                     <td className="td-border text-center py-4 text-lg w-[220px]">
                                       {item.cover_page.companyName}
                                     </td>
@@ -510,9 +510,9 @@ function Proposal() {
                                     <td className="td-border text-center py-4 text-lg w-[180px]">
                                       {item.cover_letter.clientName}
                                     </td>
-                                    <td className="td-border text-center py-4 text-lg w-[200px]">
-                                      {/* {item.cover_page.projectTitle} */}
-                                    </td>
+                                    {/* <td className="td-border text-center py-4 text-lg w-[200px]">
+                                      {item.cover_page.projectTitle}
+                                    </td> */}
                                     <td className="td-border text-center py-4 text-lg w-[220px]">
                                       {item.cover_page.companyName}
                                     </td>
