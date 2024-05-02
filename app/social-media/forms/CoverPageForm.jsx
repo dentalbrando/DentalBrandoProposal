@@ -176,7 +176,7 @@ const CoverPageForm = () => {
             onClick={() => {
               dispatch(setCompanyLogo(null));
               setCompanyLogoLocal(null);
-            }}
+            }} 
           >
             Remove
           </button>

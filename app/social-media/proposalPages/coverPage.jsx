@@ -10,18 +10,13 @@ function CoverPage(prop) {
   return (
     <div className="w-[8.27in] h-[1123px]  bg-white shadow-lg">
       <div className="flex flex-col justify-center items-center h-[100%] relative">
-        <div className="flex w-full h-[43%] absolute top-0 overflow-hidden">
-          <div className="w-[200%] h-[300%] rounded-[40%] absolute bottom-[0%] right-[0%] z-[50] bg-[#00A2FF]">
-            <div className="flex flex-col justify-evenly absolute left-[52%] bottom-[0%] w-[650px] h-[480px] z-[100]">
-              <div className="w-[20%]">
+        <div className="flex w-full h-[40%] absolute top-0 overflow-hidden">
+          <div className="w-[1600px] h-[1600px] rounded-br-[35%] rounded-bl-[60%] absolute bottom-[0%] right-[0%] z-[50] bg-[#00A2FF]">
+            <div className="flex flex-col justify-start gap-10 absolute left-[52%] bottom-[0%] w-[650px] h-[420px] z-[100] bg-green-5">
+              <div className="w-[20%] bg-green-40 absolut bttom-[70%]">
                 <img src={WhiteLogo1.src} className="w-[95px]" />
               </div>
-              <div className="w-[600px]">
-                <h1 className="font-[600] text-[22px] text-white text-justify">
-                  {cover_pageSmm.subHeading}
-                </h1>
-              </div>
-              <div className="flex flex-col justify-start w-[100%] leading-[60px]">
+              <div className="flex flex-col justify-start w-[100%] leading-[60px] bg-red-40 absolut bttom-[15%]">
                 <h1 className="font-[600] text-[56px] text-white">
                   SOCIAL MEDIA
                 </h1>
@@ -32,12 +27,12 @@ function CoverPage(prop) {
               </div>
             </div>
           </div>
-          <div className="w-[80%] h-[160%] rounded-[50%] absolute top-[-60%] right-[-40%] z-[10] bg-[#ffd600]"></div>
+          <div className="w-[90%] h-[150%] rounded-[50%] absolute top-[-60%] right-[-33%] z-[10] bg-[#ffd600]"></div>
         </div>
-        <img src={coverPageImage.src} className="z-[0] absolute bottom-[22%]" />
+        <img src={coverPageImage.src} className="z-[0] absolute bottom-[23%]" />
         <div className="flex w-full h-[30%] absolute bottom-0 overflow-hidden">
-          <div className="w-[200%] h-[250%] rounded-tl-[44%]  rounded-tr-[55%] absolute top-[3%] left-[-50%] z-[10] bg-[#ffd600] z-[50]"></div>
-          <div className="w-[200%] h-[250%] rounded-tl-[44%]  rounded-tr-[55%] absolute top-[8%] left-[-45%] z-[10] bg-[#00A2FF] z-[50]">
+          <div className="w-[200%] h-[250%] rounded-tl-[44%]  rounded-tr-[53%] absolute top-[3%] left-[-50%] z-[10] bg-[#ffd600] z-[50]"></div>
+          <div className="w-[200%] h-[250%] rounded-tl-[44%]  rounded-tr-[53%] absolute top-[8%] left-[-45%] z-[10] bg-[#00A2FF] z-[50]">
             <div className=" w-[7.5in] h-fit flex justify-evenly items-end absolute bottom-[68%] left-[25%] bg-red-40">
               <div className="w-[40%] relative h-[120px bg-green-60">
                 <h2 className="text-[#ffd600] font-bold text-xl h-[30px]">
@@ -76,25 +71,6 @@ function CoverPage(prop) {
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end w-[20% h-[120px] relative bg-green-800">
-                {/* <div className="absolute top-[30px] flex flex-col justify-start gap-[6px] w-full relative">
-                  <h2 className="text-white text-lg">
-                    {cover_pageSmm.companyName !== ""
-                      ? cover_pageSmm.companyName
-                      : "Company Name"}
-                  </h2>
-                  <p className="text-white text-lg">
-                    {cover_pageSmm.companyPhoneNumber !== ""
-                      ? cover_pageSmm.companyPhoneNumber
-                      : "Company Phone Number"}
-                  </p>
-                  <p className="text-white text-lg">
-                    {cover_pageSmm.companyAddress !== ""
-                      ? cover_pageSmm.companyAddress
-                      : "Company Address"}
-                  </p>
-                </div> */}
-              </div>
               <div className="flex flex-col justify-end gap-[20px] w-[20%] h-fit relative bg-orange-60 absolute bottom-[20px]">
                 <div className="w-[33% relative g-red-300">
                   <h2 className="text-[#ffd600] font-bold text-xl">

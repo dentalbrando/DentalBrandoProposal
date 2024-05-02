@@ -35,7 +35,7 @@ const Sidebar = () => {
   };
   useEffect(() => {
     dispatch(setPageSequence(items));
-    console.log(pageSequence);
+    // console.log(pageSequence);
   }, [items]);
 
   async function logout() {
