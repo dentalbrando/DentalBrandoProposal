@@ -34,7 +34,7 @@ const ProjectObjectiveForm = () => {
                 rows="5"
                 className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[80%]`}
                 onChange={(e) => setaboutProject(e.target.value)}
-                value={aboutProjectSmm.aboutProject}
+                value={aboutProjectSmm.aboutProject.aboutProject}
               ></textarea>
             </div>
           </div>
