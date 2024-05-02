@@ -45,6 +45,7 @@ export default function SaveProposaltoDb() {
       });
     } catch {
       alert("Cant save your project at the moment");
+      setSaveButtonText("Save proposal");
     } finally {
       setLoading(false);
       setSaveButtonText("Saved");

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  subHeading: "",
+  // subHeading: "",
   companyPhoneNumber: "",
   companyAddress: "",
   companyName: "",
@@ -14,9 +14,9 @@ const coverPageSmm = createSlice({
   name: "cover_pageSmm",
   initialState,
   reducers: {
-    setSubHeading: (state, action) => {
-      state.subHeading = action.payload;
-    },
+    // setSubHeading: (state, action) => {
+    //   state.subHeading = action.payload;
+    // },
     setCompanyPhoneNumber: (state, action) => {
       state.companyPhoneNumber = action.payload;
     },
@@ -39,7 +39,7 @@ const coverPageSmm = createSlice({
 });
 
 export const {
-  setSubHeading,
+  // setSubHeading,
   setCompanyPhoneNumber,
   setCompanyAddress,
   setCompanyName,

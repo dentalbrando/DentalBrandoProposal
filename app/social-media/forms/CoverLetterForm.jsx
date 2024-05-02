@@ -37,7 +37,12 @@ const CoverLetterForm = () => {
                 </label>
                 <input
                   className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[55%]`}
-                  onChange={(e) => setclientName(e.target.value)}
+                  onChange={(e) =>
+                    setclientName(
+                      e.target.value.charAt(0).toUpperCase() +
+                        e.target.value.slice(1)
+                    )
+                  }
                   value={coverLetterSmm.clientName}
                 />
               </div>

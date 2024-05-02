@@ -84,7 +84,9 @@ function Estimate(prop) {
                   ? storedServices.map((item, key) => (
                       <div
                         key={key}
-                        className="flex justify-between w-full text-[16px] font-[400]"
+                        className={`flex justify-between w-full text-[16px] font-[400] ${
+                          key % 2 === 0 ? "bg-gray-100" : ""
+                        }`}
                       >
                         <div className=" w-[12%] text-center py-1">
                           {key + 1}
@@ -113,15 +115,17 @@ function Estimate(prop) {
                     {addCommasToNumber(subTotal)}
                   </span>
                 </div>
-                <div className="flex justify-between items-center w-[40%] px-3 py-1">
-                  <span className="text-[17px] font-[700] text-justify w-[40%]">
-                    DISCOUNT
-                  </span>
-                  <span className="text-[17px] font-[600] text-center w-[56%]">
-                    - {budgetData.currency}{" "}
-                    {budgetData.discount ? budgetData.discount : 0}
-                  </span>
-                </div>
+                {budgetData.discount ? (
+                  <div className="flex justify-between items-center w-[40%] px-3 py-1">
+                    <span className="text-[17px] font-[700] text-justify w-[40%]">
+                      DISCOUNT
+                    </span>
+                    <span className="text-[17px] font-[600] text-center w-[56%]">
+                      - {budgetData.currency}
+                      {budgetData.discount}
+                    </span>
+                  </div>
+                ) : null}
                 <div className="flex justify-between items-center w-[40%] px-3 py-2 bg-[rgb(255,214,0)]">
                   <span className="text-[17px] font-[700] text-justify w-[40%]">
                     TOTAL

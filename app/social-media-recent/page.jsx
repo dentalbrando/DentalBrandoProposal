@@ -8,7 +8,7 @@ import {
 } from "@app/store/budgetSmm";
 import { setClientName, setLetterText } from "@app/store/CoverLetterSmm";
 import {
-  setSubHeading,
+  // setSubHeading,
   setCompanyPhoneNumber,
   setCompanyAddress,
   setCompanyName,
@@ -130,11 +130,11 @@ function Proposal() {
           searchData[searchData.length - 1 - key].cover_letter.clientName
         )
       );
-      dispatch(
-        setSubHeading(
-          searchData[searchData.length - 1 - key].cover_page.subHeading
-        )
-      );
+      // dispatch(
+      //   setSubHeading(
+      //     searchData[searchData.length - 1 - key].cover_page.subHeading
+      //   )
+      // );
 
       dispatch(
         setCompanyPhoneNumber(
@@ -231,11 +231,11 @@ function Proposal() {
           proposalData[proposalData.length - 1 - key].cover_letter.clientName
         )
       );
-      dispatch(
-        setSubHeading(
-          proposalData[proposalData.length - 1 - key].cover_page.subHeading
-        )
-      );
+      // dispatch(
+      //   setSubHeading(
+      //     proposalData[proposalData.length - 1 - key].cover_page.subHeading
+      //   )
+      // );
       dispatch(
         setCompanyPhoneNumber(
           proposalData[proposalData.length - 1 - key].cover_page
@@ -381,7 +381,10 @@ function Proposal() {
         </div>
       ) : (
         <div className="flex flex-col">
-          <Nav navText={"Social Media Recent Proposals"} />
+          <Nav
+            navText={"Social Media Marketing Recent Proposals"}
+            main={true}
+          />
           <div className="px-10 py-4 relative max-h-fit min-h-[80vh]">
             <div className="flex flex-col items-between">
               <div className="flex justify-between items-end mb-4">

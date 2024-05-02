@@ -58,16 +58,16 @@ function TableOfContent() {
                         ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
                           `}
                       >
-                        <div className="flex justify-between items-center text-[14pt] w-[100%]  rounded-xl">
+                        <div className="flex justify-between items-center text-[14pt] w-[100%] rounded-xl">
                           <div className=" font-[400]">
                             <p>{page.content}</p>
                           </div>
                           <div
-                            className="ml-[14px] text-gray-400"
+                            className="ml-[14px]"
                             style={{ fontFamily: "Open sans" }}
                           ></div>
                           <div
@@ -90,7 +90,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                         key={index}
@@ -122,7 +122,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -153,7 +153,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -184,7 +184,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -215,7 +215,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -246,7 +246,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -277,7 +277,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -308,7 +308,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -339,7 +339,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -370,7 +370,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -401,7 +401,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -432,7 +432,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -463,7 +463,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -494,7 +494,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >
@@ -525,7 +525,7 @@ function TableOfContent() {
                         className={`mt-[5px]  w-[100%] py-[10px] rounded-xl px-[10px]                                                ${
                           number % 2 === 0
                             ? "bg-[rgb(239,239,240)]"
-                            : "bg-[rgb(0,162,255)]"
+                            : "bg-[rgb(0,162,255)] text-white"
                         }
 `}
                       >

@@ -354,7 +354,7 @@ function Proposal() {
         </div>
       ) : (
         <div className="flex flex-col">
-          <Nav navText={"Recent Proposal"} />
+          <Nav navText={"Recent Proposal"} main={true}/>
           <div className="px-10 py-4 relative max-h-fit min-h-[80vh]">
             <div className="flex flex-col items-between">
               <div className="flex justify-between items-end mb-4">
