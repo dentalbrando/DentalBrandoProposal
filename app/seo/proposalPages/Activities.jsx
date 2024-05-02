@@ -1,6 +1,4 @@
 "use client";
-import marketingImage from "@public/assets/socialMedia/marketing activiting infographics-13.png";
-import strips from "@public/assets/socialMedia/pic3.png";
 
 function Activities(prop) {
   return (

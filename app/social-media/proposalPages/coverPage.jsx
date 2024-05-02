@@ -33,8 +33,8 @@ function CoverPage(prop) {
         <div className="flex w-full h-[30%] absolute bottom-0 overflow-hidden">
           <div className="w-[200%] h-[250%] rounded-tl-[44%]  rounded-tr-[53%] absolute top-[3%] left-[-50%] z-[10] bg-[#ffd600] z-[50]"></div>
           <div className="w-[200%] h-[250%] rounded-tl-[44%]  rounded-tr-[53%] absolute top-[8%] left-[-45%] z-[10] bg-[#00A2FF] z-[50]">
-            <div className=" w-[7.5in] h-fit flex justify-evenly items-end absolute bottom-[68%] left-[25%] bg-red-40">
-              <div className="w-[40%] relative h-[120px bg-green-60">
+            <div className=" w-[7.5in] h-fit flex justify-between items-end absolute bottom-[68%] left-[25%] bg-red-40">
+              <div className="w-[40%] relative h-[120px bg-green-600">
                 <h2 className="text-[#ffd600] font-bold text-xl h-[30px]">
                   Prepared for:
                 </h2>
@@ -71,7 +71,7 @@ function CoverPage(prop) {
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end gap-[20px] w-[20%] h-fit relative bg-orange-60 absolute bottom-[20px]">
+              <div className="flex flex-col justify-end gap-[20px] w-[30%] bg-red-700 h-fit relative bg-orange-60 absolute bottom-[20px]">
                 <div className="w-[33% relative g-red-300">
                   <h2 className="text-[#ffd600] font-bold text-xl">
                     Proposal Issued:
@@ -84,7 +84,7 @@ function CoverPage(prop) {
                 </div>
               </div>
 
-              <div className="flex flex-col justify-center gap-[20px] w-[20%] h-fit relative bg-orange-60 absolute bottom-[20px]">
+              <div className="flex flex-col justify-center gap-[20px] w-[30%] bg-red-700 h-fit relative bg-orange-60 absolute bottom-[20px]">
                 <div className="w-[33% relative g-red-300">
                   <h2 className="text-[#ffd600] font-bold text-xl">
                     Proposal Valid:

@@ -4,9 +4,6 @@ import sign from "@public/assets/socialMedia/sign.fcbecd86.jpg";
 import { useSelector } from "react-redux";
 function CoverLetter(prop) {
   let coverLetterSeo = useSelector((state) => state.cover_letterSeo);
-
-  // Apply line breaks
-  // coverLetterText = coverLetterText.replace(/<br \/>/g, "\n");
  
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">

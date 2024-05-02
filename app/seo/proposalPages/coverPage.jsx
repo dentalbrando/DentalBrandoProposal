@@ -1,7 +1,4 @@
 "use client";
-import coverPageImage from "@public/assets/socialMedia/hands-holding-smartphone-social-media-concept.jpg";
-import VistaGroup from "@public/assets/socialMedia/vista logo.png";
-import WhiteLogo1 from "@public/assets/socialMedia/SE Logo.png";
 import { useSelector } from "react-redux";
 
 function CoverPage(prop) {

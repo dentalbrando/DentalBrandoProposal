@@ -1,8 +1,4 @@
 "use client";
-import map from "@public/assets/socialMedia/map-17.png";
-import roundStripes from "@public/assets/socialMedia/Social Media Marketing Proposal-16.png";
-import logo from "@public/assets/socialMedia/SE color logo-09.png";
-import whtieCircle from "@public/assets/socialMedia/whtieCircle.png";
 import { useSelector } from "react-redux";
 
 function ProjectObjective(prop) {
