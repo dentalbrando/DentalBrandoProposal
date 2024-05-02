@@ -24,7 +24,6 @@ function Estimate(prop) {
     });
     totalEstimate = subTotal - budgetData.discount;
   }
-  console.log(subTotal, totalEstimate);
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="bg-green-20 w-[8.27in] minh-[29.7cm] h-[29.7cm] bg-white">
@@ -83,22 +82,23 @@ function Estimate(prop) {
                 </div>
                 {storedServices.length > 0
                   ? storedServices.map((item, key) => (
-                      <>
-                        <div className="flex justify-between w-full text-[16px] font-[400]">
-                          <div className=" w-[12%] text-center py-1">
-                            {key + 1}
-                          </div>
-                          <div className=" w-[46%] py-1 ps-4">
-                            {item.description}
-                          </div>
-                          <div className=" w-[16%] text-center py-1">
-                            {item.packageType}
-                          </div>
-                          <div className=" w-[24%] text-center py-1">
-                            {item.charges}
-                          </div>
+                      <div
+                        key={key}
+                        className="flex justify-between w-full text-[16px] font-[400]"
+                      >
+                        <div className=" w-[12%] text-center py-1">
+                          {key + 1}
                         </div>
-                      </>
+                        <div className=" w-[46%] py-1 ps-4">
+                          {item.description}
+                        </div>
+                        <div className=" w-[16%] text-center py-1">
+                          {item.packageType}
+                        </div>
+                        <div className=" w-[24%] text-center py-1">
+                          {item.charges}
+                        </div>
+                      </div>
                     ))
                   : null}
               </div>
@@ -139,7 +139,7 @@ function Estimate(prop) {
                 </span>
                 <span className="text-[15.5px] font-[400] w-full text-justify">
                   {budgetData.terms.map((item, index) =>
-                    item ? <li>{item}</li> : null
+                    item ? <li key={index}>{item}</li> : null
                   )}
                 </span>
               </div>

@@ -12,12 +12,12 @@ import ContentCreation from "./proposalPages/ContentCreation";
 import Marketing from "./proposalPages/Marketing";
 import ValuedClient from "./proposalPages/ValuedClient";
 import AdvertisementPackages from "./proposalPages/Advertisement Packages";
-import SaveProposaltoDb from "@components/saveProposaltoDb";
 import PostDesignPackages from "./proposalPages/PostDesignPackages";
 import MarketingPackages from "./proposalPages/MarketingPackages";
 import Estimate from "./proposalPages/Estimate";
 import Terms from "./proposalPages/Terms";
 import Contact from "./proposalPages/Contact";
+import SaveProposaltoDbSmm from "./saveProposaltoDbSmm";
 const FullProposal = () => {
   const dispatch = useDispatch();
   const pageSequenceSmm = useSelector(
@@ -49,7 +49,7 @@ const FullProposal = () => {
           className="print:hidden fixed z-50 right-2"
           style={{ top: "50vh" }}
         >
-          <SaveProposaltoDb />
+          <SaveProposaltoDbSmm />
         </div>
         {pageSequenceSmm.map((page, index) => {
           const id = page.id;
@@ -124,10 +124,7 @@ const FullProposal = () => {
             case "13":
               return (
                 page.checked && (
-                  <MarketingPackages
-                    key={index}
-                    pageNumber={pageNumber++}
-                  />
+                  <MarketingPackages key={index} pageNumber={pageNumber++} />
                 )
               );
             case "14":

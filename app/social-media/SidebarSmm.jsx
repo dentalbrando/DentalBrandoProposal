@@ -158,7 +158,11 @@ const SidebarSmm = () => {
                         checked: true,
                       },
                       { id: "14", content: "Estimate", checked: true },
-                      { id: "15", content: "Terms & Conditions", checked: true },
+                      {
+                        id: "15",
+                        content: "Terms & Conditions",
+                        checked: true,
+                      },
                       { id: "16", content: "Contact", checked: true },
                     ]);
                   }}
@@ -167,7 +171,7 @@ const SidebarSmm = () => {
                 </button>
                 <Link
                   className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
-                  href="/recent"
+                  href="/social-media-recent"
                 >
                   Recent Proposals
                 </Link>

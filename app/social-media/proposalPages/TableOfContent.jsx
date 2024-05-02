@@ -10,9 +10,9 @@ function TableOfContent() {
   //   (item) =>
   //     item.content !== "Cover Page" && item.content !== "Table of Contents"
   // );
-  useEffect(() => {
-    console.log(pageSequenceSmm);
-  }, [pageSequenceSmm]);
+  // useEffect(() => {
+  //   console.log(pageSequenceSmm);
+  // }, [pageSequenceSmm]);
 
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">

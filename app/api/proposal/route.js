@@ -11,3 +11,4 @@ export async function GET(req) {
   let proposalData = await ProposalModel.find();
   return NextResponse.json({ proposalData });
 }
+ 
