@@ -4,6 +4,11 @@ import { useSelector } from "react-redux";
 
 function MarketingPackages(prop) {
   let marketingPackages = useSelector((state) => state.marketing_package);
+  function addCommasToNumber(number) {
+    let numberString = number.toString();
+    numberString = numberString.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return numberString;
+  }
 
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
@@ -38,7 +43,7 @@ function MarketingPackages(prop) {
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
                     <span className="text-[14px] font-[300]">PKR </span>
-                    {marketingPackages.basic}
+                    {addCommasToNumber(marketingPackages.basic)}
                   </h2>
                   <span className="text-[12px] font-[600] text-white">
                     Per Month
@@ -69,7 +74,7 @@ function MarketingPackages(prop) {
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
                     <span className="text-[14px] font-[300]">PKR </span>
-                    {marketingPackages.standard}
+                    {addCommasToNumber(marketingPackages.standard)}
                   </h2>
                   <span className="text-[12px] font-[600] text-white">
                     Per Month
@@ -102,7 +107,7 @@ function MarketingPackages(prop) {
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
                     <span className="text-[14px] font-[300]">PKR </span>
-                    {marketingPackages.premium}
+                    {addCommasToNumber(marketingPackages.premium)}
                   </h2>
                   <span className="text-[12px] font-[600] text-white">
                     Per Month

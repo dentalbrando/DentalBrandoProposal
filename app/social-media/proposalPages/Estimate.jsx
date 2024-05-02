@@ -8,12 +8,8 @@ function Estimate(prop) {
   const cover_pageSmm = useSelector((state) => state.cover_pageSmm);
 
   function addCommasToNumber(number) {
-    // Convert the number to a string
     let numberString = number.toString();
-
-    // Use a regular expression to add commas
     numberString = numberString.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
     return numberString;
   }
   let subTotal = 0;

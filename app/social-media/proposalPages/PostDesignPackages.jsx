@@ -6,6 +6,12 @@ import { useSelector } from "react-redux";
 function PostDesignPackages(prop) {
   let postPackages = useSelector((state) => state.post_package);
 
+  function addCommasToNumber(number) {
+    let numberString = number.toString();
+    numberString = numberString.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return numberString;
+  }
+
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-start items-center h-[100%] relative">
@@ -39,7 +45,7 @@ function PostDesignPackages(prop) {
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
                     <span className="text-[14px] font-[300]">PKR </span>
-                    {postPackages.basic}
+                    {addCommasToNumber(postPackages.basic)}
                   </h2>
                 </div>
                 <div className="h-[65%] w-full text-[14px] font-[500] text-center flex flex-col gap-3">
@@ -67,7 +73,7 @@ function PostDesignPackages(prop) {
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
                     <span className="text-[14px] font-[300]">PKR </span>
-                    {postPackages.standard}
+                    {addCommasToNumber(postPackages.standard)}
                   </h2>
                 </div>
                 <div className="h-[65%] w-full text-[14px] font-[500] text-center flex flex-col gap-3">
@@ -98,7 +104,7 @@ function PostDesignPackages(prop) {
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
                     <span className="text-[14px] font-[300]">PKR </span>
-                    {postPackages.premium}
+                    {addCommasToNumber(postPackages.premium)}
                   </h2>
                 </div>
                 <div className="h-[65%] w-full text-[14px] font-[500] text-center flex flex-col gap-3">
