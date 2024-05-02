@@ -256,7 +256,7 @@ function Proposal() {
       } else {
         setSearchData(searchResult);
       }
-    } else {
+    } else { 
       setSearchData(null);
     }
   }
