@@ -278,23 +278,12 @@ function Proposal() {
     dispatch(updatePage(100));
     router.push("/social-media");
 
-  console.log(
-    cover_page,
-    cover_letter,
-    adPackage,
-    postPackage,
-    marketingPackage,
-    budget
-  );
   }
   function searchFunction(e) {
     if (e.target.value) {
       let searchResult = proposalData.filter((item) => {
         return (
           item.cover_letter.clientName
-            .toLowerCase()
-            .includes(e.target.value.toLowerCase()) ||
-          item.cover_page.projectTitle
             .toLowerCase()
             .includes(e.target.value.toLowerCase()) ||
           item.cover_page.companyName
@@ -319,8 +308,7 @@ function Proposal() {
   }
 
   async function deleteProposal(_id, inSearch) {
-    console.log(_id);
-    let { data } = await axios.post("/api/deleteProposal", { _id: _id });
+    let { data } = await axios.post("/api/deleteProposalsmm", { _id: _id });
     let { acknowledged } = data;
     if (acknowledged) {
       if (inSearch) {
@@ -421,7 +409,7 @@ function Proposal() {
                                       {item.cover_letter.clientName}
                                     </td>
                                     <td className="td-border text-center py-4 text-lg w-[200px]">
-                                      {item.cover_page.projectTitle}
+                                      {/* {item.cover_page.projectTitle} */}
                                     </td>
                                     <td className="td-border text-center py-4 text-lg w-[220px]">
                                       {item.cover_page.companyName}
@@ -480,7 +468,7 @@ function Proposal() {
                                       {item.cover_letter.clientName}
                                     </td>
                                     <td className="td-border text-center py-4 text-lg w-[200px]">
-                                      {item.cover_page.projectTitle}
+                                      {/* {item.cover_page.projectTitle} */}
                                     </td>
                                     <td className="td-border text-center py-4 text-lg w-[220px]">
                                       {item.cover_page.companyName}
