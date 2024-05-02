@@ -6,7 +6,6 @@ import {
   setService,
   setTerms,
 } from "@app/store/budgetSmm";
-// import { setClientName, setLetterText } from "@app/store/coverLetterSmm";
 import { setClientName, setLetterText } from "@app/store/CoverLetterSmm";
 import {
   setSubHeading,

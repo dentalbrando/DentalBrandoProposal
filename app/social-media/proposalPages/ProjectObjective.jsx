@@ -25,7 +25,7 @@ function ProjectObjective(prop) {
             </div>
             <div className="flex flex-col justify-center w-full leading-snug">
               <span className="text-[white] text-[15px] font-[400]">
-                {aboutProjectSmm.aboutProject}
+                {aboutProjectSmm.aboutProject.aboutProject}
               </span>
             </div>
           </div>
