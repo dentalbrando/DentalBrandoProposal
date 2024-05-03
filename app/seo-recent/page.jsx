@@ -296,7 +296,7 @@ function Proposal() {
       ) : (
         <div className="flex flex-col">
           <Nav
-            navText={"Social Media Marketing Recent Proposals"}
+            navText={"SEO Recent Proposals"}
             main={true}
           />
           <div className="px-10 py-4 relative max-h-fit min-h-[80vh]">
