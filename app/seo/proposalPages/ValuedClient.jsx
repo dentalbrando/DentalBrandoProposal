@@ -18,7 +18,7 @@ function ValuedClient(prop) {
               <div className="w-[70px] h-[5px] bg-yellow-400 my-3"></div>
             </div>
             <div className="flex flex-col justify-center w-full leading-snug">
-              <span className="text-[white] text-[15px] font-[400]">
+              <span className="text-[white] text-[15px] font-[400] text-justify">
                 We have received true recognition from our clients for
                 delivering the projects through our exceptional Search Engine
                 Optimization Services. Our client base spans a wide range of

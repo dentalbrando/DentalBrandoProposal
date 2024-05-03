@@ -25,7 +25,7 @@ function ProjectObjective(prop) {
               <div className="w-[70px] h-[5px] bg-yellow-400 my-3"></div>
             </div>
             <div className="flex flex-col justify-center w-full leading-snug">
-              <span className="text-[white] text-[15px] font-[400]">
+              <span className="text-[white] text-[15px] font-[400] text-justify">
                 {aboutProjectSeo}
               </span>
             </div>

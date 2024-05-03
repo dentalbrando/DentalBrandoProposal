@@ -20,7 +20,7 @@ function Terms(prop) {
               <div className="w-[70px] h-[5px] bg-yellow-400 my-3"></div>
             </div>
             <div className="flex flex-col justify-center w-full leading-snug">
-              <span className="text-[white text-[15px] font-[400]">
+              <span className="text-[white text-[15px] font-[400] text-justify">
                 SEO services involve optimizing the right content for the right
                 audience at the right moment, ensuring maximum visibility and
                 impact. At Soft Enterprise, we are confident that we are your
@@ -147,13 +147,12 @@ function Terms(prop) {
               </div>
               <div className="w-full flex justify-end leading-[1.3]">
                 <span className="text-[15px] font-[400] text-justify w-[87%]">
-                  Upon completion of the project and
-                  receipt of payment in full, all intellectual property rights
-                  for the project will be transferred to you. Until then, all
-                  materials, including design concepts, drafts, and prototypes,
-                  are the property of Soft Enterprise. If it goes to default,
-                  Soft Enterprise can utilize it for any other projects, or any
-                  other clients.
+                  Upon completion of the project and receipt of payment in full,
+                  all intellectual property rights for the project will be
+                  transferred to you. Until then, all materials, including
+                  design concepts, drafts, and prototypes, are the property of
+                  Soft Enterprise. If it goes to default, Soft Enterprise can
+                  utilize it for any other projects, or any other clients.
                 </span>
               </div>
             </div>

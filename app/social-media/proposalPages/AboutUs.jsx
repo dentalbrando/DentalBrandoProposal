@@ -102,4 +102,4 @@ function AboutUs(prop) {
     </div>
   );
 }
-export default AboutUs;
+export default AboutUs; 
