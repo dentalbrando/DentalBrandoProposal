@@ -1,6 +1,7 @@
 "use client";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
+import seo3 from "@public/assets/socialMedia/seo3.png";
 function TableOfContent() {
   const pageSequenceSeo = useSelector(
     (state) => state.pageSequenceSeo
@@ -10,12 +11,11 @@ function TableOfContent() {
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-center items-center h-[100%] relative">
-        <div className="flex w-full h-[40%] absolute top-0 overflow-hidden">
-          <div className="w-[120%] h-[75%] rounded-br-[300%] rounded-bl-[80%] absolute top-[-30%] right-[-10%] z-[50] bg-[#00A2FF]"></div>
-          <div className="w-[60%] h-[120%] rounded-[50%] top-[-70%] right-[-20%] z-[10] bg-[#ffd600] absolute"></div>
+        <div className="flex-end w-full h-[15%] absolute top-0 overflow-hidden ">
+          <img src={seo3.src} className="h-full" />
         </div>
 
-        <div className="w-[80%] h-[68%] z-[100] absolute bottom-[10%] flex flex-col justify-start items-center gap-10">
+        <div className="w-[80%] z-[100] absolute top-[20%] flex flex-col justify-start items-center gap-10 ">
           <div className="bg-red-40 flex flex-col justify-center leading-none">
             <span className="text-[#00A2FF] text-center text-[56px] font-[700]">
               TABLE OF
@@ -545,8 +545,8 @@ function TableOfContent() {
           </div>
         </div>
 
-        <div className="absolute bottom-0 h-[100px] w-[100%] overflow-hidden">
-          <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
+        <div className="absolute bottom-0 h-[15%] w-[100%] overflow-hidden ">
+          <img src={seo3.src} className="h-full rotate-180" />
         </div>
       </div>
     </div>

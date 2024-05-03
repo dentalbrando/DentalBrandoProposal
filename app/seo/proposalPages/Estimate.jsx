@@ -1,5 +1,7 @@
 "use client";
 import whiteLogo from "@public/assets/socialMedia/SE Logo.png";
+import seo4 from "@public/assets/socialMedia/seo4.png";
+
 import { useSelector } from "react-redux";
 
 function Estimate(prop) {
@@ -8,12 +10,8 @@ function Estimate(prop) {
   const cover_pageseo = useSelector((state) => state.cover_pageSeo);
 
   function addCommasToNumber(number) {
-    // Convert the number to a string
     let numberString = number.toString();
-
-    // Use a regular expression to add commas
     numberString = numberString.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
     return numberString;
   }
   let subTotal = 0;
@@ -28,27 +26,29 @@ function Estimate(prop) {
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="bg-green-20 w-[8.27in] minh-[29.7cm] h-[29.7cm] bg-white">
         <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">
-          <div className="flex w-full h-[35%] absolute top-0 overflow-hidden">
-            <div className="w-[150%] h-[80%] rounded-br-[55%] rounded-bl-[40%] absolute top-[0%] right-[-10%] z-[50] bg-[#00A2FF] flex justify-center items-center"></div>
-            <div className="absolute w-[87%] h-[50%] right-[6.5%] top-[10%] z-[200] bg-red-90  flex flex-col justify-end">
+          <div className="flex w-full h-[35%] absolute bg-red-90 top-0 overflow-hidden">
+            <div className="w-[150%] h-[80%] absolute top-[-20%] left-[-5%] rotate-[-7deg] z-[50] bg-[#00A2FF] flex justify-center items-center"></div>
+            <div className="absolute w-[87%] h-[50%] right-[6.5%] top-[0%] z-[200]  bg-green-20 flex flex-col justify-end">
               <div className="flex flex-col justify-center w-full leading-[1.1]">
                 <span className="text-[white] text-[44px] font-[600]">
                   Estimate
                 </span>
               </div>
+
               <div className="flex flex-col justify-center w-full leading-snug">
                 <span className="text-[rgb(255,214,0)] text-[20px] font-[700]">
                   Total Estimate: {budgetData.currency}{" "}
                   {addCommasToNumber(totalEstimate)}
                 </span>
               </div>
-
               <img
                 src={whiteLogo.src}
                 className="w-[170px] absolute top-[25%] right-[5%]"
               />
             </div>
-            <div className="w-[60%] h-[120%] rounded-[50%] bottom-[25%] right-[-25%] z-[10] bg-[#ffd600] absolute"></div>
+            <div className="flex items-end justify-center w-[35%] h-[100%] bottom-[20px] right-[-5%] z-[0]  absolute">
+              <img src={seo4.src} className="rotate-[-7deg] w-full" />
+            </div>
           </div>
 
           <div className="w-full h-[60%] absolute bottom-[10%] flex flex-col items-center gap-3">
@@ -150,21 +150,17 @@ function Estimate(prop) {
             </div>
           </div>
 
-          <div className="absolute top-0 left-[7%] z-[100] w-[50px] flex">
-            <div className="w-[50%] h-[100px] bg-white"></div>
-            <div className="w-[50%] h-[100px] bg-[#ffd600]"></div>
-          </div>
-
-          <div className="absolute bottom-0 h-[100px] w-[100%] overflow-hidden z-[200]">
-            <div className="flex justify-between items-center w-full px-16 h-full absolute top-[15%] left-0 z-[50]">
+          <div className="absolute bottom-0 h-[110px] w-[100%] overflow-hidden bg-red-40">
+            <div className="flex justify-between items-center w-full px-14 h-full absolute top-[18%] left-0 z-[50]">
               <span className="text-gray-700 text-[15px] font-[500]">
-                Social Media Marketing Proposal
+                Search Engine Optimization Proposal
               </span>
               <span className="text-gray-700 text-[15px] font-[500]">
                 {prop.pageNumber < 10 ? "0" + prop.pageNumber : prop.pageNumber}
               </span>
             </div>
-            <div className="w-[80%] h-[100%] bg-[rgb(204,236,255)] absolute left-[0%] rounded-tr-[100%] top-[20%]"></div>
+            <div className="w-[110%] h-[90%] bg-[rgb(255,246,203)] absolute left-[-5%] top-[55%] rotate-[7deg]"></div>
+            <div className="w-[110%] h-[90%] bg-[rgb(204,236,255)] absolute left-[-5%] top-[60%] rotate-[7deg]"></div>
           </div>
         </div>
       </div>

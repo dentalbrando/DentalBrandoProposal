@@ -29,11 +29,13 @@ function Terms(prop) {
             </div>
           </div>
         </div>
+
         <div className="absolute top-0 left-[7%]">
           <img src={strips.src} className="w-[50px]" />
         </div>
 
         <div className="w-[87%] h-[59%] z-[100] absolute bottom-[9%] flex flex-wrap justify-between gap-[1.5%]">
+        
           <div className="w-[49%] h-[32%] leading-none relative">
             <div className=" w-[100%] h-[50%] right-[6.5%] top-[25%] z-[200] bg-red-90">
               <div className="flex flex-col justify-center w-full">
@@ -186,6 +188,9 @@ function Terms(prop) {
             <div className="bg-[#FFD600] w-[2px] h-[70%] absolute top-[22%] left-[7%]"></div>
           </div>
         </div>
+
+
+        
         <div className="absolute bottom-0 h-[100px] w-[100%] overflow-hidden z-[200]">
           <div className="flex justify-between items-center w-full px-16 h-full absolute top-[15%] left-0 z-[50]">
             <span className="text-gray-700 text-[15px] font-[500]">
