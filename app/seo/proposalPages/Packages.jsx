@@ -99,10 +99,78 @@ function Packages(prop) {
           </div>
         </div>
 
-        <div className="w-[87%] h-fit bg-blue-200">
-
+        <div className="w-[87%] h-[45%] absolute top-[45%]">
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center text-center">
+              Unique Article Submission
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
+              Upto 2
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
+              Upto 4
+            </span>
+            <span className="w-[23%] h-[100%] flex justify-center items-center text-center">
+              Upto 10
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center text-center">
+              Targeted Keyword
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
+              Upto 5
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
+              Upto 10
+            </span>
+            <span className="w-[23%] h-[100%] flex justify-center items-center text-center">
+              Upto 20
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center text-center">
+              Reporting
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
+              Monthly
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
+              Semi-Monthly
+            </span>
+            <span className="w-[23%] h-[100%] flex justify-center items-center text-center">
+              Weekly
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center">
+              Technical SEO (Robots.txt,Sitemap etc)
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
+              Monthly
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
+              Semi-Monthly
+            </span>
+            <span className="w-[23%] h-[100%] flex justify-center items-center text-center">
+              Weekly
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center">
+              Technical SEO (Robots.txt,Sitemap etc)
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
+              Monthly
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
+              Semi-Monthly
+            </span>
+            <span className="w-[23%] h-[100%] flex justify-center items-center text-center">
+              Weekly
+            </span>
+          </div>
         </div>
-        
 
         <div className="absolute bottom-0 h-[110px] w-[100%] overflow-hidden bg-red-40">
           <div className="flex justify-between items-center w-full px-14 h-full absolute top-[18%] left-0 z-[50]">
