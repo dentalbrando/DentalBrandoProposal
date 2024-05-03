@@ -6,6 +6,11 @@ import { useSelector } from "react-redux";
 
 function Packages(prop) {
   let packages = useSelector((state) => state.package_seo);
+  function addCommasToNumber(number) {
+    let numberString = number.toString();
+    numberString = numberString.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return numberString;
+  }
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-center items-center h-[100%] bg-red-20 relative">
@@ -37,27 +42,67 @@ function Packages(prop) {
             <img src={seo12.src} className="w-[25%]" />
             <div className="flex justify-between items-end w-[65%] h-[100%]">
               <div className="relative flex flex-col items-center justify-center w-[33%] h-[100%] overflow-hidden">
-                <div className="flex items-end w-[100%] h-[50%] bg-[rgb(0,161,255)]"></div>
-                <div className="flex items-end w-[100px] h-[100px] bg-[rgb(0,161,255)] absolute left-[0%]  bottom-[16%] rotate-[25deg]"></div>
-                <div className="flex items-end w-[100px] h-[100px] bg-[rgb(0,161,255)] absolute right-[0%] bottom-[16%] rotate-[-25deg]"></div>
+                <div className="flex items-center w-[100%] h-[50%] bg-[rgb(0,161,255)] z-[50]">
+                  <div className="h-[50%] w-full flex flex-col justify-center items-center leading-tight">
+                    <h1 className="text-[32px] font-[600] text-[#ffd600]">
+                      Basic
+                    </h1>
+                    <h2 className="text-[22px] font-[600] text-white">
+                      <span className="text-[14px] font-[300]">PKR </span>
+                      {addCommasToNumber(packages.basic)}
+                    </h2>
+                    <span className="text-[12px] font-[600] text-white">
+                      Per Month
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-end w-[100px] h-[100px] bg-[rgb(0,161,255)] absolute left-[0%]  bottom-[16%] rotate-[25deg]  z-[0]"></div>
+                <div className="flex items-end w-[100px] h-[100px] bg-[rgb(0,161,255)] absolute right-[0%] bottom-[16%] rotate-[-25deg] z-[0]"></div>
               </div>
               <div className="relative flex flex-col items-center justify-center w-[33%] h-[100%] overflow-hidden">
-                <div className="flex items-end w-[100%] h-[50%] bg-[rgb(0,161,255)]"></div>
-                <div className="flex items-end w-[100px] h-[100px] bg-[rgb(0,161,255)] absolute left-[0%]  bottom-[16%] rotate-[25deg]"></div>
-                <div className="flex items-end w-[100px] h-[100px] bg-[rgb(0,161,255)] absolute right-[0%] bottom-[16%] rotate-[-25deg]"></div>
+                <div className="flex items-center w-[100%] h-[50%] bg-[rgb(0,161,255)] z-[50]">
+                  <div className="h-[50%] w-full flex flex-col justify-center items-center leading-tight">
+                    <h1 className="text-[32px] font-[600] text-[#ffd600]">
+                      Standard
+                    </h1>
+                    <h2 className="text-[22px] font-[600] text-white">
+                      <span className="text-[14px] font-[300]">PKR </span>
+                      {addCommasToNumber(packages.standard)}
+                    </h2>
+                    <span className="text-[12px] font-[600] text-white">
+                      Per Month
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-end w-[100px] h-[100px] bg-[rgb(0,161,255)] absolute left-[0%]  bottom-[16%] rotate-[25deg]  z-[0]"></div>
+                <div className="flex items-end w-[100px] h-[100px] bg-[rgb(0,161,255)] absolute right-[0%] bottom-[16%] rotate-[-25deg] z-[0]"></div>
               </div>
               <div className="relative flex flex-col items-center justify-center w-[33%] h-[100%] overflow-hidden">
-                <div className="flex items-end w-[100%] h-[50%] bg-[rgb(0,161,255)]"></div>
-                <div className="flex items-end w-[100px] h-[100px] bg-[rgb(0,161,255)] absolute left-[0%]  bottom-[16%] rotate-[25deg]"></div>
-                <div className="flex items-end w-[100px] h-[100px] bg-[rgb(0,161,255)] absolute right-[0%] bottom-[16%] rotate-[-25deg]"></div>
+                <div className="flex items-center w-[100%] h-[50%] bg-[rgb(0,161,255)] z-[50]">
+                  <div className="h-[50%] w-full flex flex-col justify-center items-center leading-tight">
+                    <h1 className="text-[32px] font-[600] text-[#ffd600]">
+                      Premium
+                    </h1>
+                    <h2 className="text-[22px] font-[600] text-white">
+                      <span className="text-[14px] font-[300]">PKR </span>
+                      {addCommasToNumber(packages.premium)}
+                    </h2>
+                    <span className="text-[12px] font-[600] text-white">
+                      Per Month
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-end w-[100px] h-[100px] bg-[rgb(0,161,255)] absolute left-[0%]  bottom-[16%] rotate-[25deg]  z-[0]"></div>
+                <div className="flex items-end w-[100px] h-[100px] bg-[rgb(0,161,255)] absolute right-[0%] bottom-[16%] rotate-[-25deg] z-[0]"></div>
               </div>
             </div>
           </div>
         </div>
 
-        <h1 className="text-center text">{packages.basic}</h1>
-        <h1 className="text-center text">{packages.standard}</h1>
-        <h1 className="text-center text">{packages.premium}</h1>
+        <div className="w-[87%] h-fit bg-blue-200">
+
+        </div>
+        
 
         <div className="absolute bottom-0 h-[110px] w-[100%] overflow-hidden bg-red-40">
           <div className="flex justify-between items-center w-full px-14 h-full absolute top-[18%] left-0 z-[50]">
