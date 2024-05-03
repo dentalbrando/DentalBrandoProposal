@@ -1,5 +1,15 @@
 "use client";
 import seo4 from "@public/assets/socialMedia/seo4.png";
+import horse from "@public/assets/socialMedia/our clients logo-07.png";
+import commas from "@public/assets/socialMedia/comma-16.png";
+import client1 from "@public/assets/socialMedia/our clients logo-08.png";
+import client2 from "@public/assets/socialMedia/our clients logo-09.png";
+import client3 from "@public/assets/socialMedia/our clients logo-10.png";
+import client4 from "@public/assets/socialMedia/our clients logo-11.png";
+import client5 from "@public/assets/socialMedia/our clients logo-12.png";
+import client6 from "@public/assets/socialMedia/our clients logo-13.png";
+import client7 from "@public/assets/socialMedia/our clients logo-14.png";
+import client8 from "@public/assets/socialMedia/our clients logo-15.png";
 
 function ValuedClient(prop) {
   return (
@@ -33,6 +43,105 @@ function ValuedClient(prop) {
             <img src={seo4.src} className="rotate-[-7deg] w-full" />
           </div>
         </div>
+
+        <div className="w-[87%] h-[45%] z-[100] absolute bottom-[13.5%] flex flex-col justify-between items-start bg-purple-60">
+          <div className="w-[100%] h-[35%] flex justify-start gap-5 items-center bg-red-00">
+            <div className="w-[20%] h-[80%] flex flex-col justify-center items-center bg-yellow-5">
+              <div className="w-[100%] h-[80%] flex justify-center items-center bg-[rgb(214,240,255)] rounded-[10px]">
+                <img src={horse.src} className="h-full" />
+              </div>
+              <div
+                className="w-[65%] h-[6px] flex justify-between items-center bg-[#ffd600]"
+                style={{ translate: "0% -50%" }}
+              ></div>
+            </div>
+
+            <div className="w-[70%] h-[100%] flex justify-center items-center bg-yellow-5">
+              <div className="w-[100%] h-fit leading-tight text-justify">
+                <h3 className="text-[#00A2FF] text-[22px] font-[700] text-start pb-1">
+                  Ma Ka Ching | Chief Executive Officer
+                </h3>
+                <span className="text-[16px] font-[400]">
+                  Working with Soft Enterprise has been a game-changer for our
+                  business. Their expertise and dedication to Social Media
+                  Marketing services have helped us achieve remarkable campaign
+                  results. We look forward to excelling in our projects!
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-[100%] h-[60%] flex justify-between items-between bg-[rgb(255,247,204) flex-wrap rounded-[50px]">
+            <div className="w-[22%] h-[44%] flex justify-center items-end bg-[rgb(255,247,204)] rounded-2xl">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-center bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client1.src} className="w-[100%]" />
+                </div>
+                <div className="w-[60%] h-[6px] flex justify-between items-center bg-[rgb(0,161,255)]"></div>
+              </div>
+            </div>
+
+            <div className="w-[22%] h-[44%] flex justify-center items-end bg-[rgb(255,247,204)] rounded-2xl">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-center bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client2.src} className="w-[100%]" />
+                </div>
+                <div className="w-[60%] h-[6px] flex justify-between items-center bg-[rgb(0,161,255)]"></div>
+              </div>
+            </div>
+
+            <div className="w-[22%] h-[44%] flex justify-center items-end bg-[rgb(255,247,204)] rounded-2xl ">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-center bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client3.src} className="w-[100%]" />
+                </div>
+                <div className="w-[60%] h-[6px] flex justify-between items-center bg-[rgb(0,161,255)]"></div>
+              </div>
+            </div>
+
+            <div className="w-[22%] h-[44%] flex justify-center items-end bg-[rgb(255,247,204)] rounded-2xl">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-center bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client4.src} className="w-[100%]" />
+                </div>
+                <div className="w-[60%] h-[6px] flex justify-between items-center bg-[rgb(0,161,255)]"></div>
+              </div>
+            </div>
+            <div className="w-[22%] h-[44%] flex justify-center items-end bg-[rgb(255,247,204)] rounded-2xl">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-center bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client5.src} className="w-[100%]" />
+                </div>
+                <div className="w-[60%] h-[6px] flex justify-between items-center bg-[rgb(0,161,255)]"></div>
+              </div>
+            </div>
+            <div className="w-[22%] h-[44%] flex justify-center items-end bg-[rgb(255,247,204)] rounded-2xl">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-center bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client6.src} className="w-[100%]" />
+                </div>
+                <div className="w-[60%] h-[6px] flex justify-between items-center bg-[rgb(0,161,255)]"></div>
+              </div>
+            </div>
+            <div className="w-[22%] h-[44%] flex justify-center items-end bg-[rgb(255,247,204)] rounded-2xl">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-center bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client7.src} className="w-[100%]" />
+                </div>
+                <div className="w-[60%] h-[6px] flex justify-between items-center bg-[rgb(0,161,255)]"></div>
+              </div>
+            </div>
+            <div className="w-[22%] h-[44%] flex justify-center items-end bg-[rgb(255,247,204)] rounded-2xl">
+              <div className="w-[100%] h-[80%] flex flex-col justify-center items-center bg-green-70">
+                <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
+                  <img src={client8.src} className="w-[100%]" />
+                </div>
+                <div className="w-[60%] h-[6px] flex justify-between items-center bg-[rgb(0,161,255)]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="absolute bottom-0 h-[110px] w-[100%] overflow-hidden bg-red-40">
           <div className="flex justify-between items-center w-full px-14 h-full absolute top-[18%] left-0 z-[50]">
             <span className="text-gray-700 text-[15px] font-[500]">
