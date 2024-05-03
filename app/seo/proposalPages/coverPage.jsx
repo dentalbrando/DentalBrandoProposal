@@ -23,7 +23,7 @@ function CoverPage(prop) {
           className="w-[600px] absolute bottom-[9%] right-[0%] z-[10]"
         />
 
-        <div className="w-[650px] h-[650px] bg-[rgb(0,160,255)] absolute left-[-49%] top-[17.3%] rotate-[-30deg] skew-x-[30deg]"></div>
+        <div className="w-[650px] h-[650px] bg-[rgb(0,160,255)] absolute left-[-49%] top-[17.1%] rotate-[-30deg] skew-x-[30deg]"></div>
         <div className="w-[650px] h-[650px] bg-[rgb(0,160,255)] absolute left-[90%] top-[27%] rotate-[-30deg] skew-x-[30deg] z-[0]"></div>
         <div className="w-[800px] h-[500px] bg-[rgb(255,212,0)] absolute right-[-30%] bottom-[-32%] rotate-[-30deg] z-[20]"></div>
         <div className="w-[500px] h-[500px] absolute left-[5%] top-[28%] z-[20] bg-red-40">
