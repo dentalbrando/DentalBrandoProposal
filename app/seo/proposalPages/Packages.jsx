@@ -1,6 +1,7 @@
 "use client";
 import seo3 from "@public/assets/socialMedia/seo3.png";
 import seo12 from "@public/assets/socialMedia/seo12.png";
+import { FaCheck,FaTimes } from "react-icons/fa";
 
 import { useSelector } from "react-redux";
 
@@ -146,28 +147,168 @@ function Packages(prop) {
             <span className="w-[35.5%] h-[100%] flex justify-start items-center">
               Technical SEO (Robots.txt,Sitemap etc)
             </span>
-            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
-              Monthly
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
             </span>
-            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
-              Semi-Monthly
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
             </span>
-            <span className="w-[23%] h-[100%] flex justify-center items-center text-center">
-              Weekly
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
             </span>
           </div>
           <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
             <span className="w-[35.5%] h-[100%] flex justify-start items-center">
-              Technical SEO (Robots.txt,Sitemap etc)
+              Internal Link Building
             </span>
-            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
-              Monthly
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
             </span>
-            <span className="w-[21%] h-[100%] flex justify-center items-center text-center">
-              Semi-Monthly
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
             </span>
-            <span className="w-[23%] h-[100%] flex justify-center items-center text-center">
-              Weekly
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center">
+              Website Audit
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center">
+              Keyword Research
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center">
+              Meta Title & Description
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center">
+              Schema Markup Organization
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center">
+              Quality Guest Posts
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center">
+              Google Analytic Integration & Ongoing Review
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-red-500">
+              <FaTimes />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center">
+              Website Layout & Content Optimization
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-red-500">
+              <FaTimes />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center">
+              301 & 404 Optimization & Fixing
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-red-500">
+              <FaTimes />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center">
+              Social Media Marketing (Basic)
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-red-500">
+              <FaTimes />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-red-500">
+              <FaTimes />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
+            </span>
+          </div>
+          <div className="w-full flex justify-start gap-[%] items-center text-[14px] border-b-[thin] border-gray-300 py-1">
+            <span className="w-[35.5%] h-[100%] flex justify-start items-center">
+              Google Search Console Error Fixing
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-red-500">
+              <FaTimes />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-red-500">
+              <FaTimes />
+            </span>
+            <span className="w-[21%] h-[100%] flex justify-center items-center text-center text-green-400">
+              <FaCheck />
             </span>
           </div>
         </div>
