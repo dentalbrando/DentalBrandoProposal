@@ -9,7 +9,7 @@ export async function POST(req) {
   } catch (err) {
     console.log(err);
   }
-  return NextResponse.json({ proposalSmmData });
+  return NextResponse.json({ proposalSmmData: "proposalSmmData" });
 }
 
 export async function GET(req) {
