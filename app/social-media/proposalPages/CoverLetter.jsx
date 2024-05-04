@@ -5,15 +5,25 @@ import { useSelector } from "react-redux";
 function CoverLetter(prop) {
   let coverLetterSmm = useSelector((state) => state.cover_letterSmm);
   if (coverLetterSmm.letterText === "") {
-    var tempLetterText = `We are writing to express our interest in your web development project. As a company with extensive experience in web development and a track record of delivering exceptional results for our clients, we are confident that we would be the ideal partner for your project.
+    var tempLetterText = `We are writing to express our interest in your Social Media Marketing project. We are a team of professionals who are always busy making businesses successful through Social Media Marketing. We are confident that we can take your online presence and brand visibility to an elevated level with our esteemed Social Media Marketing services.
 <p class = 'py-1'></p>
-At Soft Enterprise, we understand that your website is often the first point of contact between your business and your customers. As such, we are committed to migrate your website to the sharepoint.
 <p class = 'py-1'></p>
-Our team of experienced web developers, designers, and project manager work closely with clients to understand their specific needs and requirements. We have expertise in a wide range of technologies including Wordpress, Laravel, Angular, PHP, Share Point, Vue.Js, React, Shopify, Python and more. We are always exploring new and innovative approaches to web development.
 <p class = 'py-1'></p>
-At every stage of the project, we prioritize communication and collaboration to ensure that you are fully involved in the process and the final product meets your expectations. We are dedicated to delivering projects on time and within budget, and we offer going support and maintenance to ensure that your website continues to perform at its best.
+Soft Enterprise specializes in creating customized Social Media strategies tailored to the unique needs of our clients. Social Media acts as a bridge, not only among friends and family but also between businesses and their target. As the social network grew from its emergence, so did the idea to use divergent platforms as a means of advertising and reaching out to different cohorts of target audiences. We leverage Social Media to market the products and services of our clients in their niche by micro-targeting audiences with our expertise.
 <p class = 'py-1'></p>
-Thank you for considering Soft Enterprise for your web development needs. We are excited at the prospect of working with you and creating a website that will help your business succeed.
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+We will work closely with you to understand your Social Media Marketing goals. Then we will craft comprehensive strategies by ensuring that they align with your project goals, your brand identity, and how they provide value to your target audience. We do your complete brand reputation management to make your brand image consistent across all your social media platforms. We will update you on our Social Media Marketing efforts with clear and detailed performance reports from advanced analytical tools indicating Key Performance Indicators. 
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+We fulfill your project goals with open project communication, scheduled meetings, and reporting sessions. We are committed to upholding the highest level of professionalism in our services. We value our project partnerships to maintain the exclusivity of your project. 
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+Thank you for considering Soft Enterprise for your Social Media Marketing needs. We are excited at the prospect of working with you and creating a cohesive social media brand presence for your business to help you succeed in the era of Social Media Marketing. 
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
 <p class = 'py-1'></p>
 Sincerely,`;
   } else {
@@ -66,17 +76,6 @@ Sincerely,`;
               class="Part-one font-[400] text-[15px] leading-6 pt-2"
               dangerouslySetInnerHTML={{ __html: content }}
             ></div>
-
-            {/* <p className="text-[15px] font-[400] mt-1 leading-normal">
-              {coverLetterSmm.letterText.split("\n").map((paragraph, index) => (
-                <p
-                  key={index}
-                  className="text-[15px] font-[400] my-3 leading-normal"
-                >
-                  {paragraph}
-                </p>
-              ))}
-            </p> */}
           </div>
           <div className="flex flex-col justify-center w-full mt-1">
             <div className="w-[200px] bg-red-300 ms-[-13px]">
