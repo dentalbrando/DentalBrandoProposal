@@ -6,10 +6,10 @@ export async function POST(req) {
   console.log(proposalSmmData);
   try {
     await ProposalSmmModel(proposalSmmData).save();
+    return NextResponse.json({ proposalSmmData: "proposalSmmData" });
   } catch (err) {
     console.log(err);
   }
-  return NextResponse.json({ proposalSmmData: "proposalSmmData" });
 }
 
 export async function GET(req) {

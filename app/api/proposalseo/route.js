@@ -6,10 +6,10 @@ export async function POST(req) {
   console.log(proposalSeoData);
   try {
     await ProposalSeoModel(proposalSeoData).save();
+    return NextResponse.json({ proposalSeoData: "proposalSeoData" });
   } catch (err) {
     console.log(err);
   }
-  return NextResponse.json({ proposalSeoData: "proposalSeoData" });
 }
 
 export async function GET(req) {

@@ -29,14 +29,14 @@ export default function SaveProposaltoDbSmm() {
         budget,
         aboutProject,
       });
+      alert("Your Proposal has been saved!");
+      setSaveButtonText("Saved");
     } catch (err) {
       console.log(err);
       alert("Cant save your project at the moment");
       setSaveButtonText("Save proposal");
     } finally {
-      setSaveButtonText("Saved");
       setLoading(false);
-      alert("Your Proposal has been saved!");
     }
   }
   return (

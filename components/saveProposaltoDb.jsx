@@ -43,13 +43,13 @@ export default function SaveProposaltoDb() {
         proposedSitemap2,
         proposedSitemapOverview,
       });
+      alert("Your Proposal has been saved!");
+      setSaveButtonText("Saved");
     } catch {
       alert("Cant save your project at the moment");
       setSaveButtonText("Save proposal");
     } finally {
       setLoading(false);
-      setSaveButtonText("Saved");
-      alert("Your Proposal has been saved!");
     }
   }
   return (
