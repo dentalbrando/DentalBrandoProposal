@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { updatePage } from "@app/store/pageSclice";
+import { updatePage } from "@app/store/pageScliceSmm";
 import {
   resetSquenceSmm,
   setPageSequenceSmm,
@@ -17,7 +17,7 @@ const SidebarSmm = () => {
     (state) => state.pageSequenceSmm
   ).pageSequenceSmm;
   const [items, setItems] = useState(pageSequenceSmm);
-  const page = useSelector((state) => state.page);
+  const page = useSelector((state) => state.pageSmm);
   const dispatch = useDispatch();
   const onDragEnd = (result) => {
     if (!result.destination) return;

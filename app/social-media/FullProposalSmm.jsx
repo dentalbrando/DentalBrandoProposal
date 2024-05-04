@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { updatePage } from "@app/store/pageSclice";
+import { updatePage } from "@app/store/pageScliceSmm";
 import CoverLetter from "./proposalPages/CoverLetter";
 import CoverPage from "./proposalPages/coverPage";
 import TableOfContent from "./proposalPages/TableOfContent";
@@ -123,7 +123,7 @@ const FullProposal = () => {
               );
             case "13":
               return (
-                page.checked && (
+                page.checked && ( 
                   <MarketingPackages key={index} pageNumber={pageNumber++} />
                 )
               );

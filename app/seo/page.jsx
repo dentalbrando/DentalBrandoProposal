@@ -13,7 +13,7 @@ import FormSeo from "./FormSeo";
 function Development() {
   let router = useRouter();
   // const pageNo = 100;
-  const pageNo = useSelector((state) => state.page.formId);
+  const pageNo = useSelector((state) => state.pageSeo.formId);
   let [isVerified, setIsVerified] = useState(undefined);
   let [loading, setLoading] = useState(true);
 

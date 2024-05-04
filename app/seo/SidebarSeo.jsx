@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { updatePage } from "@app/store/pageSclice";
+import { updatePage } from "@app/store/pageScliceSeo";
 import {
   resetSquenceSeo,
   setPageSequenceSeo,
@@ -17,7 +17,7 @@ const SidebarSeo = () => {
     (state) => state.pageSequenceSeo
   ).pageSequenceSeo;
   const [items, setItems] = useState(pageSequenceSeo);
-  const page = useSelector((state) => state.page);
+  const page = useSelector((state) => state.pageSeo);
   const dispatch = useDispatch();
   const onDragEnd = (result) => {
     if (!result.destination) return;
