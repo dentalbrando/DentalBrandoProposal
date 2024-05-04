@@ -8,7 +8,7 @@ import EstimateForm from "./forms/EstimateForm";
 import ProjectObjectiveForm from "./forms/ProjectObjectiveForms";
 
 const FormSeo = () => {
-  const page = useSelector((state) => state.page);
+  const page = useSelector((state) => state.pageSeo);
   return (
     <div className="flex items-center flex-col bg-white py-16 w-[78vw]">
       <h1 className="text-main-blue text-[36px] font-semibold">

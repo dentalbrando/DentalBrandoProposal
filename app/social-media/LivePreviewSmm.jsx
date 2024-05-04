@@ -17,7 +17,7 @@ import Estimate from "./proposalPages/Estimate";
 import MarketingPackages from "./proposalPages/MarketingPackages";
 
 const LivePreviewSmm = () => {
-  const page = useSelector((state) => state.page);
+  const page = useSelector((state) => state.pageSmm);
 
   return (
     <div className="flex items-center flex-col bg-white pb-16 w-[78vw] bg-white">

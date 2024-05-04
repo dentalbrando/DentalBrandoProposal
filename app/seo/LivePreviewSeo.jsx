@@ -15,7 +15,7 @@ import OnpageSeo from "./proposalPages/On-pageSeo";
 import KeyWordSeo from "./proposalPages/KeywordResearch";
 
 const LivePreviewSeo = () => {
-  const page = useSelector((state) => state.page);
+  const page = useSelector((state) => state.pageSeo);
 
   return (
     <div className="flex items-center flex-col bg-white pb-16 w-[78vw] bg-white">
