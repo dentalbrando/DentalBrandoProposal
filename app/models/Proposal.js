@@ -1,3 +1,4 @@
+import { timeout } from "d3";
 import mongoose from "mongoose";
 const ProposalSchema = mongoose.Schema({
   date: { type: String, required: true },
@@ -10,7 +11,8 @@ const ProposalSchema = mongoose.Schema({
   proposedSitemap: { type: Object, required: true },
   proposedSitemap2: { type: Object, required: true },
   proposedSitemapOverview: { type: Object, required: true },
-});
+}
+);
 const ProposalModel =
   mongoose.models.Proposal || mongoose.model("Proposal", ProposalSchema);
 export default ProposalModel;
