@@ -1,5 +1,6 @@
 "use client";
 import { useSelector } from "react-redux";
+import tick from "@public/assets/TICK-01.svg";
 import seo4 from "@public/assets/socialMedia/seo4.png";
 import seo5 from "@public/assets/socialMedia/seo5.png";
 import whtieCircle from "@public/assets/socialMedia/whtieCircle.png";

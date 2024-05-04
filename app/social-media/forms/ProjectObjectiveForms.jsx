@@ -2,6 +2,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { setAboutProject } from "@app/store/aboutProjectSmm";
+import tick from "@public/assets/TICK-01.svg";
 
 const ProjectObjectiveForm = () => {
   const dispatch = useDispatch();

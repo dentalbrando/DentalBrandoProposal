@@ -1,4 +1,5 @@
 "use client";
+import tick from "@public/assets/TICK-01.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { setClientName, setLetterText } from "@app/store/CoverLetterSeo";

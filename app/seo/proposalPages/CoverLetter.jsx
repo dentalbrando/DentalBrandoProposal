@@ -1,5 +1,6 @@
 "use client";
 import seo3 from "@public/assets/socialMedia/seo3.png";
+import tick from "@public/assets/TICK-01.svg";
 import sign from "@public/assets/socialMedia/sign.fcbecd86.jpg";
 import { useSelector } from "react-redux";
 function CoverLetter(prop) {

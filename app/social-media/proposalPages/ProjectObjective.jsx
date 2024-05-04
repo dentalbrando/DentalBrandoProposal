@@ -1,4 +1,5 @@
 "use client";
+import tick from "@public/assets/TICK-01.svg";
 import map from "@public/assets/socialMedia/map-17.png";
 import roundStripes from "@public/assets/socialMedia/Social Media Marketing Proposal-16.png";
 import logo from "@public/assets/socialMedia/SE color logo-09.png";

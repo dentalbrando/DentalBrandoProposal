@@ -5,6 +5,7 @@ import tick from "@public/assets/TICK-01.svg";
 const AboutYourProjects = ({ pageNumber }) => {
   let onceBr = false;
   const aboutYourProject = useSelector((state) => state.aboutYourProject);
+
   const contentWithImages = aboutYourProject.functionality
     .split("<p class = 'py-1'></p>")
     .map((line) => {
@@ -21,13 +22,13 @@ const AboutYourProjects = ({ pageNumber }) => {
                         </p>
                     </div>
                 </div>`;
-
         return ticked;
       }
       line = line + "<p class = 'py-1'></p>";
       return line;
     })
     .join("");
+  console.log(aboutYourProject);
 
   return (
     <>

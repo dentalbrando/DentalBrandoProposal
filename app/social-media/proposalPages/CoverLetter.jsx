@@ -1,4 +1,5 @@
 "use client";
+import tick from "@public/assets/TICK-01.svg";
 import strips from "@public/assets/socialMedia/pic3.png";
 import sign from "@public/assets/socialMedia/sign.fcbecd86.jpg";
 import { useSelector } from "react-redux";
