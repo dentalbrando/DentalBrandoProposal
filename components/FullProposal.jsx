@@ -98,7 +98,7 @@ const FullProposal = () => {
               return page.checked && <LastPage key={index} />;
           }
         })}
-        <LastPageCopy />
+        {/* <LastPageCopy /> */}
       </div>
     </div>
   );
