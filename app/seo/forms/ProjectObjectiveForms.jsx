@@ -15,7 +15,6 @@ const ProjectObjectiveForm = () => {
     dispatch(setAboutProject(aboutProject));
   };
 
-  console.log(aboutProjectSeo);
 
   useEffect(() => {
     handleSave();

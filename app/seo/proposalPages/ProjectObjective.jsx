@@ -11,7 +11,6 @@ function ProjectObjective(prop) {
   );
   const tempAbout =
     "Our specialized expertise in Seo will enhance your brand’s social media presence. We aim to bring you business by targeting your sophisticated audience interested in the residential apartments of Vista Cornard Tower. We will involve multiples social media platforms, like Facebook, Instagram, LinkedIn, Twitter, Pinterest etc, for marketing your mall and residential apartments. We believe that powerful content creation is the backbone of marketing success, so we will create engaging content that showcases the luxury mall, amenities, and lifestyle offered by you.";
-  console.log(aboutProjectSeo);
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative">

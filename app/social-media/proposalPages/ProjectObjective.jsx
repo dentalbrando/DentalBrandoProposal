@@ -7,8 +7,11 @@ import { useSelector } from "react-redux";
 
 function ProjectObjective(prop) {
   const cover_pageSmm = useSelector((state) => state.cover_pageSmm);
-  const aboutProjectSmm = useSelector((state) => state.about_projectSmm.aboutProject);
-  console.log(aboutProjectSmm);
+  const aboutProjectSmm = useSelector(
+    (state) => state.about_projectSmm.aboutProject
+  );
+  let tempAbout =
+    "Our specialized expertise in Social Media Marketing will enhance your brand’s social media presence. We aim to bring you business by targeting your sophisticated audience interested in the residential apartments of Vista Cornard Tower. We will involve multiples social media platforms, like Facebook, Instagram, LinkedIn, Twitter, Pinterest etc, for marketing your mall and residential apartments. We believe that powerful content creation is the backbone of marketing success, so we will create engaging content that showcases the luxury mall, amenities, and lifestyle offered by you.";
   return (
     <div className="w-[8.27in] h-[1123px] bg-white shadow-lg">
       <div className="flex flex-col justify-center items-center h-[100%] bg-red-00 relative bg-red-10">
@@ -26,7 +29,7 @@ function ProjectObjective(prop) {
             </div>
             <div className="flex flex-col justify-center w-full leading-snug">
               <span className="text-[white] text-[15px] font-[400]">
-                {aboutProjectSmm}
+                {aboutProjectSmm === "" ? tempAbout : aboutProjectSmm}
               </span>
             </div>
           </div>
