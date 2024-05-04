@@ -75,7 +75,7 @@ function CoverPage(prop) {
                   </p>
                   <p className="text-lg">
                     {cover_pageSeo.issueDate !== ""
-                      ? cover_pageSeo.companyAddress
+                      ? cover_pageSeo.issueDate
                       : "Issue Date"}
                   </p>
                   <p className="text-lg">
