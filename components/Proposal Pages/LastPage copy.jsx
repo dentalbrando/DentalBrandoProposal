@@ -8,16 +8,17 @@ import logo from "@public/assets/LastPageImgs/logo.png";
 const LastPageCopy = () => {
   return (
     <>
-      <div class="offer flex w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-red-30 bg-white ">
+      <div class="flex w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-white ">
         <div class=" w-full">
-          <div class="w-[100%] print:h-[7.3rem]">
-            <div class="bg-red-10 relative">
+          <div class="w-[100%]">
+            <div class="bg-red-100 h-fi">
               <img class="w-[200px] ml-10 " src={logo.src} alt="" />
+              <div className="w-full h-full bg-green-100 relative"></div>
               <img
-                class="absolute top-[130px]"
+                class="absolute top-[100px]"
                 src={bgImg.src}
                 alt=""
-                className="w-[100%]"
+                className="w-[8.27in]"
               />
             </div>
             <div class=" mx-10 absolute bottom-[170px] ">
@@ -32,7 +33,7 @@ const LastPageCopy = () => {
             </div>
             <div class="flex justify-between mx-10 ">
               <div class="w-fit absolute bottom-[50px]">
-                <img class="w-[110px] mt-3" src={svg1.src} alt="" />
+                <img class="w-[110px]" src={svg1.src} alt="" />
               </div>
               <div class="flex gap-16 absolute bottom-[50px] right-[400px]">
                 <div class="  flex flex-col items-center justify-center">

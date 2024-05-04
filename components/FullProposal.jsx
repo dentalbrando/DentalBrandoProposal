@@ -95,8 +95,8 @@ const FullProposal = () => {
                 page.checked && <Budget key={index} pageNumber={pageNumber++} />
               );
             case "11":
-              return page.checked && <LastPageCopy key={index} />;
-              // return page.checked && <LastPage key={index} />;
+              // return page.checked && <LastPageCopy key={index} />;
+              return page.checked && <LastPage key={index} />;
           }
         })}
       </div>
