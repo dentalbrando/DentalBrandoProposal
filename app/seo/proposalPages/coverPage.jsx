@@ -38,8 +38,8 @@ function CoverPage(prop) {
 
         <div className="flex justify-center items-center w-full h-fit absolute top-[75%] overflow-hidde z-[50] ">
           <div className="w-[100%] h-fit z-[50] flex justify-start items-end">
-            <div className=" w-[45%] h-fit flex justify-end items-end ">
-              <div className="w-[88%] relative ">
+            <div className=" w-[35%] h-fit flex justify-end items-end  ">
+              <div className="w-[85%] relative  ">
                 <h2 className="text-[rgb(0,160,255)] font-bold text-xl h-[30px]">
                   Prepared for:
                 </h2>
@@ -73,21 +73,11 @@ function CoverPage(prop) {
                       ? cover_pageSeo.companyAddress
                       : "Company Address"}
                   </p>
-                  {/* <p className="text-lg">
-                    {cover_pageSeo.issueDate !== ""
-                      ? cover_pageSeo.issueDate
-                      : "Issue Date"}
-                  </p>
-                  <p className="text-lg">
-                    {cover_pageSeo.companyAddress !== ""
-                      ? cover_pageSeo.validDate
-                      : "Valid Date"}
-                  </p> */}
                 </div>
               </div>
             </div>
-            <div className=" w-[30%] h-fit flex justify-center items-end ">
-              <div className="w-[90%] h-fit relative ">
+            <div className=" w-[30%] h-fit flex justify-end items-end ">
+              <div className="w-[90%] h-fit relative  ">
                 <div className="flex flex-col justify-start gap-[10px w-full relative ">
                   <div className=" flex flex-col justify-start w-full relative ">
                     <h2 className="text-[rgb(0,160,255)] font-bold text-xl">

@@ -63,7 +63,7 @@ Sincerely,`;
               Dear {coverLetterSmm.clientName}
             </span>
             <div
-              class="Part-one font-[400] text-[12pt] leading-6 pt-2"
+              class="Part-one font-[400] text-[15px] leading-6 pt-2"
               dangerouslySetInnerHTML={{ __html: content }}
             ></div>
 
