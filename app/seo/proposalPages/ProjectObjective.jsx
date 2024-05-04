@@ -28,7 +28,7 @@ function ProjectObjective(prop) {
             </div>
             <div className="flex flex-col justify-center w-full leading-snug">
               <span className="text-[white] text-[15px] font-[400] text-justify">
-                {aboutProjectSeo === "" ? tempAbout : aboutProjectSeo}
+                {aboutProjectSeo === "default" ? tempAbout : aboutProjectSeo}
               </span>
             </div>
           </div>

@@ -26,7 +26,7 @@ const ProjectObjectiveForm = () => {
 
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
-      <div className="">
+      <div>
         <div className="flex justify-center items-start h-fit my-5">
           <div className="w-[100%]">
             <div className="flex justify-start my-10">
@@ -39,7 +39,7 @@ const ProjectObjectiveForm = () => {
                 className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[80%]`}
                 onChange={(e) => setaboutProject(e.target.value)}
               >
-                {aboutProjectSeo === "" ? tempAbout : aboutProjectSeo}
+                {aboutProjectSeo === "default" ? tempAbout : aboutProjectSeo}
               </textarea>
             </div>
           </div>
