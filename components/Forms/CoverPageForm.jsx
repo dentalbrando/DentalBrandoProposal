@@ -37,7 +37,6 @@ const CoverPageForm = () => {
   const [companyLogo, setCompanyLogoLocal] = useState(
     coverPage.companyLogo || null
   );
-
   const handleSave = () => {
     // Dispatch actions to save the data
     dispatch(setSubHeading(subHeading));
@@ -172,7 +171,7 @@ const CoverPageForm = () => {
             </div>
             <div className="w-[70px] h-[70px] bg-white rounded-xl text-main-blue text-[16px] font-medium flex items-center justify-center border-2 border-color overflow-hidden">
               {coverPage.companyLogo?.name || companyLogo?.name ? (
-                <div className="bg-yellow-200">
+                <div className="">
                   <img
                     className="w-[100%] h-[100%]"
                     src={
@@ -194,30 +193,14 @@ const CoverPageForm = () => {
             onClick={() => {
               dispatch(setCompanyLogo(null));
               setCompanyLogoLocal(null);
-              console.log("remove", companyLogo);
             }}
           >
             Remove
           </button>
         </div>
-        {/* <div className="flex-center m-6">
-                <button onClick={handleSave} className="button w-32 h-10 text-center  rounded-2xl">
-                    Save
-                </button>
-            </div> */}
       </div>
     </div>
   );
 };
-{
-  /* <TextInput
-                    length="full"
-                    label=""
-                    type="file"
-                    accept="image/*"
-                    border="absolute w-[50px] h-20 cursor-pointer"
-                    className="bg-pink-200"
-                  /> */
-}
 
 export default CoverPageForm;
