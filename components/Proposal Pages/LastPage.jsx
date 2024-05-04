@@ -11,13 +11,14 @@ const LastPage = () => {
       <div class="offer flex w-[8.27in] h-[1110px] shadow-lg print:shadow-none bg-red-30 bg-white ">
         <div class=" w-full">
           <div class="w-[100%] print:h-[7.3rem]">
-            <div class="">
+            <div class="overflow-hidden">
               <img class="w-[200px] ml-10 " src={logo.src} alt="" />
               <img
                 class="mt-[-50px]"
-                src={bgImg.src} 
+                src={bgImg.src}
                 alt=""
                 className="w-[90%]"
+                style={{ translate: "6% -10%", scale: "1.115" }}
               />
             </div>
             <div class=" mx-10 mt-[-70px] ">
