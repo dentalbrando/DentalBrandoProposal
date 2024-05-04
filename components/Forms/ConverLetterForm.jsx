@@ -9,15 +9,34 @@ import {
   setClientName,
   setLetterText,
 } from "@app/store/coverLetterSlice";
-import { setPopup } from "@app/store/popup";
 
 const ConverLetterForm = () => {
   const dispatch = useDispatch();
   const coverLetter = useSelector((state) => state.cover_letter);
+  if (coverLetter.letterType === "web_dev" && coverLetter.letterText === "") {
+    var tempLetterText = `We are writing to express our interest in your web development project. As a company with extensive experience in web development and a track record of delivering exceptional results for our clients, we are confident that we would be the ideal partner for your project.
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+At Soft Enterprise, we understand that your website is often the first point of contact between your business and your customers. As such, we are committed to migrate your website to the sharepoint.
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+Our team of experienced web developers, designers, and project manager work closely with clients to understand their specific needs and requirements. We have expertise in a wide range of technologies including Wordpress, Laravel, Angular, PHP, Share Point, Vue.Js, React, Shopify, Python and more. We are always exploring new and innovative approaches to web development.
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+At every stage of the project, we prioritize communication and collaboration to ensure that you are fully involved in the process and the final product meets your expectations. We are dedicated to delivering projects on time and within budget, and we offer going support and maintenance to ensure that your website continues to perform at its best.
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+Thank you for considering Soft Enterprise for your web development needs. We are excited at the prospect of working with you and creating a website that will help your business succeed.
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+Sincerely,`;
+  } else {
+    var tempLetterText = coverLetter.letterText;
+  }
 
-  const [letterText, setletterText] = useState(coverLetter.letterText);
+  const [letterText, setletterText] = useState(tempLetterText);
   const [clientName, setclientName] = useState(coverLetter.clientName);
-  const [letterType, setLetterType] = useState("web_dev");
+  const [letterType, setletterType] = useState(coverLetter.letterType);
   const selectOptions = [
     { value: "web_dev", label: "Web Development" },
     { value: "web_design", label: "Web Design" },
@@ -28,21 +47,13 @@ const ConverLetterForm = () => {
     dispatch(
       setLetterText(letterText.replace(/\n/g, "<p class = 'py-1'></p>"))
     );
-
     dispatch(setClientName(clientName));
+    dispatch(setLetterType(letterType));
   };
 
-  useEffect(() => { 
+  useEffect(() => {
     handleSave();
   }, [letterText, clientName]);
-
-  // useEffect(() => {
-  //     if (letterType == 'web_dev') {
-  //         setletterText(
-  //             )
-  //     }
-  // }, [letterType])
-  console.log(letterType)
 
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
@@ -55,10 +66,12 @@ const ConverLetterForm = () => {
             <Select
               className="w-[60%] rounded-md font-normal border-2 border-color outline-none"
               options={selectOptions}
-              placeholder={letterType==="web_dev"? "Web Development": "Web Design" }
+              placeholder={
+                letterType === "web_dev" ? "Web Development" : "Web Design"
+              }
               value={letterType}
               onChange={(event) => {
-                setLetterType(event.value);
+                setletterType(event.value);
                 if (event.value == "web_dev") {
                   textareaRef.current.value = `We are writing to express our interest in your web development project. As a company with extensive experience in web development and a track record of delivering exceptional results for our clients, we are confident that we would be the ideal partner for your project.
 

@@ -10,7 +10,11 @@ import {
   setService,
   setTerms,
 } from "@app/store/budget";
-import { setClientName, setLetterText } from "@app/store/coverLetterSlice";
+import {
+  setClientName,
+  setLetterText,
+  setLetterType,
+} from "@app/store/coverLetterSlice";
 import {
   setCompanyAddress,
   setCompanyLogo,
@@ -88,7 +92,6 @@ function Proposal() {
       }
     }
     verifyTokenApi();
-
   }, [isVerified]);
   console.log(userData);
   if (proposalData && !buttonArray) {
@@ -126,6 +129,12 @@ function Proposal() {
           searchData[searchData.length - 1 - key].cover_letter.letterText
         )
       );
+      dispatch(
+        setLetterType(
+          searchData[searchData.length - 1 - key].cover_letter.letterType
+        )
+      );
+
       dispatch(
         setClientName(
           searchData[searchData.length - 1 - key].cover_letter.clientName
@@ -222,6 +231,12 @@ function Proposal() {
           proposalData[proposalData.length - 1 - key].cover_letter.letterText
         )
       );
+      dispatch(
+        setLetterType(
+          proposalData[proposalData.length - 1 - key].cover_letter.letterType
+        )
+      );
+
       dispatch(
         setClientName(
           proposalData[proposalData.length - 1 - key].cover_letter.clientName
@@ -354,7 +369,7 @@ function Proposal() {
         </div>
       ) : (
         <div className="flex flex-col">
-          <Nav navText={"Recent Proposal"} main={true}/>
+          <Nav navText={"Recent Proposal"} main={true} />
           <div className="px-10 py-4 relative max-h-fit min-h-[80vh]">
             <div className="flex flex-col items-between">
               <div className="flex justify-between items-end mb-4">

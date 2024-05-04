@@ -73,7 +73,6 @@ const CoverPageForm = () => {
       reader.readAsDataURL(file);
     }
   };
-  console.log(companyLogo);
 
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">

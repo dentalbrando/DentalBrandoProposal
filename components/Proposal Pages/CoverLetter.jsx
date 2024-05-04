@@ -1,22 +1,42 @@
 import sign from "@public/assets/sign.jpg";
 import { useSelector } from "react-redux";
 import tick from "@public/assets/TICK-01.svg";
+import { useEffect, useState } from "react";
 
 const CoverLetter = ({ pageNumber }) => {
   const cover_letter = useSelector((state) => state.cover_letter);
-  const content = cover_letter.letterText
+  if (cover_letter.letterType === "web_dev" && cover_letter.letterText === "") {
+    var tempLetterText = `We are writing to express our interest in your web development project. As a company with extensive experience in web development and a track record of delivering exceptional results for our clients, we are confident that we would be the ideal partner for your project.
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+At Soft Enterprise, we understand that your website is often the first point of contact between your business and your customers. As such, we are committed to migrate your website to the sharepoint.
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+Our team of experienced web developers, designers, and project manager work closely with clients to understand their specific needs and requirements. We have expertise in a wide range of technologies including Wordpress, Laravel, Angular, PHP, Share Point, Vue.Js, React, Shopify, Python and more. We are always exploring new and innovative approaches to web development.
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+At every stage of the project, we prioritize communication and collaboration to ensure that you are fully involved in the process and the final product meets your expectations. We are dedicated to delivering projects on time and within budget, and we offer going support and maintenance to ensure that your website continues to perform at its best.
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+Thank you for considering Soft Enterprise for your web development needs. We are excited at the prospect of working with you and creating a website that will help your business succeed.
+<p class = 'py-1'></p>
+<p class = 'py-1'></p>
+Sincerely,`;
+  } else {
+    var tempLetterText = cover_letter.letterText;
+  }
+  let content = tempLetterText
     .split("<p class = 'py-1'></p>")
     .map((line) => {
-
       if (line.trim().startsWith(">")) {
         const ticked = `<div class="flex">
                     
                     <div class="flex items-center justify-center">
 
-                        <img src="${tick.src}" alt="" width="10px" /> 
+                        <img src="${tick.src}" alt="" width="10px" />
                     </div>
                     <div class="px-2" >
-                        <p> 
+                        <p>
                             ${line.substring(line.indexOf(">") + 1)}
                         </p>
                     </div>
@@ -29,7 +49,6 @@ const CoverLetter = ({ pageNumber }) => {
       return line;
     })
     .join("");
-
   return (
     <div className="offer flex w-[8.27in] h-[1122.6px] shadow-lg bg-white">
       <div className=" flex w-full">
