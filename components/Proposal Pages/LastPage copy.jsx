@@ -11,16 +11,16 @@ const LastPageCopy = () => {
       <div class="offer flex w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-red-30 bg-white ">
         <div class=" w-full">
           <div class="w-[100%] print:h-[7.3rem]">
-            <div class="">
+            <div class="bg-red-10 relative">
               <img class="w-[200px] ml-10 " src={logo.src} alt="" />
               <img
-                class="mt-[-100px]"
+                class="absolute top-[130px]"
                 src={bgImg.src}
                 alt=""
                 className="w-[100%]"
               />
             </div>
-            <div class=" mx-10 mt-[-70px] ">
+            <div class=" mx-10 absolute bottom-[170px] ">
               <h1
                 class="font-[700]  text-[25pt] text-[#00A2FF] leading-10"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -28,13 +28,13 @@ const LastPageCopy = () => {
                 CONTACT <br />
                 US{" "}
               </h1>
-              <div class="mt-1 w-[95px]  h-2 bg-[#ffd600] "></div>
+              <div class="mt-1 w-[95px]  h-2 bg-[#ffd600]"></div>
             </div>
-            <div class="flex justify-between w-[90%] mx-auto">
-              <div class="w-fit">
+            <div class="flex justify-between mx-10 ">
+              <div class="w-fit absolute bottom-[50px]">
                 <img class="w-[110px] mt-3" src={svg1.src} alt="" />
               </div>
-              <div class="flex gap-16  mt-7 ">
+              <div class="flex gap-16 absolute bottom-[50px] right-[400px]">
                 <div class="  flex flex-col items-center justify-center">
                   <div class="w-8 h-8 bg-[#00A2FF] rounded-full flex items-center justify-center">
                     <img class="w-4" src={svg2.src} alt="" />
@@ -64,8 +64,8 @@ const LastPageCopy = () => {
               </div>
             </div>
 
-            <div class="mt-1 flex items-center justify-center bg-blue400 gap-2 px-11">
-              <p class=" font-[500] text-[8pt] pt-2">
+            <div class="mt-1 flex items-center justify-center bg-blue-400 gap-2 px-11 w-full">
+              <p class="w-fit font-[500] text-[8pt] pt-2 mx-auto  absolute bottom-[20px]">
                 53 Hamza Heights, Quaid Block Near Eiﬀel Towel, Bahria Town,
                 Lahore
               </p>
