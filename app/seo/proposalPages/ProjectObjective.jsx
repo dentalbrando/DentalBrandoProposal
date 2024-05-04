@@ -35,13 +35,13 @@ function ProjectObjective(prop) {
           </div>
         </div>
 
-        <div className="w-[100%] h-[40%] z-[100] absolute bottom-[14%] flex justify-between items-center">
-          <div className="w-[100%] h-[100%] z-[400] bg-green-40 flex justify-center items-center">
+        <div className="w-[100%] h-[40%]  absolute bottom-[14%] flex justify-between items-center">
+          <div className="w-[100%] h-[100%]  bg-green-40 flex justify-center items-center">
             <img src={seo5.src} className="w-full" />
           </div>
 
-          <div className="absolute w-[100%] h-[100%] z-[200] flex justify-center items-center mx-auto averflow-hidden bg-red-10">
-            <div className="relative w-[120px] left-[1%] h-[120px] bg-white rounded-full overflow-hidden bg-red-80">
+          <div className="absolute w-[100%] h-[100%] flex justify-center items-center mx-auto averflow-hidden bg-red-10">
+            <div className="relative w-[120px] left-[1%] h-[120px] bg-white rounded-full overflow-hidden bg-red-80 z-[100]">
               {cover_pageSeo.companyLogo ? (
                 <img
                   src={cover_pageSeo.companyLogo.string}
@@ -56,14 +56,14 @@ function ProjectObjective(prop) {
             </div>
           </div>
 
-          <div className="absolute w-[100%] h-[100%] z-[100] bg-green-40 flex flex-col justify-between items-center bg-red-40">
+          <div className="absolute w-[100%] h-[100%]  bg-green-40 flex flex-col justify-between items-center bg-red-40">
             <div className="flex flex-col justify-between items-center relative w-[100%] h-[100%]">
-              <div className="w-[90%] h-[30%] z-[100] flex justify-center items- text-center leading-tight">
+              <div className="w-[90%] h-[30%]  flex justify-center items- text-center leading-tight">
                 <span className="w-[18%] text-[15px] font-[400] absolute left-[38%]">
                   Increased Website Ranking & Visibility on Search Engines.
                 </span>
               </div>
-              <div className="w-[90%] h-[30%] z-[100] flex justify-between items-center text-center leading-tight">
+              <div className="w-[90%] h-[30%]  flex justify-between items-center text-center leading-tight">
                 <span className="w-[15%] text-[15px] font-[400] absolute left-[21%] top-[48%]">
                   Drive more qualified traffic for increased Brand Exposure.
                 </span>
@@ -71,7 +71,7 @@ function ProjectObjective(prop) {
                   Stay Ahead of Competitors and reach Customers before they do.
                 </span>
               </div>
-              <div className="w-[90%] h-[30%] z-[100] bg-blue-40 flex justify-center items-center text-center leading-tight">
+              <div className="w-[90%] h-[30%]  bg-blue-40 flex justify-center items-center text-center leading-tight">
                 <span className="w-[18%] text-[15px] font-[400] absolute right-[36%] bottom-[5%]">
                   Stay up to date with the latest SEO best practices and trends.
                 </span>

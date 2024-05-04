@@ -6,28 +6,28 @@ import seo1 from "@public/assets/socialMedia/seo1.png";
 
 function CoverPage(prop) {
   const cover_pageSeo = useSelector((state) => state.cover_pageSeo);
-  console.log(cover_pageSeo)
+  console.log(cover_pageSeo);
   return (
-    <div className="w-[8.27in] h-[1123px] shadow-lg overflow-hidden">
-      <div className="flex flex-col justify-center items-center h-[100%] relative">
+    <div className="w-[8.27in] h-[1123px] shadow-lg overflow-hidden bg-white">
+      <div className="flex flex-col justify-center items-center h-[100%] relative bg-white">
         <img
           src={logo.src}
-          className="w-[200px] absolute top-[13%] left-[15%] "
+          className="w-[200px] absolute top-[10%] left-[15%] "
         />
         <img
           src={seo13.src}
-          className="w-[550px] absolute top-[20%] right-[-22px] "
+          className="w-[550px] absolute top-[15%] right-[-22px] "
         />
         <img
           src={seo1.src}
-          className="w-[600px] absolute bottom-[9%] right-[0%] z-[10]"
+          className="w-[600px] absolute bottom-[14%] right-[0%] z-[10]"
         />
+        <div className="w-[650px] h-[650px] bg-[rgb(0,160,255)] absolute left-[-49%] top-[12.1%] rotate-[-30deg] skew-x-[30deg]"></div>
+        <div className="w-[650px] h-[650px] bg-[rgb(0,160,255)] absolute left-[90%] top-[22%] rotate-[-30deg] skew-x-[30deg] z-[0]"></div>
+        <div className="w-[800px] h-[500px] bg-[rgb(255,212,0)] absolute right-[-60%] bottom-[-25%] rotate-[-30deg] z-[20]"></div>
 
-        <div className="w-[650px] h-[650px] bg-[rgb(0,160,255)] absolute left-[-49%] top-[17.1%] rotate-[-30deg] skew-x-[30deg]"></div>
-        <div className="w-[650px] h-[650px] bg-[rgb(0,160,255)] absolute left-[90%] top-[27%] rotate-[-30deg] skew-x-[30deg] z-[0]"></div>
-        <div className="w-[800px] h-[500px] bg-[rgb(255,212,0)] absolute right-[-30%] bottom-[-32%] rotate-[-30deg] z-[20]"></div>
-        <div className="w-[500px] h-[500px] absolute left-[5%] top-[28%] z-[20] bg-red-40">
-          <div className="flex flex-col justify-center w-[100%] h-full leading-[60px] bg-red-00">
+        <div className="w-[500px] h-[500px] absolute left-[5%] top-[23%] z-[20] ">
+          <div className="flex flex-col justify-center w-[100%] h-full leading-[60px] ">
             <h1 className="font-[600] text-[56px] text-white">Search Engine</h1>
             <h1 className="font-[600] text-[56px] text-[#ffd600]">
               Optimization
@@ -36,11 +36,11 @@ function CoverPage(prop) {
           </div>
         </div>
 
-        <div className="flex w-full h-[23%] absolute bottom-0 overflow-hidden z-[50] bg-red-30">
-          <div className="w-[100%] h-[100%] z-[50]">
-            <div className=" w-[50%] h-fit flex justify-end items-end bg-orange-40">
-              <div className="w-[90%] relative bg-green-60">
-                <h2 className="text-[#ffd600] font-bold text-xl h-[30px]">
+        <div className="flex justify-center items-center w-full h-fit absolute top-[75%] overflow-hidde z-[50] ">
+          <div className="w-[100%] h-fit z-[50] flex justify-start items-end">
+            <div className=" w-[45%] h-fit flex justify-end items-end ">
+              <div className="w-[88%] relative ">
+                <h2 className="text-[rgb(0,160,255)] font-bold text-xl h-[30px]">
                   Prepared for:
                 </h2>
                 {cover_pageSeo.companyLogo ? (
@@ -57,7 +57,7 @@ function CoverPage(prop) {
                     />
                   </div>
                 ) : null}
-                <div className="mt-2 flex flex-col justify-start gap-[6px] w-full relative bg-purple-70">
+                <div className="mt-2 flex flex-col justify-start gap-[6px] w-full relative ">
                   <h2 className="text-lg font-[600]">
                     {cover_pageSeo.companyName !== ""
                       ? cover_pageSeo.companyName
@@ -73,7 +73,7 @@ function CoverPage(prop) {
                       ? cover_pageSeo.companyAddress
                       : "Company Address"}
                   </p>
-                  <p className="text-lg">
+                  {/* <p className="text-lg">
                     {cover_pageSeo.issueDate !== ""
                       ? cover_pageSeo.issueDate
                       : "Issue Date"}
@@ -82,7 +82,33 @@ function CoverPage(prop) {
                     {cover_pageSeo.companyAddress !== ""
                       ? cover_pageSeo.validDate
                       : "Valid Date"}
-                  </p>
+                  </p> */}
+                </div>
+              </div>
+            </div>
+            <div className=" w-[30%] h-fit flex justify-center items-end ">
+              <div className="w-[90%] h-fit relative ">
+                <div className="flex flex-col justify-start gap-[10px w-full relative ">
+                  <div className=" flex flex-col justify-start w-full relative ">
+                    <h2 className="text-[rgb(0,160,255)] font-bold text-xl">
+                      Proposal Issued:
+                    </h2>
+                    <p className="text-lg">
+                      {cover_pageSeo.issueDate !== ""
+                        ? cover_pageSeo.issueDate
+                        : "Issue Date"}
+                    </p>
+                  </div>
+                  <div className="flex flex-col justify-start w-full relative ">
+                    <h2 className="text-[rgb(0,160,255)] font-bold text-xl">
+                      Proposal Valid to:
+                    </h2>
+                    <p className="text-lg">
+                      {cover_pageSeo.companyAddress !== ""
+                        ? cover_pageSeo.validDate
+                        : "Valid Date"}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
