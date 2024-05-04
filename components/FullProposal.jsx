@@ -13,7 +13,7 @@ import AboutYourProjects from "./Proposal Pages/AboutYourProjects";
 import ProposedSiteMap from "./Proposal Pages/ProposedSiteMap";
 import Budget from "./Proposal Pages/Budget";
 import SaveProposaltoDb from "./saveProposaltoDb";
-
+import LastPageCopy from "./Proposal Pages/LastPage copy";
 const FullProposal = () => {
   const dispatch = useDispatch();
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
@@ -98,6 +98,7 @@ const FullProposal = () => {
               return page.checked && <LastPage key={index} />;
           }
         })}
+        <LastPageCopy />
       </div>
     </div>
   );
