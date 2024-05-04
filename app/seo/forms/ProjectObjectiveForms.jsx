@@ -5,9 +5,12 @@ import { setAboutProject } from "@app/store/aboutProjectSeo";
 
 const ProjectObjectiveForm = () => {
   const dispatch = useDispatch();
-  let aboutProjectSeo = useSelector((state) => state.about_projectSeo).aboutProject;
+  let aboutProjectSeo = useSelector(
+    (state) => state.about_projectSeo
+  ).aboutProject;
   const [aboutProject, setaboutProject] = useState(aboutProjectSeo);
-
+  const tempAbout =
+    "Our specialized expertise in Seo will enhance your brand’s social media presence. We aim to bring you business by targeting your sophisticated audience interested in the residential apartments of Vista Cornard Tower. We will involve multiples social media platforms, like Facebook, Instagram, LinkedIn, Twitter, Pinterest etc, for marketing your mall and residential apartments. We believe that powerful content creation is the backbone of marketing success, so we will create engaging content that showcases the luxury mall, amenities, and lifestyle offered by you.";
   const handleSave = () => {
     dispatch(setAboutProject(aboutProject));
   };
@@ -36,8 +39,9 @@ const ProjectObjectiveForm = () => {
                 rows="5"
                 className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[80%]`}
                 onChange={(e) => setaboutProject(e.target.value)}
-                value={aboutProjectSeo}
-              ></textarea>
+              >
+                {aboutProjectSeo === "" ? tempAbout : aboutProjectSeo}
+              </textarea>
             </div>
           </div>
         </div>
