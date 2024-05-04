@@ -14,9 +14,9 @@ export default function SaveProposaltoDbSeo() {
   let [saveButtonText, setSaveButtonText] = useState("Save Proposal");
 
   async function submit() {
-    // if (saveButtonText === "Saved") {
-    //   return;
-    // }
+    if (saveButtonText === "Saved") {
+      return;
+    }
     try {
       setLoading(true);
       await axios.post("/api/proposalseo", {
