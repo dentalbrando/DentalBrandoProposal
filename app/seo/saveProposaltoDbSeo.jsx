@@ -26,6 +26,7 @@ export default function SaveProposaltoDbSeo() {
         budget,
         aboutProject,
       });
+      console.log(aboutProject);
       alert("Your Proposal has been saved!");
       setSaveButtonText("Saved");
     } catch (err) {

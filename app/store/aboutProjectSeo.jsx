@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  aboutProject: "",
+  aboutProject: "default",
 };
 
 const AboutProjectSeo = createSlice({
