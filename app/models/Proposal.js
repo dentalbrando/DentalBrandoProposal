@@ -7,7 +7,6 @@ const ProposalSchema = mongoose.Schema({
   cover_letter: { type: Object, required: true },
   cover_page: { type: Object, required: true },
   pageSequence: { type: Object, required: true },
-  popup: { type: Object, required: true },
   proposedSitemap: { type: Object, required: true },
   proposedSitemap2: { type: Object, required: true },
   proposedSitemapOverview: { type: Object, required: true },

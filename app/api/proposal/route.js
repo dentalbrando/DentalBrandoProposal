@@ -9,6 +9,7 @@ export async function POST(req) {
     return NextResponse.json({ proposalData: "proposalData" });
   } catch (err) {
     console.log(err);
+    return NextResponse.json({ proposalData: false });
   }
 }
 
