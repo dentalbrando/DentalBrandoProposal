@@ -38,7 +38,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
-import { setPage, updatePage } from "@app/store/pageSclice";
+import { setPage, updatePage } from "@app/store/pageScliceSmm";
 import Loader from "@components/Loader";
 import Nav from "@components/Nav";
 import { FaSearch } from "react-icons/fa";
