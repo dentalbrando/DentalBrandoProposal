@@ -111,7 +111,6 @@ function Proposal() {
     verifyTokenApi();
   }, []);
 
-  useEffect(() => {}, []);
 
   if (proposalData && !buttonArray) {
     setButtonArray(Array(Math.ceil(proposalData.length / limit)).fill(null));

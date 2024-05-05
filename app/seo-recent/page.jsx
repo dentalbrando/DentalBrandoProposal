@@ -48,33 +48,46 @@ function Proposal() {
     if (isVerified === false) {
       router.push("/");
     }
-    async function getData() {
-      try {
-        setTableLoading(true);
-        let { data } = await axios.get("/api/proposalseo");
-        setProposalData(data.proposalSeoData);
-      } catch (er) {
-        console.log(er);
-      } finally {
-        setTableLoading(false);
+    if (isVerified === true) {
+      async function getData() {
+        try {
+          setTableLoading(true);
+          let { data } = await axios.get("/api/proposalseo");
+          setProposalData(data.proposalSeoData);
+        } catch (er) {
+          console.log(er);
+        } finally {
+          setTableLoading(false);
+        }
       }
-    }
-    async function getUserData() {
-      try {
-        setLoading(true);
-        let { data } = await axios.get("/api/userData");
-        setUserData(data.admin);
-      } catch (er) {
-        console.log(er);
-      } finally {
-        setLoading(false);
+      async function getUserData() {
+        try {
+          setLoading(true);
+          let { data } = await axios.get("/api/userData");
+          setUserData(data.admin);
+        } catch (er) {
+          console.log(er);
+        } finally {
+          setLoading(false);
+        }
       }
-    }
-
-    if (isVerified !== false) {
       getUserData();
       getData();
     }
+    
+    // async function verifyTokenApi() {
+    //   try {
+    //     await axios.get("/api/verifyToken");
+    //     setIsVerified(true);
+    //   } catch (err) {
+    //     setIsVerified(false);
+    //   }
+    // }
+    // verifyTokenApi();
+    console.log("seoFunc");
+  }, [isVerified]);
+
+  useEffect(() => {
     async function verifyTokenApi() {
       try {
         await axios.get("/api/verifyToken");
@@ -82,14 +95,14 @@ function Proposal() {
       } catch (err) {
         setIsVerified(false);
       }
+      console.log("verified");
     }
     verifyTokenApi();
-    console.log("seoFunc");
-  }, [isVerified]);
+  }, []);
+
   if (proposalData && !buttonArray) {
     setButtonArray(Array(Math.ceil(proposalData.length / limit)).fill(null));
   }
-
 
   function regenerate(key, inSearch) {
     if (inSearch) {
@@ -253,7 +266,7 @@ function Proposal() {
       } else {
         setSearchData(searchResult);
       }
-    } else { 
+    } else {
       setSearchData(null);
     }
   }
@@ -280,8 +293,6 @@ function Proposal() {
     }
   }
 
-
-
   return (
     <div className="recent-page-font">
       {loading || isVerified === undefined ? (
@@ -294,10 +305,7 @@ function Proposal() {
         </div>
       ) : (
         <div className="flex flex-col">
-          <Nav
-            navText={"SEO Recent Proposals"}
-            main={true}
-          />
+          <Nav navText={"SEO Recent Proposals"} main={true} />
           <div className="px-10 py-4 relative max-h-fit min-h-[80vh]">
             <div className="flex flex-col items-between">
               <div className="flex justify-between items-end mb-4">
