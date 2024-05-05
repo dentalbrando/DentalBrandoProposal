@@ -79,7 +79,7 @@ function Proposal() {
         } finally {
           setTableLoading(false);
         }
-      }
+      } 
       async function getUserData() {
         try {
           setLoading(true);
