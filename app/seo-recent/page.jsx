@@ -41,12 +41,6 @@ function Proposal() {
   let [searchData, setSearchData] = useState();
   let [userData, setUserData] = useState();
   let [tableLoading, setTableLoading] = useState(true);
-  // let cover_page = useSelector((state) => state.cover_pageSeo);
-  // let cover_letter = useSelector((state) => state.cover_letterSeo);
-  // let adPackage = useSelector((state) => state.ad_package);
-  // let postPackage = useSelector((state) => state.post_package);
-  // let marketingPackage = useSelector((state) => state.marketing_package);
-  // let budget = useSelector((state) => state.budget_seo);
 
   let limit = 8;
 
@@ -90,10 +84,13 @@ function Proposal() {
       }
     }
     verifyTokenApi();
+    console.log("seoFunc");
   }, [isVerified]);
   if (proposalData && !buttonArray) {
     setButtonArray(Array(Math.ceil(proposalData.length / limit)).fill(null));
   }
+
+
   function regenerate(key, inSearch) {
     if (inSearch) {
       dispatch(
@@ -260,7 +257,6 @@ function Proposal() {
       setSearchData(null);
     }
   }
-
   async function deleteProposal(_id, inSearch) {
     let { data } = await axios.post("/api/deleteProposalseo", { _id: _id });
     let { acknowledged } = data;
@@ -283,6 +279,9 @@ function Proposal() {
       }
     }
   }
+
+
+
   return (
     <div className="recent-page-font">
       {loading || isVerified === undefined ? (

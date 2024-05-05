@@ -83,6 +83,7 @@ function Proposal() {
       getUserData();
       getData();
     }
+
     async function verifyTokenApi() {
       try {
         await axios.get("/api/verifyToken");
@@ -93,10 +94,12 @@ function Proposal() {
     }
     verifyTokenApi();
   }, [isVerified]);
-  console.log(userData);
+
+
   if (proposalData && !buttonArray) {
     setButtonArray(Array(Math.ceil(proposalData.length / limit)).fill(null));
   }
+
   function regenerate(key, inSearch) {
     if (inSearch) {
       dispatch(
@@ -333,7 +336,6 @@ function Proposal() {
       setSearchData(null);
     }
   }
-
   async function deleteProposal(_id, inSearch) {
     console.log(_id);
     let { data } = await axios.post("/api/deleteProposal", { _id: _id });
@@ -357,6 +359,8 @@ function Proposal() {
       }
     }
   }
+
+
   return (
     <div className="recent-page-font">
       {loading || isVerified === undefined ? (
@@ -364,7 +368,7 @@ function Proposal() {
           <Loader />
         </div>
       ) : tableLoading ? (
-        <div className="w-fit mx-auto py-24">
+        <div className="w-fit h-full mx-auto py-0">
           <Loader />
         </div>
       ) : (
