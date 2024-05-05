@@ -5,23 +5,22 @@ import { cookies } from "next/headers";
 import RegistrationModel from "@app/models/registration";
 
 export async function GET(req) {
-  // connectDb();
-  // let token = cookies().get("authToken");
-  // if (token) {
-  //   token = token.value;
-  // } else {
-  //   token = "";
-  // }
-
-  // try {
-  //   let { userId } = await TokenModel.findOne({ token: token });
-  //   let { admin } = await RegistrationModel.findOne({ _id: userId });
-  //   return NextResponse.json({
-  //     admin,
-  //   });
-  // } catch (e) {
+  let token = cookies().get("authToken");
+  connectDb();
+  if (token) {
+    token = token.value;
+  } else {
+    token = "";
+  }
+  try {
+    let { userId } = await TokenModel.findOne({ token: token });
+    let { admin } = await RegistrationModel.findOne({ _id: userId });
     return NextResponse.json({
-      admin: true,
+      admin,
     });
-  // }
+  } catch (e) {
+    return NextResponse.json({
+      admin: false,
+    });
+  }
 }
