@@ -368,7 +368,7 @@ function Proposal() {
           <Loader />
         </div>
       ) : tableLoading ? (
-        <div className="w-fit h-full mx-auto py-0">
+        <div className="w-fit h-full mx-auto py-24">
           <Loader />
         </div>
       ) : (
