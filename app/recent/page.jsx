@@ -56,34 +56,49 @@ function Proposal() {
     if (isVerified === false) {
       router.push("/");
     }
-    async function getData() {
-      try {
-        setTableLoading(true);
-        let { data } = await axios.get("/api/proposal");
-        setProposalData(data.proposalData);
-      } catch (er) {
-        console.log(er);
-      } finally {
-        setTableLoading(false);
+    if (isVerified === true) {
+      async function getData() {
+        try {
+          setTableLoading(true);
+          let { data } = await axios.get("/api/proposal");
+          setProposalData(data.proposalData);
+        } catch (er) {
+          console.log(er);
+        } finally {
+          setTableLoading(false);
+        }
+        console.log("getData");
       }
-    }
-    async function getUserData() {
-      try {
-        setLoading(true);
-        let { data } = await axios.get("/api/userData");
-        setUserData(data.admin);
-      } catch (er) {
-        console.log(er);
-      } finally {
-        setLoading(false);
+      async function getUserData() {
+        try {
+          setLoading(true);
+          let { data } = await axios.get("/api/userData");
+          setUserData(data.admin);
+        } catch (er) {
+          console.log(er);
+        } finally {
+          setLoading(false);
+        }
+        console.log("getUserData");
       }
-    }
-
-    if (isVerified !== false) {
       getUserData();
       getData();
     }
 
+    // async function verifyTokenApi() {
+    //   try {
+    //     await axios.get("/api/verifyToken");
+    //     setIsVerified(true);
+    //   } catch (err) {
+    //     setIsVerified(false);
+    //   }
+    //   console.log("verified");
+    // }
+    // verifyTokenApi();
+    console.log("isVerified: ", isVerified);
+  }, [isVerified]);
+
+  useEffect(() => {
     async function verifyTokenApi() {
       try {
         await axios.get("/api/verifyToken");
@@ -91,10 +106,12 @@ function Proposal() {
       } catch (err) {
         setIsVerified(false);
       }
+      console.log("verified");
     }
     verifyTokenApi();
-  }, [isVerified]);
+  }, []);
 
+  useEffect(() => {}, []);
 
   if (proposalData && !buttonArray) {
     setButtonArray(Array(Math.ceil(proposalData.length / limit)).fill(null));
@@ -359,7 +376,6 @@ function Proposal() {
       }
     }
   }
-
 
   return (
     <div className="recent-page-font">
