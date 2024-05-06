@@ -49,7 +49,7 @@ const Home = () => {
   const [tokenVerifierTrigger, setTokenVerifierTrigger] = useState(0);
   const [userId, setUserId] = useState(null);
   const [isVerified, setIsVerified] = useState(undefined);
-  const [userData, setUserData] = useState();
+  // const [userData, setUserData] = useState();
   const [loading, setLoading] = useState(false);
   const defaultFamilyTreeData = [
     { key: "root", name: "Root", marriage: "Spouse" },
@@ -68,7 +68,7 @@ const Home = () => {
         try {
           setLoading(true);
           let result = await axios.post(`/api/storeTokenToDb`, { userId });
-          setUserData(result.data.userData);
+          // setUserData(result.data.userData);
         } catch (err) {
           console.log("err", err);
           setLoading(false);
@@ -90,7 +90,6 @@ const Home = () => {
     };
     storeTokenToDb();
   }, [tokenVerifierTrigger]);
-
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (

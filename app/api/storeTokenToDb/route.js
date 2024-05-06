@@ -29,10 +29,10 @@ export async function POST(req) {
       userData = await RegistrationModel.findOne({
         _id: tokenAlreadyAvaible.userId,
       });
-      return NextResponse.json({ userData });
+      return NextResponse.json({ userData: "token stored" });
     } else {
       userData = null;
-      return NextResponse.json({ userData });
+      return NextResponse.json({ userData: "token stored" });
     }
   } else if (userId) {
     let userAlreadyAvaible = await TokenModel.findOne({
@@ -51,7 +51,7 @@ export async function POST(req) {
       );
     }
     userData = await RegistrationModel.findOne({ _id: userId });
-    return NextResponse.json({ userData });
+    return NextResponse.json({ userData:"token stored" });
   } else {
     userData = null;
     return NextResponse.json({ userData });

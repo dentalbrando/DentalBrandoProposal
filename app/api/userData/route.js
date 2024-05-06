@@ -5,8 +5,8 @@ import { cookies } from "next/headers";
 import RegistrationModel from "@app/models/registration";
 
 export async function GET(req) {
-  let token = cookies().get("authToken");
   connectDb();
+  let token = cookies().get("authToken");
   if (token) {
     token = token.value;
   } else {
