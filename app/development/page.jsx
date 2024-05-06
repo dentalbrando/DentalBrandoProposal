@@ -12,26 +12,31 @@ import Loader from "@components/Loader";
 
 function Development() {
   let router = useRouter();
-// const pageNo=100
+  // const pageNo=100
   const pageNo = useSelector((state) => state.page.formId);
   let [isVerified, setIsVerified] = useState(undefined);
   let [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    async function verifyTokenApi() {
-      try {
-        setLoading(true);
-        await axios.get("/api/verifyToken");
-        setIsVerified(true);
-      } catch (err) {
-        router.push("/");
-        setIsVerified(false);
-      } finally {
-        setLoading(false);
+  useEffect(
+    () => {
+      async function verifyTokenApi() {
+        try {
+          setLoading(true);
+          await axios.get("/api/verifyToken");
+          setIsVerified(true);
+        } catch (err) {
+          router.push("/");
+          setIsVerified(false);
+        } finally {
+          setLoading(false);
+        }
       }
-    }
-    verifyTokenApi();
-  }, [isVerified]);
+      verifyTokenApi();
+    },
+    [
+      // isVerified
+    ]
+  );
 
   return (
     <>

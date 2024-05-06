@@ -31,7 +31,9 @@ function Development() {
       }
     }
     verifyTokenApi();
-  }, [isVerified]);
+  }, [
+    // isVerified
+  ]);
 
   return (
     <>
