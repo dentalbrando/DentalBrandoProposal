@@ -147,7 +147,10 @@ The purpose of Client Coverage team serves as a single point of contact, underst
                 <p
                   class="pt-2 text-[12pt]"
                   dangerouslySetInnerHTML={{
-                    __html: tempOverviews,
+                    __html: tempOverviews.replace(
+                      /\n/g,
+                      "<p class = 'py-1'></p>"
+                    ),
                   }}
                 ></p>
               </div>
@@ -182,7 +185,10 @@ The purpose of Client Coverage team serves as a single point of contact, underst
                   <p
                     class="pt-2 text-[12pt]"
                     dangerouslySetInnerHTML={{
-                      __html: tempWebsiteCMS,
+                      __html: tempWebsiteCMS.replace(
+                        /\n/g,
+                        "<p class = 'py-1'></p>"
+                      ),
                     }}
                   ></p>
                 </div>
