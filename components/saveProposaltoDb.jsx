@@ -50,6 +50,8 @@ export default function SaveProposaltoDb() {
       setLoading(false);
     }
   }
+  console.log("cover_page.issueDate: ", cover_page.issueDate);
+
   return (
     <>
       <button

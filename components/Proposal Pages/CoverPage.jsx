@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 const CoverPage = () => {
   const cover_page = useSelector((state) => state.cover_page);
   return (
-    <>
+    <> 
       <div className=" flex justify-center items-center shadow-lg bg-white">
         <div
           className="relative w-[8.27in] h-[1122.6px] mx-auto bg-white"

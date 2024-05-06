@@ -41,8 +41,8 @@ const CoverPageForm = () => {
     dispatch(setCompanyPhoneNumber(companyPhoneNumber));
     dispatch(setCompanyAddress(companyAddress));
     dispatch(setCompanyName(companyName));
-    dispatch(setIssueDate(issueDate.split("-").reverse().join("-")));
-    dispatch(setValidDate(validDate.split("-").reverse().join("-")));
+    dispatch(setIssueDate(issueDate));
+    dispatch(setValidDate(validDate));
     dispatch(setCompanyLogo(companyLogo));
   };
   useEffect(() => {
@@ -125,7 +125,9 @@ const CoverPageForm = () => {
             // value={issueDate}
             placeholder={issueDate}
             onChange={(event) => {
-              setIssueDateLocal(event.target.value);
+              setIssueDateLocal(
+                event.target.value.split("-").reverse().join("-")
+              );
             }}
           />
 
@@ -136,7 +138,9 @@ const CoverPageForm = () => {
             type="date"
             value={validDate}
             onChange={(event) => {
-              setValidDateLocal(event.target.value);
+              setValidDateLocal(
+                event.target.value.split("-").reverse().join("-")
+              );
             }}
           />
         </div>
@@ -176,7 +180,7 @@ const CoverPageForm = () => {
             onClick={() => {
               dispatch(setCompanyLogo(null));
               setCompanyLogoLocal(null);
-            }} 
+            }}
           >
             Remove
           </button>

@@ -44,8 +44,8 @@ const CoverPageForm = () => {
     dispatch(setCompanyPhoneNumber(companyPhoneNumber));
     dispatch(setCompanyAddress(companyAddress));
     dispatch(setCompanyName(companyName));
-    dispatch(setIssueDate(issueDate.split("-").reverse().join("-")));
-    dispatch(setValidDate(validDate.split("-").reverse().join("-")));
+    dispatch(setIssueDate(issueDate));
+    dispatch(setValidDate(validDate));
     dispatch(setCompanyLogo(companyLogo));
   };
   useEffect(() => {
@@ -72,6 +72,9 @@ const CoverPageForm = () => {
       reader.readAsDataURL(file);
     }
   };
+  console.log("issueDate: ", issueDate);
+  console.log("coverPage.issueDate: ", coverPage.issueDate);
+  
 
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
@@ -142,7 +145,9 @@ const CoverPageForm = () => {
             // value={issueDate}
             placeholder={issueDate}
             onChange={(event) => {
-              setIssueDateLocal(event.target.value);
+              setIssueDateLocal(
+                event.target.value.split("-").reverse().join("-")
+              );
             }}
           />
 
@@ -153,7 +158,9 @@ const CoverPageForm = () => {
             type="date"
             value={validDate}
             onChange={(event) => {
-              setValidDateLocal(event.target.value);
+              setValidDateLocal(
+                event.target.value.split("-").reverse().join("-")
+              );
             }}
           />
         </div>
