@@ -25,6 +25,7 @@ import {
   setSubHeading,
   setValidDate,
 } from "@app/store/coverPageSlice";
+import { setPageSequence } from "@app/store/pageSequence";
 import { setSiteMapOverview } from "@app/store/proposedSitemapOverview";
 import { setSiteMap } from "@app/store/proposedSitemap";
 import { setSiteMap2 } from "@app/store/proposedSitemap2";
@@ -68,7 +69,6 @@ function Proposal() {
         } finally {
           setTableLoading(false);
         }
-        console.log("getData");
       }
       async function getUserData() {
         try {
@@ -80,7 +80,6 @@ function Proposal() {
         } finally {
           setLoading(false);
         }
-        console.log("getUserData");
       }
       getUserData();
       getData();
@@ -93,12 +92,9 @@ function Proposal() {
     //   } catch (err) {
     //     setIsVerified(false);
     //   }
-    //   console.log("verified");
     // }
     // verifyTokenApi();
-    console.log("isVerified: ", isVerified);
   }, [isVerified]);
-
   useEffect(() => {
     async function verifyTokenApi() {
       try {
@@ -107,7 +103,6 @@ function Proposal() {
       } catch (err) {
         setIsVerified(false);
       }
-      console.log("verified");
     }
     verifyTokenApi();
   }, []);
@@ -215,6 +210,11 @@ function Proposal() {
           searchData[searchData.length - 1 - key].proposedSitemap2.sitemap2
         )
       );
+      dispatch(
+        setPageSequence(
+          searchData[searchData.length - 1 - key].pageSequence.pageSequence
+        )
+      );
     } else {
       dispatch(
         setFunctionalities(
@@ -318,6 +318,11 @@ function Proposal() {
           proposalData[proposalData.length - 1 - key].proposedSitemap2.sitemap2
         )
       );
+      dispatch(
+        setPageSequence(
+          proposalData[proposalData.length - 1 - key].pageSequence.pageSequence
+        )
+      );
     }
     dispatch(updatePage(100));
     router.push("/development");
@@ -353,7 +358,6 @@ function Proposal() {
     }
   }
   async function deleteProposal(_id, inSearch) {
-    console.log(_id);
     try {
       setDeleteLoading(_id);
       let { data } = await axios.post("/api/deleteProposal", { _id: _id });

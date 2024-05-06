@@ -33,6 +33,7 @@ import {
 } from "@app/store/MarketingpackagesSliceSmm";
 
 import { setAboutProject } from "@app/store/aboutProjectSmm";
+import { setPageSequence } from "@app/store/pageSequenceSmm";
 
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -223,6 +224,11 @@ function Proposal() {
       dispatch(
         setAboutProject(searchData[searchData.length - 1 - key].aboutProject)
       );
+      dispatch(
+        setPageSequence(
+          searchData[searchData.length - 1 - key].pageSequence.pageSequence
+        )
+      );
     } else {
       dispatch(
         setService(proposalData[proposalData.length - 1 - key].budget.service)
@@ -330,6 +336,11 @@ function Proposal() {
           proposalData[proposalData.length - 1 - key].aboutProject
         )
       );
+      dispatch(
+        setPageSequence(
+          proposalData[proposalData.length - 1 - key].pageSequence.pageSequence
+        )
+      );
     }
     dispatch(updatePage(100));
     router.push("/social-media");
@@ -362,36 +373,36 @@ function Proposal() {
     }
   }
   async function deleteProposal(_id, inSearch) {
-        try {
-          setDeleteLoading(_id);
+    try {
+      setDeleteLoading(_id);
 
-          let { data } = await axios.post("/api/deleteProposalsmm", {
-            _id: _id,
-          });
-          let { acknowledged } = data;
-          if (acknowledged) {
-            if (inSearch) {
-              let searchDeletedProposals = searchData.filter(
-                (item) => !item._id.includes(_id)
-              );
-              setSearchData(searchDeletedProposals);
+      let { data } = await axios.post("/api/deleteProposalsmm", {
+        _id: _id,
+      });
+      let { acknowledged } = data;
+      if (acknowledged) {
+        if (inSearch) {
+          let searchDeletedProposals = searchData.filter(
+            (item) => !item._id.includes(_id)
+          );
+          setSearchData(searchDeletedProposals);
 
-              let ProposalDeletedProposals = proposalData.filter(
-                (item) => !item._id.includes(_id)
-              );
-              setProposalData(ProposalDeletedProposals);
-            } else {
-              let ProposalDeletedProposals = proposalData.filter(
-                (item) => !item._id.includes(_id)
-              );
-              setProposalData(ProposalDeletedProposals);
-            }
-          }
-        } finally {
-          setDeleteLoading(null);
+          let ProposalDeletedProposals = proposalData.filter(
+            (item) => !item._id.includes(_id)
+          );
+          setProposalData(ProposalDeletedProposals);
+        } else {
+          let ProposalDeletedProposals = proposalData.filter(
+            (item) => !item._id.includes(_id)
+          );
+          setProposalData(ProposalDeletedProposals);
         }
+      }
+    } finally {
+      setDeleteLoading(null);
+    }
   }
-  
+
   return (
     <div className="recent-page-font">
       {loading || isVerified === undefined ? (
