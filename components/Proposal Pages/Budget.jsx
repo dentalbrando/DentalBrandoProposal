@@ -27,9 +27,7 @@ const Budget = () => {
 
   return (
     <>
-      <div
-        className="relative overflow-hidden shadow-lg bg-white w-[8.27in] h-[1122.6px]"
-      >
+      <div className="relative overflow-hidden shadow-lg bg-white w-[8.27in] h-[1122.6px]">
         <div>
           <div className="flex justify-between items-center">
             <img
@@ -186,7 +184,7 @@ const Budget = () => {
             </p>
             <ol type="1" className="list-decimal ml-3">
               {budgetData.terms.map((item, index) =>
-                item ? <li>{item}</li> : null
+                item ? <li key={index}>{item}</li> : null
               )}
             </ol>
           </div>

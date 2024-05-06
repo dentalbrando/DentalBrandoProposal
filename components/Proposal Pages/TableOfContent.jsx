@@ -52,6 +52,7 @@ const TableOfContent = () => {
                           className={`${
                             index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
+                          key={index}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
                             <div className="w-[10rem] font-[400]">
@@ -118,6 +119,7 @@ const TableOfContent = () => {
                           className={`${
                             index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
+                          key={index}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
                             <div className="w-[10rem] font-[400]">
@@ -150,6 +152,7 @@ const TableOfContent = () => {
                           className={`${
                             index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
+                          key={index}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
                             <div className="w-[10rem] font-[400]">
@@ -182,6 +185,7 @@ const TableOfContent = () => {
                           className={`${
                             index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
+                          key={index}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
                             <div className="w-[10rem] font-[400]">
@@ -214,6 +218,7 @@ const TableOfContent = () => {
                           className={`${
                             index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
+                          key={index}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
                             <div className="w-[10rem] font-[400]">
@@ -246,6 +251,7 @@ const TableOfContent = () => {
                           className={`${
                             index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
+                          key={index}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
                             <div className="w-[10rem] font-[400]">
@@ -278,6 +284,7 @@ const TableOfContent = () => {
                           className={`${
                             index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
+                          key={index}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
                             <div className="w-[10rem] font-[400]">
@@ -310,6 +317,7 @@ const TableOfContent = () => {
                           className={`${
                             index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
+                          key={index}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
                             <div className="w-[10rem] font-[400]">
@@ -342,6 +350,7 @@ const TableOfContent = () => {
                           className={`${
                             index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
+                          key={index}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
                             <div className="w-[10rem] font-[400]">
@@ -374,6 +383,7 @@ const TableOfContent = () => {
                           className={`${
                             index == "0" ? "mt-[17px]" : "mt-[17px]"
                           }`}
+                          key={index}
                         >
                           <div className="flex justify-between items-center text-[14pt] ">
                             <div className="w-[10rem] font-[400]">
