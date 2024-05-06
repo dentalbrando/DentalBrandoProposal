@@ -5,6 +5,8 @@ import { NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
 
 export async function POST(req) {
+  let securityKey = process.env.SECURITY_KEY;
+  console.log(securityKey);
   try {
     let { username, password } = await req.json();
     let userData = { username, password };
@@ -14,7 +16,7 @@ export async function POST(req) {
       if (password !== loginData.password) {
         return NextResponse.json({ error: "Incorrect Password" });
       } else {
-        const token = jwt.sign(userData, "securityKey", { expiresIn: "1h" });
+        const token = jwt.sign(userData, securityKey, { expiresIn: "1h" });
         let dataToSend = { msg: "token", userId: loginData._id };
         return new Response(JSON.stringify(dataToSend), {
           headers: { "Set-Cookie": setTokenToCookies(userData) },
