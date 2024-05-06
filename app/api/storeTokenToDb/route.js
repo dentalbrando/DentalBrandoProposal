@@ -12,7 +12,7 @@ export async function POST(req) {
   } else {
     token = null;
   }
-
+ 
   let { userId } = await req.json();
   connectDb();
 

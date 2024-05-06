@@ -6,7 +6,7 @@ import Link from "next/link";
 const Nav = (props) => {
   const pageNo = useSelector((state) => state.page.formId);
   return (
-    pageNo != 100 && (
+    
       <>
         <div className="flex justify-start items-center w-full h-[12vh] border-b-2 border-color custom-b relative">
           <Link href={"/"} className="w-[20vw] ps-7 z-[10]">
@@ -22,7 +22,7 @@ const Nav = (props) => {
           </h1>
         </div>
       </>
-    )
+    
   );
 };
 

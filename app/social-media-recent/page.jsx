@@ -79,7 +79,7 @@ function Proposal() {
         } finally {
           setTableLoading(false);
         }
-      } 
+      }
       async function getUserData() {
         try {
           setLoading(true);
@@ -359,7 +359,6 @@ function Proposal() {
       setSearchData(null);
     }
   }
-
   async function deleteProposal(_id, inSearch) {
     let { data } = await axios.post("/api/deleteProposalsmm", { _id: _id });
     let { acknowledged } = data;
@@ -382,6 +381,7 @@ function Proposal() {
       }
     }
   }
+  
   return (
     <div className="recent-page-font">
       {loading || isVerified === undefined ? (
