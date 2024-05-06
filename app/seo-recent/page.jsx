@@ -41,6 +41,7 @@ function Proposal() {
   let [searchData, setSearchData] = useState();
   let [userData, setUserData] = useState();
   let [tableLoading, setTableLoading] = useState(true);
+  let [deleteLoading, setDeleteLoading] = useState(null);
 
   let limit = 8;
 
@@ -74,7 +75,7 @@ function Proposal() {
       getUserData();
       getData();
     }
-    
+
     // async function verifyTokenApi() {
     //   try {
     //     await axios.get("/api/verifyToken");
@@ -271,25 +272,33 @@ function Proposal() {
     }
   }
   async function deleteProposal(_id, inSearch) {
-    let { data } = await axios.post("/api/deleteProposalseo", { _id: _id });
-    let { acknowledged } = data;
-    if (acknowledged) {
-      if (inSearch) {
-        let searchDeletedProposals = searchData.filter(
-          (item) => !item._id.includes(_id)
-        );
-        setSearchData(searchDeletedProposals);
+    try {
+      setDeleteLoading(_id);
 
-        let ProposalDeletedProposals = proposalData.filter(
-          (item) => !item._id.includes(_id)
-        );
-        setProposalData(ProposalDeletedProposals);
-      } else {
-        let ProposalDeletedProposals = proposalData.filter(
-          (item) => !item._id.includes(_id)
-        );
-        setProposalData(ProposalDeletedProposals);
+      let { data } = await axios.post("/api/deleteProposalseo", {
+        _id: _id,
+      });
+      let { acknowledged } = data;
+      if (acknowledged) {
+        if (inSearch) {
+          let searchDeletedProposals = searchData.filter(
+            (item) => !item._id.includes(_id)
+          );
+          setSearchData(searchDeletedProposals);
+
+          let ProposalDeletedProposals = proposalData.filter(
+            (item) => !item._id.includes(_id)
+          );
+          setProposalData(ProposalDeletedProposals);
+        } else {
+          let ProposalDeletedProposals = proposalData.filter(
+            (item) => !item._id.includes(_id)
+          );
+          setProposalData(ProposalDeletedProposals);
+        }
       }
+    } finally {
+      setDeleteLoading(null);
     }
   }
 
@@ -387,14 +396,20 @@ function Proposal() {
                                     <td className="text-center text-lg px-0 w-[190px]">
                                       <div className="flex justify-evenly items-center w-full">
                                         {userData === true ? (
-                                          <button
-                                            onClick={() => {
-                                              deleteProposal(item._id, true);
-                                            }}
-                                            className="text-red-400 leading-3 underline"
-                                          >
-                                            Delete
-                                          </button>
+                                          deleteLoading !== item._id ? (
+                                            <button
+                                              onClick={() => {
+                                                deleteProposal(item._id, true);
+                                              }}
+                                              className="text-red-400 leading-3 underline"
+                                            >
+                                              Delete
+                                            </button>
+                                          ) : (
+                                            <button className="text-gray-400 leading-3 underline">
+                                              Deleting
+                                            </button>
+                                          )
                                         ) : null}
                                         <button
                                           onClick={() => {
@@ -446,14 +461,20 @@ function Proposal() {
                                     <td className="text-center text-lg px-0 w-[190px]">
                                       <div className="flex justify-evenly items-center">
                                         {userData === true ? (
-                                          <button
-                                            onClick={() => {
-                                              deleteProposal(item._id, false);
-                                            }}
-                                            className="text-red-400 leading-3 underline"
-                                          >
-                                            Delete
-                                          </button>
+                                          deleteLoading !== item._id ? (
+                                            <button
+                                              onClick={() => {
+                                                deleteProposal(item._id, false);
+                                              }}
+                                              className="text-red-400 leading-3 underline"
+                                            >
+                                              Delete
+                                            </button>
+                                          ) : (
+                                            <button className="text-gray-400 leading-3 underline">
+                                              Deleting
+                                            </button>
+                                          )
                                         ) : null}
                                         <button
                                           onClick={() => {
