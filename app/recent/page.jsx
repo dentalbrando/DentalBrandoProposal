@@ -420,22 +420,22 @@ function Proposal() {
                       <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
                         No.
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[185px">
+                      <th className="th-border text-center text-lg text-lg py-2 w-[180px]">
                         Client Name
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[205px">
+                      <th className="th-border text-center text-lg text-lg py-2 w-[200px]">
                         Project Title
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[225px">
+                      <th className="th-border text-center text-lg text-lg py-2 w-[220px]">
                         Company Name
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[175px">
+                      <th className="th-border text-center text-lg text-lg py-2 w-[170px]">
                         Issue Date
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[175px">
+                      <th className="th-border text-center text-lg text-lg py-2 w-[175px]">
                         Valid Date
                       </th>
-                      <th className="last-th-border text-center text-lg text-lg py-2 w-[205px]">
+                      <th className="last-th-border text-center text-lg text-lg py-2 w-[190px]">
                         Action
                       </th>
                     </tr>
@@ -606,7 +606,11 @@ function Proposal() {
                           </span>
                         </span>
                         <span> of </span>
-                        <span>{proposalData.length}</span>
+                        <span>
+                          {proposalData.length <= 9
+                            ? "0" + proposalData.length
+                            : proposalData.length}
+                        </span>
                       </div>
 
                       <button
@@ -660,7 +664,11 @@ function Proposal() {
                           </span>
                         </span>
                         <span> of </span>
-                        <span>{searchData.length}</span>
+                        <span>
+                          {searchData.length <= 9
+                            ? "0" + searchData.length
+                            : searchData.length}
+                        </span>
                       </div>
 
                       <button
