@@ -170,11 +170,11 @@ function Proposal() {
       dispatch(
         setAboutProject(searchData[searchData.length - 1 - key].aboutProject)
       );
-      dispatch(
-        setPageSequence(
-          searchData[searchData.length - 1 - key].pageSequence.pageSequence
-        )
-      );
+      // dispatch(
+      //   setPageSequence(
+      //     searchData[searchData.length - 1 - key].pageSequence.pageSequence
+      //   )
+      // );
     } else {
       dispatch(
         setService(proposalData[proposalData.length - 1 - key].budget.service)
@@ -246,11 +246,11 @@ function Proposal() {
           proposalData[proposalData.length - 1 - key].aboutProject
         )
       );
-      dispatch(
-        setPageSequence(
-          proposalData[proposalData.length - 1 - key].pageSequence.pageSequence
-        )
-      );
+      // dispatch(
+      //   setPageSequence(
+      //     proposalData[proposalData.length - 1 - key].pageSequence.pageSequence
+      //   )
+      // );
     }
     dispatch(updatePage(100));
     router.push("/seo");
