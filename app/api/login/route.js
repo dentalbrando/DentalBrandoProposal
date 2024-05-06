@@ -6,7 +6,7 @@ import jwt from "jsonwebtoken";
 
 export async function POST(req) {
   let securityKey = process.env.SECURITY_KEY;
-  console.log(securityKey);
+  // console.log(securityKey);
   try {
     let { username, password } = await req.json();
     let userData = { username, password };
