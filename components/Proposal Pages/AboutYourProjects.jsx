@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useSelector } from "react-redux";
 import tick from "@public/assets/TICK-01.svg";
 
 const AboutYourProjects = ({ pageNumber }) => {
   let onceBr = false;
-  const aboutYourProject = useSelector((state) => state.aboutYourProject);
+  const ab = useSelector((state) => state.aboutYourProject);
+  const overviews = useSelector((state) => state.aboutYourProject.overview);
+  const functionalities = useSelector(
+    (state) => state.aboutYourProject.functionality
+  );
+  const websiteCMSs = useSelector((state) => state.aboutYourProject.websiteCMS);
 
-  const contentWithImages = aboutYourProject.functionality
+  if (functionalities === "") {
+    var tempFunctionality = `In accordance with the specifications outlined in your project requirements, the prominent features incorporated into your website encompass the following major functions. With regards to functionality, emphasis has been placed on user interface and visitor engagement, as follows
+
+
+> Mega Menu for services pages, listed on your website
+> Membership page with international payment gateways integrated. (API's will be required)
+> Careers queries handling functionality and management.
+> Blog/Article section page with categorized options. (Blog/Article content will be required)`;
+  } else {
+    var tempFunctionality = functionalities;
+  }
+
+  const contentWithImages = tempFunctionality
+    .replace(/\n/g, "<p class = 'py-1'></p>")
     .split("<p class = 'py-1'></p>")
     .map((line) => {
       if (line.trim().startsWith(">")) {
@@ -28,7 +46,47 @@ const AboutYourProjects = ({ pageNumber }) => {
       return line;
     })
     .join("");
-  console.log(aboutYourProject);
+  let [tempWebsiteCMS, setTempWebsiteCMS] = useState(
+    websiteCMSs === ""
+      ? `WordPress CMS has been selected for the development of this website due to its numerous benefits. WordPress is a widely recognized and highly versatile content  management system that offers a plethora of advantages for website development. the key benefits of WordPress is its user-friendly interface, which allows even non technical individuals to easily manage and update website content. With its intuitive dashboard, users can effortlessly add, edit, and delete pages, blog posts, images, and other multimedia elements.`
+      : websiteCMSs
+  );
+  let [tempOverviews, setTempOverviews] = useState(
+    overviews === ""
+      ? `Upon exploring your business is providing services of field marketing, trade/business development, investment platform providing unique information and exposure to business opportunities in Pakistan & the UK.
+
+They connect businesses and investments through a range of services and events, believing in the importance of a responsible and profitable private sector in Pakistan's development
+
+The purpose of Client Coverage team serves as a single point of contact, understanding your company's unique trade promotion needs and sector requirements.`
+      : overviews
+  );
+
+  useEffect(() => {
+    setTempWebsiteCMS(
+      websiteCMSs === ""
+        ? `WordPress CMS has been selected for the development of this website due to its numerous benefits. WordPress is a widely recognized and highly versatile content  management system that offers a plethora of advantages for website development. the key benefits of WordPress is its user-friendly interface, which allows even non technical individuals to easily manage and update website content. With its intuitive dashboard, users can effortlessly add, edit, and delete pages, blog posts, images, and other multimedia elements.`
+        : websiteCMSs
+    );
+    setTempOverviews(
+      overviews === ""
+        ? `Upon exploring your business is providing services of field marketing, trade/business development, investment platform providing unique information and exposure to business opportunities in Pakistan & the UK.
+
+They connect businesses and investments through a range of services and events, believing in the importance of a responsible and profitable private sector in Pakistan's development
+
+The purpose of Client Coverage team serves as a single point of contact, understanding your company's unique trade promotion needs and sector requirements.`
+        : overviews
+    );
+  }, [websiteCMSs, overviews]);
+
+  console.log(
+    "overviews: ",
+    overviews,
+    "functionalities: ",
+    functionalities,
+    "websiteCMSs: ",
+    websiteCMSs,
+    ab
+  );
 
   return (
     <>
@@ -89,7 +147,7 @@ const AboutYourProjects = ({ pageNumber }) => {
                 <p
                   class="pt-2 text-[12pt]"
                   dangerouslySetInnerHTML={{
-                    __html: aboutYourProject.overview,
+                    __html: tempOverviews,
                   }}
                 ></p>
               </div>
@@ -110,7 +168,7 @@ const AboutYourProjects = ({ pageNumber }) => {
                 ></p>
               </div>
             </section>
-            {aboutYourProject.websiteCMS ? (
+            {tempWebsiteCMS ? (
               <section>
                 <div class="flex pt-10">
                   <div class="text-[16pt] text-[#00A2FF] font-[700]">
@@ -124,7 +182,7 @@ const AboutYourProjects = ({ pageNumber }) => {
                   <p
                     class="pt-2 text-[12pt]"
                     dangerouslySetInnerHTML={{
-                      __html: aboutYourProject.websiteCMS,
+                      __html: tempWebsiteCMS,
                     }}
                   ></p>
                 </div>
