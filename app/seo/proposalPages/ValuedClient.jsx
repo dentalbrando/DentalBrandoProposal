@@ -95,7 +95,9 @@ function ValuedClient(prop) {
                 <div className="w-[100%] h-[100%] flex justify-center items-center bg-yellow-40">
                   <img src={client3.src} className="w-[100%]" />
                 </div>
-                <div className="w-[60%] h-[6px] flex justify-between items-center bg-[rgb(0,161,255)]"></div>
+                <div className="w-[60%] relative">
+                  <div className="w-[100%] h-[6px] flex justify-between items-center bg-[rgb(0,161,255)]" style={{"translate":"0% -50%"}}></div>
+                </div>
               </div>
             </div>
 
