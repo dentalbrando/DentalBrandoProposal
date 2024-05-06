@@ -210,11 +210,11 @@ function Proposal() {
           searchData[searchData.length - 1 - key].proposedSitemap2.sitemap2
         )
       );
-      dispatch(
-        setPageSequence(
-          searchData[searchData.length - 1 - key].pageSequence.pageSequence
-        )
-      );
+      // dispatch(
+      //   setPageSequence(
+      //     searchData[searchData.length - 1 - key].pageSequence.pageSequence
+      //   )
+      // );
     } else {
       dispatch(
         setFunctionalities(
@@ -318,11 +318,11 @@ function Proposal() {
           proposalData[proposalData.length - 1 - key].proposedSitemap2.sitemap2
         )
       );
-      dispatch(
-        setPageSequence(
-          proposalData[proposalData.length - 1 - key].pageSequence.pageSequence
-        )
-      );
+      // dispatch(
+      //   setPageSequence(
+      //     proposalData[proposalData.length - 1 - key].pageSequence.pageSequence
+      //   )
+      // );
     }
     dispatch(updatePage(100));
     router.push("/development");
