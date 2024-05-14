@@ -20,16 +20,19 @@ import {
   setBasic as setAdBasic,
   setStandard as setAdStandard,
   setPremium as setAdPremium,
+  setBasicCurrency as setAdBasicCurrency,
 } from "@app/store/AdpackagesSliceSmm";
 import {
   setBasic as setPostBasic,
   setStandard as setPostStandard,
   setPremium as setPostPremium,
+  setBasicCurrency as setPostBasicCurrency,
 } from "@app/store/PostpackagesSliceSmm";
 import {
   setBasic as setMarketingBasic,
   setStandard as setMarketingStandard,
   setPremium as setMarketingPremium,
+  setBasicCurrency,
 } from "@app/store/MarketingpackagesSliceSmm";
 
 import { setAboutProject } from "@app/store/aboutProjectSmm";
@@ -224,6 +227,21 @@ function Proposal() {
       dispatch(
         setAboutProject(searchData[searchData.length - 1 - key].aboutProject)
       );
+      dispatch(
+        setBasicCurrency(
+          searchData[searchData.length - 1 - key].marketingPackage.basicCurrency
+        )
+      );
+      dispatch(
+        setPostBasicCurrency(
+          searchData[searchData.length - 1 - key].postPackage.basicCurrency
+        )
+      );
+      dispatch(
+        setAdBasicCurrency(
+          searchData[searchData.length - 1 - key].adPackage.basicCurrency
+        )
+      );
       // dispatch(
       //   setPageSequence(
       //     searchData[searchData.length - 1 - key].pageSequence.pageSequence
@@ -336,6 +354,23 @@ function Proposal() {
           proposalData[proposalData.length - 1 - key].aboutProject
         )
       );
+      dispatch(
+        setBasicCurrency(
+          proposalData[proposalData.length - 1 - key].marketingPackage
+            .basicCurrency
+        )
+      );
+      dispatch(
+        setPostBasicCurrency(
+          proposalData[proposalData.length - 1 - key].postPackage.basicCurrency
+        )
+      );
+      dispatch(
+        setAdBasicCurrency(
+          proposalData[proposalData.length - 1 - key].adPackage.basicCurrency
+        )
+      );
+
       // dispatch(
       //   setPageSequence(
       //     proposalData[proposalData.length - 1 - key].pageSequence.pageSequence

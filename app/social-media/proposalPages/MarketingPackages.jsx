@@ -42,7 +42,7 @@ function MarketingPackages(prop) {
                     Basic
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR </span>
+                    <span className="text-[14px] font-[300]">{marketingPackages.basicCurrency} </span>
                     {addCommasToNumber(marketingPackages.basic)}
                   </h2>
                   <span className="text-[12px] font-[600] text-white">
@@ -73,7 +73,7 @@ function MarketingPackages(prop) {
                     Standard
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR </span>
+                    <span className="text-[14px] font-[300]">{marketingPackages.basicCurrency} </span>
                     {addCommasToNumber(marketingPackages.standard)}
                   </h2>
                   <span className="text-[12px] font-[600] text-white">
@@ -106,7 +106,7 @@ function MarketingPackages(prop) {
                     Premium
                   </h1>
                   <h2 className="text-[22px] font-[600] text-white">
-                    <span className="text-[14px] font-[300]">PKR </span>
+                    <span className="text-[14px] font-[300]">{marketingPackages.basicCurrency} </span>
                     {addCommasToNumber(marketingPackages.premium)}
                   </h2>
                   <span className="text-[12px] font-[600] text-white">

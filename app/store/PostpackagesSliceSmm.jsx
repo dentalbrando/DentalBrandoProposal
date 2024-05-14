@@ -4,6 +4,7 @@ const initialState = {
   basic: "7,999",
   standard: "12,999",
   premium: "19,999",
+  basicCurrency: "PKR",
 };
 
 const PostPackageScliceSmm = createSlice({
@@ -19,10 +20,13 @@ const PostPackageScliceSmm = createSlice({
     setPremium: (state, action) => {
       state.premium = action.payload;
     },
+    setBasicCurrency: (state, action) => {
+      state.basicCurrency = action.payload;
+    },
   },
 });
 
-export const { setBasic, setStandard, setPremium } =
+export const { setBasic, setStandard, setPremium, setBasicCurrency } =
   PostPackageScliceSmm.actions;
 
 export default PostPackageScliceSmm.reducer;
