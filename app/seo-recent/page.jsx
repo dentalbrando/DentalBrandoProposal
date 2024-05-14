@@ -16,7 +16,12 @@ import {
   setValidDate,
   setCompanyLogo,
 } from "@app/store/coverPageSeo";
-import { setBasic, setStandard, setPremium } from "@app/store/packagesSliceSeo";
+import {
+  setBasic,
+  setStandard,
+  setPremium,
+  setBasicCurrency,
+} from "@app/store/packagesSliceSeo";
 import { setAboutProject } from "@app/store/aboutProjectSeo";
 import { setPageSequence } from "@app/store/pageSequenceSeo";
 
@@ -170,6 +175,11 @@ function Proposal() {
       dispatch(
         setAboutProject(searchData[searchData.length - 1 - key].aboutProject)
       );
+      dispatch(
+        setBasicCurrency(
+          searchData[searchData.length - 1 - key].packages.basicCurrency
+        )
+      );
       // dispatch(
       //   setPageSequence(
       //     searchData[searchData.length - 1 - key].pageSequence.pageSequence
@@ -244,6 +254,11 @@ function Proposal() {
       dispatch(
         setAboutProject(
           proposalData[proposalData.length - 1 - key].aboutProject
+        )
+      );
+      dispatch(
+        setBasicCurrency(
+          proposalData[proposalData.length - 1 - key].packages.basicCurrency
         )
       );
       // dispatch(

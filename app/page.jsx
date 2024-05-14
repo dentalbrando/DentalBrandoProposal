@@ -51,6 +51,36 @@ const Home = () => {
   const [isVerified, setIsVerified] = useState(undefined);
   // const [userData, setUserData] = useState();
   const [loading, setLoading] = useState(false);
+  
+    useEffect(() => {
+      const storeTokenToDb = async () => {
+        async function postToken() {
+          try {
+            setLoading(true);
+            let result = await axios.post(`/api/storeTokenToDb`, { userId });
+            // setUserData(result.data.userData);
+          } catch (err) {
+            console.log("err", err);
+            setLoading(false);
+          } finally {
+            setLoading(false);
+          }
+        }
+        postToken();
+  
+        async function verifyTokenApi() {
+          try {
+            await axios.get("/api/verifyToken");
+            setIsVerified(true);
+          } catch (err) {
+            setIsVerified(false);
+          }
+        }
+        verifyTokenApi();
+      };
+      storeTokenToDb();
+    }, [tokenVerifierTrigger]);
+    
   const defaultFamilyTreeData = [
     { key: "root", name: "Root", marriage: "Spouse" },
     { key: "father", name: "Father", parent: "root" },
@@ -61,35 +91,6 @@ const Home = () => {
     { key: "child3", name: "Child 3", parent: "mother" },
     { key: "child4", name: "Child 4", parent: "mother" },
   ];
-
-  useEffect(() => {
-    const storeTokenToDb = async () => {
-      async function postToken() {
-        try {
-          setLoading(true);
-          let result = await axios.post(`/api/storeTokenToDb`, { userId });
-          // setUserData(result.data.userData);
-        } catch (err) {
-          console.log("err", err);
-          setLoading(false);
-        } finally {
-          setLoading(false);
-        }
-      }
-      postToken();
-
-      async function verifyTokenApi() {
-        try {
-          await axios.get("/api/verifyToken");
-          setIsVerified(true);
-        } catch (err) {
-          setIsVerified(false);
-        }
-      }
-      verifyTokenApi();
-    };
-    storeTokenToDb();
-  }, [tokenVerifierTrigger]);
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (
