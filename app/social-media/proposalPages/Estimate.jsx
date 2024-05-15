@@ -73,7 +73,8 @@ function Estimate(prop) {
                     PACKAGE
                   </div>
                   <div className=" w-[24%] bg-[#ffd600] text-center pb-1 pt-2 ">
-                    SUB TOTAL ({budgetData.currency})
+                    SUB TOTAL
+                    {/* ({budgetData.currency}) */}
                   </div>
                 </div>
                 {storedServices.length > 0
