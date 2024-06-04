@@ -44,8 +44,8 @@ function Proposal() {
   let [proposalData, setProposalData] = useState();
   let [loading, setLoading] = useState(true);
   let [isVerified, setIsVerified] = useState(undefined);
-  let [multiplier, setMultiplier] = useState(0);
   let [multiplierForSearch, setMultiplierForSearch] = useState(0);
+  let [multiplier, setMultiplier] = useState(0);
   let [buttonArray, setButtonArray] = useState();
   let [searchData, setSearchData] = useState();
   let [userData, setUserData] = useState();
