@@ -111,9 +111,9 @@ const Budget = () => {
                 <h3>PACKAGE</h3>
                 <h3 className="capitalize">
                   SUB TOTAL{" "}
-                  {totalEstimate
+                  {/* {totalEstimate
                     ? "(" + budgetData.currency + totalEstimate + ")"
-                    : null}
+                    : null} */}
                 </h3>
               </div>
             </div>
