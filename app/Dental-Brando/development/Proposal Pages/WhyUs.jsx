@@ -4,10 +4,10 @@ import svg3 from "@public/assets/whySoftImgs/icons-03.svg";
 import svg4 from "@public/assets/whySoftImgs/icons-04.svg";
 import svg5 from "@public/assets/whySoftImgs/icons-05.svg";
 import svg6 from "@public/assets/whySoftImgs/icons-06.svg";
-import svg7 from "@public/assets/whySoftImgs/icons-07.svg";
-import svg8 from "@public/assets/whySoftImgs/icons-08.svg";
-import svg9 from "@public/assets/whySoftImgs/icons-09.svg";
-import svg10 from "@public/assets/whySoftImgs/icons-10.svg";
+import svg7 from "@public/assets/DbwhySoftImgs/icons-07.svg";
+import svg8 from "@public/assets/DbwhySoftImgs/icons-08.svg";
+import svg9 from "@public/assets/DbwhySoftImgs/icons-09.svg";
+import svg10 from "@public/assets/DbwhySoftImgs/icons-10.svg";
 
 const WhyUs = ({ pageNumber }) => {
   return (
@@ -105,7 +105,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-black font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ">
                   Expertise
                 </p>
               </div>
@@ -146,7 +146,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-black font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ">
                   {" "}
                   Quality
                 </p>
@@ -188,7 +188,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-black font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ">
                   Customer Satisfaction
                 </p>
               </div>
@@ -229,7 +229,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-black font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ">
                   {" "}
                   Competitive Pricing
                 </p>
@@ -271,7 +271,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-black font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ">
                   Timely Delivery
                 </p>
               </div>
@@ -311,7 +311,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-black font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ">
                   {" "}
                   Ongoing Support
                 </p>
