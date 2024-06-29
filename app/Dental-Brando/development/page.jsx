@@ -1,14 +1,14 @@
 "use client";
 import Sidebar from "@components/Sidebar";
 import Form from "@components/Form";
-import LivePreview from "@components/LivePreview";
 import { useSelector } from "react-redux";
-import FullProposal from "@components/FullProposal";
+import FullProposal from "./FullProposal";
 import Nav from "@components/Nav";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import Loader from "@components/Loader";
+import LivePreview from "./LivePreview";
 
 function Development() {
   let router = useRouter();

@@ -193,9 +193,18 @@ input[type="checkbox"]:checked {
   background-color: #00a2ff;
 }
 
+.custom-shape1DB {
+  clip-path: polygon(0 0, 100% 0%, 98.6% 100%, 0% 100%);
+  background-color: rgb(9,58,91);
+}
+
 .custom-shape2 {
   clip-path: polygon(6.8% 0, 100% 0, 100% 100%, 1% 100%);
   background-color: #ffd600;
+}
+.custom-shape2DB {
+  clip-path: polygon(6.8% 0, 100% 0, 100% 100%, 1% 100%);
+  background-color: rgb(3,160,215);
 }
 
 .custom-shape3 {
