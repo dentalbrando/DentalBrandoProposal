@@ -55,7 +55,7 @@ const BudgetForm = () => {
           </div>
           <div
             key={index}
-            className="flex justify-between items-end  my-10 w-[100%]  my-5"
+            className="flex justify-between items-end  w-[100%]  my-5"
           >
             {/* <div className="w-[20%] flex flex-col"> */}
             <label className="text-gray-900 w-[20%] text-[16px] font-medium my-2">
@@ -107,7 +107,7 @@ const BudgetForm = () => {
           </div>
         </div>
       ))}
-      <div className="flex justify-center items-center my-10 w-[100%]  my-5">
+      <div className="flex justify-center items-center w-[100%]  my-5">
         <TextInput
           label="Currency"
           type="text"

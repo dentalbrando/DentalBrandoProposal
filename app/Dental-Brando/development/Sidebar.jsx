@@ -99,7 +99,7 @@ const Sidebar = () => {
                           {item.checked ? <FaCheck /> : null}
                         </div>
                         <p
-                          className={`font-medium text-[18px] font-medium text-black ${
+                          className={`font-medium text-[18px] text-black ${
                             page.formId === item.id ||
                             page.formId + "" === item.id
                               ? "text-white"
