@@ -51,36 +51,36 @@ const Home = () => {
   const [isVerified, setIsVerified] = useState(undefined);
   // const [userData, setUserData] = useState();
   const [loading, setLoading] = useState(false);
-  
-    useEffect(() => {
-      const storeTokenToDb = async () => {
-        async function postToken() {
-          try {
-            setLoading(true);
-            let result = await axios.post(`/api/storeTokenToDb`, { userId });
-            // setUserData(result.data.userData);
-          } catch (err) {
-            console.log("err", err);
-            setLoading(false);
-          } finally {
-            setLoading(false);
-          }
+
+  useEffect(() => {
+    const storeTokenToDb = async () => {
+      async function postToken() {
+        try {
+          setLoading(true);
+          let result = await axios.post(`/api/storeTokenToDb`, { userId });
+          // setUserData(result.data.userData);
+        } catch (err) {
+          console.log("err", err);
+          setLoading(false);
+        } finally {
+          setLoading(false);
         }
-        postToken();
-  
-        async function verifyTokenApi() {
-          try {
-            await axios.get("/api/verifyToken");
-            setIsVerified(true);
-          } catch (err) {
-            setIsVerified(false);
-          }
+      }
+      postToken();
+
+      async function verifyTokenApi() {
+        try {
+          await axios.get("/api/verifyToken");
+          setIsVerified(true);
+        } catch (err) {
+          setIsVerified(false);
         }
-        verifyTokenApi();
-      };
-      storeTokenToDb();
-    }, [tokenVerifierTrigger]);
-    
+      }
+      verifyTokenApi();
+    };
+    storeTokenToDb();
+  }, [tokenVerifierTrigger]);
+
   const defaultFamilyTreeData = [
     { key: "root", name: "Root", marriage: "Spouse" },
     { key: "father", name: "Father", parent: "root" },
@@ -100,9 +100,9 @@ const Home = () => {
       ) : isVerified ? (
         <>
           <Nav main={true} />
-          <div className="flex gap-24 justify-center items-center h-[88vh] w-[100%]">
-            <Link href={"/development"}>
-              <div className="w-[100%] h-[100%] p5 relative">
+          {/* <div className="flex gap-24 justify-center items-center h-[88vh] w-[100%] bg-red-500">
+            <Link href={"/development"} className="w-[300px] h-[370px]">
+              <div className="w-[100%] h-[100%] relative">
                 <div className="w-[100%] h-[100%]">
                   <img src={frame3.src} className="w-[100%] h-[100%]" />
                 </div>
@@ -112,8 +112,8 @@ const Home = () => {
               </div>
             </Link>
 
-            <Link href={"/seo"}>
-              <div className="w-[100%] h-[100%] p5 relative">
+            <Link href={"/seo"} className="w-[300px] h-[370px]">
+              <div className="w-[100%] h-[100%] relative">
                 <div className="w-[100%] h-[100%]">
                   <img src={frame1.src} className="w-[100%] h-[100%]" />
                 </div>
@@ -122,8 +122,8 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-            <Link href={"/social-media"}>
-              <div className="w-[100%] h-[100%] p5 relative">
+            <Link href={"/social-media"} className="w-[300px] h-[370px]">
+              <div className="w-[100%] h-[100%] relative">
                 <div className="w-[100%] h-[100%]">
                   <img src={frame2.src} className="w-[100%] h-[100%]" />
                 </div>
@@ -132,6 +132,62 @@ const Home = () => {
                 </div>
               </div>
             </Link>
+          </div> */}
+          <div className="w-[95%] 2xl:w-[87%] h-fit mx-auto pb-7 md:pb-14 pt-3 md:pt-3">
+            <div className="w-[full] h-fit py-4 md:py-8 flex flex-col gap-2 md:gap-5 z-100">
+              <h2 className="text-[16px] md:text-[25px] font-[600] text-[rgb(0,162,255)]">
+                SOFT ENTERPRISE
+              </h2>
+              <div className="w-[full] h-fit linkDiv bg-neutral-50 px-3 md:px-10 xl:px-14 py-4 md:py-8 rounded-[10px] border-2 border-color flex flex-row justify-start items-center gap-2 md:gap-5 xl:gap-10 overflow-auto">
+                <Link href={"/development"} className="w-[300px] h-[370px]">
+                  <div className="w-[100%] h-[100%] relative">
+                    <div className="w-[100%] h-[100%]">
+                      <img src={frame3.src} className="w-[100%] h-[100%]" />
+                    </div>
+                    <div className="w-fit h-[50%] absolute bottom-0 right-0">
+                      <img src={layer2.src} />
+                    </div>
+                  </div>
+                </Link>
+                <Link href={"/seo"} className="w-[300px] h-[370px]">
+                  <div className="w-[100%] h-[100%] relative">
+                    <div className="w-[100%] h-[100%]">
+                      <img src={frame1.src} className="w-[100%] h-[100%]" />
+                    </div>
+                    <div className="w-fit h-[50%] absolute bottom-0 right-0">
+                      <img src={layer1.src} />
+                    </div>
+                  </div>
+                </Link>
+                <Link href={"/social-media"} className="w-[300px] h-[370px]">
+                  <div className="w-[100%] h-[100%] relative">
+                    <div className="w-[100%] h-[100%]">
+                      <img src={frame2.src} className="w-[100%] h-[100%]" />
+                    </div>
+                    <div className="w-fit h-[50%] absolute bottom-0 right-0">
+                      <img src={layer3.src} />
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="w-[full] h-fit py-4 md:py-8 flex flex-col gap-2 md:gap-5 z-100">
+              <h2 className="text-[16px] md:text-[25px] font-[600] text-[rgb(0,162,255)]">
+                Dental Brando
+              </h2>
+              <div className="w-[full] h-fit linkDiv bg-neutral-50 px-3 md:px-10 xl:px-14 py-4 md:py-8 rounded-[10px] border-2 border-color flex flex-row justify-start items-center gap-2 md:gap-5 xl:gap-10 overflow-auto">
+                <Link href={"/development"} className="w-[300px] h-[370px]">
+                  <div className="w-[100%] h-[100%] relative">
+                    <div className="w-[100%] h-[100%]">
+                      <img src={frame3.src} className="w-[100%] h-[100%]" />
+                    </div>
+                    <div className="w-fit h-[50%] absolute bottom-0 right-0">
+                      <img src={layer2.src} />
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
           </div>
         </>
       ) : (
