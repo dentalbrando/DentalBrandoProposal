@@ -69,7 +69,7 @@ const LastPage = () => {
                 <img class="w-3" src={svg4.src} alt="" />
               </div> */}
               <p class=" font-[500] text-[8pt] pt-2">
-                53 Hamza Heights, Quaid Block Near Eiﬀel Towel, Bahria Town,
+                53 Hamza Heights, Quaid Block Near Eiﬀel Tower, Bahria Town,
                 Lahore
               </p>
             </div>
