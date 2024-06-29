@@ -114,7 +114,7 @@ Sincerely,`;
               </label>
               <input
                 autoFocus
-                className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[60%]`}
+                className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color  border-color outline-none w-[60%]`}
                 onChange={(event) => {
                   setclientName(event.target.value);
                 }}
@@ -133,7 +133,7 @@ Sincerely,`;
             cols={"auto"}
             rows="5"
             onChange={(e) => setletterText(e.target.value)}
-            className="text-gray-900 text-lg p-2 rounded-md font-normal outline-none resize-none rounded-md font-normal border-2 border-color outline-none w-[80%]"
+            className="text-gray-900 text-lg p-2  resize-none rounded-md font-normal border-2 border-color outline-none w-[80%]"
             // defaultValue={overview.trim().replace(/<br\s*\/?>/g, '\n')}
           >
             {letterText
