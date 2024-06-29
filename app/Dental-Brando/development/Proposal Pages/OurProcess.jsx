@@ -1,9 +1,9 @@
-import svg1 from "@public/assets/our process-01.svg";
-import svg2 from "@public/assets/our process-02.svg";
-import svg3 from "@public/assets/our process-03.svg";
-import svg4 from "@public/assets/our process-04.svg";
-import svg5 from "@public/assets/our process-05.svg";
-import svg6 from "@public/assets/our process-06.svg";
+import svg1 from "@public/assets/DbOurProcess/our process-01.svg";
+import svg2 from "@public/assets/DbOurProcess/our process-02.svg";
+import svg3 from "@public/assets/DbOurProcess/our process-03.svg";
+import svg4 from "@public/assets/DbOurProcess/our process-04.svg";
+import svg5 from "@public/assets/DbOurProcess/our process-05.svg";
+import svg6 from "@public/assets/DbOurProcess/our process-06.svg";
 
 const OurProcess = ({ pageNumber }) => {
   return (
@@ -66,7 +66,7 @@ const OurProcess = ({ pageNumber }) => {
             <div>
               <section>
                 <div class="flex gap-3 my-3">
-                  <div class="w-1/2  border-2 border-[#093A5B] rounded-tr-2xl rounded-bl-2xl flex">
+                  <div class="w-1/2  border-2 border-[#03A0D7] rounded-tr-2xl rounded-bl-2xl flex">
                     <div>
                       <div>
                         <div>
@@ -98,7 +98,7 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                     </div>
                   </div>
-                  <div class="w-1/2  border-2 border-[#093A5B] rounded-tr-2xl rounded-bl-2xl flex">
+                  <div class="w-1/2  border-2 border-[#03A0D7] rounded-tr-2xl rounded-bl-2xl flex">
                     <div>
                       <div>
                         <div>
@@ -134,7 +134,7 @@ const OurProcess = ({ pageNumber }) => {
               </section>
               <section>
                 <div class="flex gap-3 my-3">
-                  <div class="w-1/2  border-2 border-[#093A5B] rounded-tr-2xl rounded-bl-2xl flex">
+                  <div class="w-1/2  border-2 border-[#03A0D7] rounded-tr-2xl rounded-bl-2xl flex">
                     <div>
                       <div>
                         <div>
@@ -166,7 +166,7 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                     </div>
                   </div>
-                  <div class="w-1/2  border-2 border-[#093A5B] rounded-tr-2xl rounded-bl-2xl flex">
+                  <div class="w-1/2  border-2 border-[#03A0D7] rounded-tr-2xl rounded-bl-2xl flex">
                     <div>
                       <div>
                         <div>
@@ -202,7 +202,7 @@ const OurProcess = ({ pageNumber }) => {
               </section>
               <section>
                 <div class="flex gap-3 my-3">
-                  <div class="w-1/2  border-2 border-[#093A5B] rounded-tr-2xl rounded-bl-2xl flex">
+                  <div class="w-1/2  border-2 border-[#03A0D7] rounded-tr-2xl rounded-bl-2xl flex">
                     <div>
                       <div>
                         <div>
@@ -234,7 +234,7 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                     </div>
                   </div>
-                  <div class="w-1/2 border-2 border-[#093A5B] rounded-tr-2xl rounded-bl-2xl flex">
+                  <div class="w-1/2 border-2 border-[#03A0D7] rounded-tr-2xl rounded-bl-2xl flex">
                     <div>
                       <div>
                         <div>
