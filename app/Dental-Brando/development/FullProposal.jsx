@@ -13,7 +13,6 @@ import AboutYourProjects from "./Proposal Pages/AboutYourProjects";
 import ProposedSiteMap from "./Proposal Pages/ProposedSiteMap";
 import Budget from "./Proposal Pages/Budget";
 import SaveProposaltoDb from "./saveProposaltoDb";
-import LastPageCopy from "./Proposal Pages/LastPage copy";
 const FullProposal = () => {
   const dispatch = useDispatch();
   const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
@@ -95,7 +94,6 @@ const FullProposal = () => {
                 page.checked && <Budget key={index} pageNumber={pageNumber++} />
               );
             case "11":
-              // return page.checked && <LastPageCopy key={index} />;
               return page.checked && <LastPage key={index} />;
           }
         })}
