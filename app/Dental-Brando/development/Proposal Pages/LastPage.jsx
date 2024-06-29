@@ -1,7 +1,6 @@
 import svg1 from "@public/assets/LastPageImgs/last page-01.svg";
 import svg2 from "@public/assets/LastPageImgs/last page-02.svg";
 import svg3 from "@public/assets/LastPageImgs/last page-03.svg";
-import svg4 from "@public/assets/LastPageImgs/last page-04.svg";
 import bgImg from "@public/assets/LastPageImgs/Untitled-3-01.png";
 import logo from "@public/assets/LastPageImgs/logo.png";
 
