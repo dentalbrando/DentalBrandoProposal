@@ -1,6 +1,6 @@
 // import logo from "@public/assets/logo.jpg";
 import logo from "@public/assets/DB Logo-15.svg";
-import cover from "@public/assets/cover.jpg";
+import cover from "@public/assets/DB Web Development Proposal-13.png";
 import { useSelector } from "react-redux";
 
 const CoverPage = () => {

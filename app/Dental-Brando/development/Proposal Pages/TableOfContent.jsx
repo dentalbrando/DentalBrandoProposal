@@ -1,4 +1,4 @@
-import img from "@public/assets/table of content's image.png";
+import img from "@public/assets/DB Web Development Proposal-14.png";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
