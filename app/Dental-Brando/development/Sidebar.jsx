@@ -117,14 +117,16 @@ const Sidebar = () => {
               <div className="flex flex-col gap-3">
                 <button
                   type="button"
-                  className="mt-8 border border-gray-200 p-3 rounded-2xl bg-main-blue text-white font-[500] font-[24px]"
+                  className="mt-8 border border-gray-200 p-3 rounded-2xl bg-main-blue text-white font-[500] "
+                  style={{fontSize:"24px"}}
                   onClick={() => generate()}
                 >
                   Generate All
                 </button>
                 <button
                   type="button"
-                  className="p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
+                  className="p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] "
+                  style={{fontSize:"24px"}}
                   onClick={() => {
                     dispatch(resetSquence());
                     setItems([
@@ -153,13 +155,15 @@ const Sidebar = () => {
                   Reset All
                 </button>
                 <Link
-                  className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
+                  className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] "
+                  style={{fontSize:"24px"}}
                   href="/recent"
                 >
                   Recent Proposals
                 </Link>
                 <button
-                  className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
+                  className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] "
+                  style={{fontSize:"24px"}}
                   onClick={logout}
                 >
                   Log Out
