@@ -1,6 +1,7 @@
 import React from "react";
 
-import log from "@public/assets/budgetImgs/logo.png";
+// import log from "@public/assets/budgetImgs/logo.png";
+import log from "@public/assets/DB Logo-15.svg";
 import { useSelector } from "react-redux";
 
 const Budget = () => {
@@ -30,10 +31,16 @@ const Budget = () => {
       <div className="relative overflow-hidden shadow-lg bg-white w-[8.27in] h-[1122.6px]">
         <div>
           <div className="flex justify-between items-center">
-            <img
+            {/* <img
               src={log.src}
               alt=""
               className="ml-14"
+              style={{ width: "200px" }}
+            /> */}
+            <img
+              src={log.src}
+              alt=""
+              className="ml-14 my-10"
               style={{ width: "200px" }}
             />
             <div className="flex flex-col items-end gap-5">
