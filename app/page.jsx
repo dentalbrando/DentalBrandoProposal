@@ -176,7 +176,7 @@ const Home = () => {
                 Dental Brando
               </h2>
               <div className="w-[full] h-fit linkDiv bg-neutral-50 px-3 md:px-10 xl:px-14 py-4 md:py-8 rounded-[10px] border-2 border-color flex flex-row justify-start items-center gap-2 md:gap-5 xl:gap-10 overflow-auto">
-                <Link href={"/development"} className="w-[300px] h-[370px]">
+                <Link href={"Dental-Brando/development"} className="w-[300px] h-[370px]">
                   <div className="w-[100%] h-[100%] relative">
                     <div className="w-[100%] h-[100%]">
                       <img src={frame3.src} className="w-[100%] h-[100%]" />
