@@ -29,7 +29,7 @@ const AboutUs = ({ pageNumber }) => {
               </div>
               <div class="mt-[65px]">
                 <h3 class="font-[700]   text-[9pt] text-[#093A5B]">
-                  Soft Enterprise
+                  Dental Brando
                 </h3>
 
                 <h3 class=" font-[700]  text-[9pt] text-[#093A5B]">
@@ -55,9 +55,9 @@ const AboutUs = ({ pageNumber }) => {
             <div class=" text-center  mt-8 font-[400] text-[11pt] leading-5">
               <div class="Part-one    text-justify ">
                 <p>
-                  Welcome to Soft Enterprise, your one stop destination for your
+                  Welcome to Dental Brando, your one stop destination for your
                   all Web Development, Mobile APP Development, Software
-                  Development & Digital Marketing needs. At Soft Enterprise, we
+                  Development & Digital Marketing needs. At Dental Brando, we
                   pride ourselves on being a leading provider of customized IT
                   solutions that cater to the unique requirements of our
                   clients. With our extensive experience in the industry and
@@ -79,7 +79,7 @@ const AboutUs = ({ pageNumber }) => {
               </div>
               <div class="part-three mt-5 text-justify">
                 <p>
-                  At Soft Enterprise, we value transparency, communication, and
+                  At Dental Brando, we value transparency, communication, and
                   collaboration, and we strive to build long-term relationships
                   with our clients. We believe that by working together, we can
                   achieve great things and help your business

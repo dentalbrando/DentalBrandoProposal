@@ -35,7 +35,7 @@ const WhyUs = ({ pageNumber }) => {
               </div>
               <div class="mt-[65px]">
                 <h3 class="font-[700]   text-[9pt] text-[#093A5B]">
-                  Soft Enterprise
+                  Dental Brando
                 </h3>
 
                 <h3 class=" font-[700]  text-[9pt] text-[#093A5B]">
@@ -52,7 +52,7 @@ const WhyUs = ({ pageNumber }) => {
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 WHY <br />
-                SOFT ENTERPRISE{" "}
+                Dental Brando{" "}
               </h1>
               <div class=" mt-1 w-[85px]  h-2 bg-[#03A0D7] "></div>
             </div>
@@ -61,9 +61,9 @@ const WhyUs = ({ pageNumber }) => {
               <div class="Part-one mr-4    ">
                 <p>
                   Choosing the right web development company is crucial for a
-                  company's success. Soft Enterprise has a proven track record
+                  company's success. Dental Brando has a proven track record
                   of delivering high quality websites and web applications. We
-                  believe that Soft Enterprise can be a valuable partner for
+                  believe that Dental Brando can be a valuable partner for
                   your business looking to create or improve your online
                   presence. We are excited to help your business live.
                 </p>

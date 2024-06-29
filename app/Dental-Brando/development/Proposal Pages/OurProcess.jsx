@@ -31,7 +31,7 @@ const OurProcess = ({ pageNumber }) => {
               </div>
               <div class="mt-[65px]">
                 <h3 class="font-[700] text-[9pt] text-[#093A5B]">
-                  Soft Enterprise
+                  Dental Brando
                 </h3>
 
                 <h3 class=" font-[700]  text-[9pt] text-[#093A5B]">

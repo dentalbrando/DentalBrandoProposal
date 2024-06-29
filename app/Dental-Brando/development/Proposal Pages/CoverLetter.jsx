@@ -8,12 +8,12 @@ const CoverLetter = ({ pageNumber }) => {
   if (cover_letter.letterType === "web_dev" && cover_letter.letterText === "") {
     var tempLetterText = `We are writing to express our interest in your web development project. As a company with extensive experience in web development and a track record of delivering exceptional results for our clients, we are confident that we would be the ideal partner for your project.
 <p class = 'py-1'></p>
-At Soft Enterprise, we understand that your website is often the first point of contact between your business and your customers. As such, we are committed to migrate your website to the sharepoint.
+At Dental Brando, we understand that your website is often the first point of contact between your business and your customers. As such, we are committed to migrate your website to the sharepoint.
 Our team of experienced web developers, designers, and project manager work closely with clients to understand their specific needs and requirements. We have expertise in a wide range of technologies including Wordpress, Laravel, Angular, PHP, Share Point, Vue.Js, React, Shopify, Python and more. We are always exploring new and innovative approaches to web development.
 <p class = 'py-1'></p>
 At every stage of the project, we prioritize communication and collaboration to ensure that you are fully involved in the process and the final product meets your expectations. We are dedicated to delivering projects on time and within budget, and we offer going support and maintenance to ensure that your website continues to perform at its best.
 <p class = 'py-1'></p>
-Thank you for considering Soft Enterprise for your web development needs. We are excited at the prospect of working with you and creating a website that will help your business succeed.
+Thank you for considering Dental Brando for your web development needs. We are excited at the prospect of working with you and creating a website that will help your business succeed.
 <p class = 'py-1'></p>
 Sincerely,`;
   } else {
@@ -70,7 +70,7 @@ Sincerely,`;
 
         <div className=" w-[85%]">
           <h3 className="mt-[60px] font-[700] text-[9pt] text-[#093A5B]">
-            Soft Enterprise
+            Dental Brando
           </h3>
 
           <h3 className=" font-[700] text-[9pt] text-[#093A5B]">
@@ -112,7 +112,7 @@ Sincerely,`;
                                 <div className="part-two mt-4  mr-6 ">
 
                                     <p>
-                                        At Soft Enterprise, we understand that your website is often the first point of contact
+                                        At Dental Brando, we understand that your website is often the first point of contact
                                         between your business and your customers. As such, we are committed to migrate
                                         your website to the sharepoint.
                                     </p>
@@ -140,7 +140,7 @@ Sincerely,`;
                                 <div className="part-five mt-4 ">
 
                                     <p>
-                                        Thank you for considering Soft Enterprise for your web development needs. We are
+                                        Thank you for considering Dental Brando for your web development needs. We are
                                         excited at the prospect of working with you and creating a website that will help your
                                         business succeed.
                                     </p>
@@ -172,7 +172,7 @@ Sincerely,`;
 
             <div className="end mt-2 ;">
               <p>Project Manager</p>
-              <p>Soft Enterprise</p>
+              <p>Dental Brando</p>
             </div>
           </div>
         </div>

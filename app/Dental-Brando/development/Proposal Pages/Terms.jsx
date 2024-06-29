@@ -26,7 +26,7 @@ const Terms = ({ pageNumber }) => {
               </div>
               <div class="mt-[65px]">
                 <h3 class="font-[700] text-[9pt] text-[#093A5B]">
-                  Soft Enterprise
+                  Dental Brando
                 </h3>
 
                 <h3 class=" font-[700]  text-[9pt] text-[#093A5B]">
@@ -51,11 +51,11 @@ const Terms = ({ pageNumber }) => {
             <div class="text-[10pt] flex text-justify">
               <p>
                 When it comes to website development, choosing the right partner
-                is crucial to the success of your project. At Soft Enterprise we
+                is crucial to the success of your project. At Dental Brando we
                 are conﬁdent that we are the best choice for your website
                 development needs. If you’re looking for a reliable and
                 experienced partner for your website development project, look
-                no further than Soft Enterprise.{" "}
+                no further than Dental Brando.{" "}
               </p>
             </div>
             <div class="pt-4">
@@ -129,8 +129,8 @@ const Terms = ({ pageNumber }) => {
                         full, all intellectual property rights for the project
                         will be transferred to you. Until then, all materials,
                         including design concepts, drafts, and prototypes, are
-                        the property of Soft Enterprise. In case, the project
-                        goes to default, Soft Enterprise has the right to
+                        the property of Dental Brando. In case, the project
+                        goes to default, Dental Brando has the right to
                         utilize the property for any other project, client or
                         third party.
                       </p>
@@ -158,12 +158,12 @@ const Terms = ({ pageNumber }) => {
 
                     <div class=" w-full mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
                       <p>
-                        Soft Enterprise will provide a warranty for their
+                        Dental Brando will provide a warranty for their
                         services and work, but will not be held responsible for
                         any damages resulting from website use. Appropriate
                         maintenance is recommended. After the project handover,
                         the client will be solely responsible for changing all
-                        credentials and access. Soft Enterprise will not be
+                        credentials and access. Dental Brando will not be
                         liable for any damages incurred after the project
                         handover to the client.
                       </p>
