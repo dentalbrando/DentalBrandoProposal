@@ -16,20 +16,20 @@ const Terms = ({ pageNumber }) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill="#0ea5e9"
+                    fill="#093A5B"
                     d="m221.76 69.66l-88-48.18a12 12 0 0 0-11.52 0l-88 48.18A12 12 0 0 0 28 80.18v95.64a12 12 0 0 0 6.24 10.52l88 48.18a11.95 11.95 0 0 0 11.52 0l88-48.18a12 12 0 0 0 6.24-10.52V80.18a12 12 0 0 0-6.24-10.52ZM220 175.82a4 4 0 0 1-2.08 3.5l-88 48.18a4 4 0 0 1-3.84 0l-88-48.18a4 4 0 0 1-2.08-3.5V80.18a4 4 0 0 1 2.08-3.5l88-48.18a3.94 3.94 0 0 1 3.84 0l88 48.18a4 4 0 0 1 2.08 3.5Z"
                   />
                 </svg>
-                <h6 class="absolute ml-[1.1rem] top-5 text-[#093A5B]  text-[12pt]">
+                <h6 class="absolute ml-[1.4rem] top-5 text-[#03A0D7]  text-[12pt]">
                   {pageNumber}
                 </h6>
               </div>
               <div class="mt-[65px]">
-                <h3 class="font-[700] text-[9pt] text-[#093A5B]">
+                <h3 class="font-[700] text-[9pt] text-[#03A0D7]">
                   Dental Brando
                 </h3>
 
-                <h3 class=" font-[700]  text-[9pt] text-[#093A5B]">
+                <h3 class=" font-[700]  text-[9pt] text-[#03A0D7]">
                   Business Proposal
                 </h3>
 
@@ -129,10 +129,9 @@ const Terms = ({ pageNumber }) => {
                         full, all intellectual property rights for the project
                         will be transferred to you. Until then, all materials,
                         including design concepts, drafts, and prototypes, are
-                        the property of Dental Brando. In case, the project
-                        goes to default, Dental Brando has the right to
-                        utilize the property for any other project, client or
-                        third party.
+                        the property of Dental Brando. In case, the project goes
+                        to default, Dental Brando has the right to utilize the
+                        property for any other project, client or third party.
                       </p>
                     </div>
                   </div>
@@ -158,14 +157,14 @@ const Terms = ({ pageNumber }) => {
 
                     <div class=" w-full mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
                       <p>
-                        Dental Brando will provide a warranty for their
-                        services and work, but will not be held responsible for
-                        any damages resulting from website use. Appropriate
+                        Dental Brando will provide a warranty for their services
+                        and work, but will not be held responsible for any
+                        damages resulting from website use. Appropriate
                         maintenance is recommended. After the project handover,
                         the client will be solely responsible for changing all
-                        credentials and access. Dental Brando will not be
-                        liable for any damages incurred after the project
-                        handover to the client.
+                        credentials and access. Dental Brando will not be liable
+                        for any damages incurred after the project handover to
+                        the client.
                       </p>
                     </div>
                   </div>
