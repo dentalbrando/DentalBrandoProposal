@@ -35,10 +35,15 @@ const LastPage = () => {
             </div>
             <div class="w-fit">
               <img
-                class="w-[110px] absolute bottom-[70px] mx-10"
+                class="w-[110px] absolute bottom-[70px] mx-10 z-0"
                 src={svg1.src}
                 alt=""
               />
+              <div class="w-[110px] h-[110px] absolute bottom-[70px] mx-10  flex justify-center items-center"> 
+              <div class="w-[40px] h-[30px] bg-white z-30 "> 
+
+              </div>
+              </div>
             </div>
             <div class="flex gap-16  absolute bottom-[70px] right-10">
               <div class="  flex flex-col items-center justify-center">
