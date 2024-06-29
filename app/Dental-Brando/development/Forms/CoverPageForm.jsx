@@ -12,8 +12,8 @@ import {
   setValidDate,
   setCompanyLogo,
 } from "@app/store/coverPageSlice";
-import TextInput from "../TextInput";
 import { setPopup } from "@app/store/popup";
+import TextInput from "@components/TextInput";
 
 const CoverPageForm = () => {
   const dispatch = useDispatch();

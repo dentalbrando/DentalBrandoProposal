@@ -107,7 +107,7 @@ const BudgetForm = () => {
           </div>
         </div>
       ))}
-      <div className="flex justify-center items-center my-10 w-[100%]  my-5">
+      <div className="flex justify-center items-center my-10 w-[100%]  my-15">
         <TextInput
           label="Currency"
           type="text"

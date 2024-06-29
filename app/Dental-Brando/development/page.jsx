@@ -1,6 +1,6 @@
 "use client";
 import Sidebar from "@components/Sidebar";
-import Form from "@components/Form";
+import Form from "./Form";
 import { useSelector } from "react-redux";
 import FullProposal from "./FullProposal";
 import Nav from "@components/Nav";
