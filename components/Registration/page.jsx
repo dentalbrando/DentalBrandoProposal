@@ -8,7 +8,7 @@ function Registration(prop) {
   let { setTokenVerifierTrigger, tokenVerifierTrigger, setUserId } = prop;
   let [loginToggle, setLoginToggle] = useState(true);
   const dispatch = useDispatch();
-
+ 
   return (
     <div className="w-screen h-screen custom-bg">
       <div className="flex justify-center items-center w-screen h-screen">
