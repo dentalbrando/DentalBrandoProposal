@@ -362,25 +362,25 @@ function Proposal() {
                 <table className="table-border mx-auto">
                   <thead className="w-full">
                     <tr className="">
-                      <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
+                      <th className="th-border text-center text-lg py-2 w-[100px]">
                         No.
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[185px">
+                      <th className="th-border text-center text-lg py-2 w-[185px">
                         Client Name
                       </th>
-                      {/* <th className="th-border text-center text-lg text-lg py-2 w-[205px">
+                      {/* <th className="th-border text-center text-lg py-2 w-[205px">
                         Project Title
                       </th> */}
-                      <th className="th-border text-center text-lg text-lg py-2 w-[225px">
+                      <th className="th-border text-center text-lg py-2 w-[225px">
                         Company Name
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[175px">
+                      <th className="th-border text-center text-lg py-2 w-[175px">
                         Issue Date
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[175px">
+                      <th className="th-border text-center text-lg py-2 w-[175px">
                         Valid Date
                       </th>
-                      <th className="last-th-border text-center text-lg text-lg py-2 w-[205px]">
+                      <th className="last-th-border text-center text-lg py-2 w-[205px]">
                         Action
                       </th>
                     </tr>

@@ -102,7 +102,7 @@ const SidebarSmm = () => {
                           {item.checked ? <FaCheck /> : null}
                         </div>
                         <p
-                          className={`font-medium text-[18px] font-medium text-black ${
+                          className={`font-medium text-[18px] text-black ${
                             page.formId === item.id ||
                             page.formId + "" === item.id
                               ? "text-white"
@@ -120,14 +120,18 @@ const SidebarSmm = () => {
               <div className="flex flex-col gap-3">
                 <button
                   type="button"
-                  className="mt-8 border border-gray-200 p-3 rounded-2xl bg-main-blue text-white font-[500] font-[24px]"
+                  className="mt-8 border border-gray-200 p-3 rounded-2xl bg-main-blue text-white font-[500] "
+                                    style={{fontSize:"24px"}}
+
                   onClick={() => generate()}
                 >
                   Generate All
                 </button>
                 <button
                   type="button"
-                  className="p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
+                  className="p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] "
+                                    style={{fontSize:"24px"}}
+
                   onClick={() => {
                     dispatch(resetSquenceSmm());
                     setItems([
@@ -169,13 +173,17 @@ const SidebarSmm = () => {
                   Reset All
                 </button>
                 <Link
-                  className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
+                  className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] "
+                                    style={{fontSize:"24px"}}
+
                   href="/social-media-recent"
                 >
                   Recent Proposals
                 </Link>
                 <button
-                  className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] font-[24px]"
+                  className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] "
+                                    style={{fontSize:"24px"}}
+
                   onClick={logout}
                 >
                   Log Out
