@@ -101,13 +101,10 @@ const Home = () => {
         <>
           <Nav main={true} />
          
-          <div className="w-[95%] 2xl:w-[87%] h-fit mx-auto pb-7 md:pb-14 pt-3 md:pt-3">
-            <div className="w-[full] h-fit py-4 md:py-8 flex flex-col gap-2 md:gap-5 z-100">
-              <h2 className="text-[16px] md:text-[25px] font-[600] text-[rgb(0,162,255)]">
-                SOFT ENTERPRISE
-              </h2>
-              <div className="w-[full] h-fit linkDiv bg-neutral-50 px-3 md:px-10 xl:px-14 py-4 md:py-8 rounded-[10px] border-2 border-color flex flex-row justify-start items-center gap-2 md:gap-5 xl:gap-10 overflow-auto">
-                <Link href={"/development"} className="w-[200px] h-[240px]">
+          <div className="w-[95%] 2xl:w-[87%] h-full mx-auto pt-20 ">
+            <div className="w-full h-full flex flex-col gap-2 md:gap-5 z-100">
+              <div className="w-full h-fit linkDiv bg-neutral-50 rounded-[10px] flex flex-row justify-center items-center gap-2 md:gap-5 xl:gap-20 overflow-auto">
+                <Link href={"/development"} className="w-[25%] h-[20%]">
                   <div className="w-[100%] h-[100%] relative">
                     <div className="w-[100%] h-[100%]">
                       <img src={frame3.src} className="w-[100%] h-[100%]" />
@@ -117,7 +114,7 @@ const Home = () => {
                     </div>
                   </div>
                 </Link>
-                <Link href={"/seo"} className="w-[200px] h-[240px]">
+                <Link href={"/seo"} className="w-[25%] h-[20%]">
                   <div className="w-[100%] h-[100%] relative">
                     <div className="w-[100%] h-[100%]">
                       <img src={frame1.src} className="w-[100%] h-[100%]" />
@@ -127,30 +124,13 @@ const Home = () => {
                     </div>
                   </div>
                 </Link>
-                <Link href={"/social-media"} className="w-[200px] h-[240px]">
+                <Link href={"/social-media"} className="w-[25%] h-[20%]">
                   <div className="w-[100%] h-[100%] relative">
                     <div className="w-[100%] h-[100%]">
                       <img src={frame2.src} className="w-[100%] h-[100%]" />
                     </div>
                     <div className="h-fit w-[50%] absolute bottom-0 right-0">
                       <img src={layer3.src} />
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="w-[full] h-fit py-4 md:py-8 flex flex-col gap-2 md:gap-5 z-100">
-              <h2 className="text-[16px] md:text-[25px] font-[600] text-[rgb(0,162,255)]">
-                Dental Brando
-              </h2>
-              <div className="w-[full] h-fit linkDiv bg-neutral-50 px-3 md:px-10 xl:px-14 py-4 md:py-8 rounded-[10px] border-2 border-color flex flex-row justify-start items-center gap-2 md:gap-5 xl:gap-10 overflow-auto">
-                <Link href={"Dental-Brando/development"} className="w-[200px] h-[240px]">
-                  <div className="w-[100%] h-[100%] relative">
-                    <div className="w-[100%] h-[100%]">
-                      <img src={frame3.src} className="w-[100%] h-[100%]" />
-                    </div>
-                    <div className="h-fit w-[50%] absolute bottom-0 right-0">
-                      <img src={layer2.src} />
                     </div>
                   </div>
                 </Link>
