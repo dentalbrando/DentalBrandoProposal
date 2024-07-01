@@ -4,7 +4,7 @@ import RegistrationModel from "@app/models/registration";
 import { NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
 
-export async function POST(req) {
+export async function GET(req) {
   let securityKey = process.env.SECURITY_KEY;
   try {
     let { username, password } = await req.json();
