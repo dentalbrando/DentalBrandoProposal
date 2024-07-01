@@ -1,5 +1,5 @@
 import Login from "@components/Registration/Login";
-import loginImage from "@public/assets/loginImage2.png";
+import loginImage from "@public/assets/loginImage2.svg";
 import ChangePassword from "./ChangePassword";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
