@@ -6,7 +6,6 @@ import seo1 from "@public/assets/socialMedia/seo1.png";
 
 function CoverPage(prop) {
   const cover_pageSeo = useSelector((state) => state.cover_pageSeo);
-  console.log(cover_pageSeo);
   return (
     <div className="w-[8.27in] h-[1123px] shadow-lg overflow-hidden bg-white">
       <div className="flex flex-col justify-center items-center h-[100%] relative bg-white">

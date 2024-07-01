@@ -17,7 +17,6 @@ export default function SaveProposaltoDbSmm() {
     if (saveButtonText === "Saved") {
       return;
     }
-    console.log(aboutProject);
     try {
       setLoading(true);
       await axios.post("/api/proposalsmm", {

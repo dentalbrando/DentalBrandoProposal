@@ -49,7 +49,6 @@ const SidebarSmm = () => {
       console.error("Error logging out:", error);
     } finally {
       window.location.href = "/";
-      console.log("window.location.pathname");
     }
   }
 

@@ -78,16 +78,6 @@ The purpose of Client Coverage team serves as a single point of contact, underst
     );
   }, [websiteCMSs, overviews]);
 
-  console.log(
-    "overviews: ",
-    overviews,
-    "functionalities: ",
-    functionalities,
-    "websiteCMSs: ",
-    websiteCMSs,
-    ab
-  );
-
   return (
     <>
       <div class="offer w-[8.27in] h-[1122.6px] shadow-lg bg-white">

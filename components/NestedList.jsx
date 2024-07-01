@@ -126,7 +126,6 @@ const NestedList = ({ proposedSitemap, setSiteMap, shortcutKey }) => {
 
 
 const NestedListB = ({ proposedSitemap, setSiteMap, shortcutKey }) => {
-    // const sitemap = useSelector((state) => console.log(state));
     const sitemap = useSelector((state) => proposedSitemap == 1 ? state.proposedSitemap.sitemap : state.proposedSitemap2.sitemap2);
     const formId = useSelector((state) => state.page.formId);
     const [items, setItems] = useState(sitemap || []);

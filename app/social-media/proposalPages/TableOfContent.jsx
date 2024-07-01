@@ -11,7 +11,6 @@ function TableOfContent() {
   //     item.content !== "Cover Page" && item.content !== "Table of Contents"
   // );
   // useEffect(() => {
-  //   console.log(pageSequenceSmm);
   // }, [pageSequenceSmm]);
 
   return (

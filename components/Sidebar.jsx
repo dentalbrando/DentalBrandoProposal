@@ -35,7 +35,6 @@ const Sidebar = () => {
   };
   useEffect(() => {
     dispatch(setPageSequence(items));
-    // console.log(pageSequence);
   }, [items]);
 
   async function logout() {
@@ -45,7 +44,6 @@ const Sidebar = () => {
       console.error("Error logging out:", error);
     } finally {
       window.location.href = "/";
-      console.log("window.location.pathname");
     }
   }
 

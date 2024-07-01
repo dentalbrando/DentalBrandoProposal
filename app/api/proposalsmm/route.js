@@ -3,7 +3,6 @@ import { NextResponse } from "next/server";
 
 export async function POST(req) {
   let proposalSmmData = await req.json();
-  console.log(proposalSmmData);
   try {
     await ProposalSmmModel(proposalSmmData).save();
     return NextResponse.json({ proposalSmmData: "proposalSmmData" });
@@ -15,6 +14,5 @@ export async function POST(req) {
 
 export async function GET(req) {
   let proposalSmmData = await ProposalSmmModel.find();
-  console.log(proposalSmmData);
   return NextResponse.json({ proposalSmmData });
 }

@@ -91,7 +91,6 @@ function Proposal() {
     //   }
     // }
     // verifyTokenApi();
-    console.log("seoFunc");
   }, [isVerified]);
 
   useEffect(() => {
@@ -102,7 +101,6 @@ function Proposal() {
       } catch (err) {
         setIsVerified(false);
       }
-      console.log("verified");
     }
     verifyTokenApi();
   }, []);
