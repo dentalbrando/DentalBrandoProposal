@@ -277,7 +277,7 @@ input[type="number"]::-webkit-inner-spin-button {
   grid-area: 1/1;
   border: 8px solid;
   border-radius: 50%;
-  border-color: rgb(1, 161, 255) rgb(1, 161, 255) rgb(1, 161, 255) #0000;
+  border-color: #093A5B #093A5B #093A5B #0000;
   mix-blend-mode: darken;
   animation: s4 1s infinite linear;
 }
@@ -293,10 +293,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .bg-tableBlueColor {
-  background-color: rgb(1, 161, 255);
+  background-color: #093A5B;
 }
 .text-tableBlueColor {
-  color: rgb(1, 161, 255);
+  color: #093A5B;
 }
 .th-border {
   border: solid rgb(217, 217, 217) 3px;
@@ -334,7 +334,7 @@ th {
 }
 
 .bg-main-blue {
-  background-color: rgb(1, 161, 255);
+  background-color: #093A5B;
 }
 
 .bg-hover-blue:hover {
@@ -344,10 +344,10 @@ th {
   background-color: #00a2ff1a;
 }
 .bg-light-blue:hover {
-  background-color: rgb(1, 161, 255);
+  background-color: #093A5B;
 }
 .text-main-blue {
-  color: rgb(1, 161, 255);
+  color: #093A5B;
 }
 
 .roundedBox {
