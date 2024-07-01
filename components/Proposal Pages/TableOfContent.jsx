@@ -1,4 +1,4 @@
-import img from "@public/assets/table of content's image.png";
+import img from "@public/assets/DB Web Development Proposal-14.png";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
@@ -14,7 +14,7 @@ const TableOfContent = () => {
           className="flex justify-between mx-auto pl-14 bg-pink-20 w-full h-full"
         >
           <section className="w-[calc(100%-59px)]">
-            <div className="text-[25pt] font-[700] text-[#00A2FF] mt-[131px] w-[305px] ">
+            <div className="text-[25pt] font-[700] text-[#093A5B] mt-[131px] w-[305px] ">
               <div>
                 <h1
                   style={{ lineHeight: "1", fontFamily: "Montserrat" }}
@@ -25,7 +25,7 @@ const TableOfContent = () => {
               </div>
 
               <div>
-                <div className="w-[90px] bg-[#FED500] h-[6px]"></div>
+                <div className="w-[90px] bg-[#03A0D7] h-[6px]"></div>
               </div>
             </div>
             <div style={{ paddingRight: "44px" }} className="whitespace-nowrap">
@@ -420,7 +420,7 @@ const TableOfContent = () => {
 
           <section>
             <div className="flex flex-col justify-end items-end ">
-              <div className="w-[59px] h-[297mm] bg-[#FED500]"></div>
+              <div className="w-[59px] h-[297mm] bg-[#03A0D7]"></div>
             </div>
           </section>
         </div>

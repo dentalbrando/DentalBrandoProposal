@@ -1,6 +1,7 @@
 import React from "react";
 
-import log from "@public/assets/budgetImgs/logo.png";
+// import log from "@public/assets/budgetImgs/logo.png";
+import log from "@public/assets/DB Logo-15.svg";
 import { useSelector } from "react-redux";
 
 const Budget = () => {
@@ -30,22 +31,28 @@ const Budget = () => {
       <div className="relative overflow-hidden shadow-lg bg-white w-[8.27in] h-[1122.6px]">
         <div>
           <div className="flex justify-between items-center">
-            <img
+            {/* <img
               src={log.src}
               alt=""
               className="ml-14"
+              style={{ width: "200px" }}
+            /> */}
+            <img
+              src={log.src}
+              alt=""
+              className="ml-14 my-10"
               style={{ width: "200px" }}
             />
             <div className="flex flex-col items-end gap-5">
               <div className="flex items-center">
                 <div
-                  className="bg-[#ffd600] relative w-[7rem] left-[5.5rem] h-28"
+                  className="bg-[#03A0D7] relative w-[7rem] left-[5.5rem] h-28"
                   style={{
                     clipPath: "polygon(75% 0, 100% 0, 25% 100%, 0 100%)",
                   }}
                 ></div>
                 <div
-                  className="bg-[#00a2ff] w-[22rem] h-28 flex justify-center items-center"
+                  className="bg-[#093A5B] w-[22rem] h-28 flex justify-center items-center"
                   style={{
                     clipPath: "polygon(24% 0, 100% 0, 100% 100%, 0% 100%)",
                   }}
@@ -59,11 +66,11 @@ const Budget = () => {
           </div>
           <div className="flex items-end justify-between mt-[-1rem]">
             <div className="relative">
-              <div className="bg-[#ffd600] h-6 w-72"></div>
-              <div className="bg-[#ffd600] h-6 w-80 rotate-[-53deg] absolute bottom-[123px] left-[215px]"></div>
+              <div className="bg-[#03A0D7] h-6 w-72"></div>
+              <div className="bg-[#03A0D7] h-6 w-80 rotate-[-53deg] absolute bottom-[123px] left-[215px]"></div>
             </div>
             <div
-              className="bg-[#00a2ff] w-[28rem] h-14 flex justify-center items-center text-white text-[17.71pt] font-[600]"
+              className="bg-[#093A5B] w-[28rem] h-14 flex justify-center items-center text-white text-[17.71pt] font-[600]"
               style={{
                 clipPath: "polygon(11.5% 0, 100% 0, 100% 100%, 2% 100%)",
               }}
@@ -96,14 +103,14 @@ const Budget = () => {
           <div className="mt-2">
             <div className="flex items-center relative" role="navigation">
               <div
-                className="bg-[#00a2ff] w-[53%] h-10 text-[11pt] font-[800] text-white flex items-center gap-8 pl-5"
+                className="bg-[#093A5B] w-[53%] h-10 text-[11pt] font-[800] text-white flex items-center gap-8 pl-5"
                 style={{ clipPath: "polygon(0 0, 98% 2%, 91% 100%, 0 100%)" }}
               >
                 <h3>NO.</h3>
                 <h3>SERVICES DESCRIPTION</h3>
               </div>
               <div
-                className="bg-[#ffd600] w-[53%] h-10 absolute right-0 text-[11pt] font-[800] flex items-center justify-end pr-5 gap-9"
+                className="bg-[#03A0D7] w-[53%] h-10 absolute right-0 text-[11pt] font-[800] flex items-center justify-end pr-5 gap-9"
                 style={{
                   clipPath: "polygon(9% 2%, 100% 0, 100% 100%, 0 100%)",
                 }}
@@ -145,7 +152,7 @@ const Budget = () => {
           {/* {totalEstimate === 0 ? null : totalEstimate} */}
 
           <div className="mt-[13.8rem]">
-            <div className="bg-[#ffd600] w-full h-14 text-[11pt] font-[700] flex items-center justify-end ">
+            <div className="bg-[#03A0D7] w-full h-14 text-[11pt] font-[700] flex items-center justify-end ">
               <div className="w-[30%]">
                 <div className="flex items-center gap-2">
                   <p>Subtotal :</p>
@@ -166,7 +173,7 @@ const Budget = () => {
                 ) : null}
               </div>
             </div>
-            <div className="bg-[#00a2ff] w-full h-14 text-[13.77pt] font-[700] text-white flex items-center justify-end  gap-12">
+            <div className="bg-[#093A5B] w-full h-14 text-[13.77pt] font-[700] text-white flex items-center justify-end  gap-12">
               <div className="flex w-[30%] gap-1 bg-red-40">
                 <p>TOTAL |</p>
                 <span className="capitalize">
@@ -191,11 +198,11 @@ const Budget = () => {
         </div>
         <div className="flex items-end absolute bottom-0 w-full">
           <div
-            className="bg-[#00a2ff] w-[55%] z-10 h-16"
+            className="bg-[#093A5B] w-[55%] z-10 h-16"
             style={{ clipPath: "polygon(0 0, 73% 0%, 100% 100%, 0 100%)" }}
           ></div>
           <div
-            className="bg-[#ffd600] w-[55%] h-10 absolute right-0"
+            className="bg-[#03A0D7] w-[55%] h-10 absolute right-0"
             style={{ clipPath: "polygon(0% 0%, 100% 0, 100% 100%, 10% 100%)" }}
           ></div>
         </div>

@@ -1,35 +1,48 @@
-import logo from "@public/assets/logo.jpg";
-import cover from "@public/assets/cover.jpg";
+// import logo from "@public/assets/logo.jpg";
+import logo from "@public/assets/DB Logo-15.svg";
+import cover from "@public/assets/DB Web Development Proposal-13.png";
 import { useSelector } from "react-redux";
 
 const CoverPage = () => {
   const cover_page = useSelector((state) => state.cover_page);
   return (
-    <> 
-      <div className=" flex justify-center items-center shadow-lg bg-white">
+    <>
+      <div className=" flex justify-center items-center shadow-lg">
         <div
           className="relative w-[8.27in] h-[1122.6px] mx-auto bg-white"
           style={{ fontFamily: "'Montserrat'" }}
         >
           <div className="mt-4 flex items-center">
-            <div className="w-[80%] h-5 custom-shape1"></div>
-            <div className="h-5 w-[20%] custom-shape2"></div>
+            <div className="w-[80%] h-5 custom-shape1DB"></div>
+            <div className="h-5 w-[20%] custom-shape2DB"></div>
           </div>
-          <img className="w-[18rem] mx-auto" src={logo.src} alt="" />
-          <h2 className="text-[#00A2FF] font-[700] text-[16pt] w-[70%] mt-[-35px] mx-auto leading-[1.18] flex justify-center items-center text-justif bg-red-30 tracking-[0.5pt]" style={{"textAlign":"justify", "textAlignLast":"center"}}>
+          <img
+            className="w-[18rem] my-10 mx-auto"
+            src={logo.src}
+            alt=""
+          />
+          {/* <img
+            className="w-[18rem] mx-auto"
+            src={logo.src}
+            alt=""
+          /> */}
+          <h2
+            className="text-[rgb(9,58,91)] font-[700] text-[16pt] w-[70%] mt-[-35px] mx-auto leading-[1.18] flex justify-center items-center text-justif bg-red-30 tracking-[0.5pt]"
+            style={{ textAlign: "justify", textAlignLast: "center" }}
+          >
             {cover_page.subHeading == ""
               ? "A comprehensive website transfer proposal to enhance the professionalism of your business."
               : cover_page.subHeading}
           </h2>
           <div className="relative mt-5 h-fit flex items-center">
-            <div className="bg-[#00A2FF] z-[1] w-[68%] h-[26rem] custom-shape3 flex items-center pl-14">
+            <div className="bg-[rgb(9,58,91)] z-[1] w-[68%] h-[26rem] custom-shape3 flex items-center pl-14">
               <div className="flex flex-col justify-center">
                 <span className="text-white w-[19rem] text-[24.85pt] leading-[2.5rem] font-[700] tracking-[0.5pt]">
-                  {cover_page.projectTitle == "" 
+                  {cover_page.projectTitle == ""
                     ? "{No Project title}"
                     : cover_page.projectTitle}
                 </span>
-                <div className="bg-[#ffd600] h-2 w-24 mt-1"></div>
+                <div className="bg-[rgb(3,160,215)] h-2 w-24 mt-1"></div>
               </div>
             </div>
             <img
@@ -90,7 +103,6 @@ const CoverPage = () => {
                 </span>
               </div>
 
-              
               <div className="text-[11pt] font-[700]">
                 <p>Proposal Valid to:</p>
                 <span className="" id="valid-date">
@@ -102,8 +114,8 @@ const CoverPage = () => {
             </div>
           </div>
           <div className="absolute w-full right-0 bottom-0 pb-4 flex items-center">
-            <div className="h-5 w-[20%] bg-[#ffd600] custom-shape4"></div>
-            <div className="w-[80%] h-5 bg-[#00A2FF] custom-shape5"></div>
+            <div className="h-5 w-[20%] bg-[rgb(3,160,215)] custom-shape4"></div>
+            <div className="w-[80%] h-5 bg-[rgb(9,58,91)] custom-shape5"></div>
           </div>
         </div>
       </div>

@@ -8,12 +8,12 @@ const CoverLetter = ({ pageNumber }) => {
   if (cover_letter.letterType === "web_dev" && cover_letter.letterText === "") {
     var tempLetterText = `We are writing to express our interest in your web development project. As a company with extensive experience in web development and a track record of delivering exceptional results for our clients, we are confident that we would be the ideal partner for your project.
 <p class = 'py-1'></p>
-At Soft Enterprise, we understand that your website is often the first point of contact between your business and your customers. As such, we are committed to migrate your website to the sharepoint.
+At Dental Brando, we understand that your website is often the first point of contact between your business and your customers. As such, we are committed to migrate your website to the sharepoint.
 Our team of experienced web developers, designers, and project manager work closely with clients to understand their specific needs and requirements. We have expertise in a wide range of technologies including Wordpress, Laravel, Angular, PHP, Share Point, Vue.Js, React, Shopify, Python and more. We are always exploring new and innovative approaches to web development.
 <p class = 'py-1'></p>
 At every stage of the project, we prioritize communication and collaboration to ensure that you are fully involved in the process and the final product meets your expectations. We are dedicated to delivering projects on time and within budget, and we offer going support and maintenance to ensure that your website continues to perform at its best.
 <p class = 'py-1'></p>
-Thank you for considering Soft Enterprise for your web development needs. We are excited at the prospect of working with you and creating a website that will help your business succeed.
+Thank you for considering Dental Brando for your web development needs. We are excited at the prospect of working with you and creating a website that will help your business succeed.
 <p class = 'py-1'></p>
 Sincerely,`;
   } else {
@@ -47,8 +47,8 @@ Sincerely,`;
     <div className="offer flex w-[8.27in] h-[1122.6px] shadow-lg bg-white">
       <div className=" flex w-full">
         <div className="flex">
-          <div className="ml-3 w-[3px] h-full bg-[#00A2FF] "></div>
-          <div className="line ml-3 mr-1 h-full w-[3px]  bg-[#FED500] "></div>
+          <div className="ml-3 w-[3px] h-full bg-[#093A5B] "></div>
+          <div className="line ml-3 mr-1 h-full w-[3px]  bg-[#03A0D7] "></div>
           <div className="mt-[50px] h-[90%] relative w-full ">
             <svg
               className="transform rotate-90 relative  top-0 "
@@ -58,36 +58,36 @@ Sincerely,`;
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill="#0ea5e9"
+                fill="#093A5B"
                 d="m221.76 69.66l-88-48.18a12 12 0 0 0-11.52 0l-88 48.18A12 12 0 0 0 28 80.18v95.64a12 12 0 0 0 6.24 10.52l88 48.18a11.95 11.95 0 0 0 11.52 0l88-48.18a12 12 0 0 0 6.24-10.52V80.18a12 12 0 0 0-6.24-10.52ZM220 175.82a4 4 0 0 1-2.08 3.5l-88 48.18a4 4 0 0 1-3.84 0l-88-48.18a4 4 0 0 1-2.08-3.5V80.18a4 4 0 0 1 2.08-3.5l88-48.18a3.94 3.94 0 0 1 3.84 0l88 48.18a4 4 0 0 1 2.08 3.5Z"
               />
             </svg>
-            <h6 className="absolute ml-7 top-5 text-[#00A2FF] text-[12pt]">
+            <h6 className="absolute ml-6 top-5 text-[#03A0D7] text-[12pt]">
               {pageNumber}
             </h6>
           </div>
         </div>
 
         <div className=" w-[85%]">
-          <h3 className="mt-[60px] font-[700] text-[9pt] text-[#00A2FF]">
-            Soft Enterprise
+          <h3 className="mt-[60px] font-[700] text-[9pt] text-[#03A0D7]">
+            Dental Brando
           </h3>
 
-          <h3 className=" font-[700] text-[9pt] text-[#00A2FF]">
+          <h3 className=" font-[700] text-[9pt] text-[#03A0D7]">
             Business Proposal
           </h3>
 
-          <div className=" mt-2 w-[6.7in] h-0.5 bg-[#00A2FF] "></div>
+          <div className=" mt-2 w-[6.7in] h-0.5 bg-[#093A5B] "></div>
 
           <div className="mt-[70px]">
             <h1
-              className="font-[700] text-[25pt] text-[#00A2FF] leading-9"
+              className="font-[700] text-[25pt] text-[#093A5B] leading-9"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               COVER <br />
               LETTER{" "}
             </h1>
-            <div className="bline mt-1 w-[90px] h-2 bg-[#FED500] "></div>
+            <div className="bline mt-1 w-[90px] h-2 bg-[#03A0D7] "></div>
           </div>
           <div className="name underline  mt-14 font-[700]  text-[17.5pt]">
             <p>
@@ -112,7 +112,7 @@ Sincerely,`;
                                 <div className="part-two mt-4  mr-6 ">
 
                                     <p>
-                                        At Soft Enterprise, we understand that your website is often the first point of contact
+                                        At Dental Brando, we understand that your website is often the first point of contact
                                         between your business and your customers. As such, we are committed to migrate
                                         your website to the sharepoint.
                                     </p>
@@ -140,7 +140,7 @@ Sincerely,`;
                                 <div className="part-five mt-4 ">
 
                                     <p>
-                                        Thank you for considering Soft Enterprise for your web development needs. We are
+                                        Thank you for considering Dental Brando for your web development needs. We are
                                         excited at the prospect of working with you and creating a website that will help your
                                         business succeed.
                                     </p>
@@ -172,7 +172,7 @@ Sincerely,`;
 
             <div className="end mt-2 ;">
               <p>Project Manager</p>
-              <p>Soft Enterprise</p>
+              <p>Dental Brando</p>
             </div>
           </div>
         </div>

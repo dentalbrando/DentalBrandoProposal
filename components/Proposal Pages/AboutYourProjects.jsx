@@ -78,6 +78,16 @@ The purpose of Client Coverage team serves as a single point of contact, underst
     );
   }, [websiteCMSs, overviews]);
 
+  console.log(
+    "overviews: ",
+    overviews,
+    "functionalities: ",
+    functionalities,
+    "websiteCMSs: ",
+    websiteCMSs,
+    ab
+  );
+
   return (
     <>
       <div class="offer w-[8.27in] h-[1122.6px] shadow-lg bg-white">
@@ -93,43 +103,43 @@ The purpose of Client Coverage team serves as a single point of contact, underst
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill="#0ea5e9"
+                    fill="#093A5B"
                     d="m221.76 69.66l-88-48.18a12 12 0 0 0-11.52 0l-88 48.18A12 12 0 0 0 28 80.18v95.64a12 12 0 0 0 6.24 10.52l88 48.18a11.95 11.95 0 0 0 11.52 0l88-48.18a12 12 0 0 0 6.24-10.52V80.18a12 12 0 0 0-6.24-10.52ZM220 175.82a4 4 0 0 1-2.08 3.5l-88 48.18a4 4 0 0 1-3.84 0l-88-48.18a4 4 0 0 1-2.08-3.5V80.18a4 4 0 0 1 2.08-3.5l88-48.18a3.94 3.94 0 0 1 3.84 0l88 48.18a4 4 0 0 1 2.08 3.5Z"
                   />
                 </svg>
-                <h6 class="absolute ml-[1.4rem] top-5 text-[#00A2FF]  text-[12pt]">
+                <h6 class="absolute ml-[1.4rem] top-5 text-[#03A0D7]  text-[12pt]">
                   {pageNumber}
                 </h6>
               </div>
               <div class="mt-[65px]">
-                <h3 class="font-[700] text-[9pt] text-[#00A2FF]">
-                  Soft Enterprise
+                <h3 class="font-[700] text-[9pt] text-[#03A0D7]">
+                  Dental Brando
                 </h3>
 
-                <h3 class=" font-[700]  text-[9pt] text-[#00A2FF]">
+                <h3 class=" font-[700]  text-[9pt] text-[#03A0D7]">
                   Business Proposal
                 </h3>
 
-                <div class=" mt-1  w-[6.5in] h-0.5 bg-[#00A2FF] "></div>
+                <div class=" mt-1  w-[6.5in] h-0.5 bg-[#093A5B] "></div>
               </div>
             </div>
 
             <div class="pt-[34px] mb-2">
               <h1
-                class="font-[700] text-[25pt] text-[#00A2FF] leading-9"
+                class="font-[700] text-[25pt] text-[#093A5B] leading-9"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 ABOUT YOUR
                 <br /> PROJECT
               </h1>
-              <div class="bline w-[90px] h-2 bg-[#ffd600]"></div>
+              <div class="bline w-[90px] h-2 bg-[#03A0D7]"></div>
             </div>
             <section class="pt-2">
               <div class="flex">
-                <div class="text-[16pt] text-[#00A2FF] font-[700] ">
+                <div class="text-[16pt] text-[#093A5B] font-[700] ">
                   <p>1.</p>
                 </div>
-                <div class="text-[16pt] text-[#00A2FF] px-3 font-[700]">
+                <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
                   <p>Overview & Goals</p>
                 </div>
               </div>
@@ -147,10 +157,10 @@ The purpose of Client Coverage team serves as a single point of contact, underst
             </section>
             <section>
               <div class="flex pt-10">
-                <div class="text-[16pt] text-[#00A2FF]  font-[700]">
+                <div class="text-[16pt] text-[#093A5B]  font-[700]">
                   <p>2.</p>
                 </div>
-                <div class="text-[16pt] text-[#00A2FF] px-3 font-[700]">
+                <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
                   <p>Key Features and Functionality</p>
                 </div>
               </div>
@@ -164,10 +174,10 @@ The purpose of Client Coverage team serves as a single point of contact, underst
             {tempWebsiteCMS ? (
               <section>
                 <div class="flex pt-10">
-                  <div class="text-[16pt] text-[#00A2FF] font-[700]">
+                  <div class="text-[16pt] text-[#093A5B] font-[700]">
                     <p>3.</p>
                   </div>
-                  <div class="text-[16pt] text-[#00A2FF] px-3 font-[700]">
+                  <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
                     <p>Website CMS</p>
                   </div>
                 </div>

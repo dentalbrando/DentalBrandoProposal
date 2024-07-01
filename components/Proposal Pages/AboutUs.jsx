@@ -19,45 +19,45 @@ const AboutUs = ({ pageNumber }) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill="#0ea5e9"
+                    fill="#093A5B"
                     d="m221.76 69.66l-88-48.18a12 12 0 0 0-11.52 0l-88 48.18A12 12 0 0 0 28 80.18v95.64a12 12 0 0 0 6.24 10.52l88 48.18a11.95 11.95 0 0 0 11.52 0l88-48.18a12 12 0 0 0 6.24-10.52V80.18a12 12 0 0 0-6.24-10.52ZM220 175.82a4 4 0 0 1-2.08 3.5l-88 48.18a4 4 0 0 1-3.84 0l-88-48.18a4 4 0 0 1-2.08-3.5V80.18a4 4 0 0 1 2.08-3.5l88-48.18a3.94 3.94 0 0 1 3.84 0l88 48.18a4 4 0 0 1 2.08 3.5Z"
                   />
                 </svg>
-                <h6 class="absolute ml-5 top-5 text-[#00A2FF]  text-[12pt]">
+                <h6 class="absolute ml-[1.4rem] top-5 text-[#03A0D7]  text-[12pt]">
                   {pageNumber}
                 </h6>
               </div>
               <div class="mt-[65px]">
-                <h3 class="font-[700]   text-[9pt] text-[#00A2FF]">
-                  Soft Enterprise
+                <h3 class="font-[700]   text-[9pt] text-[#03A0D7]">
+                  Dental Brando
                 </h3>
 
-                <h3 class=" font-[700]  text-[9pt] text-[#00A2FF]">
+                <h3 class=" font-[700]  text-[9pt] text-[#03A0D7]">
                   Business Proposal
                 </h3>
 
-                <div class=" mt-1  w-[3in] h-0.5 bg-[#00A2FF] "></div>
+                <div class=" mt-1  w-[3in] h-0.5 bg-[#093A5B] "></div>
               </div>
             </div>
 
             <div class="mt-[25px] ">
               <h1
-                class="font-[700]  text-[25pt] text-[#00A2FF] leading-10"
+                class="font-[700]  text-[25pt] text-[#093A5B] leading-10"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 ABOUT
                 <br />
                 US{" "}
               </h1>
-              <div class="bline mt-2 w-[90px] h-2 bg-[#ffd600] "></div>
+              <div class="bline mt-2 w-[90px] h-2 bg-[#03A0D7] "></div>
             </div>
 
             <div class=" text-center  mt-8 font-[400] text-[11pt] leading-5">
               <div class="Part-one    text-justify ">
                 <p>
-                  Welcome to Soft Enterprise, your one stop destination for your
+                  Welcome to Dental Brando, your one stop destination for your
                   all Web Development, Mobile APP Development, Software
-                  Development & Digital Marketing needs. At Soft Enterprise, we
+                  Development & Digital Marketing needs. At Dental Brando, we
                   pride ourselves on being a leading provider of customized IT
                   solutions that cater to the unique requirements of our
                   clients. With our extensive experience in the industry and
@@ -79,7 +79,7 @@ const AboutUs = ({ pageNumber }) => {
               </div>
               <div class="part-three mt-5 text-justify">
                 <p>
-                  At Soft Enterprise, we value transparency, communication, and
+                  At Dental Brando, we value transparency, communication, and
                   collaboration, and we strive to build long-term relationships
                   with our clients. We believe that by working together, we can
                   achieve great things and help your business
@@ -99,7 +99,7 @@ const AboutUs = ({ pageNumber }) => {
           </div>
         </div>
 
-        <div class="bg-[#00A2FF] h-full flex justify-center items-center px-[30px] w-[52%]">
+        <div class="bg-[#093A5B] h-full flex justify-center items-center px-[30px] w-[52%]">
           <div class="w-[100%]">
             <div class="flex mt-8">
               <div className=" ">

@@ -1,9 +1,9 @@
-import svg1 from "@public/assets/our process-01.svg";
-import svg2 from "@public/assets/our process-02.svg";
-import svg3 from "@public/assets/our process-03.svg";
-import svg4 from "@public/assets/our process-04.svg";
-import svg5 from "@public/assets/our process-05.svg";
-import svg6 from "@public/assets/our process-06.svg";
+import svg1 from "@public/assets/DbOurProcess/our process-01.svg";
+import svg2 from "@public/assets/DbOurProcess/our process-02.svg";
+import svg3 from "@public/assets/DbOurProcess/our process-03.svg";
+import svg4 from "@public/assets/DbOurProcess/our process-04.svg";
+import svg5 from "@public/assets/DbOurProcess/our process-05.svg";
+import svg6 from "@public/assets/DbOurProcess/our process-06.svg";
 
 const OurProcess = ({ pageNumber }) => {
   return (
@@ -21,37 +21,37 @@ const OurProcess = ({ pageNumber }) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill="#0ea5e9"
+                    fill="#093A5B"
                     d="m221.76 69.66l-88-48.18a12 12 0 0 0-11.52 0l-88 48.18A12 12 0 0 0 28 80.18v95.64a12 12 0 0 0 6.24 10.52l88 48.18a11.95 11.95 0 0 0 11.52 0l88-48.18a12 12 0 0 0 6.24-10.52V80.18a12 12 0 0 0-6.24-10.52ZM220 175.82a4 4 0 0 1-2.08 3.5l-88 48.18a4 4 0 0 1-3.84 0l-88-48.18a4 4 0 0 1-2.08-3.5V80.18a4 4 0 0 1 2.08-3.5l88-48.18a3.94 3.94 0 0 1 3.84 0l88 48.18a4 4 0 0 1 2.08 3.5Z"
                   />
                 </svg>
-                <h6 class="absolute ml-[1.4rem] top-5 text-[#00A2FF]  text-[12pt]">
+                <h6 class="absolute ml-[1.4rem] top-5 text-[#03A0D7]  text-[12pt]">
                   {pageNumber}
                 </h6>
               </div>
               <div class="mt-[65px]">
-                <h3 class="font-[700] text-[9pt] text-[#00A2FF]">
-                  Soft Enterprise
+                <h3 class="font-[700] text-[9pt] text-[#03A0D7]">
+                  Dental Brando
                 </h3>
 
-                <h3 class=" font-[700]  text-[9pt] text-[#00A2FF]">
+                <h3 class=" font-[700]  text-[9pt] text-[#03A0D7]">
                   Business Proposal
                 </h3>
 
-                <div class=" mt-1  w-[6.5in] h-0.5 bg-[#00A2FF] "></div>
+                <div class=" mt-1  w-[6.5in] h-0.5 bg-[#093A5B] "></div>
               </div>
             </div>
 
             <div class="mt-[40px]">
               <h1
-                class="font-[700] text-[25pt] text-[#00A2FF] leading-9"
+                class="font-[700] text-[25pt] text-[#093A5B] leading-9"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 OUR
                 <br />
                 PROCESS
               </h1>
-              <div class="bline w-[90px] h-2 mt-1 mb-3 bg-[#ffd600]"></div>
+              <div class="bline w-[90px] h-2 mt-1 mb-3 bg-[#03A0D7]"></div>
             </div>
             <div class="text-[11pt] flex text-justify">
               <p>
@@ -66,12 +66,12 @@ const OurProcess = ({ pageNumber }) => {
             <div>
               <section>
                 <div class="flex gap-3 my-3">
-                  <div class="w-1/2  border-2 border-[#00A2FF] rounded-tr-2xl rounded-bl-2xl flex">
+                  <div class="w-1/2  border-2 border-[#03A0D7] rounded-tr-2xl rounded-bl-2xl flex">
                     <div>
                       <div>
                         <div>
                           <p
-                            class="text-[#00A2FF] text-[30pt] font-[700] flex justify-end items-end mr-4 "
+                            class="text-[#093A5B] text-[30pt] font-[700] flex justify-end items-end mr-4 "
                             style={{ fontFamily: "open sans" }}
                           >
                             1
@@ -98,12 +98,12 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                     </div>
                   </div>
-                  <div class="w-1/2  border-2 border-[#00A2FF] rounded-tr-2xl rounded-bl-2xl flex">
+                  <div class="w-1/2  border-2 border-[#03A0D7] rounded-tr-2xl rounded-bl-2xl flex">
                     <div>
                       <div>
                         <div>
                           <p
-                            class="text-[#00A2FF] text-[30pt] font-[700] flex justify-end items-end mr-4 "
+                            class="text-[#093A5B] text-[30pt] font-[700] flex justify-end items-end mr-4 "
                             style={{ fontFamily: "open sans" }}
                           >
                             2
@@ -134,12 +134,12 @@ const OurProcess = ({ pageNumber }) => {
               </section>
               <section>
                 <div class="flex gap-3 my-3">
-                  <div class="w-1/2  border-2 border-[#00A2FF] rounded-tr-2xl rounded-bl-2xl flex">
+                  <div class="w-1/2  border-2 border-[#03A0D7] rounded-tr-2xl rounded-bl-2xl flex">
                     <div>
                       <div>
                         <div>
                           <p
-                            class="text-[#00A2FF] text-[30pt] font-[700] flex justify-end items-end mr-4 "
+                            class="text-[#093A5B] text-[30pt] font-[700] flex justify-end items-end mr-4 "
                             style={{ fontFamily: "open sans" }}
                           >
                             3
@@ -166,12 +166,12 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                     </div>
                   </div>
-                  <div class="w-1/2  border-2 border-[#00A2FF] rounded-tr-2xl rounded-bl-2xl flex">
+                  <div class="w-1/2  border-2 border-[#03A0D7] rounded-tr-2xl rounded-bl-2xl flex">
                     <div>
                       <div>
                         <div>
                           <p
-                            class="text-[#00A2FF] text-[30pt] font-[700] flex justify-end items-end mr-4 "
+                            class="text-[#093A5B] text-[30pt] font-[700] flex justify-end items-end mr-4 "
                             style={{ fontFamily: "open sans" }}
                           >
                             4
@@ -202,12 +202,12 @@ const OurProcess = ({ pageNumber }) => {
               </section>
               <section>
                 <div class="flex gap-3 my-3">
-                  <div class="w-1/2  border-2 border-[#00A2FF] rounded-tr-2xl rounded-bl-2xl flex">
+                  <div class="w-1/2  border-2 border-[#03A0D7] rounded-tr-2xl rounded-bl-2xl flex">
                     <div>
                       <div>
                         <div>
                           <p
-                            class="text-[#00A2FF] text-[30pt] font-[700] flex justify-end items-end mr-4 "
+                            class="text-[#093A5B] text-[30pt] font-[700] flex justify-end items-end mr-4 "
                             style={{ fontFamily: "open sans" }}
                           >
                             5
@@ -234,12 +234,12 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                     </div>
                   </div>
-                  <div class="w-1/2 border-2 border-[#00A2FF] rounded-tr-2xl rounded-bl-2xl flex">
+                  <div class="w-1/2 border-2 border-[#03A0D7] rounded-tr-2xl rounded-bl-2xl flex">
                     <div>
                       <div>
                         <div>
                           <p
-                            class="text-[#00A2FF] text-[30pt] font-[700] flex justify-end items-end mr-4 "
+                            class="text-[#093A5B] text-[30pt] font-[700] flex justify-end items-end mr-4 "
                             style={{ fontFamily: "open sans" }}
                           >
                             6

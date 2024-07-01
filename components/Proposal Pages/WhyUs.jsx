@@ -4,15 +4,15 @@ import svg3 from "@public/assets/whySoftImgs/icons-03.svg";
 import svg4 from "@public/assets/whySoftImgs/icons-04.svg";
 import svg5 from "@public/assets/whySoftImgs/icons-05.svg";
 import svg6 from "@public/assets/whySoftImgs/icons-06.svg";
-import svg7 from "@public/assets/whySoftImgs/icons-07.svg";
-import svg8 from "@public/assets/whySoftImgs/icons-08.svg";
-import svg9 from "@public/assets/whySoftImgs/icons-09.svg";
-import svg10 from "@public/assets/whySoftImgs/icons-10.svg";
+import svg7 from "@public/assets/DbwhySoftImgs/icons-07.svg";
+import svg8 from "@public/assets/DbwhySoftImgs/icons-08.svg";
+import svg9 from "@public/assets/DbwhySoftImgs/icons-09.svg";
+import svg10 from "@public/assets/DbwhySoftImgs/icons-10.svg";
 
 const WhyUs = ({ pageNumber }) => {
   return (
     <>
-      <div class="offer flex w-[8.27in] h-[1122.6px] bg-white shadow-lg print:shadow-none bg-white">
+      <div class="offer flex w-[8.27in] h-[1122.6px] bg-white shadow-lg print:shadow-none">
         <div class="flex w-full ">
           <div class="w-[90%]  mx-auto">
             <div class="flex print:h-[7.3rem] ">
@@ -25,52 +25,52 @@ const WhyUs = ({ pageNumber }) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill="#0ea5e9"
+                    fill="#093A5B"
                     d="m221.76 69.66l-88-48.18a12 12 0 0 0-11.52 0l-88 48.18A12 12 0 0 0 28 80.18v95.64a12 12 0 0 0 6.24 10.52l88 48.18a11.95 11.95 0 0 0 11.52 0l88-48.18a12 12 0 0 0 6.24-10.52V80.18a12 12 0 0 0-6.24-10.52ZM220 175.82a4 4 0 0 1-2.08 3.5l-88 48.18a4 4 0 0 1-3.84 0l-88-48.18a4 4 0 0 1-2.08-3.5V80.18a4 4 0 0 1 2.08-3.5l88-48.18a3.94 3.94 0 0 1 3.84 0l88 48.18a4 4 0 0 1 2.08 3.5Z"
                   />
                 </svg>
-                <h6 class="absolute ml-5 top-5 text-[#00A2FF]  text-[12pt]">
+                <h6 class="absolute ml-5 top-5 text-[#03A0D7]  text-[12pt]">
                   {pageNumber}
                 </h6>
               </div>
               <div class="mt-[65px]">
-                <h3 class="font-[700]   text-[9pt] text-[#00A2FF]">
-                  Soft Enterprise
+                <h3 class="font-[700]   text-[9pt] text-[#03A0D7]">
+                  Dental Brando
                 </h3>
 
-                <h3 class=" font-[700]  text-[9pt] text-[#00A2FF]">
+                <h3 class=" font-[700]  text-[9pt] text-[#03A0D7]">
                   Business Proposal
                 </h3>
 
-                <div class=" mt-1  w-[6.85in] h-0.5 bg-[#00A2FF] "></div>
+                <div class=" mt-1  w-[6.85in] h-0.5 bg-[#093A5B] "></div>
               </div>
             </div>
 
             <div class="mt-[25px] ">
               <h1
-                class="font-[700]  text-[25pt] text-[#00A2FF] leading-10"
+                class="font-[700]  text-[25pt] text-[#093A5B] leading-10"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 WHY <br />
-                SOFT ENTERPRISE{" "}
+                Dental Brando{" "}
               </h1>
-              <div class=" mt-1 w-[85px]  h-2 bg-[#ffd600] "></div>
+              <div class=" mt-1 w-[85px]  h-2 bg-[#03A0D7] "></div>
             </div>
 
             <div class="   mt-2 font-[400] text-[10pt] tracking-[-0.50pt]">
               <div class="Part-one mr-4    ">
                 <p>
                   Choosing the right web development company is crucial for a
-                  company's success. Soft Enterprise has a proven track record
-                  of delivering high quality websites and web applications. We
-                  believe that Soft Enterprise can be a valuable partner for
-                  your business looking to create or improve your online
-                  presence. We are excited to help your business live.
+                  company's success. Dental Brando has a proven track record of
+                  delivering high quality websites and web applications. We
+                  believe that Dental Brando can be a valuable partner for your
+                  business looking to create or improve your online presence. We
+                  are excited to help your business live.
                 </p>
               </div>
             </div>
 
-            <div class="flex   mt-10 border border-[#00A2FF]  w-[100%] h-[9%] mx-auto relative">
+            <div class="flex   mt-10 border border-[#093A5B]  w-[100%] h-[9%] mx-auto relative">
               <div class="w-fit h-fit flex items-center justify-center">
                 <img
                   src={svg9.src}
@@ -105,13 +105,13 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-black font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ">
                   Expertise
                 </p>
               </div>
             </div>
 
-            <div class="flex   mt-6 border border-[#ffd600]  w-[100%] h-[9%] mx-auto relative">
+            <div class="flex   mt-6 border border-[#03A0D7]  w-[100%] h-[9%] mx-auto relative">
               <div class="w-fit h-fit flex items-center justify-center">
                 <img
                   src={svg10.src}
@@ -146,14 +146,14 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-black font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ">
                   {" "}
                   Quality
                 </p>
               </div>
             </div>
 
-            <div class="flex   mt-6 border border-[#00A2FF]  w-[100%] h-[9%] mx-auto relative">
+            <div class="flex   mt-6 border border-[#093A5B]  w-[100%] h-[9%] mx-auto relative">
               <div class="w-fit h-fit flex items-center justify-center">
                 <img
                   src={svg9.src}
@@ -188,13 +188,13 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-black font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ">
                   Customer Satisfaction
                 </p>
               </div>
             </div>
 
-            <div class="flex   mt-6 border border-[#ffd600]  w-[100%] h-[9%] mx-auto relative">
+            <div class="flex   mt-6 border border-[#03A0D7]  w-[100%] h-[9%] mx-auto relative">
               <div class="w-fit h-fit flex items-center justify-center">
                 <img
                   src={svg10.src}
@@ -229,14 +229,14 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-black font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ">
                   {" "}
                   Competitive Pricing
                 </p>
               </div>
             </div>
 
-            <div class="flex   mt-6 border border-[#00A2FF]  w-[100%] h-[9%] mx-auto relative">
+            <div class="flex   mt-6 border border-[#093A5B]  w-[100%] h-[9%] mx-auto relative">
               <div class="w-fit h-fit flex items-center justify-center">
                 <img
                   src={svg9.src}
@@ -271,13 +271,13 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-black font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ">
                   Timely Delivery
                 </p>
               </div>
             </div>
 
-            <div class="flex   mt-6 border border-[#ffd600]  w-[100%] h-[9%] mx-auto relative">
+            <div class="flex   mt-6 border border-[#03A0D7]  w-[100%] h-[9%] mx-auto relative">
               <div class="w-fit h-fit flex items-center justify-center">
                 <img
                   src={svg10.src}
@@ -311,7 +311,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-black font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ">
                   {" "}
                   Ongoing Support
                 </p>
