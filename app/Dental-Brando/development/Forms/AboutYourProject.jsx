@@ -1,4 +1,4 @@
-import TextInput from "@components/TextInput";
+
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -6,7 +6,6 @@ import {
   setOverviews,
   setWebsiteCMSs,
 } from "@app/store/aboutYourProject";
-import { setPopup } from "@app/store/popup";
 
 const AboutYourProject = () => {
   
