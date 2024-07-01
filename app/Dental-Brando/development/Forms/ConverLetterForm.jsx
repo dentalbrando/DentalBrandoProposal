@@ -8,11 +8,11 @@ import {
   setLetterType,
   setClientName,
   setLetterText,
-} from "@app/store/coverLetterSlice";
+} from "@app/store/coverLetterBd";
 
 const ConverLetterForm = () => {
   const dispatch = useDispatch();
-  const coverLetter = useSelector((state) => state.cover_letter);
+  const coverLetter = useSelector((state) => state.cover_letterBd);
   if (coverLetter.letterType === "web_dev" && coverLetter.letterText === "") {
     var tempLetterText = `We are writing to express our interest in your web development project. As a company with extensive experience in web development and a track record of delivering exceptional results for our clients, we are confident that we would be the ideal partner for your project.
 At Dental Brando, we understand that your website is often the first point of contact between your business and your customers. As such, we are committed to migrate your website to the sharepoint.
@@ -44,7 +44,7 @@ Sincerely,`;
   useEffect(() => {
     handleSave();
   }, [letterText, clientName]);
-
+console.log(coverLetter);
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
       <div className="">

@@ -11,13 +11,12 @@ import {
   setIssueDate,
   setValidDate,
   setCompanyLogo,
-} from "@app/store/coverPageSlice";
-import { setPopup } from "@app/store/popup";
+} from "@app/store/coverPageBd";
 import TextInput from "@components/TextInput";
 
 const CoverPageForm = () => {
   const dispatch = useDispatch();
-  const coverPage = useSelector((state) => state.cover_page);
+  const coverPage = useSelector((state) => state.cover_pageBd);
   // Local state to track input values
   const [subHeading, setSubHeadingLocal] = useState(
     coverPage.subHeading == ""
@@ -72,7 +71,7 @@ const CoverPageForm = () => {
       reader.readAsDataURL(file);
     }
   };  
-
+console.log(coverPage);
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
       <div className="flex flex-col justify-between">

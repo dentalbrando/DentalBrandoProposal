@@ -8,7 +8,7 @@ export const sitemapOverviewBd = createSlice({
   name: "proposedSitemapOverviewBd",
   initialState,
   reducers: {
-    setSiteMapOverviewBd: (state, action) => {
+    setSiteMapOverview: (state, action) => {
       state.overview = action.payload;
     },
   },

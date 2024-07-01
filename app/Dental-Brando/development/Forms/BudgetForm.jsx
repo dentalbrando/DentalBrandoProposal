@@ -4,15 +4,15 @@ import {
   setDiscount,
   setService,
   setTerms,
-} from "@app/store/budget";
+} from "@app/store/budgetBd";
 import TextInput from "@components/TextInput";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const BudgetForm = () => {
   const dispatch = useDispatch();
-  const storedServices = useSelector((state) => state.budget.service);
-  const budget = useSelector((state) => state.budget);
+  const storedServices = useSelector((state) => state.budgetBd.service);
+  const budget = useSelector((state) => state.budgetBd);
   const [services, setServices] = useState(
     storedServices ? storedServices : [{}]
   ); // An array of service objects
@@ -36,7 +36,8 @@ const BudgetForm = () => {
   const handleAddTerm = () => {
     dispatch(appendTerm("")); // You can pass an initial value for the new term if needed
   };
-
+console.log(storedServices);
+console.log(budget);
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
       {services.map((service, index) => (

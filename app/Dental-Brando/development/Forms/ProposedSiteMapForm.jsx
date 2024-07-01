@@ -1,21 +1,15 @@
-import proposedSitemap, {
-  setRootName,
-  sitemap,
-} from "@app/store/proposedSitemap";
-import { setSiteMap } from "@app/store/proposedSitemap";
-import proposedSitemapOverview, { setSiteMapOverview } from "@app/store/proposedSitemapOverview";
+import { setSiteMapBd } from "@app/store/proposedSitemapBd";
+import { setSiteMapOverview } from "@app/store/proposedSitemapOverviewBd";
 
-import proposedSitemap2, { setSiteMap2 } from "@app/store/proposedSitemap2";
+import { setSiteMap2 } from "@app/store/proposedSitemap2Bd";
 import NestedList, { NestedListB } from "@components/NestedList";
 import TextInput from "@components/TextInput";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const ProposedSiteMapForm = () => {
-  const sitemapData = useSelector((state) => state.proposedSitemap);
-  const sitemapData2 = useSelector((state) => state.proposedSitemap2);
   const sitemapDataoverview = useSelector(
-    (state) => state.proposedSitemapOverview
+    (state) => state.proposedSitemapOverviewBd
   );
   const dispatch = useDispatch();
   return (
@@ -32,7 +26,7 @@ const ProposedSiteMapForm = () => {
       />
       <NestedList
         proposedSitemap={1}
-        setSiteMap={setSiteMap}
+        setSiteMap={setSiteMapBd}
         shortcutKey={"a"}
       />
       <NestedListB

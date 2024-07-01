@@ -5,15 +5,15 @@ import {
   setFunctionalities,
   setOverviews,
   setWebsiteCMSs,
-} from "@app/store/aboutYourProject";
+} from "@app/store/aboutYourProjectBd";
 
 const AboutYourProject = () => {
   
-  const overviews = useSelector((state) => state.aboutYourProject.overview);
+  const overviews = useSelector((state) => state.aboutYourProjectBd.overview);
   const functionalities = useSelector(
-    (state) => state.aboutYourProject.functionality
+    (state) => state.aboutYourProjectBd.functionality
   );
-  const websiteCMSs = useSelector((state) => state.aboutYourProject.websiteCMS);
+  const websiteCMSs = useSelector((state) => state.aboutYourProjectBd.websiteCMS);
   const [overview, setOverview] = useState(
     overviews == ""
       ? `Upon exploring your business is providing services of field marketing, trade/business development, investment platform providing unique information and exposure to business opportunities in Pakistan & the UK.
@@ -39,7 +39,9 @@ The purpose of Client Coverage team serves as a single point of contact, underst
       ? `WordPress CMS has been selected for the development of this website due to its numerous benefits. WordPress is a widely recognized and highly versatile content  management system that offers a plethora of advantages for website development. the key benefits of WordPress is its user-friendly interface, which allows even non technical individuals to easily manage and update website content. With its intuitive dashboard, users can effortlessly add, edit, and delete pages, blog posts, images, and other multimedia elements.`
       : websiteCMSs
   );
-
+console.log(overviews);
+console.log(functionalities);
+console.log(websiteCMSs);
   const dispatch = useDispatch();
 
   const handleSaveAboutYourProject = () => {
