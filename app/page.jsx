@@ -1,16 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import Sidebar from "@components/Sidebar";
-import Form from "@components/Form";
-import LivePreview from "@components/LivePreview";
-import Popup from "@components/Popup";
-import FullProposal from "@components/FullProposal";
-import MyFamilyTree from "@components/FamilyTree";
 import Nav from "@components/Nav";
 import Registration from "@components/Registration/page";
-import { create, local } from "d3";
 import axios from "axios";
-import SaveProposaltoDb from "@components/saveProposaltoDb";
 import Link from "next/link";
 import Loader from "@components/Loader";
 import layer3 from "@public/assets/Layer_1 (3).svg";
@@ -20,36 +12,11 @@ import frame1 from "@public/assets/Frame 4.svg";
 import frame2 from "@public/assets/Frame 5.svg";
 import frame3 from "@public/assets/Frame 6.svg";
 import StoreProvider from "./store/StoreProvider";
-const familyData = {
-  name: "John",
-  spouse: "Jane",
-  children: [
-    {
-      name: "Alice",
-      spouse: "Bob",
-      children: [
-        {
-          name: "Eve",
-          spouse: "Charlie",
-        },
-        {
-          name: "David",
-        },
-      ],
-    },
-    {
-      name: "Carol",
-      spouse: "Daniel",
-    },
-  ],
-};
 
 const Home = () => {
-  const treeWidth = 800;
   const [tokenVerifierTrigger, setTokenVerifierTrigger] = useState(0);
   const [userId, setUserId] = useState(null);
   const [isVerified, setIsVerified] = useState(undefined);
-  // const [userData, setUserData] = useState();
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -58,7 +25,6 @@ const Home = () => {
         try {
           setLoading(true);
           let result = await axios.post(`/api/storeTokenToDb`, { userId });
-          // setUserData(result.data.userData);
         } catch (err) {
           console.log("err", err);
           setLoading(false);
@@ -134,7 +100,7 @@ const Home = () => {
                     <div className="w-full h-full flex flex-col justify-between">
                       <div className="w-[100%] h-[50%] bg-green-40 flex items-end justify-center">
                         <div className="w-[170px] h-[170px] bg-blue-40">
-                          <img src={frame2.src} className="w-[100%] h-[100%]" />
+                          <img src={frame1.src} className="w-[100%] h-[100%]" />
                         </div>
                       </div>
                       <div className="w-[100%] h-[40%] bg-red-40 flex items-end justify-center">
@@ -156,7 +122,7 @@ const Home = () => {
                     <div className="w-full h-full flex flex-col justify-between">
                       <div className="w-[100%] h-[50%] bg-green-40 flex items-end justify-center">
                         <div className="w-[170px] h-[170px] bg-blue-40">
-                          <img src={frame1.src} className="w-[100%] h-[100%]" />
+                          <img src={frame2.src} className="w-[100%] h-[100%]" />
                         </div>
                       </div>
                       <div className="w-[100%] h-[40%] bg-red-40 flex items-end justify-center">
