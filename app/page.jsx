@@ -142,7 +142,7 @@ const Home = () => {
                           Proposal For SEO
                         </h1>
                         <div className="h-fit w-[50%] absolute bottom-0 right-0">
-                          <img src={layer2.src} />
+                          <img src={layer3.src} />
                         </div>
                       </div>
                     </div>
@@ -164,7 +164,7 @@ const Home = () => {
                           Proposal For Social Media
                         </h1>
                         <div className="h-fit w-[50%] absolute bottom-0 right-0">
-                          <img src={layer3.src} />
+                          <img src={layer2.src} />
                         </div>
                       </div>
                     </div>

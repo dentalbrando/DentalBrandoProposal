@@ -57,7 +57,7 @@ export default function SaveProposaltoDb() {
         className={`mt-3 mx-0 p-2 ${
           loading
             ? "bg-gray-500"
-            : "focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500"
+            : "focus:outline-none text-white bg-[#093A5B] hover:bg-[#03A0D7]"
         } font-bold rounded-lg text-md px-3 py-2 m-2`}
         onClick={submit}
       >
