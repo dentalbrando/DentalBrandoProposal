@@ -110,7 +110,7 @@ const Budget = () => {
                 <h3>SERVICES DESCRIPTION</h3>
               </div>
               <div
-                className="bg-[#03A0D7] w-[53%] h-10 absolute right-0 text-[11pt] font-[800] flex items-center justify-end pr-5 gap-9"
+                className="bg-[#03A0D7] w-[53%] h-10 absolute right-0 text-[11pt] font-[800] flex items-center justify-end pr-5 gap-9 text-white"
                 style={{
                   clipPath: "polygon(9% 2%, 100% 0, 100% 100%, 0 100%)",
                 }}
@@ -153,7 +153,7 @@ const Budget = () => {
 
           <div className="mt-[13.8rem]">
             <div className="bg-[#03A0D7] w-full h-14 text-[11pt] font-[700] flex items-center justify-end ">
-              <div className="w-[30%]">
+              <div className="w-[30%] text-white">
                 <div className="flex items-center gap-2">
                   <p>Subtotal :</p>
                   <span className="capitalize">

@@ -67,16 +67,16 @@ function Estimate(prop) {
 
               <div className="flex flex-col justify-start w-full h-[fit-content]">
                 <div className="flex justify-between w-full text-[16px] font-[600] mb-5">
-                  <div className=" w-[12%] bg-[#ffd600] text-center pb-1 pt-2 ">
+                  <div className=" w-[12%] bg-[#ffd600] text-center pb-1 pt-2 text-white ">
                     No.
                   </div>
                   <div className=" w-[46%] bg-[#00A2FF] pb-1 pt-2 ps-4 text-white">
                     SERVICES DESCRIPTION
                   </div>
-                  <div className=" w-[16%] bg-[#ffd600] text-center pb-1 pt-2 ">
+                  <div className=" w-[16%] bg-[#ffd600] text-center pb-1 pt-2 text-white ">
                     PACKAGE
                   </div>
-                  <div className=" w-[24%] bg-[#ffd600] text-center pb-1 pt-2 ">
+                  <div className=" w-[24%] bg-[#ffd600] text-center pb-1 pt-2 text-white ">
                     SUB TOTAL
                     {/* ({budgetData.currency}) */}
                   </div>
