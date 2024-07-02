@@ -47,16 +47,6 @@ const Home = () => {
     storeTokenToDb();
   }, [tokenVerifierTrigger]);
 
-  const defaultFamilyTreeData = [
-    { key: "root", name: "Root", marriage: "Spouse" },
-    { key: "father", name: "Father", parent: "root" },
-    { key: "mother", name: "Mother", parent: "root" },
-    { key: "child1", name: "Child 1", parent: "father" },
-    { key: "child2", name: "Child 2", parent: "father" },
-    { key: "spouse", name: "Spouse", marriage: "Root" },
-    { key: "child3", name: "Child 3", parent: "mother" },
-    { key: "child4", name: "Child 4", parent: "mother" },
-  ];
   return (
     <StoreProvider>
       {loading || isVerified === undefined ? (
