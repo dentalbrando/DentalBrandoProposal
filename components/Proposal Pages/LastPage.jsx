@@ -39,10 +39,8 @@ const LastPage = () => {
                 src={svg1.src}
                 alt=""
               />
-              <div class="w-[110px] h-[110px] absolute bottom-[70px] mx-10  flex justify-center items-center"> 
-              <div class="w-[40px] h-[30px] bg-white z-30 "> 
-
-              </div>
+              <div class="w-[110px] h-[110px] absolute bottom-[70px] mx-10  flex justify-center items-center">
+                <div class="w-[40px] h-[30px] bg-white z-30 "></div>
               </div>
             </div>
             <div class="flex gap-16  absolute bottom-[70px] right-10">
@@ -61,15 +59,15 @@ const LastPage = () => {
 
                 <p class=" font-[500] text-[6pt] mt-2">
                   <span>General Email: </span>
-                  info@soft-enterprise.com
+                  sales@dentalbrando.com
                 </p>
                 <p class=" font-[500] text-[6pt] ">
                   <span>Project Email: </span>
-                  project@soft-enterprise.com
+                  sales@dentalbrando.com
                 </p>
                 <p class=" font-[500] text-[6pt] ">
                   <span>Finance Email: </span>
-                  ﬁnance@soft-enterprise.com
+                  sales@dentalbrando.com
                 </p>
               </div>
             </div>

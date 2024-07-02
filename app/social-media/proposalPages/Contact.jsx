@@ -38,7 +38,7 @@ function Contact(prop) {
                 <div className="flex justify-start items-start gap-2">
                   <img src={mail.src} className="w-[5%] relative" />
                   <span className="text-[16px] font-[400]">
-                    info@soft-enterprise.com
+                    sales@dentalbrando.com
                   </span>
                 </div>
               </div>
@@ -46,7 +46,7 @@ function Contact(prop) {
                 <div className="flex justify-start items-start gap-2">
                   <img src={web.src} className="w-[5%] relative" />
                   <span className="text-[16px] font-[400]">
-                    www.soft-enterprise.com
+                    www.dentalbrando.com
                   </span>
                 </div>
               </div>

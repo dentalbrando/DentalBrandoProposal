@@ -2,7 +2,7 @@ import '../app/globals.css'
 import StoreProvider from "./store/StoreProvider";
 export const metadata = {
   title: "Proposal Manager",
-  description: "Created by Soft Enterprise",
+  description: "Created by Dental Brando",
 };
 
 export default function RootLayout({ children }) {

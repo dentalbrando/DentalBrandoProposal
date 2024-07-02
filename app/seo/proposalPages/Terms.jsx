@@ -23,10 +23,10 @@ function Terms(prop) {
               <span className="text-[white text-[15px] font-[400] text-justify">
                 SEO services involve optimizing the right content for the right
                 audience at the right moment, ensuring maximum visibility and
-                impact. At Soft Enterprise, we are confident that we are your
+                impact. At Dental Brando, we are confident that we are your
                 best partners for your SEO. Make your business presence on
                 Search Engines like Google, Yahoo, Bing, etc., consistent and
-                engaging by partnering with Soft Enterprise.
+                engaging by partnering with Dental Brando.
               </span>
             </div>
           </div>
@@ -72,7 +72,7 @@ function Terms(prop) {
               </div>
               <div className="w-full flex justify-end leading-[1.3]">
                 <span className="text-[15px] font-[400] text-justify w-[87%]">
-                  Soft Enterprise will provide a warranty for their services and
+                  Dental Brando will provide a warranty for their services and
                   work but will not be held responsible for any damages
                   resulting from their account usage or content displayed on the
                   web. After the project handover, the client will be solely
@@ -151,7 +151,7 @@ function Terms(prop) {
                   all intellectual property rights for the project will be
                   transferred to you. Until then, all materials, including
                   design concepts, drafts, and prototypes, are the property of
-                  Soft Enterprise. If it goes to default, Soft Enterprise can
+                  Dental Brando. If it goes to default, Dental Brando can
                   utilize it for any other projects, or any other clients.
                 </span>
               </div>

@@ -139,7 +139,7 @@ const Sidebar = () => {
                       { id: "7", content: "Our Process", checked: true },
                       {
                         id: "8",
-                        content: "Why Soft Enterprise",
+                        content: "Why Dental Brando",
                         checked: true,
                       },
                       { id: "9", content: "Estimate Budget", checked: true },

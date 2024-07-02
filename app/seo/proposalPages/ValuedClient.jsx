@@ -62,7 +62,7 @@ function ValuedClient(prop) {
                   Ma Ka Ching | Chief Executive Officer
                 </h3>
                 <span className="text-[16px] font-[400]">
-                  Working with Soft Enterprise has been a game-changer for our
+                  Working with Dental Brando has been a game-changer for our
                   business. Their expertise and dedication to Social Media
                   Marketing services have helped us achieve remarkable campaign
                   results. We look forward to excelling in our projects!

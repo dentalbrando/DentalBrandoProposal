@@ -6,11 +6,11 @@ import { useSelector } from "react-redux";
 function CoverLetter(prop) {
   let coverLetterSeo = useSelector((state) => state.cover_letterSeo);
   if (coverLetterSeo.letterText === "") {
-    var tempLetterText = `Thank you for considering Soft Enterprise for your Search Engine Optimization project. We welcome 
+    var tempLetterText = `Thank you for considering Dental Brando for your Search Engine Optimization project. We welcome 
 the opportunity to discuss your SEO project in more detail. We want to provide a customized plan
 tailored to your business requirements and help you elevate your online visibility. 
 <p class = 'py-1'></p> 
-Soft Enterprise specializes in creating customized Search Engine Optimization strategies tailored to
+Dental Brando specializes in creating customized Search Engine Optimization strategies tailored to
 the unique needs of our clients. The most popular search engines, like Google, Yahoo, and Bing, are
 used globally to search for the desired businesses, products, and services. Businesses use it to
 target their audiences to sell their products and services. As search engines emerged, so did the
@@ -90,7 +90,7 @@ Sincerely,`;
               <img src={sign.src} className="" />
             </div>
             <p className="text-[15px] font-[500]">Project Manager</p>
-            <p className="text-[15px] font-[500]"> Soft Enterprise</p>
+            <p className="text-[15px] font-[500]"> Dental Brando</p>
           </div>
         </div>
 

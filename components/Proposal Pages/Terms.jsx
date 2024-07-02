@@ -78,12 +78,11 @@ const Terms = ({ pageNumber }) => {
                       <p>
                         To commence the project, all fees and charges must be
                         paid in full as per the payment schedule provided in the
-                        proposal. All work remains the property of Soft
-                        Enterprise until payment is received in full. In case of
-                        a payment delay of more than 3 days, we reserve the
-                        right to suspend work until the overdue payment is
-                        cleared before resuming. Payment receipts will be sent
-                        on payments.
+                        proposal. All work remains the property of Dental Brando
+                        until payment is received in full. In case of a payment
+                        delay of more than 3 days, we reserve the right to
+                        suspend work until the overdue payment is cleared before
+                        resuming. Payment receipts will be sent on payments.
                       </p>
                     </div>
                   </div>

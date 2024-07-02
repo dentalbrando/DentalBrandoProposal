@@ -20,7 +20,7 @@ function AboutUs(prop) {
             </div>
             <div className="flex flex-col justify-center w-full leading-snug">
               <span className="text-[white] text-[15px] font-[400] text-justify">
-                Soft Enterprise is an esteemed Web Development, Mobile Apps,
+                Dental Brando is an esteemed Web Development, Mobile Apps,
                 Custom Software Development, Block Chain Development, and
                 Digital Marketing company. We provide exceptional Search Engine
                 Optimization Services to clients from various industries. We
