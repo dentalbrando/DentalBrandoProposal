@@ -1,6 +1,6 @@
 "use client";
 import { useSelector } from "react-redux";
-import logo from "@public/assets/DB Logo-15.svg";
+import logo from "@public/assets/DB Logo-15.png";
 import Link from "next/link";
 
 const Nav = (props) => {
@@ -9,9 +9,11 @@ const Nav = (props) => {
     
       <>
         <div className="flex justify-start items-center w-full h-[12vh] border-b-2 border-color custom-b relative">
-          <Link href={"/"} className="w-[20vw] flex justify-end items-center z-[10]">
-            <img src={logo.src} alt="" className="w-[120px]" />
+          <div  className="w-[20vw] flex justify-end items-center z-[10]">
+          <Link href={"/"} className="w-[200px] flex justify-end items-center z-[10]">
+            <img src={logo.src} alt="" className="w-full" />
           </Link>
+          </div>
           <h1
             className={`text-main-blue text-[30px] font-medium z-[0]
           ${props.main ? "w-full" : "w-[80vw]"}
