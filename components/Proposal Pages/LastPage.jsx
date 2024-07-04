@@ -58,27 +58,27 @@ const LastPage = () => {
                 </div>
 
                 <p class=" font-[500] text-[6pt] mt-2">
-                  <span>General Email: </span>
+                  <span>Email: </span>
                   sales@dentalbrando.com
                 </p>
-                <p class=" font-[500] text-[6pt] ">
+                {/* <p class=" font-[500] text-[6pt] ">
                   <span>Project Email: </span>
                   sales@dentalbrando.com
                 </p>
                 <p class=" font-[500] text-[6pt] ">
                   <span>Finance Email: </span>
                   sales@dentalbrando.com
-                </p>
+                </p> */}
               </div>
             </div>
             {/* <div class="flex justify-between w-[90%] mx-auto relative bottom-[160px] ">
             </div> */}
 
             <div class="mt-1 flex items-center justify-center w-[8.27in] bg-blue- gap-2 px-11 absolute text-center bottom-5">
-              <p class=" font-[500] text-[8pt] pt-2">
+              {/* <p class=" font-[500] text-[8pt] pt-2">
                 53 Hamza Heights, Quaid Block Near Eiﬀel Tower, Bahria Town,
                 Lahore
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
