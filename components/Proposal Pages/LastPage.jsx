@@ -48,8 +48,11 @@ const LastPage = () => {
                 <div class="w-8 h-8 bg-[#093A5B] rounded-full flex items-center justify-center">
                   <img class="w-4" src={svg2.src} alt="" />
                 </div>
-                <p class=" font-[500] text-[6pt] mt-2">+92 (333) 765 2182</p>
-                <p class=" font-[500] text-[6pt] ">+92 (42) 3781 5508</p>
+                <p class=" font-[500] text-[6pt] mt-2"></p>
+                <p class=" font-[500] text-[6pt] mt-1"></p>
+                <p class=" font-[500] text-[6pt] mt-2">+92 (340) 0084643</p>
+                {/* <p class=" font-[500] text-[6pt] mt-2">+92 (333) 765 2182</p>
+                <p class=" font-[500] text-[6pt] ">+92 (42) 3781 5508</p> */}
               </div>
 
               <div class="mt-3 flex flex-col  items-center justify-center">
