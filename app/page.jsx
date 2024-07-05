@@ -5,9 +5,9 @@ import Registration from "@components/Registration/page";
 import axios from "axios";
 import Link from "next/link";
 import Loader from "@components/Loader";
-import layer3 from "@public/assets/Layer_1 (3).svg";
-import layer2 from "@public/assets/Layer_1 (2).svg";
-import layer1 from "@public/assets/Layer_1 (1).svg";
+import layer3 from "@public/assets/Layer_1 (11).svg";
+import layer2 from "@public/assets/Layer_1 (15).svg";
+import layer1 from "@public/assets/Layer_1 (16).svg";
 import frame1 from "@public/assets/Frame 4.svg";
 import frame2 from "@public/assets/Frame 5.svg";
 import frame3 from "@public/assets/Frame 6.svg";
@@ -72,10 +72,10 @@ const Home = () => {
                         </div>
                       </div>
                       <div className="w-[100%] h-[40%] bg-red-40 flex items-end justify-center">
-                        <h1 className="w-[70%] h-full bg-yellow-5 text-[35px] font-[600] text-main-blue text-center">
+                        <h1 className="w-[70%] h-full bg-yellow-5 text-[35px] font-[600] text-main-blue text-center z-[10]">
                           Proposal For Development
                         </h1>
-                        <div className="h-fit w-[50%] absolute bottom-0 right-0">
+                        <div className="h-fit w-[50%] absolute bottom-0 right-0 z-[0]">
                           <img src={layer1.src} />
                         </div>
                       </div>
@@ -94,10 +94,10 @@ const Home = () => {
                         </div>
                       </div>
                       <div className="w-[100%] h-[40%] bg-red-40 flex items-end justify-center">
-                        <h1 className="w-[70%] h-full bg-yellow-5 text-[35px] font-[600] text-main-blue text-center">
+                        <h1 className="w-[70%] h-full bg-yellow-5 text-[35px] font-[600] text-main-blue text-center z-[10]">
                           Proposal For SEO
                         </h1>
-                        <div className="h-fit w-[50%] absolute bottom-0 right-0">
+                        <div className="h-fit w-[50%] absolute bottom-0 right-0 z-[0]">
                           <img src={layer3.src} />
                         </div>
                       </div>
@@ -116,10 +116,10 @@ const Home = () => {
                         </div>
                       </div>
                       <div className="w-[100%] h-[40%] bg-red-40 flex items-end justify-center">
-                        <h1 className="w-[70%] h-full bg-yellow-5 text-[35px] font-[600] text-main-blue text-center">
+                        <h1 className="w-[70%] h-full bg-yellow-5 text-[35px] font-[600] text-main-blue text-center z-[10]">
                           Proposal For Social Media
                         </h1>
-                        <div className="h-fit w-[50%] absolute bottom-0 right-0">
+                        <div className="h-fit w-[50%] absolute bottom-0 right-0 z-[0]">
                           <img src={layer2.src} />
                         </div>
                       </div>
