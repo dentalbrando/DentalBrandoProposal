@@ -63,37 +63,37 @@ const FullProposal = () => {
                   <AboutYourProjects key={index} pageNumber={pageNumber++} />
                 )
               );
+            // case "5":
+            //   return (
+            //     page.checked && (
+            //       <ProposedSiteMap key={index} pageNumber={pageNumber++} />
+            //     )
+            //   );
             case "5":
-              return (
-                page.checked && (
-                  <ProposedSiteMap key={index} pageNumber={pageNumber++} />
-                )
-              );
-            case "6":
               return (
                 page.checked && (
                   <AboutUs key={index} pageNumber={pageNumber++} />
                 )
               );
-            case "7":
+            case "6":
               return (
                 page.checked && (
                   <OurProcess key={index} pageNumber={pageNumber++} />
                 )
               );
-            case "8":
+            case "7":
               return (
                 page.checked && <WhyUs key={index} pageNumber={pageNumber++} />
               );
-            case "9":
+            case "8":
               return (
                 page.checked && <Terms key={index} pageNumber={pageNumber++} />
               );
-            case "10":
+            case "9":
               return (
                 page.checked && <Budget key={index} pageNumber={pageNumber++} />
               );
-            case "11":
+            case "10":
               return page.checked && <LastPage key={index} />;
           }
         })}
