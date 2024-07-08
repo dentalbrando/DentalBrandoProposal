@@ -73,7 +73,7 @@ const Home = () => {
                       </div>
                       <div className="w-[100%] h-[40%] bg-red-40 flex items-end justify-center">
                         <h1 className="w-[70%] h-full bg-yellow-5 text-[35px] font-[600] text-main-blue text-center z-[10]">
-                          Proposal For Development
+                          Proposal For Development (Scratch)
                         </h1>
                         <div className="h-fit w-[50%] absolute bottom-0 right-0 z-[0]">
                           <img src={layer1.src} />
@@ -82,7 +82,7 @@ const Home = () => {
                     </div>
                   </div>
                 </Link>
-                {/* <Link
+                <Link
                   href={"/development"}
                   className="w-[350px] h-[450px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
                 >
@@ -103,7 +103,7 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                </Link> */}
+                </Link>
                 <Link
                   href={"/seo"}
                   className="w-[350px] h-[450px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
