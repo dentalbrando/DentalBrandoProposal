@@ -11,7 +11,7 @@ const ProposedSiteMap = ({ pageNumber }) => {
     <>
       <div className="offer flex w-[8.27in] h-[1122.6px] shadow-lg  bg-white">
         <div className="flex w-full">
-          <div className="w-[90%]  mx-auto ">
+          <div className="w-[90%] mx-auto ">
             <div className="h-fit">
               <div class="flex  print:h-[7.3rem]">
                 <div class="mt-[50px] flex relative  pb-0">
@@ -65,23 +65,146 @@ const ProposedSiteMap = ({ pageNumber }) => {
                   </p>
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <div className="mt-[25px] ">
                   <h1 className="font-[700]  text-[14pt] text-[#093A5B] leading-10 font-sans">
                     1. MAIN PAGES
                   </h1>
                 </div>
-                <FamilyTree proposedSitemap={1} />
-              </div>
+                <div className="flex gap-2 flex-wrap">
+                  <div
+                    className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+                  >
+                    <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                      <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                      Home
+                    </div>
+                  </div>
+                  <div
+                    className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+                  >
+                    <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                      <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                      About Us
+                    </div>
+                  </div>
+                  <div
+                    className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+                  >
+                    <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                      <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                      Our Team
+                    </div>
+                  </div>
+                  <div
+                    className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+                  >
+                    <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                      <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                      Services
+                    </div>
+                  </div>
+                  <div
+                    className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+                  >
+                    <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                      <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                      Patient Information
+                    </div>
+                  </div>
+                  <div
+                    className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+                  >
+                    <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                      <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                      Appointment
+                    </div>
+                  </div>
+                  <div
+                    className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+                  >
+                    <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                      <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                      Patient Resources
+                    </div>
+                  </div>
+                  <div
+                    className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+                  >
+                    <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                      <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                      Testimonials
+                    </div>
+                  </div>
+                  <div
+                    className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+                  >
+                    <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                      <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                      Gallery
+                    </div>
+                  </div>
+                  <div
+                    className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+                  >
+                    <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                      <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                      Contact Us
+                    </div>
+                  </div>
+                  <div
+                    className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+                  >
+                    <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                      <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                      Privacy Policy{" "}
+                    </div>
+                  </div>
+                  <div
+                    className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+                  >
+                    <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                      <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                      Terms of Service{" "}
+                    </div>
+                  </div>
+                </div>
+              </div> */}
             </div>
-            <div className="h-auto">
+            {/* <div className="h-auto">
               <div className="mt-[25px] ">
                 <h1 className="font-[700]  text-[14pt] text-[#093A5B] leading-10 font-sans">
-                  2. ADDON PAGES
+                  2.SERVICES
                 </h1>
               </div>
+              <div
+                className={`p-2 w-fit bg-white rounded-xl border-2 border-gray-400`}
+              >
+                <div className="flex gap-2 justify-start items-center rounded-2xl font-bold capitalize text-2xL mb-2">
+                  <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                  General Dentistry
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                    <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                    Dental Exams & Cleanings
+                  </div>
+                  <div className="flex gap-2 justify-start items-center rounded-2xl ">
+                    <div className="w-[20px] h-[20px] border-2 border-gray-400"></div>
+                    Tooth Extractions
+                  </div>
+                </div>
+              </div>
+            </div> */}
+            {/* <div className="h-auto">
+              <div className="mt-[25px] ">
+                <h1 className="font-[700]  text-[14pt] text-[#093A5B] leading-10 font-sans">
+                  3. ADDON PAGES
+                </h1>
+              </div>
+
               <FamilyTree proposedSitemap={2} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

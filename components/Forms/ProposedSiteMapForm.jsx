@@ -19,28 +19,29 @@ const ProposedSiteMapForm = () => {
   );
   const dispatch = useDispatch();
   return (
-    <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
-      <TextInput
-        label="Overview"
-        type="text"
-        length="full"
-        placeholder="Enter Project Name"
-        value={sitemapDataoverview.overview}
-        onChange={(event) => {
-          dispatch(setSiteMapOverview(event.target.value));
-        }}
-      />
-      <NestedList
-        proposedSitemap={1}
-        setSiteMap={setSiteMap}
-        shortcutKey={"a"}
-      />
-      <NestedListB
-        proposedSitemap={2}
-        setSiteMap={setSiteMap2}
-        shortcutKey={"b"}
-      />
-    </div>
+    <></>
+    // <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
+    //   <TextInput
+    //     label="Overview"
+    //     type="text"
+    //     length="full"
+    //     placeholder="Enter Project Name"
+    //     value={sitemapDataoverview.overview}
+    //     onChange={(event) => {
+    //       dispatch(setSiteMapOverview(event.target.value));
+    //     }}
+    //   />
+    //   <NestedList
+    //     proposedSitemap={1}
+    //     setSiteMap={setSiteMap}
+    //     shortcutKey={"a"}
+    //   />
+    //   <NestedListB
+    //     proposedSitemap={2}
+    //     setSiteMap={setSiteMap2}
+    //     shortcutKey={"b"}
+    //   />
+    // </div>
   );
 };
 
