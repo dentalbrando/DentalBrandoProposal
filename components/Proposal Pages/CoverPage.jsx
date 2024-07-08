@@ -17,11 +17,7 @@ const CoverPage = () => {
             <div className="h-5 w-[20%] custom-shape2DB"></div>
           </div>
           <img className="w-[18rem] my-10 mx-auto" src={logo.src} alt="" />
-          {/* <img
-            className="w-[18rem] mx-auto"
-            src={logo.src}
-            alt=""
-          /> */}
+        
           <h2
             className="text-[rgb(9,58,91)] font-[700] text-[16pt] w-[70%] mt-[-35px] mx-auto leading-[1.18] flex justify-center items-center text-justif bg-red-30 tracking-[0.5pt]"
             style={{ textAlign: "justify", textAlignLast: "center" }}
