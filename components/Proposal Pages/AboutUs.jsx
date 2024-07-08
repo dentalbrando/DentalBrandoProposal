@@ -153,7 +153,7 @@ const AboutUs = ({ pageNumber }) => {
                   the Miami area.
                 </p>
               </div>
-            </div>
+            </div> 
             <div class="flex ">
               <div className="">
                 <img
