@@ -55,44 +55,45 @@ const AboutUs = ({ pageNumber }) => {
             <div class=" text-center  mt-8 font-[400] text-[11pt] leading-5">
               <div class="Part-one    text-justify ">
                 <p>
-                  Welcome to Dental Brando, your one stop destination for your
-                  all Web Development, Mobile APP Development, Software
-                  Development & Digital Marketing needs. At Dental Brando, we
-                  pride ourselves on being a leading provider of customized IT
-                  solutions that cater to the unique requirements of our
-                  clients. With our extensive experience in the industry and
-                  expertise in a wide range of technologies, we have
-                  successfully delivered numerous projects for clients across
-                  various industries.
+                  Welcome to Dental Brando, your partner in enhancing the
+                  digital presence of dental practices. We provide tailored
+                  digital solutions to help your practice stand out and operate
+                  efficiently in today’s competitive market. With a focus on the
+                  latest technologies and patient expectations, we bring you
+                  innovative tools and strategies to elevate your practice.{" "}
                 </p>
               </div>
               <div class="part-two mt-5  text-justify">
                 <p>
-                  Our team of highly skilled professionals is dedicated to
-                  providing you with innovative and cutting edge solutions that
-                  are tailored to your specific needs. We understand that every
-                  client has different requirements, and as such, we work
-                  closely with you to develop a deep understanding of your
-                  business and objectives to deliver solutions that meet and
-                  exceed your expectations.
+                  Understanding the unique challenges of the dental industry, we
+                  offer a full suite of services for dental professionals. Our
+                  web development services create visually appealing,
+                  user-friendly websites to attract new patients and engage
+                  existing ones. Our mobile app development solutions enhance
+                  patient interaction and convenience, allowing for easy
+                  appointment booking, reminders, and access to educational
+                  content.
                 </p>
               </div>
               <div class="part-three mt-5 text-justify">
                 <p>
-                  At Dental Brando, we value transparency, communication, and
-                  collaboration, and we strive to build long-term relationships
-                  with our clients. We believe that by working together, we can
-                  achieve great things and help your business
+                  We also specialize in custom dental software to streamline
+                  practice management and improve patient care. Our digital
+                  marketing services are designed specifically for the dental
+                  industry, increasing online visibility, driving website
+                  traffic, and converting visitors into loyal patients. Our
+                  graphic design services focus on creating a strong brand
+                  identity, building trust and credibility with your patients.
                 </p>
               </div>
               <div class="part-four mt-5 text-justify ">
                 <p>
-                  As we collaborate on projects together, we see ourselves not
-                  just as a service provider but as an extension of your team.
-                  Your success reflects our success, and we take immense pride
-                  in contributing to your accomplishments. With a long-term
-                  mindset, we seek to build lasting partnerships that go beyond
-                  individual projects.
+                  At Dental Brando, we are committed to being your partner in
+                  success. We work closely with you to understand your goals and
+                  challenges, ensuring our solutions align with your vision.
+                  Whether establishing a new online presence or enhancing your
+                  existing digital footprint, we have the expertise to help you
+                  achieve your objectives and thrive in the digital age.
                 </p>
               </div>
             </div>

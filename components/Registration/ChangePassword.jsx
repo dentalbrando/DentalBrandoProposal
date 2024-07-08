@@ -69,7 +69,7 @@ function ChangePassword() {
   }
 
   return (
-    <div className="flex flex-col justify-evenly w-fit h-fit py-10* ps-8 pe-12 text-xl font-sans w-fit borderl-2 border-gray-500 w-full h-[90] gap-10">
+    <div className="flex flex-col justify-evenly  py-10* ps-8 pe-12 text-xl font-sans  border-gray-500 w-full h-[90] gap-10">
       <h1
         className="
         text-main-blue
