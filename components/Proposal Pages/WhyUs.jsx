@@ -60,12 +60,12 @@ const WhyUs = ({ pageNumber }) => {
             <div class="   mt-2 font-[400] text-[10pt] tracking-[-0.50pt]">
               <div class="Part-one mr-4    ">
                 <p>
-                  Choosing the right web development company is crucial for a
-                  company's success. Dental Brando has a proven track record of
-                  delivering high quality websites and web applications. We
-                  believe that Dental Brando can be a valuable partner for your
-                  business looking to create or improve your online presence. We
-                  are excited to help your business live.
+                  At Dental Brando, we are committed to delivering exceptional
+                  IT services specifically tailored for dental practices. Our
+                  comprehensive approach ensures that we meet all your digital
+                  needs while exceeding your expectations. Here are the key
+                  reasons why you should choose Dental Brando for your dental IT
+                  services:
                 </p>
               </div>
             </div>
@@ -82,11 +82,11 @@ const WhyUs = ({ pageNumber }) => {
 
               <div class="flex  justify-center">
                 <p class=" w-[93%]   text-[10pt] font-[400] text-justify  mt-[25px] tracking-[-0.5pt]">
-                  We have a team of experienced web developers who specialize in
-                  designing and building high-quality websites and web
-                  applications. Our team has the expertise to handle all aspects
-                  of the web development process, from planning and design to
-                  development and maintenance
+                  Our team at Dental Brando comprises seasoned professionals
+                  with extensive experience in both the dental and IT
+                  industries. We understand the unique challenges faced by
+                  dental practices and use our deep industry knowledge to create
+                  innovative, strategically aligned solutions.
                 </p>
               </div>
 
@@ -123,11 +123,11 @@ const WhyUs = ({ pageNumber }) => {
 
               <div class="flex  justify-center">
                 <p class=" w-[93%]   text-[10pt] font-[400] text-justify  mt-[25px] tracking-[-0.5pt]">
-                  We are committed to delivering high-quality, responsive, and
-                  optimized websites that meet the needs of our clients. We use
-                  the latest web development technologies and best practices to
-                  ensure that our projects are both functional and visually
-                  appealing.
+                  We prioritize quality in all our projects, from web
+                  development to mobile apps and digital marketing. Our
+                  commitment ensures we deliver reliable, user-friendly, and
+                  visually appealing solutions that enhance your practice’s
+                  reputation and efficiency.
                 </p>
               </div>
 
@@ -165,11 +165,10 @@ const WhyUs = ({ pageNumber }) => {
 
               <div class="flex  justify-center">
                 <p class=" w-[93%]   text-[10pt] font-[400] text-justify  mt-[25px] tracking-[-0.5pt]">
-                  We pride ourselves on providing excellent customer service to
-                  our clients. We work closely with our clients throughout the
-                  web development process to ensure that we understand their
-                  needs and can deliver the results they want. Our support team
-                  is always available for you.
+                  Your satisfaction is our top priority. We work closely with
+                  you to tailor our solutions to your specific needs, valuing
+                  your input throughout the project. Our responsive customer
+                  service guarantees a smooth and positive experience.
                 </p>
               </div>
 
@@ -206,11 +205,10 @@ const WhyUs = ({ pageNumber }) => {
 
               <div class="flex  justify-center">
                 <p class=" w-[93%]   text-[10pt] font-[400] text-justify  mt-[25px] tracking-[-0.5pt]">
-                  We offer competitive pricing for our web development services
-                  without compromising on quality. We believe that every
-                  company, regardless of size or budget, deserves a high-quality
-                  website or web application. We also offer a monthly payment
-                  option plan for your ease.
+                  We believe in making high-quality IT services accessible to
+                  all dental practices, offering competitive pricing without
+                  compromising on quality. Our transparent pricing model ensures
+                  you receive the best value for your investment.
                 </p>
               </div>
 
@@ -247,12 +245,11 @@ const WhyUs = ({ pageNumber }) => {
               </div>
 
               <div class="flex  justify-center">
-                <p class=" w-[93%]   text-[10pt] font-[400] text-justify  mt-[25px] tracking-[-0.5pt]">
-                  We understand that time is of the essence in business, which
-                  is why we strive to deliver our web development projects on
-                  time, every time. We work diligently to ensure that all
-                  projects are completed within the agreed-upon timeframe and
-                  you will get your work done on time.
+                <p class=" w-[94%]   text-[10pt] font-[400] text-justify  mt-[25px] tracking-[-0.5pt]">
+                  Timely delivery is crucial in dentistry, and our team is
+                  dedicated to completing projects on schedule without
+                  sacrificing quality. Efficient project management ensures your
+                  digital solutions are ready when needed.
                 </p>
               </div>
 
@@ -276,23 +273,23 @@ const WhyUs = ({ pageNumber }) => {
                 </p>
               </div>
             </div>
-
-            <div class="flex   mt-6 border border-[#03A0D7]  w-[100%] h-[9%] mx-auto relative">
+            <div class="flex   mt-6 border border-[#093A5B]  w-[100%] h-[9%] mx-auto relative">
               <div class="w-fit h-fit flex items-center justify-center">
                 <img
                   src={svg10.src}
                   alt="Top Left Image"
-                  class=" top-0   w-[177px] transform rotate-180"
+                  class=" top-0   w-[200px] transform rotate-180"
                 />
                 <p class="absolute text-[30pt] font-[800] text-white">06</p>
               </div>
 
               <div class="flex  justify-center">
-                <p class=" w-[93%]   text-[10pt] font-[400] text-justify  mt-[25px] tracking-[-0.5pt]">
-                  We provide ongoing support and maintenance services to ensure
-                  that your website remains up-to-date and secure. We are always
-                  available to answer any questions or concerns you may have and
-                  provide timely support when you need it.
+                <p class=" w-[89%]   text-[10pt] font-[400] text-justify  mt-[25px] tracking-[-0.5pt]">
+                  Our commitment to your success continues beyond project
+                  delivery. We provide ongoing support and maintenance to ensure
+                  your digital solutions perform optimally. We aim to build
+                  long-term relationships, offering continuous support to help
+                  you thrive in the digital landscape.
                 </p>
               </div>
 
@@ -300,7 +297,7 @@ const WhyUs = ({ pageNumber }) => {
                 <img
                   src={svg10.src}
                   alt="Bottom Right Image"
-                  class="bottom-0 right-0 w-[177px] "
+                  class="bottom-0 right-0 w-[200px] "
                 />
                 <img class="absolute w-10" src={svg6.src} alt="" />
               </div>
@@ -312,11 +309,11 @@ const WhyUs = ({ pageNumber }) => {
                   class="  h-[40px]  w-[230px] "
                 />
                 <p class="absolute text-white font-[600] text-[13pt] ">
-                  {" "}
                   Ongoing Support
                 </p>
               </div>
             </div>
+
           </div>
         </div>
       </div>
