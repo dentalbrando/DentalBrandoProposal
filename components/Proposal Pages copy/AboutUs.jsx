@@ -55,39 +55,45 @@ const AboutUs = ({ pageNumber }) => {
             <div class=" text-center  mt-5 font-[400] text-[11pt] leading-5">
               <div class="Part-one    text-justify ">
                 <p>
-                  Welcome to Dental Brando, a leading IT company specializing in
-                  website development for dental practices. Our goal is to
-                  enhance the professionalism of your dental practice by
-                  providing you with a comprehensive website development
-                  proposal. We offer innovative web solutions to elevate your
-                  dental practice, ensuring that your online presence is both
-                  professional and effective.
+                  Welcome to Dental Brando, your partner in enhancing the
+                  digital presence of dental practices. We provide tailored
+                  digital solutions to help your practice stand out and operate
+                  efficiently in today’s competitive market. With a focus on the
+                  latest technologies and patient expectations, we bring you
+                  innovative tools and strategies to elevate your practice.{" "}
                 </p>
               </div>
               <div class="part-two mt-5  text-justify">
                 <p>
-                  At Dental Brando, we pride ourselves on offering custom
-                  designs tailored to reflect your unique brand. We understand
-                  the importance of a website that not only looks great but also
-                  functions seamlessly. Our team of experts will work closely
-                  with you to create a website that truly represents your
-                  practice and meets your specific needs.
+                  Understanding the unique challenges of the dental industry, we
+                  offer a full suite of services for dental professionals. Our
+                  web development services create visually appealing,
+                  user-friendly websites to attract new patients and engage
+                  existing ones. Our mobile app development solutions enhance
+                  patient interaction and convenience, allowing for easy
+                  appointment booking, reminders, and access to educational
+                  content.
                 </p>
               </div>
               <div class="part-three mt-5 text-justify">
                 <p>
-                  Our customized website design services ensure that your site
-                  reflects the unique personality and branding of your dental
-                  practice. We focus on enhancing patient engagement through
-                  user-friendly web design, making it easy for patients to
-                  navigate your site, find information, and schedule
-                  appointments.
+                  We also specialize in custom dental software to streamline
+                  practice management and improve patient care. Our digital
+                  marketing services are designed specifically for the dental
+                  industry, increasing online visibility, driving website
+                  traffic, and converting visitors into loyal patients. Our
+                  graphic design services focus on creating a strong brand
+                  identity, building trust and credibility with your patients.
                 </p>
               </div>
               <div class="part-four mt-5 text-justify ">
                 <p>
-                  We look forward to the opportunity to work with you and help
-                  your dental practice thrive in the digital age.
+                  At Dental Brando, we are committed to being your partner in
+                  success. We work closely with you to understand your goals and
+                  challenges, ensuring our solutions align with your vision.
+                  Whether establishing a new online presence or enhancing your
+                  existing digital footprint, we have the expertise to help you
+                  achieve your objectives and thrive in the digital age.
                 </p>
               </div>
             </div>
@@ -105,23 +111,17 @@ const AboutUs = ({ pageNumber }) => {
                 />
               </div>
               <div class="mt-[45px] ml-3">
-                <h6 class="text-[18.43pt] leading-7 text-white font-[400] ">
-                  Establishing Your Online Presence
+                <h6 class="text-[18.43pt] text-white font-[400] ">
+                  Web Development{" "}
                 </h6>
                 <p
                   class="text-[10pt] text-white font-[400] text-justify leading-6"
                   style={{ wordSpacing: "9px" }}
                 >
-                  Establishing Your Online Presence: Create a professional and
-                  visually appealing website that reflects the quality and
-                  reliability of your dental services. Increasing Patient
-                  Engagement: Provide an easy-to-navigate platform where
-                  patients can learn about your services, read testimonials, and
-                  contact your practice. Enhancing Accessibility: Ensure the
-                  website is mobile-friendly and responsive, offering a seamless
-                  experience on all devices. Improving SEO and Visibility:
-                  Optimize your website to rank higher on search engines, making
-                  it easier for potential patients to find you.
+                  We create custom-designed, SEO-optimized, and mobile-friendly
+                  websites that reflect the unique identity of your dental
+                  practice, enhancing patient engagement and streamlining
+                  operations.
                 </p>
               </div>
             </div>
@@ -141,16 +141,10 @@ const AboutUs = ({ pageNumber }) => {
                   class="text-[10pt] text-white font-[400]  text-justify leading-6"
                   style={{ wordSpacing: "6px" }}
                 >
-                  Our website development services for dentists include custom
-                  design and branding to reflect your practice's unique
-                  identity, detailed service pages with comprehensive
-                  information, and before-and-after galleries to showcase your
-                  work. We integrate tools such as appointment scheduling
-                  systems, patient forms, and live chat functionality to enhance
-                  patient engagement. The website will be fully responsive and
-                  mobile-friendly, ensuring a seamless experience on all
-                  devices, with SEO optimization to attract local patients in
-                  the Miami area.
+                  Our custom mobile apps improve patient interaction and
+                  convenience, offering features like appointment booking,
+                  reminders, and educational content, directly accessible from
+                  their smartphones.
                 </p>
               </div>
             </div>
@@ -170,12 +164,55 @@ const AboutUs = ({ pageNumber }) => {
                   class="text-[10pt] text-white font-[400]  text-justify leading-6 "
                   style={{ wordSpacing: "5px" }}
                 >
-                  We recommend using WordPress as the content management system
-                  (CMS) for your website due to its user-friendly interface,
-                  extensive customization options, built-in SEO tools,
-                  scalability, and robust security features. WordPress allows
-                  for easy content updates without technical expertise, making
-                  it an ideal platform for managing your website efficiently.
+                  {" "}
+                  We develop tailored software solutions that integrate
+                  seamlessly with your practice, improving efficiency in patient
+                  record management, billing, and overall practice operations.
+                </p>
+              </div>
+            </div>
+            <div class="flex  bg-red-90">
+              <div className="">
+                <img
+                  style={{ height: "150px", width: "200px" }}
+                  src={svg4.src}
+                  alt=""
+                />
+              </div>
+              <div class="mt-[35px] ml-3 ">
+                <h6 class="text-[18.43pt] text-white font-[400] ">
+                  Digital Marketing
+                </h6>
+                <p
+                  class="text-[10pt] text-white font-[400]  text-justify leading-6 "
+                  style={{ wordSpacing: "3px" }}
+                >
+                  Our targeted digital marketing strategies, including SEO,
+                  social media marketing, and PPC advertising, boost your online
+                  visibility, attract new patients, and build long-term
+                  relationships.
+                </p>
+              </div>
+            </div>
+            <div class="flex ">
+              <div className="">
+                <img
+                  style={{ height: "150px", width: "255px" }}
+                  src={svg5.src}
+                  alt=""
+                />
+              </div>
+              <div class="mt-[35px] ml-3">
+                <h6 class="text-[18.43pt] text-white font-[400] ">
+                  Graphic Designing
+                </h6>
+                <p
+                  class="text-[10pt] text-white font-[400]  text-justify leading-6 "
+                  style={{ wordSpacing: "14px" }}
+                >
+                  We create professional, visually appealing graphics, including
+                  custom logos and promotional materials, to build a cohesive
+                  and trustworthy brand identity for your practice.
                 </p>
               </div>
             </div>
