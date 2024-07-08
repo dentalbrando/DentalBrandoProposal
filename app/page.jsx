@@ -58,8 +58,8 @@ const Home = () => {
           <Nav main={true} />
 
           <div className="w-[95%] 2xl:w-[87%] h-full mx-auto pt-20 ">
-            <div className="w-full h-full flex flex-col gap-2 md:gap-5 z-100">
-              <div className="w-full h-full linkDiv rounded-[10px] flex flex-row justify-center items-center gap-2 md:gap-5 xl:gap-20 overflow-auto">
+            <div className="w-full h-full flex flex-col gap-2 md:gap-5 z-100 overflow-auto scroll-bar-none">
+              <div className="w-fit h-fit linkDi rounded-3xl flex gap-2 md:gap-5 xl:gap-14 items-center  overflow-x-auto">
                 <Link
                   href={"/development"}
                   className="w-[350px] h-[450px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
@@ -73,7 +73,29 @@ const Home = () => {
                       </div>
                       <div className="w-[100%] h-[40%] bg-red-40 flex items-end justify-center">
                         <h1 className="w-[70%] h-full bg-yellow-5 text-[35px] font-[600] text-main-blue text-center z-[10]">
-                          Proposal For Development
+                          Proposal For Development (Scratch)
+                        </h1>
+                        <div className="h-fit w-[50%] absolute bottom-0 right-0 z-[0]">
+                          <img src={layer1.src} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+                <Link
+                  href={"/development"}
+                  className="w-[350px] h-[450px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
+                >
+                  <div className="w-[100%] h-[100%] relative bg-yellow-00">
+                    <div className="w-full h-full flex flex-col justify-between">
+                      <div className="w-[100%] h-[50%] bg-green-40 flex items-end justify-center">
+                        <div className="w-[170px] h-[170px] bg-blue-40">
+                          <img src={frame3.src} className="w-[100%] h-[100%]" />
+                        </div>
+                      </div>
+                      <div className="w-[100%] h-[40%] bg-red-40 flex items-end justify-center">
+                        <h1 className="w-[70%] h-full bg-yellow-5 text-[35px] font-[600] text-main-blue text-center z-[10]">
+                          Proposal For Development (Upgrading)
                         </h1>
                         <div className="h-fit w-[50%] absolute bottom-0 right-0 z-[0]">
                           <img src={layer1.src} />
