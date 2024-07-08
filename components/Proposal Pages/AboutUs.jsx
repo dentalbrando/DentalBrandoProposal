@@ -1,8 +1,6 @@
-import svg1 from "@public/assets/icons-01.svg";
-import svg2 from "@public/assets/icons-02.svg";
-import svg3 from "@public/assets/icons-03.svg";
-import svg4 from "@public/assets/icons-04.svg";
-import svg5 from "@public/assets/icons-05.svg";
+import svg1 from "@public/assets/online presence.svg";
+import svg2 from "@public/assets/we recommend.svg";
+import svg3 from "@public/assets/website development.svg";
 const AboutUs = ({ pageNumber }) => {
   return (
     <div class="offer flex w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-white g-red-200">
@@ -94,38 +92,74 @@ const AboutUs = ({ pageNumber }) => {
           </div>
         </div>
 
-        <div class="bg-[#093A5B] h-full flex justify-center items-center px-[30px] w-[52%]">
-          <div class="w-[100%]">
-            <div class="flex mt-8">
-              <div className=" ">
-                <img
-                  style={{ height: "157px", width: "230px" }}
-                  src={svg1.src}
-                  alt=""
-                />
+        <div class="bg-[#093A5B] h-full flex justify-center items-center px-[25px] w-[52%]">
+          <div class="w-[100%] h-[80%] flex flex-col justify-start items-start">
+            <div class="mt-8  flex justify-center items-start">
+              <div className="  w-[50px]">
+                <img className="w-full h-full" src={svg1.src} alt="" />
               </div>
-              <div class="mt-[45px] ml-3">
-                <h6 class="text-[18.43pt] leading-7 text-white font-[400] ">
+              <div class="mt-[45px ml-  ps-3 w-[310px]" style={{ width: "" }}>
+                <h6 class="text-[18.43pt] mt-[-5px] leading-7 text-white font-[400] ">
                   Establishing Your Online Presence
                 </h6>
                 <p
-                  class="text-[10pt] text-white font-[400] text-justify leading-6"
+                  class="text-[10pt] text-white font-[400] text-justify leading-6 "
                   style={{ wordSpacing: "9px" }}
                 >
-                  Establishing Your Online Presence: Create a professional and
-                  visually appealing website that reflects the quality and
-                  reliability of your dental services. Increasing Patient
-                  Engagement: Provide an easy-to-navigate platform where
-                  patients can learn about your services, read testimonials, and
+                  Create a professional and visually appealing website that
+                  reflects the quality of your dental services. Increasing
+                  Patient Engagement: Provide an easy-to-navigate platform for
+                  patients to learn about your services, read testimonials, and
                   contact your practice. Enhancing Accessibility: Ensure the
-                  website is mobile-friendly and responsive, offering a seamless
+                  website is mobile-friendly and responsive for a seamless
                   experience on all devices. Improving SEO and Visibility:
-                  Optimize your website to rank higher on search engines, making
-                  it easier for potential patients to find you.
+                  Optimize your website for higher search engine rankings to
+                  attract potential patients.
                 </p>
               </div>
             </div>
-            <div class="flex ">
+            <div class="mt-8 flex justify-center items-start">
+              <div className="  w-[50px]">
+                <img className="w-full h-full" src={svg3.src} alt="" />
+              </div>
+              <div class="mt-[45px ml-  ps-3 w-[310px]" style={{ width: "" }}>
+                <h6 class="text-[18.43pt] mt-[-5px] leading-7 text-white font-[400] ">
+                  Our website development
+                </h6>
+                <p
+                  class="text-[10pt] text-white font-[400] text-justify leading-6 "
+                  style={{ wordSpacing: "9px" }}
+                >
+                  Our website development services include custom design and
+                  branding, detailed service pages, and before-and-after
+                  galleries. We integrate appointment scheduling, patient forms,
+                  and live chat functionality to enhance engagement. The website
+                  will be responsive, mobile-friendly, and SEO-optimized to
+                  attract local patients in Miami.
+                </p>
+              </div>
+            </div>
+            <div class="mt-8  flex justify-center items-start">
+              <div className="  w-[50px]">
+                <img className="w-full h-full" src={svg2.src} alt="" />
+              </div>
+              <div class="mt-[45px ml-  ps-3 w-[310px]" style={{ width: "" }}>
+                <h6 class="text-[18.43pt] mt-[-5px] leading-7 text-white font-[400] ">
+                  We recommend
+                </h6>
+                <p
+                  class="text-[10pt] text-white font-[400] text-justify leading-6 "
+                  style={{ wordSpacing: "9px" }}
+                >
+                  We recommend WordPress as the CMS for its user-friendly
+                  interface, customization options, built-in SEO tools,
+                  scalability, and robust security. It allows for easy content
+                  updates without technical expertise, making it ideal for
+                  managing your website efficiently.
+                </p>
+              </div>
+            </div>
+            {/* <div class="flex ">
               <div className=" ">
                 <img
                   style={{ height: "143px", width: "220px" }}
@@ -153,8 +187,8 @@ const AboutUs = ({ pageNumber }) => {
                   the Miami area.
                 </p>
               </div>
-            </div> 
-            <div class="flex ">
+            </div> */}
+            {/* <div class="flex ">
               <div className="">
                 <img
                   style={{ height: "150px", width: "210px" }}
@@ -178,7 +212,7 @@ const AboutUs = ({ pageNumber }) => {
                   it an ideal platform for managing your website efficiently.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
