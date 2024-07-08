@@ -88,10 +88,13 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                       <div class=" w-[90%] mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
                         <p>
-                          we will send you a link to a form where you can
-                          specify your requirements by checking the appropriate
-                          boxes. Based on your input, we will develop your
-                          website accordingly.{" "}
+                          The first step in the web development process is
+                          planning. We will send you a link to a form where you
+                          can specify your requirements by checking the
+                          appropriate boxes in front of each feature. Based on
+                          your input, we will develop your website accordingly.
+                          Our team of experts will ensure that your project is
+                          planned efficiently.{" "}
                         </p>
                       </div>
                     </div>
