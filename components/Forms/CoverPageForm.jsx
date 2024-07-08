@@ -21,7 +21,7 @@ const CoverPageForm = () => {
   // Local state to track input values
   const [subHeading, setSubHeadingLocal] = useState(
     coverPage.subHeading == ""
-      ? "A comprehensive website transfer proposal to enhance the professionalism of your business."
+      ? "A Comprehensive Website Development Proposal to Enhance Your Dental Practice's Professionalism."
       : coverPage.subHeading
   );
   const [projectTitle, setProjectTitleLocal] = useState(coverPage.projectTitle);

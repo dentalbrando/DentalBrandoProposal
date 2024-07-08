@@ -16,11 +16,7 @@ const CoverPage = () => {
             <div className="w-[80%] h-5 custom-shape1DB"></div>
             <div className="h-5 w-[20%] custom-shape2DB"></div>
           </div>
-          <img
-            className="w-[18rem] my-10 mx-auto"
-            src={logo.src}
-            alt=""
-          />
+          <img className="w-[18rem] my-10 mx-auto" src={logo.src} alt="" />
           {/* <img
             className="w-[18rem] mx-auto"
             src={logo.src}
@@ -31,7 +27,7 @@ const CoverPage = () => {
             style={{ textAlign: "justify", textAlignLast: "center" }}
           >
             {cover_page.subHeading == ""
-              ? "A comprehensive website transfer proposal to enhance the professionalism of your business."
+              ? "A Comprehensive Website Development Proposal to Enhance Your Dental Practice's Professionalism."
               : cover_page.subHeading}
           </h2>
           <div className="relative mt-5 h-fit flex items-center">

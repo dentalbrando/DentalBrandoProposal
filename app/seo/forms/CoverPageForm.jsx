@@ -16,12 +16,7 @@ import TextInput from "@components/TextInput";
 const CoverPageForm = () => {
   const dispatch = useDispatch();
   const coverPage = useSelector((state) => state.cover_pageSeo);
-  // Local state to track input values
-  // const [subHeading, setSubHeadingLocal] = useState(
-  //   coverPage.subHeading == ""
-  //     ? "A comprehensive website transfer proposal to enhance the professionalism of your business."
-  //     : coverPage.subHeading
-  // );
+  
   const [companyPhoneNumber, setCompanyPhoneNumberLocal] = useState(
     coverPage.companyPhoneNumber
   );
