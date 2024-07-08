@@ -27,7 +27,7 @@ function Registration(prop) {
               <ChangePassword />
             )}
             <button
-              className="text-start text-main-blue hover:underline px-3 text-xl py-5 mx-5 w-fit"
+              className="text-start text-main-blue hover:underline px-3 text-md py-5 mx-5 w-fit"
               onClick={() => setLoginToggle(!loginToggle)}
             >
               {loginToggle ? "Change Password" : "Go to Login Page"}
