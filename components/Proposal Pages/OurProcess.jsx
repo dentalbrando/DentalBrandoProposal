@@ -88,12 +88,10 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                       <div class=" w-[90%] mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
                         <p>
-                          The first step in web development process is planning.
-                          This involves gathering requirements, understanding
-                          the client's business goals, and creating a project
-                          plan that includes the timeline, budget, and resources
-                          needed. Our team of experts will make sure to plan the
-                          required project in a more efficient way.
+                          we will send you a link to a form where you can
+                          specify your requirements by checking the appropriate
+                          boxes. Based on your input, we will develop your
+                          website accordingly.{" "}
                         </p>
                       </div>
                     </div>
