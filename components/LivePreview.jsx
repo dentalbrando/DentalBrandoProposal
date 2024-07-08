@@ -6,8 +6,8 @@ import ProposedSiteMap from "./Proposal Pages/ProposedSiteMap";
 import Budget from "./Proposal Pages/Budget";
 import TableOfContent from "./Proposal Pages/TableOfContent";
 import OurProcess from "./Proposal Pages/OurProcess";
-// import AboutUs from "./Proposal Pages Copy/AboutUs";
-import AboutUs from "./Proposal Pages/AboutUs";
+import AboutUs from "./Proposal Pages Copy/AboutUs";
+// import AboutUs from "./Proposal Pages/AboutUs";
 import WhyUs from "./Proposal Pages/WhyUs";
 import Terms from "./Proposal Pages/Terms";
 import LastPage from "./Proposal Pages/LastPage";
@@ -19,16 +19,16 @@ const LivePreview = () => {
     <div className="flex items-center flex-col pb-16 w-[78vw] bg-white">
       <h1 className="text-main-blue text-[36px] font-semibold">Live Preview</h1>
       <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
-        {
-          page.formId == "1" ? (
+        {page.formId == "1" ? (
           <ConverPage />
         ) : page.formId == "3" ? (
           <CoverLetter />
         ) : page.formId == "4" ? (
           <AboutYourProjects />
-        ) : page.formId == "5" ? (
-          <ProposedSiteMap />
-        ) : page.formId == "9" ? (
+        ) : //       : page.formId == "5" ? (
+        // <ProposedSiteMap />
+        //       )
+        page.formId == "9" ? (
           <Budget />
         ) : page.formId == "2" ? (
           <TableOfContent />

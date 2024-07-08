@@ -83,7 +83,7 @@ const Home = () => {
                   </div>
                 </Link>
                 <Link
-                  href={"/development"}
+                  href={"/website-upgrading"}
                   className="w-[350px] h-[450px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
                 >
                   <div className="w-[100%] h-[100%] relative bg-yellow-00">
