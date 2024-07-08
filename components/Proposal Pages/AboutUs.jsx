@@ -52,7 +52,7 @@ const AboutUs = ({ pageNumber }) => {
               <div class="bline mt-2 w-[90px] h-2 bg-[#03A0D7] "></div>
             </div>
 
-            <div class=" text-center  mt-8 font-[400] text-[11pt] leading-5">
+            <div class=" text-center  mt-5 font-[400] text-[11pt] leading-5">
               <div class="Part-one    text-justify ">
                 <p>
                   Welcome to Dental Brando, your partner in enhancing the
@@ -118,10 +118,10 @@ const AboutUs = ({ pageNumber }) => {
                   class="text-[10pt] text-white font-[400] text-justify leading-6"
                   style={{ wordSpacing: "9px" }}
                 >
-                  We specialize in creating dynamic, responsive, and
-                  user-friendly websites by using latest technologies and tools
-                  that are optimized for search engines and are easy to
-                  navigate.
+                  We create custom-designed, SEO-optimized, and mobile-friendly
+                  websites that reflect the unique identity of your dental
+                  practice, enhancing patient engagement and streamlining
+                  operations.
                 </p>
               </div>
             </div>
@@ -141,9 +141,10 @@ const AboutUs = ({ pageNumber }) => {
                   class="text-[10pt] text-white font-[400]  text-justify leading-6"
                   style={{ wordSpacing: "6px" }}
                 >
-                  We understand the importance of creating an app that is
-                  intuitive, engaging, and user-friendly, we work closely with
-                  you to identify your requirements to meet your user needs.
+                  Our custom mobile apps improve patient interaction and
+                  convenience, offering features like appointment booking,
+                  reminders, and educational content, directly accessible from
+                  their smartphones.
                 </p>
               </div>
             </div>
@@ -157,16 +158,16 @@ const AboutUs = ({ pageNumber }) => {
               </div>
               <div class="mt-[35px] ml-3 ">
                 <h6 class="text-[18.43pt] text-white font-[400] ">
-                  Software Development{" "}
+                  Custom Dental Software{" "}
                 </h6>
                 <p
                   class="text-[10pt] text-white font-[400]  text-justify leading-6 "
                   style={{ wordSpacing: "5px" }}
                 >
                   {" "}
-                  We provide services that are designed to streamline your
-                  business operations and increase productivity. It also makes
-                  it easier for you to manage your business efficiently.
+                  We develop tailored software solutions that integrate
+                  seamlessly with your practice, improving efficiency in patient
+                  record management, billing, and overall practice operations.
                 </p>
               </div>
             </div>
@@ -186,9 +187,10 @@ const AboutUs = ({ pageNumber }) => {
                   class="text-[10pt] text-white font-[400]  text-justify leading-6 "
                   style={{ wordSpacing: "3px" }}
                 >
-                  We Provide tailored services to your business unique needs,
-                  from SEO to social media marketing, our team will help you
-                  establish a strong online presence that drives traffic.
+                  Our targeted digital marketing strategies, including SEO,
+                  social media marketing, and PPC advertising, boost your online
+                  visibility, attract new patients, and build long-term
+                  relationships.
                 </p>
               </div>
             </div>
@@ -208,9 +210,9 @@ const AboutUs = ({ pageNumber }) => {
                   class="text-[10pt] text-white font-[400]  text-justify leading-6 "
                   style={{ wordSpacing: "14px" }}
                 >
-                  We offer professional graphic designing services from logos to
-                  marketing materials to help your brand stand out. Let us help
-                  you make a lasting impression with our designs.
+                  We create professional, visually appealing graphics, including
+                  custom logos and promotional materials, to build a cohesive
+                  and trustworthy brand identity for your practice.
                 </p>
               </div>
             </div>
