@@ -2,14 +2,14 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    subHeading: '',
-    projectTitle: '',
-    companyPhoneNumber: '',
-    companyAddress: '',
-    companyName: '',
-    issueDate: '',
-    validDate: '',
-    companyLogo : '',
+  subHeading: "",
+  projectTitle: "Website Development Proposal",
+  companyPhoneNumber: "",
+  companyAddress: "",
+  companyName: "",
+  issueDate: "",
+  validDate: "",
+  companyLogo: "",
 };
 
 const coverPageSlice = createSlice({
