@@ -27,12 +27,12 @@ Improving SEO and Visibility: Optimize your website to rank higher on search eng
   );
   const [functionality, setFunctionality] = useState(
     functionalities == ""
-      ? `Services for dentists include a variety of essential features designed to meet your specific needs. We offer custom design and branding to create a visually appealing and modern website that reflects your practice's unique identity. Detailed service pages will provide comprehensive information about your treatments, accompanied by before-and-after galleries to showcase your work. To enhance patient engagement, we integrate tools such as appointment scheduling systems, patient forms, and live chat functionality for immediate inquiries. The website will be fully responsive and mobile-friendly, ensuring a seamless experience on desktops, tablets, and smartphones. SEO optimization is a key component of our service, ensuring your website ranks well on search engines and attracts local patients in the Miami area.`
+      ? `Our website development services for dentists include a variety of essential features designed to meet your specific needs. We offer custom design and branding to create a visually appealing and modern website that reflects your practice's unique identity. Detailed service pages will provide comprehensive information about your treatments, accompanied by before-and-after galleries to showcase your work. To enhance patient engagement, we integrate tools such as appointment scheduling systems, patient forms, and live chat functionality for immediate inquiries. The website will be fully responsive and mobile-friendly, ensuring a seamless experience on desktops, tablets, and smartphones. SEO optimization is a key component of our service, ensuring your website ranks well on search engines and attracts local patients in the Miami area.`
       : functionalities
   );
   const [websiteCMS, setWebsiteCMS] = useState(
     websiteCMSs == ""
-      ? `Using WordPress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently.`
+      ? `We recommend using as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently.`
       : websiteCMSs
   );
 
@@ -101,7 +101,7 @@ Improving SEO and Visibility: Optimize your website to rank higher on search eng
               <button
                 className="py-2 px-4 rounded-xl text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
                 onClick={() => {
-                  textareaRef.current.value = `Using WordPress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently.`;
+                  textareaRef.current.value = `We recommend using as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently.`;
                   setWebsiteCMS(textareaRef.current.value);
                 }}
               >
