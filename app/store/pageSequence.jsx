@@ -10,7 +10,7 @@ const initialState = {
     { id: "5", content: "About Us", checked: true },
     { id: "6", content: "Our Process", checked: true },
     { id: "7", content: "Why Dental Brando", checked: true },
-    { id: "8", content: "Estimate Budget", checked: true },
+    { id: "8", content: "Packages", checked: true },
     { id: "9", content: "Terms & conditions", checked: true },
     { id: "10", content: "Last Page", checked: true },
   ],
