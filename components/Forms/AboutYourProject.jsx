@@ -9,7 +9,6 @@ import {
 import { setPopup } from "@app/store/popup";
 
 const AboutYourProject = () => {
-  
   const overviews = useSelector((state) => state.aboutYourProject.overview);
   const functionalities = useSelector(
     (state) => state.aboutYourProject.functionality
@@ -17,27 +16,23 @@ const AboutYourProject = () => {
   const websiteCMSs = useSelector((state) => state.aboutYourProject.websiteCMS);
   const [overview, setOverview] = useState(
     overviews == ""
-      ? `Upon exploring your business is providing services of field marketing, trade/business development, investment platform providing unique information and exposure to business opportunities in Pakistan & the UK.
+      ? `Create a professional and visually appealing website that reflects the quality and reliability of your dental services.
 
-They connect businesses and investments through a range of services and events, believing in the importance of a responsible and profitable private sector in Pakistan's development
+Increasing Patient Engagement: Provide an easy-to-navigate platform where patients can learn about your services, read testimonials, and contact your practice.
 
-The purpose of Client Coverage team serves as a single point of contact, understanding your company's unique trade promotion needs and sector requirements.`
+Enhancing Accessibility: Ensure the website is mobile-friendly and responsive, offering a seamless experience on all devices.
+
+Improving SEO and Visibility: Optimize your website to rank higher on search engines, making it easier for potential patients to find you.`
       : overviews
   );
   const [functionality, setFunctionality] = useState(
     functionalities == ""
-      ? `In accordance with the specifications outlined in your project requirements, the prominent features incorporated into your website encompass the following major functions. With regards to functionality, emphasis has been placed on user interface and visitor engagement, as follows
-
-
-> Mega Menu for services pages, listed on your website
-> Membership page with international payment gateways integrated. (API's will be required)
-> Careers queries handling functionality and management.
-> Blog/Article section page with categorized options. (Blog/Article content will be required)`
+      ? `Services for dentists include a variety of essential features designed to meet your specific needs. We offer custom design and branding to create a visually appealing and modern website that reflects your practice's unique identity. Detailed service pages will provide comprehensive information about your treatments, accompanied by before-and-after galleries to showcase your work. To enhance patient engagement, we integrate tools such as appointment scheduling systems, patient forms, and live chat functionality for immediate inquiries. The website will be fully responsive and mobile-friendly, ensuring a seamless experience on desktops, tablets, and smartphones. SEO optimization is a key component of our service, ensuring your website ranks well on search engines and attracts local patients in the Miami area.`
       : functionalities
   );
   const [websiteCMS, setWebsiteCMS] = useState(
     websiteCMSs == ""
-      ? `WordPress CMS has been selected for the development of this website due to its numerous benefits. WordPress is a widely recognized and highly versatile content  management system that offers a plethora of advantages for website development. the key benefits of WordPress is its user-friendly interface, which allows even non technical individuals to easily manage and update website content. With its intuitive dashboard, users can effortlessly add, edit, and delete pages, blog posts, images, and other multimedia elements.`
+      ? `Using WordPress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently.`
       : websiteCMSs
   );
 
@@ -63,7 +58,7 @@ The purpose of Client Coverage team serves as a single point of contact, underst
       <div>
         <div className="flex justify-center flex-col my-5">
           <label className="text-gray-900 text-[16px] font-medium my-2 ">
-            Overview & Goals
+            Establishing Your Online Presence
           </label>
           <textarea
             cols={"auto"}
@@ -81,7 +76,7 @@ The purpose of Client Coverage team serves as a single point of contact, underst
         </div>
         <div className="flex justify-center flex-col my-5">
           <label className="text-gray-900 text-[16px] font-medium my-2">
-            Key Features and Functionality
+            Our website development
           </label>
           <textarea
             placeholder="Add (>)  to add tick sign before the line"
@@ -100,13 +95,13 @@ The purpose of Client Coverage team serves as a single point of contact, underst
         <div className="flex justify-center flex-col my-5">
           <div className="flex justify-between items-center">
             <label className="text-gray-900 text-[16px] font-medium my-2">
-              Website CMS
+              We recommend
             </label>
             <div className="flex items-center gap-3">
               <button
                 className="py-2 px-4 rounded-xl text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
                 onClick={() => {
-                  textareaRef.current.value = `WordPress CMS has been selected for the development of this website due to its numerous benefits. WordPress is a widely recognized and highly versatile content  management system that offers a plethora of advantages for website development. the key benefits of WordPress is its user-friendly interface, which allows even non technical individuals to easily manage and update website content. With its intuitive dashboard, users can effortlessly add, edit, and delete pages, blog posts, images, and other multimedia elements.`;
+                  textareaRef.current.value = `Using WordPress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently.`;
                   setWebsiteCMS(textareaRef.current.value);
                 }}
               >
