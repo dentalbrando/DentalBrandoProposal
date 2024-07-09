@@ -14,11 +14,10 @@ const ConverLetterForm = () => {
   const dispatch = useDispatch();
   const coverLetter = useSelector((state) => state.cover_letter);
   if (coverLetter.letterType === "web_dev" && coverLetter.letterText === "") {
-    var tempLetterText = `We are writing to express our interest in your web development project. As a company with extensive experience in web development and a track record of delivering exceptional results for our clients, we are confident that we would be the ideal partner for your project.
-At Dental Brando, we understand that your website is often the first point of contact between your business and your customers. As such, we are committed to migrate your website to the sharepoint.
-Our team of experienced web developers, designers, and project manager work closely with clients to understand their specific needs and requirements. We have expertise in a wide range of technologies including Wordpress, Laravel, Angular, PHP, Share Point, Vue.Js, React, Shopify, Python and more. We are always exploring new and innovative approaches to web development.
-At every stage of the project, we prioritize communication and collaboration to ensure that you are fully involved in the process and the final product meets your expectations. We are dedicated to delivering projects on time and within budget, and we offer going support and maintenance to ensure that your website continues to perform at its best.
-Thank you for considering Dental Brando for your web development needs. We are excited at the prospect of working with you and creating a website that will help your business succeed.
+    var tempLetterText = `Welcome to Dental Brando, a leading IT company specializing in website development for dental practices. Our goal is to enhance the professionalism of your dental practice by providing you with a comprehensive website development proposal. We offer innovative web solutions to elevate your dental practice, ensuring that your online presence is both professional and effective.
+At Dental Brando, we pride ourselves on offering custom designs tailored to reflect your unique brand. We understand the importance of a website that not only looks great but also functions seamlessly. Our team of experts will work closely with you to create a website that truly represents your practice and meets your specific needs.
+Our customized website design services ensure that your site reflects the unique personality and branding of your dental practice. We focus on enhancing patient engagement through user-friendly web design, making it easy for patients to navigate your site, find information, and schedule appointments.
+We look forward to the opportunity to work with you and help your dental practice thrive in the digital age.
 Sincerely,`;
   } else {
     var tempLetterText = coverLetter.letterText;
