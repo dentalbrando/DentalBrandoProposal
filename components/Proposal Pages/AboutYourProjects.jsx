@@ -136,7 +136,7 @@ Enhancing Accessibility: Ensure the website is mobile-friendly and responsive, o
                   <p>1.</p>
                 </div>
                 <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
-                  <p>Establishing Your Online Presence</p>
+                  <p>Overview & Goals</p>
                 </div>
               </div>
               <div>
@@ -157,7 +157,7 @@ Enhancing Accessibility: Ensure the website is mobile-friendly and responsive, o
                   <p>2.</p>
                 </div>
                 <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
-                  <p>Our website development</p>
+                  <p>Key Features and Functionality</p>
                 </div>
               </div>
               <div>
@@ -174,7 +174,7 @@ Enhancing Accessibility: Ensure the website is mobile-friendly and responsive, o
                     <p>3.</p>
                   </div>
                   <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
-                    <p>We recommend</p>
+                    <p>Website CMS</p>
                   </div>
                 </div>
                 <div>

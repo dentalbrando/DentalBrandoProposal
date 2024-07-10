@@ -58,7 +58,7 @@ Improving SEO and Visibility: Optimize your website to rank higher on search eng
       <div>
         <div className="flex justify-center flex-col my-5">
           <label className="text-gray-900 text-[16px] font-medium my-2 ">
-            Establishing Your Online Presence
+            Overview & Goals
           </label>
           <textarea
             cols={"auto"}
@@ -76,7 +76,7 @@ Improving SEO and Visibility: Optimize your website to rank higher on search eng
         </div>
         <div className="flex justify-center flex-col my-5">
           <label className="text-gray-900 text-[16px] font-medium my-2">
-            Our website development
+            Key Features and Functionality
           </label>
           <textarea
             placeholder="Add (>)  to add tick sign before the line"
@@ -95,7 +95,7 @@ Improving SEO and Visibility: Optimize your website to rank higher on search eng
         <div className="flex justify-center flex-col my-5">
           <div className="flex justify-between items-center">
             <label className="text-gray-900 text-[16px] font-medium my-2">
-              We recommend
+              Website CMS
             </label>
             <div className="flex items-center gap-3">
               <button
