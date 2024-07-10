@@ -40,11 +40,11 @@ const LivePreview = () => {
         ) : page.formId == "7" ? (
           <WhyUs />
         ) : page.formId == "9" ? (
-          <Terms />
-        ) : page.formId == "10" ? (
-          <LastPage />
-        ) : page.formId == "11" ? (
           <Package2 />
+        ) : page.formId == "10" ? (
+          <Terms />
+        ) : page.formId == "11" ? (
+          <LastPage />
         ) : (
           <div className="offer flex w-[8.27in] h-[11.6876in] bg-white shadow-lg justify-center items-center text-4xl text-red-400 font-semibold">
             {" "}

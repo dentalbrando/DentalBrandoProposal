@@ -92,16 +92,16 @@ const FullProposal = () => {
               );
             case "9":
               return (
-                page.checked && <Terms key={index} pageNumber={pageNumber++} />
-              );
-            case "10":
-              return page.checked && <LastPage key={index} />;
-            case "11":
-              return (
                 page.checked && (
                   <Package2 key={index} pageNumber={pageNumber++} />
                 )
               );
+            case "10":
+              return (
+                page.checked && <Terms key={index} pageNumber={pageNumber++} />
+              );
+            case "11":
+              return page.checked && <LastPage key={index} />;
           }
         })}
       </div>
