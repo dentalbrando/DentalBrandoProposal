@@ -331,7 +331,7 @@ const Budget = ({ pageNumber }) => {
               </div>
               <div className="flex flex-col justify-center items-center w-[100%] h-[18%] bg-[#03A0D7] text-white gap-1">
                 <h1 className="font-[700] text-[32px] leading-none">
-                  $ 59.99/mo
+                  $ 59.99/m
                 </h1>
               </div>
             </div>
@@ -404,7 +404,7 @@ const Budget = ({ pageNumber }) => {
               </div>
               <div className="flex flex-col justify-center items-center w-[100%] h-[18%] bg-[#03A0D7] text-white gap-1">
                 <h1 className="font-[700] text-[32px] leading-none">
-                  $ 99.99/mo
+                  $ 99.99/m
                 </h1>
               </div>
             </div>

@@ -17,7 +17,7 @@ const TableOfContent = () => {
             <div className="text-[25pt] font-[700] text-[#093A5B] mt-[131px] w-[305px] ">
               <div>
                 <h1
-                  style={{ lineHeight: "1", fontFamily: "Montserrat" }}
+                  style={{ lineHeight: "36px", fontFamily: "Montserrat" }}
                   className="pl-1 "
                 >
                   <p>TABLE OF CONTENT</p>

@@ -48,11 +48,11 @@ const WhyUs = ({ pageNumber }) => {
 
             <div class="mt-[25px] ">
               <h1
-                class="font-[700]  text-[25pt] text-[#093A5B] leading-10"
+                class="font-[700]  text-[25pt] text-[#093A5B]  leading-[36px]"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 WHY <br />
-                Dental Brando{" "}
+                DENTAL BRANDO{" "}
               </h1>
               <div class=" mt-1 w-[85px]  h-2 bg-[#03A0D7] "></div>
             </div>
@@ -313,7 +313,6 @@ const WhyUs = ({ pageNumber }) => {
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </div>

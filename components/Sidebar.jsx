@@ -140,7 +140,7 @@ const Sidebar = () => {
                       { id: "9", content: "Dominate", checked: true },
                       {
                         id: "10",
-                        content: "Terms & conditions",
+                        content: "Terms & Conditions",
                         checked: true,
                       },
                       { id: "11", content: "Last Page", checked: true },
