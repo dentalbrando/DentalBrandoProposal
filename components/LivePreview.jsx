@@ -11,6 +11,7 @@ import AboutUs from "./Proposal Pages/AboutUs";
 import WhyUs from "./Proposal Pages/WhyUs";
 import Terms from "./Proposal Pages/Terms";
 import LastPage from "./Proposal Pages/LastPage";
+import Package2 from "./Proposal Pages/Package2";
 
 const LivePreview = () => {
   const page = useSelector((state) => state.page);
@@ -42,6 +43,8 @@ const LivePreview = () => {
           <Terms />
         ) : page.formId == "10" ? (
           <LastPage />
+        ) : page.formId == "11" ? (
+          <Package2 />
         ) : (
           <div className="offer flex w-[8.27in] h-[11.6876in] bg-white shadow-lg justify-center items-center text-4xl text-red-400 font-semibold">
             {" "}

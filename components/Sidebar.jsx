@@ -15,7 +15,7 @@ const Sidebar = () => {
   const page = useSelector((state) => state.page);
   const dispatch = useDispatch();
   const onDragEnd = (result) => {
-    if (!result.destination) return; 
+    if (!result.destination) return;
     const reorderedItems = Array.from(pageSequence);
     const [movedItem] = reorderedItems.splice(result.source.index, 1);
     reorderedItems.splice(result.destination.index, 0, movedItem);
@@ -116,8 +116,7 @@ const Sidebar = () => {
                 <button
                   type="button"
                   className="mt-8 border border-gray-200 p-3 rounded-2xl bg-main-blue text-white font-[500] "
-                                    style={{fontSize:"24px"}}
-
+                  style={{ fontSize: "24px" }}
                   onClick={() => generate()}
                 >
                   Generate All
@@ -125,8 +124,7 @@ const Sidebar = () => {
                 <button
                   type="button"
                   className="p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] "
-                                    style={{fontSize:"24px"}}
-
+                  style={{ fontSize: "24px" }}
                   onClick={() => {
                     dispatch(resetSquence());
                     setItems([
@@ -145,6 +143,7 @@ const Sidebar = () => {
                         checked: true,
                       },
                       { id: "10", content: "Last Page", checked: true },
+                      { id: "11", content: "Package 2", checked: true },
                     ]);
                   }}
                 >
@@ -152,16 +151,14 @@ const Sidebar = () => {
                 </button>
                 <Link
                   className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] "
-                                    style={{fontSize:"24px"}}
-
+                  style={{ fontSize: "24px" }}
                   href="/recent"
                 >
                   Recent Proposals
                 </Link>
                 <button
                   className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] "
-                                    style={{fontSize:"24px"}}
-
+                  style={{ fontSize: "24px" }}
                   onClick={logout}
                 >
                   Log Out

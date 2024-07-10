@@ -13,6 +13,7 @@ const initialState = {
     { id: "8", content: "Packages", checked: true },
     { id: "9", content: "Terms & conditions", checked: true },
     { id: "10", content: "Last Page", checked: true },
+    { id: "11", content: "Package 2", checked: true },
   ],
 };
 
