@@ -222,7 +222,7 @@ const Budget = ({ pageNumber }) => {
     // </>
     <>
       <div class="offer w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-whit bg-red-30 flex flex-col justify-between items-center">
-        <div class="flex  print:h-[7.3rem] w-[90%] bg-yellow-400">
+        <div class="flex  print:h-[7.3rem] w-[90%]">
           <div class="mt-[50px] flex relative  pb-0">
             <svg
               class="transform rotate-90 relative ml-[-5px]  top-0 "
@@ -251,8 +251,8 @@ const Budget = ({ pageNumber }) => {
           </div>
         </div>
 
-        <div className="w-full h-[85%] relative bg-red-500">
-          <div className="w-full h-[50%] pt-6 z-0 bg-green-500">
+        <div className="w-full h-[85%] relative ">
+          <div className="w-full h-[50%] pt-6 z-0">
             <div
               className="w-[80%] h-[100px] mx-auto bg-white text-[28px] text-main-blue font-[700] text-justify leading-8"
               style={{ textAlignLast: "center" }}
@@ -262,8 +262,8 @@ const Budget = ({ pageNumber }) => {
             </div>
           </div>
 
-          <div className="w-full bg-pink-600 h-[62%] absolute top-[16%] z-10 flex justify-center gap-[6%] items-center">
-            <div className="w-[42%] h-[100%] bg-green-800  rounded-3xl overflow-hidden">
+          <div className="w-full  h-[62%] absolute top-[16%] z-10 flex justify-center gap-[6%] items-center">
+            <div className="w-[42%] h-[100%]  rounded-3xl overflow-hidden">
               <div className="flex flex-col justify-center items-center w-[100%] h-[20%] bg-[#03A0D7] text-white gap-1">
                 <h1 className="font-[700] text-[28px] leading-none">Basic</h1>
                 <h2 className="text-[18px] leading-none">Monthly Plan</h2>
