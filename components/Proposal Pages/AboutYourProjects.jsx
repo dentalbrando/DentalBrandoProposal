@@ -60,7 +60,7 @@ Improving SEO and Visibility: Optimize your website to rank higher on search eng
   useEffect(() => {
     setTempWebsiteCMS(
       websiteCMSs === ""
-        ? `Create a professional and visually appealing website that reflects the quality and reliability of your dental services.`
+        ? `We recommend using as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently.`
         : websiteCMSs
     );
     setTempOverviews(
