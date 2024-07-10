@@ -19,7 +19,7 @@ const CoverPage = () => {
           <img className="w-[18rem] my-10 mx-auto" src={logo.src} alt="" />
         
           <h2
-            className="text-[rgb(9,58,91)] font-[700] text-[16pt] w-[80%] mt-[-35px] mx-auto leading-[1.18] flex justify-center items-center text- bg-red-30 tracking-[0.5pt]"
+            className="text-[rgb(9,58,91)] font-[700] text-[16pt] w-[80%] mt-[-25px] py-[10px] mx-auto leading-[1.18] flex justify-center items-center text- bg-red-30 tracking-[0.5pt]"
             style={{ textAlign: "justify", textAlignLast: "center" }}
           >
             {cover_page.subHeading == ""
@@ -44,13 +44,13 @@ const CoverPage = () => {
             />
           </div>
           <div
-            className="ml-14 mt-11 text-[14pt] font-[700] w-[75%]"
+            className="ml-14 mt-8 text-[14pt] font-[700] w-[75%]"
             style={{ fontFamily: "'Open Sans'" }}
           >
-            <p>Prepared for :</p>
+            <p>PREPARED FOR :</p>
             {
               cover_page.companyLogo ? (
-                <div id="logo" className="mt-4 w-20 h-20">
+                <div id="logo" className="mt-3 w-20 h-20">
                   <img
                     className="w-full h-full"
                     src={cover_page.companyLogo?.string}
@@ -60,7 +60,7 @@ const CoverPage = () => {
               ) : null
               // <div className="w-full h-full bg-gray-100"></div>
             }
-            <div className="flex relative items-end justify-between mt-8 bg-green-40">
+            <div className="flex relative items-end justify-between mt-4 bg-green-40">
               <div className="flex flex-col w-[50%]">
                 <span
                   id="name"
