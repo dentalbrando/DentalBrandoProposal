@@ -147,8 +147,8 @@ Enhancing Accessibility: Ensure the website is mobile-friendly and responsive, o
                 </p>
               </div>
             </section>
-            <div className="w-full h-[370px] bg-main-blue text-white mt-8 pt-6 px-5">
-              <h2 className="w-fit h-fit bg-red-40 font-[700] text-[22px] mx-auto py-5">
+            <div className="w-full h-[370px] bg-main-blue text-white mt-8 pt-4 px-5">
+              <h2 className="w-fit h-fit bg-red-40 font-[700] text-[22px] mx-auto py-7">
                 Supercharge Your Dental Clinic's Online Presence
               </h2>
               <div className="w-full h-fit bg-yellow-40 flex flex-wrap justify-between gap-[4%] items-start gap-y-5">

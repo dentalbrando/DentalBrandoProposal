@@ -143,7 +143,11 @@ const Sidebar = () => {
                         checked: true,
                       },
                       { id: "10", content: "Last Page", checked: true },
-                      { id: "11", content: "Package 2", checked: true },
+                      {
+                        id: "11",
+                        content: "Dominate",
+                        checked: true,
+                      },
                     ]);
                   }}
                 >
