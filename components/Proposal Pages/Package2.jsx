@@ -89,7 +89,7 @@ const Package2 = ({ pageNumber }) => {
                 </h2>
                 <h2 className="w-[48%] flex justify-start gap-3 items-center h-fit bg-red-40 text-[16px] mx-auto">
                   <FaCheckCircle />
-                  SEO Freindly to improve your ranking
+                  SEO Friendly to improve your ranking
                 </h2>
                 <h2 className="w-[48%] flex justify-start gap-3 items-center h-fit bg-red-40 text-[16px] mx-auto">
                   <FaCheckCircle />

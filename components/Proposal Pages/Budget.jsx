@@ -222,7 +222,7 @@ const Budget = ({ pageNumber }) => {
     // </>
     <>
       <div class="offer w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-whit bg-red-30 flex flex-col justify-between items-center">
-        <div class="flex  print:h-[7.3rem] ">
+        <div class="flex  print:h-[7.3rem] w-[90%] bg-yellow-400">
           <div class="mt-[50px] flex relative  pb-0">
             <svg
               class="transform rotate-90 relative ml-[-5px]  top-0 "
@@ -251,8 +251,8 @@ const Budget = ({ pageNumber }) => {
           </div>
         </div>
 
-        <div className="w-full h-[85%] relative">
-          <div className="w-full h-[50%] pt-6 z-0">
+        <div className="w-full h-[85%] relative bg-red-500">
+          <div className="w-full h-[50%] pt-6 z-0 bg-green-500">
             <div
               className="w-[80%] h-[100px] mx-auto bg-white text-[28px] text-main-blue font-[700] text-justify leading-8"
               style={{ textAlignLast: "center" }}
@@ -261,8 +261,9 @@ const Budget = ({ pageNumber }) => {
               Stunning Website Designed
             </div>
           </div>
-          <div className="w-full h-[62%] absolute top-[16%] z-10 flex justify-center gap-[6%] items-center">
-            <div className="w-[37%] h-[100%] bg-green-800  rounded-3xl overflow-hidden">
+
+          <div className="w-full bg-pink-600 h-[62%] absolute top-[16%] z-10 flex justify-center gap-[6%] items-center">
+            <div className="w-[42%] h-[100%] bg-green-800  rounded-3xl overflow-hidden">
               <div className="flex flex-col justify-center items-center w-[100%] h-[20%] bg-[#03A0D7] text-white gap-1">
                 <h1 className="font-[700] text-[28px] leading-none">Basic</h1>
                 <h2 className="text-[18px] leading-none">Monthly Plan</h2>
@@ -296,7 +297,7 @@ const Budget = ({ pageNumber }) => {
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">
                     <FaCheckCircle />
                   </span>
-                  Seo Audit Report One Time
+                  SEO Audit Report One Time
                 </div>
                 <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-red-500">
@@ -335,7 +336,7 @@ const Budget = ({ pageNumber }) => {
                 </h1>
               </div>
             </div>
-            <div className="w-[37%] h-[100%] bg-green-800  rounded-3xl overflow-hidden">
+            <div className="w-[42%] h-[100%] bg-green-800  rounded-3xl overflow-hidden">
               <div className="flex flex-col justify-center items-center w-[100%] h-[20%] bg-[#03A0D7] text-white gap-1">
                 <h1 className="font-[700] text-[28px] leading-none">Growth</h1>
                 <h2 className="text-[18px] leading-none">Monthly Plan</h2>
@@ -369,7 +370,7 @@ const Budget = ({ pageNumber }) => {
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">
                     <FaCheckCircle />
                   </span>
-                  Seo Audit Report Monthly
+                  SEO Audit Report Monthly
                 </div>
                 <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">
@@ -409,8 +410,8 @@ const Budget = ({ pageNumber }) => {
               </div>
             </div>
           </div>
-          <div className="w-full h-[50%] bg-main-blue relative z-0">
-            <div className="px-[10%] w-[100%] h-fit text-[12px] text-white  text-justify  absolute  bottom-[32%] mx-auto">
+          <div className="w-[100%] h-[50%] bg-main-blue relative z-0">
+            <div className="px-[5%] w-[100%] h-fit text-[12px] text-white  text-justify  absolute  bottom-[32%] mx-auto">
               *Updation of Themes/Plugins, Regular Content Updations, Fixing
               Broken Links, Speed Optimization Security Updates, Backups, User
               Management, Uptime Monitoring.

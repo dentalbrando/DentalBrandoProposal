@@ -137,7 +137,7 @@ const Sidebar = () => {
                       { id: "6", content: "Our Process", checked: true },
                       { id: "7", content: "Why Dental Brando", checked: true },
                       { id: "8", content: "Packages", checked: true },
-                      { id: "9", content: "Dominate", checked: true },
+                      { id: "9", content: "Thrive with Us", checked: true },
                       {
                         id: "10",
                         content: "Terms & Conditions",
