@@ -28,12 +28,12 @@ const LastPage = () => {
                 alt=""
               />
             </div> */}
-            <div class="flex gap-16  absolute bottom-[150px] left-10">
+            <div class="flex gap-4  absolute bottom-[150px] left-10">
               <div class="mt-3  flex flex-col items-center justify-center">
                 <div class="w-8 h-8 bg-[#093A5B] rounded-full flex items-center justify-center">
                   <img class="w-4" src={svg2.src} alt="" />
                 </div>
-                <p class="font-[500] text-[12px] mt-2">+92 (340) 0084643</p>
+                <p class="font-[500] text-[8pt] mt-2">+92 (340) 0084643</p>
               </div>
 
               <div class="mt-3 flex flex-col  items-center justify-center">
@@ -41,8 +41,18 @@ const LastPage = () => {
                   <img class="w-4" src={svg3.src} alt="" />
                 </div>
 
-                <p class="font-[500] text-[12px] mt-2">
-                  <span>Email: </span>
+                <p class="font-[500] text-[8pt] mt-2">
+                  {/* <span>Website: <br/></span> */}
+                  sales@dentalbrando.com
+                </p>
+              </div>
+              <div class="mt-3 flex flex-col  items-center justify-center">
+                <div class="w-8 h-8 bg-[#093A5B] rounded-full flex items-center justify-center">
+                  <img class="w-4" src={svg3.src} alt="" />
+                </div>
+
+                <p class="font-[500] text-[8pt] mt-2">
+                  {/* <span>Email: </span> */}
                   sales@dentalbrando.com
                 </p>
               </div>
