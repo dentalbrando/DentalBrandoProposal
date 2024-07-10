@@ -18,11 +18,11 @@ const AboutYourProject = () => {
     overviews == ""
       ? `Create a professional and visually appealing website that reflects the quality and reliability of your dental services.
 
-Increasing Patient Engagement: Provide an easy-to-navigate platform where patients can learn about your services, read testimonials, and contact your practice.
+<b>Increasing Patient Engagement:</b> Provide an easy-to-navigate platform where patients can learn about your services, read testimonials, and contact your practice.
 
-Enhancing Accessibility: Ensure the website is mobile-friendly and responsive, offering a seamless experience on all devices.
+<b>Enhancing Accessibility:</b> Ensure the website is mobile-friendly and responsive, offering a seamless experience on all devices.
 
-Improving SEO and Visibility: Optimize your website to rank higher on search engines, making it easier for potential patients to find you.`
+<b>Improving SEO and Visibility:</b> Optimize your website to rank higher on search engines, making it easier for potential patients to find you.`
       : overviews
   );
   const [functionality, setFunctionality] = useState(
