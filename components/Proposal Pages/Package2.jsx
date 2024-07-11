@@ -128,7 +128,7 @@ const Package2 = ({ pageNumber }) => {
                   easy for you to pay in chunks
                   <span className="text-main-blue font-[700] text-[28px]">
                     {" "}
-                    $85
+                    $100
                   </span>{" "}
                   per month for three months. Get your free quote and see the
                   difference from our competitors. We provide you with real
