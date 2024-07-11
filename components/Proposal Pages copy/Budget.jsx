@@ -185,7 +185,7 @@ const Budget = () => {
           <div className="text-[8pt] mt-4 mb-[50px]">
             <p
               className="font-[700] text-[9.84pt] mb-1"
-              style={{ fontFamily: "Montserrat" }}
+              // style={{ fontFamily: "Montserrat" }}
             >
               Terms & Conditions :
             </p>

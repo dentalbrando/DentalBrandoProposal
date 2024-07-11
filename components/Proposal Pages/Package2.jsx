@@ -43,7 +43,7 @@ const Package2 = ({ pageNumber }) => {
             <div className="pt-[34px] mb-2">
               <h1
                 className="font-[700] text-[25pt] text-[#093A5B] leading-9"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 DOMINATE THE DENTAL <br />
                 MARKET WITH A WEBSITE!

@@ -14,10 +14,10 @@ const TableOfContent = () => {
           className="flex justify-between mx-auto pl-14 bg-pink-20 w-full h-full"
         >
           <section className="w-[calc(100%-59px)]">
-            <div className="text-[25pt] font-[700] text-[#093A5B] mt-[131px] w-[305px] ">
+            <div className="text-[25pt] font-[700] text-[#093A5B] mt-[131px] w-[305px] leading-[36px]">
               <div>
                 <h1
-                  style={{ lineHeight: "1", fontFamily: "Montserrat" }}
+                  // style={{ lineHeight: "1", fontFamily: "Montserrat" }}
                   className="pl-1 "
                 >
                   <p>TABLE OF CONTENT</p>

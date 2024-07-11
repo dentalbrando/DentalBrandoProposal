@@ -127,7 +127,7 @@ The purpose of Client Coverage team serves as a single point of contact, underst
             <div class="pt-[34px] mb-2">
               <h1
                 class="font-[700] text-[25pt] text-[#093A5B] leading-9"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 ABOUT YOUR
                 <br /> PROJECT

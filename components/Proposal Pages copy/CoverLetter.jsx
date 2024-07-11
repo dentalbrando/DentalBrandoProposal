@@ -82,7 +82,7 @@ Sincerely,`;
           <div className="mt-[70px]">
             <h1
               className="font-[700] text-[25pt] text-[#093A5B] leading-9"
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
+              // style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               COVER <br />
               LETTER{" "}

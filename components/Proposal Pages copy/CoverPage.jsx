@@ -10,7 +10,7 @@ const CoverPage = () => {
       <div className=" flex justify-center items-center shadow-lg">
         <div
           className="relative w-[8.27in] h-[1122.6px] mx-auto bg-white"
-          style={{ fontFamily: "'Montserrat'" }}
+          // style={{ fontFamily: "'Montserrat'" }}
         >
           <div className="mt-4 flex items-center">
             <div className="w-[80%] h-5 custom-shape1DB"></div>
@@ -64,7 +64,7 @@ const CoverPage = () => {
               <div className="flex flex-col w-[50%]">
                 <span
                   id="name"
-                  style={{ fontFamily: "'Montserrat'" }}
+                  // style={{ fontFamily: "'Montserrat'" }}
                   className="capitalize"
                 >
                   {cover_page.companyName

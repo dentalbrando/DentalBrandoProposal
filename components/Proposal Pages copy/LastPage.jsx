@@ -26,7 +26,7 @@ const LastPage = () => {
             <div class=" mx-10  absolute bottom-[200px]">
               <h1
                 class="font-[700]  text-[25pt] text-[#093A5B] leading-10"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 CONTACT <br />
                 US{" "}

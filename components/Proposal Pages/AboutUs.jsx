@@ -43,7 +43,7 @@ const AboutUs = ({ pageNumber }) => {
             <div className="mt-[34px] ">
               <h1
                 className="font-[700]  text-[25pt] text-[#093A5B]  leading-[36px]"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 ABOUT
                 <br />

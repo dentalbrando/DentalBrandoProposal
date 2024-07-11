@@ -49,7 +49,7 @@ const WhyUs = ({ pageNumber }) => {
             <div class="mt-[34px] ">
               <h1
                 class="font-[700]  text-[25pt] text-[#093A5B]  leading-[36px]"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 WHY <br />
                 DENTAL BRANDO{" "}

@@ -35,7 +35,7 @@ const LastPage = () => {
             <div className=" mx-10  absolute bottom-[230px]">
               <h1
                 className="font-[700]  text-[25pt] text-[#093A5B] leading-10"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 CONTACT US{" "}
               </h1>
@@ -70,13 +70,13 @@ const LastPage = () => {
             <div className="absolute w-full h-[300px] top-[43%] p ps-10">
               <h1
                 className="font-[700]  text-[25pt] text-[#093A5B]"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 Thank You
               </h1>
               <p
                 className="font-[500] w-[47%] text-[15px] pt-3"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 We thank you for reading our Website Development Proposal.
                 Please contact us if you have any questions or require further
