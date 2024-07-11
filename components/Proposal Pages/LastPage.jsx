@@ -3,7 +3,7 @@ import svg2 from "@public/assets/LastPageImgs/last page-02.svg";
 import svg3 from "@public/assets/LastPageImgs/last page-03.svg";
 import svg4 from "@public/assets/LastPageImgs/icons8-website-symbol-50.png";
 import bgImg from "@public/assets/DB Web Development Proposal-12.svg";
-import logo from "@public/assets/DB Logo-15.svg";
+import logo from "@public/assets/DB Logo-15 copy.svg";
 import { FaMap, FaSitemap, FaWeebly, FaWordpress } from "react-icons/fa";
 
 const LastPage = () => {
@@ -12,11 +12,11 @@ const LastPage = () => {
       <div class="offer flex w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-red-30 bg-white">
         <div class=" w-full relative">
           <div class="w-[100%] relative">
-            {/* <img
-              class="w-[200px] absolute right-[50px] top-[50px]"
+            <img
+              class="w-[180px] absolute left-[40px] z-[10] top-[50px]"
               src={logo.src}
               alt=""
-            /> */}
+            />
             <img
               src={bgImg.src}
               alt=""
