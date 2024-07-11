@@ -37,7 +37,7 @@ const Terms = ({ pageNumber }) => {
               </div>
             </div>
 
-            <div className="pt-[34px] mb-2">
+            <div className="pt-[33px] mb-2">
               <h1
                 className="font-[700] text-[25pt] text-[#093A5B] leading-9"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
