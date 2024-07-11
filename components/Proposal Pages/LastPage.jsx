@@ -60,19 +60,21 @@ const LastPage = () => {
                 <div class="w-8 h-8 bg-[#093A5B] rounded-full flex items-center justify-center">
                   <img class="w-4" src={svg3.src} alt="" />
                 </div>
-                <p class="font-[500] text-[10pt] mt-2">sales@dentalbrando.com</p>
+                <p class="font-[500] text-[10pt] mt-2">
+                  sales@dentalbrando.com
+                </p>
               </div>
             </div>
 
             <div className="absolute w-full h-[300px] top-[43%] p ps-10">
               <h1
-                class="font-[700]  text-[25pt] text-[#093A5B] leading-10"
+                class="font-[700]  text-[25pt] text-[#093A5B]"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 Thank You
               </h1>
               <p
-                class="font-[500] w-[47%] text-[13px]"
+                class="font-[500] w-[47%] text-[15px] pt-3"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 We thank you for reading our Website Development Proposal.
