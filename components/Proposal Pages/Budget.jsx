@@ -10,6 +10,7 @@ import svg4 from "@public/assets/DbOurProcess/our process-04.svg";
 import svg5 from "@public/assets/DbOurProcess/our process-05.svg";
 import svg6 from "@public/assets/DbOurProcess/our process-06.svg";
 import {
+  FaAsterisk,
   FaCheckCircl,
   FaCheckCircle,
   FaCheckCircleeFaCheckCircle,
@@ -268,12 +269,12 @@ const Budget = ({ pageNumber }) => {
                 <h1 className="font-[700] text-[28px] leading-none">Basic</h1>
                 <h2 className="text-[18px] leading-none">Monthly Plan</h2>
               </div>
-              <div className="w-[100%] h-[62%] bg-white flex flex-col justify-start items-start pt-6 px-2 gap-y-[5px]">
+              <div className="w-[100%] h-[62%] bg-white flex flex-col justify-start items-start pt-6 px-2 gap-y-[10px]">
                 <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">
                     <FaCheckCircle />
                   </span>
-                  Website Maintenance
+                  Website Maintenance <FaAsterisk className="text-[7px] ml-1" />
                 </div>
                 <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">
@@ -298,12 +299,6 @@ const Budget = ({ pageNumber }) => {
                     <FaCheckCircle />
                   </span>
                   SEO Audit Report One Time
-                </div>
-                <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
-                  <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-red-500">
-                    <FaTimesCircle />
-                  </span>
-                  Website Maintenance
                 </div>
                 <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-red-500">
@@ -341,12 +336,12 @@ const Budget = ({ pageNumber }) => {
                 <h1 className="font-[700] text-[28px] leading-none">Growth</h1>
                 <h2 className="text-[18px] leading-none">Monthly Plan</h2>
               </div>
-              <div className="w-[100%] h-[62%] bg-white flex flex-col justify-start items-start pt-6 px-2 gap-y-[5px]">
+              <div className="w-[100%] h-[62%] bg-white flex flex-col justify-start items-start pt-6 px-2 gap-y-[10px]">
                 <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">
                     <FaCheckCircle />
                   </span>
-                  Website Maintenance
+                  Website Maintenance <FaAsterisk className="text-[7px] ml-1" />
                 </div>
                 <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">
@@ -371,12 +366,6 @@ const Budget = ({ pageNumber }) => {
                     <FaCheckCircle />
                   </span>
                   SEO Audit Report Monthly
-                </div>
-                <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
-                  <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">
-                    <FaCheckCircle />
-                  </span>
-                  Website Maintenance
                 </div>
                 <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">
