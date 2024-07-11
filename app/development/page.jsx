@@ -46,7 +46,7 @@ function Development() {
         </div>
       ) : (
         <>
-          {pageNo != 100 ? (
+          {pageNo === 100 ? (
             <>
               <Nav />
               <div className="flex justify-start items-start h-fit">

@@ -3,13 +3,13 @@ import React from "react";
 const Terms = ({ pageNumber }) => {
   return (
     <>
-      <div class="offer w-[8.27in] h-[1122.6px] print:shadow-none shadow-lg bg-white">
-        <div class="w-full h-full">
-          <div class="w-[90%] mx-auto">
-            <div class="flex  h-[7.3rem] ">
-              <div class="mt-[50px]  flex relative  ">
+      <div className="offer w-[8.27in] h-[1122.6px] print:shadow-none shadow-lg bg-white">
+        <div className="w-full h-full">
+          <div className="w-[90%] mx-auto">
+            <div className="flex  h-[7.3rem] ">
+              <div className="mt-[50px]  flex relative  ">
                 <svg
-                  class="transform rotate-90 relative ml-[-5px]  top-0 "
+                  className="transform rotate-90 relative ml-[-5px]  top-0 "
                   width="64"
                   height="64"
                   viewBox="0 0 256 256"
@@ -20,210 +20,346 @@ const Terms = ({ pageNumber }) => {
                     d="m221.76 69.66l-88-48.18a12 12 0 0 0-11.52 0l-88 48.18A12 12 0 0 0 28 80.18v95.64a12 12 0 0 0 6.24 10.52l88 48.18a11.95 11.95 0 0 0 11.52 0l88-48.18a12 12 0 0 0 6.24-10.52V80.18a12 12 0 0 0-6.24-10.52ZM220 175.82a4 4 0 0 1-2.08 3.5l-88 48.18a4 4 0 0 1-3.84 0l-88-48.18a4 4 0 0 1-2.08-3.5V80.18a4 4 0 0 1 2.08-3.5l88-48.18a3.94 3.94 0 0 1 3.84 0l88 48.18a4 4 0 0 1 2.08 3.5Z"
                   />
                 </svg>
-                <h6 class="absolute ml-[1.4rem] top-5 text-[#03A0D7]  text-[12pt]">
+                <h6 className="absolute ml-[1.4rem] top-5 text-[#03A0D7]  text-[12pt]">
                   {pageNumber}
                 </h6>
               </div>
-              <div class="mt-[65px]">
-                <h3 class="font-[700] text-[9pt] text-[#03A0D7]">
+              <div className="mt-[65px]">
+                <h3 className="font-[700] text-[9pt] text-[#03A0D7]">
                   Dental Brando
                 </h3>
 
-                <h3 class=" font-[700]  text-[9pt] text-[#03A0D7]">
+                <h3 className=" font-[700]  text-[9pt] text-[#03A0D7]">
                   Business Proposal
                 </h3>
 
-                <div class=" mt-1  w-[6.8in] h-0.5 bg-[#093A5B] "></div>
+                <div className=" mt-1  w-[6.8in] h-0.5 bg-[#093A5B] "></div>
               </div>
             </div>
 
-            <div class="pt-[34px] mb-2">
+            <div className="pt-[34px] mb-2">
               <h1
-                class="font-[700] text-[25pt] text-[#093A5B] leading-9"
+                className="font-[700] text-[25pt] text-[#093A5B] leading-9"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                TERMS &
-                <br />
+                TERMS & {/* <br /> */}
                 CONDITIONS
               </h1>
-              <div class="bline w-[90px] h-2 bg-[#03A0D7]"></div>
+              <div className="bline w-[200px] h-2 bg-[#03A0D7]"></div>
             </div>
-            <div class="text-[10pt] flex text-justify">
-              <p>
-                When it comes to website development, choosing the right partner
-                is crucial to the success of your project. At Dental Brando we
-                are conﬁdent that we are the best choice for your website
-                development needs. If you’re looking for a reliable and
-                experienced partner for your website development project, look
-                no further than Dental Brando.{" "}
-              </p>
-            </div>
-            <div class="pt-4">
-              <div class=" mt-1  w-[100%] h-0.5 bg-[#093A5B]  "></div>
-            </div>
-            <section>
-              <div class="flex gap-6 my-3">
-                <div class=" w-1/2   flex">
-                  <div>
-                    <div>
-                      <div>
-                        <p class="text-[#03A0D7] text-[30pt] font-[800] ">01</p>
-                      </div>
-                    </div>
-                    <div class="text-[14pt] font-[600] mt-[-7px] ">
-                      <p>Payment Terms:</p>
-                    </div>
 
-                    <div class=" w-full mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
-                      <p>
-                        To commence the project, all fees and charges must be
-                        paid in full as per the payment schedule provided in the
-                        proposal. All work remains the property of Dental Brando
-                        until payment is received in full. In case of a payment
-                        delay of more than 3 days, we reserve the right to
-                        suspend work until the overdue payment is cleared before
-                        resuming. Payment receipts will be sent on payments.
+            <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt-5 mb-1">
+              GENERAL TERMS
+              <div className="bline w-full h-[2px] bg-[#03A0D7]"></div>
+            </h1>
+            <div className="flex gap-6 mt- py-1 ">
+              <div className=" w-full h-fit   flex ">
+                <div>
+                  <div className="flex gap-2 items-end justify-start">
+                    <div>
+                      <p className="text-[#03A0D7] text-[23pt] font-[800] leading-none">
+                        01
                       </p>
+                    </div>
+                    <div className="text-[12pt] font-[600] mt-[px] ">
+                      <p>NDA and IP Contract:</p>
                     </div>
                   </div>
-                </div>
-                <div class=" w-1/2  flex">
-                  <div>
-                    <div>
-                      <div>
-                        <p class="text-[#03A0D7] text-[30pt] font-[800] ">02</p>
-                      </div>
-                    </div>
-                    <div class="text-[14pt] font-[600] mt-[-7px] ">
-                      <p>Additional Charges:</p>
-                    </div>
 
-                    <div class=" w-full mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
-                      <p>
-                        Any additional work or services requested by the client
-                        that is outside the scope of the original project
-                        agreement may incur additional charges. These additional
-                        charges will be communicated to the client and must be
-                        agreed upon in writing before work on the additional
-                        services can commence. Any additional charges will be
-                        invoiced separately from the original project estimate.
-                      </p>
-                    </div>
+                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1">
+                    <p>
+                      We will execute a Non-Disclosure Agreement (NDA) and
+                      Intellectual Property (IP) contract to protect your
+                      confidential information and intellectual property.
+                    </p>
                   </div>
                 </div>
-                <div class=" w-1/2  flex">
-                  <div>
+              </div>
+              <div className=" w-full  flex">
+                <div>
+                  <div className="flex gap-2 items-end justify-start">
                     <div>
-                      <div>
-                        <p class="text-[#03A0D7] text-[30pt] font-[800] ">03</p>
-                      </div>
-                    </div>
-                    <div class="text-[14pt] font-[600]  mt-[-7px]">
-                      <p>Intellectual Property:</p>
-                    </div>
-
-                    <div class=" w-full mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
-                      <p>
-                        Upon completion of the project and receipt of payment in
-                        full, all intellectual property rights for the project
-                        will be transferred to you. Until then, all materials,
-                        including design concepts, drafts, and prototypes, are
-                        the property of Dental Brando. In case, the project goes
-                        to default, Dental Brando has the right to utilize the
-                        property for any other project, client or third party.
+                      <p className="text-[#03A0D7] text-[23pt] font-[800] leading-none ">
+                        02
                       </p>
+                    </div>
+                    <div className="text-[12pt] font-[600] mt-[px] ">
+                      <p>Quality Guarantee:</p>
+                    </div>
+                  </div>
+
+                  <div className=" w-full mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
+                    <p>
+                      We ensure high-quality service and timely delivery. Any
+                      delays will be communicated promptly, and necessary
+                      adjustments will be made.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" w-full  flex">
+                <div>
+                  <div className="flex gap-2 items-end justify-start">
+                    <div>
+                      <p className="text-[#03A0D7] text-[23pt] font-[800] leading-none ">
+                        03
+                      </p>
+                    </div>
+                    <div className="text-[12pt] font-[600]  mt-[px]">
+                      <p>Customer Satisfaction:</p>
+                    </div>
+                  </div>
+
+                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ">
+                    <p>
+                      We strive for 100% customer satisfaction. If you are not
+                      satisfied with the service, we will make necessary
+                      revisions at no additional cost.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-6 py-1">
+              <div className=" w-full   flex">
+                <div>
+                  <div className="flex gap-2 items-end justify-start">
+                    <div>
+                      <p className="text-[#03A0D7] text-[23pt] font-[800] leading-none ">
+                        04
+                      </p>
+                    </div>
+                    <div className="text-[12pt] font-[600] mt-[px] ">
+                      <p>Free Maintenance:</p>
+                    </div>
+                  </div>
+
+                  <div className=" w-full mx-auto pb- font-[400] text-[10pt] text-justify pt-1 ">
+                    <p>
+                      After the website is delivered, we provide one month of
+                      complimentary maintenance to ensure everything operates
+                      smoothly and to address any unforeseen issues that may
+                      arise.{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" w-full  flex">
+                <div>
+                  <div className="flex gap-2 items-end justify-start">
+                    <div>
+                      <p className="text-[#03A0D7] text-[23pt] font-[800] leading-none ">
+                        05
+                      </p>
+                    </div>
+                    <div className="text-[12pt] font-[600] mt-[px] ">
+                      <p>Customer Support:</p>
+                    </div>
+                  </div>
+
+                  <div className=" w-full mx-auto pb- font-[400] text-[10pt] text-justify pt-1 ">
+                    <p>
+                      Our dedicated 24/7 customer support team is always
+                      available and ready to assist you with any questions,
+                      concerns, or issues you may encounter.{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" w-full  flex">
+                <div>
+                  <div className="flex gap-2 items-end justify-start">
+                    <div>
+                      <p className="text-[#03A0D7] text-[23pt] font-[800] leading-none ">
+                        06
+                      </p>
+                    </div>
+                    <div className="text-[12pt] font-[600]  mt-[px]">
+                      <p>No Hidden Fees:</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-red-00 w-full mx-auto pb ps-4 font-[400] text-[10pt] text-justify pt-1 ">
+                    <ol className="list-disc">
+                      <li>
+                        We trust our quality and believe it will meet your
+                        expectations, so no upfront payment is needed.{" "}
+                      </li>
+                      <li>Both of our plans have no hidden fees.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="my-4">
+              <div className="w-[100%] h-[2px] bg-[#093A5B]  "></div>
+            </div>
+
+            <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt- mb-1">
+              Fixed Price Plan - $249
+              <div className="bline w-full h-[2px] bg-[#03A0D7]"></div>
+            </h1>
+            <div className="flex gap-6 mt- py-1 ">
+              <div className=" w-full h-fit   flex ">
+                <div>
+                  <div className="flex gap-2 items-end justify-start">
+                    <div>
+                      <p className="text-[#03A0D7] text-[23pt] font-[800] leading-none">
+                        01
+                      </p>
+                    </div>
+                    <div className="text-[12pt] font-[600] mt-[px] ">
+                      <p>Payment Schedule:</p>
+                    </div>
+                  </div>
+
+                  <div className=" w-full mx-auto pb font-[400] text-[10pt] ps-4 text-justify pt-1">
+                    <ol className="list-disc">
+                      <li>
+                        50% ($124.50) payment is due after 50% of the work is
+                        completed upon your approval.
+                      </li>
+                      <li>
+                        The remaining 50% ($124.50) is due upon the completion
+                        of the website upon your approval.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div className=" w-full  flex">
+                <div>
+                  <div className="flex gap-2 items-end justify-start">
+                    <div>
+                      <p className="text-[#03A0D7] text-[23pt] font-[800] leading-none ">
+                        02
+                      </p>
+                    </div>
+                    <div className="text-[12pt] font-[600] mt-[px] ">
+                      <p>Refund Policy:</p>
+                    </div>
+                  </div>
+
+                  <div className=" w-full mx-auto  font-[400] text-[10pt] text-justify pt-1 ">
+                    <p>
+                      If we fail to deliver work that meets the standards and
+                      requirements agreed upon, we are committed to issuing a
+                      full refund to ensure your satisfaction and uphold our
+                      promise of delivering quality service.{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="my-4">
+              <div className="w-[100%] h-0.5 bg-[#093A5B]  "></div>
+            </div>
+
+            <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt-5 mb-1">
+              Monthly Plan - $100 per month (For 3 months){" "}
+              <div className="bline w-full h-[2px] bg-[#03A0D7]"></div>
+            </h1>
+            <div className="flex gap-6 mt- py-1 ">
+              <div className=" w-full h-fit   flex ">
+                <div>
+                  <div className="flex gap-2 items-end justify-start">
+                    <div>
+                      <p className="text-[#03A0D7] text-[23pt] font-[800] leading-none">
+                        01
+                      </p>
+                    </div>
+                    <div className="text-[12pt] font-[600] mt-[px] ">
+                      <p>Payment Schedule:</p>
+                    </div>
+                  </div>
+
+                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ps-4">
+                    <ol className="list-disc">
+                      <li>
+                        50% of the first installment ($50) is due after 50% of
+                        the work is completed upon your approval.
+                      </li>
+                      <li>
+                        The remaining 50% of the first installment ($50) is due
+                        upon completion of the website upon your approval.
+                      </li>
+                      <li>
+                        Remaining monthly installments ($100 per month) will be
+                        charged in advance each month for remaining 2 months.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div className=" w-full  flex">
+                <div>
+                  <div className="flex gap-2 items-end justify-start">
+                    <div>
+                      <p className="text-[#03A0D7] text-[23pt] font-[800] leading-none ">
+                        02
+                      </p>
+                    </div>
+                    <div className="text-[12pt] w-fit font-[600] mt-[px] ">
+                      <p>Service Start:</p>
+                    </div>
+                  </div>
+
+                  <div className=" w-full mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
+                    <p>
+                      The service period begins on the contract date specified.
+                      For example, if your plan commences on July 24th, it will
+                      conclude on August 23rd of the same year. This structure
+                      ensures that each plan's duration spans from its
+                      initiation date to the corresponding day of the following
+                      month, facilitating easy tracking of validity and renewal
+                      dates to maintain uninterrupted service.{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" w-full  flex">
+                <div>
+                  <div className="flex gap-2 items-end justify-start">
+                    <div>
+                      <p className="text-[#03A0D7] text-[23pt] font-[800] leading-none ">
+                        03
+                      </p>
+                    </div>
+                    <div className="text-[12pt] font-[600]  mt-[px]">
+                      <p>Customer Satisfaction:</p>
+                    </div>
+                  </div>
+
+                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ">
+                    <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ps-4">
+                      <ol className="list-disc">
+                        <li>
+                          All resources, including your website, stay with
+                          Dental Brando until all dues are paid.
+                        </li>
+                        <li>
+                          Failure to pay a monthly installment within 3 business
+                          days will lead to your website being taken down until
+                          payment is made.
+                        </li>
+                        <li>
+                          Upon full clearance of dues and installments,
+                          ownership of the website and resources will transfer
+                          to you.
+                          {/* Ownership transfers to you after all dues and
+                          installments are cleared. */}
+                        </li>
+                      </ol>
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
-
-            <div>
-              <div class=" mt-1  w-[100%] h-0.5 bg-[#093A5B]  "></div>
             </div>
-            <section>
-              <div class="flex gap-6 my-3">
-                <div class=" w-1/2   flex">
-                  <div>
-                    <div>
-                      <div>
-                        <p class="text-[#03A0D7] text-[30pt] font-[800] ">04</p>
-                      </div>
-                    </div>
-                    <div class="text-[14pt] font-[600] mt-[-7px] ">
-                      <p>Liabilities:</p>
-                    </div>
 
-                    <div class=" w-full mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
-                      <p>
-                        Dental Brando will provide a warranty for their services
-                        and work, but will not be held responsible for any
-                        damages resulting from website use. Appropriate
-                        maintenance is recommended. After the project handover,
-                        the client will be solely responsible for changing all
-                        credentials and access. Dental Brando will not be liable
-                        for any damages incurred after the project handover to
-                        the client.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class=" w-1/2  flex">
-                  <div>
-                    <div>
-                      <div>
-                        <p class="text-[#03A0D7] text-[30pt] font-[800] ">05</p>
-                      </div>
-                    </div>
-                    <div class="text-[14pt] font-[600] mt-[-7px] ">
-                      <p>Confidentiality:</p>
-                    </div>
-
-                    <div class=" w-full mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
-                      <p>
-                        At our company, we take confidentiality very seriously,
-                        and we recognize that the protection of confidential
-                        information is critical to our clients' success. As
-                        such, we are committed to maintaining the highest
-                        standards of confidentiality and will not disclose any
-                        confidential information provided by you during the
-                        course of the project without your express written
-                        consent.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class=" w-1/2  flex">
-                  <div>
-                    <div>
-                      <div>
-                        <p class="text-[#03A0D7] text-[30pt] font-[800] ">06</p>
-                      </div>
-                    </div>
-                    <div class="text-[14pt] font-[600]  mt-[-7px]">
-                      <p>Project Timeline:</p>
-                    </div>
-
-                    <div class=" w-full mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
-                      <p>
-                        In the proposal, we will include an estimated project
-                        timeline, and we will do our best to complete the
-                        project within that time frame. Although unexpected
-                        events can cause delays such as; Changes in project
-                        scope, Technical difficulties, Payment Delays, External
-                        factors, Approval processes and Communication delays we
-                        will inform you promptly of any modification to the
-                        schedule.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <div class="">
-              <div class="w-[100%] h-0.5 bg-[#093A5B]  "></div>
-            </div>
+            {/* <div className="my-4">
+              <div className="w-[100%] h-0.5 bg-[#093A5B]  "></div>
+            </div> */}
           </div>
         </div>
       </div>
