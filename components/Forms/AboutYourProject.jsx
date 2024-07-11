@@ -32,7 +32,7 @@ const AboutYourProject = () => {
   );
   const [websiteCMS, setWebsiteCMS] = useState(
     websiteCMSs == ""
-      ? `We recommend using as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently.`
+      ? `We recommend using Wordpress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently.`
       : websiteCMSs
   );
 
@@ -101,7 +101,7 @@ const AboutYourProject = () => {
               <button
                 className="py-2 px-4 rounded-xl text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
                 onClick={() => {
-                  textareaRef.current.value = `We recommend using as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently.`;
+                  textareaRef.current.value = `We recommend using Wordpress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently.`;
                   setWebsiteCMS(textareaRef.current.value);
                 }}
               >
