@@ -9,7 +9,7 @@ import OurProcess from "./Proposal Pages/OurProcess";
 // import AboutUs from "./Proposal Pages Copy/AboutUs";
 import AboutUs from "./Proposal Pages/AboutUs";
 import WhyUs from "./Proposal Pages/WhyUs";
-import Terms from "./Proposal Pages copy/Terms";
+import Terms from "./Proposal Pages/Terms";
 import LastPage from "./Proposal Pages/LastPage";
 import Package2 from "./Proposal Pages/Package2";
 
