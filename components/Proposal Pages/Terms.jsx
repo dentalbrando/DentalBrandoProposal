@@ -44,7 +44,7 @@ const Terms = ({ pageNumber }) => {
               >
                 TERMS &
                 <br />
-                CONDITION
+                CONDITIONS
               </h1>
               <div class="bline w-[90px] h-2 bg-[#03A0D7]"></div>
             </div>
