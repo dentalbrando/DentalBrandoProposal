@@ -1,4 +1,5 @@
-import svg1 from "@public/assets/LastPageImgs/last page-01.png";
+// import svg1 from "@public/assets/LastPageImgs/last page-01.png";
+import svg1 from "@public/assets/LastPageImgs/last page-01 1.png";
 import svg2 from "@public/assets/LastPageImgs/last page-02.svg";
 import svg3 from "@public/assets/LastPageImgs/last page-03.svg";
 import svg4 from "@public/assets/LastPageImgs/icons8-website-symbol-50.png";
