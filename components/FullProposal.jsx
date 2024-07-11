@@ -86,11 +86,11 @@ const FullProposal = () => {
               return (
                 page.checked && <WhyUs key={index} pageNumber={pageNumber++} />
               );
-            case "8":
+            case "9":
               return (
                 page.checked && <Budget key={index} pageNumber={pageNumber++} />
               );
-            case "9":
+            case "8":
               return (
                 page.checked && (
                   <Package2 key={index} pageNumber={pageNumber++} />

@@ -29,7 +29,7 @@ const LivePreview = () => {
         ) : //       : page.formId == "5" ? (
         // <ProposedSiteMap />
         //       )
-        page.formId == "8" ? (
+        page.formId == "9" ? (
           <Budget />
         ) : page.formId == "2" ? (
           <TableOfContent />
@@ -39,7 +39,7 @@ const LivePreview = () => {
           <AboutUs />
         ) : page.formId == "7" ? (
           <WhyUs />
-        ) : page.formId == "9" ? (
+        ) : page.formId == "8" ? (
           <Package2 />
         ) : page.formId == "10" ? (
           <Terms />
