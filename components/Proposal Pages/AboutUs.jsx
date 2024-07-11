@@ -49,7 +49,7 @@ const AboutUs = ({ pageNumber }) => {
                 <br />
                 US{" "}
               </h1>
-              <div className="bline mt-2 w-[90px] h-2 bg-[#03A0D7] "></div>
+              <div className="bline w-[90px] h-2 bg-[#03A0D7] "></div>
             </div>
 
             <div className=" text-center  mt-5 font-[400] text-[11pt] leading-5">
