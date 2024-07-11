@@ -46,7 +46,7 @@ const LastPage = () => {
                 <div class="w-8 h-8 bg-[#093A5B] rounded-full flex items-center justify-center">
                   <img class="w-4" src={svg2.src} alt="" />
                 </div>
-                <p class="font-[500] text-[10pt] mt-2">+92 (340) 0084643</p>
+                <p class="font-[500] text-[10pt] mt-2">+1-888-452-1505</p>
               </div>
 
               <div class="mt-3 flex flex-co items-start justify-start gap-2 w-fit">
