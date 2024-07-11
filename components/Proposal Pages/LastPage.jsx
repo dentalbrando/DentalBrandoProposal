@@ -10,9 +10,9 @@ import { FaMap, FaSitemap, FaWeebly, FaWordpress } from "react-icons/fa";
 const LastPage = () => {
   return (
     <>
-      <div className="offer flex w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-red-30 bg-white">
+      <div className="offer flex w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-white">
         <div className=" w-full relative">
-          <div className="w-[100%] relative">
+          <div className="w-[100%] relative h-full overflow-hidden">
             <img
               className="w-[180px] absolute left-[40px] z-[10] top-[50px]"
               src={logo.src}
@@ -21,7 +21,7 @@ const LastPage = () => {
             <img
               src={bgImg.src}
               alt=""
-              className="w-[100%] relative top-0 z-[0]"
+              className="w-[101%] h-[100%] relative top-0 z-[0]"
             />
 
             <div className="w-fit">
@@ -30,7 +30,7 @@ const LastPage = () => {
                 src={svg1.src}
                 alt=""
               />
-              </div>
+            </div>
 
             <div className=" mx-10  absolute bottom-[230px]">
               <h1
@@ -54,7 +54,9 @@ const LastPage = () => {
                 <div className="w-8 h-8 bg-[#093A5B] rounded-full flex items-center justify-center">
                   <img className="w-5" src={svg4.src} alt="" />
                 </div>
-                <p className="font-[500] text-[10pt] mt-2">www.dentalbrando.com</p>
+                <p className="font-[500] text-[10pt] mt-2">
+                  www.dentalbrando.com
+                </p>
               </div>
 
               <div className="mt-3 flex flex-co items-start justify-start gap-2 w-fit">

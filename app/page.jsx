@@ -59,10 +59,10 @@ const Home = () => {
 
           <div className="w-[95%] 2xl:w-[87%] h-full mx-auto pt-20 ">
             <div className="w-full h-full flex flex-col gap-2 md:gap-5 z-100 overflow-auto scroll-bar-none">
-              <div className="w-fit h-fit linkDi rounded-3xl flex mx-auto gap-2 md:gap-5 xl:gap-14 items-center  overflow-x-auto">
+              <div className="w-fit h-fit linkDi rounded-3xl flex mx-auto gap-2 md:gap-5 xl:gap-20 items-center  overflow-x-auto leading-10">
                 <Link
                   href={"/development"}
-                  className="w-[350px] h-[450px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
+                  className="w-[300px] h-[400px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
                 >
                   <div className="w-[100%] h-[100%] relative bg-yellow-00">
                     <div className="w-full h-full flex flex-col justify-between">
@@ -82,9 +82,9 @@ const Home = () => {
                     </div>
                   </div>
                 </Link>
-                <Link
+                {/* <Link
                   href={"/website-upgrading"}
-                  className="w-[350px] h-[450px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
+                  className="w-[300px] h-[400px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
                 >
                   <div className="w-[100%] h-[100%] relative bg-yellow-00">
                     <div className="w-full h-full flex flex-col justify-between">
@@ -103,10 +103,10 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                </Link>
+                </Link> */}
                 <Link
                   href={"/seo"}
-                  className="w-[350px] h-[450px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
+                  className="w-[300px] h-[400px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
                 >
                   <div className="w-[100%] h-[100%] relative bg-yellow-00">
                     <div className="w-full h-full flex flex-col justify-between">
@@ -128,7 +128,7 @@ const Home = () => {
                 </Link>
                 <Link
                   href={"/social-media"}
-                  className="w-[350px] h-[450px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
+                  className="w-[300px] h-[400px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
                 >
                   <div className="w-[100%] h-[100%] relative bg-yellow-00">
                     <div className="w-full h-full flex flex-col justify-between">

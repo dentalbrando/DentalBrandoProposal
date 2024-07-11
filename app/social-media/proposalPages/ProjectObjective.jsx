@@ -37,7 +37,7 @@ function ProjectObjective(prop) {
           <div className="w-[60%] h-[120%] rounded-[50%] bottom-[5%] right-[-25%] z-[10] bg-[#ffd600] absolute"></div>
         </div>
 
-        <div className="absolute top-0 left-[7%] z-[100] w-[50px] bg-pink-900 flex">
+        <div className="absolute top-0 left-[7%] z-[100] w-[50px]  flex">
           <div className="w-[50%] h-[100px] bg-white"></div>
           <div className="w-[50%] h-[100px] bg-[#ffd600]"></div>
         </div>

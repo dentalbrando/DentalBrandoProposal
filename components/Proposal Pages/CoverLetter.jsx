@@ -81,7 +81,7 @@ Sincerely,`;
               <div className=" mt-1  w-[6.5in] h-0.5 bg-[#093A5B] "></div>
             </div>
           </div>
-          <div className="mt-[70px] bg-pink-700">
+          <div className="mt-[70px] ">
             <h1
               className="font-[700] text-[25pt] text-[#093A5B] leading-[36px]"
               // style={{ fontFamily: "'Montserrat', sans-serif" }}
