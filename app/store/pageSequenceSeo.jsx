@@ -12,7 +12,7 @@ const initialState = {
     { id: "8", content: "On-page Seo", checked: true },
     { id: "9", content: "Link Building", checked: true },
     { id: "10", content: "Valued Client", checked: true },
-    { id: "11", content: "Packages", checked: true },
+    { id: "11", content: "Choose Your Plan", checked: true },
     { id: "12", content: "Estimate", checked: true },
     { id: "13", content: "Terms & Conditions", checked: true },
     { id: "14", content: "Contact", checked: true },
