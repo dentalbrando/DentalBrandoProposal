@@ -22,13 +22,13 @@ Sincerely,`;
     .split("<p class = 'py-1'></p>")
     .map((line) => {
       if (line.trim().startsWith(">")) {
-        const ticked = `<div class="flex">
+        const ticked = `<div className="flex">
                     
-                    <div class="flex items-center justify-center">
+                    <div className="flex items-center justify-center">
 
                         <img src="${tick.src}" alt="" width="10px" />
                     </div>
-                    <div class="px-2" >
+                    <div className="px-2" >
                         <p>
                             ${line.substring(line.indexOf(">") + 1)}
                         </p>
@@ -51,10 +51,10 @@ Sincerely,`;
         </div>
 
         <div className=" w-[90%] mx-auto bg-green-00 relative">
-          <div class="flex  print:h-[7.3rem] bg-green-40">
-            <div class="mt-[50px] flex relative  pb-0">
+          <div className="flex  print:h-[7.3rem] bg-green-40">
+            <div className="mt-[50px] flex relative  pb-0">
               <svg
-                class="transform rotate-90 relative ml-[-5px]  top-0 "
+                className="transform rotate-90 relative ml-[-5px]  top-0 "
                 width="64"
                 height="64"
                 viewBox="0 0 256 256"
@@ -65,20 +65,20 @@ Sincerely,`;
                   d="m221.76 69.66l-88-48.18a12 12 0 0 0-11.52 0l-88 48.18A12 12 0 0 0 28 80.18v95.64a12 12 0 0 0 6.24 10.52l88 48.18a11.95 11.95 0 0 0 11.52 0l88-48.18a12 12 0 0 0 6.24-10.52V80.18a12 12 0 0 0-6.24-10.52ZM220 175.82a4 4 0 0 1-2.08 3.5l-88 48.18a4 4 0 0 1-3.84 0l-88-48.18a4 4 0 0 1-2.08-3.5V80.18a4 4 0 0 1 2.08-3.5l88-48.18a3.94 3.94 0 0 1 3.84 0l88 48.18a4 4 0 0 1 2.08 3.5Z"
                 />
               </svg>
-              <h6 class="absolute ml-[1.4rem] top-5 text-[#03A0D7]  text-[12pt]">
+              <h6 className="absolute ml-[1.4rem] top-5 text-[#03A0D7]  text-[12pt]">
                 {pageNumber}
               </h6>
             </div>
-            <div class="mt-[65px]">
-              <h3 class="font-[700] text-[9pt] text-[#03A0D7]">
+            <div className="mt-[65px]">
+              <h3 className="font-[700] text-[9pt] text-[#03A0D7]">
                 Dental Brando
               </h3>
 
-              <h3 class=" font-[700]  text-[9pt] text-[#03A0D7]">
+              <h3 className=" font-[700]  text-[9pt] text-[#03A0D7]">
                 Business Proposal
               </h3>
 
-              <div class=" mt-1  w-[6.5in] h-0.5 bg-[#093A5B] "></div>
+              <div className=" mt-1  w-[6.5in] h-0.5 bg-[#093A5B] "></div>
             </div>
           </div>
           <div className="mt-[70px] bg-pink-70">
@@ -100,9 +100,9 @@ Sincerely,`;
             </p>
           </div>
 
-          <div className=" font-[400] text-[12pt] leading-5 bg-red-00">
+          <div className=" font-[400] text-[12pt] leading-5">
             <div
-              class="Part-one font-[400] text-[12pt] leading-6 pt-2 bg-yellow-00"
+              className="Part-one font-[400] text-[12pt] leading-6 text-justify w-[100%] pt-2 bg-yellow-00"
               dangerouslySetInnerHTML={{ __html: content }}
             ></div>
             <div>

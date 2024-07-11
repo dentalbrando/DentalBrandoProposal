@@ -143,7 +143,7 @@ const AboutYourProjects = ({ pageNumber }) => {
               </div>
               <div>
                 <p
-                  class="pt-2 text-[12pt]"
+                  class="pt-2 text-[12pt] text-justify"
                   dangerouslySetInnerHTML={{
                     __html: tempOverviews.replace(
                       /\n/g,
@@ -164,7 +164,7 @@ const AboutYourProjects = ({ pageNumber }) => {
               </div>
               <div>
                 <p
-                  class="pt-2 text-[12pt]"
+                  class="pt-2 text-[12pt] text-justify"
                   dangerouslySetInnerHTML={{ __html: contentWithImages }}
                 ></p>
               </div>
@@ -181,7 +181,7 @@ const AboutYourProjects = ({ pageNumber }) => {
                 </div>
                 <div>
                   <p
-                    class="pt-2 text-[12pt]"
+                    class="pt-2 text-[12pt] text-justify"
                     dangerouslySetInnerHTML={{
                       __html: tempWebsiteCMS.replace(
                         /\n/g,
