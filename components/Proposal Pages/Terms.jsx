@@ -88,11 +88,11 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
+                  <div className=" w-full mx-auto font-[400] text-[10pt] text-justify pt-1 ">
                     <p>
-                      We ensure high-quality service and timely delivery. Any
-                      delays will be communicated promptly, and necessary
-                      adjustments will be made.
+                      We are dedicated to delivering high-quality service and
+                      ensuring timely delivery. If there are any delays, we will
+                      promptly communicate them and make necessary adjustments.{" "}
                     </p>
                   </div>
                 </div>
@@ -305,7 +305,7 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1 ">
+                  <div className=" w-full mx-auto font-[400] text-[10pt] text-justify pt-1 ">
                     <p>
                       The service period begins on the contract date specified.
                       For example, if your plan commences on July 24th, it will
