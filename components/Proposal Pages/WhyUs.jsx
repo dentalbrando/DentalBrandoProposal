@@ -46,7 +46,7 @@ const WhyUs = ({ pageNumber }) => {
               </div>
             </div>
 
-            <div class="mt-[25px] ">
+            <div class="mt-[34px] ">
               <h1
                 class="font-[700]  text-[25pt] text-[#093A5B]  leading-[36px]"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}

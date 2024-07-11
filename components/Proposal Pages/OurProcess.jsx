@@ -42,7 +42,7 @@ const OurProcess = ({ pageNumber }) => {
               </div>
             </div>
 
-            <div className="mt-[40px]">
+            <div className="mt-[34px]">
               <h1
                 className="font-[700] text-[25pt] text-[#093A5B] leading-9"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
