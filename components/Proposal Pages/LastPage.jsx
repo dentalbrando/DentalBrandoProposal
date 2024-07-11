@@ -10,8 +10,8 @@ const LastPage = () => {
   return (
     <>
       <div class="offer flex w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-red-30 bg-white">
-        <div class=" w-full bg-red-00 relative">
-          <div class="w-[100%]  bg-yellow-00 relative">
+        <div class=" w-full relative">
+          <div class="w-[100%] relative">
             {/* <img
               class="w-[200px] absolute right-[50px] top-[50px]"
               src={logo.src}
@@ -20,16 +20,16 @@ const LastPage = () => {
             <img
               src={bgImg.src}
               alt=""
-              className="w-[100%] relative top-0 z-[100]"
+              className="w-[100%] relative top-0 z-[0]"
             />
 
-            {/* <div class="w-fit">
+            <div class="w-fit">
               <img
-                class="w-[110px] absolute bottom-[70px] mx-10 z-10"
+                class="w-[110px] absolute bottom-[40px] right-[0%] mx-10 z-10"
                 src={svg1.src}
                 alt=""
               />
-              </div> */}
+              </div>
 
             <div class=" mx-10  absolute bottom-[230px]">
               <h1
