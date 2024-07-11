@@ -21,7 +21,7 @@ const LastPage = () => {
             <img
               src={bgImg.src}
               alt=""
-              className="w-[101%] h-[100%] relative top-0 z-[0]"
+              className="w-[100%] h-[100%] absolute top-[0%] left-[0%] z-[0]"
             />
 
             <div className="w-fit">

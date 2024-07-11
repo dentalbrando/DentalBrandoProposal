@@ -222,7 +222,7 @@ const Budget = ({ pageNumber }) => {
     //   </div>
     // </>
     <>
-      <div class="offer w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-whit bg-red-30 flex flex-col justify-between items-center">
+      <div class="offer w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-white flex flex-col justify-between items-center">
         <div class="flex  print:h-[7.3rem] w-[90%]">
           <div class="mt-[50px] flex relative  pb-0">
             <svg
