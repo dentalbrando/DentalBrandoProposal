@@ -81,7 +81,7 @@ Sincerely,`;
               <div className=" mt-1  w-[6.5in] h-0.5 bg-[#093A5B] "></div>
             </div>
           </div>
-          <div className="mt-[70px] bg-pink-70">
+          <div className="mt-[70px] bg-pink-700">
             <h1
               className="font-[700] text-[25pt] text-[#093A5B] leading-[36px]"
               // style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -89,7 +89,7 @@ Sincerely,`;
               COVER <br />
               LETTER{" "}
             </h1>
-            <div className="bline mt-1 w-[90px] h-2 bg-[#03A0D7] "></div>
+            <div className="bline w-[90px] h-2 bg-[#03A0D7] "></div>
           </div>
           <div className="name underline  mt-14 font-[700]  text-[17.5pt]">
             <p>

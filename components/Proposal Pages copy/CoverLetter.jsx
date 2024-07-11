@@ -87,7 +87,7 @@ Sincerely,`;
               COVER <br />
               LETTER{" "}
             </h1>
-            <div className="bline mt-1 w-[90px] h-2 bg-[#03A0D7] "></div>
+            <div className="bline w-[90px] h-2 bg-[#03A0D7] "></div>
           </div>
           <div className="name underline  mt-14 font-[700]  text-[17.5pt]">
             <p>

@@ -51,7 +51,7 @@ const OurProcess = ({ pageNumber }) => {
                 <br />
                 PROCESS
               </h1>
-              <div class="bline w-[90px] h-2 mt-1 mb-3 bg-[#03A0D7]"></div>
+              <div class="bline w-[90px] h-2 mb-3 bg-[#03A0D7]"></div>
             </div>
             <div class="text-[11pt] flex text-justify">
               <p>
