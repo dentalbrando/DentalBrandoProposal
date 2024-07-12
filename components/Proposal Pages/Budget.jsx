@@ -292,7 +292,7 @@ const Budget = ({ pageNumber }) => {
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">
                     <FaCheckCircle />
                   </span>
-                  Support Email + Whatsapp
+                  Support Email + WhatsApp
                 </div>
                 <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">

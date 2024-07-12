@@ -80,14 +80,14 @@ const OurProcess = ({ pageNumber }) => {
                         </div>
                       </div>
                       <div className="flex items-center mt-[-3rem]">
-                        <div className="ml-7">
-                          <img src={svg1.src} alt="" width="70px" />
+                        <div className="ml-7 h-[67px]">
+                          <img src={svg1.src} alt="" width="70px" className="h-full" />
                         </div>
                         <div className="text-[18pt] font-[600] px-5 pt-4">
                           <p>Planning</p>
                         </div>
                       </div>
-                      <div className=" w-[90%] mx-auto pb-4 font-[400] text-[10pt] text-justify pt-[10px] ">
+                      <div className=" w-[90%] mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1">
                         <p>
                           The first step in the web development process is
                           planning. Before the project begins, we will send you
@@ -148,8 +148,8 @@ const OurProcess = ({ pageNumber }) => {
                         </div>
                       </div>
                       <div className="flex items-center mt-[-3rem]">
-                        <div className="ml-7">
-                          <img src={svg3.src} alt="" width="70px" />
+                        <div className="ml-7 h-[67px]">
+                          <img src={svg3.src} alt="" width="70px" className="h-full" />
                         </div>
                         <div className="text-[18pt] font-[600] px-5 pt-4">
                           <p>Implementation</p>
