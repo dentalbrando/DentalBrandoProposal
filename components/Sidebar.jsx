@@ -151,7 +151,7 @@ const Sidebar = () => {
                         content: "Terms & Conditions",
                         checked: true,
                       },
-                      { id: "11", content: "Thank You", checked: true },
+                      { id: "11", content: "Thank You Note", checked: true },
                     ]);
                   }}
                 >

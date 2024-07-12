@@ -13,7 +13,7 @@ const initialState = {
     { id: "8", content: "Choose Your Plan", checked: true },
     { id: "9", content: "Thrive with Us", checked: true },
     { id: "10", content: "Terms & Conditions", checked: true },
-    { id: "11", content: "Thank You", checked: true },
+    { id: "11", content: "Thank You Note", checked: true },
   ],
 };
 
