@@ -84,15 +84,15 @@ const Terms = ({ pageNumber }) => {
                       </p>
                     </div>
                     <div className="text-[12pt] font-[600] mt-[px] ">
-                      <p>Quality Guarantee:</p>
+                      <p>Service Guarantee:</p>
                     </div>
                   </div>
 
                   <div className=" w-full mx-auto font-[400] text-[10pt] text-justify pt-1 ">
                     <p>
-                      We are dedicated to delivering high-quality service and
-                      ensuring timely delivery. If there are any delays, we will
-                      promptly communicate them and make necessary adjustments.{" "}
+                      We ensure high-quality service and timely delivery. Any
+                      delays will be communicated promptly, and necessary
+                      effective adjustments to the project will be made.{" "}
                     </p>
                   </div>
                 </div>
@@ -112,9 +112,9 @@ const Terms = ({ pageNumber }) => {
 
                   <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ">
                     <p>
-                      We strive for 100% customer satisfaction. If you are not
-                      satisfied with the service, we will make necessary
-                      revisions at no additional cost.
+                      We strive for 100% customer satisfaction in every project.
+                      If you are not satisfied with the service, we will make
+                      necessary revisions at no additional cost.{" "}
                     </p>
                   </div>
                 </div>
@@ -182,10 +182,11 @@ const Terms = ({ pageNumber }) => {
                   <div className="bg-red-00 w-full mx-auto pb ps-4 font-[400] text-[10pt] text-justify pt-1 ">
                     <ol className="list-disc">
                       <li>
-                        We trust our quality and believe it will meet your
-                        expectations, so no upfront payment is needed.{" "}
+                        We believe in our quality and are confident that it will
+                        meet your expectations, so there is no upfront payment
+                        required.
                       </li>
-                      <li>Both of our plans have no hidden fees.</li>
+                      <li>There is no hidden fees in both of our plans. </li>
                     </ol>
                   </div>
                 </div>
@@ -215,16 +216,15 @@ const Terms = ({ pageNumber }) => {
                   </div>
 
                   <div className=" w-full mx-auto pb font-[400] text-[10pt] ps-4 text-justify pt-1">
-                    <ol className="list-disc">
-                      <li>
-                        50% ($124.50) payment is due after 50% of the work is
-                        completed upon your approval.
-                      </li>
-                      <li>
-                        The remaining 50% ($124.50) is due upon the completion
-                        of the website upon your approval.
-                      </li>
-                    </ol>
+                    {/* <ol className="list-disc">
+                      <li> */}
+                    <p>
+                      50% ($124.50) payment is due after 50% of the work is
+                      completed.The remaining 50% ($124.50) is due upon the
+                      completion of the website and your approval.{" "}
+                    </p>
+                    {/* </li>
+                    </ol> */}
                   </div>
                 </div>
               </div>
@@ -243,10 +243,31 @@ const Terms = ({ pageNumber }) => {
 
                   <div className=" w-full mx-auto  font-[400] text-[10pt] text-justify pt-1 ">
                     <p>
-                      If we fail to deliver work that meets the standards and
-                      requirements agreed upon, we are committed to issuing a
-                      full refund to ensure your satisfaction and uphold our
-                      promise of delivering quality service.{" "}
+                      If we fail to deliver the quality work as per our
+                      commitments, a full refund will be issued. We ensure your
+                      satisfaction and uphold our promise of quality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" w-full  flex">
+                <div>
+                  <div className="flex gap-2 items-end justify-start">
+                    <div>
+                      <p className="text-[#03A0D7] text-[23pt] font-[800] leading-none ">
+                        03
+                      </p>
+                    </div>
+                    <div className="text-[12pt] font-[600] mt-[px] ">
+                      <p> Service Standards: </p>
+                    </div>
+                  </div>
+
+                  <div className=" w-full mx-auto  font-[400] text-[10pt] text-justify pt-1 ">
+                    <p>
+                      We have clear performance benchmarks for the website. This
+                      includes website uptime, loading speed critical for user
+                      experience and search engine ranking.
                     </p>
                   </div>
                 </div>
@@ -275,7 +296,7 @@ const Terms = ({ pageNumber }) => {
                   </div>
 
                   <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ps-4">
-                    <ol className="list-disc">
+                    {/* <ol className="list-disc">
                       <li>
                         50% of the first installment ($50) is due after 50% of
                         the work is completed upon your approval.
@@ -288,7 +309,12 @@ const Terms = ({ pageNumber }) => {
                         Remaining monthly installments ($100 per month) will be
                         charged in advance each month for remaining 2 months.
                       </li>
-                    </ol>
+                    </ol> */}
+                    <p>
+                      The payment is split into three parts: 50% upfront after
+                      approval of the first half of work, another 50% upon
+                      completion, and then two monthly installments of $100.{" "}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -307,13 +333,9 @@ const Terms = ({ pageNumber }) => {
 
                   <div className=" w-full mx-auto font-[400] text-[10pt] text-justify pt-1 ">
                     <p>
-                      The service period begins on the contract date specified.
-                      For example, if your plan commences on July 24th, it will
-                      conclude on August 23rd of the same year. This structure
-                      ensures that each plan's duration spans from its
-                      initiation date to the corresponding day of the following
-                      month, facilitating easy tracking of validity and renewal
-                      dates to maintain uninterrupted service.{" "}
+                      The service period begins on the contract date. For
+                      example, if your plan starts on July 24th, the month will
+                      be completed on August 23rd, easily tracking validity.{" "}
                     </p>
                   </div>
                 </div>
@@ -332,8 +354,8 @@ const Terms = ({ pageNumber }) => {
                   </div>
 
                   <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ">
-                    <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ps-4">
-                      <ol className="list-disc">
+                    <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt- ps-4">
+                      {/* <ol className="list-disc">
                         <li>
                           All resources, including your website, stay with
                           Dental Brando until all dues are paid.
@@ -347,10 +369,13 @@ const Terms = ({ pageNumber }) => {
                           Upon full clearance of dues and installments,
                           ownership of the website and resources will transfer
                           to you.
-                          {/* Ownership transfers to you after all dues and
-                          installments are cleared. */}
                         </li>
-                      </ol>
+                      </ol> */}
+                      <p>
+                        We hold ownership of website until you pay in full. Late
+                        monthly payments (over 3 business days) may suspend your
+                        website. Once you pay, you own the website.{" "}
+                      </p>
                     </div>
                   </div>
                 </div>
