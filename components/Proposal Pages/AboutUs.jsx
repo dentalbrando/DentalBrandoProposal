@@ -42,12 +42,12 @@ const AboutUs = ({ pageNumber }) => {
 
             <div className="mt-[34px] ">
               <h1
-                className="font-[700]  text-[25pt] text-[#093A5B]  leading-[36px]"
+                className="font-[700]  text-[25pt] text-[#093A5B]  leading-[36px] uppercase"
                 // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 ABOUT
                 <br />
-                US{" "}
+                dental Brando
               </h1>
               <div className="bline w-[90px] h-2 bg-[#03A0D7] "></div>
             </div>
