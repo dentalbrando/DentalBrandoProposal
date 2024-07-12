@@ -193,11 +193,11 @@ const Terms = ({ pageNumber }) => {
               </div>
             </div>
 
-            <div className="my-4">
+            <div className="my-5">
               <div className="w-[100%] border-b-[3px] border-[#093A5B]  "></div>{" "}
             </div>
 
-            <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt- mb-1">
+            <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt- mb-2">
               Fixed Price Plan - $249
               <div className="w-full border-b-[2px] border-[#03A0D7]"></div>{" "}
             </h1>
@@ -215,7 +215,7 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb font-[400] text-[10pt] ps-4 text-justify pt-1">
+                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1">
                     {/* <ol className="list-disc">
                       <li> */}
                     <p>
@@ -273,11 +273,11 @@ const Terms = ({ pageNumber }) => {
                 </div>
               </div>
             </div>
-            <div className="my-4">
+            <div className="my-5">
               <div className="w-[100%] border-b-[3px] border-[#093A5B]  "></div>
             </div>
 
-            <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt- mb-1">
+            <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt- mb-2">
               Monthly Plan - $100 per month (For 3 months){" "}
               <div className="w-full border-b-[2px] border-[#03A0D7]"></div>{" "}
             </h1>
@@ -295,7 +295,7 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ps-4">
+                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ">
                     {/* <ol className="list-disc">
                       <li>
                         50% of the first installment ($50) is due after 50% of
@@ -354,7 +354,7 @@ const Terms = ({ pageNumber }) => {
                   </div>
 
                   <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ">
-                    <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt- ps-4">
+                    <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify ">
                       {/* <ol className="list-disc">
                         <li>
                           All resources, including your website, stay with
@@ -382,7 +382,7 @@ const Terms = ({ pageNumber }) => {
               </div>
             </div>
 
-            {/* <div className="my-4">
+            {/* <div className=5my-4">
               <div className="w-[100%] h-0.5 bg-[#093A5B]  "></div>
             </div> */}
           </div>
