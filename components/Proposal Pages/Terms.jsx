@@ -50,7 +50,7 @@ const Terms = ({ pageNumber }) => {
 
             <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt-5 mb-1">
               GENERAL TERMS
-              <div className="bline w-full h-[2px] bg-[#03A0D7]"></div>
+              <div className="w-full h-[2px] bg-[#03A0D7]"></div>
             </h1>
             <div className="flex gap-6 mt- py-1 ">
               <div className=" w-full h-fit   flex ">
@@ -199,7 +199,7 @@ const Terms = ({ pageNumber }) => {
 
             <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt- mb-1">
               Fixed Price Plan - $249
-              <div className="bline w-full h-[2px] bg-[#03A0D7]"></div>
+              <div className="w-full h-[2px] bg-[#03A0D7]"></div>
             </h1>
             <div className="flex gap-6 mt- py-1 ">
               <div className=" w-full h-fit   flex ">
@@ -274,12 +274,12 @@ const Terms = ({ pageNumber }) => {
               </div>
             </div>
             <div className="my-4">
-              <div className="w-[100%] h-0.5 bg-[#093A5B]  "></div>
+              <div className="w-[100%] h-[2px] bg-[#093A5B]  "></div>
             </div>
 
-            <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt-5 mb-1">
+            <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt- mb-1">
               Monthly Plan - $100 per month (For 3 months){" "}
-              <div className="bline w-full h-[2px] bg-[#03A0D7]"></div>
+              <div className="w-full h-[2px] bg-[#03A0D7]"></div>
             </h1>
             <div className="flex gap-6 mt- py-1 ">
               <div className=" w-full h-fit   flex ">
