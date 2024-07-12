@@ -18,7 +18,7 @@ const Form = () => {
           : page.formId == "3"
           ? "Cover Letter"
           : page.formId == "4"
-          ? "Scope of the Project"
+          ? "Scope Of The Project"
           : page.formId == "5"
           ? "No Form Available"
           : page.formId == "9"

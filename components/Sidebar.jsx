@@ -133,7 +133,7 @@ const Sidebar = () => {
                       { id: "3", content: "Cover Letter", checked: true },
                       {
                         id: "4",
-                        content: "Scope of the Project",
+                        content: "Scope Of The Project",
                         checked: true,
                       },
                       // { id: "5", content: "Proposed Sitemap", checked: true },

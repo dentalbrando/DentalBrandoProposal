@@ -5,7 +5,7 @@ const initialState = {
     { id: "1", content: "Cover Page", checked: true },
     { id: "2", content: "Table of Contents", checked: true },
     { id: "3", content: "Cover Letter", checked: true },
-    { id: "4", content: "Scope of the Project", checked: true },
+    { id: "4", content: "Scope Of The Project", checked: true },
     // { id: "5", content: "Proposed Sitemap", checked: true },
     { id: "5", content: "About Dental Brando", checked: true },
     { id: "6", content: "Our Process", checked: true },
