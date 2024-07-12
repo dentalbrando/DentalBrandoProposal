@@ -80,11 +80,11 @@ const LastPage = () => {
                 className="font-[500] w-[47%] text-[15px] pt-3"
                 // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                We thank you for reading our Website Development Proposal.
-                Please contact us if you have any questions or require further
-                clarification on specific aspects of our proposal. Thank you
-                again for considering us. We hope that you now understand how
-                Dental Brando can help dentists like you grow online.
+                We appreciate you taking the time to review our website
+                development proposal. Please contact us if you have any
+                questions or require further clarification on specific aspects
+                of our proposal. We believe our partnership can elevate your
+                practice. Contact us to explore how we can work together.{" "}
               </p>
             </div>
 
