@@ -54,7 +54,7 @@ const WhyUs = ({ pageNumber }) => {
                 WHY <br />
                 DENTAL BRANDO{" "}
               </h1>
-              <div class=" mt-1 w-[85px]  h-2 bg-[#03A0D7] "></div>
+              <div class=" w-[85px]  h-2 bg-[#03A0D7] "></div>
             </div>
 
             <div class="   mt-2 font-[400] text-[10pt] tracking-[-0.50pt]">
