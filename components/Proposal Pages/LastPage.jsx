@@ -3,13 +3,14 @@ import svg1 from "@public/assets/LastPageImgs/last page-01 1.png";
 import svg2 from "@public/assets/LastPageImgs/last page-02.svg";
 import svg3 from "@public/assets/LastPageImgs/last page-03.svg";
 import svg4 from "@public/assets/LastPageImgs/icons8-website-symbol-50.png";
-import bgImg from "@public/assets/DB Web Development Proposal-12.svg";
+// import bgImg from "@public/assets/DB Web Development Proposal-12.svg";
+import bgImg from "@public/assets/DB Web Development Proposal-12.png";
 import logo from "@public/assets/DB Logo-15 copy.svg";
 
 const LastPage = () => {
   return (
     <>
-      <div className="offer flex w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-white">
+      <div className="offer flex w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-white p-0">
         <div className=" w-full relative">
           <div className="w-[100%] relative h-full overflow-hidden">
             <img
@@ -20,7 +21,7 @@ const LastPage = () => {
             <img
               src={bgImg.src}
               alt=""
-              className="w-[100%] h-[100%] absolute top-[0%] left-[0%] z-[0]"
+              className="w-[100% h-[1152.6px] translate-y-[-20px]  z-[0]"
             />
 
             <div className="w-fit">
