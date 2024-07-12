@@ -5,7 +5,6 @@ import svg3 from "@public/assets/LastPageImgs/last page-03.svg";
 import svg4 from "@public/assets/LastPageImgs/icons8-website-symbol-50.png";
 import bgImg from "@public/assets/DB Web Development Proposal-12.svg";
 import logo from "@public/assets/DB Logo-15 copy.svg";
-import { FaMap, FaSitemap, FaWeebly, FaWordpress } from "react-icons/fa";
 
 const LastPage = () => {
   return (
