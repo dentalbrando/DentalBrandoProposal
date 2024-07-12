@@ -102,9 +102,9 @@ const AboutUs = ({ pageNumber }) => {
           </div>
         </div>
 
-        <div className="bg-[#093A5B] h-full flex justify-center items-center px-[30px] w-[52%]">
+        <div className="bg-[#093A5B] h-full flex justify-center items-center px-[30px] w-[52%] ">
           <div className="w-[100%]">
-            <div className="flex mt-8">
+            <div className="flex mt-[50px]">
               <div className=" ">
                 <img
                   style={{ height: "157px", width: "230px" }}
@@ -135,7 +135,7 @@ const AboutUs = ({ pageNumber }) => {
                   alt=""
                 />
               </div>
-              <div className=" mt-[35px] ml-3  ">
+              <div className=" mt-[24.2px] ml-3  ">
                 <h6 className="text-[18.43pt] text-white font-[400] whitespace-nowrap ">
                   Mobile App Development{" "}
                 </h6>
@@ -158,7 +158,7 @@ const AboutUs = ({ pageNumber }) => {
                   alt=""
                 />
               </div>
-              <div className="mt-[35px] ml-3 ">
+              <div className="mt-[24.2px] ml-3 ">
                 <h6 className="text-[18.43pt] text-white font-[400] ">
                   Custom Dental Software{" "}
                 </h6>
@@ -181,7 +181,7 @@ const AboutUs = ({ pageNumber }) => {
                   alt=""
                 />
               </div>
-              <div className="mt-[35px] ml-3 ">
+              <div className="mt-[24.2px] ml-3 ">
                 <h6 className="text-[18.43pt] text-white font-[400] ">
                   Digital Marketing
                 </h6>
@@ -204,7 +204,7 @@ const AboutUs = ({ pageNumber }) => {
                   alt=""
                 />
               </div>
-              <div className="mt-[35px] ml-3">
+              <div className="mt-[24.2px] ml-3">
                 <h6 className="text-[18.43pt] text-white font-[400] ">
                   Graphic Designing
                 </h6>
