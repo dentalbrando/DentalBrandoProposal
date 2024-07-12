@@ -138,7 +138,11 @@ const SidebarSeo = () => {
                       { id: "1", content: "Cover Page", checked: true },
                       { id: "2", content: "Table of Contents", checked: true },
                       { id: "3", content: "Cover Letter", checked: true },
-                      { id: "4", content: "About Us", checked: true },
+                      {
+                        id: "4",
+                        content: "About Dental Brando",
+                        checked: true,
+                      },
                       { id: "5", content: "Project Objective", checked: true },
                       { id: "6", content: "Activities", checked: true },
                       { id: "7", content: "Keyword Research", checked: true },
