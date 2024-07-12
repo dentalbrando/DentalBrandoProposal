@@ -7,8 +7,8 @@ const AboutUs = ({ pageNumber }) => {
   return (
     <div className="offer flex w-[8.27in] h-[1122.6px] shadow-lg print:shadow-none bg-white ">
       <div className="flex w-100vw bg-red-20 items-end">
-        <div className="w-[48%] bg-green-80 h-full">
-          <div className="w-[80%] mx-auto">
+        <div className="w-[48%] h-full">
+          <div className="w-[79%] mx-auto">
             <div className="flex  print:h-[7.3rem] ">
               <div className="mt-[50px]  flex relative pb-0">
                 <svg
