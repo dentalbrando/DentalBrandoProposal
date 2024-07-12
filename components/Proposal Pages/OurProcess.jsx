@@ -55,7 +55,7 @@ const OurProcess = ({ pageNumber }) => {
             </div>
             <div className="text-[11pt] flex text-justify">
               <p>
-                Our web development service follows a comprehensive process to
+                Our Web Development service follows a comprehensive process to
                 ensure that we deliver high-quality, responsive, and optimized
                 websites that meet the unique needs of our clients. We are
                 committed to providing exceptional service and support
