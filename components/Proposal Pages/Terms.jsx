@@ -220,7 +220,7 @@ const Terms = ({ pageNumber }) => {
                       <li> */}
                     <p>
                       50% ($124.50) payment is due after 50% of the work is
-                      completed.The remaining 50% ($124.50) is due upon the
+                      completed. The remaining 50% ($124.50) is due upon the
                       completion of the website and your approval.{" "}
                     </p>
                     {/* </li>
