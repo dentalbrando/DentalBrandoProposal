@@ -90,8 +90,10 @@ Sincerely,`;
                   fontSize: "18px",
                   transition: "all 0.2s ease",
                   ":hover": {
-                    background: "#60a5fa",
+                    background: "#093A5B",
+                    color:"white"
                   },
+                  background: "white",
                   zIndex: 999,
                 }),
               }}
