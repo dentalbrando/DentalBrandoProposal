@@ -48,7 +48,7 @@ const Terms = ({ pageNumber }) => {
               <div className="bline w-[200px] h-2 bg-[#03A0D7]"></div>
             </div>
 
-            <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt-5 mb-1">
+            <h1 className=" font-[700]  text-[20px]  text-[#093A5B] w-fit mt-7 mb-1">
               GENERAL TERMS
               <div className="w-full border-b-[2px] border-[#03A0D7]"></div>
             </h1>
