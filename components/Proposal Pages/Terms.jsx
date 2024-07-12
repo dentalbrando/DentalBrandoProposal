@@ -84,7 +84,7 @@ const Terms = ({ pageNumber }) => {
                       </p>
                     </div>
                     <div className="text-[12pt] font-[600] mt-[px] ">
-                      <p>Service Quality:</p>
+                      <p>Quality Assurance:</p>
                     </div>
                   </div>
 
