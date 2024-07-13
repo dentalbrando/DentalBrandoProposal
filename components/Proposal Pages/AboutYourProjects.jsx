@@ -60,7 +60,7 @@ const AboutYourProjects = ({ pageNumber }) => {
   useEffect(() => {
     setTempWebsiteCMS(
       websiteCMSs === ""
-        ? `We recommend using WordPress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently.`
+        ? `We recommend using WordPress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently. WordPress scales easily with you. You can add new features and functionalities through plugins or custom development.`
         : websiteCMSs
     );
     setTempOverviews(
