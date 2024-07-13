@@ -6,13 +6,13 @@ import { useEffect, useState } from "react";
 const CoverLetter = ({ pageNumber }) => {
   const cover_letter = useSelector((state) => state.cover_letter);
   if (cover_letter.letterType === "web_dev" && cover_letter.letterText === "") {
-    var tempLetterText = `Welcome to Dental Brando, a leading IT company specializing in Website Development for dental practices. Our goal is to enhance the professionalism of your dental practice by providing you with a comprehensive website development proposal. We offer innovative web solutions to elevate your dental practice, ensuring that your online presence is both professional and effective.
+    var tempLetterText = `Welcome to Dental Brando, a leading IT company specializing in website development for dental practices. Our goal is to enhance your practice's professionalism with a comprehensive website development proposal. We offer innovative web solutions to elevate your online presence, ensuring it aligns with your brand values. Our expertise will help you create a professional and engaging online presence that resonates with your clients and sets you apart in the dental industry.
 <p class = 'py-1'></p>
-At Dental Brando, we pride ourselves on offering custom designs tailored to reflect your unique brand. We understand the importance of a website that not only looks great but also functions seamlessly. Our team of experts will work closely with you to create a website that truly represents your practice and meets your specific needs.
+At Dental Brando, our commitment lies in crafting bespoke designs that authentically mirror your distinctive brand identity. We recognize the paramount significance of a website that not only exudes visual excellence but also operates with flawless efficiency. Collaborating closely with you, our team of seasoned professionals ensures the development of a website that faithfully embodies your practice's ethos while adeptly fulfilling your unique requirements.
 <p class = 'py-1'></p>
-Our customized website design services ensure that your site reflects the unique personality and branding of your dental practice. We focus on enhancing patient engagement through user-friendly web design, making it easy for patients to navigate your site, find information, and schedule appointments.
+Our customized website design services ensure that your site reflects the unique personality and branding of your dental practice. We focus on enhancing patient engagement through user-friendly web design, making it easy for patients to navigate your site, find information, and schedule appointments. We use the latest design and development technologies to ensure your website is modern, mobile-friendly, and easy to navigate.
 <p class = 'py-1'></p>
-Ready to take your dental practice to the next level? Contact Dental Brando today for a free consultation and let us craft a website that showcases your expertise and attracts new patients.  We will help your dental practice thrive in the digital age. We look forward to exceeding your expectations!
+Our expert team specializes in creating stunning websites that not only showcase your professional expertise but also attract new patients. With our customized digital solutions, your practice will thrive in today's competitive landscape.
 <p class = 'py-1'></p>
 Sincerely,`;
   } else {
@@ -45,7 +45,7 @@ Sincerely,`;
   return (
     <div className="offer flex w-[8.27in] h-[1122.6px] shadow-lg bg-white">
       <div className=" flex w-full relative bg-green-90">
-        <div className="flex bg-orange-00 h-full w-full absolute left-0 top-0 z-10">
+        <div className="flex bg-orange-00 h-full w-full absolute left-0 top-0 z-0">
           <div className="ml-2 w-[3px] h-full bg-[#093A5B] "></div>
           <div className="line ml-1 mr-1 h-full w-[3px]  bg-[#03A0D7] "></div>
         </div>
@@ -107,7 +107,7 @@ Sincerely,`;
             ></div>
             <div>
               <img
-                className="h-[50px] w-[150px] mt-4 ml-[-11px]"
+                className="h-[50px] w-[150px] mt-6 ml-[-11px]"
                 src={sign.src}
                 alt=""
               />

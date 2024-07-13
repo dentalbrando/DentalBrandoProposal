@@ -14,10 +14,10 @@ const ConverLetterForm = () => {
   const dispatch = useDispatch();
   const coverLetter = useSelector((state) => state.cover_letter);
   if (coverLetter.letterType === "web_dev" && coverLetter.letterText === "") {
-    var tempLetterText = `Welcome to Dental Brando, a leading IT company specializing in Website Development for dental practices. Our goal is to enhance the professionalism of your dental practice by providing you with a comprehensive website development proposal. We offer innovative web solutions to elevate your dental practice, ensuring that your online presence is both professional and effective.
-At Dental Brando, we pride ourselves on offering custom designs tailored to reflect your unique brand. We understand the importance of a website that not only looks great but also functions seamlessly. Our team of experts will work closely with you to create a website that truly represents your practice and meets your specific needs.
-Our customized website design services ensure that your site reflects the unique personality and branding of your dental practice. We focus on enhancing patient engagement through user-friendly web design, making it easy for patients to navigate your site, find information, and schedule appointments.
-Ready to take your dental practice to the next level? Contact Dental Brando today for a free consultation and let us craft a website that showcases your expertise and attracts new patients.  We will help your dental practice thrive in the digital age. We look forward to exceeding your expectations!
+    var tempLetterText = `Welcome to Dental Brando, a leading IT company specializing in website development for dental practices. Our goal is to enhance your practice's professionalism with a comprehensive website development proposal. We offer innovative web solutions to elevate your online presence, ensuring it aligns with your brand values. Our expertise will help you create a professional and engaging online presence that resonates with your clients and sets you apart in the dental industry.
+At Dental Brando, our commitment lies in crafting bespoke designs that authentically mirror your distinctive brand identity. We recognize the paramount significance of a website that not only exudes visual excellence but also operates with flawless efficiency. Collaborating closely with you, our team of seasoned professionals ensures the development of a website that faithfully embodies your practice's ethos while adeptly fulfilling your unique requirements.
+Our customized website design services ensure that your site reflects the unique personality and branding of your dental practice. We focus on enhancing patient engagement through user-friendly web design, making it easy for patients to navigate your site, find information, and schedule appointments. We use the latest design and development technologies to ensure your website is modern, mobile-friendly, and easy to navigate.
+Our expert team specializes in creating stunning websites that not only showcase your professional expertise but also attract new patients. With our customized digital solutions, your practice will thrive in today's competitive landscape.
 Sincerely,`;
   } else {
     var tempLetterText = coverLetter.letterText;
@@ -62,10 +62,10 @@ Sincerely,`;
               onChange={(event) => {
                 setletterType(event.value);
                 if (event.value == "web_dev") {
-                  textareaRef.current.value = `Welcome to Dental Brando, a leading IT company specializing in Website Development for dental practices. Our goal is to enhance the professionalism of your dental practice by providing you with a comprehensive website development proposal. We offer innovative web solutions to elevate your dental practice, ensuring that your online presence is both professional and effective.
-At Dental Brando, we pride ourselves on offering custom designs tailored to reflect your unique brand. We understand the importance of a website that not only looks great but also functions seamlessly. Our team of experts will work closely with you to create a website that truly represents your practice and meets your specific needs.
-Our customized website design services ensure that your site reflects the unique personality and branding of your dental practice. We focus on enhancing patient engagement through user-friendly web design, making it easy for patients to navigate your site, find information, and schedule appointments.
-Ready to take your dental practice to the next level? Contact Dental Brando today for a free consultation and let us craft a website that showcases your expertise and attracts new patients.  We will help your dental practice thrive in the digital age. We look forward to exceeding your expectations!
+                  textareaRef.current.value = `Welcome to Dental Brando, a leading IT company specializing in website development for dental practices. Our goal is to enhance your practice's professionalism with a comprehensive website development proposal. We offer innovative web solutions to elevate your online presence, ensuring it aligns with your brand values. Our expertise will help you create a professional and engaging online presence that resonates with your clients and sets you apart in the dental industry.
+At Dental Brando, our commitment lies in crafting bespoke designs that authentically mirror your distinctive brand identity. We recognize the paramount significance of a website that not only exudes visual excellence but also operates with flawless efficiency. Collaborating closely with you, our team of seasoned professionals ensures the development of a website that faithfully embodies your practice's ethos while adeptly fulfilling your unique requirements.
+Our customized website design services ensure that your site reflects the unique personality and branding of your dental practice. We focus on enhancing patient engagement through user-friendly web design, making it easy for patients to navigate your site, find information, and schedule appointments. We use the latest design and development technologies to ensure your website is modern, mobile-friendly, and easy to navigate.
+Our expert team specializes in creating stunning websites that not only showcase your professional expertise but also attract new patients. With our customized digital solutions, your practice will thrive in today's competitive landscape.
 Sincerely,`;
                 }
                 if (event.value == "web_design") {
@@ -109,7 +109,7 @@ Sincerely,`;
               </label>
               <input
                 autoFocus
-                className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color outline-none rounded-md font-normal border-2 border-color outline-none w-[60%]`}
+                className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color border-color outline-none w-[60%]`}
                 onChange={(event) => {
                   setclientName(event.target.value);
                 }}
@@ -128,7 +128,7 @@ Sincerely,`;
             cols={"auto"}
             rows="5"
             onChange={(e) => setletterText(e.target.value)}
-            className="text-gray-900 text-lg p-2 rounded-md font-normal outline-none resize-none rounded-md font-normal border-2 border-color outline-none w-[80%]"
+            className="text-gray-900 text-lg p-2 rounded-md font-normal outline-none resize-none border-2 border-color w-[80%]"
             // defaultValue={overview.trim().replace(/<br\s*\/?>/g, '\n')}
           >
             {letterText
