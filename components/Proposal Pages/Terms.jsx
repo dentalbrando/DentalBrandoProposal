@@ -179,15 +179,15 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className="bg-red-00 w-full mx-auto pb ps-4 font-[400] text-[10pt] text-justify pt-1 ">
-                    <ol className="list-disc">
-                      <li>
-                        We believe in our quality and are confident that it will
-                        meet your expectations, so there is no upfront payment
-                        required.
-                      </li>
-                      <li>There is no hidden fees in both of our plans. </li>
-                    </ol>
+                  <div className="bg-red-00 w-full mx-auto pb ps- font-[400] text-[10pt] text-justify pt-1 ">
+                    {/* <ol className="list-disc">
+                      <li> */}
+                    We believe in our quality and are confident that it will
+                    meet your expectations, so there is no upfront payment
+                    required. There are no hidden fees in both of our plans.{" "}
+                    {/* </li> */}
+                    {/* <li>There is no hidden fees in both of our plans. </li> */}
+                    {/* </ol> */}
                   </div>
                 </div>
               </div>
