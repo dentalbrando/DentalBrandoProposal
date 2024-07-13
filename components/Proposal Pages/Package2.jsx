@@ -53,14 +53,14 @@ const Package2 = ({ pageNumber }) => {
             <section className="pt-2">
               <div>
                 <p className="pt-6 text-[12pt] text-justify">
-                  Ready to Ignite Your Dental Brand? Unleash your Dental
-                  Clinic's potential with our Website Packages. We have the
-                  perfect packages for Individual Dental Practitioners and
-                  thriving Dental clinics. Stand out from the crowd with
-                  stunning layouts, user-friendly navigation, and content that
-                  convert visitors into loyal patients. Just as our website is
-                  flawless, you grow effortlessly. You get more leads and
-                  patient bookings. You achieve a greater revenue. Grow your
+                  Unlock the Hidden Potential of Your Dental Brand? Bring in
+                  more Patients to your Dental Clinic with our Website Packages.
+                  We have the perfect packages for Individual Dental
+                  Practitioners and thriving Dental clinics. Stand out from the
+                  crowd with stunning layouts, user-friendly navigation, and
+                  content that convert visitors into loyal patients. Just as our
+                  website is flawless, you grow effortlessly. You get more leads
+                  and patient bookings. You achieve a greater revenue. Grow your
                   clinic as we provide a stunning online presence for every
                   Dentist.
                 </p>
@@ -113,7 +113,7 @@ const Package2 = ({ pageNumber }) => {
                 </h2>
               </div>
             </div>
-            <section >
+            <section>
               <div>
                 <p className="pt-14 text-[12pt] text-justify">
                   Pay only one-time
