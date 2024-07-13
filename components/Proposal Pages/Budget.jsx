@@ -256,7 +256,7 @@ const Budget = ({ pageNumber }) => {
           <div className="w-full h-[50%] pt- bg-green-60 z-0">
             <div className="w-[90%] h-[100px] mx-aut  bg-red-40 text-[33px] text-main-blue font-[700] ms-[5%] text-start leading-[36px] uppercase">
               Get Set, Grow: Time to Attract New <br/>Patients with Our Stunning
-              Website Design
+              Website Designed
               <div className="bline w-[90px] h-2 bg-[#03A0D7]"></div>
             </div>
           </div>
