@@ -42,7 +42,7 @@ const Terms = ({ pageNumber }) => {
                 className="font-[700] text-[25pt] text-[#093A5B] leading-9"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                TERMS & {/* <br /> */}
+                TERMS & <br />
                 CONDITIONS
               </h1>
               <div className="bline w-[200px] h-2 bg-[#03A0D7]"></div>

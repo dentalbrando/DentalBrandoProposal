@@ -252,14 +252,12 @@ const Budget = ({ pageNumber }) => {
           </div>
         </div>
 
-        <div className="w-full h-[85%] relative ">
-          <div className="w-full h-[50%] pt-6 z-0">
-            <div
-              className="w-[80%] h-[100px] mx-auto text-[28px] text-main-blue font-[700] text-justify leading-8"
-              style={{ textAlignLast: "center" }}
-            >
-              Get Set, Grow: Time to Attract New <br /> Patients with Our
-              Stunning Website Designed
+        <div className="w-full h-[86.7%] bg-yellow-30 relative ">
+          <div className="w-full h-[50%] pt- bg-green-60 z-0">
+            <div className="w-[90%] h-[100px] mx-aut  bg-red-40 text-[33px] text-main-blue font-[700] ms-[5%] text-start leading-[36px] uppercase">
+              Get Set, Grow: Time to Attract New <br/>Patients with Our Stunning
+              Website Designed
+              <div className="bline w-[90px] h-2 bg-[#03A0D7]"></div>
             </div>
           </div>
 
