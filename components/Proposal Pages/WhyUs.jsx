@@ -86,7 +86,7 @@ const WhyUs = ({ pageNumber }) => {
                   with extensive experience in both the dental and IT
                   industries. We understand the unique challenges faced by
                   dental practices and use our deep industry knowledge to create
-                  innovative, strategically aligned solutions.
+                  innovative solutions.{" "}
                 </p>
               </div>
 
@@ -249,7 +249,8 @@ const WhyUs = ({ pageNumber }) => {
                   Timely delivery is crucial in dentistry, and our team is
                   dedicated to completing projects on schedule without
                   sacrificing quality. Efficient project management ensures your
-                  digital solutions are ready when needed.
+                  digital solutions are ready when needed and timely delivered
+                  to you.{" "}
                 </p>
               </div>
 
@@ -288,8 +289,8 @@ const WhyUs = ({ pageNumber }) => {
                   Our commitment to your success continues beyond project
                   delivery. We provide ongoing support and maintenance to ensure
                   your digital solutions perform optimally. We aim to build
-                  long-term relationships, offering continuous support to help
-                  you thrive in the digital landscape.
+                  long-term relationships while offering continuous support to
+                  our clients.{" "}
                 </p>
               </div>
 
