@@ -17,7 +17,7 @@ const ConverLetterForm = () => {
     var tempLetterText = `Welcome to Dental Brando, a leading IT company specializing in website development for dental practices. Our goal is to enhance your practice's professionalism with a comprehensive website development proposal. We offer innovative web solutions to elevate your online presence, ensuring it aligns with your brand values. Our expertise will help you create a professional and engaging online presence that resonates with your clients and sets you apart in the dental industry.
 At Dental Brando, our commitment lies in crafting bespoke designs that authentically mirror your distinctive brand identity. We recognize the paramount significance of a website that not only exudes visual excellence but also operates with flawless efficiency. Collaborating closely with you, our team of seasoned professionals ensures the development of a website that faithfully embodies your practice's ethos while adeptly fulfilling your unique requirements.
 Our customized website design services ensure that your site reflects the unique personality and branding of your dental practice. We focus on enhancing patient engagement through user-friendly web design, making it easy for patients to navigate your site, find information, and schedule appointments. We use the latest design and development technologies to ensure your website is modern, mobile-friendly, and easy to navigate.
-Our expert team specializes in creating stunning websites that not only showcase your professional expertise but also attract new patients. With our customized digital solutions, your practice will thrive in today's competitive landscape.
+Our team of experts is dedicated to ensuring that your dental practice stands out in a crowded digital landscape. With our innovative solutions and commitment to excellence, we are confident that we can help you achieve your online goals. At Dental Brando, we don’t believe in one-size-fits-all solutions. Our team takes the time to understand your unique practice and tailors strategies that resonate with your audience. Your success is our priority!
 Sincerely,`;
   } else {
     var tempLetterText = coverLetter.letterText;
@@ -65,7 +65,7 @@ Sincerely,`;
                   textareaRef.current.value = `Welcome to Dental Brando, a leading IT company specializing in website development for dental practices. Our goal is to enhance your practice's professionalism with a comprehensive website development proposal. We offer innovative web solutions to elevate your online presence, ensuring it aligns with your brand values. Our expertise will help you create a professional and engaging online presence that resonates with your clients and sets you apart in the dental industry.
 At Dental Brando, our commitment lies in crafting bespoke designs that authentically mirror your distinctive brand identity. We recognize the paramount significance of a website that not only exudes visual excellence but also operates with flawless efficiency. Collaborating closely with you, our team of seasoned professionals ensures the development of a website that faithfully embodies your practice's ethos while adeptly fulfilling your unique requirements.
 Our customized website design services ensure that your site reflects the unique personality and branding of your dental practice. We focus on enhancing patient engagement through user-friendly web design, making it easy for patients to navigate your site, find information, and schedule appointments. We use the latest design and development technologies to ensure your website is modern, mobile-friendly, and easy to navigate.
-Our expert team specializes in creating stunning websites that not only showcase your professional expertise but also attract new patients. With our customized digital solutions, your practice will thrive in today's competitive landscape.
+Our team of experts is dedicated to ensuring that your dental practice stands out in a crowded digital landscape. With our innovative solutions and commitment to excellence, we are confident that we can help you achieve your online goals. At Dental Brando, we don’t believe in one-size-fits-all solutions. Our team takes the time to understand your unique practice and tailors strategies that resonate with your audience. Your success is our priority!
 Sincerely,`;
                 }
                 if (event.value == "web_design") {
@@ -91,7 +91,7 @@ Sincerely,`;
                   transition: "all 0.2s ease",
                   ":hover": {
                     background: "#093A5B",
-                    color:"white"
+                    color: "white",
                   },
                   background: "white",
                   zIndex: 999,

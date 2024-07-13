@@ -12,7 +12,7 @@ At Dental Brando, our commitment lies in crafting bespoke designs that authentic
 <p class = 'py-1'></p>
 Our customized website design services ensure that your site reflects the unique personality and branding of your dental practice. We focus on enhancing patient engagement through user-friendly web design, making it easy for patients to navigate your site, find information, and schedule appointments. We use the latest design and development technologies to ensure your website is modern, mobile-friendly, and easy to navigate.
 <p class = 'py-1'></p>
-Our expert team specializes in creating stunning websites that not only showcase your professional expertise but also attract new patients. With our customized digital solutions, your practice will thrive in today's competitive landscape.
+Our team of experts is dedicated to ensuring that your dental practice stands out in a crowded digital landscape. With our innovative solutions and commitment to excellence, we are confident that we can help you achieve your online goals. At Dental Brando, we don’t believe in one-size-fits-all solutions. Our team takes the time to understand your unique practice and tailors strategies that resonate with your audience. Your success is our priority!
 <p class = 'py-1'></p>
 Sincerely,`;
   } else {
@@ -81,7 +81,7 @@ Sincerely,`;
               <div className=" mt-1  w-[6.5in] h-0.5 bg-[#093A5B] "></div>
             </div>
           </div>
-          <div className="mt-[70px] ">
+          <div className="mt-[60px] ">
             <h1
               className="font-[700] text-[25pt] text-[#093A5B] leading-[36px]"
               // style={{ fontFamily: "'Montserrat', sans-serif" }}
