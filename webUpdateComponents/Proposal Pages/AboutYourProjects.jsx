@@ -12,7 +12,7 @@ const AboutYourProjects = ({ pageNumber }) => {
   const websiteCMSs = useSelector((state) => state.aboutYourProject.websiteCMS);
 
   if (functionalities === "") {
-    var tempFunctionality = `Our website development services for dentists include a variety of essential features designed to meet your specific needs. We offer custom design and branding to create a visually appealing and modern website that reflects your practice's unique identity. Detailed service pages will provide comprehensive information about your treatments, accompanied by before-and-after galleries to showcase your work. To enhance patient engagement, we integrate tools such as appointment scheduling systems, patient forms, and live chat functionality for immediate inquiries. The website will be fully responsive and mobile-friendly, ensuring a seamless experience on desktops, tablets, and smartphones. SEO optimization is a key component of our service, ensuring your website ranks well on search engines and attracts local patients in the Miami area.`;
+    var tempFunctionality = `Our website update services for dental practices are designed to address critical issues impacting your online presence and user engagement. We will modernize your website's design to meet current industry standards, ensuring it is visually appealing and professional to enhance user perception and engagement. Strategic implementation of clear calls-to-action (CTAs) throughout the site will improve user navigation and conversion rates. Comprehensive speed optimization techniques will be applied to enhance loading times and reduce bounce rates. Addressing on-page SEO deficiencies through optimized meta tags, headers, and content will boost visibility in search engine results, attracting and retaining local patients. Mobile responsiveness will be prioritized to deliver a seamless, intuitive experience across all devices, thereby enhancing accessibility and engagement.`;
   } else {
     var tempFunctionality = functionalities;
   }
@@ -42,18 +42,12 @@ const AboutYourProjects = ({ pageNumber }) => {
     .join("");
   let [tempWebsiteCMS, setTempWebsiteCMS] = useState(
     websiteCMSs === ""
-      ? `Create a professional and visually appealing website that reflects the quality and reliability of your dental services.`
+      ? `We have conducted a thorough audit of your current website, benchmarking it against top dental websites in your area known for high patient engagement. Our findings reveal several critical areas that require immediate attention to enhance your online presence and patient interaction.`
       : websiteCMSs
   );
   let [tempOverviews, setTempOverviews] = useState(
     overviews === ""
-      ? `Create a professional and visually appealing website that reflects the quality and reliability of your dental services.
-
-<b>Increasing Patient Engagement:</b> Provide an easy-to-navigate platform where patients can learn about your services, read testimonials, and contact your practice.
-
-<b>Enhancing Accessibility:</b> Ensure the website is mobile-friendly and responsive, offering a seamless experience on all devices.
-
-<b>Improving SEO and Visibility:</b> Optimize your website to rank higher on search engines, making it easier for potential patients to find you.`
+      ? `We have conducted a thorough audit of your current website, benchmarking it against top dental websites in your area known for high patient engagement. Our findings reveal several critical areas that require immediate attention to enhance your online presence and patient interaction.`
       : overviews
   );
 
@@ -65,26 +59,12 @@ const AboutYourProjects = ({ pageNumber }) => {
     );
     setTempOverviews(
       overviews === ""
-        ? `Create a professional and visually appealing website that reflects the quality and reliability of your dental services.
-
-<b>Increasing Patient Engagement:</b> Provide an easy-to-navigate platform where patients can learn about your services, read testimonials, and contact your practice.
-
-<b>Enhancing Accessibility:</b> Ensure the website is mobile-friendly and responsive, offering a seamless experience on all devices.
-
-<b>Improving SEO and Visibility:</b> Optimize your website to rank higher on search engines, making it easier for potential patients to find you.`
+        ? `We have conducted a thorough audit of your current website, benchmarking it against top dental websites in your area known for high patient engagement. Our findings reveal several critical areas that require immediate attention to enhance your online presence and patient interaction.`
         : overviews
     );
   }, [websiteCMSs, overviews]);
 
-  console.log(
-    "overviews: ",
-    overviews,
-    "functionalities: ",
-    functionalities,
-    "websiteCMSs: ",
-    websiteCMSs,
-    ab
-  );
+ 
 
   return (
     <>
