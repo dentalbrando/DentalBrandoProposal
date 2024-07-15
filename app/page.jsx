@@ -82,7 +82,7 @@ const Home = () => {
                     </div>
                   </div>
                 </Link>
-                {/* <Link
+                <Link
                   href={"/website-upgrading"}
                   className="w-[300px] h-[400px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
                 >
@@ -103,7 +103,7 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                </Link> */}
+                </Link>
                 <Link
                   href={"/seo"}
                   className="w-[300px] h-[400px] bg-[rgb(251,251,251)] rounded-3xl overflow-hidden border-2 border-color"
