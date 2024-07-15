@@ -110,11 +110,11 @@ const AboutYourProjects = ({ pageNumber }) => {
 
             <div class="pt-[34px] mb-2">
               <h1
-                class="font-[700] text-[25pt] text-[#093A5B] leading-9"
+                class="font-[700] text-[25pt] text-[#093A5B] leading-9 uppercase"
                 // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                ABOUT YOUR
-                <br /> PROJECT
+                Scope of 
+                <br />the PROJECT
               </h1>
               <div class="bline w-[90px] h-2 bg-[#03A0D7]"></div>
             </div>
