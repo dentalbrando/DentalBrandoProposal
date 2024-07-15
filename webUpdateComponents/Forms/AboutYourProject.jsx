@@ -19,12 +19,16 @@ const AboutYourProject = () => {
   );
   const [functionality, setFunctionality] = useState(
     functionalities == ""
-      ? `Our website update services for dental practices are designed to address critical issues impacting your online presence and user engagement. We will modernize your website's design to meet current industry standards, ensuring it is visually appealing and professional to enhance user perception and engagement. Strategic implementation of clear calls-to-action (CTAs) throughout the site will improve user navigation and conversion rates. Comprehensive speed optimization techniques will be applied to enhance loading times and reduce bounce rates. Addressing on-page SEO deficiencies through optimized meta tags, headers, and content will boost visibility in search engine results, attracting and retaining local patients. Mobile responsiveness will be prioritized to deliver a seamless, intuitive experience across all devices, thereby enhancing accessibility and engagement.`
+      ? `Our dental website update services enhance online presence and engagement. We'll modernize your design to meet industry standards, improve navigation with strategic CTAs, and optimize speed for faster loading and lower bounce rates. On-page SEO improvements, including meta tags and headers, boost search visibility, attracting local patients. Mobile responsiveness ensures a seamless experience on all devices.`
       : functionalities
   );
   const [websiteCMS, setWebsiteCMS] = useState(
     websiteCMSs == ""
-      ? `We recommend using WordPress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently. WordPress scales easily with you. You can add new features and functionalities through plugins or custom development.`
+      ? `<b>Outdated Design:</b> Your website's design does not reflect current industry standards, potentially impacting user perception and engagement.
+<b>Lack of Clear Calls-to-Action (CTAs):</b> Important actions like appointment scheduling and contacting your practice are not prominently displayed, hindering navigation and conversion rates.
+<b>Speed Optimization:</b> The website's loading speed is suboptimal, leading to potential user frustration and increased bounce rates.
+<b>On-Page SEO Deficiencies:</b> Critical elements such as meta tags, headers, and content optimization are not effectively implemented, reducing visibility in search engine results.
+<b>Mobile Responsiveness:</b> The website may not provide an optimal experience on mobile devices, limiting accessibility for a significant portion of your audience.`
       : websiteCMSs
   );
 
