@@ -127,25 +127,39 @@ const AboutYourProject = () => {
                   setWebsiteCMS(textareaRef.current.value);
                 }}
               >
-                <option value="" className="text-[12px]" >WordPress</option>
-                <option value="" className="text-[12px]" >Shopify</option>
-                <option value="" className="text-[12px]" >Drupal</option>
-                <option value="" className="text-[12px]" >Custom</option>
+                <option value="" className="text-[12px]">
+                  WordPress
+                </option>
+                <option value="" className="text-[12px]">
+                  Shopify
+                </option>
+                <option value="" className="text-[12px]">
+                  Drupal
+                </option>
+                <option value="" className="text-[12px]">
+                  Custom
+                </option>
               </select>
-
             </div>
           </div>
           <textarea
             ref={textareaRef}
             placeholder="Add (>)  to add tick sign before the line"
-            onChange={(e) => setWebsiteCMS(e.target.value)}
+            // onChange={(e) => setWebsiteCMS(e.target.value)}
             rows="5"
             className="text-gray-900 text-[16px] p-2 rounded-md font-normal outline-none resize-none border-2 border-color"
           >
-            {websiteCMS
+            {/* {websiteCMS
               .trim()
               .replace(/<p\s*[^>]*>/g, "\n")
-              .replace(/<\/p>/g, "")}
+              .replace(/<\/p>/g, "")} */}
+            From improved navigation to enhanced user experience, our updates
+            will make it effortless for patients to connect with your practice,
+            access information, and schedule appointments. We implement
+            strategic features that simplify the user journey and make your
+            website an efficient tool for patient engagement. Our goal is to
+            make it easy for patients to find what they need and to take the
+            next steps in their dental care journey with confidence.
           </textarea>
         </div>
       </div>
