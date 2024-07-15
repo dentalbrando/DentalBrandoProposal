@@ -5,6 +5,7 @@ import cover_page from "./coverPageSlice";
 import cover_page_Update from "./coverPageUpdate";
 import popup from "./popup";
 import cover_letter from "./coverLetterSlice";
+import cover_letter_Update from "./coverLetterSlice";
 import aboutYourProject from "./aboutYourProject";
 import proposedSitemap from "./proposedSitemap";
 import proposedSitemap2 from "./proposedSitemap2";
@@ -35,6 +36,7 @@ const store = configureStore({
     cover_page_Update,
     popup,
     cover_letter,
+    cover_letter_Update,
     aboutYourProject,
     budget,
     pageSequence,

@@ -1,10 +1,9 @@
 import sign from "@public/assets/sign.jpg";
 import { useSelector } from "react-redux";
 import tick from "@public/assets/TICK-01.svg";
-import { useEffect, useState } from "react";
 
 const CoverLetter = ({ pageNumber }) => {
-  const cover_letter = useSelector((state) => state.cover_letter);
+  const cover_letter = useSelector((state) => state.cover_letter_Update);
   if (cover_letter.letterType === "web_dev" && cover_letter.letterText === "") {
     var tempLetterText = `Welcome to Dental Brando, a leading IT company specializing in website development for dental practices. Our goal is to enhance your practice's professionalism with a comprehensive website development proposal. We offer innovative web solutions to elevate your online presence, ensuring it aligns with your brand values. Our expertise will help you create a professional and engaging online presence that resonates with your clients and sets you apart in the dental industry.
 <p class = 'py-1'></p>

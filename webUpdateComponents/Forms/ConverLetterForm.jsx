@@ -8,11 +8,11 @@ import {
   setLetterType,
   setClientName,
   setLetterText,
-} from "@app/store/coverLetterSlice";
+} from "@app/store/coverLetterUpdate";
 
 const ConverLetterForm = () => {
   const dispatch = useDispatch();
-  const coverLetter = useSelector((state) => state.cover_letter);
+  const coverLetter = useSelector((state) => state.cover_letter_Update);
   if (coverLetter.letterType === "web_dev" && coverLetter.letterText === "") {
     var tempLetterText = `Welcome to Dental Brando, a leading IT company specializing in website development for dental practices. Our goal is to enhance your practice's professionalism with a comprehensive website development proposal. We offer innovative web solutions to elevate your online presence, ensuring it aligns with your brand values. Our expertise will help you create a professional and engaging online presence that resonates with your clients and sets you apart in the dental industry.
 At Dental Brando, our commitment lies in crafting bespoke designs that authentically mirror your distinctive brand identity. We recognize the paramount significance of a website that not only exudes visual excellence but also operates with flawless efficiency. Collaborating closely with you, our team of seasoned professionals ensures the development of a website that faithfully embodies your practice's ethos while adeptly fulfilling your unique requirements.

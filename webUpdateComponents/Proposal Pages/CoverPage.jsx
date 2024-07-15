@@ -4,7 +4,7 @@ import cover from "@public/assets/DB Web Development Proposal-13.png";
 import { useSelector } from "react-redux";
 
 const CoverPage = () => {
-  const cover_page = useSelector((state) => state.cover_page);
+  const cover_page = useSelector((state) => state.cover_page_Update);
   return (
     <>
       <div className=" flex justify-center items-center shadow-lg bg-white">
