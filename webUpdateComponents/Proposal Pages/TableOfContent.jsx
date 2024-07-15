@@ -1,9 +1,8 @@
 import img from "@public/assets/DB Web Development Proposal-14.png";
-import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 const TableOfContent = () => {
-  const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
+  const pageSequence = useSelector((state) => state.pageSequenceUpdate).pageSequence;
   let number = 0;
 
   return (

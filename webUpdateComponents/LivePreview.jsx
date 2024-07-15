@@ -2,11 +2,9 @@ import CoverLetter from "./Proposal Pages/CoverLetter";
 import ConverPage from "./Proposal Pages/CoverPage";
 import { useSelector } from "react-redux";
 import AboutYourProjects from "./Proposal Pages/AboutYourProjects";
-import ProposedSiteMap from "./Proposal Pages/ProposedSiteMap";
 import Budget from "./Proposal Pages/Budget";
 import TableOfContent from "./Proposal Pages/TableOfContent";
 import OurProcess from "./Proposal Pages/OurProcess";
-// import AboutUs from "./Proposal Pages Copy/AboutUs";
 import AboutUs from "./Proposal Pages/AboutUs";
 import WhyUs from "./Proposal Pages/WhyUs";
 import Terms from "./Proposal Pages/Terms";
@@ -26,10 +24,7 @@ const LivePreview = () => {
           <CoverLetter />
         ) : page.formId == "4" ? (
           <AboutYourProjects />
-        ) : //       : page.formId == "5" ? (
-        // <ProposedSiteMap />
-        //       )
-        page.formId == "9" ? (
+        ) : page.formId == "9" ? (
           <Budget />
         ) : page.formId == "2" ? (
           <TableOfContent />
@@ -47,7 +42,6 @@ const LivePreview = () => {
           <LastPage />
         ) : (
           <div className="offer flex w-[8.27in] h-[11.6876in] bg-white shadow-lg justify-center items-center text-4xl text-red-400 font-semibold">
-            {" "}
             Nothing to Preview
           </div>
         )}

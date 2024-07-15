@@ -3,16 +3,16 @@ import React, { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { updatePage } from "@app/store/pageSclice";
-import { resetSquence, setPageSequence } from "@app/store/pageSequence";
+import { updatePage } from "@app/store/pageScliceUpdate";
+import { resetSquence, setPageSequence } from "@app/store/pageSequenceUpdate";
 import { FaCheck } from "react-icons/fa";
 import Link from "next/link";
 import axios from "axios";
 
 const Sidebar = () => {
-  const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
+  const pageSequence = useSelector((state) => state.pageSequenceUpdate).pageSequence;
   const [items, setItems] = useState(pageSequence);
-  const page = useSelector((state) => state.page);
+  const page = useSelector((state) => state.pageUpdate);
   const dispatch = useDispatch();
   const onDragEnd = (result) => {
     if (!result.destination) return;

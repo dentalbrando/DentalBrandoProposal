@@ -4,8 +4,6 @@ import CoverPageForm from "./Forms/CoverPageForm";
 import ConverLetterForm from "./Forms/ConverLetterForm";
 import { useSelector } from "react-redux";
 import AboutYourProject from "./Forms/AboutYourProject";
-import ProposedSiteMap from "./Proposal Pages/ProposedSiteMap";
-import ProposedSiteMapForm from "./Forms/ProposedSiteMapForm";
 import BudgetForm from "./Forms/BudgetForm";
 
 const Form = () => {
@@ -25,20 +23,15 @@ const Form = () => {
           ? "No Form Available"
           : "No Form Available"}
       </h1>
-      {/* <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color"> */}
       {page.formId == "1" ? (
         <CoverPageForm />
       ) : page.formId == "3" ? (
         <ConverLetterForm />
       ) : page.formId == "4" ? (
         <AboutYourProject />
-      ) : //     : page.formId == "5" ? (
-      // <ProposedSiteMapForm />
-      //     )
-      page.formId == "8" ? (
+      ) : page.formId == "8" ? (
         <BudgetForm />
       ) : null}
-      {/* </div> */}
     </div>
   );
 };

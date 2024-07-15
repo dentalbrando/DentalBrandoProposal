@@ -10,7 +10,6 @@ import Terms from "./Proposal Pages/Terms";
 import LastPage from "./Proposal Pages/LastPage";
 import CoverLetter from "./Proposal Pages/CoverLetter";
 import AboutYourProjects from "./Proposal Pages/AboutYourProjects";
-import ProposedSiteMap from "./Proposal Pages/ProposedSiteMap";
 import Budget from "./Proposal Pages/Budget";
 import SaveProposaltoDb from "./saveProposaltoDb";
 import Package2 from "./Proposal Pages/Package2";
@@ -66,12 +65,6 @@ const FullProposal = () => {
                   <AboutYourProjects key={index} pageNumber={pageNumber++} />
                 )
               );
-            // case "5":
-            //   return (
-            //     page.checked && (
-            //       <ProposedSiteMap key={index} pageNumber={pageNumber++} />
-            //     )
-            //   );
             case "5":
               return (
                 page.checked && (
