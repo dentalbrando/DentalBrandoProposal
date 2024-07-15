@@ -5,15 +5,15 @@ import tick from "@public/assets/TICK-01.svg";
 const CoverLetter = ({ pageNumber }) => {
   const cover_letter = useSelector((state) => state.cover_letter_Update);
   if (cover_letter.letterType === "web_dev" && cover_letter.letterText === "") {
-    var tempLetterText = `Welcome to Dental Brando, where we specialize in enhancing dental practices through cutting-edge website updates. As a prominent IT company, we are committed to significantly improving the online professionalism and patient engagement of your dental practice. Our mission is to deliver a standout website that not only captures attention but also serves as a pivotal tool for the growth and success of your practice.
+    var tempLetterText = `Welcome to Dental Brando, where we specialize in enhancing dental practices through cutting-edge website updates. As a leading IT company, we are dedicated to enhancing the online professionalism and patient engagement of your dental practice. Our tailored website update services are designed to transform your current online presence into a powerful tool for growth. We offer innovative solutions that ensure your website not only looks exceptional but also functions seamlessly to meet the evolving needs of your patients.
 <p class = 'py-1'></p>
-Our tailored website update services are designed to transform your current online presence into a powerful tool for growth. We offer innovative solutions that ensure your website not only looks exceptional but also functions seamlessly to meet the evolving needs of your patients. With a focus on both aesthetics and functionality, we create websites that leave a lasting impression on your visitors while enhancing their user experience.
+At Dental Brando, we understand the importance of a website that not only reflects your unique brand but also drives results. Our team of experts will collaborate closely with you to deliver a customized update that aligns perfectly with your practice's goals and values. We take the time to understand your specific needs and challenges, ensuring that our solutions are tailored to help you achieve your objectives.
 <p class = 'py-1'></p>
-At Dental Brando, we understand the importance of a website that not only reflects your unique brand but also drives results. Our team of experts will collaborate closely with you to deliver a customized update that aligns perfectly with your practice's goals and values. We take the time to understand your specific needs and preferences, ensuring that the final product is a true reflection of your practice and its mission.
+From improved navigation to enhanced user experience, our updates will make it effortless for patients to connect with your practice, access information, and schedule appointments. We focus on creating a seamless experience that enhances patient satisfaction and engagement. Our goal is to make your website a central hub for patient interaction, where they can easily find the information they need and interact with your practice in a convenient manner.
 <p class = 'py-1'></p>
-From improved navigation to enhanced user experience, our updates will make it effortless for patients to connect with your practice, access information, and schedule appointments. We implement strategic features that simplify the user journey and make your website an efficient tool for patient engagement. Our goal is to make it easy for patients to find what they need and to take the next steps in their dental care journey with confidence.
+Moreover, our dedication extends beyond the initial update. We provide ongoing support and maintenance to ensure your website remains secure, optimized, and aligned with your practice's growth objectives. This continuous improvement approach guarantees that your online presence evolves with the changing digital landscape, keeping your practice at the forefront of patient engagement and technological advancements.
 <p class = 'py-1'></p>
-Sincerely,`;
+We are excited about the opportunity to partner with you in enhancing your dental practice's online presence.`;
   } else {
     var tempLetterText = cover_letter.letterText;
   }
