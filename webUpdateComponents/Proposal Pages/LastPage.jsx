@@ -81,7 +81,7 @@ const LastPage = () => {
                 // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 We appreciate you taking the time to review our website
-                development proposal. Please contact us if you have any
+                updating proposal. Please contact us if you have any
                 questions or require further clarification on specific aspects
                 of our proposal. We believe our partnership can elevate your
                 practice. Contact us to explore how we can work together.{" "}

@@ -5,6 +5,7 @@ import {
   setOverviews,
   setWebsiteCMSs,
 } from "@app/store/aboutYourProjectUpdate";
+import { Droppable } from "@hello-pangea/dnd";
 
 const AboutYourProject = () => {
   const overviews = useSelector((state) => state.aboutYourProjectUpdate.overview);
@@ -91,9 +92,9 @@ const AboutYourProject = () => {
         <div className="flex justify-center flex-col my-5">
           <div className="flex justify-between items-center">
             <label className="text-gray-900 text-[16px] font-medium my-2">
-              Website CMS
+              Website Issues Identified
             </label>
-            <div className="flex items-center gap-3">
+            {/* <div className="flex items-center gap-3">
               <button
                 className="py-2 px-4 rounded-xl text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
                 onClick={() => {
@@ -112,6 +113,40 @@ const AboutYourProject = () => {
               >
                 Shopify
               </button>
+            </div> */}
+          </div>
+          <textarea
+            ref={textareaRef}
+            placeholder="Add (>)  to add tick sign before the line"
+            onChange={(e) => setWebsiteCMS(e.target.value)}
+            rows="5"
+            className="text-gray-900 text-[16px] p-2 rounded-md font-normal outline-none resize-none border-2 border-color"
+          >
+            {websiteCMS
+              .trim()
+              .replace(/<p\s*[^>]*>/g, "\n")
+              .replace(/<\/p>/g, "")}
+          </textarea>
+        </div>
+        <div className="flex justify-center flex-col my-5">
+          <div className="flex justify-between items-center">
+            <label className="text-gray-900 text-[16px] font-medium my-2">
+              Updating Your Current WordPress Website
+            </label>
+            <div className="flex items-center gap-3">
+              <select
+                className="py-2 px-4 rounded-xl text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
+                onClick={() => {
+                  textareaRef.current.value = `We recommend using WordPress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently. WordPress scales easily with you. You can add new features and functionalities through plugins or custom development.`;
+                  setWebsiteCMS(textareaRef.current.value);
+                }}
+              >
+                <option value="" >WordPress</option>
+                <option value="" >Shopify</option>
+                <option value="" >Drupal</option>
+                <option value="" >Custom</option>
+              </select>
+
             </div>
           </div>
           <textarea
