@@ -1,14 +1,14 @@
 "use client";
-import Sidebar from "@components/Sidebar";
-import Form from "@components/Form";
-import LivePreview from "@components/LivePreview";
+import Sidebar from "@webUpdateComponents/Sidebar";
+import Form from "@webUpdateComponents/Form";
+import LivePreview from "@webUpdateComponents/LivePreview";
 import { useSelector } from "react-redux";
-import FullProposal from "@components/FullProposal";
-import Nav from "@components/Nav";
+import FullProposal from "@webUpdateComponents/FullProposal";
+import Nav from "@webUpdateComponents/Nav";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
-import Loader from "@components/Loader";
+import Loader from "@webUpdateComponents/Loader";
 
 function Development() {
   let router = useRouter();
@@ -46,7 +46,7 @@ function Development() {
         </div>
       ) : (
         <>
-          {/* {pageNo != 100 ? (
+          {pageNo != 100 ? (
             <>
               <Nav />
               <div className="flex justify-start items-start h-fit">
@@ -61,7 +61,7 @@ function Development() {
             </>
           ) : (
             <FullProposal />
-          )} */}
+          )}
         </>
       )}
     </>
