@@ -160,7 +160,7 @@ const Sidebar = () => {
                 <Link
                   className="text-center mt-3 p-3 rounded-2xl bg-light-blue text-main-blue hover:text-white font-[500] "
                   style={{ fontSize: "24px" }}
-                  href="/recent"
+                  href="/recent-website-update"
                 >
                   Recent Proposals
                 </Link>
