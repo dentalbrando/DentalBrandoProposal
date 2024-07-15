@@ -80,7 +80,7 @@ We are excited about the opportunity to partner with you in enhancing your denta
               <div className=" mt-1  w-[6.5in] h-0.5 bg-[#093A5B] "></div>
             </div>
           </div>
-          <div className="mt-[60px] ">
+          <div className="mt-[50px] ">
             <h1
               className="font-[700] text-[25pt] text-[#093A5B] leading-[36px]"
               // style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -146,7 +146,7 @@ We are excited about the opportunity to partner with you in enhancing your denta
             </div> */}
             <div>
               <img
-                className="h-[50px] w-[150px] mt-6 ml-[-11px]"
+                className="h-[50px] w-[150px] mt-4 ml-[-11px]"
                 src={sign.src}
                 alt=""
               />

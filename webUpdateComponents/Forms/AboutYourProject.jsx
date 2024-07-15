@@ -21,7 +21,7 @@ const AboutYourProject = () => {
   );
   const [functionality, setFunctionality] = useState(
     functionalities == ""
-      ? `Our dental website update services enhance online presence and engagement. We'll modernize your design to meet industry standards, improve navigation with strategic CTAs, and optimize speed for faster loading and lower bounce rates. On-page SEO improvements, including meta tags and headers, boost search visibility, attracting local patients. Mobile responsiveness ensures a seamless experience on all devices.`
+      ? `Our website update services for dental practices tackle critical issues affecting your online presence and user engagement. We'll modernize your website's design to meet industry standards, ensuring it's visually appealing and professional. Clear calls-to-action (CTAs) enhance navigation and conversion rates. Speed optimization techniques improve loading times and reduce bounce rates. Optimizing meta tags, headers, and content boosts search engine visibility, attracting and retaining local patients. Prioritizing mobile responsiveness ensures a seamless, intuitive experience across all devices, enhancing accessibility and engagement.`
       : functionalities
   );
   const [websiteCMS, setWebsiteCMS] = useState(
@@ -153,13 +153,15 @@ const AboutYourProject = () => {
               .trim()
               .replace(/<p\s*[^>]*>/g, "\n")
               .replace(/<\/p>/g, "")} */}
-            From improved navigation to enhanced user experience, our updates
-            will make it effortless for patients to connect with your practice,
-            access information, and schedule appointments. We implement
-            strategic features that simplify the user journey and make your
-            website an efficient tool for patient engagement. Our goal is to
-            make it easy for patients to find what they need and to take the
-            next steps in their dental care journey with confidence.
+            We propose updating your current WordPress website while retaining
+            its familiar content management system (CMS). By rebuilding from
+            scratch, we ensure a fresh design and enhanced functionality
+            tailored to your dental practice's needs. WordPress offers
+            user-friendly management, extensive customization with themes and
+            plugins, built-in SEO capabilities, and scalability. Its responsive
+            design ensures optimal performance across all devices. Updating to
+            WordPress will elevate your online presence, providing a seamless
+            and engaging experience for your patients.
           </textarea>
         </div>
       </div>

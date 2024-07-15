@@ -55,12 +55,21 @@ const OurProcess = ({ pageNumber }) => {
             </div>
             <div className="text-[11pt] flex text-justify">
               <p>
-                We evaluate and enhance dental websites, aligning with your
-                practice goals. With modern design and improved functionality,
-                we prioritize user experience. Our process ensures transparency
-                from concept to launch, emphasizing clear communication and
-                feedback. Post-launch, we provide ongoing support to secure and
-                optimize your website for sustained practice growth.{" "}
+                {/* Our website update process starts with a thorough assessment of
+                your site's strengths and areas for improvement. As dental
+                website specialists, we understand your goals. We focus on
+                modernizing design, enhancing functionality, and optimizing user
+                experience. Our iterative approach ensures transparency,
+                prioritizing clear communication and feedback. Post-launch, we
+                provide ongoing support to keep your site secure, optimized, and
+                aligned with growth objectives.{" "} */}
+                Our website update process begins with a detailed assessment of
+                your site's strengths and areas for improvement. As dental
+                website specialists, we focus on modernizing design, enhancing
+                functionality, and optimizing user experience. Our iterative
+                approach ensures clear communication and feedback. Post-launch,
+                we offer ongoing support to keep your site secure, optimized,
+                and aligned with your growth objectives.
               </p>
             </div>
             <div>
@@ -93,12 +102,20 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                       <div className=" w-[90%] mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1">
                         <p>
-                          We audit websites to evaluate design, functionality,
-                          and performance, identifying strengths and areas for
-                          improvement in user interactions, technical setup,
-                          content relevance, and SEO. Our insights guide
-                          tailored recommendations and updates to enhance your
-                          online presence and goals.{" "}
+                          The auditing phase is our first step. We review your
+                          site's design, functionality, and performance,
+                          assessing strengths and areas for improvement. By
+                          analyzing user interactions, technical aspects, and
+                          SEO effectiveness, we provide tailored recommendations
+                          to enhance your online presence.{" "}
+                          {/* The auditing phase is our first step. We conduct a
+                          thorough audit of your site, reviewing design,
+                          functionality, and performance. This assesses
+                          strengths and areas for improvement. We analyze user
+                          interactions, technical aspects, and SEO
+                          effectiveness. Insights guide tailored recommendations
+                          aligned with your goals, enhancing your online
+                          presence effectively. */}
                         </p>
                       </div>
                     </div>
@@ -128,12 +145,26 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                       <div className="w-[90%] mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1">
                         <p>
-                          In planning, we refine audit insights to set clear
+                          {/* In planning, we refine audit insights to set clear
                           website objectives. Custom prototypes and wireframes
                           reflect your brand, with a focus on intuitive user
                           experiences and optimizing key CTAs. Our process
                           emphasizes iterative design and clear communication to
-                          realize your vision effectively.{" "}
+                          realize your vision effectively.{" "} */}
+                          {/* In planning and design, we refine audit insights to
+                          set clear objectives for your updated website. We
+                          create prototypes aligned with your brand and goals,
+                          ensuring a compelling user experience. Our focus is on
+                          seamless interaction across devices and optimizing
+                          CTAs like appointment scheduling. Iterative design
+                          refinement ensures your vision is accurately
+                          transformed into a functional website. */}
+                          We refine audit insights to set clear objectives for
+                          your updated website. Our prototypes align with your
+                          brand and goals, ensuring a seamless user experience
+                          across devices. We optimize CTAs like appointment
+                          scheduling, iteratively refining the design to bring
+                          your vision to life.
                         </p>
                       </div>
                     </div>

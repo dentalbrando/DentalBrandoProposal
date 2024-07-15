@@ -19,7 +19,7 @@ const CoverPage = () => {
           <img className="w-[18rem] my-10 mx-auto" src={logo.src} alt="" />
 
           <h2
-            className="text-[rgb(9,58,91)] font-[700] text-[16pt] w-[70%] mt-[-25px] py-[10px] mx-auto leading-[1.18] flex justify-center items-center text- bg-red-30 tracking-[0.5pt]"
+            className="text-[rgb(9,58,91)] font-[700] text-[16pt] w-[600px] mt-[-25px] py-[10px] mx-auto leading-[1.18] flex justify-center items-center bg--300 tracking-[0.5pt]"
             style={{ textAlign: "justify", textAlignLast: "center" }}
           >
             {cover_page.subHeading == ""
