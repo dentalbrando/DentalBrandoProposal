@@ -14,7 +14,7 @@ import LastPage from "./Proposal Pages/LastPage";
 import Package2 from "./Proposal Pages/Package2";
 
 const LivePreview = () => {
-  const page = useSelector((state) => state.page);
+  const page = useSelector((state) => state.pageUpdate);
 
   return (
     <div className="flex items-center flex-col pb-16 w-[78vw] bg-white">

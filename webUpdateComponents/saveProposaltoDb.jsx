@@ -3,18 +3,18 @@ import { useSelector } from "react-redux";
 import axios from "axios";
 import { useState } from "react";
 export default function SaveProposaltoDb() {
-  let page = useSelector((state) => state.page);
-  let aboutYourProject = useSelector((state) => state.aboutYourProject);
-  let budget = useSelector((state) => state.budget);
-  let cover_letter = useSelector((state) => state.cover_letter);
-  let cover_page = useSelector((state) => state.cover_page);
-  let pageSequence = useSelector((state) => state.pageSequence);
-  let proposedSitemap = useSelector((state) => state.proposedSitemap);
-  let proposedSitemap2 = useSelector((state) => state.proposedSitemap2);
+  let page = useSelector((state) => state.pageUpdate);
+  let aboutYourProject = useSelector((state) => state.aboutYourProjectUpdate);
+  let budget = useSelector((state) => state.budgetUpdate);
+  let cover_letter = useSelector((state) => state.cover_letter_Update);
+  let cover_page = useSelector((state) => state.cover_page_Update);
+  let pageSequence = useSelector((state) => state.pageSequenceUpdate);
+  let proposedSitemap = useSelector((state) => state.proposedSitemapUpdate);
+  let proposedSitemap2 = useSelector((state) => state.proposedSitemap2Update);
   let [loading, setLoading] = useState(false);
   let [saveButtonText, setSaveButtonText] = useState("Save Proposal");
   let proposedSitemapOverview = useSelector(
-    (state) => state.proposedSitemapOverview
+    (state) => state.proposedSitemapOverviewUpdate
   );
   async function submit() {
     if (saveButtonText === "Saved") {

@@ -4,7 +4,7 @@ import logo from "@public/assets/DB Logo-15.png";
 import Link from "next/link";
 
 const Nav = (props) => {
-  const pageNo = useSelector((state) => state.page.formId);
+  // const pageNo = useSelector((state) => state.pageUpdate.formId);
   return (
     
       <>

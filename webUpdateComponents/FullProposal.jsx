@@ -16,7 +16,9 @@ import SaveProposaltoDb from "./saveProposaltoDb";
 import Package2 from "./Proposal Pages/Package2";
 const FullProposal = () => {
   const dispatch = useDispatch();
-  const pageSequence = useSelector((state) => state.pageSequence).pageSequence;
+  const pageSequence = useSelector(
+    (state) => state.pageSequenceUpdate
+  ).pageSequence;
   let pageNumber = 1;
 
   return (

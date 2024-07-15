@@ -9,7 +9,7 @@ import ProposedSiteMapForm from "./Forms/ProposedSiteMapForm";
 import BudgetForm from "./Forms/BudgetForm";
 
 const Form = () => {
-  const page = useSelector((state) => state.page);
+  const page = useSelector((state) => state.pageUpdate);
   return (
     <div className="flex items-center flex-col bg-white py-16 w-[78vw]">
       <h1 className="text-main-blue text-[36px] font-semibold">
