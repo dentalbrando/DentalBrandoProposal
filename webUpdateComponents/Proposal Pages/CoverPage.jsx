@@ -17,13 +17,13 @@ const CoverPage = () => {
             <div className="h-5 w-[20%] custom-shape2DB"></div>
           </div>
           <img className="w-[18rem] my-10 mx-auto" src={logo.src} alt="" />
-        
+
           <h2
             className="text-[rgb(9,58,91)] font-[700] text-[16pt] w-[70%] mt-[-25px] py-[10px] mx-auto leading-[1.18] flex justify-center items-center text- bg-red-30 tracking-[0.5pt]"
             style={{ textAlign: "justify", textAlignLast: "center" }}
           >
             {cover_page.subHeading == ""
-              ? "A Comprehensive Website Development Proposal to Enhance Your Dental Practice's Professionalism."
+              ? "A Comprehensive Proposal to Update Your Website to Enhance Your Online Dental Practice's Professionalism and Patient Engagement."
               : cover_page.subHeading}
           </h2>
           <div className="relative mt-5 h-fit flex items-center">
