@@ -64,8 +64,6 @@ const AboutYourProjects = ({ pageNumber }) => {
     );
   }, [websiteCMSs, overviews]);
 
- 
-
   return (
     <>
       <div class="offer w-[8.27in] h-[1122.6px] shadow-lg bg-white">
@@ -133,30 +131,14 @@ const AboutYourProjects = ({ pageNumber }) => {
                 ></p>
               </div>
             </section>
-            <section>
-              <div class="flex pt-10">
-                <div class="text-[16pt] text-[#093A5B]  font-[700]">
-                  <p>2.</p>
-                </div>
-                <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
-                  <p>Key Features and Functionality</p>
-                </div>
-              </div>
-              <div>
-                <p
-                  class="pt-2 text-[12pt] text-justify"
-                  dangerouslySetInnerHTML={{ __html: contentWithImages }}
-                ></p>
-              </div>
-            </section>
             {tempWebsiteCMS ? (
               <section>
                 <div class="flex pt-10">
                   <div class="text-[16pt] text-[#093A5B] font-[700]">
-                    <p>3.</p>
+                    <p>2.</p>
                   </div>
                   <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
-                    <p>Website CMS</p>
+                    <p>Website Issues Identified</p>
                   </div>
                 </div>
                 <div>
@@ -172,6 +154,22 @@ const AboutYourProjects = ({ pageNumber }) => {
                 </div>
               </section>
             ) : null}
+            <section>
+              <div class="flex pt-10">
+                <div class="text-[16pt] text-[#093A5B]  font-[700]">
+                  <p>3.</p>
+                </div>
+                <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
+                  <p>Key Features and Functionality</p>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="pt-2 text-[12pt] text-justify"
+                  dangerouslySetInnerHTML={{ __html: contentWithImages }}
+                ></p>
+              </div>
+            </section>
           </div>
         </div>
       </div>
