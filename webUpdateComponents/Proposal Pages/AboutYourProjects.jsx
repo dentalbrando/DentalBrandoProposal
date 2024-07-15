@@ -133,7 +133,7 @@ const AboutYourProjects = ({ pageNumber }) => {
             </section>
             {tempWebsiteCMS ? (
               <section>
-                <div class="flex pt-10">
+                <div class="flex pt-5">
                   <div class="text-[16pt] text-[#093A5B] font-[700]">
                     <p>2.</p>
                   </div>
@@ -142,7 +142,7 @@ const AboutYourProjects = ({ pageNumber }) => {
                   </div>
                 </div>
                 <div>
-                  <p
+                  {/* <p
                     class="pt-2 text-[12pt] text-justify"
                     dangerouslySetInnerHTML={{
                       __html: tempWebsiteCMS.replace(
@@ -150,12 +150,35 @@ const AboutYourProjects = ({ pageNumber }) => {
                         "<p class = 'py-1'></p>"
                       ),
                     }}
-                  ></p>
+                  ></p> */}
+                  <p class="pt-2 text-[12pt] text-justify">
+                    <b>Outdated Design:</b> Your website's design does not
+                    reflect current industry standards, potentially impacting
+                    user perception and engagement.
+                    <br />
+                    <b>Lack of Clear Calls-to-Action (CTAs):</b> Important
+                    actions like appointment scheduling and contacting your
+                    practice are not prominently displayed, hindering navigation
+                    and conversion rates.
+                    <br />
+                    <b>Speed Optimization:</b> The website's loading speed is
+                    suboptimal, leading to potential user frustration and
+                    increased bounce rates.
+                    <br />
+                    <b>On-Page SEO Deficiencies:</b> Critical elements such as
+                    meta tags, headers, and content optimization are not
+                    effectively implemented, reducing visibility in search
+                    engine results.
+                    <br />
+                    <b>Mobile Responsiveness:</b> The website may not provide an
+                    optimal experience on mobile devices, limiting accessibility
+                    for a significant portion of your audience.
+                  </p>
                 </div>
               </section>
             ) : null}
             <section>
-              <div class="flex pt-10">
+              <div class="flex pt-5">
                 <div class="text-[16pt] text-[#093A5B]  font-[700]">
                   <p>3.</p>
                 </div>
@@ -164,10 +187,48 @@ const AboutYourProjects = ({ pageNumber }) => {
                 </div>
               </div>
               <div>
-                <p
+                {/* <p
                   class="pt-2 text-[12pt] text-justify"
                   dangerouslySetInnerHTML={{ __html: contentWithImages }}
-                ></p>
+                ></p> */}
+                <p
+                  class="pt-2 text-[12pt] text-justify"
+                  // dangerouslySetInnerHTML={{ __html: contentWithImages }}
+                >
+                  Our dental website update services enhance online presence and
+                  engagement. We'll modernize your design to meet industry
+                  standards, improve navigation with strategic CTAs, and
+                  optimize speed for faster loading and lower bounce rates.
+                  On-page SEO improvements, including meta tags and headers,
+                  boost search visibility, attracting local patients. Mobile
+                  responsiveness ensures a seamless experience on all devices.{" "}
+                </p>
+              </div>
+            </section>
+            <section>
+              <div class="flex pt-5">
+                <div class="text-[16pt] text-[#093A5B]  font-[700]">
+                  <p>4.</p>
+                </div>
+                <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
+                  <p>Updating Your Current WordPress Website</p>
+                </div>
+              </div>
+              <div>
+                {/* <p
+                  class="pt-2 text-[12pt] text-justify"
+                  dangerouslySetInnerHTML={{ __html: contentWithImages }}
+                ></p> */}
+                <p class="pt-2 text-[12pt] text-justify">
+                  Update your WordPress website with a modern design and
+                  enhanced functionality for your dental practice. WordPress
+                  offers easy management, extensive customization with themes
+                  and plugins, built-in SEO, and scalability. Its responsive
+                  design ensures optimal performance on all devices, backed by a
+                  strong community for ongoing support and security updates,
+                  elevating your online presence and improving patient
+                  experience.{" "}
+                </p>
               </div>
             </section>
           </div>

@@ -77,7 +77,7 @@ const LastPage = () => {
                 Thank You
               </h1>
               <p
-                className="font-[500] w-[47%] text-[15px] pt-3"
+                className="font-[400] w-[47%] text-[16px] pt-3"
                 // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 We appreciate you taking the time to review our website

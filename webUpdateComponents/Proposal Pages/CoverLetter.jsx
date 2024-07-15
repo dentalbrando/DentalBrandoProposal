@@ -5,15 +5,15 @@ import tick from "@public/assets/TICK-01.svg";
 const CoverLetter = ({ pageNumber }) => {
   const cover_letter = useSelector((state) => state.cover_letter_Update);
   if (cover_letter.letterType === "web_dev" && cover_letter.letterText === "") {
-    var tempLetterText = `Welcome to Dental Brando, where we specialize in enhancing dental practices through cutting-edge website updates. As a leading IT company, we are dedicated to enhancing the online professionalism and patient engagement of your dental practice.
+    var tempLetterText = `Welcome to Dental Brando, where we specialize in enhancing dental practices through cutting-edge website updates. As a leading IT company, we are dedicated to improving the online professionalism and patient engagement of your dental practice. Our mission is to provide you with a website that not only stands out but also serves as a vital tool for your practice's growth and success.
 <p class = 'py-1'></p>
-Our tailored website update services is designed to transform your current online presence into a powerful tool for growth. We offer innovative solutions that ensure your website not only looks exceptional but also functions seamlessly to meet the evolving needs of your patients.
+Our tailored website update services are designed to transform your current online presence into a powerful tool for growth. We offer innovative solutions that ensure your website not only looks exceptional but also functions seamlessly to meet the evolving needs of your patients. With a focus on both aesthetics and functionality, we create websites that leave a lasting impression on your visitors while enhancing their user experience.
 <p class = 'py-1'></p>
-At Dental Brando, we understand the importance of a website that not only reflects your unique brand but also drives results. Our team of experts will collaborate closely with you to deliver a customized update that aligns perfectly with your practice's goals and values.
+At Dental Brando, we understand the importance of a website that not only reflects your unique brand but also drives results. Our team of experts will collaborate closely with you to deliver a customized update that aligns perfectly with your practice's goals and values. We take the time to understand your specific needs and preferences, ensuring that the final product is a true reflection of your practice and its mission.
 <p class = 'py-1'></p>
-From improved navigation to enhanced user experience, our updates will make it effortless for patients to connect with your practice, access information, and schedule appointments. We are committed to helping you stand out in the digital landscape and achieve new heights of success.
+From improved navigation to enhanced user experience, our updates will make it effortless for patients to connect with your practice, access information, and schedule appointments. We implement strategic features that simplify the user journey and make your website an efficient tool for patient engagement. Our goal is to make it easy for patients to find what they need and to take the next steps in their dental care journey with confidence.
 <p class = 'py-1'></p>
-We are excited about the opportunity to partner with you in enhancing your dental practice's online presence.`;
+We are excited to partner with you in enhancing your dental practice's online presence. Choosing Dental Brando means investing in a website that stands out in the digital landscape and drives success. Let us help you create an online presence that exceeds expectations, drives growth, and fosters a deeper connection with your patients.`;
   } else {
     var tempLetterText = cover_letter.letterText;
   }
@@ -80,7 +80,7 @@ We are excited about the opportunity to partner with you in enhancing your denta
               <div className=" mt-1  w-[6.5in] h-0.5 bg-[#093A5B] "></div>
             </div>
           </div>
-          <div className="mt-[60px] ">
+          <div className="mt-[50px] ">
             <h1
               className="font-[700] text-[25pt] text-[#093A5B] leading-[36px]"
               // style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -90,7 +90,7 @@ We are excited about the opportunity to partner with you in enhancing your denta
             </h1>
             <div className="bline w-[90px] h-2 bg-[#03A0D7] "></div>
           </div>
-          <div className="name underline  mt-14 font-[700]  text-[17.5pt]">
+          <div className="name underline  mt-[40px] font-[700]  text-[17.5pt]">
             <p>
               Dear{" "}
               <span id="name" className="capitalize">
@@ -104,6 +104,46 @@ We are excited about the opportunity to partner with you in enhancing your denta
               className="Part-one font-[400] text-[12pt] leading-6 text-justify w-[100%] pt-2 bg-yellow-00"
               dangerouslySetInnerHTML={{ __html: content }}
             ></div>
+            {/* <div className="Part-one font-[400] text-[12pt] leading-6 text-justify w-[100%] pt-2 bg-yellow-00">
+              Welcome to Dental Brando, where we specialize in enhancing dental
+              practices through cutting-edge website updates. As a leading IT
+              company, we are dedicated to improving the online professionalism
+              and patient engagement of your dental practice. Our mission is to
+              provide you with a website that not only stands out but also
+              serves as a vital tool for your practice's growth and success.
+              <br />
+              Our tailored website update services are designed to transform
+              your current online presence into a powerful tool for growth. We
+              offer innovative solutions that ensure your website not only looks
+              exceptional but also functions seamlessly to meet the evolving
+              needs of your patients. With a focus on both aesthetics and
+              functionality, we create websites that leave a lasting impression
+              on your visitors while enhancing their user experience.
+              <br />
+              At Dental Brando, we understand the importance of a website that
+              not only reflects your unique brand but also drives results. Our
+              team of experts will collaborate closely with you to deliver a
+              customized update that aligns perfectly with your practice's goals
+              and values. We take the time to understand your specific needs and
+              preferences, ensuring that the final product is a true reflection
+              of your practice and its mission.
+              <br />
+              From improved navigation to enhanced user experience, our updates
+              will make it effortless for patients to connect with your
+              practice, access information, and schedule appointments. We
+              implement strategic features that simplify the user journey and
+              make your website an efficient tool for patient engagement. Our
+              goal is to make it easy for patients to find what they need and to
+              take the next steps in their dental care journey with confidence.
+              <br />
+              We are excited to partner with you in enhancing your dental
+              practice's online presence. Choosing Dental Brando means investing
+              in a website that stands out in the digital landscape and drives
+              success. Let us help you create an online presence that exceeds
+              expectations, drives growth, and fosters a deeper connection with
+              your patients.
+              <br />
+            </div> */}
             <div>
               <img
                 className="h-[50px] w-[150px] mt-6 ml-[-11px]"

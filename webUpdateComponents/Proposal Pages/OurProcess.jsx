@@ -55,13 +55,12 @@ const OurProcess = ({ pageNumber }) => {
             </div>
             <div className="text-[11pt] flex text-justify">
               <p>
-                Our Web Development service follows a comprehensive process to
-                ensure that we deliver high-quality, responsive, and optimized
-                websites that meet the unique needs of our clients. We are
-                committed to providing exceptional service and support
-                throughout the entire process. We take on a collaborative
-                approach to ensure that you are completely satisﬁed and happy
-                with the ﬁnal product.
+                We evaluate and enhance dental websites, aligning with your
+                practice goals. With modern design and improved functionality,
+                we prioritize user experience. Our process ensures transparency
+                from concept to launch, emphasizing clear communication and
+                feedback. Post-launch, we provide ongoing support to secure and
+                optimize your website for sustained practice growth.{" "}
               </p>
             </div>
             <div>
@@ -81,20 +80,25 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                       <div className="flex items-center mt-[-3rem]">
                         <div className="ml-7 h-[67px]">
-                          <img src={svg1.src} alt="" width="70px" className="h-full" />
+                          <img
+                            src={svg1.src}
+                            alt=""
+                            width="70px"
+                            className="h-full"
+                          />
                         </div>
                         <div className="text-[18pt] font-[600] px-5 pt-4">
-                          <p>Planning</p>
+                          <p>Auditing</p>
                         </div>
                       </div>
                       <div className=" w-[90%] mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1">
                         <p>
-                          The first step in the web development process is
-                          planning. Before the project begins, we will send you
-                          a form where you will define your project
-                          requirements. Our project managing team will ensure
-                          that your project is planned efficiently. We will work
-                          closely with you to fulfil your goals.
+                          We audit websites to evaluate design, functionality,
+                          and performance, identifying strengths and areas for
+                          improvement in user interactions, technical setup,
+                          content relevance, and SEO. Our insights guide
+                          tailored recommendations and updates to enhance your
+                          online presence and goals.{" "}
                         </p>
                       </div>
                     </div>
@@ -111,22 +115,25 @@ const OurProcess = ({ pageNumber }) => {
                           </p>
                         </div>
                       </div>
-                      <div className="flex items-center mt-[-3rem]">
+                      <div className="flex items-center mt-[-3rem] bg-red-400">
                         <div className="ml-7">
                           <img src={svg2.src} alt="" width="70px" />
                         </div>
-                        <div className="text-[18pt] font-[600] px-5 pt-4">
-                          <p>Design</p>
+                        <div className="text-[18pt] leading-none font-[600] px-5">
+                          <p>
+                            Planning <br />
+                            and Design
+                          </p>
                         </div>
                       </div>
                       <div className="w-[90%] mx-auto pb-4 font-[400] text-[10pt] text-justify pt-1">
                         <p>
-                          During this phase, our Design team will work closely
-                          with the client to create wireframes and mock-ups of
-                          the website's layout, design elements, and user
-                          interface. The team will often begin by gathering
-                          information about the client's brand and target
-                          audience, as well as any specific goals.{" "}
+                          In planning, we refine audit insights to set clear
+                          website objectives. Custom prototypes and wireframes
+                          reflect your brand, with a focus on intuitive user
+                          experiences and optimizing key CTAs. Our process
+                          emphasizes iterative design and clear communication to
+                          realize your vision effectively.{" "}
                         </p>
                       </div>
                     </div>
@@ -149,7 +156,12 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                       <div className="flex items-center mt-[-3rem]">
                         <div className="ml-7 h-[67px]">
-                          <img src={svg3.src} alt="" width="70px" className="h-full" />
+                          <img
+                            src={svg3.src}
+                            alt=""
+                            width="70px"
+                            className="h-full"
+                          />
                         </div>
                         <div className="text-[18pt] font-[600] px-5 pt-4">
                           <p>Implementation</p>
