@@ -120,10 +120,10 @@ const AboutYourProjects = ({ pageNumber }) => {
             </div>
             <section class="pt-2">
               <div class="flex">
-                <div class="text-[16pt] text-[#093A5B] font-[700] ">
+                {/* <div class="text-[16pt] text-[#093A5B] font-[700] ">
                   <p>1.</p>
-                </div>
-                <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
+                </div> */}
+                <div class="text-[16pt] text-[#093A5B] px- font-[700]">
                   <p>Overview & Goals</p>
                 </div>
               </div>
@@ -142,10 +142,10 @@ const AboutYourProjects = ({ pageNumber }) => {
             {tempWebsiteCMS ? (
               <section>
                 <div class="flex pt-5">
-                  <div class="text-[16pt] text-[#093A5B] font-[700]">
+                  {/* <div class="text-[16pt] text-[#093A5B] font-[700]">
                     <p>2.</p>
-                  </div>
-                  <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
+                  </div> */}
+                  <div class="text-[16pt] text-[#093A5B] px- font-[700]">
                     <p>Website Issues Identified</p>
                   </div>
                 </div>
@@ -187,10 +187,10 @@ const AboutYourProjects = ({ pageNumber }) => {
             ) : null}
             <section>
               <div class="flex pt-5">
-                <div class="text-[16pt] text-[#093A5B]  font-[700]">
+                {/* <div class="text-[16pt] text-[#093A5B]  font-[700]">
                   <p>3.</p>
-                </div>
-                <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
+                </div> */}
+                <div class="text-[16pt] text-[#093A5B] px- font-[700]">
                   <p>Key Features and Functionality</p>
                 </div>
               </div>
@@ -215,10 +215,10 @@ const AboutYourProjects = ({ pageNumber }) => {
             </section>
             <section>
               <div class="flex pt-5">
-                <div class="text-[16pt] text-[#093A5B]  font-[700]">
+                {/* <div class="text-[16pt] text-[#093A5B]  font-[700]">
                   <p>4.</p>
-                </div>
-                <div class="text-[16pt] text-[#093A5B] px-3 font-[700]">
+                </div> */}
+                <div class="text-[16pt] text-[#093A5B] px- font-[700]">
                   <p>Updating Your Current WordPress Website</p>
                 </div>
               </div>
