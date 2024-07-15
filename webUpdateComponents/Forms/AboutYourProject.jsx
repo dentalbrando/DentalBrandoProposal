@@ -94,26 +94,6 @@ const AboutYourProject = () => {
             <label className="text-gray-900 text-[16px] font-medium my-2">
               Website Issues Identified
             </label>
-            {/* <div className="flex items-center gap-3">
-              <button
-                className="py-2 px-4 rounded-xl text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
-                onClick={() => {
-                  textareaRef.current.value = `We recommend using WordPress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently. WordPress scales easily with you. You can add new features and functionalities through plugins or custom development.`;
-                  setWebsiteCMS(textareaRef.current.value);
-                }}
-              >
-                Wordpress
-              </button>
-              <button
-                className="py-2 px-4 rounded-xl text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
-                onClick={() => {
-                  textareaRef.current.value = `Shopify has been selected to develop this e-commerce website due to its numerous benefits. Shopify is a widely recognized and highly versatile E-Commerce platform that offers many advantages for online store development. The key benefit of Shopify is its user-friendly interface, which allows even non-technical individuals to manage and update website content easily.  Users can effortlessly add, edit, and delete products, images, and other multimedia elements with its intuitive dashboard. It has a range of built-in tools to support E-commerce businesses, including inventory management, order tracking, secure payment gateways, and customizable storefront themes.`;
-                  setWebsiteCMS(textareaRef.current.value);
-                }}
-              >
-                Shopify
-              </button>
-            </div> */}
           </div>
           <textarea
             ref={textareaRef}
