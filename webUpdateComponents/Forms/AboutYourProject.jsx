@@ -1,19 +1,17 @@
-import TextInput from "@components/TextInput";
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   setFunctionalities,
   setOverviews,
   setWebsiteCMSs,
-} from "@app/store/aboutYourProject";
-import { setPopup } from "@app/store/popup";
+} from "@app/store/aboutYourProjectUpdate";
 
 const AboutYourProject = () => {
-  const overviews = useSelector((state) => state.aboutYourProject.overview);
+  const overviews = useSelector((state) => state.aboutYourProjectUpdate.overview);
   const functionalities = useSelector(
-    (state) => state.aboutYourProject.functionality
+    (state) => state.aboutYourProjectUpdate.functionality
   );
-  const websiteCMSs = useSelector((state) => state.aboutYourProject.websiteCMS);
+  const websiteCMSs = useSelector((state) => state.aboutYourProjectUpdate.websiteCMS);
   const [overview, setOverview] = useState(
     overviews == ""
       ? `Create a professional and visually appealing website that reflects the quality and reliability of your dental services.

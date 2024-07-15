@@ -4,15 +4,14 @@ import {
   setDiscount,
   setService,
   setTerms,
-} from "@app/store/budget";
-import TextInput from "@components/TextInput";
+} from "@app/store/budgetUpdate";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const BudgetForm = () => {
   const dispatch = useDispatch();
-  const storedServices = useSelector((state) => state.budget.service);
-  const budget = useSelector((state) => state.budget);
+  const storedServices = useSelector((state) => state.budgetUpdate.service);
+  const budget = useSelector((state) => state.budgetUpdate);
   const [services, setServices] = useState(
     storedServices ? storedServices : [{}]
   ); // An array of service objects
