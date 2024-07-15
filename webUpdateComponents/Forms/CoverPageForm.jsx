@@ -11,13 +11,12 @@ import {
   setIssueDate,
   setValidDate,
   setCompanyLogo,
-} from "@app/store/coverPageSlice";
+} from "@app/store/coverPageUpdate";
 import TextInput from "../TextInput";
-import { setPopup } from "@app/store/popup";
 
 const CoverPageForm = () => {
   const dispatch = useDispatch();
-  const coverPage = useSelector((state) => state.cover_page);
+  const coverPage = useSelector((state) => state.cover_page_Update);
   // Local state to track input values
   const [subHeading, setSubHeadingLocal] = useState(
     coverPage.subHeading == ""

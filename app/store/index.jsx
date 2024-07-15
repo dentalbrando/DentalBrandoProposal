@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import page from "./pageSclice";
 import pageSmm from "./pageScliceSmm";
 import cover_page from "./coverPageSlice";
+import cover_page_Update from "./coverPageUpdate";
 import popup from "./popup";
 import cover_letter from "./coverLetterSlice";
 import aboutYourProject from "./aboutYourProject";
@@ -31,6 +32,7 @@ const store = configureStore({
     page,
     pageSmm,
     cover_page,
+    cover_page_Update,
     popup,
     cover_letter,
     aboutYourProject,
