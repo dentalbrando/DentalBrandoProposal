@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { updatePage } from "@app/store/pageSclice";
+import { updatePage } from "@app/store/pageScliceUpdate";
 import CoverPage from "./Proposal Pages/CoverPage";
 import TableOfContent from "./Proposal Pages/TableOfContent";
 import AboutUs from "./Proposal Pages/AboutUs";
