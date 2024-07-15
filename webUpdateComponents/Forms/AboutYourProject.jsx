@@ -13,6 +13,7 @@ const AboutYourProject = () => {
     (state) => state.aboutYourProjectUpdate.functionality
   );
   const websiteCMSs = useSelector((state) => state.aboutYourProjectUpdate.websiteCMS);
+  const currentWebR = useSelector((state) => state.aboutYourProjectUpdate.websiteCMS);
   const [overview, setOverview] = useState(
     overviews == ""
       ? `We have conducted a thorough audit of your current website, benchmarking it against top dental websites in your area known for high patient engagement. Our findings reveal several critical areas that require immediate attention to enhance your online presence and patient interaction.`
@@ -30,6 +31,11 @@ const AboutYourProject = () => {
 <b>Speed Optimization:</b> The website's loading speed is suboptimal, leading to potential user frustration and increased bounce rates.
 <b>On-Page SEO Deficiencies:</b> Critical elements such as meta tags, headers, and content optimization are not effectively implemented, reducing visibility in search engine results.
 <b>Mobile Responsiveness:</b> The website may not provide an optimal experience on mobile devices, limiting accessibility for a significant portion of your audience.`
+      : websiteCMSs
+  );
+  const [currentWeb, setCurrentWeb] = useState(
+    websiteCMSs == ""
+      ? `From improved navigation to enhanced user experience, our updates will make it effortless for patients to connect with your practice, access information, and schedule appointments. We implement strategic features that simplify the user journey and make your website an efficient tool for patient engagement. Our goal is to make it easy for patients to find what they need and to take the next steps in their dental care journey with confidence.`
       : websiteCMSs
   );
 
@@ -115,16 +121,16 @@ const AboutYourProject = () => {
             </label>
             <div className="flex items-center gap-3">
               <select
-                className="py-2 px-4 rounded-xl text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
+                className="py-2 px- rounded-none text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
                 onClick={() => {
                   textareaRef.current.value = `We recommend using WordPress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently. WordPress scales easily with you. You can add new features and functionalities through plugins or custom development.`;
                   setWebsiteCMS(textareaRef.current.value);
                 }}
               >
-                <option value="" >WordPress</option>
-                <option value="" >Shopify</option>
-                <option value="" >Drupal</option>
-                <option value="" >Custom</option>
+                <option value="" className="text-[12px]" >WordPress</option>
+                <option value="" className="text-[12px]" >Shopify</option>
+                <option value="" className="text-[12px]" >Drupal</option>
+                <option value="" className="text-[12px]" >Custom</option>
               </select>
 
             </div>
