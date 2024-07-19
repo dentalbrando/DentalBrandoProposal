@@ -13,7 +13,6 @@ import {
   setCompanyLogo,
 } from "@app/store/coverPageSlice";
 import TextInput from "../TextInput";
-import { setPopup } from "@app/store/popup";
 
 const CoverPageForm = () => {
   const dispatch = useDispatch();
@@ -139,8 +138,7 @@ const CoverPageForm = () => {
             length="half"
             label="Issue Date"
             type="date"
-            // value={issueDate}
-            placeholder={issueDate}
+            value={issueDate.split("-").reverse().join("-")}
             onChange={(event) => {
               setIssueDateLocal(
                 event.target.value.split("-").reverse().join("-")
@@ -153,7 +151,7 @@ const CoverPageForm = () => {
             secondInput={true}
             label="Valid Date"
             type="date"
-            value={validDate}
+            value={validDate.split("-").reverse().join("-")}
             onChange={(event) => {
               setValidDateLocal(
                 event.target.value.split("-").reverse().join("-")

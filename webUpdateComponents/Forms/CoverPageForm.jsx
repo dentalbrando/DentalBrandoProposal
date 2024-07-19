@@ -71,7 +71,6 @@ const CoverPageForm = () => {
       reader.readAsDataURL(file);
     }
   };
-
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
       <div className="flex flex-col justify-between">
@@ -138,8 +137,7 @@ const CoverPageForm = () => {
             length="half"
             label="Issue Date"
             type="date"
-            // value={issueDate}
-            placeholder={issueDate}
+            value={issueDate.split("-").reverse().join("-")}
             onChange={(event) => {
               setIssueDateLocal(
                 event.target.value.split("-").reverse().join("-")
@@ -152,7 +150,7 @@ const CoverPageForm = () => {
             secondInput={true}
             label="Valid Date"
             type="date"
-            value={validDate}
+            value={validDate.split("-").reverse().join("-")}
             onChange={(event) => {
               setValidDateLocal(
                 event.target.value.split("-").reverse().join("-")
