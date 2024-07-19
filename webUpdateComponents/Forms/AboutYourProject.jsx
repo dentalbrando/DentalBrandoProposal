@@ -5,7 +5,6 @@ import {
   setOverviews,
   setWebsiteCMSs,
 } from "@app/store/aboutYourProjectUpdate";
-import { Droppable } from "@hello-pangea/dnd";
 
 const AboutYourProject = () => {
   const overviews = useSelector((state) => state.aboutYourProjectUpdate.overview);
