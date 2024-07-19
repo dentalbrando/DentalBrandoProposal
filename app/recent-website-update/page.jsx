@@ -3,18 +3,18 @@ import {
   setFunctionalities,
   setOverviews,
   setWebsiteCMSs,
-} from "@app/store/aboutYourProject";
+} from "@app/store/aboutYourProjectUpdate";
 import {
   setCurrency,
   setDiscount,
   setService,
   setTerms,
-} from "@app/store/budget";
+} from "@app/store/budgetUpdate";
 import {
   setClientName,
   setLetterText,
   setLetterType,
-} from "@app/store/coverLetterSlice";
+} from "@app/store/coverLetterUpdate";
 import {
   setCompanyAddress,
   setCompanyLogo,
@@ -24,20 +24,17 @@ import {
   setProjectTitle,
   setSubHeading,
   setValidDate,
-} from "@app/store/coverPageSlice";
-import { setPageSequence } from "@app/store/pageSequence";
-import { setSiteMapOverview } from "@app/store/proposedSitemapOverview";
-import { setSiteMap } from "@app/store/proposedSitemap";
-import { setSiteMap2 } from "@app/store/proposedSitemap2";
+} from "@app/store/coverPageUpdate";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
-import { setPage, updatePage } from "@app/store/pageSclice";
+import {updatePage } from "@app/store/pageSclice";
 import Loader from "@components/Loader";
 import Nav from "@components/Nav";
 import { FaSearch } from "react-icons/fa";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
 function Proposal() {
   let router = useRouter();
   let dispatch = useDispatch();
@@ -84,16 +81,6 @@ function Proposal() {
       getUserData();
       getData();
     }
-
-    // async function verifyTokenApi() {
-    //   try {
-    //     await axios.get("/api/verifyToken");
-    //     setIsVerified(true);
-    //   } catch (err) {
-    //     setIsVerified(false);
-    //   }
-    // }
-    // verifyTokenApi();
   }, [isVerified]);
   useEffect(() => {
     async function verifyTokenApi() {
@@ -194,27 +181,6 @@ function Proposal() {
           searchData[searchData.length - 1 - key].cover_page.companyLogo
         )
       );
-      dispatch(
-        setSiteMapOverview(
-          searchData[searchData.length - 1 - key].proposedSitemapOverview
-            .overview
-        )
-      );
-      dispatch(
-        setSiteMap(
-          searchData[searchData.length - 1 - key].proposedSitemap.sitemap
-        )
-      );
-      dispatch(
-        setSiteMap2(
-          searchData[searchData.length - 1 - key].proposedSitemap2.sitemap2
-        )
-      );
-      // dispatch(
-      //   setPageSequence(
-      //     searchData[searchData.length - 1 - key].pageSequence.pageSequence
-      //   )
-      // );
     } else {
       dispatch(
         setFunctionalities(
@@ -302,30 +268,9 @@ function Proposal() {
           proposalData[proposalData.length - 1 - key].cover_page.companyLogo
         )
       );
-      dispatch(
-        setSiteMapOverview(
-          proposalData[proposalData.length - 1 - key].proposedSitemapOverview
-            .overview
-        )
-      );
-      dispatch(
-        setSiteMap(
-          proposalData[proposalData.length - 1 - key].proposedSitemap.sitemap
-        )
-      );
-      dispatch(
-        setSiteMap2(
-          proposalData[proposalData.length - 1 - key].proposedSitemap2.sitemap2
-        )
-      );
-      // dispatch(
-      //   setPageSequence(
-      //     proposalData[proposalData.length - 1 - key].pageSequence.pageSequence
-      //   )
-      // );
     }
     dispatch(updatePage(100));
-    router.push("/development");
+    router.push("/website-upgrading");
   }
   function searchFunction(e) {
     if (e.target.value) {
@@ -360,7 +305,9 @@ function Proposal() {
   async function deleteProposal(_id, inSearch) {
     try {
       setDeleteLoading(_id);
-      let { data } = await axios.post("/api/deleteProposal", { _id: _id });
+      let { data } = await axios.post("/api/deleteProposalUpgrade", {
+        _id: _id,
+      });
       let { acknowledged } = data;
       if (acknowledged) {
         if (inSearch) {
@@ -421,25 +368,25 @@ function Proposal() {
                 <table className="table-border mx-auto">
                   <thead className="w-full">
                     <tr className="">
-                      <th className="th-border text-center text-lg text-lg py-2 w-[100px]">
+                      <th className="th-border text-center text-lg py-2 w-[100px]">
                         No.
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[180px]">
+                      <th className="th-border text-center text-lg py-2 w-[180px]">
                         Client Name
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[200px]">
+                      <th className="th-border text-center text-lg py-2 w-[200px]">
                         Project Title
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[220px]">
+                      <th className="th-border text-center text-lg py-2 w-[220px]">
                         Company Name
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[170px]">
+                      <th className="th-border text-center text-lg py-2 w-[170px]">
                         Issue Date
                       </th>
-                      <th className="th-border text-center text-lg text-lg py-2 w-[175px]">
+                      <th className="th-border text-center text-lg py-2 w-[175px]">
                         Valid Date
                       </th>
-                      <th className="last-th-border text-center text-lg text-lg py-2 w-[190px]">
+                      <th className="last-th-border text-center text-lg py-2 w-[190px]">
                         Action
                       </th>
                     </tr>
