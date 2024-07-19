@@ -5,6 +5,7 @@ const initialState = {
   overview: "",
   functionality: "",
   websiteCMS: "",
+  updateCurrent: "",
 };
 
 const aboutYourProjectSlice = createSlice({
@@ -20,10 +21,13 @@ const aboutYourProjectSlice = createSlice({
     setWebsiteCMSs: (state, action) => {
       state.websiteCMS = action.payload;
     },
+    setUpdateCurrentR: (state, action) => {
+      state.updateCurrent = action.payload;
+    },
   },
 });
 
-export const { setOverviews, setFunctionalities, setWebsiteCMSs } =
+export const { setOverviews, setFunctionalities, setWebsiteCMSs, setUpdateCurrentR } =
   aboutYourProjectSlice.actions;
 
 export default aboutYourProjectSlice.reducer;

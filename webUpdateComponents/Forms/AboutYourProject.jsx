@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   setFunctionalities,
   setOverviews,
+  setUpdateCurrentR,
   setWebsiteCMSs,
 } from "@app/store/aboutYourProjectUpdate";
 
@@ -16,9 +17,10 @@ const AboutYourProject = () => {
   const websiteCMSs = useSelector(
     (state) => state.aboutYourProjectUpdate.websiteCMS
   );
-  const currentWebR = useSelector(
-    (state) => state.aboutYourProjectUpdate.websiteCMS
+  const updateCurrent = useSelector(
+    (state) => state.aboutYourProjectUpdate.updateCurrent
   );
+  console.log(updateCurrent);
   const [overview, setOverview] = useState(
     overviews == ""
       ? `We have conducted a thorough audit of your current website, benchmarking it against top dental websites in your area known for high patient engagement. Our findings reveal several critical areas that require immediate attention to enhance your online presence and patient interaction.`
@@ -26,9 +28,10 @@ const AboutYourProject = () => {
   );
   const [functionality, setFunctionality] = useState(
     functionalities == ""
-      ? `Our website update services for dental practices tackle critical issues affecting your online presence and user engagement. We'll modernize your website's design to meet industry standards, ensuring it's visually appealing and professional. Clear calls-to-action (CTAs) enhance navigation and conversion rates. Speed optimization techniques improve loading times and reduce bounce rates. Optimizing meta tags, headers, and content boosts search engine visibility, attracting and retaining local patients. Prioritizing mobile responsiveness ensures a seamless, intuitive experience across all devices, enhancing accessibility and engagement.`
-      : functionalities
+    ? `Our website update services for dental practices tackle critical issues affecting your online presence and user engagement. We'll modernize your website's design to meet industry standards, ensuring it's visually appealing and professional. Clear calls-to-action (CTAs) enhance navigation and conversion rates. Speed optimization techniques improve loading times and reduce bounce rates. Optimizing meta tags, headers, and content boosts search engine visibility, attracting and retaining local patients. Prioritizing mobile responsiveness ensures a seamless, intuitive experience across all devices, enhancing accessibility and engagement.`
+    : functionalities
   );
+  const updateCurrentText = useState(updateCurrent);
   const [websiteCMS, setWebsiteCMS] = useState(
     websiteCMSs == ""
       ? `<b>Outdated Design:</b> Your website's design does not reflect current industry standards, potentially impacting user perception and engagement.
@@ -38,12 +41,6 @@ const AboutYourProject = () => {
 <b>Mobile Responsiveness:</b> The website may not provide an optimal experience on mobile devices, limiting accessibility for a significant portion of your audience.`
       : websiteCMSs
   );
-  const [currentWeb, setCurrentWeb] = useState(
-    websiteCMSs == ""
-      ? `From improved navigation to enhanced user experience, our updates will make it effortless for patients to connect with your practice, access information, and schedule appointments. We implement strategic features that simplify the user journey and make your website an efficient tool for patient engagement. Our goal is to make it easy for patients to find what they need and to take the next steps in their dental care journey with confidence.`
-      : websiteCMSs
-  );
-
   const dispatch = useDispatch();
 
   const handleSaveAboutYourProject = () => {
@@ -54,12 +51,16 @@ const AboutYourProject = () => {
     dispatch(
       setWebsiteCMSs(websiteCMS.replace(/\n/g, "<p class = 'py-1'></p>"))
     );
+    // dispatch(
+    //   setUpdateCurrent(updateCurrentText?.replace(/\n/g, "<p class = 'py-1'></p>"))
+    // );
   };
   useEffect(() => {
     handleSaveAboutYourProject();
-  }, [overview, functionality, websiteCMS]);
+  }, [overview, functionality, websiteCMS, updateCurrentText]);
 
   const textareaRef = useRef();
+  console.log(updateCurrentText);
 
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
