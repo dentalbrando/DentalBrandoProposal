@@ -143,16 +143,12 @@ const AboutYourProject = () => {
             </div>
           </div>
           <textarea
-            ref={textareaRef}
+            // ref={textareaRef}
             placeholder="Add (>)  to add tick sign before the line"
             // onChange={(e) => setWebsiteCMS(e.target.value)}
             rows="5"
             className="text-gray-900 text-[16px] p-2 rounded-md font-normal outline-none resize-none border-2 border-color"
           >
-            {/* {websiteCMS
-              .trim()
-              .replace(/<p\s*[^>]*>/g, "\n")
-              .replace(/<\/p>/g, "")} */}
             We propose updating your current WordPress website while retaining
             its familiar content management system (CMS). By rebuilding from
             scratch, we ensure a fresh design and enhanced functionality
