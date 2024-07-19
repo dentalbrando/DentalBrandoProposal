@@ -29,7 +29,7 @@ export default function SaveProposaltoDb() {
         "/" +
         new Date().getFullYear();
 
-      await axios.post("/api/proposal", {
+      await axios.post("/api/proposalUpgrading", {
         date,
         page,
         aboutYourProject,

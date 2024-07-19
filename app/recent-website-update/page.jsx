@@ -62,7 +62,7 @@ function Proposal() {
       async function getData() {
         try {
           setTableLoading(true);
-          let { data } = await axios.get("/api/proposal");
+          let { data } = await axios.get("/api/proposalUpgrading");
           setProposalData(data.proposalData);
         } catch (er) {
           console.log(er);
