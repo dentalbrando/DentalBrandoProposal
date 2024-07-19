@@ -7,12 +7,18 @@ import {
 } from "@app/store/aboutYourProjectUpdate";
 
 const AboutYourProject = () => {
-  const overviews = useSelector((state) => state.aboutYourProjectUpdate.overview);
+  const overviews = useSelector(
+    (state) => state.aboutYourProjectUpdate.overview
+  );
   const functionalities = useSelector(
     (state) => state.aboutYourProjectUpdate.functionality
   );
-  const websiteCMSs = useSelector((state) => state.aboutYourProjectUpdate.websiteCMS);
-  const currentWebR = useSelector((state) => state.aboutYourProjectUpdate.websiteCMS);
+  const websiteCMSs = useSelector(
+    (state) => state.aboutYourProjectUpdate.websiteCMS
+  );
+  const currentWebR = useSelector(
+    (state) => state.aboutYourProjectUpdate.websiteCMS
+  );
   const [overview, setOverview] = useState(
     overviews == ""
       ? `We have conducted a thorough audit of your current website, benchmarking it against top dental websites in your area known for high patient engagement. Our findings reveal several critical areas that require immediate attention to enhance your online presence and patient interaction.`
@@ -119,13 +125,7 @@ const AboutYourProject = () => {
               Updating Your Current WordPress Website
             </label>
             <div className="flex items-center gap-3">
-              <select
-                className="py-2 px- rounded-none text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
-                onClick={() => {
-                  textareaRef.current.value = `We recommend using WordPress as the content management system (CMS) for your website due to its user-friendly interface, extensive customization options, built-in SEO tools, scalability, and robust security features. WordPress allows for easy content updates without technical expertise, making it an ideal platform for managing your website efficiently. WordPress scales easily with you. You can add new features and functionalities through plugins or custom development.`;
-                  setWebsiteCMS(textareaRef.current.value);
-                }}
-              >
+              <select className="py-2 px- rounded-none text-white mx-1 bg-main-blue font-medium text-[12px] my-3">
                 <option value="" className="text-[12px]">
                   WordPress
                 </option>
