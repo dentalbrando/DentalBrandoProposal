@@ -81,7 +81,12 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                       <div className="flex items-center mt-[-3rem]">
                         <div className="ml-7 h-[67px]">
-                          <img src={svg1.src} alt="" width="70px" className="h-full" />
+                          <img
+                            src={svg1.src}
+                            alt=""
+                            width="70px"
+                            className="h-full"
+                          />
                         </div>
                         <div className="text-[18pt] font-[600] px-5 pt-4">
                           <p>Planning</p>
@@ -149,13 +154,21 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                       <div className="flex items-center mt-[-3rem]">
                         <div className="ml-7 h-[67px]">
-                          <img src={svg3.src} alt="" width="70px" className="h-full" />
+                          <img
+                            src={svg3.src}
+                            alt=""
+                            width="70px"
+                            className="h-full"
+                          />
                         </div>
                         <div className="text-[18pt] font-[600] px-5 pt-4">
                           <p>Implementation</p>
                         </div>
                       </div>
-                      <div className=" mx-3 pb-4 font-[400] text-[10pt] text-justify pt-1">
+                      <div
+                        className=" mx-3 pb-4 font-[400] text-[10pt] text-justify pt-1"
+                        style={{ wordSpacing: "2px" }}
+                      >
                         <p>
                           Now the development team begins to code. They start
                           with the back-end development, which involves creating
@@ -255,8 +268,11 @@ const OurProcess = ({ pageNumber }) => {
                           <p>Maintenance</p>
                         </div>
                       </div>
-                      <div className=" mx-3 pb-4 font-[400] text-[10pt] text-justify pt-1">
-                        <p className="text-justify">
+                      <div
+                        className=" mx-3 pb-4 font-[400] text-[10pt] text-justify pt-1"
+                        style={{ wordSpacing: "0.2px" }}
+                      >
+                        <p>
                           After the website is deployed, we continue to monitor
                           it for issues and make any necessary updates or fixes.
                           We also provide ongoing support and maintenance to

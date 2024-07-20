@@ -53,7 +53,10 @@ const AboutUs = ({ pageNumber }) => {
             </div>
 
             <div className=" text-center  mt-5 font-[400] text-[11pt] leading-5">
-              <div className="Part-one    text-justify ">
+              <div
+                className="Part-one    text-justify "
+                style={{ wordSpacing: "0.1px" }}
+              >
                 <p>
                   Welcome to Dental Brando, your partner in enhancing the
                   digital presence of dental practices. Our mission is to
@@ -102,22 +105,25 @@ const AboutUs = ({ pageNumber }) => {
           </div>
         </div>
 
-        <div className="bg-[#093A5B] h-full flex justify-center items-center px-[30px] w-[52%] ">
-          <div className="w-[100%]">
-            <div className="flex mt-[30px] ">
-              <div className=" ">
+        <div className="bg-[#093A5B] h-full flex justify-center items-center px-[30px] w-[52%]">
+          <div
+            className="w-[100%] flex flex-col justify-start"
+            style={{ alignItems: "space-between" }}
+          >
+            <div className="flex">
+              <div className=" mt-[15px]">
                 <img
                   style={{ height: "157px", width: "230px" }}
                   src={svg1.src}
                   alt=""
                 />
               </div>
-              <div className="mt-[45px] ml-3">
-                <h6 className="text-[18.43pt] text-white font-[400] ">
+              <div className="ml-3 mt-[55px]">
+                <h6 className="text-[18.43pt] pb-1 text-white font-[400] ">
                   Web Development{" "}
                 </h6>
                 <p
-                  className="text-[10pt] text-white w-[97%] font-[400] text-justify leading-6"
+                  className="text-[15px] leading-[20px] text-white w-[97%] font-[400] text-justify"
                   style={{ wordSpacing: "9px" }}
                 >
                   We create custom-designed, SEO-optimized, and mobile-friendly
@@ -136,11 +142,11 @@ const AboutUs = ({ pageNumber }) => {
                 />
               </div>
               <div className=" mt-[30px] ml-3  ">
-                <h6 className="text-[18.43pt] text-white font-[400] whitespace-nowrap ">
+                <h6 className="text-[18.43pt] pb-1 text-white font-[400] whitespace-nowrap ">
                   Mobile App Development{" "}
                 </h6>
                 <p
-                  className="text-[10pt] text-white font-[400] w-[97%] text-justify leading-6"
+                  className="text-[15px] leading-[20px] text-white font-[400] w-[97%] text-justify"
                   style={{ wordSpacing: "6px" }}
                 >
                   Our custom mobile apps improve patient interaction and
@@ -159,11 +165,11 @@ const AboutUs = ({ pageNumber }) => {
                 />
               </div>
               <div className="mt-[30px] ml-3 ">
-                <h6 className="text-[18.43pt] text-white font-[400] ">
+                <h6 className="text-[18.43pt] pb-1 text-white font-[400] ">
                   Custom Dental Software{" "}
                 </h6>
                 <p
-                  className="text-[10pt] text-white font-[400]  w-[97%]  text-justify leading-6 "
+                  className="text-[15px] leading-[20px] text-white font-[400]  w-[97%]  text-justify "
                   style={{ wordSpacing: "5px" }}
                 >
                   {" "}
@@ -182,11 +188,11 @@ const AboutUs = ({ pageNumber }) => {
                 />
               </div>
               <div className="mt-[30px] ml-3 ">
-                <h6 className="text-[18.43pt] text-white font-[400] ">
+                <h6 className="text-[18.43pt] pb-1 text-white font-[400] ">
                   Digital Marketing
                 </h6>
                 <p
-                  className="text-[10pt] text-white font-[400]  w-[97%]  text-justify leading-6 "
+                  className="text-[15px] leading-[20px] text-white font-[400]  w-[97%]  text-justify "
                   style={{ wordSpacing: "3px" }}
                 >
                   Our targeted digital marketing strategies, including SEO,
@@ -205,12 +211,12 @@ const AboutUs = ({ pageNumber }) => {
                 />
               </div>
               <div className="mt-[30px] ml-3">
-                <h6 className="text-[18.43pt] text-white font-[400] ">
+                <h6 className="text-[18.43pt] pb-1 text-white font-[400] ">
                   Graphic Designing
                 </h6>
                 <p
-                  className="text-[10pt] text-white font-[400]  w-[97%]  text-justify leading-6 "
-                  style={{ wordSpacing: "14px" }}
+                  className="text-[15px] leading-[20px] text-white font-[400]  w-[97%]  text-justify "
+                  style={{ wordSpacing: "16px" }}
                 >
                   We create professional, visually appealing graphics, including
                   custom logos and promotional materials, to build a cohesive
