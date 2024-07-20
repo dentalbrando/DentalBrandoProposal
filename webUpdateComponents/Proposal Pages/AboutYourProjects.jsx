@@ -71,6 +71,15 @@ const AboutYourProjects = ({ pageNumber }) => {
         : overviews
     );
   }, [websiteCMSs, overviews]);
+  const updateCurrent = useSelector(
+    (state) => state.aboutYourProjectUpdate.updateCurrent
+  );
+  const [updateCurrentText1, setUpdateCurrentText1] = useState(
+    "We propose updating your current WordPress website while retaining its familiar content management system (CMS). By rebuilding from scratch, we ensure a fresh design and enhanced functionality tailored to your dental practice's needs. WordPress offers user-friendly management, extensive customization with themes and plugins, built-in SEO capabilities, and scalability."
+  );
+  const [updateCurrentText2, setUpdateCurrentText2] = useState(`Shopify Text`);
+  const [updateCurrentText3, setUpdateCurrentText3] = useState(`Drupal Text`);
+  const [updateCurrentText4, setUpdateCurrentText4] = useState(`Custom Test`);
 
   return (
     <>
@@ -207,13 +216,13 @@ const AboutYourProjects = ({ pageNumber }) => {
                   dangerouslySetInnerHTML={{ __html: contentWithImages }}
                 ></p> */}
                 <p class="pt-2 text-[12pt] text-justify">
-                  We propose updating your current WordPress website while
-                  retaining its familiar content management system (CMS). By
-                  rebuilding from scratch, we ensure a fresh design and enhanced
-                  functionality tailored to your dental practice's needs.
-                  WordPress offers user-friendly management, extensive
-                  customization with themes and plugins, built-in SEO
-                  capabilities, and scalability.
+                  {updateCurrent === "Custom"
+                    ? updateCurrentText4
+                    : updateCurrent === "Shopify"
+                    ? updateCurrentText2
+                    : updateCurrent === "Drupal"
+                    ? updateCurrentText3
+                    : updateCurrentText1}
                 </p>
               </div>
             </section>

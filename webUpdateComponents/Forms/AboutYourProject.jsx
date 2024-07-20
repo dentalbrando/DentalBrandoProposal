@@ -33,7 +33,7 @@ const AboutYourProject = () => {
   );
   const [updateCurrentName, setUpdateCurrentName] = useState(updateCurrent);
   const [updateCurrentText1, setUpdateCurrentText1] = useState(
-    "We propose updating your current WordPress website while retaining its familiar content management system (CMS). By rebuilding from scratch, we ensure a fresh design and enhanced functionality tailored to your dental practice's needs. WordPress offers user-friendly management, extensive customization with themes and plugins, built-in SEO capabilities, and scalability. Its responsive design ensures optimal performance across all devices. Updating to WordPress will elevate your online presence, providing a seamless and engaging experience for your patients. "
+    "We propose updating your current WordPress website while retaining its familiar content management system (CMS). By rebuilding from scratch, we ensure a fresh design and enhanced functionality tailored to your dental practice's needs. WordPress offers user-friendly management, extensive customization with themes and plugins, built-in SEO capabilities, and scalability."
   );
   const [updateCurrentText2, setUpdateCurrentText2] = useState(`Shopify Text`);
   const [updateCurrentText3, setUpdateCurrentText3] = useState(`Drupal Text`);
