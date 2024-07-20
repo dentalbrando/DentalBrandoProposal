@@ -5,7 +5,7 @@ const initialState = {
   overview: "",
   functionality: "",
   websiteCMS: "",
-  updateCurrent: "",
+  updateCurrent: "Wordpress",
 };
 
 const aboutYourProjectSlice = createSlice({

@@ -28,10 +28,16 @@ const AboutYourProject = () => {
   );
   const [functionality, setFunctionality] = useState(
     functionalities == ""
-    ? `Our website update services for dental practices tackle critical issues affecting your online presence and user engagement. We'll modernize your website's design to meet industry standards, ensuring it's visually appealing and professional. Clear calls-to-action (CTAs) enhance navigation and conversion rates. Speed optimization techniques improve loading times and reduce bounce rates. Optimizing meta tags, headers, and content boosts search engine visibility, attracting and retaining local patients. Prioritizing mobile responsiveness ensures a seamless, intuitive experience across all devices, enhancing accessibility and engagement.`
-    : functionalities
+      ? `Our website update services for dental practices tackle critical issues affecting your online presence and user engagement. We'll modernize your website's design to meet industry standards, ensuring it's visually appealing and professional. Clear calls-to-action (CTAs) enhance navigation and conversion rates. Speed optimization techniques improve loading times and reduce bounce rates. Optimizing meta tags, headers, and content boosts search engine visibility, attracting and retaining local patients. Prioritizing mobile responsiveness ensures a seamless, intuitive experience across all devices, enhancing accessibility and engagement.`
+      : functionalities
   );
-  const updateCurrentText = useState(updateCurrent);
+  const [updateCurrentName, setUpdateCurrentName] = useState(updateCurrent);
+  const [updateCurrentText1, setUpdateCurrentText1] = useState(
+    "We propose updating your current WordPress website while retaining its familiar content management system (CMS). By rebuilding from scratch, we ensure a fresh design and enhanced functionality tailored to your dental practice's needs. WordPress offers user-friendly management, extensive customization with themes and plugins, built-in SEO capabilities, and scalability. Its responsive design ensures optimal performance across all devices. Updating to WordPress will elevate your online presence, providing a seamless and engaging experience for your patients. "
+  );
+  const [updateCurrentText2, setUpdateCurrentText2] = useState(`Shopify Text`);
+  const [updateCurrentText3, setUpdateCurrentText3] = useState(`Drupal Text`);
+  const [updateCurrentText4, setUpdateCurrentText4] = useState(`Custom Test`);
   const [websiteCMS, setWebsiteCMS] = useState(
     websiteCMSs == ""
       ? `<b>Outdated Design:</b> Your website's design does not reflect current industry standards, potentially impacting user perception and engagement.
@@ -51,16 +57,18 @@ const AboutYourProject = () => {
     dispatch(
       setWebsiteCMSs(websiteCMS.replace(/\n/g, "<p class = 'py-1'></p>"))
     );
-    // dispatch(
-    //   setUpdateCurrent(updateCurrentText?.replace(/\n/g, "<p class = 'py-1'></p>"))
-    // );
+    dispatch(setUpdateCurrentR(updateCurrentName));
   };
   useEffect(() => {
     handleSaveAboutYourProject();
-  }, [overview, functionality, websiteCMS, updateCurrentText]);
+  }, [overview, functionality, websiteCMS, updateCurrentName]);
 
   const textareaRef = useRef();
-  console.log(updateCurrentText);
+  console.log(updateCurrentText1);
+  console.log(updateCurrentText2);
+  console.log(updateCurrentText3);
+  console.log(updateCurrentText4);
+  console.log(updateCurrentName);
 
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
@@ -126,39 +134,34 @@ const AboutYourProject = () => {
               Updating Your Current WordPress Website
             </label>
             <div className="flex items-center gap-3">
-              <select className="py-2 px- rounded-none text-white mx-1 bg-main-blue font-medium text-[12px] my-3">
-                <option value="" className="text-[12px]">
+              <select
+                className="py-2 px- rounded-none text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
+                onChange={(e) => setUpdateCurrentName(e.target.value)}
+              >
+                <option value="WordPress" className="text-[12px]">
                   WordPress
                 </option>
-                <option value="" className="text-[12px]">
+                <option value="Shopify" className="text-[12px]">
                   Shopify
                 </option>
-                <option value="" className="text-[12px]">
+                <option value="Drupal" className="text-[12px]">
                   Drupal
                 </option>
-                <option value="" className="text-[12px]">
+                <option value="Custom" className="text-[12px]">
                   Custom
                 </option>
               </select>
             </div>
           </div>
-          <textarea
-            // ref={textareaRef}
-            placeholder="Add (>)  to add tick sign before the line"
-            // onChange={(e) => setWebsiteCMS(e.target.value)}
-            rows="5"
-            className="text-gray-900 text-[16px] p-2 rounded-md font-normal outline-none resize-none border-2 border-color"
-          >
-            We propose updating your current WordPress website while retaining
-            its familiar content management system (CMS). By rebuilding from
-            scratch, we ensure a fresh design and enhanced functionality
-            tailored to your dental practice's needs. WordPress offers
-            user-friendly management, extensive customization with themes and
-            plugins, built-in SEO capabilities, and scalability. Its responsive
-            design ensures optimal performance across all devices. Updating to
-            WordPress will elevate your online presence, providing a seamless
-            and engaging experience for your patients.
-          </textarea>
+          <div className="text-gray-900 text-[16px] p-2 rounded-md font-normal outline-none resize-none border-2 border-color">
+            {updateCurrentName === "Custom"
+              ? updateCurrentText4
+              : updateCurrentName === "Shopify"
+              ? updateCurrentText2
+              : updateCurrentName === "Drupal"
+              ? updateCurrentText3
+              : updateCurrentText1}
+          </div>
         </div>
       </div>
     </div>
