@@ -193,7 +193,7 @@ const AboutUs = ({ pageNumber }) => {
                 </h6>
                 <p
                   className="text-[15px] leading-[20px] text-white font-[400]  w-[97%]  text-justify "
-                  style={{ wordSpacing: "3px" }}
+                  // style={{ wordSpacing: "3px" }}
                 >
                   Our targeted digital marketing strategies, including SEO,
                   social media marketing, and PPC advertising, boost your online
