@@ -105,7 +105,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-white font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[16px] ">
                   Expertise
                 </p>
               </div>
@@ -146,7 +146,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-white font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[16px] ">
                   {" "}
                   Quality
                 </p>
@@ -187,7 +187,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-white font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[16px] ps-2">
                   Customer Satisfaction
                 </p>
               </div>
@@ -227,7 +227,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-white font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[16px] ps-2">
                   {" "}
                   Competitive Pricing
                 </p>
@@ -269,7 +269,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-white font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[16px] ps-2">
                   Timely Delivery
                 </p>
               </div>
@@ -309,7 +309,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-white font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[16px] ">
                   Ongoing Support
                 </p>
               </div>
