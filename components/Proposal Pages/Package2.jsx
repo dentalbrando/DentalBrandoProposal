@@ -115,24 +115,35 @@ const Package2 = ({ pageNumber }) => {
             </div>
             <section>
               <div className="leading-[22px]">
-                <p className="pt-14 text-[12pt] text-justify">
-                  Pay only one-time
+                <p className="pt-8 text-[12pt] text-justify">
+                  Pay only a one-time fee of
                   <span className="text-main-blue font-[700] text-[28px]">
                     {" "}
-                    $249
-                  </span>{" "}
-                  and get the whole website for a lifetime.
+                    $349
+                  </span>
+                  <span className="text-main-blue font-[700] ">.99 </span> and
+                  get a professional, high-quality website with up to 15 pages
+                  for your dental practice that lasts a lifetime.
                 </p>
+                <br />
                 <p className="pt- text-[12pt] text-justify">
-                  If you can't pay at once, don't worry. We have made it super
-                  easy for you to pay in chunks
+                  Can't pay all at once? No problem! Take advantage of our
+                  flexible payment plan and spread the cost over three easy
+                  installments of{" "}
                   <span className="text-main-blue font-[700] text-[28px]">
                     {" "}
-                    $100
-                  </span>{" "}
-                  per month for three months. Get your free quote and see the
-                  difference from our competitors. We provide you with real
-                  value.
+                    $130
+                  </span>
+                    <span className="text-main-blue font-[700] ">.99 </span>{" "}
+                  per month. It’s never been easier to get the website you need
+                  without breaking the bank.{" "}
+                </p>
+                <br />
+
+                <p className="pt- text-[12pt] text-justify font-[700] text-main-blu italic">
+                  Need a custom website with more than 15 pages? Let's create a
+                  unique solution just for you. Contact us for a personalized
+                  quote today and bring your vision to life!
                 </p>
               </div>
             </section>
