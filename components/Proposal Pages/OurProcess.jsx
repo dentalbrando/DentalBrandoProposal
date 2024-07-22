@@ -270,15 +270,21 @@ const OurProcess = ({ pageNumber }) => {
                       </div>
                       <div
                         className=" mx-3 pb-4 font-[400] text-[10pt] text-justify pt-1"
-                        style={{ wordSpacing: "0.2px" }}
+                        style={{ wordSpacing: "0px" }}
                       >
                         <p>
-                          After the website is deployed, we continue to monitor
+                          {/* After the website is deployed, we continue to monitor
                           it for issues and make any necessary updates or fixes.
                           We also provide ongoing support and maintenance to
                           ensure that the website remains up-to-date and secure
-                          as per client demand on a monthly/quarterly/annual
-                          maintenance plan.
+                          as per client demand on a Monthly/Quarterly/Annual
+                          maintenance plan. */}
+                          After the website is deployed, we continue to monitor
+                          it for issues and make any necessary updates or fixes.
+                          We also provide ongoing support and maintenance to
+                          ensure that the website remains up-to-date and secure,
+                          as per client demand, on a Monthly, Quarterly, or
+                          Annual maintenance plan.
                         </p>
                       </div>
                     </div>
