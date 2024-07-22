@@ -9,8 +9,8 @@ const Nav = (props) => {
     
       <>
         <div className="flex justify-start items-center w-full h-[12vh] border-b-2 border-color custom-b relative bg-red-60">
-          <div  className="w-[21vw] flex justify-end items-center z-[10] bg-green-40">
-          <Link href={"/"} className="w-[220px] flex justify-end items-center z-[10] bg-blue-60">
+          <div  className="w-[20vw] flex justify-end items-center z-[10] bg-green-40">
+          <Link href={"/"} className="w-[85%] flex justify-end items-center z-[10] bg-blue-60 pe-3">
             <img src={logo.src} alt="" className="w-full" />
           </Link>
           </div>
