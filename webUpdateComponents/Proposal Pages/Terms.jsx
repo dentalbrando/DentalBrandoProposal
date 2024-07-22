@@ -372,9 +372,9 @@ const Terms = ({ pageNumber }) => {
                         </li>
                       </ol> */}
                       <p>
-                        We hold ownership of website until you pay in full. Late
-                        monthly payments (over 3 business days) may suspend your
-                        website. Once you pay, you own the website.{" "}
+                        We hold ownership of the website until you pay in full.
+                        Late monthly payments (over 3 business days) may suspend
+                        your website. Once you pay, you own the website.{" "}
                       </p>
                     </div>
                   </div>
