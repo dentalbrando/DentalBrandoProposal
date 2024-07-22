@@ -255,19 +255,19 @@ const Budget = ({ pageNumber }) => {
         <div className="w-full h-[86.7%] bg-yellow-30 relative ">
           <div className="w-full h-[50%] pt- bg-green-60 z-0">
             <div className="w-[90%] h-[100px] mx-aut  bg-red-40 text-[33px] text-main-blue font-[700] ms-[5%] text-start leading-[36px] uppercase">
-              Get Set, Grow: Time to Attract New <br/>Patients with Our Stunning
-              Website Designed
+              Get Set, Grow: Time to Attract New <br />
+              Patients with Our Stunning Website Designed
               <div className="bline w-[90px] h-2 bg-[#03A0D7]"></div>
             </div>
           </div>
 
           <div className="w-full  h-[62%] absolute top-[16%] z-10 flex justify-center gap-[6%] items-center">
-            <div className="w-[42%] h-[100%]  rounded-3xl overflow-hidden">
+            <div className="w-[42%] h-[100%]  rounded-3xl overflow-hidden leading-[22px]">
               <div className="flex flex-col justify-center items-center w-[100%] h-[20%] bg-[#03A0D7] text-white gap-1">
                 <h1 className="font-[700] text-[28px] leading-none">Basic</h1>
                 <h2 className="text-[18px] leading-none">Monthly Plan</h2>
               </div>
-              <div className="w-[100%] h-[62%] bg-white flex flex-col justify-start items-start pt-6 px-2 gap-y-[10px]">
+              <div className="w-[100%] h-[62%] bg-white flex flex-col justify-start items-start pt-6 px-2 gap-y-[15px]">
                 <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">
                     <FaCheckCircle />
@@ -329,12 +329,12 @@ const Budget = ({ pageNumber }) => {
                 </h1>
               </div>
             </div>
-            <div className="w-[42%] h-[100%] bg-green-800  rounded-3xl overflow-hidden">
+            <div className="w-[42%] h-[100%] bg-green-800  rounded-3xl overflow-hidden leading-[22px]">
               <div className="flex flex-col justify-center items-center w-[100%] h-[20%] bg-[#03A0D7] text-white gap-1">
                 <h1 className="font-[700] text-[28px] leading-none">Growth</h1>
                 <h2 className="text-[18px] leading-none">Monthly Plan</h2>
               </div>
-              <div className="w-[100%] h-[62%] bg-white flex flex-col justify-start items-start pt-6 px-2 gap-y-[10px]">
+              <div className="w-[100%] h-[62%] bg-white flex flex-col justify-start items-start pt-6 px-2 gap-y-[15px]">
                 <div className="w-[100%] h-fit bg-yellow-80 flex justify-start items-center gap-0">
                   <span className="w-[15%] h-[100%] flex justify-center items-center text-center text-green-400">
                     <FaCheckCircle />
