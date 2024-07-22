@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 const CoverLetter = ({ pageNumber }) => {
   const cover_letter = useSelector((state) => state.cover_letter);
   if (cover_letter.letterType === "web_dev" && cover_letter.letterText === "") {
-    var tempLetterText = `Welcome to Dental Brando, a leading IT company specializing in website development for dental practices. Our goal is to enhance your practice's professionalism with a comprehensive website development proposal. We offer innovative web solutions to elevate your online presence, ensuring it aligns with your brand values. Our expertise will help you create a professional and engaging online presence that resonates with your clients and sets you apart in the dental industry.
+    var tempLetterText = `Welcome to Dental Brando, a leading IT company specializing in Website Development for dental practices. Our goal is to enhance your practice's professionalism with a comprehensive website development proposal. We offer innovative web solutions to elevate your online presence, ensuring it aligns with your brand values. Our expertise will help you create a professional and engaging online presence that resonates with your clients and sets you apart in the dental industry.
 <p class = 'py-1'></p>
 At Dental Brando, our commitment lies in crafting bespoke designs that authentically mirror your distinctive brand identity. We recognize the paramount significance of a website that not only exudes visual excellence but also operates with flawless efficiency. Collaborating closely with you, our team of seasoned professionals ensures the development of a website that faithfully embodies your practice's ethos while adeptly fulfilling your unique requirements.
 <p class = 'py-1'></p>
