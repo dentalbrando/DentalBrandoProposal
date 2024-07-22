@@ -73,7 +73,7 @@ const Home = () => {
                       </div>
                       <div className="w-[100%] h-[40%] bg-red-40 flex items-end justify-center">
                         <h1 className="w-[70%] h-full bg-yellow-5 text-[28px] leading-7 font-[600] text-main-blue text-center z-[10]">
-                          Proposal For Development (Scratch)
+                          Web Development (No Website)
                         </h1>
                         <div className="h-fit w-[40%] absolute bottom-0 right-0 z-[0]">
                           <img src={layer1.src} />
@@ -95,7 +95,7 @@ const Home = () => {
                       </div>
                       <div className="w-[100%] h-[40%] bg-red-40 flex items-end justify-center">
                         <h1 className="w-[70%] h-full bg-yellow-5 text-[28px] leading-7 font-[600] text-main-blue text-center z-[10]">
-                          Proposal For Development (Upgrading)
+                          Web Development (Upgrading)
                         </h1>
                         <div className="h-fit w-[40%] absolute bottom-0 right-0 z-[0]">
                           <img src={layer1.src} />
