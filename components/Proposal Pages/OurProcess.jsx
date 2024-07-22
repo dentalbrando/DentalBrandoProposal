@@ -88,7 +88,7 @@ const OurProcess = ({ pageNumber }) => {
                             className="h-full"
                           />
                         </div>
-                        <div className="text-[18pt] font-[600] px-5 pt-4">
+                        <div className="text-[21px] leading-[32px] font-[600] px-5 pt-4">
                           <p>Planning</p>
                         </div>
                       </div>
@@ -120,7 +120,7 @@ const OurProcess = ({ pageNumber }) => {
                         <div className="ml-7">
                           <img src={svg2.src} alt="" width="70px" />
                         </div>
-                        <div className="text-[18pt] font-[600] px-5 pt-4">
+                        <div className="text-[21px] leading-[32px] font-[600] px-5 pt-4">
                           <p>Design</p>
                         </div>
                       </div>
@@ -161,7 +161,7 @@ const OurProcess = ({ pageNumber }) => {
                             className="h-full"
                           />
                         </div>
-                        <div className="text-[18pt] font-[600] px-5 pt-4">
+                        <div className="text-[21px] leading-[32px] font-[600] px-5 pt-4">
                           <p>Implementation</p>
                         </div>
                       </div>
@@ -196,7 +196,7 @@ const OurProcess = ({ pageNumber }) => {
                         <div className="ml-7">
                           <img src={svg4.src} alt="" width="70px" />
                         </div>
-                        <div className="text-[18pt] font-[600] px-5 pt-4">
+                        <div className="text-[21px] leading-[32px] font-[600] px-5 pt-4">
                           <p>Testing</p>
                         </div>
                       </div>
@@ -232,7 +232,7 @@ const OurProcess = ({ pageNumber }) => {
                         <div className="ml-7">
                           <img src={svg5.src} alt="" width="70px" />
                         </div>
-                        <div className="text-[18pt] font-[600] px-5 pt-4">
+                        <div className="text-[21px] leading-[32px] font-[600] px-5 pt-4">
                           <p>Deployment</p>
                         </div>
                       </div>
@@ -264,7 +264,7 @@ const OurProcess = ({ pageNumber }) => {
                         <div className="ml-7">
                           <img src={svg6.src} alt="" width="70px" />
                         </div>
-                        <div className="text-[18pt] font-[600] px-5 pt-4">
+                        <div className="text-[21px] leading-[32px] font-[600] px-5 pt-4">
                           <p>Maintenance</p>
                         </div>
                       </div>
