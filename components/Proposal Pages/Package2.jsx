@@ -52,7 +52,7 @@ const Package2 = ({ pageNumber }) => {
             </div>
             <section className="pt-2">
               <div>
-                <p className="pt-6 text-[12pt] text-justify">
+                <p className="pt-6 text-[12pt] text-justify leading-[22px]">
                   Unlock the Hidden Potential of Your Dental Brand? Bring in
                   more Patients to your Dental Clinic with our Website Packages.
                   We have the perfect packages for Individual Dental
@@ -66,7 +66,7 @@ const Package2 = ({ pageNumber }) => {
                 </p>
               </div>
             </section>
-            <div className="w-full h-[370px] bg-main-blue text-white mt-8 pt-4 px-5">
+            <div className="w-full h-[370px] bg-main-blue text-white mt-8 pt-4 px-5 leading-[22px]">
               <h2 className="w-fit h-fit bg-red-40 font-[700] text-[22px] mx-auto py-7">
                 Supercharge Your Dental Clinic's Online Presence
               </h2>
@@ -114,7 +114,7 @@ const Package2 = ({ pageNumber }) => {
               </div>
             </div>
             <section>
-              <div>
+              <div className="leading-[22px]">
                 <p className="pt-14 text-[12pt] text-justify">
                   Pay only one-time
                   <span className="text-main-blue font-[700] text-[28px]">
