@@ -1,8 +1,7 @@
 import Login from "@components/Registration/Login";
-import loginImage from "@public/assets/loginImage2.svg";
+import loginImage from "@public/assets/loginImage3.svg";
 import ChangePassword from "./ChangePassword";
 import { useState } from "react";
-import logo from "@public/assets/DB Logo-15 copy.png";
 import { useDispatch } from "react-redux";
 
 function Registration(prop) {
