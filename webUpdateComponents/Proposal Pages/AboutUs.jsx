@@ -104,7 +104,7 @@ const AboutUs = ({ pageNumber }) => {
 
         <div className="bg-[#093A5B] h-full flex justify-center items-center px-[30px] w-[52%] ">
           <div className="w-[100%]">
-            <div className="flex mt-[30px] ">
+            <div className="flex mt-[40px] ">
               <div className=" ">
                 <img
                   style={{ height: "157px", width: "230px" }}
@@ -112,13 +112,13 @@ const AboutUs = ({ pageNumber }) => {
                   alt=""
                 />
               </div>
-              <div className="mt-[45px] ml-3">
+              <div className="mt-[50px] ml-3">
                 <h6 className="text-[18.43pt] text-white font-[400] ">
                   Web Development{" "}
                 </h6>
                 <p
-                  className="text-[10pt] text-white w-[97%] font-[400] text-justify leading-6"
-                  style={{ wordSpacing: "9px" }}
+                  className="text-[15px] text-white w-[97%] font-[400] text-justify leading-6"
+                  style={{ wordSpacing: "0px" }}
                 >
                   We create custom-designed, SEO-optimized, and mobile-friendly
                   websites that reflect the unique identity of your dental
@@ -140,8 +140,8 @@ const AboutUs = ({ pageNumber }) => {
                   Mobile App Development{" "}
                 </h6>
                 <p
-                  className="text-[10pt] text-white font-[400] w-[97%] text-justify leading-6"
-                  style={{ wordSpacing: "6px" }}
+                  className="text-[15px] text-white font-[400] w-[97%] text-justify leading-6"
+                  style={{ wordSpacing: "0px" }}
                 >
                   Our custom mobile apps improve patient interaction and
                   convenience, offering features like appointment booking,
@@ -163,7 +163,7 @@ const AboutUs = ({ pageNumber }) => {
                   Custom Dental Software{" "}
                 </h6>
                 <p
-                  className="text-[10pt] text-white font-[400]  w-[97%]  text-justify leading-6 "
+                  className="text-[15px] text-white font-[400]  w-[97%]  text-justify leading-6 "
                   style={{ wordSpacing: "5px" }}
                 >
                   {" "}
@@ -186,7 +186,7 @@ const AboutUs = ({ pageNumber }) => {
                   Digital Marketing
                 </h6>
                 <p
-                  className="text-[10pt] text-white font-[400]  w-[97%]  text-justify leading-6 "
+                  className="text-[15px] text-white font-[400]  w-[97%]  text-justify leading-6 "
                   style={{ wordSpacing: "3px" }}
                 >
                   Our targeted digital marketing strategies, including SEO,
@@ -209,8 +209,8 @@ const AboutUs = ({ pageNumber }) => {
                   Graphic Designing
                 </h6>
                 <p
-                  className="text-[10pt] text-white font-[400]  w-[97%]  text-justify leading-6 "
-                  style={{ wordSpacing: "14px" }}
+                  className="text-[15px] text-white font-[400]  w-[97%]  text-justify leading-6 "
+                  style={{ wordSpacing: "5px" }}
                 >
                   We create professional, visually appealing graphics, including
                   custom logos and promotional materials, to build a cohesive
