@@ -4,11 +4,11 @@ import Form from "@webUpdateComponents/Form";
 import LivePreview from "@webUpdateComponents/LivePreview";
 import { useSelector } from "react-redux";
 import FullProposal from "@webUpdateComponents/FullProposal";
-import Nav from "@webUpdateComponents/Nav";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import Loader from "@webUpdateComponents/Loader";
+import Nav from "@components/Nav";
 
 function Development() {
   let router = useRouter();
