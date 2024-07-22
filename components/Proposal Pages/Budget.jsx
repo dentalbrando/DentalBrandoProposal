@@ -398,7 +398,7 @@ const Budget = ({ pageNumber }) => {
             </div>
           </div>
           <div className="w-[100%] h-[50%] bg-main-blue relative z-0">
-            <div className="px-[5%] w-[100%] h-fit text-[12px] text-white  text-justify  absolute  bottom-[32%] mx-auto">
+            <div className="px-[5%] w-[100%] h-fit text-[13px] leading-[20px] text-white  text-justify  absolute  bottom-[32%] mx-auto">
               *Updation of Themes/Plugins, Regular Content Updations, Fixing
               Broken Links, Speed Optimization Security Updates, Backups, User
               Management, Uptime Monitoring.
