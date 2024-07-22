@@ -124,7 +124,7 @@ const AboutUs = ({ pageNumber }) => {
                 </h6>
                 <p
                   className="text-[15px] leading-[20px] text-white w-[97%] font-[400] text-justify"
-                  style={{ wordSpacing: "9px" }}
+                  // style={{ wordSpacing: "9px" }}
                 >
                   We create custom-designed, SEO-optimized, and mobile-friendly
                   websites that reflect the unique identity of your dental
@@ -147,7 +147,7 @@ const AboutUs = ({ pageNumber }) => {
                 </h6>
                 <p
                   className="text-[15px] leading-[20px] text-white font-[400] w-[97%] text-justify"
-                  style={{ wordSpacing: "6px" }}
+                  // style={{ wordSpacing: "6px" }}
                 >
                   Our custom mobile apps improve patient interaction and
                   convenience, offering features like appointment booking,
@@ -170,7 +170,7 @@ const AboutUs = ({ pageNumber }) => {
                 </h6>
                 <p
                   className="text-[15px] leading-[20px] text-white font-[400]  w-[97%]  text-justify "
-                  style={{ wordSpacing: "5px" }}
+                  // style={{ wordSpacing: "5px" }}
                 >
                   {" "}
                   We develop tailored software solutions that integrate
@@ -199,13 +199,17 @@ const AboutUs = ({ pageNumber }) => {
                   social media marketing, and PPC advertising, boost your online
                   visibility, attract new patients, and build long-term
                   relationships.
+                  {/* Our targeted digital marketing strategies, including SEO,
+                  social media marketing, and PPC advertising, boost your online
+                  visibility, attract new patients, and build long-term
+                  relationships. */}
                 </p>
               </div>
             </div>
             <div className="flex ">
               <div className="">
                 <img
-                  style={{ height: "150px", width: "255px" }}
+                  style={{ height: "150px", width: "200px" }}
                   src={svg5.src}
                   alt=""
                 />
@@ -216,11 +220,14 @@ const AboutUs = ({ pageNumber }) => {
                 </h6>
                 <p
                   className="text-[15px] leading-[20px] text-white font-[400]  w-[97%]  text-justify "
-                  style={{ wordSpacing: "16px" }}
+                  style={{ wordSpacing: "5px" }}
                 >
-                  We create professional, visually appealing graphics, including
-                  custom logos and promotional materials, to build a cohesive
-                  and trustworthy brand identity for your practice.{" "}
+                  We create professional graphics, including custom logos,
+                  promotional materials, and website designs, to build a
+                  cohesive and trustworthy brand identity for your practice.
+                  {/* We create professional graphics, including custom logos,
+                  promotional materials, and website designs, to build a
+                  cohesive and trustworthy brand identity for your practice.{" "} */}
                 </p>
               </div>
             </div>
