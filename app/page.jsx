@@ -67,7 +67,7 @@ const Home = () => {
                   <div className="w-[100%] h-[100%] relative bg-yellow-00">
                     <div className="w-full h-full flex flex-col justify-between">
                       <div className="w-[100%] h-[50%] bg-green-40 flex items-end justify-center">
-                        <div className="w-[140px] h-[130px] bg-blue-40">
+                        <div className="w-[140px] h-[130px] bg-blue-40 z-[10]">
                           <img src={frame3.src} className="w-[100%] h-[100%]" />
                         </div>
                       </div>
@@ -75,7 +75,7 @@ const Home = () => {
                         <h1 className="w-[70%] h-full bg-yellow-5 text-[28px] leading-7 font-[600] text-main-blue text-center z-[10]">
                           Proposal For Development (Scratch)
                         </h1>
-                        <div className="h-fit w-[50%] absolute bottom-0 right-0 z-[0]">
+                        <div className="h-fit w-[40%] absolute bottom-0 right-0 z-[0]">
                           <img src={layer1.src} />
                         </div>
                       </div>
@@ -89,7 +89,7 @@ const Home = () => {
                   <div className="w-[100%] h-[100%] relative bg-yellow-00">
                     <div className="w-full h-full flex flex-col justify-between">
                       <div className="w-[100%] h-[50%] bg-green-40 flex items-end justify-center">
-                        <div className="w-[140px] h-[130px] bg-blue-40">
+                        <div className="w-[140px] h-[130px] bg-blue-40 z-[10]">
                           <img src={frame3.src} className="w-[100%] h-[100%]" />
                         </div>
                       </div>
@@ -97,7 +97,7 @@ const Home = () => {
                         <h1 className="w-[70%] h-full bg-yellow-5 text-[28px] leading-7 font-[600] text-main-blue text-center z-[10]">
                           Proposal For Development (Upgrading)
                         </h1>
-                        <div className="h-fit w-[50%] absolute bottom-0 right-0 z-[0]">
+                        <div className="h-fit w-[40%] absolute bottom-0 right-0 z-[0]">
                           <img src={layer1.src} />
                         </div>
                       </div>
@@ -111,7 +111,7 @@ const Home = () => {
                   <div className="w-[100%] h-[100%] relative bg-yellow-00">
                     <div className="w-full h-full flex flex-col justify-between">
                       <div className="w-[100%] h-[50%] bg-green-40 flex items-end justify-center">
-                        <div className="w-[140px] h-[130px] bg-blue-40">
+                        <div className="w-[140px] h-[130px] bg-blue-40 z-[10]">
                           <img src={frame1.src} className="w-[100%] h-[100%]" />
                         </div>
                       </div>
@@ -119,7 +119,7 @@ const Home = () => {
                         <h1 className="w-[70%] h-full bg-yellow-5 text-[28px] leading-7 font-[600] text-main-blue text-center z-[10]">
                           Proposal For SEO
                         </h1>
-                        <div className="h-fit w-[50%] absolute bottom-0 right-0 z-[0]">
+                        <div className="h-fit w-[40%] absolute bottom-0 right-0 z-[0]">
                           <img src={layer3.src} />
                         </div>
                       </div>
@@ -133,7 +133,7 @@ const Home = () => {
                   <div className="w-[100%] h-[100%] relative bg-yellow-00">
                     <div className="w-full h-full flex flex-col justify-between">
                       <div className="w-[100%] h-[50%] bg-green-40 flex items-end justify-center">
-                        <div className="w-[140px] h-[130px] bg-blue-40">
+                        <div className="w-[140px] h-[130px] bg-blue-40 z-[10]">
                           <img src={frame2.src} className="w-[100%] h-[100%]" />
                         </div>
                       </div>
@@ -141,7 +141,7 @@ const Home = () => {
                         <h1 className="w-[70%] h-full bg-yellow-5 text-[28px] leading-7 font-[600] text-main-blue text-center z-[10]">
                           Proposal For Social Media
                         </h1>
-                        <div className="h-fit w-[50%] absolute bottom-0 right-0 z-[0]">
+                        <div className="h-fit w-[40%] absolute bottom-0 right-0 z-[0]">
                           <img src={layer2.src} />
                         </div>
                       </div>
