@@ -310,7 +310,8 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto font-[400] text-[13px] text-justify pt-1 ">
+                  <div className=" w-full mx-auto font-[400] text-[13px] text-justify pt-1 "
+                  style={{wordSpacing:"3px"}}>
                     <p>
                       The service period begins on the contract date. For
                       example, if your plan starts on July 24th, the month will
