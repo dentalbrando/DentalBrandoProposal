@@ -102,8 +102,9 @@ Sincerely,`;
 
           <div className=" font-[400] text-[12pt] leading-5">
             <div
-              className="Part-one font-[400] text-[12pt] leading-6 text-justify w-[100%] pt-2 bg-yellow-00"
+              className="Part-one font-[400] text-[12pt] leading-[22px] text-justify w-[100%] pt-2 bg-yellow-00"
               dangerouslySetInnerHTML={{ __html: content }}
+              style={{wordSpacing:"5px"}}
             ></div>
             <div>
               <img
