@@ -127,8 +127,9 @@ const AboutYourProjects = ({ pageNumber }) => {
                 class="font-[700] text-[25pt] text-[#093A5B] leading-9 uppercase"
                 // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                scope of 
-                <br />the PROJECT
+                scope of
+                <br />
+                the PROJECT
               </h1>
               <div class="bline w-[90px] h-2 bg-[#03A0D7]"></div>
             </div>
@@ -143,7 +144,7 @@ const AboutYourProjects = ({ pageNumber }) => {
               </div>
               <div>
                 <p
-                  class="pt-2 text-[12pt] text-justify"
+                  class="pt-2 text-[12pt] text-justify leading-[22px]"
                   dangerouslySetInnerHTML={{
                     __html: tempOverviews.replace(
                       /\n/g,
@@ -164,7 +165,7 @@ const AboutYourProjects = ({ pageNumber }) => {
               </div>
               <div>
                 <p
-                  class="pt-2 text-[12pt] text-justify"
+                  class="pt-2 text-[12pt] text-justify leading-[22px]"
                   dangerouslySetInnerHTML={{ __html: contentWithImages }}
                 ></p>
               </div>
@@ -181,7 +182,7 @@ const AboutYourProjects = ({ pageNumber }) => {
                 </div>
                 <div>
                   <p
-                    class="pt-2 text-[12pt] text-justify"
+                    class="pt-2 text-[12pt] text-justify leading-[22px]"
                     dangerouslySetInnerHTML={{
                       __html: tempWebsiteCMS.replace(
                         /\n/g,
