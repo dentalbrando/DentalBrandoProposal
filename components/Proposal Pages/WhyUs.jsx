@@ -58,7 +58,9 @@ const WhyUs = ({ pageNumber }) => {
             </div>
 
             <div class="   mt-2 font-[400] text-[10pt] tracking-[-0.50pt]">
-              <div class="Part-one mr-4    ">
+              <div
+                class="Part-one mr-4  text-[15px] leading-[22px]"
+              >
                 <p>
                   At Dental Brando, we are committed to delivering exceptional
                   IT services specifically tailored for dental practices. Our
