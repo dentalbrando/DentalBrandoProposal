@@ -47,8 +47,8 @@ Sincerely,`;
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
       <div className="">
-        <div className="flex justify-center items-start h-fit my-5">
-          <div className="flex items-center w-[50%]">
+        <div className="flex justify-start items-start h-fit my-5">
+          {/* <div className="flex items-center w-[50%]">
             <label className="text-gray-900 text-[16px] font-medium my-2 w-[40%]">
               Letter Type
             </label>
@@ -98,22 +98,23 @@ Sincerely,`;
                 }),
               }}
             />
-          </div>
+          </div> */}
 
           <div className="w-[50%]">
             <div className={`flex justify-between items-center w-[100%]`}>
               <label
-                className={`text-gray-900 text-[16px] font-medium flex-end pe-10 w-[40%]`}
+                className={`text-gray-900 text-[16px] font-medium w-[40%] flex justify-start`}
               >
                 Client Name
               </label>
               <input
                 autoFocus
-                className={`text-gray-900  text-[14px] font-normal p-2 rounded-md border-2 border-color border-color outline-none w-[60%]`}
+                className={`text-gray-900 text-[14px] font-normal p-2 rounded-md border-2 border-color border-color outline-none w-[60%]`}
                 onChange={(event) => {
                   setclientName(event.target.value);
                 }}
                 value={clientName}
+                placeholder="Enter Client Name"
               />
               <p className="text-red-500 text-sm">{}</p>
             </div>
