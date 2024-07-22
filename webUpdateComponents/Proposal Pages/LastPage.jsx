@@ -71,7 +71,7 @@ const LastPage = () => {
 
             <div className="absolute w-full h-[300px] top-[43%] p ps-10">
               <h1
-                className="font-[700]  text-[25pt] text-[#093A5B]"
+                className="font-[700]  text-[25pt] leading-[36px] text-[#093A5B]"
                 // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 Thank You
@@ -80,11 +80,11 @@ const LastPage = () => {
                 className="font-[400] w-[47%] text-[16px] pt-3"
                 // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                We appreciate you taking the time to review our website
-                updating proposal. Please contact us if you have any
-                questions or require further clarification on specific aspects
-                of our proposal. We believe our partnership can elevate your
-                practice. Contact us to explore how we can work together.{" "}
+                We appreciate you taking the time to review our website updating
+                proposal. Please contact us if you have any questions or require
+                further clarification on specific aspects of our proposal. We
+                believe our partnership can elevate your practice. Contact us to
+                explore how we can work together.{" "}
               </p>
             </div>
 

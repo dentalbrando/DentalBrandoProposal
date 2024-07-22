@@ -71,7 +71,7 @@ const LastPage = () => {
 
             <div className="absolute w-full h-[300px] top-[43%] p ps-10">
               <h1
-                className="font-[700]  text-[25pt] text-[#093A5B]"
+                className="font-[700]  text-[25pt] leading-[36px] text-[#093A5B]"
                 // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 Thank You
