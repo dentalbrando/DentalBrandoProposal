@@ -157,7 +157,10 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb- font-[400] text-[10pt] text-justify pt-1 ">
+                  <div
+                    className=" w-full mx-auto pb- font-[400] text-[10pt] text-justify pt-1 "
+                    style={{ wordSpacing: "7px" }}
+                  >
                     <p>
                       Our dedicated 24/7 customer support team is always
                       available and ready to assist you with any questions,
@@ -215,7 +218,10 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1">
+                  <div
+                    className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1"
+                    style={{ wordSpacing: "2px" }}
+                  >
                     {/* <ol className="list-disc">
                       <li> */}
                     <p>
@@ -241,7 +247,10 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto  font-[400] text-[10pt] text-justify pt-1 ">
+                  <div
+                    className=" w-full mx-auto  font-[400] text-[10pt] text-justify pt-1 "
+                    style={{ wordSpacing: "4px" }}
+                  >
                     <p>
                       If we fail to deliver the quality work as per our
                       commitments, a full refund will be issued. We ensure your
@@ -372,9 +381,9 @@ const Terms = ({ pageNumber }) => {
                         </li>
                       </ol> */}
                       <p>
-                        We hold ownership of the website until you pay in full. Late
-                        monthly payments (over 3 business days) may suspend your
-                        website. Once you pay, you own the website.{" "}
+                        We hold ownership of the website until you pay in full.
+                        Late monthly payments (over 3 business days) may suspend
+                        your website. Once you pay, you own the website.{" "}
                       </p>
                     </div>
                   </div>
