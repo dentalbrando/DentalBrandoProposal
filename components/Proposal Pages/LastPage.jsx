@@ -34,7 +34,7 @@ const LastPage = () => {
 
             <div className=" mx-10  absolute bottom-[230px]">
               <h1
-                className="font-[700]  text-[25pt] text-[#093A5B] leading-10"
+                className="font-[700]  text-[25pt] text-[#093A5B] leading-[36px]"
                 // style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 CONTACT US{" "}
