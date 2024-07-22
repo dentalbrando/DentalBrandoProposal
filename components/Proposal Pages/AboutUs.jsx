@@ -119,7 +119,7 @@ const AboutUs = ({ pageNumber }) => {
                 />
               </div>
               <div className="ml-3 mt-[55px]">
-                <h6 className="text-[18.43pt] pb-1 text-white font-[400] ">
+                <h6 className="text-[21px] font-[700] pb-1 text-white  ">
                   Web Development{" "}
                 </h6>
                 <p
@@ -142,7 +142,7 @@ const AboutUs = ({ pageNumber }) => {
                 />
               </div>
               <div className=" mt-[30px] ml-3  ">
-                <h6 className="text-[18.43pt] pb-1 text-white font-[400] whitespace-nowrap ">
+                <h6 className="text-[21px] font-[700] pb-1 text-white  whitespace-nowrap ">
                   Mobile App Development{" "}
                 </h6>
                 <p
@@ -165,7 +165,7 @@ const AboutUs = ({ pageNumber }) => {
                 />
               </div>
               <div className="mt-[30px] ml-3 ">
-                <h6 className="text-[18.43pt] pb-1 text-white font-[400] ">
+                <h6 className="text-[21px] font-[700] pb-1 text-white  ">
                   Custom Dental Software{" "}
                 </h6>
                 <p
@@ -188,7 +188,7 @@ const AboutUs = ({ pageNumber }) => {
                 />
               </div>
               <div className="mt-[30px] ml-3 ">
-                <h6 className="text-[18.43pt] pb-1 text-white font-[400] ">
+                <h6 className="text-[21px] font-[700] pb-1 text-white  ">
                   Digital Marketing
                 </h6>
                 <p
@@ -211,7 +211,7 @@ const AboutUs = ({ pageNumber }) => {
                 />
               </div>
               <div className="mt-[30px] ml-3">
-                <h6 className="text-[18.43pt] pb-1 text-white font-[400] ">
+                <h6 className="text-[21px] font-[700] pb-1 text-white  ">
                   Graphic Designing
                 </h6>
                 <p
