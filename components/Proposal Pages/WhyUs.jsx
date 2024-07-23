@@ -58,10 +58,8 @@ const WhyUs = ({ pageNumber }) => {
             </div>
 
             <div class="   mt-2 font-[400] text-[10pt] tracking-[-0.50pt">
-              <div
-                class="Part-one mr-4  text-[16px] leading-[22px]"
-              >
-                <p style={{wordSpacing:"5px"}}>
+              <div class="Part-one mr-4  text-[16px] leading-[22px]">
+                <p style={{ wordSpacing: "5px" }} className=" text-justify">
                   At Dental Brando, we are committed to delivering exceptional
                   IT services specifically tailored for dental practices. Our
                   comprehensive approach ensures that we meet all your digital

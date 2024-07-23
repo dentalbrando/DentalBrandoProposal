@@ -52,7 +52,7 @@ const Package2 = ({ pageNumber }) => {
             </div>
             <section className="pt-2">
               <div>
-                <p className="pt-6 text-[12pt] text-justify leading-[22px]">
+                <p className="pt-6 text-[12pt] text-justify leading-[24px]">
                   Unlock the Hidden Potential of Your Dental Brand? Bring in
                   more Patients to your Dental Clinic with our Website Packages.
                   We have the perfect packages for Individual Dental

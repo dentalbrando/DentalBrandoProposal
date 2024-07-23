@@ -77,14 +77,15 @@ const LastPage = () => {
                 Thank You
               </h1>
               <p
-                className="font-[400] w-[47%] text-[16px] pt-3"
+                className="font-[400] w-[47%] text-[16px] pt-3 leading-[22px] text-justify"
                 // style={{ fontFamily: "'Montserrat', sans-serif" }}
+                style={{ wordSpacing: "3px" }}
               >
-                We appreciate you taking the time to review our website updating
-                proposal. Please contact us if you have any questions or require
-                further clarification on specific aspects of our proposal. We
-                believe our partnership can elevate your practice. Contact us to
-                explore how we can work together.{" "}
+                We appreciate you taking the time to review our website
+                development proposal. Please contact us if you have any
+                questions or require further clarification on specific aspects
+                of our proposal. We believe our partnership can elevate your
+                practice. Contact us to explore how we can work together.{" "}
               </p>
             </div>
 

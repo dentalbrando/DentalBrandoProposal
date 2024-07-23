@@ -50,7 +50,7 @@ const OurProcess = ({ pageNumber }) => {
               </h1>
               <div className="w-[90px] h-2 mb-3 bg-[#03A0D7]"></div>
             </div>
-            <div className="text-[16px] leading-[24px] flex text-justify">
+            <div className="text-[16px] leading-[22px] flex text-justify">
               <p>
                 Our website update process begins with a detailed assessment of
                 your site's strengths and areas for improvement. As dental

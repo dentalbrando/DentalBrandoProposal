@@ -48,7 +48,7 @@ const Terms = ({ pageNumber }) => {
               <div className="bline w-[200px] h-2 bg-[#03A0D7]"></div>
             </div>
 
-            <h1 className=" font-[700]  text-[21px] leading-[32px] text-[#093A5B] w-fit mt-10 mb-1">
+            <h1 className=" font-[700]  text-[21px] leading-[32px]  text-[#093A5B] w-fit mt-10 mb-1">
               GENERAL TERMS
               <div className="w-full border-b-[2px] border-[#03A0D7]"></div>
             </h1>
@@ -66,7 +66,7 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1">
+                  <div className=" w-full mx-auto pb font-[400] text-[13px] text-justify pt-1">
                     <p>
                       We will execute a Non-Disclosure Agreement (NDA) and
                       Intellectual Property (IP) contract to protect your
@@ -88,7 +88,7 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto font-[400] text-[10pt] text-justify pt-1 ">
+                  <div className=" w-full mx-auto font-[400] text-[13px] text-justify pt-1 ">
                     <p>
                       We ensure high-quality service and timely delivery. Any
                       delays will be communicated promptly, and necessary
@@ -110,7 +110,7 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ">
+                  <div className=" w-full mx-auto pb font-[400] text-[13px] text-justify pt-1 ">
                     <p>
                       We strive for 100% customer satisfaction in every project.
                       If you are not satisfied with the service, we will make
@@ -134,7 +134,7 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb- font-[400] text-[10pt] text-justify pt-1 ">
+                  <div className=" w-full mx-auto pb- font-[400] text-[13px] text-justify pt-1 ">
                     <p>
                       After the website is delivered, we provide one month of
                       complimentary maintenance to ensure everything operates
@@ -157,8 +157,11 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb- font-[400] text-[10pt] text-justify pt-1 ">
-                    <p style={{ wordSpacing: "6px" }}>
+                  <div
+                    className=" w-full mx-auto pb- font-[400] text-[13px] text-justify pt-1 "
+                    style={{ wordSpacing: "7px" }}
+                  >
+                    <p>
                       Our dedicated 24/7 customer support team is always
                       available and ready to assist you with any questions,
                       concerns, or issues you may encounter.{" "}
@@ -179,25 +182,15 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className="bg-red-00 w-full mx-auto pb ps- font-[400] text-[10pt] text-justify pt-1 ">
-                    {/* <ol className="list-disc">
-                      <li> */}
+                  <div className="bg-red-00 w-full mx-auto pb ps- font-[400] text-[13px] text-justify pt-1 ">
                     We believe in our quality and are confident that it will
                     meet your expectations, so there is no upfront payment
                     required. There are no hidden fees in both of our plans.{" "}
-                    {/* </li> */}
-                    {/* <li>There is no hidden fees in both of our plans. </li> */}
-                    {/* </ol> */}
                   </div>
                 </div>
               </div>
             </div>
-
-            <div className="my-5">
-              <div className="w-[100%] border-b-[3px] border-[#093A5B]  "></div>{" "}
-            </div>
-
-            <h1 className=" font-[700]  text-[21px] leading-[32px] text-[#093A5B] w-fit mt-10 mb-2 uppercase">
+            <h1 className=" font-[700]  text-[21px] leading-[32px]  text-[#093A5B] w-fit mt-10 mb-2 uppercase">
               Fixed Price Plan - $249
               <div className="w-full border-b-[2px] border-[#03A0D7]"></div>{" "}
             </h1>
@@ -215,10 +208,11 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1">
-                    {/* <ol className="list-disc">
-                      <li> */}
-                    <p style={{ wordSpacing: "1px" }}>
+                  <div
+                    className=" w-full mx-auto pb font-[400] text-[13px] text-justify pt-1"
+                    style={{ wordSpacing: "2px" }}
+                  >
+                    <p>
                       50% ($124.50) payment is due after 50% of the work is
                       completed. The remaining 50% ($124.50) is due upon the
                       completion of the website and your approval.{" "}
@@ -241,8 +235,11 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto  font-[400] text-[10pt] text-justify pt-1 ">
-                    <p style={{ wordSpacing: "4px" }}>
+                  <div
+                    className=" w-full mx-auto  font-[400] text-[13px] text-justify pt-1 "
+                    style={{ wordSpacing: "4px" }}
+                  >
+                    <p>
                       If we fail to deliver the quality work as per our
                       commitments, a full refund will be issued. We ensure your
                       satisfaction and uphold our promise of quality.
@@ -263,7 +260,7 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto  font-[400] text-[10pt] text-justify pt-1 ">
+                  <div className=" w-full mx-auto  font-[400] text-[13px] text-justify pt-1 ">
                     <p>
                       We have clear performance benchmarks for the website. This
                       includes website uptime, loading speed critical for user
@@ -273,11 +270,7 @@ const Terms = ({ pageNumber }) => {
                 </div>
               </div>
             </div>
-            <div className="my-5">
-              <div className="w-[100%] border-b-[3px] border-[#093A5B]  "></div>
-            </div>
-
-            <h1 className=" font-[700]  text-[21px] leading-[32px] text-[#093A5B] w-fit mt-10 mb-2 uppercase">
+            <h1 className=" font-[700]  text-[21px] leading-[32px]  text-[#093A5B] w-fit mt-10 mb-2 uppercase">
               Monthly Plan - $100 per month (For 3 months){" "}
               <div className="w-full border-b-[2px] border-[#03A0D7]"></div>{" "}
             </h1>
@@ -295,21 +288,7 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ">
-                    {/* <ol className="list-disc">
-                      <li>
-                        50% of the first installment ($50) is due after 50% of
-                        the work is completed upon your approval.
-                      </li>
-                      <li>
-                        The remaining 50% of the first installment ($50) is due
-                        upon completion of the website upon your approval.
-                      </li>
-                      <li>
-                        Remaining monthly installments ($100 per month) will be
-                        charged in advance each month for remaining 2 months.
-                      </li>
-                    </ol> */}
+                  <div className=" w-full mx-auto pb font-[400] text-[13px] text-justify pt-1 ">
                     <p>
                       The payment is split into three parts: 50% upfront after
                       approval of the first half of work, another 50% upon
@@ -332,7 +311,7 @@ const Terms = ({ pageNumber }) => {
                   </div>
 
                   <div
-                    className=" w-full mx-auto font-[400] text-[10pt] text-justify pt-1 "
+                    className=" w-full mx-auto font-[400] text-[13px] text-justify pt-1 "
                     style={{ wordSpacing: "3px" }}
                   >
                     <p>
@@ -356,24 +335,8 @@ const Terms = ({ pageNumber }) => {
                     </div>
                   </div>
 
-                  <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify pt-1 ">
-                    <div className=" w-full mx-auto pb font-[400] text-[10pt] text-justify ">
-                      {/* <ol className="list-disc">
-                        <li>
-                          All resources, including your website, stay with
-                          Dental Brando until all dues are paid.
-                        </li>
-                        <li>
-                          Failure to pay a monthly installment within 3 business
-                          days will lead to your website being taken down until
-                          payment is made.
-                        </li>
-                        <li>
-                          Upon full clearance of dues and installments,
-                          ownership of the website and resources will transfer
-                          to you.
-                        </li>
-                      </ol> */}
+                  <div className=" w-full mx-auto pb font-[400] text-[13px] text-justify pt-1 ">
+                    <div className=" w-full mx-auto pb font-[400] text-[13px] text-justify ">
                       <p>
                         We hold ownership of the website until you pay in full.
                         Late monthly payments (over 3 business days) may suspend
@@ -384,10 +347,6 @@ const Terms = ({ pageNumber }) => {
                 </div>
               </div>
             </div>
-
-            {/* <div className=5my-4">
-              <div className="w-[100%] h-0.5 bg-[#093A5B]  "></div>
-            </div> */}
           </div>
         </div>
       </div>
