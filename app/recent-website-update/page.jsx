@@ -30,7 +30,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
-import { updatePage } from "@app/store/pageSclice";
+import { updatePage } from "@app/store/pageScliceUpdate";
 import Loader from "@components/Loader";
 import Nav from "@components/Nav";
 import { FaSearch } from "react-icons/fa";
