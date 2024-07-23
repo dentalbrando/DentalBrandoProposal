@@ -137,7 +137,14 @@ const AboutYourProject = () => {
             <div className="flex items-center gap-3">
               <select
                 className="py-2 px- rounded-none text-white mx-1 bg-main-blue font-medium text-[12px] my-3"
-                onChange={(e) => setUpdateCurrentName(e.target.value)}
+                onChange={(e) => {
+                  setUpdateCurrentName(e.target.value);
+                  // setUpdatedTextTemp(
+                  //   updateCurrentName !== "WordPress"
+                  //     ? ""
+                  //     : `We propose updating your current WordPress website while retaining its familiar content management system (CMS). By rebuilding from scratch, we ensure a fresh design and enhanced functionality tailored to your dental practice's needs. WordPress offers user-friendly management, extensive customization with themes and plugins, built-in SEO capabilities, and scalability.`
+                  // );
+                }}
               >
                 <option value="WordPress" className="text-[12px]">
                   WordPress
@@ -156,7 +163,7 @@ const AboutYourProject = () => {
           </div>
           <textarea
             className="text-gray-900 text-[16px] p-2 rounded-md font-normal outline-none resize-none border-2 border-color"
-            rows={3}
+            rows={5}
             onChange={(e) => setUpdatedTextTemp(e.target.value)}
           >
             {/* {updateCurrentName === "Custom"
@@ -166,7 +173,7 @@ const AboutYourProject = () => {
               : updateCurrentName === "Drupal"
               ? updateCurrentText3
               : updateCurrentText1} */}
-            {updatedText}
+            {updatedTextTemp}
           </textarea>
         </div>
       </div>
