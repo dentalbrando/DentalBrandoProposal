@@ -2,6 +2,7 @@
 import {
   setFunctionalities,
   setOverviews,
+  setUpdateTextR,
   setWebsiteCMSs,
 } from "@app/store/aboutYourProjectUpdate";
 import {
@@ -29,7 +30,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
-import {updatePage } from "@app/store/pageSclice";
+import { updatePage } from "@app/store/pageSclice";
 import Loader from "@components/Loader";
 import Nav from "@components/Nav";
 import { FaSearch } from "react-icons/fa";
@@ -197,6 +198,12 @@ function Proposal() {
         setWebsiteCMSs(
           proposalData[proposalData.length - 1 - key].aboutYourProject
             .websiteCMS
+        )
+      );
+      dispatch(
+        setUpdateTextR(
+          proposalData[proposalData.length - 1 - key].aboutYourProject
+            ?.updatedText
         )
       );
       dispatch(
