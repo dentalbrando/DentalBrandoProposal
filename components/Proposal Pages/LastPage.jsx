@@ -85,7 +85,7 @@ const LastPage = () => {
                 We appreciate you taking the time to review our Website
                 Development Proposal. Please contact us if you have any
                 questions or require further clarification on specific aspects
-                of our proposal. We believe our partnership can elevate your
+                of our proposal. We believe our partnership can enhance your
                 practice. Contact us to explore how we can work together.{" "}
               </p>
             </div>
