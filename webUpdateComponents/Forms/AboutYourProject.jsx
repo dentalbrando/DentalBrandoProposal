@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
+  setCurrentTextR,
   setFunctionalities,
   setOverviews,
   setUpdateCurrentR,
@@ -58,17 +59,15 @@ const AboutYourProject = () => {
       setWebsiteCMSs(websiteCMS.replace(/\n/g, "<p class = 'py-1'></p>"))
     );
     dispatch(setUpdateCurrentR(updateCurrentName));
+    dispatch(setCurrentTextR(updateCurrentName));
   };
   useEffect(() => {
     handleSaveAboutYourProject();
   }, [overview, functionality, websiteCMS, updateCurrentName]);
 
   const textareaRef = useRef();
-  console.log(updateCurrentText1);
-  console.log(updateCurrentText2);
-  console.log(updateCurrentText3);
-  console.log(updateCurrentText4);
-  console.log(updateCurrentName);
+
+  let [currentText, setCurrentText] = useState("");
 
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
@@ -153,7 +152,11 @@ const AboutYourProject = () => {
               </select>
             </div>
           </div>
-          <div className="text-gray-900 text-[16px] p-2 rounded-md font-normal outline-none resize-none border-2 border-color">
+          <textarea
+            rows={5}
+            className="text-gray-900 text-[16px] p-2 rounded-md font-normal outline-none resize-none border-2 border-color"
+            onChange={() => setCurrentText(e.target.value)}
+          >
             {updateCurrentName === "Custom"
               ? updateCurrentText4
               : updateCurrentName === "Shopify"
@@ -161,7 +164,7 @@ const AboutYourProject = () => {
               : updateCurrentName === "Drupal"
               ? updateCurrentText3
               : updateCurrentText1}
-          </div>
+          </textarea>
         </div>
       </div>
     </div>

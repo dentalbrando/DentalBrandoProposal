@@ -5,6 +5,7 @@ const initialState = {
   overview: "",
   functionality: "",
   websiteCMS: "",
+  currentText: "",
   updateCurrent: "Wordpress",
 };
 
@@ -24,10 +25,13 @@ const aboutYourProjectSlice = createSlice({
     setUpdateCurrentR: (state, action) => {
       state.updateCurrent = action.payload;
     },
+    setCurrentTextR: (state, action) => {
+      state.currentText = action.payload;
+    },
   },
 });
 
-export const { setOverviews, setFunctionalities, setWebsiteCMSs, setUpdateCurrentR } =
+export const { setOverviews, setFunctionalities, setWebsiteCMSs, setUpdateCurrentR,setCurrentTextR } =
   aboutYourProjectSlice.actions;
 
 export default aboutYourProjectSlice.reducer;
