@@ -23,7 +23,7 @@ const CoverPage = () => {
             style={{ textAlign: "justify", textAlignLast: "center" }}
           >
             {cover_page.subHeading == ""
-              ? "A Comprehensive Proposal to Update Your Website to Enhance Your Online Dental Practice's Professionalism and Patient Engagement."
+              ? "A Comprehensive Proposal to Update Your Website, Enhance Your Online Dental Practice's Professionalism, and Boost Patient Engagement."
               : cover_page.subHeading}
           </h2>
           <div className="relative mt-5 h-fit flex items-center">
