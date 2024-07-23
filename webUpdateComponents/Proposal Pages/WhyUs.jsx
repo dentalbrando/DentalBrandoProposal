@@ -57,7 +57,7 @@ const WhyUs = ({ pageNumber }) => {
               <div class=" w-[85px]  h-2 bg-[#03A0D7] "></div>
             </div>
 
-            <div class="   mt-2 font-[400] text-[10pt] tracking-[-0.50pt]">
+            <div class="mt-2 font-[400] text-[16px] leading-[24px]">
               <div class="Part-one mr-4    ">
                 <p>
                   At Dental Brando, we are committed to delivering exceptional
@@ -70,7 +70,7 @@ const WhyUs = ({ pageNumber }) => {
               </div>
             </div>
 
-            <div class="flex   mt-10 border border-[#093A5B]  w-[100%] h-[9%] mx-auto relative">
+            <div class="flex   mt-6 border border-[#093A5B]  w-[100%] h-[9%] mx-auto relative">
               <div class="w-fit h-fit flex items-center justify-center">
                 <img
                   src={svg9.src}
@@ -105,7 +105,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-white font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ml-2">
                   Expertise
                 </p>
               </div>
@@ -187,7 +187,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-white font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt]  ml-3">
                   Customer Satisfaction
                 </p>
               </div>
@@ -227,7 +227,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-white font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ml-2 ">
                   {" "}
                   Competitive Pricing
                 </p>
@@ -269,7 +269,7 @@ const WhyUs = ({ pageNumber }) => {
                   alt="Top Left Image"
                   class="  h-[40px]  w-[230px] "
                 />
-                <p class="absolute text-white font-[600] text-[13pt] ">
+                <p class="absolute text-white font-[600] text-[13pt] ml-3">
                   Timely Delivery
                 </p>
               </div>

@@ -107,7 +107,7 @@ const AboutUs = ({ pageNumber }) => {
             <div className="flex mt-[40px] ">
               <div className=" ">
                 <img
-                  style={{ height: "157px", width: "230px" }}
+                  style={{ height: "157px", width: "210px" }}
                   src={svg1.src}
                   alt=""
                 />
@@ -130,7 +130,7 @@ const AboutUs = ({ pageNumber }) => {
             <div className="flex ">
               <div className=" ">
                 <img
-                  style={{ height: "143px", width: "220px" }}
+                  style={{ height: "143px", width: "210px" }}
                   src={svg2.src}
                   alt=""
                 />
@@ -176,7 +176,7 @@ const AboutUs = ({ pageNumber }) => {
             <div className="flex  bg-red-90">
               <div className="">
                 <img
-                  style={{ height: "150px", width: "200px" }}
+                  style={{ height: "150px", width: "210px" }}
                   src={svg4.src}
                   alt=""
                 />
@@ -199,7 +199,7 @@ const AboutUs = ({ pageNumber }) => {
             <div className="flex ">
               <div className="">
                 <img
-                  style={{ height: "150px", width: "255px" }}
+                  style={{ height: "150px", width: "210px" }}
                   src={svg5.src}
                   alt=""
                 />
