@@ -191,7 +191,7 @@ const Terms = ({ pageNumber }) => {
               </div>
             </div>
             <h1 className=" font-[700]  text-[21px] leading-[32px]  text-[#093A5B] w-fit mt-10 mb-2 uppercase">
-              Fixed Price Plan - $249
+              Fixed Price Plan - $349.99
               <div className="w-full border-b-[2px] border-[#03A0D7]"></div>{" "}
             </h1>
             <div className="flex gap-6 mt- py-1 ">
@@ -213,8 +213,8 @@ const Terms = ({ pageNumber }) => {
                     style={{ wordSpacing: "2px" }}
                   >
                     <p>
-                      50% ($124.50) payment is due after 50% of the work is
-                      completed. The remaining 50% ($124.50) is due upon the
+                      50% ($174.99) payment is due after 50% of the work is
+                      completed. The remaining 50% ($174.99) is due upon the
                       completion of the website and your approval.{" "}
                     </p>
                     {/* </li>
@@ -271,7 +271,7 @@ const Terms = ({ pageNumber }) => {
               </div>
             </div>
             <h1 className=" font-[700]  text-[21px] leading-[32px]  text-[#093A5B] w-fit mt-10 mb-2 uppercase">
-              Monthly Plan - $100 per month (For 3 months){" "}
+              Monthly Plan - $129.99 per month (For 3 months){" "}
               <div className="w-full border-b-[2px] border-[#03A0D7]"></div>{" "}
             </h1>
             <div className="flex gap-6 mt- py-1 ">
@@ -290,9 +290,13 @@ const Terms = ({ pageNumber }) => {
 
                   <div className=" w-full mx-auto pb font-[400] text-[13px] text-justify pt-1 ">
                     <p>
-                      The payment is split into three parts: 50% upfront after
+                      {/* The payment is split into three parts: 50% upfront after
                       approval of the first half of work, another 50% upon
-                      completion, and then two monthly installments of $100.{" "}
+                      completion, and then two monthly installments of $100.{" "} */}
+                      Payment is split into three parts: 50% of the initial
+                      installment is due after half of the work done and
+                      remaining 50% is due upon full completion. The two
+                      remaining $129.99/Month each.{" "}
                     </p>
                   </div>
                 </div>
