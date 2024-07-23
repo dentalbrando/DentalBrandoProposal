@@ -132,7 +132,7 @@ const Package2 = ({ pageNumber }) => {
                   installments of{" "}
                   <span className="text-main-blue font-[700] text-[28px]">
                     {" "}
-                    $130
+                    $129
                   </span>
                     <span className="text-main-blue font-[700] ">.99 </span>{" "}
                   per month. It’s never been easier to get the website you need
