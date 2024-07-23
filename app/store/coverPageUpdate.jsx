@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   subHeading: "",
-  projectTitle: "Website Update Proposal",
+  projectTitle: "Website Upgrading Proposal",
   companyPhoneNumber: "",
   companyAddress: "",
   companyName: "",

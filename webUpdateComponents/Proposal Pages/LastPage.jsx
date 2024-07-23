@@ -81,11 +81,11 @@ const LastPage = () => {
                 // style={{ fontFamily: "'Montserrat', sans-serif" }}
                 style={{ wordSpacing: "3px" }}
               >
-                We appreciate you taking the time to review our website
-                development proposal. Please contact us if you have any
-                questions or require further clarification on specific aspects
-                of our proposal. We believe our partnership can elevate your
-                practice. Contact us to explore how we can work together.{" "}
+                We appreciate you taking the time to review our website updating
+                proposal. Please contact us if you have any questions or require
+                further clarification on specific aspects of our proposal. We
+                believe our partnership can elevate your practice. Contact us to
+                explore how we can work together
               </p>
             </div>
 
