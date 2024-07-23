@@ -52,7 +52,7 @@ const OurProcess = ({ pageNumber }) => {
             </div>
             <div className="text-[16px] leading-[22px] flex text-justify">
               <p>
-                Our website update process begins with a detailed assessment of
+                Our Website Update process begins with a detailed assessment of
                 your site's strengths and areas for improvement. As dental
                 website specialists, we focus on modernizing design, enhancing
                 functionality, and optimizing user experience. Our iterative
