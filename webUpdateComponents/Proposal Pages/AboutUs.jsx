@@ -53,7 +53,10 @@ const AboutUs = ({ pageNumber }) => {
             </div>
 
             <div className=" text-center  mt-5 font-[400] text-[11pt] leading-5">
-              <div className="Part-one    text-justify ">
+              <div
+                className="Part-one    text-justify "
+                style={{ wordSpacing: "0.1px" }}
+              >
                 <p>
                   Welcome to Dental Brando, your partner in enhancing the
                   digital presence of dental practices. Our mission is to
@@ -102,23 +105,26 @@ const AboutUs = ({ pageNumber }) => {
           </div>
         </div>
 
-        <div className="bg-[#093A5B] h-full flex justify-center items-center px-[30px] w-[52%] ">
-          <div className="w-[100%]">
-            <div className="flex mt-[40px] ">
-              <div className=" ">
+        <div className="bg-[#093A5B] h-full flex justify-center items-center px-[30px] w-[52%]">
+          <div
+            className="w-[100%] flex flex-col justify-start"
+            style={{ alignItems: "space-between" }}
+          >
+            <div className="flex">
+              <div className=" mt-[15px]">
                 <img
-                  style={{ height: "157px", width: "210px" }}
+                  style={{ height: "157px", width: "230px" }}
                   src={svg1.src}
                   alt=""
                 />
               </div>
-              <div className="mt-[50px] ml-3">
-                <h6 className="text-[18.43pt] text-white font-[400] ">
+              <div className="ml-3 mt-[55px]">
+                <h6 className="text-[18.43pt] font-[400] pb-1 text-white  ">
                   Web Development{" "}
                 </h6>
                 <p
-                  className="text-[15px] text-white w-[97%] font-[400] text-justify leading-6"
-                  style={{ wordSpacing: "0px" }}
+                  className="text-[15px] leading-[20px] text-white w-[97%] font-[400] text-justify"
+                  // style={{ wordSpacing: "9px" }}
                 >
                   We create custom-designed, SEO-optimized, and mobile-friendly
                   websites that reflect the unique identity of your dental
@@ -130,18 +136,18 @@ const AboutUs = ({ pageNumber }) => {
             <div className="flex ">
               <div className=" ">
                 <img
-                  style={{ height: "143px", width: "210px" }}
+                  style={{ height: "143px", width: "220px" }}
                   src={svg2.src}
                   alt=""
                 />
               </div>
               <div className=" mt-[30px] ml-3  ">
-                <h6 className="text-[18.43pt] text-white font-[400] whitespace-nowrap ">
+                <h6 className="text-[18.43pt] font-[400] pb-1 text-white  whitespace-nowrap ">
                   Mobile App Development{" "}
                 </h6>
                 <p
-                  className="text-[15px] text-white font-[400] w-[97%] text-justify leading-6"
-                  style={{ wordSpacing: "0px" }}
+                  className="text-[15px] leading-[20px] text-white font-[400] w-[97%] text-justify"
+                  // style={{ wordSpacing: "6px" }}
                 >
                   Our custom mobile apps improve patient interaction and
                   convenience, offering features like appointment booking,
@@ -159,12 +165,12 @@ const AboutUs = ({ pageNumber }) => {
                 />
               </div>
               <div className="mt-[30px] ml-3 ">
-                <h6 className="text-[18.43pt] text-white font-[400] ">
+                <h6 className="text-[18.43pt] font-[400] pb-1 text-white  ">
                   Custom Dental Software{" "}
                 </h6>
                 <p
-                  className="text-[15px] text-white font-[400]  w-[97%]  text-justify leading-6 "
-                  style={{ wordSpacing: "5px" }}
+                  className="text-[15px] leading-[20px] text-white font-[400]  w-[97%]  text-justify "
+                  // style={{ wordSpacing: "5px" }}
                 >
                   {" "}
                   We develop tailored software solutions that integrate
@@ -176,45 +182,52 @@ const AboutUs = ({ pageNumber }) => {
             <div className="flex  bg-red-90">
               <div className="">
                 <img
-                  style={{ height: "150px", width: "210px" }}
+                  style={{ height: "150px", width: "200px" }}
                   src={svg4.src}
                   alt=""
                 />
               </div>
               <div className="mt-[30px] ml-3 ">
-                <h6 className="text-[18.43pt] text-white font-[400] ">
+                <h6 className="text-[18.43pt] font-[400] pb-1 text-white  ">
                   Digital Marketing
                 </h6>
                 <p
-                  className="text-[15px] text-white font-[400]  w-[97%]  text-justify leading-6 "
-                  style={{ wordSpacing: "3px" }}
+                  className="text-[15px] leading-[20px] text-white font-[400]  w-[97%]  text-justify "
+                  // style={{ wordSpacing: "3px" }}
                 >
                   Our targeted digital marketing strategies, including SEO,
                   social media marketing, and PPC advertising, boost your online
                   visibility, attract new patients, and build long-term
                   relationships.
+                  {/* Our targeted digital marketing strategies, including SEO,
+                  social media marketing, and PPC advertising, boost your online
+                  visibility, attract new patients, and build long-term
+                  relationships. */}
                 </p>
               </div>
             </div>
             <div className="flex ">
               <div className="">
                 <img
-                  style={{ height: "150px", width: "210px" }}
+                  style={{ height: "150px", width: "200px" }}
                   src={svg5.src}
                   alt=""
                 />
               </div>
               <div className="mt-[30px] ml-3">
-                <h6 className="text-[18.43pt] text-white font-[400] ">
+                <h6 className="text-[18.43pt] font-[400] pb-1 text-white  ">
                   Graphic Designing
                 </h6>
                 <p
-                  className="text-[15px] text-white font-[400]  w-[97%]  text-justify leading-6 "
+                  className="text-[15px] leading-[20px] text-white font-[400]  w-[97%]  text-justify "
                   style={{ wordSpacing: "5px" }}
                 >
-                  We create professional, visually appealing graphics, including
-                  custom logos and promotional materials, to build a cohesive
-                  and trustworthy brand identity for your practice.{" "}
+                  We create professional graphics, including custom logos,
+                  promotional materials, and website designs, to build a
+                  cohesive and trustworthy brand identity for your practice.
+                  {/* We create professional graphics, including custom logos,
+                  promotional materials, and website designs, to build a
+                  cohesive and trustworthy brand identity for your practice.{" "} */}
                 </p>
               </div>
             </div>
