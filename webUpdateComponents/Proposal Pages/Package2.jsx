@@ -114,7 +114,7 @@ const Package2 = ({ pageNumber }) => {
               </div>
             </div>
             <section>
-              <div className="leading-[22px]">
+              <div className="leading-[24px]">
                 <p className="pt-8 text-[12pt] text-justify">
                   Pay only a one-time fee of
                   <span className="text-main-blue font-[700] text-[28px]">
