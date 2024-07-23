@@ -80,6 +80,9 @@ const AboutYourProjects = ({ pageNumber }) => {
   const [updateCurrentText2, setUpdateCurrentText2] = useState(`Shopify Text`);
   const [updateCurrentText3, setUpdateCurrentText3] = useState(`Drupal Text`);
   const [updateCurrentText4, setUpdateCurrentText4] = useState(`Custom Test`);
+  const updatedText = useSelector(
+    (state) => state.aboutYourProjectUpdate.updatedText
+  );
 
   return (
     <>
@@ -215,14 +218,20 @@ const AboutYourProjects = ({ pageNumber }) => {
                   class="pt-2 text-[12pt] text-justify"
                   dangerouslySetInnerHTML={{ __html: contentWithImages }}
                 ></p> */}
-                <p class="pt-2 text-[12pt] text-justify">
-                  {updateCurrent === "Custom"
+                <p
+                  class="pt-2 text-[12pt] text-justify"
+                  dangerouslySetInnerHTML={{
+                    __html: updatedText.replace(/\n/g, "<p class = 'py-'></p>"),
+                  }}
+                >
+                  {/* {updateCurrent === "Custom"
                     ? updateCurrentText4
                     : updateCurrent === "Shopify"
                     ? updateCurrentText2
                     : updateCurrent === "Drupal"
                     ? updateCurrentText3
-                    : updateCurrentText1}
+                    : updateCurrentText1} */}
+                  {/* {updatedText} */}
                 </p>
               </div>
             </section>

@@ -4,6 +4,7 @@ import {
   setFunctionalities,
   setOverviews,
   setUpdateCurrentR,
+  setUpdateTextR,
   setWebsiteCMSs,
 } from "@app/store/aboutYourProjectUpdate";
 
@@ -20,6 +21,10 @@ const AboutYourProject = () => {
   const updateCurrent = useSelector(
     (state) => state.aboutYourProjectUpdate.updateCurrent
   );
+  const updatedText = useSelector(
+    (state) => state.aboutYourProjectUpdate.updatedText
+  );
+  let [updatedTextTemp, setUpdatedTextTemp] = useState(updatedText);
   console.log(updateCurrent);
   const [overview, setOverview] = useState(
     overviews == ""
@@ -35,9 +40,9 @@ const AboutYourProject = () => {
   const [updateCurrentText1, setUpdateCurrentText1] = useState(
     "We propose updating your current WordPress website while retaining its familiar content management system (CMS). By rebuilding from scratch, we ensure a fresh design and enhanced functionality tailored to your dental practice's needs. WordPress offers user-friendly management, extensive customization with themes and plugins, built-in SEO capabilities, and scalability."
   );
-  const [updateCurrentText2, setUpdateCurrentText2] = useState(`Shopify Text`);
-  const [updateCurrentText3, setUpdateCurrentText3] = useState(`Drupal Text`);
-  const [updateCurrentText4, setUpdateCurrentText4] = useState(`Custom Test`);
+  // const [updateCurrentText2, setUpdateCurrentText2] = useState(`Shopify Text`);
+  // const [updateCurrentText3, setUpdateCurrentText3] = useState(`Drupal Text`);
+  // const [updateCurrentText4, setUpdateCurrentText4] = useState(`Custom Test`);
   const [websiteCMS, setWebsiteCMS] = useState(
     websiteCMSs == ""
       ? `<b>Outdated Design:</b> Your website's design does not reflect current industry standards, potentially impacting user perception and engagement.
@@ -57,18 +62,14 @@ const AboutYourProject = () => {
     dispatch(
       setWebsiteCMSs(websiteCMS.replace(/\n/g, "<p class = 'py-1'></p>"))
     );
-    dispatch(setUpdateCurrentR(updateCurrentName));
+    // dispatch(setUpdateCurrentR(updateCurrentName));
+    dispatch(setUpdateTextR(updatedTextTemp));
   };
   useEffect(() => {
     handleSaveAboutYourProject();
-  }, [overview, functionality, websiteCMS, updateCurrentName]);
+  }, [overview, functionality, websiteCMS, updateCurrentName, updatedTextTemp]);
 
   const textareaRef = useRef();
-  console.log(updateCurrentText1);
-  console.log(updateCurrentText2);
-  console.log(updateCurrentText3);
-  console.log(updateCurrentText4);
-  console.log(updateCurrentName);
 
   return (
     <div className="overflow-y-visible custom-scroll mt-5 h-fit custom-bg w-[900px] py-12 px-12 rounded-2xl border-2 border-color">
@@ -153,15 +154,20 @@ const AboutYourProject = () => {
               </select>
             </div>
           </div>
-          <div className="text-gray-900 text-[16px] p-2 rounded-md font-normal outline-none resize-none border-2 border-color">
-            {updateCurrentName === "Custom"
+          <textarea
+            className="text-gray-900 text-[16px] p-2 rounded-md font-normal outline-none resize-none border-2 border-color"
+            rows={3}
+            onChange={(e) => setUpdatedTextTemp(e.target.value)}
+          >
+            {/* {updateCurrentName === "Custom"
               ? updateCurrentText4
               : updateCurrentName === "Shopify"
               ? updateCurrentText2
               : updateCurrentName === "Drupal"
               ? updateCurrentText3
-              : updateCurrentText1}
-          </div>
+              : updateCurrentText1} */}
+            {updatedText}
+          </textarea>
         </div>
       </div>
     </div>
