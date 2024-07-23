@@ -155,7 +155,7 @@ const AboutYourProject = () => {
           <textarea
             rows={5}
             className="text-gray-900 text-[16px] p-2 rounded-md font-normal outline-none resize-none border-2 border-color"
-            onChange={() => setCurrentText(e.target.value)}
+            onChange={(e) => setCurrentText(e.target.value)}
           >
             {updateCurrentName === "Custom"
               ? updateCurrentText4
