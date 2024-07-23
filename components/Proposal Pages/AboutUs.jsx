@@ -222,12 +222,13 @@ const AboutUs = ({ pageNumber }) => {
                   className="text-[15px] leading-[20px] text-white font-[400]  w-[97%]  text-justify "
                   style={{ wordSpacing: "5px" }}
                 >
-                  We create professional graphics, including custom logos,
-                  promotional materials, and website designs, to build a
-                  cohesive and trustworthy brand identity for your practice.
                   {/* We create professional graphics, including custom logos,
                   promotional materials, and website designs, to build a
-                  cohesive and trustworthy brand identity for your practice.{" "} */}
+                  cohesive and trustworthy brand identity for your practice.
+                  */}
+                  Our team crafts professional graphics, including custom logos,
+                  promotional materials, and website designs, to build a
+                  cohesive and trustworthy brand identity for your practice.{" "}
                 </p>
               </div>
             </div>
