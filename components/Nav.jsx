@@ -22,7 +22,7 @@ const Nav = (props) => {
           w-[78vw]
           flex justify-center absolute right-0 bg-yellow-40`}
         >
-          {props.navText ? props.navText : "Proposal Manager"}
+          {props.navText ? props.navText : "Proposal Manage"}
         </h1>
       </div>
     </>
